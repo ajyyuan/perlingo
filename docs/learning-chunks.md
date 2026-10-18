@@ -1,6 +1,6 @@
 # Learning chunks and contextual explanations
 
-Status: implemented for the current 34-concept lesson bank; B2 is awaiting user approval. This document describes Perlingo's product convention, not a formal linguistic parsing standard.
+Status: implemented for the current 34-concept lesson bank; B2 was approved and committed; C1 preserves its interaction model. This document describes Perlingo's product convention, not a formal linguistic parsing standard.
 
 ## Definition
 
@@ -45,11 +45,11 @@ Parentheses are a display convention for low-emphasis grammatical information, n
 
 Chunks are curated for the finite lesson bank, not inferred by an automatic parser or AI. Each clickable span needs its source text, contextual meaning, brief grammatical cue, and deeper explanation. Keep the original sentence available as context even when only a chunk is shown in the popover.
 
-The implementation is in `src/explanations.js`, with rendering and interaction in `src/app.js`. All 102 current translations have intentional grouping: nouns with their articles, standalone infinitives, explicitly segmented sentences, or explicitly designated whole expressions/noun phrases/question words. **Estoy aprendiendo** is one chunk. Leading and trailing punctuation stays outside click targets. Invalid spans, unexplained words, and new sentence constructions without a chunk definition are rejected instead of silently falling back to a whole sentence.
+The implementation is in `src/explanations.js`, with rendering and interaction in `src/app.js`. As part of C1, the book/read/reading-sentence chunks are stored in `src/content/reading-pilot.js` and consumed by the same interface; see [the content model](content-model.md). All 102 current translations have intentional grouping: nouns with their articles, standalone infinitives, explicitly segmented sentences, or explicitly designated whole expressions/noun phrases/question words. **Estoy aprendiendo** is one chunk. Leading and trailing punctuation stays outside click targets. Invalid spans, unexplained words, and new sentence constructions without a chunk definition are rejected instead of silently falling back to a whole sentence.
 
 Notes are authored in sentence context and shown as prose through More. The original translation remains visible behind the popover. No automatic parser is used: the rule about tightly attached modifiers is an authoring requirement for future content; the current bank has no such modified noun phrases to demonstrate it.
 
-The full sidebar and independent selection inside a chunk remain future work (B3/B4). Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
+The full sidebar and independent selection inside a chunk remain future work (C2; formerly B3/remaining B4). Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
 
 `tests/explanations.test.js` checks coverage, original-text reconstruction, punctuation boundaries, contextual details, explicit failure for undefined constructions, and the documented chunking examples. Run `npm test` and `npm run check` before handoff, then verify the popover in the local browser.
 

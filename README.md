@@ -15,8 +15,12 @@ Progress and settings are saved to localStorage on the current browser and origi
 
 Source: `src/content.js` (curriculum), `src/engine.js` (selection and review), `src/app.js` (interface), `src/style.css` (design). `dist` holds the static publication copy. No server-side application data is stored.
 
-Interaction design: [Learning chunks and contextual explanations](docs/learning-chunks.md) defines translation grouping, contextual glosses, popover behavior, and current implementation gaps.
+Interaction design: [Learning chunks and contextual explanations](docs/learning-chunks.md) defines translation grouping, contextual glosses, popover behavior, and future extensions.
 
 During learning, click a grammatical learning chunk to pronounce it and open a contextual popover. Articles stay with nouns, multiword verb constructions stay together, and fixed expressions remain intact. More expands a curated explanation inside the overlay; the lesson does not move. Speaker buttons play the full translation. Escape, outside click, or the close button dismiss the popover. This help is not available during recall.
 
 Development workflow: follow [AGENTS.md](AGENTS.md). Keep documentation synchronized with each meaningful change, provide local checks and testing steps, and wait for explicit approval before committing. Publishing or pushing requires a separate request. Local source and the published `dist/` copy can differ; these learning-chunk changes are local until explicitly published.
+
+Content foundation: [C1 data model and review workflow](docs/content-model.md). Three existing concepts now come from `src/content/reading-pilot.js`; the remaining 31 use the legacy bank. The pilot records meanings, selected word forms, grammar links, sources, and **draft** review status. No independent linguistic approval is claimed. Inspect the [local content review page](http://127.0.0.1:5173/content-review.html). `npm run check` includes structural content validation; release validation intentionally rejects this draft pilot.
+
+Next steps and status: [C1–C5 roadmap](docs/roadmap.md).
