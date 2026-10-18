@@ -130,3 +130,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 @media (max-width: 600px) {
   .typed:has(.typed-answer[readonly]) .typed-feedback { min-height: 126px; }
 }
+
+.prompt-cue { color: var(--muted); font-size: .62em; letter-spacing: -.025em; white-space: nowrap; }
+
+.prompt-note { display: inline-block; color: var(--muted); font-size: .34em; letter-spacing: 0; vertical-align: middle; }
