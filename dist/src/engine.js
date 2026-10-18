@@ -15,5 +15,4 @@ export function schedule(previous,correct,now=Date.now()){
  const interval=correct?(previous?Math.min(60,Math.max(1,previous.interval)*2):1):1;
  return {interval,due:now+interval*86400000,seen:(previous?.seen||0)+1,correct:(previous?.correct||0)+Number(correct)};
 }
-export function finishRound(streak,mistakes){return mistakes===0?streak+1:0;}
 export function questions(items,langs){return shuffle(items.flatMap(item=>langs.map(lang=>({item,lang}))));}
