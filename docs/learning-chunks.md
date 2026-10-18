@@ -36,7 +36,7 @@ Parentheses are a display convention for low-emphasis grammatical information, n
 
 1. Clicking a chunk pronounces that chunk and opens a compact popover anchored to it.
 2. The popover answers **“What does this mean here?”**: selected text, a contextual English gloss, and a brief grammatical cue. Parenthetical cues are small and muted.
-3. **More** uses a curated prose note to explain the words and grammar within the chunk; it is not a separate interactive word-by-word table. The future contextual sidebar (B3) answers **“Why this form?”**, with base forms, inflection, examples, and tables where useful.
+3. **More** opens the C2 details sidebar. It answers **“Why this form?”**, retains the original sentence and English prompt, and lets the learner select words within the chunk. The reading pilot has curated word roles, base forms, gender, and tables of available forms. Other entries retain their phrase explanation and explicitly identify missing word analysis.
 4. The popover overlays the lesson without moving its background. Clicking outside, pressing Escape, or closing it dismisses it; Escape and the close button return focus to the selected chunk.
 5. The speaker button pronounces the complete translation. Preserve the quiet playback indicator and French Thomas voice preference.
 6. These interactions currently belong to learning screens. If help is introduced during recall, warn before revealing it, record the answer as assisted, and prevent that round from counting as perfect.
@@ -49,8 +49,8 @@ The implementation is in `src/explanations.js`, with rendering and interaction i
 
 Notes are authored in sentence context and shown as prose through More. The original translation remains visible behind the popover. No automatic parser is used: the rule about tightly attached modifiers is an authoring requirement for future content; the current bank has no such modified noun phrases to demonstrate it.
 
-The full sidebar and independent selection inside a chunk remain future work (C2; formerly B3/remaining B4). Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
+The sidebar and selection inside a chunk are implemented in C2 (formerly B3/remaining B4), with detailed word analysis limited to the C1 pilot. Additional examples, complete conjugation paradigms, and wider word coverage remain content work for C3. Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
 
 `tests/explanations.test.js` checks coverage, original-text reconstruction, punctuation boundaries, contextual details, explicit failure for undefined constructions, and the documented chunking examples. Run `npm test` and `npm run check` before handoff, then verify the popover in the local browser.
 
-For review, check that chunks reconstruct the original translation exactly, glosses fit the sentence, articles stay with nouns, multiword verb constructions stay together, and opening or expanding a popover causes no lesson layout shift.
+For review, check that chunks reconstruct the original translation exactly, glosses fit the sentence, articles stay with nouns, multiword verb constructions stay together, and opening a popover or sidebar causes no lesson layout shift. The sidebar is a modal dialog: it traps keyboard focus, closes with Escape, its close button, or a backdrop click, and returns focus to the originating chunk. On narrow screens it fills the viewport.

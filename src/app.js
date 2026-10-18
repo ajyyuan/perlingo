@@ -1,3 +1,4 @@
+import {openDetails,closeDetails} from './sidebar.js';
 import {bank,languages,notes} from './content.js';
 import {key,makeLesson,schedule,questions} from './engine.js';
 import {checkAnswer,roundPassed} from './recall.js';
@@ -26,9 +27,9 @@ function save(){try{localStorage.setItem('perlingo-v1',JSON.stringify(data));}ca
 const due=()=>Object.entries(data.history).filter(([k,v])=>data.settings.languages.includes(k.split(':')[1])&&v.due<=Date.now()).length;
 const duration=ms=>`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}`;
 function shell(content){const active=['study','quiz','round'].includes(view);root.innerHTML=`<div class="shell"><header class="top"><button class="brand" data-action="home" aria-label="Perlingo home">perlingo<span>.</span></button><nav>${active?'<button class="plain" data-action="home">Exit session</button>':`<button class="plain icon" data-action="settings" aria-label="Settings" title="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--bg)"/><circle cx="15" cy="17" r="3" fill="var(--bg)"/></svg></button>`}</nav></header>${storageError?'<p class="error">Browser storage is unavailable. Progress may not survive a reload.</p>':''}<main>${content}</main>${active?'':`<footer class="footer"><button class="plain" data-action="history">Progress</button><span>${data.settings.languages.map(l=>languages[l].name).join(' / ')}</span></footer>`}</div>`;}
-function render(){closeExplanation();pronunciation.stop();if(view==='home')home();if(view==='study')study();if(view==='quiz')quiz();if(view==='round')roundEnd();if(view==='results')results();if(view==='history')history();if(view==='settings')settings();}
+function render(){closeDetails();closeExplanation();pronunciation.stop();if(view==='home')home();if(view==='study')study();if(view==='quiz')quiz();if(view==='round')roundEnd();if(view==='results')results();if(view==='history')history();if(view==='settings')settings();}
 function translations(item){return `<div class="translations">${data.settings.languages.map(l=>`<article class="translation"><span class="badge">${languages[l].name}</span><div class="translation-value"><h3>${segments(item,l).map((part,i)=>part.meaning?`<button class="translation-text" data-explain="${l}" data-part="${i}" aria-expanded="false" aria-controls="translation-explanation" aria-label="Explain and pronounce ${esc(part.text)} in ${languages[l].name}">${esc(part.text)}</button>`:esc(part.text)).join('')}</h3><button data-speak="${l}" aria-label="Listen in ${languages[l].name}" title="Listen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/></svg></button></div></article>`).join('')}</div><p id="audio-status" class="muted" role="status"></p><div id="translation-explanation" class="explanation" hidden></div>`;}
-let explanationAnchor=null;
+let explanationAnchor=null,explanationSelection=null;
 function closeExplanation(restoreFocus=false){
  const panel=root.querySelector('#translation-explanation');if(panel)panel.hidden=true;
  explanationAnchor?.setAttribute('aria-expanded','false');
@@ -41,12 +42,12 @@ function positionExplanation(){
  const below=rect.bottom+gap,above=rect.top-panel.offsetHeight-gap;
  panel.style.top=`${Math.max(margin,below+panel.offsetHeight<=window.innerHeight-margin?below:above)}px`;
 }
-function showExplanation(entry,l,anchor){
- closeExplanation();explanationAnchor=anchor;anchor.setAttribute('aria-expanded','true');
+function showExplanation(entry,l,anchor,item){
+ closeExplanation();explanationSelection={item,lang:l,chunk:entry};explanationAnchor=anchor;anchor.setAttribute('aria-expanded','true');
  const panel=root.querySelector('#translation-explanation');panel.hidden=false;
  const meaning=esc(entry.meaning).replace(/\([^()]+\)/g,cue=>`<span class="meaning-cue">${cue}</span>`);
- panel.innerHTML=`<div class="explanation-head"><span class="badge">${esc(entry.text)}</span><button class="plain" data-action="close-explanation" aria-label="Close explanation">×</button></div><p class="explanation-meaning">${meaning}</p><p class="muted">${esc(entry.summary)}</p><details class="explanation-more"><summary>More</summary><p class="muted">${esc(entry.detail)}</p></details>`;
- panel.querySelector('details').addEventListener('toggle',positionExplanation);positionExplanation();
+ panel.innerHTML=`<div class="explanation-head"><span class="badge">${esc(entry.text)}</span><button class="plain" data-action="close-explanation" aria-label="Close explanation">×</button></div><p class="explanation-meaning">${meaning}</p><p class="muted">${esc(entry.summary)}</p><button class="plain" data-action="more-details">More →</button>`;
+ positionExplanation();
 }
 window.addEventListener('resize',positionExplanation);
 window.addEventListener('scroll',positionExplanation,true);
@@ -67,8 +68,9 @@ function history(){shell(`<div class="intro"><div><div class="eyebrow">Your lear
 root.addEventListener('input',e=>{const id=e.target.dataset.setting;if(id){data.settings[id]=Math.max(0,Math.min(Number(e.target.max),Math.floor(Number(e.target.value)||0)));save();}});
 root.addEventListener('change',e=>{const id=e.target.dataset.setting;if(id){data.settings[id]=Math.max(0,Math.min(Number(e.target.max),Math.floor(Number(e.target.value)||0)));save();}});
 root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;const a=b.dataset.action;if(b.dataset.lang){const l=b.dataset.lang;const list=data.settings.languages;if(list.includes(l)){if(list.length>1)data.settings.languages=list.filter(x=>x!==l);}else data.settings.languages=Object.keys(languages).filter(x=>list.includes(x)||x===l);save();render();return;}
+if(a==='more-details'&&explanationSelection){const anchor=explanationAnchor,{item,lang,chunk}=explanationSelection;closeExplanation();openDetails(item,lang,chunk,anchor);return;}
 if(a==='close-explanation'){closeExplanation(true);return;}
-if(b.dataset.speak||b.dataset.explain){const status=document.querySelector('#audio-status'),l=b.dataset.speak||b.dataset.explain;const item=view==='home'?makeLesson(bank,data.settings,data.history)[0]:lesson[index];const selected=b.dataset.explain?segments(item,l)[Number(b.dataset.part)]:null;if(selected)showExplanation(selected,l,b);const speaker=root.querySelector(`[data-speak="${l}"]`);pronunciation.speak(selected?.text||item[l],languages[l].locale,languages[l].name,({state,message})=>{if(!speaker.isConnected)return;speaker.dataset.audioState=state;speaker.setAttribute('aria-label',`${state==='loading'?'Loading audio in':state==='playing'?'Playing audio in':'Listen in'} ${languages[l].name}`);if(status.isConnected)status.textContent=message;});return;}
+if(b.dataset.speak||b.dataset.explain){const status=document.querySelector('#audio-status'),l=b.dataset.speak||b.dataset.explain;const item=view==='home'?makeLesson(bank,data.settings,data.history)[0]:lesson[index];const selected=b.dataset.explain?segments(item,l)[Number(b.dataset.part)]:null;if(selected)showExplanation(selected,l,b,item);const speaker=root.querySelector(`[data-speak="${l}"]`);pronunciation.speak(selected?.text||item[l],languages[l].locale,languages[l].name,({state,message})=>{if(!speaker.isConnected)return;speaker.dataset.audioState=state;speaker.setAttribute('aria-label',`${state==='loading'?'Loading audio in':state==='playing'?'Playing audio in':'Listen in'} ${languages[l].name}`);if(status.isConnected)status.textContent=message;});return;}
 if(b.dataset.accent){const input=root.querySelector('#recall-answer');if(input&&!feedback){input.setRangeText(b.dataset.accent,input.selectionStart,input.selectionEnd,'end');input.focus();}return;}
 if(a==='skip'){submitAnswer(true);return;}
 if(a==='home'||a==='history'||a==='settings'){if(['study','quiz','round'].includes(view)&&!confirm('Leave this session? This session’s unfinished progress will not be saved.'))return;view=a;render();return;}

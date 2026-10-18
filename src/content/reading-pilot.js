@@ -2,7 +2,7 @@
 export const readingPilot = {
   "schemaVersion": 1,
   "id": "reading-pilot",
-  "version": 1,
+  "version": 2,
   "origin": "Migration of existing starter content, not newly approved teaching material",
   "sources": {
     "es-libro": {
@@ -348,7 +348,20 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "el": {
+              "meaning": "the",
+              "role": "Definite article · masculine singular",
+              "note": "El agrees with libro."
+            },
+            "libro": {
+              "lexeme": "es-libro",
+              "meaning": "book",
+              "role": "Noun · masculine singular",
+              "note": "In the sentence, libro is the direct object of leo."
+            }
+          }
         },
         "fr": {
           "text": "le livre",
@@ -377,7 +390,20 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "le": {
+              "meaning": "the",
+              "role": "Definite article · masculine singular",
+              "note": "Le agrees with livre."
+            },
+            "livre": {
+              "lexeme": "fr-livre",
+              "meaning": "book",
+              "role": "Noun · masculine singular",
+              "note": "Here livre means a book, not the feminine noun meaning a pound."
+            }
+          }
         },
         "de": {
           "text": "das Buch",
@@ -406,7 +432,20 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "das": {
+              "meaning": "the",
+              "role": "Definite article · neuter singular · nominative here",
+              "note": "Das matches the gender of Buch in this vocabulary entry."
+            },
+            "Buch": {
+              "lexeme": "de-Buch",
+              "meaning": "book",
+              "role": "Noun · neuter singular",
+              "note": "In the sentence, Buch is the direct object, so the noun phrase is accusative."
+            }
+          }
         }
       }
     },
@@ -444,7 +483,15 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "leer": {
+              "lexeme": "es-leer",
+              "meaning": "to read",
+              "role": "Infinitive",
+              "note": "The base form names the action."
+            }
+          }
         },
         "fr": {
           "text": "lire",
@@ -473,7 +520,15 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "lire": {
+              "lexeme": "fr-lire",
+              "meaning": "to read",
+              "role": "Infinitive",
+              "note": "The base form names the action."
+            }
+          }
         },
         "de": {
           "text": "lesen",
@@ -502,7 +557,15 @@ export const readingPilot = {
               ],
               "grammarIds": []
             }
-          ]
+          ],
+          "wordDetails": {
+            "lesen": {
+              "lexeme": "de-lesen",
+              "meaning": "to read",
+              "role": "Infinitive",
+              "note": "The base form names the action."
+            }
+          }
         }
       }
     },
@@ -565,7 +628,26 @@ export const readingPilot = {
             {
               "text": "."
             }
-          ]
+          ],
+          "wordDetails": {
+            "Leo": {
+              "lexeme": "es-leer",
+              "meaning": "(I) read",
+              "role": "Present indicative · first person singular",
+              "note": "Leo is the yo form of leer; the subject “I” is understood."
+            },
+            "un": {
+              "meaning": "a",
+              "role": "Indefinite article · masculine singular",
+              "note": "Un introduces one unspecified book and agrees with libro."
+            },
+            "libro": {
+              "lexeme": "es-libro",
+              "meaning": "book",
+              "role": "Noun · masculine singular",
+              "note": "In the sentence, libro is the direct object of leo."
+            }
+          }
         },
         "fr": {
           "text": "Je lis un livre.",
@@ -630,7 +712,31 @@ export const readingPilot = {
             {
               "text": "."
             }
-          ]
+          ],
+          "wordDetails": {
+            "Je": {
+              "meaning": "I",
+              "role": "Subject pronoun · first person singular",
+              "note": "Je is the subject of lis."
+            },
+            "lis": {
+              "lexeme": "fr-lire",
+              "meaning": "read",
+              "role": "Present indicative · first person singular here",
+              "note": "Lis agrees with je in this sentence. The same form also occurs with tu."
+            },
+            "un": {
+              "meaning": "a",
+              "role": "Indefinite article · masculine singular",
+              "note": "Un agrees with livre, the object of lis."
+            },
+            "livre": {
+              "lexeme": "fr-livre",
+              "meaning": "book",
+              "role": "Noun · masculine singular",
+              "note": "Here livre means a book, not the feminine noun meaning a pound."
+            }
+          }
         },
         "de": {
           "text": "Ich lese ein Buch.",
@@ -695,7 +801,31 @@ export const readingPilot = {
             {
               "text": "."
             }
-          ]
+          ],
+          "wordDetails": {
+            "Ich": {
+              "meaning": "I",
+              "role": "Subject pronoun · first person singular · nominative",
+              "note": "Ich is the subject of lese."
+            },
+            "lese": {
+              "lexeme": "de-lesen",
+              "meaning": "read",
+              "role": "Present indicative · first person singular",
+              "note": "Lese agrees with ich."
+            },
+            "ein": {
+              "meaning": "a",
+              "role": "Indefinite article · neuter singular · accusative here",
+              "note": "Ein agrees with Buch. The neuter article has the same form in nominative and accusative."
+            },
+            "Buch": {
+              "lexeme": "de-Buch",
+              "meaning": "book",
+              "role": "Noun · neuter singular",
+              "note": "In the sentence, Buch is the direct object, so the noun phrase is accusative."
+            }
+          }
         }
       }
     }

@@ -14,6 +14,7 @@ for(const entry of pack.entries){
   const details=add(column,'details');add(details,'summary','Word forms and grammar references');
   for(const id of t.lexemeIds){const l=pack.lexemes[id];add(details,'p',`${l.lemma} · ${l.pos}${l.gender?' · '+l.gender:''}`);const forms=add(details,'ul');for(const form of l.forms)add(forms,'li',`${form.text} — ${Object.entries(form).filter(([key])=>key!=='text').map(([key,value])=>key==='person'?`person ${value}`:value).join(' · ')}`);}
   for(const id of t.grammarIds)add(details,'p',`${id}: ${pack.grammar[id].description} (draft; evidence pending)`);
+  if(t.wordDetails){const words=add(column,'details');add(words,'summary','Contextual word notes');for(const [word,detail] of Object.entries(t.wordDetails)){add(words,'h4',`${word} — ${detail.meaning}`);add(words,'p',`${detail.role}. ${detail.note}`);}}
   add(column,'h4','Lexical references');
   for(const id of t.sourceIds){const source=pack.sources[id],p=add(column,'p'),link=add(p,'a',source.title);link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';add(p,'small',` · ${source.attribution} · accessed ${source.accessedAt}`);}
  }

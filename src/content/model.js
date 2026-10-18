@@ -32,6 +32,10 @@ export function validatePack(pack,{release=false}={}){
   require(present(e.senseId)&&present(e.definition)&&present(e.prompt)&&['noun','verb','sentence','grammar'].includes(e.type),`${e.id}: incomplete meaning`);
   for(const lang of languages){
    const t=e.translations?.[lang];require(Boolean(t),`${e.id}: missing ${lang}`);if(!t)continue;
+   for(const [word,detail] of Object.entries(t.wordDetails||{})){
+    require(t.text.includes(word)&&present(detail.meaning)&&present(detail.role)&&present(detail.note),`${e.id}/${lang}: invalid word detail ${word}`);
+    if(detail.lexeme)refs([detail.lexeme],pack.lexemes,`${e.id}/${lang}`,lang);
+   }
    const label=`${e.id}/${lang}`;require(present(t.text),`${label}: text required`);review(t,label);
    refs(t.sourceIds,pack.sources,label);refs(t.lexemeIds,pack.lexemes,label,lang);refs(t.grammarIds,pack.grammar,label,lang);
    require(Array.isArray(t.chunks)&&t.chunks.length>0,`${label}: chunks required`);

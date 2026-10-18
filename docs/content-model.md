@@ -13,7 +13,7 @@ The pilot is draft, authored by Codex, with no independent linguistic reviewer. 
 - `src/content.js`: retains the remaining 31 legacy concepts; slots for c3/c19/c26 resolve from the pilot. The fixed slots preserve historical IDs.
 - `src/explanations.js`: uses pilot chunks for the migrated concepts; retains legacy authored explanations for other concepts.
 - `scripts/check-content.mjs`: command-line validation. `npm run check` includes this check.
-- `content-review.html` and `src/content/review.js`: read-only local review page at http://127.0.0.1:5173/content-review.html. Displays the actual pack, lexical references, selected forms, grammar links, and release blockers. No edits or approvals are saved there.
+- `content-review.html` and `src/content/review.js`: read-only local review page at http://127.0.0.1:5173/content-review.html. Displays the actual pack, lexical references, selected forms, grammar links, contextual word notes, and release blockers. No edits or approvals are saved there.
 
 The app does not fetch sources at runtime. Reference links open external dictionary pages only when clicked. Pronunciation remains browser speech synthesis, including the Thomas preference.
 
@@ -23,7 +23,7 @@ The app does not fetch sources at runtime. Reference links open external diction
 | --- | --- |
 | Pack | `schemaVersion`, stable `id`, positive integer `version`, origin note, source/lexeme/grammar registries, entries |
 | Entry | Stable progress `id`, `senseId`, English `prompt`, disambiguating `definition`, lesson `type`, translations for es/fr/de |
-| Translation | Exact taught `text`, lexeme/grammar/source IDs, review metadata, ordered chunks |
+| Translation | Exact taught `text`, lexeme/grammar/source IDs, review metadata, ordered chunks, optional contextual `wordDetails` |
 | Chunk | Exact `text`; clickable chunks also have contextual `meaning`, `summary`, `detail`, lexeme/grammar IDs. Non-clickable spans contain only punctuation/spacing. |
 | Lexeme | ID, language, lemma, part of speech, sense ID, noun gender when applicable, selected forms, source IDs, review metadata |
 | Form | `text` plus applicable number, verb form, mood, tense, and person. The pilot has noun singular/plural and verb infinitive/first-person singular present only. |
@@ -31,7 +31,7 @@ The app does not fetch sources at runtime. Reference links open external diction
 | Source | Title, URL, access date, attribution, reuse/license note, evidence scope. Release requires explicit `reuseReviewed: true`. |
 | Review | `draft`, `in-review`, or `approved`; author, reviewer, review date, notes. Approval requires reviewer and date. |
 
-Sense IDs distinguish meanings rather than assuming English words have one-to-one translations. Chunk references connect to the relevant noun or verb. Standalone pronoun chunks retain contextual prose but have no lexical record in this small pilot. Full function-word records and complete paradigms can be added later; they are not implied by C1.
+Sense IDs distinguish meanings rather than assuming English words have one-to-one translations. Chunk references connect to the relevant noun or verb. Standalone pronoun chunks retain contextual prose but have no lexical record in this small pilot. Full function-word records and complete paradigms can be added later; they are not implied by C1. C2 adds draft contextual `wordDetails` to each pilot translation (pack version 2), including determiners and subject pronouns. Each word has a contextual meaning, role, note, and optional lexical reference. These inherit the translation’s draft review status and are part of its release review; they are not newly approved lexical records.
 
 ## Evidence and licensing
 
@@ -49,6 +49,10 @@ Source reuse terms are recorded as pending inspection and are not marked reviewe
 6. Any material edit to reviewed text, facts, forms, or supporting evidence must reset affected review metadata to draft and increment the pack version before release. This reset is an authoring requirement, not an automatic content-hash enforcement mechanism in C1.
 
 The existing local game uses `lessonEntries` as an explicit **migration adapter**, which validates structure but allows draft content. This preserves access to three lessons already present before C1; it does not certify them, and must not become the default admission path for newly imported C3 material. The remaining legacy bank is also not independently reviewed. `dist/` stays unchanged.
+
+## C2 consumer
+
+`src/details.js` resolves selected pilot words to lexical records and contextual roles. `src/sidebar.js` displays them in a modal details sidebar with sentence context, selected-form tables, and lexical source links. It uses only forms actually present in the pack, labels tables as incomplete, and exposes the draft review status. Legacy content receives no inferred word analyses. The existing sentence is the contextual example; no new example corpus or full paradigms are added.
 
 ## Validation and testing
 
