@@ -7,15 +7,16 @@ export function matchingVoices(voices,locale){
 }
 
 export function createPronouncer(synth,Utterance){
- let request=0,utterance=null,timer=null,waiting=null;
+ let request=0,utterance=null,timer=null,waiting=null,reportState=null;
  const clear=()=>{clearTimeout(timer);timer=null;if(waiting)synth?.removeEventListener('voiceschanged',waiting);waiting=null;};
- function stop(){request++;clear();utterance=null;synth?.cancel();}
+ function stop(){request++;clear();utterance=null;synth?.cancel();reportState?.({state:'idle',message:''});reportState=null;}
  // Kick off asynchronous voice discovery before the first click.
  synth?.getVoices();
  function speak(text,locale,label,report){
-  stop();const id=request;
-  if(!synth||!Utterance){report('Pronunciation is unavailable in this browser.');return;}
-  const fail=()=>report(`${label} audio could not play. Try again or use another browser.`);
+  stop();const id=request;reportState=report;
+  const notify=(state,message='')=>report({state,message});
+  if(!synth||!Utterance){notify('error','Pronunciation is unavailable in this browser.');return;}
+  const fail=()=>notify('error',`${label} audio could not play. Try again or use another browser.`);
   const play=(voices,index=0)=>{
    if(id!==request)return;
    clearTimeout(timer);
@@ -25,10 +26,10 @@ export function createPronouncer(synth,Utterance){
    utterance=u;u.voice=voice;u.lang=voice.lang;u.rate=.85;u.volume=1;
    const current=()=>id===request&&utterance===u;
    const retry=()=>{if(!current())return;utterance=null;clearTimeout(timer);synth.cancel();play(voices,index+1);};
-   u.onstart=()=>{if(current()){clearTimeout(timer);report(`Playing ${label} · ${voice.name}…`);}};
-   u.onend=()=>{if(current()){clearTimeout(timer);utterance=null;report(`${label} · ${voice.name} (playback finished)`);}};
+   u.onstart=()=>{if(current()){clearTimeout(timer);notify('playing');}};
+   u.onend=()=>{if(current()){clearTimeout(timer);utterance=null;notify('idle');}};
    u.onerror=retry;
-   report(`Loading ${label} audio…`);
+   notify('loading');
    timer=setTimeout(retry,5000);
    try{synth.resume();synth.speak(u);}catch{retry();}
   };
@@ -39,9 +40,9 @@ export function createPronouncer(synth,Utterance){
    return false;
   };
   if(select())return;
-  report(`Loading ${label} voice…`);
+  notify('loading');
   waiting=select;synth.addEventListener('voiceschanged',waiting);
-  timer=setTimeout(()=>{clear();if(id===request)report(`No ${label} voice is available in this browser. Enable a ${label} system voice, or try another browser.`);},1800);
+  timer=setTimeout(()=>{clear();if(id===request)notify('error',`No ${label} voice is available in this browser. Enable a ${label} system voice, or try another browser.`);},1800);
  }
  return {speak,stop};
 }
