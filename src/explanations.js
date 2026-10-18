@@ -1,5 +1,4 @@
-import {readingPilot} from './content/reading-pilot.js';
-const pilotEntries=new Map(readingPilot.entries.map(entry=>[entry.id,entry]));
+import {contentRecord} from './content/catalog.js';
 // Curated notes for the current lesson bank; no network requests are needed.
 const genders={
  es:['feminine','masculine','feminine','masculine','feminine','masculine','masculine','masculine','feminine','feminine','feminine','masculine','feminine','feminine','masculine','masculine'],
@@ -48,7 +47,7 @@ const wholeChunks={
  c33:{meaning:'Where?',summary:'Question word · location'}
 };
 export function segments(item,lang){
- const pilot=pilotEntries.get(item.id);if(pilot){if(item[lang]!==pilot.translations[lang].text)throw new Error(`Invalid chunk source: ${item.id}/${lang}`);return pilot.translations[lang].chunks;}
+ const pilot=contentRecord(item.id)?.entry;if(pilot){if(item[lang]!==pilot.translations[lang].text)throw new Error(`Invalid chunk source: ${item.id}/${lang}`);return pilot.translations[lang].chunks;}
  let parts=phrases[item.id]?.[lang];
  if(!parts){
   const whole=wholeChunks[item.id];

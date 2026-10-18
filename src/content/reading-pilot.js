@@ -2,7 +2,7 @@
 export const readingPilot = {
   "schemaVersion": 1,
   "id": "reading-pilot",
-  "version": 2,
+  "version": 3,
   "origin": "Migration of existing starter content, not newly approved teaching material",
   "sources": {
     "es-libro": {
@@ -96,11 +96,67 @@ export const readingPilot = {
         },
         {
           "text": "leo",
+          "subject": "yo",
           "verbForm": "finite",
-          "mood": "indicative",
           "tense": "present",
+          "mood": "indicative",
           "person": 1,
           "number": "singular"
+        },
+        {
+          "text": "lees",
+          "subject": "tú",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "singular"
+        },
+        {
+          "text": "lee",
+          "subject": "él / ella / usted",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "singular"
+        },
+        {
+          "text": "leemos",
+          "subject": "nosotros / nosotras",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 1,
+          "number": "plural"
+        },
+        {
+          "text": "leéis",
+          "subject": "vosotros / vosotras",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "plural"
+        },
+        {
+          "text": "leen",
+          "subject": "ellos / ellas / ustedes",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "plural"
+        },
+        {
+          "text": "leés",
+          "subject": "vos",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "singular",
+          "region": "Common voseo form; regional usage varies."
         }
       ],
       "sourceIds": [
@@ -112,6 +168,12 @@ export const readingPilot = {
         "reviewer": null,
         "reviewedAt": null,
         "notes": "Migrated from the starter bank. Lexical references attached; sentence naturalness and explanatory claims await independent linguistic review."
+      },
+      "paradigm": {
+        "tense": "present",
+        "mood": "indicative",
+        "complete": true,
+        "note": "Usted takes the él/ella form; ustedes takes the ellos/ellas form. Vosotros is primarily used in Spain. The vos row gives a common voseo form; usage varies by region."
       }
     },
     "fr-livre": {
@@ -155,11 +217,57 @@ export const readingPilot = {
         },
         {
           "text": "lis",
+          "subject": "je",
           "verbForm": "finite",
-          "mood": "indicative",
           "tense": "present",
+          "mood": "indicative",
           "person": 1,
           "number": "singular"
+        },
+        {
+          "text": "lis",
+          "subject": "tu",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "singular"
+        },
+        {
+          "text": "lit",
+          "subject": "il / elle / on",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "singular"
+        },
+        {
+          "text": "lisons",
+          "subject": "nous",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 1,
+          "number": "plural"
+        },
+        {
+          "text": "lisez",
+          "subject": "vous",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "plural"
+        },
+        {
+          "text": "lisent",
+          "subject": "ils / elles",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "plural"
         }
       ],
       "sourceIds": [
@@ -171,6 +279,12 @@ export const readingPilot = {
         "reviewer": null,
         "reviewedAt": null,
         "notes": "Migrated from the starter bank. Lexical references attached; sentence naturalness and explanatory claims await independent linguistic review."
+      },
+      "paradigm": {
+        "tense": "present",
+        "mood": "indicative",
+        "complete": true,
+        "note": "Vous can address one person politely or several people. On takes a third-person singular verb, including when it means “we.”"
       }
     },
     "de-Buch": {
@@ -214,11 +328,57 @@ export const readingPilot = {
         },
         {
           "text": "lese",
+          "subject": "ich",
           "verbForm": "finite",
-          "mood": "indicative",
           "tense": "present",
+          "mood": "indicative",
           "person": 1,
           "number": "singular"
+        },
+        {
+          "text": "liest",
+          "subject": "du",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "singular"
+        },
+        {
+          "text": "liest",
+          "subject": "er / sie / es",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "singular"
+        },
+        {
+          "text": "lesen",
+          "subject": "wir",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 1,
+          "number": "plural"
+        },
+        {
+          "text": "lest",
+          "subject": "ihr",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 2,
+          "number": "plural"
+        },
+        {
+          "text": "lesen",
+          "subject": "sie / Sie",
+          "verbForm": "finite",
+          "tense": "present",
+          "mood": "indicative",
+          "person": 3,
+          "number": "plural"
         }
       ],
       "sourceIds": [
@@ -230,6 +390,12 @@ export const readingPilot = {
         "reviewer": null,
         "reviewedAt": null,
         "notes": "Migrated from the starter bank. Lexical references attached; sentence naturalness and explanatory claims await independent linguistic review."
+      },
+      "paradigm": {
+        "tense": "present",
+        "mood": "indicative",
+        "complete": true,
+        "note": "Formal Sie uses the same verb form as plural sie, for either one or several people."
       }
     }
   },
@@ -634,7 +800,13 @@ export const readingPilot = {
               "lexeme": "es-leer",
               "meaning": "(I) read",
               "role": "Present indicative · first person singular",
-              "note": "Leo is the yo form of leer; the subject “I” is understood."
+              "note": "Leo is the yo form of leer; the subject “I” is understood.",
+              "features": {
+                "person": 1,
+                "number": "singular",
+                "tense": "present",
+                "mood": "indicative"
+              }
             },
             "un": {
               "meaning": "a",
@@ -723,7 +895,13 @@ export const readingPilot = {
               "lexeme": "fr-lire",
               "meaning": "read",
               "role": "Present indicative · first person singular here",
-              "note": "Lis agrees with je in this sentence. The same form also occurs with tu."
+              "note": "Lis agrees with je in this sentence. The same form also occurs with tu.",
+              "features": {
+                "person": 1,
+                "number": "singular",
+                "tense": "present",
+                "mood": "indicative"
+              }
             },
             "un": {
               "meaning": "a",
@@ -812,7 +990,13 @@ export const readingPilot = {
               "lexeme": "de-lesen",
               "meaning": "read",
               "role": "Present indicative · first person singular",
-              "note": "Lese agrees with ich."
+              "note": "Lese agrees with ich.",
+              "features": {
+                "person": 1,
+                "number": "singular",
+                "tense": "present",
+                "mood": "indicative"
+              }
             },
             "ein": {
               "meaning": "a",

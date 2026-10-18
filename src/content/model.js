@@ -1,5 +1,7 @@
+import {grammarTopics} from './grammar-topics.js';
 const languages=['es','fr','de'];
 const present=value=>typeof value==='string'&&value.trim().length>0;
+export const lexicalSnapshot=l=>({lemma:l.lemma,senseId:l.senseId,...(l.gender?{gender:l.gender}:{}),forms:l.forms});
 export function validatePack(pack,{release=false}={}){
  const errors=[];
  const require=(condition,message)=>{if(!condition)errors.push(message);};
@@ -20,7 +22,16 @@ export function validatePack(pack,{release=false}={}){
   require(l.id===id&&languages.includes(l.lang)&&['noun','verb','pronoun','determiner','adverb','adjective','preposition','conjunction'].includes(l.pos)&&present(l.lemma)&&present(l.senseId),`Lexeme ${id}: invalid identity`);
   require(Array.isArray(l.forms)&&l.forms.length>0&&l.forms.every(f=>present(f.text)),`Lexeme ${id}: forms required`);
   if(l.pos==='noun')require(['masculine','feminine','neuter'].includes(l.gender),`Lexeme ${id}: gender required`);
+  if(l.paradigm?.complete){
+   const finite=l.forms.filter(f=>f.verbForm==='finite'&&f.tense===l.paradigm.tense&&f.mood===l.paradigm.mood);
+   require(l.pos==='verb'&&finite.every(f=>present(f.subject)),`${id}: conjugation subjects required`);
+   for(const number of ['singular','plural'])for(const person of [1,2,3])require(finite.some(f=>f.number===number&&f.person===person),`${id}: missing ${person}/${number} conjugation`);
+  }
   refs(l.sourceIds,pack.sources,id);review(l,id);
+  if(l.evidence){
+   require(present(l.evidence.checkedBy)&&/^\d{4}-\d{2}-\d{2}$/.test(l.evidence.checkedAt||'')&&l.evidence.checks?.length>0&&l.sourceIds.length>0,`${id}: incomplete source check`);
+   require(JSON.stringify(l.evidence.snapshot)===JSON.stringify(lexicalSnapshot(l)),`${id}: source check is stale; recheck changed lexical data`);
+  }
  }
  for(const [id,g] of Object.entries(pack.grammar||{})){
   require(g.id===id&&languages.includes(g.lang)&&present(g.description),`Grammar ${id}: invalid identity`);refs(g.sourceIds,pack.sources,id);review(g,id);
@@ -30,6 +41,7 @@ export function validatePack(pack,{release=false}={}){
  for(const e of pack.entries||[]){
   require(present(e.id)&&!seen.has(e.id),`Duplicate or missing entry ID: ${e.id}`);seen.add(e.id);
   require(present(e.senseId)&&present(e.definition)&&present(e.prompt)&&['noun','verb','sentence','grammar'].includes(e.type),`${e.id}: incomplete meaning`);
+  if(e.type==='grammar')require(Object.hasOwn(grammarTopics,e.grammarTopic||''),`${e.id}: recognized grammarTopic required`);
   for(const lang of languages){
    const t=e.translations?.[lang];require(Boolean(t),`${e.id}: missing ${lang}`);if(!t)continue;
    for(const [word,detail] of Object.entries(t.wordDetails||{})){
@@ -52,7 +64,7 @@ export function validatePack(pack,{release=false}={}){
 export function assertPack(pack,options){const errors=validatePack(pack,options);if(errors.length)throw new Error(errors.join('\n'));return pack;}
 export function lessonEntries(pack){
  assertPack(pack);
- return pack.entries.map(e=>({id:e.id,type:e.type,en:e.prompt,...Object.fromEntries(languages.map(lang=>[lang,e.translations[lang].text]))}));
+ return pack.entries.map(e=>({id:e.id,type:e.type,en:e.prompt,...(e.grammarTopic?{grammarTopic:e.grammarTopic}:{}),...Object.fromEntries(languages.map(lang=>[lang,e.translations[lang].text]))}));
 }
 // A future release exporter must use this gate, not the migration adapter above.
 export function approvedEntries(pack){assertPack(pack,{release:true});return lessonEntries(pack);}
