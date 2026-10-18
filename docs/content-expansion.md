@@ -2,7 +2,7 @@
 
 ## Current deliverable
 
-C2 was committed as `db63ea1`. C3's first tranche adds a **draft** foundation pack of 50 meanings / 150 translations: 30 nouns, 8 verbs, 8 sentences, and 4 subject-agreement exercises. This is an authored everyday-vocabulary selection, not a measured top-frequency list. It is not the full future curriculum, and C3 remains ongoing until evidence and review requirements are satisfied.
+C2 was committed as `db63ea1`; the first C3 tranche was committed as `e3ddcf7`. C3's first tranche adds a **draft** foundation pack of 50 meanings / 150 translations: 30 nouns, 8 verbs, 8 sentences, and 4 subject-agreement exercises. This is an authored everyday-vocabulary selection, not a measured top-frequency list. It is not the full future curriculum, and C3 remains ongoing until evidence and review requirements are satisfied.
 
 - Source: `src/content/foundation.js`; data assembly is deterministic and runs locally, without AI or network requests.
 - Preview: http://127.0.0.1:5173/?pack=foundation
@@ -32,12 +32,14 @@ Structural validation and tests check coverage, reference integrity, conjugation
 
 ## Expansion plan beyond the first tranche
 
-1. **Vocabulary:** build a source-backed candidate pool, initially around 500–1,000 useful meanings, expandable toward 10,000. Rank within each language using frequency evidence, normalize inflected forms to lemmas, and disambiguate meanings before aligning translations. The current 50 are not frequency-ranked. Add adjectives, adverbs, and fixed expressions when their model and review coverage are ready.
+1. **Vocabulary:** follow the [proposed curriculum budgets](curriculum.md): 800 lexical sense-items per language for the core, 1,600 through the extension. Author and source-check the U01 inventory, then continue through the remaining units without batch approval pauses. A later library may expand toward 10,000. Rank within each language using frequency evidence, normalize inflected forms to lemmas, and disambiguate meanings before aligning translations. The current 50 are not frequency-ranked. Add adjectives, adverbs, and fixed expressions when their model and review coverage are ready.
 2. **Grammar progression:** see the [audited topics and proposed progression](grammar-topics.md). Topic metadata and muted labels are implemented; filters, prerequisite sequencing, and exercises for the full progression are planned. The foundation pack currently targets subject–verb agreement.
 3. **Sentences:** select reviewed examples or author controlled candidates with mostly known vocabulary and one target construction. Record intended meaning and language-specific chunks. Avoid unconstrained substitutions; naturalness, ambiguity, register, and accepted answers need review. Existing candidates focus on writing, shopping, doors/windows, and transport.
 4. **Evidence:** attach supporting lexical and grammatical references at the claim/record level, preserve attribution, inspect reuse terms, and pin revisions where possible. Frequency data ranks candidates; it does not verify translation or grammar. Imported corpora need their own provenance and license checks.
-5. **Review and release:** independent linguistic review, corrections, reviewer/date metadata, reuse review, then strict release validation. Code approval is not linguistic approval. Do not promote drafts merely to make the release gate pass.
+5. **Review and release:** the user authorized continued local authoring using the existing source-comparison process on 2026-10-18. Independent linguistic review adds assurance but is not a blocker to this work. Keep per-record evidence and review metadata truthful; method acceptance is not a claim that every entry was individually reviewed. Publication is separately authorized and the existing strict release gate remains unchanged. Do not promote drafts merely to make that gate pass. See [content maintenance](content-maintenance.md) for reports and corrections.
 
 ## Manual verification
 
 Open the draft preview, advance to a verb, select it and choose More: check the full present table. Advance to “I write a letter,” inspect the verb, and confirm only the relevant row is highlighted. Switch to the noun phrase and inspect its article and noun. Check the review page’s 114/114 lexical coverage, scoped source links, and still-pending independent review. Inspect potato and ballpoint pen: French de/à should be prepositions within the intact noun phrase. Return to regular lessons and verify the normal settings/history remain separate.
+
+The next content work is exact U01 inventory and example authoring, continuing through the [16-unit specification](curriculum.md) without batch approval pauses. The user has accepted the source-comparison method. Neither that acceptance nor the implemented reporting flow changes runtime content or the publication gate.

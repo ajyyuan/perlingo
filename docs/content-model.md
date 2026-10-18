@@ -76,3 +76,7 @@ Manual checks: open the local content review page, inspect each of the three con
 ## Grammar topic metadata
 
 Grammar entries require a recognized `grammarTopic` from `src/content/grammar-topics.js`. The lesson adapter preserves it separately from the prompt. Home learning, study, recall, and content review render its muted label above the sentence/phrase. Foundation v3 removes the embedded “Agreement:” prefix; the four legacy grammar entries similarly replace embedded prefixes with accurate topic IDs. See [coverage and planned progression](grammar-topics.md). This changes neither the four main categories nor content approval status.
+
+## Continued authoring and corrections
+
+The user accepted the existing source-comparison method for ongoing local authoring on 2026-10-18; individual batch approvals and independent linguistic review do not block that work. This does not change the strict publication gate or permit fabricated reviewer metadata. See [content maintenance](content-maintenance.md) for the implemented local report snapshots, export workflow, and correction process.

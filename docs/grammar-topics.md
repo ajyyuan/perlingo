@@ -20,7 +20,7 @@ The foundation pack remains an explicit draft preview. Other examples may contai
 
 ## Proposed progression — future curriculum
 
-This is a planning sequence, not implemented filtering, prerequisite logic, or completed content. Coverage and order must be designed separately for each language.
+These are topic families, not a strict teaching order. The [curriculum specification](curriculum.md) proposes an interleaved 16-unit sequence with language-specific targets and prerequisites. Neither filtering, prerequisite logic, nor the complete content is implemented.
 
 1. Articles, gender, and number.
 2. Subject–verb agreement.

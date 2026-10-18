@@ -1,3 +1,4 @@
+import {openReport,reportContext} from './reports.js';
 import {inspectChunk,formLabel,formsForWord} from './details.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let dialog=null,returnFocus=null;
@@ -7,6 +8,7 @@ export function openDetails(item,lang,chunk,anchor){
  const details=inspectChunk(item,lang,chunk);
  dialog=document.createElement('dialog');dialog.className='details-sidebar';dialog.setAttribute('aria-labelledby','details-title');
  dialog.innerHTML=`<header class="details-header"><span class="eyebrow">Why this form?</span><button class="plain" data-close aria-label="Close details">×</button></header><h2 id="details-title" lang="${lang}">${esc(chunk.text)}</h2><p class="details-gloss">${esc(chunk.meaning)}</p><p class="muted">${esc(chunk.summary)}</p><p>${esc(chunk.detail)}</p><section><h3>In context</h3><p lang="${lang}" class="details-context">${esc(details.sentence)}</p><p class="muted">${esc(details.english)}</p></section><section><h3>Inspect a word</h3><div class="word-picker">${details.words.map((w,i)=>`<button data-word="${i}" lang="${lang}" aria-pressed="false">${esc(w.text)}</button>`).join('')}</div><div id="word-details" role="region" aria-label="Selected word details" aria-live="polite"></div></section><p class="hint">${details.pilot?'Draft content · Independent linguistic review pending.':'Starter content · Independent linguistic review pending. Structured forms are not yet available for this entry.'}</p>${details.sources.length?`<details class="detail-sources"><summary>Lexical references</summary>${details.sources.map(s=>`<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></p>`).join('')}<p class="hint">These references do not certify every sentence or explanation.</p></details>`:''}`;
+ const reportButton=document.createElement('button');reportButton.className='plain';reportButton.textContent='Report an issue';reportButton.onclick=()=>openReport(reportContext(item,lang,{chunk}),reportButton);dialog.append(reportButton);
  const select=i=>{
   const w=details.words[i],lexeme=w.lexeme;
   dialog.querySelectorAll('[data-word]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.word)===i)));
