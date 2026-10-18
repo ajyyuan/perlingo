@@ -14,3 +14,9 @@ The starter bank has 34 concepts with 102 translations. It is finite, manually a
 Progress and settings are saved to localStorage on the current browser and origin, without cross-device sync. Export progress downloads JSON. The simple review scheduler tracks each concept/language pair, doubles intervals on a correct first answer, and resets to one day on an incorrect first answer. Each pair is scheduled at most once per session, and future-due pairs included for comparison do not advance. Since learning precedes recall, the session accuracy is not a delayed-retention measurement.
 
 Source: `src/content.js` (curriculum), `src/engine.js` (selection and review), `src/app.js` (interface), `src/style.css` (design). `dist` holds the static publication copy. No server-side application data is stored.
+
+Interaction design: [Learning chunks and contextual explanations](docs/learning-chunks.md) defines translation grouping, contextual glosses, popover behavior, and current implementation gaps.
+
+During learning, click a grammatical learning chunk to pronounce it and open a contextual popover. Articles stay with nouns, multiword verb constructions stay together, and fixed expressions remain intact. More expands a curated explanation inside the overlay; the lesson does not move. Speaker buttons play the full translation. Escape, outside click, or the close button dismiss the popover. This help is not available during recall.
+
+Development workflow: follow [AGENTS.md](AGENTS.md). Keep documentation synchronized with each meaningful change, provide local checks and testing steps, and wait for explicit approval before committing. Publishing or pushing requires a separate request. Local source and the published `dist/` copy can differ; these learning-chunk changes are local until explicitly published.
