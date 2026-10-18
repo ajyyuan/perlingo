@@ -5,7 +5,7 @@ A browser app for learning Spanish, French, and German in parallel.
 Run `npm run dev`, then open http://127.0.0.1:5173. No install or API key required.
 Run `npm test` and `npm run check` for validation.
 
-Choose languages and concept counts, study translations side by side, and answer shuffled multiple-choice questions until you achieve three consecutive perfect rounds. One error invalidates that round. Pronunciation uses browser speech synthesis and available device voices. Focus mode narrows the layout for recordings.
+The home screen opens on one concept. Use Settings to choose languages; persistent concept counts are tucked under the collapsed Session structure section. Study translations side by side, and answer shuffled multiple-choice questions until you achieve three consecutive perfect rounds. One error invalidates that round. Pronunciation uses browser speech synthesis and available device voices. The minimal responsive layout keeps one concept on screen, with translations arranged horizontally on desktop and in compact rows on mobile.
 
 The starter bank has 34 concepts with 102 translations. It is finite, manually authored content, not an automatically generated curriculum. Verbs start with infinitives; sentences provide selected conjugated examples. Review selection includes all due concepts before adding unseen concepts to fill the requested counts. There is not yet a configurable new/review percentage.
 
