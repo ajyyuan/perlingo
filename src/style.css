@@ -29,6 +29,15 @@ h2 { font-size: 14px; font-weight: 500; margin: 0 0 20px; }
 .icon { display: grid; place-items: center; width: 44px; height: 44px; }
 main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .concept, .quiz { width: min(100%, 640px); margin: 52px auto; }
+/* A quiet paper surface for the active lesson; keep its original content width. */
+.concept, .quiz.typed {
+  width: min(100%, 722px);
+  padding: 30px 40px 26px;
+  border: 1px solid #e5e3da;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #fffefa, #f7f6ef);
+  box-shadow: 0 2px 3px #282b2504, 0 12px 32px #282b2507;
+}
 .study-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .eyebrow, .badge { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
 .eyebrow { margin: 0; }
@@ -110,6 +119,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 @media (max-width: 600px) {
   .shell { padding: 16px 24px; }
   .concept, .quiz { margin: 36px auto; }
+  .concept, .quiz.typed { padding: 24px 20px 20px; border-radius: 12px; }
   .concept-body { padding: 34px 0 30px; }
   .word { font-size: 48px; margin-bottom: 30px; }
   .translations { grid-template-columns: 1fr; gap: 12px; }

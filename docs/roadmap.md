@@ -1,6 +1,6 @@
 # Perlingo roadmap
 
-The next sequence is C1–C5, replacing the previous suggested ordering. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
+The sequence is C1–C6, replacing the previous suggested ordering. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
 
 | Task | Scope | Status |
 | --- | --- | --- |
@@ -9,5 +9,6 @@ The next sequence is C1–C5, replacing the previous suggested ordering. The use
 | C3 | Expand vocabulary, constructions, and sentences using the C1 structure and review process | Full 16-unit content draft authored, including 384 new examples per language, contrast/transfer modes and sourced reference-form tables. [Actual counts and evidence limits](course-authoring.md). Foundation’s 114 checks are retained; new scoped comparisons and local issue capture/export are implemented. Full evidence coverage, component analyses, sentence/reuse review and proposed mastery progression remain pending. No release approval is claimed. |
 | C4 | AI follow-up conversation | Removed at user request. No chatbot, OpenAI backend, or API-key setup remains in the app. A different AI integration may be explored later; no replacement is selected or implemented. |
 | C5 | Restrained animation and reduced-motion support | Implemented and user-approved: brief overlay entrances, typed-answer feedback fade, and button color transitions. OS/browser Reduced Motion disables all added effects. See [motion behavior](motion.md). |
+| C6 | Subtle flashcard surface for learning and recall | Implemented and user-approved: warm paper shading, fine border, rounded corners, faint shadow, and responsive inset spacing. See [visual treatment](flashcard-surface.md). |
 
 Completed earlier: B1 quiet pronunciation and B2 contextual learning-chunk popovers. B4 is partially implemented through chunk selection; individual word selection within a chunk is C2. C1 stores selected word forms, not complete conjugation tables. No external content API, AI generation, import at scale, or new teaching content is introduced by C1.

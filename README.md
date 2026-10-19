@@ -23,7 +23,7 @@ Development workflow: follow [AGENTS.md](AGENTS.md). Keep documentation synchron
 
 Content foundation: [C1 data model and review workflow](docs/content-model.md). Three existing concepts now come from `src/content/reading-pilot.js`; the remaining 31 use the legacy bank. The pilot records meanings, word forms, grammar links, sources, and **draft** review status. No independent linguistic approval is claimed. Inspect the [local content review page](http://127.0.0.1:5173/content-review.html). `npm run check` includes structural content validation; release validation intentionally rejects this draft pilot.
 
-Next steps and status: [C1–C5 roadmap](docs/roadmap.md).
+Next steps and status: [C1–C6 roadmap](docs/roadmap.md).
 
 C3 draft expansion: [50 new concepts](http://127.0.0.1:5173/?pack=foundation), with [a separate review page](http://127.0.0.1:5173/content-review.html?pack=foundation) and isolated preview progress. All 114 lexical records now have source comparisons and scoped references; sentence/prose checks and independent review remain pending. They are not approved additions to the regular bank. See the [scope, confidence limits, and expansion plan](docs/content-expansion.md). “Available forms” has been replaced with present-tense conjugation tables and singular/plural noun tables.
 
@@ -36,3 +36,5 @@ Content maintenance: the user has accepted the source-comparison method for cont
 Course authoring preview: [practice](http://127.0.0.1:5173/?pack=course), [content review](http://127.0.0.1:5173/content-review.html?pack=course-u16), and [exact scope, counts, evidence and testing steps](docs/course-authoring.md). All 16 units are drafted: **1,755 Spanish / 1,743 French / 1,730 German unique lexical items**, plus **397 contextual examples per language** (384 new, 13 retained). Course offers learn-first production, two-choice meaning contrasts, and transfer recall without a learning pass. More includes additional sourced forms where available. These are draft teaching records, not independently verified or frequency-ranked vocabulary. `node scripts/check-course.mjs --complete` still fails on incomplete source coverage; strict release approval remains pending. No content is pushed or published by local previewing.
 
 Motion: brief overlay entrances, typed-answer feedback fades, and button color transitions respect the OS/browser Reduced Motion preference. Dismissal and question navigation stay immediate. See [behavior and testing](docs/motion.md). The C4 chatbot was removed; the app requires no AI API key. Other possible AI integrations remain future exploration.
+
+C6 visual treatment: the learning and recall panels have a softly shaded paper surface, a fine border, rounded corners, and a faint shadow. Desktop padding preserves the prior content width; mobile uses tighter padding. See [flashcard surface and testing](docs/flashcard-surface.md).
