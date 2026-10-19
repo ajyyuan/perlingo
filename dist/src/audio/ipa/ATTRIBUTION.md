@@ -1,0 +1,62 @@
+# IPA recording credits
+
+Retrieved 2026-10-19 from Wikimedia Commons. Audio retains its individual license independently of application code. MP3 files are Commons transcodes, unedited by Perlingo. Source links provide original files and creator details.
+
+- **i** — close front unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 69.mp3.
+- **y** — close front rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Close_front_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 79.mp3.
+- **u** — close back rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Close_back_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 75.mp3.
+- **ɪ** — near-close near-front unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 26a.mp3.
+- **ʏ** — near-close near-front rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Near-close_near-front_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 28f.mp3.
+- **ʊ** — near-close near-back rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 28a.mp3.
+- **e** — close-mid front unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Close-mid_front_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 65.mp3.
+- **ø** — close-mid front rounded vowel. Denelson83. [Source](https://commons.wikimedia.org/wiki/File:Close-mid_front_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: f8.mp3.
+- **o** — close-mid back rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Close-mid_back_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6f.mp3.
+- **ə** — mid-central vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Mid-central_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 259.mp3.
+- **ɛ** — open-mid front unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Open-mid_front_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 25b.mp3.
+- **œ** — open-mid front rounded vowel. JøMa (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Open-mid_front_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 153.mp3.
+- **ɔ** — open-mid back rounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Open-mid_back_rounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 254.mp3.
+- **ɐ** — near-open central unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Near-open_central_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 250.mp3.
+- **a** — open front unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Open_front_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 61.mp3.
+- **ɑ** — open back unrounded vowel. Denelson83 (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Open_back_unrounded_vowel.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 251.mp3.
+- **p** — voiceless bilabial plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_bilabial_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 70.mp3.
+- **b** — voiced bilabial plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_bilabial_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 62.mp3.
+- **t** — voiceless alveolar plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 74.mp3.
+- **d** — voiced alveolar plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_alveolar_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 64.mp3.
+- **k** — voiceless velar plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_velar_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6b.mp3.
+- **ɡ** — voiced velar plosive. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_velar_plosive.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 261.mp3.
+- **ʔ** — glottal stop. Peter Isotalo (attributed by Commons). [Source](https://commons.wikimedia.org/wiki/File:Glottal_stop.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 294.mp3.
+- **m** — bilabial nasal. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Bilabial_nasal.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6d.mp3.
+- **n** — alveolar nasal. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Alveolar_nasal.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6e.mp3.
+- **ɲ** — palatal nasal. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Palatal_nasal.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 272.mp3.
+- **ŋ** — velar nasal. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Velar_nasal.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 14b.mp3.
+- **f** — voiceless labiodental fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 66.mp3.
+- **v** — voiced labiodental fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_labiodental_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 76.mp3.
+- **θ** — voiceless dental fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_dental_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 3b8.mp3.
+- **ð** — voiced dental fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_dental_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: f0.mp3.
+- **s** — voiceless alveolar sibilant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_sibilant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 73.mp3.
+- **z** — voiced alveolar sibilant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_alveolar_sibilant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 7a.mp3.
+- **ʃ** — voiceless palato-alveolar sibilant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_sibilant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 283.mp3.
+- **ʒ** — voiced palato-alveolar sibilant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_palato-alveolar_sibilant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 292.mp3.
+- **ç** — voiceless palatal fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_palatal_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: e7.mp3.
+- **x** — voiceless velar fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_velar_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 78.mp3.
+- **ɣ** — voiced velar fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_velar_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 263.mp3.
+- **ʁ** — voiced uvular fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_uvular_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 281.mp3.
+- **h** — voiceless glottal fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_glottal_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 68.mp3.
+- **β** — voiced bilabial fricative. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_bilabial_fricative.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 3b2.mp3.
+- **j** — palatal approximant. karmosin. [Source](https://commons.wikimedia.org/wiki/File:Palatal_approximant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6a.mp3.
+- **w** — voiced labio-velar approximant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiced_labio-velar_approximant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 77.mp3.
+- **l** — alveolar lateral approximant. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Alveolar_lateral_approximant.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 6c.mp3.
+- **r** — alveolar trill. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Alveolar_trill.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 72.mp3.
+- **ɾ** — alveolar tap. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Alveolar_tap.ogg); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 27e.mp3.
+- **t͡ʃ** — voiceless palato-alveolar affricate. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_affricate.ogg); [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). File: 74-361-283.mp3.
+- **t͡s** — voiceless alveolar affricate. Peter Isotalo. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_sibilant_affricate.oga); [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). File: 74-361-73.mp3.
+- **p͡f** — voiceless labiodental affricate. Adamsa123. [Source](https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_affricate.ogg); [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). File: 70-361-66.mp3.
+- **ɑ̃** — open back unrounded nasal vowel. YodaMaster445. [Source](https://commons.wikimedia.org/wiki/File:Open_back_unrounded_nasal_vowel.ogg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: 251-303.mp3.
+- **ɔ̃** — nasalised open-mid back rounded vowel. Manuel Pégourié-Gonnard. [Source](https://commons.wikimedia.org/wiki/File:Nasalised_open-mid_back_rounded_vowel.ogg); [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en). File: 254-303.mp3.
+- **ɛ̃** — nasalised open-mid front unrounded vowel. Manuel Pégourié-Gonnard. [Source](https://commons.wikimedia.org/wiki/File:Nasalised_open-mid_front_unrounded_vowel.ogg); [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en). File: 25b-303.mp3.
+
+- [ɜ: open-mid central unrounded vowel](https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg) — Denelson83 (attributed by Commons), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). `25c.mp3`: unchanged Commons MP3 transcode.
+
+- [ʝ: voiced palatal fricative](https://commons.wikimedia.org/wiki/File:Voiced_palatal_fricative.ogg) — Peter Isotalo, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). `29d.mp3`: unchanged Commons MP3 transcode.
+
+- [ʎ: voiced palatal lateral approximant](https://commons.wikimedia.org/wiki/File:Voiced_palatal_lateral_approximant.ogg) — Dan Palraz, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). `28e.mp3`: unchanged Commons MP3 transcode.

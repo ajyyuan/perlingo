@@ -30,7 +30,7 @@ for(const [i,row] of nouns.entries()){
  const forms=langs.map((lang,j)=>{const [lemma,plural,g,article]=values.slice(j*4,j*4+4);return noun(lemma,plural,genders[g],article);});
  const entry=add(`noun-${i+1}`,'noun',meaning,forms);
  for(const lang of langs){const t=entry.translations[lang],l=pack.lexemes[t.lexemeIds[0]];for(const [word,detail] of Object.entries(t.wordDetails))if(word===l.lemma){detail.meaning=meaning;detail.lexeme=l.id;}
- if(t.text.startsWith('l’'))t.wordDetails[t.text]={meaning:`(the) ${meaning}`,role:`Elided definite article + ${l.gender} singular noun`,note:`l’ is the article before this vowel sound. The noun is ${l.lemma}.`,lexeme:l.id};}
+ if(t.text.startsWith('l’'))t.wordDetails[t.text]={features:{number:'singular'},meaning:`(the) ${meaning}`,role:`Elided definite article + ${l.gender} singular noun`,note:`l’ is the article before this vowel sound. The noun is ${l.lemma}.`,lexeme:l.id};}
 }
 const verbs=[
  ['be (identity)','ser|soy|eres|es|somos|sois|son','être|suis|es|est|sommes|êtes|sont','sein|bin|bist|ist|sind|seid|sind'],

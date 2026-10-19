@@ -1058,9 +1058,7 @@ export const ipaSounds=[
     "name": "open-mid central unrounded vowel",
     "row": "Open-mid",
     "column": "Central",
-    "languages": [
-      "de"
-    ],
+    "languages": [],
     "kind": "vowels",
     "title": "File:Open-mid central unrounded vowel.ogg",
     "source": "https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg",
