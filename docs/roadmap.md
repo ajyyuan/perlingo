@@ -1,6 +1,6 @@
 # Perlingo roadmap
 
-Completed work is tracked below, with C9–C10 planned next. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
+Completed work is tracked below. The next workstreams are D1–D4. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
 
 | Task | Scope | Status |
 | --- | --- | --- |
@@ -19,18 +19,42 @@ Published: promote the full course to the default route, preserve existing cours
 Published SRS: app-days with 4 → 32 → graduate scheduling, review misses reset to +4, one attempt per review, perfect full rounds for new material, and a 108 planned-answer cap with reviews prioritized. Unfinished days resume from browser-local storage. See [spaced review](spaced-review.md). Included in production.
 
 
-## Next backlog (2026-10-19)
+## C-series implementation history (2026-10-19)
 
-C7 and C7.5 are committed. C8 and the settings/reporting improvements are committed as `ef9cceb`; live authentication and report delivery are configured, with the remaining validation limits below. C9 swipe navigation was withdrawn after the user reported unreliable behavior on iPhone; fixed mobile controls are now user-tested and approved for publication. Audio comparison and C10 remain planned. Work on one agreed task at a time; the ordering below is a proposal, not authorization to implement the entire backlog.
+C7 and C7.5 are committed. C8 and the settings/reporting improvements are committed as `ef9cceb`; live authentication and report delivery are configured, with the remaining validation limits below. C9 swipe navigation was withdrawn after the user reported unreliable behavior on iPhone; fixed mobile controls are user-tested and published in version 11. Remaining work is organized as D1–D4 below. Work on one agreed task at a time; the ordering below is a proposal, not authorization to implement the entire backlog.
 
 | Task | Scope | Next decision / acceptance criteria |
 | --- | --- | --- |
 | C7 | Answer feedback: a short chime after each submitted recall answer, followed by pronunciation of the correct answer; simple correct/incorrect animation | Implemented locally: original quiet synthesized cues, then the taught translation through the existing voice player; saved Settings sound toggle and post-submission pronunciation replay and Quick meaning/Pronunciation/Grammar help on the revealed correct translation, submission-only correct/miss motion, reduced-motion support, and cancellation on navigation/mute/page hiding. Scoring/SRS unchanged. 94 tests and content checks pass. Committed as `e471bed`; included in the approved release package. See [behavior and testing](answer-feedback.md). |
 | C7.5 | Restart the entire unfinished app-day | Implemented locally: confirmation, frozen-plan replay, rollback of completed review scheduling/journal entries, and saved checkpoints. Preserves earlier days and optional practice history. Legacy days with already-completed reviews and no checkpoint are excluded. 97 tests and content checks pass; committed as `9ffc5b6`; included in the approved release package. See [restart behavior](spaced-review.md#restart-day-c75). |
 | C8 | Optional sign-in and saved/synchronized progress | Google/Apple-only local UI with PKCE callbacks, persistent sessions and existing sync/conflict protection. 117 tests pass. Google credentials and local redirects configured; Google enabled for testing. Google login verified on the existing account; email login disabled. Apple configured and enabled; Apple login, long-duration refresh and two-device tests pending. Cleaned settings, official provider buttons, private admin report inbox and email notifications are implemented. Live report delivery to reports@perlingo.app and forwarding to the owner were verified. Committed as `ef9cceb`; frontend included in the approved release package. See [setup](accounts.md). |
-| C9 | Mobile usability and consistent pronunciation audio | Both swipe experiments removed after iPhone feedback. User-approved update: fixed bottom labeled navigation on screens up to 600 px; native scrolling, safe-area padding and unchanged desktop controls. Double-tap zoom is suppressed while pinch zoom remains available. 117 tests pass; user tested the iPhone preview and approved commit, push and publication on 2026-10-19. See [trial](keyboard-navigation.md#fixed-mobile-controls-local-trial). Audio comparison remains planned. |
-| C10 | Custom domain and eventual iOS app | perlingo.app is registered on Cloudflare, with report email forwarding configured. Choose a hosting setup; evaluate mobile web/PWA versus a native or wrapped iOS app after C9. Domain purchases, accounts, and App Store release require separate explicit authorization. |
+| C9 | Mobile usability and consistent pronunciation audio | Both swipe experiments removed after iPhone feedback. User-approved update: fixed bottom labeled navigation on screens up to 600 px; native scrolling, safe-area padding and unchanged desktop controls. Double-tap zoom is suppressed while pinch zoom remains available. 117 tests pass; user tested the iPhone preview and approved commit, push and publication on 2026-10-19. See [trial](keyboard-navigation.md#fixed-mobile-controls-local-trial). Audio comparison continues as D1. |
+| C10 | Custom domain and eventual iOS app | Planned scope renamed D2 below; not implemented. |
 
 Publication history: Sites version 9 published commit `c1c1c98`, including C7 feedback, C7.5 restart, C8 accounts/settings/reports and the experimental C9 swipe strip. Version 10 (`6af5b43`) removed only the swipe feature and retained those earlier improvements and production authentication redirects. 117 tests pass. Apple login, long-duration session refresh and two-device sync validation remain pending.
 
-The next approved release package adds fixed mobile Previous/Next controls, safe-area spacing and double-tap zoom suppression. Both swipe experiments remain removed.
+Sites version 11 published commit `b214e6c`: fixed mobile Previous/Next controls, safe-area spacing and double-tap zoom suppression with pinch zoom preserved. Both swipe experiments remain removed. All 117 tests and syntax/content checks passed.
+
+
+## Next workstreams: D1–D4
+
+These IDs replace the four next-step workstreams discussed on 2026-10-19. They do not authorize implementing or publishing the whole backlog. Suggested execution order: D3 account verification first, then D1 audio; D2 and D4 remain separately scoped work.
+
+| Task | Scope | Status / acceptance criteria |
+| --- | --- | --- |
+| D1 | Consistent pronunciation audio | Compare recorded/pre-generated Spanish, French and German voices for pronunciation quality, coverage, licensing, cost, caching and fallback behavior. No provider chosen. Preserve quiet feedback and the French Thomas preference in the existing browser fallback. |
+| D2 | Domain and app delivery | perlingo.app is registered on Cloudflare and report email forwarding works. Configure app hosting at that domain, then evaluate an installable web app/PWA versus native or wrapped iOS delivery. No native app or custom-domain app hosting is implemented. |
+| D3 | Account verification and readiness | Verify live Apple sign-in, phone↔computer progress sync/conflict recovery, and long-lived session refresh. Google is still configured for test users; review production audience readiness. Google login and report email delivery were verified earlier, but do not substitute for these checks. |
+| D4 | Curriculum verification | Complete remaining source checks and content review across the 16-unit draft, including component analyses, sentence/reuse review and evidence gaps. See course-authoring.md and content-maintenance.md. Independent linguistic review is optional additional assurance, not a blocker to authorized local authoring. |
+
+
+
+
+
+
+
+
+
+D3 current checkpoint: provider login, phone/computer resume, offline conflict choices, recovery export, phone restart and local sign-out isolation passed within the [documented scope](accounts.md#d3-verification-checkpoint--2026-10-19). A real forced token refresh passed; a long-duration automatic soak is not claimed. Introduction/privacy pages are implemented locally for review, not published. Google remains External/Testing with Publish app disabled; public rollout depends on approved pages, domain delivery (D2), scope declaration and any required Google verification.
+
+D3 technical verification is complete within the recorded scope: runtime Google email/profile scopes, real forced SDK refresh with progress access, and isolated relational deletion rehearsal passed. Full public readiness remains gated on approved public-page publication, domain configuration and Google branding/verification; no external configuration changed.
