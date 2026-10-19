@@ -3,12 +3,13 @@ import {grammarTopicLabel} from './grammar-topics.js';
 const pack=packs.find(p=>p.id===new URLSearchParams(location.search).get('pack'))||packs[0];
 import {validatePack} from './model.js';
 const add=(parent,tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;parent.append(node);return node;};
+const picker=document.createElement('select');picker.setAttribute('aria-label','Content pack');for(const p of packs){const option=new Option(p.id,p.id,p.id===pack.id,p.id===pack.id);picker.add(option);}picker.addEventListener('change',()=>{location.search='?pack='+encodeURIComponent(picker.value);});document.querySelector('#validation').before(picker);
 const issues=validatePack(pack);
-document.querySelector('#pack-preview').href=pack.id==='foundation'?'/?pack=foundation':'/';
+document.querySelector('#pack-preview').href=pack.id.startsWith('course-')?'/?pack=course':pack.id==='foundation'?'/?pack=foundation':'/';
 document.querySelector('#validation').textContent=issues.length?issues.join('\n'):`${pack.id} v${pack.version} · Structure valid · ${pack.entries.length} meanings / ${pack.entries.reduce((n,e)=>n+Object.keys(e.translations).length,0)} translations · Draft — no independent reviewer`;
 document.querySelector('#blockers').textContent=validatePack(pack,{release:true}).join('\n');
 const checked=Object.values(pack.lexemes).filter(l=>l.evidence).length;
-if(checked){const summary=add(document.querySelector('#validation').parentElement,'p',`${checked}/${Object.keys(pack.lexemes).length} lexical records source-compared. This checks recorded meanings and forms, not independent approval. Sentence naturalness, teaching prose, regional suitability, and reuse review remain pending.`,'status');document.querySelector('#validation').after(summary);}
+if(checked){const summary=add(document.querySelector('#validation').parentElement,'p',`${checked}/${Object.keys(pack.lexemes).length} lexical records source-compared. Each record lists the narrower comparison actually performed; a headword match does not verify its intended sense or every form. Sentence naturalness, teaching prose, regional suitability, and reuse review remain pending.`,'status');document.querySelector('#validation').after(summary);}
 for(const entry of pack.entries){
  const article=add(document.querySelector('#entries'),'article');if(grammarTopicLabel(entry))add(article,'p',grammarTopicLabel(entry),'muted');add(article,'h2',entry.prompt);add(article,'p',`${entry.id} · ${entry.senseId} · ${entry.definition}`,'muted');
  const grid=add(article,'div',undefined,'grid');

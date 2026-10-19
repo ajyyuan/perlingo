@@ -71,7 +71,7 @@ Manual checks: open the local content review page, inspect each of the three con
 
 ## C3 preview admission
 
-`src/content/catalog.js` contains both packs. All new IDs are prefixed `f-`, and collisions fail at load time. `/?pack=foundation` explicitly uses the structure-only adapter for draft practice and a separate storage key. The regular bank keeps its existing concepts and translations; grammar topic metadata replaces its English prompt prefixes. The review page selects either pack via its `pack` query parameter; checks run on both. This is a preview exception, not release approval.
+`src/content/catalog.js` contains the pilot, foundation and sixteen course packs. All new IDs are prefixed `f-`, and collisions fail at load time. `/?pack=foundation` explicitly uses the structure-only adapter for draft practice and a separate storage key. The regular bank keeps its existing concepts and translations; grammar topic metadata replaces its English prompt prefixes. The review page selects either pack via its `pack` query parameter; checks run on every registered pack. This is a preview exception, not release approval.
 
 ## Grammar topic metadata
 
@@ -80,3 +80,9 @@ Grammar entries require a recognized `grammarTopic` from `src/content/grammar-to
 ## Continued authoring and corrections
 
 The user accepted the existing source-comparison method for ongoing local authoring on 2026-10-18; individual batch approvals and independent linguistic review do not block that work. This does not change the strict publication gate or permit fabricated reviewer metadata. See [content maintenance](content-maintenance.md) for the implemented local report snapshots, export workflow, and correction process.
+
+## Course extensions
+
+Course entries optionally include `unitId`, `kind` (`vocabulary` or `example`), and, for examples, a recognized `objectiveId`, `mode`, and `situation`. `acceptedAnswers` is an optional per-translation array of nonempty strings; the adapter carries those arrays to recall. Lexemes also support numeral and expression records, with actual part of speech preserved for adjectives, adverbs and pronouns. Standalone non-noun/verb vocabulary uses the existing sentence session quota; the `kind` field keeps vocabulary counts separate from contextual examples. No automatic semantic answer checker is added. See [authoring status](course-authoring.md).
+
+Course contrast entries require exactly two distinct `contrastOptions` including the English prompt. The adapter preserves mode/objective/unit metadata. Transfer and contrast records bypass learning and ordinary review-history updates. `countTowardsInventory:false` excludes productive combinations from counts, and whole-course counts deduplicate lemmas across part-of-speech labels. Form records can include tense, mood, person, number, gender, case and usage. Reference extraction admits only complete six-person verb groups; it is not a general conjugation generator. Frozen comparison evidence remains distinct from review approval. See [current scope and source limitations](course-authoring.md).

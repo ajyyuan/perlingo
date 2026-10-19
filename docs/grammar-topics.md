@@ -42,3 +42,7 @@ Language-specific work includes Spanish omitted subjects and regional address fo
 ## Authoring and validation
 
 A structured grammar entry must name a recognized `grammarTopic`; `lessonEntries` retains it for study/recall. Use the actual teaching target, not a broad inferred label. The topic registry contains only currently used topics; extend it deliberately when authoring new exercises. The four legacy entries carry explicit metadata by stable ID. Tests cover the audit, missing/unknown metadata, and preservation through lesson and recall adapters.
+
+## Course objective labels
+
+The expanded course registers one grammar-topic ID per unit objective (`course-u01.1` through `course-u16.3`). Its 384 new examples use those labels in production, contrast and transfer practice. The table above audits the earlier starter/foundation bank; it does not describe the full expanded inventory. Topic filtering, prerequisite recommendations and mastery checkpoints remain future work. See [current course scope](course-authoring.md).

@@ -1,0 +1,6320 @@
+{
+  "date": "2026-10-18",
+  "scope": "Literal translation pairs, headword parts of speech and explicitly tagged forms; not a sentence/meaning/register certification. Existing frozen pilot/foundation checks are not replaced.",
+  "counts": {
+    "records": 4375,
+    "translationPairs": 3772,
+    "formRecords": 3700
+  },
+  "dictionaryFiles": {
+    "eng-spa": {
+      "sha256": "85c6055f18be00f8b2edfccd76c0f050e8aa4575d54aaa61fe597e54fcef950d",
+      "matches": 1492,
+      "candidates": 1856
+    },
+    "eng-fra": {
+      "sha256": "5b7e1f657c5902f10ace0a31a6ffa3702ac0b5a49dfcc66883040c2a5e05a9a6",
+      "matches": 1017,
+      "candidates": 1856
+    },
+    "eng-deu": {
+      "sha256": "529b7565b1ecf210b5118d220f26aba6326ad30de0e38060256b0c394defba77",
+      "matches": 1404,
+      "candidates": 1856
+    }
+  },
+  "unmatchedLexemes": [
+    {
+      "id": "fr.u01-number-17",
+      "lemma": "dix-sept",
+      "meaning": "seventeen"
+    },
+    {
+      "id": "fr.u01-number-18",
+      "lemma": "dix-huit",
+      "meaning": "eighteen"
+    },
+    {
+      "id": "fr.u01-number-19",
+      "lemma": "dix-neuf",
+      "meaning": "nineteen"
+    },
+    {
+      "id": "fr.u01-expression-1",
+      "lemma": "bonjour",
+      "meaning": "hello"
+    },
+    {
+      "id": "de.u01-expression-1",
+      "lemma": "hallo",
+      "meaning": "hello"
+    },
+    {
+      "id": "de.u01-expression-2",
+      "lemma": "guten Morgen",
+      "meaning": "good morning"
+    },
+    {
+      "id": "de.u01-expression-3",
+      "lemma": "guten Abend",
+      "meaning": "good evening"
+    },
+    {
+      "id": "de.u01-expression-4",
+      "lemma": "gute Nacht",
+      "meaning": "good night"
+    },
+    {
+      "id": "de.u01-expression-5",
+      "lemma": "auf Wiedersehen",
+      "meaning": "goodbye"
+    },
+    {
+      "id": "fr.u01-expression-6",
+      "lemma": "à bientôt",
+      "meaning": "see you soon"
+    },
+    {
+      "id": "de.u01-expression-6",
+      "lemma": "bis bald",
+      "meaning": "see you soon"
+    },
+    {
+      "id": "fr.u01-expression-7",
+      "lemma": "à demain",
+      "meaning": "see you tomorrow"
+    },
+    {
+      "id": "de.u01-expression-7",
+      "lemma": "bis morgen",
+      "meaning": "see you tomorrow"
+    },
+    {
+      "id": "de.u01-expression-8",
+      "lemma": "danke",
+      "meaning": "thank you"
+    },
+    {
+      "id": "fr.u01-expression-9",
+      "lemma": "merci beaucoup",
+      "meaning": "thank you very much"
+    },
+    {
+      "id": "de.u01-expression-9",
+      "lemma": "vielen Dank",
+      "meaning": "thank you very much"
+    },
+    {
+      "id": "fr.u01-expression-10",
+      "lemma": "s’il vous plaît",
+      "meaning": "please"
+    },
+    {
+      "id": "es.u01-expression-11",
+      "lemma": "de nada",
+      "meaning": "you’re welcome"
+    },
+    {
+      "id": "fr.u01-expression-11",
+      "lemma": "de rien",
+      "meaning": "you’re welcome"
+    },
+    {
+      "id": "de.u01-expression-11",
+      "lemma": "gern geschehen",
+      "meaning": "you’re welcome"
+    },
+    {
+      "id": "fr.u01-expression-12",
+      "lemma": "excusez-moi",
+      "meaning": "excuse me"
+    },
+    {
+      "id": "de.u01-expression-12",
+      "lemma": "entschuldigen Sie",
+      "meaning": "excuse me"
+    },
+    {
+      "id": "fr.u01-expression-13",
+      "lemma": "désolé",
+      "meaning": "sorry"
+    },
+    {
+      "id": "de.u01-expression-13",
+      "lemma": "Entschuldigung",
+      "meaning": "sorry"
+    },
+    {
+      "id": "es.u01-expression-16",
+      "lemma": "de acuerdo",
+      "meaning": "okay"
+    },
+    {
+      "id": "fr.u01-expression-16",
+      "lemma": "d’accord",
+      "meaning": "okay"
+    },
+    {
+      "id": "es.u01-expression-17",
+      "lemma": "encantado",
+      "meaning": "nice to meet you"
+    },
+    {
+      "id": "fr.u01-expression-17",
+      "lemma": "enchanté",
+      "meaning": "nice to meet you"
+    },
+    {
+      "id": "de.u01-expression-17",
+      "lemma": "freut mich",
+      "meaning": "nice to meet you"
+    },
+    {
+      "id": "es.u01-expression-18",
+      "lemma": "¿Cómo estás?",
+      "meaning": "how are you?"
+    },
+    {
+      "id": "fr.u01-expression-18",
+      "lemma": "Comment vas-tu ?",
+      "meaning": "how are you?"
+    },
+    {
+      "id": "de.u01-expression-18",
+      "lemma": "Wie geht es dir?",
+      "meaning": "how are you?"
+    },
+    {
+      "id": "fr.u01-expression-19",
+      "lemma": "très bien",
+      "meaning": "very well"
+    },
+    {
+      "id": "de.u01-expression-19",
+      "lemma": "sehr gut",
+      "meaning": "very well"
+    },
+    {
+      "id": "es.u01-expression-20",
+      "lemma": "no está mal",
+      "meaning": "not bad"
+    },
+    {
+      "id": "fr.u01-expression-20",
+      "lemma": "pas mal",
+      "meaning": "not bad"
+    },
+    {
+      "id": "fr.u01-adverb-1",
+      "lemma": "ici",
+      "meaning": "here"
+    },
+    {
+      "id": "fr.u01-adverb-2",
+      "lemma": "là-bas",
+      "meaning": "there"
+    },
+    {
+      "id": "fr.u01-adverb-4",
+      "lemma": "aujourd’hui",
+      "meaning": "today"
+    },
+    {
+      "id": "es.u02-v-lie-down",
+      "lemma": "tumbarse",
+      "meaning": "lie down"
+    },
+    {
+      "id": "fr.u02-x-1",
+      "lemma": "à l’intérieur",
+      "meaning": "inside"
+    },
+    {
+      "id": "fr.u02-x-2",
+      "lemma": "à l’extérieur",
+      "meaning": "outside"
+    },
+    {
+      "id": "fr.u02-x-3",
+      "lemma": "à l’étage",
+      "meaning": "upstairs"
+    },
+    {
+      "id": "fr.u02-x-4",
+      "lemma": "en bas",
+      "meaning": "downstairs"
+    },
+    {
+      "id": "es.u02-x-5",
+      "lemma": "en todas partes",
+      "meaning": "everywhere"
+    },
+    {
+      "id": "es.u02-x-6",
+      "lemma": "en otra parte",
+      "meaning": "elsewhere"
+    },
+    {
+      "id": "es.u02-x-7",
+      "lemma": "por separado",
+      "meaning": "apart"
+    },
+    {
+      "id": "fr.u02-x-7",
+      "lemma": "séparément",
+      "meaning": "apart"
+    },
+    {
+      "id": "fr.u02-x-11",
+      "lemma": "à la maison",
+      "meaning": "at home"
+    },
+    {
+      "id": "de.u02-x-11",
+      "lemma": "zu Hause",
+      "meaning": "at home"
+    },
+    {
+      "id": "es.u02-x-12",
+      "lemma": "mi familia",
+      "meaning": "my family"
+    },
+    {
+      "id": "fr.u02-x-12",
+      "lemma": "ma famille",
+      "meaning": "my family"
+    },
+    {
+      "id": "es.u02-x-13",
+      "lemma": "tu familia",
+      "meaning": "your family"
+    },
+    {
+      "id": "fr.u02-x-13",
+      "lemma": "ta famille",
+      "meaning": "your family"
+    },
+    {
+      "id": "de.u02-x-13",
+      "lemma": "deine Familie",
+      "meaning": "your family"
+    },
+    {
+      "id": "es.u02-x-14",
+      "lemma": "nuestro hogar",
+      "meaning": "our home"
+    },
+    {
+      "id": "fr.u02-x-14",
+      "lemma": "notre foyer",
+      "meaning": "our home"
+    },
+    {
+      "id": "de.u02-x-14",
+      "lemma": "unser Zuhause",
+      "meaning": "our home"
+    },
+    {
+      "id": "es.u02-x-15",
+      "lemma": "siéntete como en casa",
+      "meaning": "make yourself at home"
+    },
+    {
+      "id": "fr.u02-x-15",
+      "lemma": "fais comme chez toi",
+      "meaning": "make yourself at home"
+    },
+    {
+      "id": "de.u02-x-15",
+      "lemma": "fühl dich wie zu Hause",
+      "meaning": "make yourself at home"
+    },
+    {
+      "id": "fr.u02-x-17",
+      "lemma": "un peu",
+      "meaning": "a little"
+    },
+    {
+      "id": "fr.u02-x-19",
+      "lemma": "plus ou moins",
+      "meaning": "more or less"
+    },
+    {
+      "id": "de.u02-x-19",
+      "lemma": "mehr oder weniger",
+      "meaning": "more or less"
+    },
+    {
+      "id": "fr.u02-x-20",
+      "lemma": "bien sûr",
+      "meaning": "of course"
+    },
+    {
+      "id": "de.u02-x-21",
+      "lemma": "überhaupt nicht",
+      "meaning": "not at all"
+    },
+    {
+      "id": "es.u02-x-22",
+      "lemma": "eso es mío",
+      "meaning": "that's mine"
+    },
+    {
+      "id": "fr.u02-x-22",
+      "lemma": "c’est à moi",
+      "meaning": "that's mine"
+    },
+    {
+      "id": "de.u02-x-22",
+      "lemma": "das gehört mir",
+      "meaning": "that's mine"
+    },
+    {
+      "id": "es.u02-x-23",
+      "lemma": "eso es tuyo",
+      "meaning": "that's yours"
+    },
+    {
+      "id": "fr.u02-x-23",
+      "lemma": "c’est à toi",
+      "meaning": "that's yours"
+    },
+    {
+      "id": "de.u02-x-23",
+      "lemma": "das gehört dir",
+      "meaning": "that's yours"
+    },
+    {
+      "id": "es.u02-x-24",
+      "lemma": "¿de quién es?",
+      "meaning": "whose is it?"
+    },
+    {
+      "id": "fr.u02-x-24",
+      "lemma": "c’est à qui ?",
+      "meaning": "whose is it?"
+    },
+    {
+      "id": "de.u02-x-24",
+      "lemma": "wem gehört das?",
+      "meaning": "whose is it?"
+    },
+    {
+      "id": "es.u02-x-25",
+      "lemma": "¿cuántos años tienes?",
+      "meaning": "how old are you?"
+    },
+    {
+      "id": "fr.u02-x-25",
+      "lemma": "quel âge as-tu ?",
+      "meaning": "how old are you?"
+    },
+    {
+      "id": "de.u02-x-25",
+      "lemma": "wie alt bist du?",
+      "meaning": "how old are you?"
+    },
+    {
+      "id": "es.u02-x-26",
+      "lemma": "tengo veinte años",
+      "meaning": "I am twenty years old"
+    },
+    {
+      "id": "fr.u02-x-26",
+      "lemma": "j’ai vingt ans",
+      "meaning": "I am twenty years old"
+    },
+    {
+      "id": "de.u02-x-26",
+      "lemma": "ich bin zwanzig Jahre alt",
+      "meaning": "I am twenty years old"
+    },
+    {
+      "id": "es.u02-x-27",
+      "lemma": "me alegro de verte",
+      "meaning": "nice to see you"
+    },
+    {
+      "id": "fr.u02-x-27",
+      "lemma": "ça me fait plaisir de te voir",
+      "meaning": "nice to see you"
+    },
+    {
+      "id": "de.u02-x-27",
+      "lemma": "schön, dich zu sehen",
+      "meaning": "nice to see you"
+    },
+    {
+      "id": "es.u02-x-28",
+      "lemma": "pase",
+      "meaning": "come in"
+    },
+    {
+      "id": "fr.u02-x-28",
+      "lemma": "entrez",
+      "meaning": "come in"
+    },
+    {
+      "id": "de.u02-x-28",
+      "lemma": "kommen Sie herein",
+      "meaning": "come in"
+    },
+    {
+      "id": "es.u02-x-29",
+      "lemma": "siéntese",
+      "meaning": "take a seat"
+    },
+    {
+      "id": "fr.u02-x-29",
+      "lemma": "asseyez-vous",
+      "meaning": "take a seat"
+    },
+    {
+      "id": "de.u02-x-29",
+      "lemma": "nehmen Sie Platz",
+      "meaning": "take a seat"
+    },
+    {
+      "id": "es.u02-x-30",
+      "lemma": "disculpe el desorden",
+      "meaning": "excuse the mess"
+    },
+    {
+      "id": "fr.u02-x-30",
+      "lemma": "excusez le désordre",
+      "meaning": "excuse the mess"
+    },
+    {
+      "id": "de.u02-x-30",
+      "lemma": "entschuldigen Sie die Unordnung",
+      "meaning": "excuse the mess"
+    },
+    {
+      "id": "es.u02-x-31",
+      "lemma": "sírvase",
+      "meaning": "help yourself"
+    },
+    {
+      "id": "fr.u02-x-31",
+      "lemma": "servez-vous",
+      "meaning": "help yourself"
+    },
+    {
+      "id": "de.u02-x-31",
+      "lemma": "bedienen Sie sich",
+      "meaning": "help yourself"
+    },
+    {
+      "id": "fr.u02-x-32",
+      "lemma": "à plus tard",
+      "meaning": "see you later"
+    },
+    {
+      "id": "de.u02-x-32",
+      "lemma": "bis später",
+      "meaning": "see you later"
+    },
+    {
+      "id": "fr.u03-n-leisure",
+      "lemma": "temps libre",
+      "meaning": "free time"
+    },
+    {
+      "id": "fr.u03-n-timetable",
+      "lemma": "emploi du temps",
+      "meaning": "timetable"
+    },
+    {
+      "id": "fr.u03-n-classroom",
+      "lemma": "salle de classe",
+      "meaning": "classroom"
+    },
+    {
+      "id": "fr.u03-v-get-up",
+      "lemma": "se lever",
+      "meaning": "get up"
+    },
+    {
+      "id": "fr.u03-x-1",
+      "lemma": "habituellement",
+      "meaning": "usually"
+    },
+    {
+      "id": "fr.u03-x-5",
+      "lemma": "rarement",
+      "meaning": "rarely"
+    },
+    {
+      "id": "fr.u03-x-10",
+      "lemma": "plus tard",
+      "meaning": "later"
+    },
+    {
+      "id": "es.u03-x-11",
+      "lemma": "todos los días",
+      "meaning": "every day"
+    },
+    {
+      "id": "fr.u03-x-11",
+      "lemma": "tous les jours",
+      "meaning": "every day"
+    },
+    {
+      "id": "de.u03-x-11",
+      "lemma": "jeden Tag",
+      "meaning": "every day"
+    },
+    {
+      "id": "es.u03-x-12",
+      "lemma": "cada semana",
+      "meaning": "every week"
+    },
+    {
+      "id": "fr.u03-x-12",
+      "lemma": "chaque semaine",
+      "meaning": "every week"
+    },
+    {
+      "id": "de.u03-x-12",
+      "lemma": "jede Woche",
+      "meaning": "every week"
+    },
+    {
+      "id": "es.u03-x-13",
+      "lemma": "por la mañana",
+      "meaning": "in the morning"
+    },
+    {
+      "id": "es.u03-x-14",
+      "lemma": "por la tarde",
+      "meaning": "in the afternoon"
+    },
+    {
+      "id": "fr.u03-x-14",
+      "lemma": "l’après-midi",
+      "meaning": "in the afternoon"
+    },
+    {
+      "id": "de.u03-x-14",
+      "lemma": "am Nachmittag",
+      "meaning": "in the afternoon"
+    },
+    {
+      "id": "es.u03-x-15",
+      "lemma": "por la tarde",
+      "meaning": "in the evening"
+    },
+    {
+      "id": "de.u03-x-15",
+      "lemma": "am Abend",
+      "meaning": "in the evening"
+    },
+    {
+      "id": "fr.u03-x-16",
+      "lemma": "la nuit",
+      "meaning": "at night"
+    },
+    {
+      "id": "es.u03-x-17",
+      "lemma": "al mediodía",
+      "meaning": "at noon"
+    },
+    {
+      "id": "fr.u03-x-17",
+      "lemma": "à midi",
+      "meaning": "at noon"
+    },
+    {
+      "id": "es.u03-x-18",
+      "lemma": "a medianoche",
+      "meaning": "at midnight"
+    },
+    {
+      "id": "fr.u03-x-18",
+      "lemma": "à minuit",
+      "meaning": "at midnight"
+    },
+    {
+      "id": "es.u03-x-19",
+      "lemma": "los lunes",
+      "meaning": "on Mondays"
+    },
+    {
+      "id": "fr.u03-x-19",
+      "lemma": "le lundi",
+      "meaning": "on Mondays"
+    },
+    {
+      "id": "es.u03-x-20",
+      "lemma": "los fines de semana",
+      "meaning": "on weekends"
+    },
+    {
+      "id": "fr.u03-x-20",
+      "lemma": "le week-end",
+      "meaning": "on weekends"
+    },
+    {
+      "id": "de.u03-x-20",
+      "lemma": "am Wochenende",
+      "meaning": "on weekends"
+    },
+    {
+      "id": "fr.u03-x-21",
+      "lemma": "de temps en temps",
+      "meaning": "from time to time"
+    },
+    {
+      "id": "de.u03-x-21",
+      "lemma": "ab und zu",
+      "meaning": "from time to time"
+    },
+    {
+      "id": "fr.u03-x-22",
+      "lemma": "à l’heure",
+      "meaning": "on time"
+    },
+    {
+      "id": "es.u03-x-23",
+      "lemma": "con prisa",
+      "meaning": "in a hurry"
+    },
+    {
+      "id": "fr.u03-x-23",
+      "lemma": "pressé",
+      "meaning": "in a hurry"
+    },
+    {
+      "id": "de.u03-x-23",
+      "lemma": "in Eile",
+      "meaning": "in a hurry"
+    },
+    {
+      "id": "fr.u03-x-24",
+      "lemma": "au travail",
+      "meaning": "at work"
+    },
+    {
+      "id": "es.u03-x-25",
+      "lemma": "después del trabajo",
+      "meaning": "after work"
+    },
+    {
+      "id": "fr.u03-x-25",
+      "lemma": "après le travail",
+      "meaning": "after work"
+    },
+    {
+      "id": "de.u03-x-25",
+      "lemma": "nach der Arbeit",
+      "meaning": "after work"
+    },
+    {
+      "id": "fr.u03-x-26",
+      "lemma": "en chemin",
+      "meaning": "on the way"
+    },
+    {
+      "id": "es.u03-x-27",
+      "lemma": "que tengas un buen día",
+      "meaning": "have a good day"
+    },
+    {
+      "id": "fr.u03-x-27",
+      "lemma": "bonne journée",
+      "meaning": "have a good day"
+    },
+    {
+      "id": "de.u03-x-27",
+      "lemma": "einen schönen Tag noch",
+      "meaning": "have a good day"
+    },
+    {
+      "id": "es.u03-x-28",
+      "lemma": "que duermas bien",
+      "meaning": "sleep well"
+    },
+    {
+      "id": "fr.u03-x-28",
+      "lemma": "dors bien",
+      "meaning": "sleep well"
+    },
+    {
+      "id": "de.u03-x-28",
+      "lemma": "schlaf gut",
+      "meaning": "sleep well"
+    },
+    {
+      "id": "es.u03-x-29",
+      "lemma": "hora de descansar",
+      "meaning": "time for a break"
+    },
+    {
+      "id": "fr.u03-x-29",
+      "lemma": "c’est l’heure de la pause",
+      "meaning": "time for a break"
+    },
+    {
+      "id": "de.u03-x-29",
+      "lemma": "Zeit für eine Pause",
+      "meaning": "time for a break"
+    },
+    {
+      "id": "es.u03-x-30",
+      "lemma": "¿qué hora es?",
+      "meaning": "what time is it?"
+    },
+    {
+      "id": "fr.u03-x-30",
+      "lemma": "quelle heure est-il ?",
+      "meaning": "what time is it?"
+    },
+    {
+      "id": "de.u03-x-30",
+      "lemma": "wie spät ist es?",
+      "meaning": "what time is it?"
+    },
+    {
+      "id": "es.u03-x-31",
+      "lemma": "es la una",
+      "meaning": "it's one o'clock"
+    },
+    {
+      "id": "fr.u03-x-31",
+      "lemma": "il est une heure",
+      "meaning": "it's one o'clock"
+    },
+    {
+      "id": "de.u03-x-31",
+      "lemma": "es ist ein Uhr",
+      "meaning": "it's one o'clock"
+    },
+    {
+      "id": "es.u03-x-32",
+      "lemma": "son las dos y media",
+      "meaning": "it's half past two"
+    },
+    {
+      "id": "fr.u03-x-32",
+      "lemma": "il est deux heures et demie",
+      "meaning": "it's half past two"
+    },
+    {
+      "id": "de.u03-x-32",
+      "lemma": "es ist halb drei",
+      "meaning": "it's half past two"
+    },
+    {
+      "id": "fr.u04-v-mean",
+      "lemma": "vouloir dire",
+      "meaning": "mean"
+    },
+    {
+      "id": "de.u04-v-remember",
+      "lemma": "sich erinnern",
+      "meaning": "remember"
+    },
+    {
+      "id": "fr.u04-x-7",
+      "lemma": "peut-être",
+      "meaning": "perhaps"
+    },
+    {
+      "id": "fr.u04-x-11",
+      "lemma": "je ne sais pas",
+      "meaning": "I don't know"
+    },
+    {
+      "id": "de.u04-x-11",
+      "lemma": "ich weiß es nicht",
+      "meaning": "I don't know"
+    },
+    {
+      "id": "es.u04-x-12",
+      "lemma": "no tengo ni idea",
+      "meaning": "I have no idea"
+    },
+    {
+      "id": "fr.u04-x-12",
+      "lemma": "je n’en ai aucune idée",
+      "meaning": "I have no idea"
+    },
+    {
+      "id": "de.u04-x-12",
+      "lemma": "ich habe keine Ahnung",
+      "meaning": "I have no idea"
+    },
+    {
+      "id": "fr.u04-x-13",
+      "lemma": "ça dépend",
+      "meaning": "it depends"
+    },
+    {
+      "id": "es.u04-x-14",
+      "lemma": "¿estás seguro?",
+      "meaning": "are you sure?"
+    },
+    {
+      "id": "fr.u04-x-14",
+      "lemma": "tu es sûr ?",
+      "meaning": "are you sure?"
+    },
+    {
+      "id": "de.u04-x-14",
+      "lemma": "bist du sicher?",
+      "meaning": "are you sure?"
+    },
+    {
+      "id": "es.u04-x-15",
+      "lemma": "¿es correcto?",
+      "meaning": "is that right?"
+    },
+    {
+      "id": "fr.u04-x-15",
+      "lemma": "c’est correct ?",
+      "meaning": "is that right?"
+    },
+    {
+      "id": "de.u04-x-15",
+      "lemma": "stimmt das?",
+      "meaning": "is that right?"
+    },
+    {
+      "id": "es.u04-x-16",
+      "lemma": "¿por qué no?",
+      "meaning": "why not?"
+    },
+    {
+      "id": "fr.u04-x-16",
+      "lemma": "pourquoi pas ?",
+      "meaning": "why not?"
+    },
+    {
+      "id": "de.u04-x-16",
+      "lemma": "warum nicht?",
+      "meaning": "why not?"
+    },
+    {
+      "id": "es.u04-x-17",
+      "lemma": "¿para qué?",
+      "meaning": "what for?"
+    },
+    {
+      "id": "fr.u04-x-17",
+      "lemma": "pour quoi faire ?",
+      "meaning": "what for?"
+    },
+    {
+      "id": "de.u04-x-17",
+      "lemma": "wozu?",
+      "meaning": "what for?"
+    },
+    {
+      "id": "es.u04-x-18",
+      "lemma": "¿cuántas veces?",
+      "meaning": "how many times?"
+    },
+    {
+      "id": "fr.u04-x-18",
+      "lemma": "combien de fois ?",
+      "meaning": "how many times?"
+    },
+    {
+      "id": "de.u04-x-18",
+      "lemma": "wie oft?",
+      "meaning": "how many times?"
+    },
+    {
+      "id": "es.u04-x-19",
+      "lemma": "¿cuánto tiempo?",
+      "meaning": "how long?"
+    },
+    {
+      "id": "fr.u04-x-19",
+      "lemma": "combien de temps ?",
+      "meaning": "how long?"
+    },
+    {
+      "id": "de.u04-x-19",
+      "lemma": "wie lange?",
+      "meaning": "how long?"
+    },
+    {
+      "id": "es.u04-x-20",
+      "lemma": "¿desde cuándo?",
+      "meaning": "since when?"
+    },
+    {
+      "id": "fr.u04-x-20",
+      "lemma": "depuis quand ?",
+      "meaning": "since when?"
+    },
+    {
+      "id": "de.u04-x-20",
+      "lemma": "seit wann?",
+      "meaning": "since when?"
+    },
+    {
+      "id": "es.u04-x-21",
+      "lemma": "¿hasta cuándo?",
+      "meaning": "until when?"
+    },
+    {
+      "id": "fr.u04-x-21",
+      "lemma": "jusqu’à quand ?",
+      "meaning": "until when?"
+    },
+    {
+      "id": "de.u04-x-21",
+      "lemma": "bis wann?",
+      "meaning": "until when?"
+    },
+    {
+      "id": "es.u04-x-22",
+      "lemma": "¿de dónde?",
+      "meaning": "where from?"
+    },
+    {
+      "id": "fr.u04-x-22",
+      "lemma": "d’où ?",
+      "meaning": "where from?"
+    },
+    {
+      "id": "de.u04-x-22",
+      "lemma": "woher?",
+      "meaning": "where from?"
+    },
+    {
+      "id": "es.u04-x-23",
+      "lemma": "¿adónde?",
+      "meaning": "where to?"
+    },
+    {
+      "id": "fr.u04-x-23",
+      "lemma": "où ?",
+      "meaning": "where to?"
+    },
+    {
+      "id": "de.u04-x-23",
+      "lemma": "wohin?",
+      "meaning": "where to?"
+    },
+    {
+      "id": "es.u04-x-24",
+      "lemma": "nada de nada",
+      "meaning": "nothing at all"
+    },
+    {
+      "id": "fr.u04-x-24",
+      "lemma": "rien du tout",
+      "meaning": "nothing at all"
+    },
+    {
+      "id": "es.u04-x-25",
+      "lemma": "nadie más",
+      "meaning": "nobody else"
+    },
+    {
+      "id": "fr.u04-x-25",
+      "lemma": "personne d’autre",
+      "meaning": "nobody else"
+    },
+    {
+      "id": "de.u04-x-25",
+      "lemma": "niemand sonst",
+      "meaning": "nobody else"
+    },
+    {
+      "id": "fr.u04-x-26",
+      "lemma": "pas encore",
+      "meaning": "not yet"
+    },
+    {
+      "id": "fr.u04-x-27",
+      "lemma": "ne … plus",
+      "meaning": "no longer"
+    },
+    {
+      "id": "es.u04-x-28",
+      "lemma": "no siempre",
+      "meaning": "not always"
+    },
+    {
+      "id": "fr.u04-x-28",
+      "lemma": "pas toujours",
+      "meaning": "not always"
+    },
+    {
+      "id": "de.u04-x-28",
+      "lemma": "nicht immer",
+      "meaning": "not always"
+    },
+    {
+      "id": "fr.u04-x-29",
+      "lemma": "au contraire",
+      "meaning": "on the contrary"
+    },
+    {
+      "id": "de.u04-x-29",
+      "lemma": "im Gegenteil",
+      "meaning": "on the contrary"
+    },
+    {
+      "id": "es.u04-x-30",
+      "lemma": "así es",
+      "meaning": "that's right"
+    },
+    {
+      "id": "fr.u04-x-30",
+      "lemma": "c’est ça",
+      "meaning": "that's right"
+    },
+    {
+      "id": "de.u04-x-30",
+      "lemma": "das stimmt",
+      "meaning": "that's right"
+    },
+    {
+      "id": "es.u04-x-31",
+      "lemma": "eso no es correcto",
+      "meaning": "that's not right"
+    },
+    {
+      "id": "fr.u04-x-31",
+      "lemma": "ce n’est pas correct",
+      "meaning": "that's not right"
+    },
+    {
+      "id": "de.u04-x-31",
+      "lemma": "das stimmt nicht",
+      "meaning": "that's not right"
+    },
+    {
+      "id": "es.u04-x-32",
+      "lemma": "una pregunta más",
+      "meaning": "one more question"
+    },
+    {
+      "id": "fr.u04-x-32",
+      "lemma": "encore une question",
+      "meaning": "one more question"
+    },
+    {
+      "id": "de.u04-x-32",
+      "lemma": "noch eine Frage",
+      "meaning": "one more question"
+    },
+    {
+      "id": "fr.u05-v-need",
+      "lemma": "avoir besoin",
+      "meaning": "need"
+    },
+    {
+      "id": "fr.u05-x-5",
+      "lemma": "moins",
+      "meaning": "less"
+    },
+    {
+      "id": "fr.u05-x-8",
+      "lemma": "séparément",
+      "meaning": "separately"
+    },
+    {
+      "id": "de.u05-x-8",
+      "lemma": "einzeln",
+      "meaning": "separately"
+    },
+    {
+      "id": "es.u05-x-9",
+      "lemma": "en total",
+      "meaning": "altogether"
+    },
+    {
+      "id": "fr.u05-x-9",
+      "lemma": "au total",
+      "meaning": "altogether"
+    },
+    {
+      "id": "fr.u05-x-10",
+      "lemma": "chacun",
+      "meaning": "each"
+    },
+    {
+      "id": "es.u05-x-11",
+      "lemma": "quisiera …",
+      "meaning": "I'd like …"
+    },
+    {
+      "id": "fr.u05-x-11",
+      "lemma": "je voudrais …",
+      "meaning": "I'd like …"
+    },
+    {
+      "id": "de.u05-x-11",
+      "lemma": "ich hätte gern …",
+      "meaning": "I'd like …"
+    },
+    {
+      "id": "fr.u05-x-12",
+      "lemma": "l’addition, s’il vous plaît",
+      "meaning": "the bill, please"
+    },
+    {
+      "id": "de.u05-x-12",
+      "lemma": "die Rechnung, bitte",
+      "meaning": "the bill, please"
+    },
+    {
+      "id": "es.u05-x-13",
+      "lemma": "¿cuánto cuesta?",
+      "meaning": "how much is it?"
+    },
+    {
+      "id": "fr.u05-x-13",
+      "lemma": "combien ça coûte ?",
+      "meaning": "how much is it?"
+    },
+    {
+      "id": "de.u05-x-13",
+      "lemma": "wie viel kostet das?",
+      "meaning": "how much is it?"
+    },
+    {
+      "id": "es.u05-x-14",
+      "lemma": "¿algo más?",
+      "meaning": "anything else?"
+    },
+    {
+      "id": "fr.u05-x-14",
+      "lemma": "autre chose ?",
+      "meaning": "anything else?"
+    },
+    {
+      "id": "de.u05-x-14",
+      "lemma": "sonst noch etwas?",
+      "meaning": "anything else?"
+    },
+    {
+      "id": "es.u05-x-15",
+      "lemma": "eso es todo",
+      "meaning": "that's all"
+    },
+    {
+      "id": "fr.u05-x-15",
+      "lemma": "c’est tout",
+      "meaning": "that's all"
+    },
+    {
+      "id": "de.u05-x-15",
+      "lemma": "das ist alles",
+      "meaning": "that's all"
+    },
+    {
+      "id": "es.u05-x-16",
+      "lemma": "para llevar",
+      "meaning": "take away"
+    },
+    {
+      "id": "fr.u05-x-16",
+      "lemma": "à emporter",
+      "meaning": "take away"
+    },
+    {
+      "id": "de.u05-x-16",
+      "lemma": "zum Mitnehmen",
+      "meaning": "take away"
+    },
+    {
+      "id": "es.u05-x-17",
+      "lemma": "para comer aquí",
+      "meaning": "eat here"
+    },
+    {
+      "id": "fr.u05-x-17",
+      "lemma": "sur place",
+      "meaning": "eat here"
+    },
+    {
+      "id": "de.u05-x-17",
+      "lemma": "zum Hieressen",
+      "meaning": "eat here"
+    },
+    {
+      "id": "es.u05-x-18",
+      "lemma": "buen provecho",
+      "meaning": "enjoy your meal"
+    },
+    {
+      "id": "fr.u05-x-18",
+      "lemma": "bon appétit",
+      "meaning": "enjoy your meal"
+    },
+    {
+      "id": "de.u05-x-18",
+      "lemma": "guten Appetit",
+      "meaning": "enjoy your meal"
+    },
+    {
+      "id": "fr.u05-x-19",
+      "lemma": "santé",
+      "meaning": "cheers"
+    },
+    {
+      "id": "de.u05-x-19",
+      "lemma": "Prost",
+      "meaning": "cheers"
+    },
+    {
+      "id": "es.u05-x-20",
+      "lemma": "con tarjeta",
+      "meaning": "by card"
+    },
+    {
+      "id": "fr.u05-x-20",
+      "lemma": "par carte",
+      "meaning": "by card"
+    },
+    {
+      "id": "de.u05-x-20",
+      "lemma": "mit Karte",
+      "meaning": "by card"
+    },
+    {
+      "id": "es.u05-x-21",
+      "lemma": "en efectivo",
+      "meaning": "in cash"
+    },
+    {
+      "id": "fr.u05-x-21",
+      "lemma": "en espèces",
+      "meaning": "in cash"
+    },
+    {
+      "id": "de.u05-x-21",
+      "lemma": "bar",
+      "meaning": "in cash"
+    },
+    {
+      "id": "fr.u05-x-22",
+      "lemma": "gardez la monnaie",
+      "meaning": "keep the change"
+    },
+    {
+      "id": "de.u05-x-22",
+      "lemma": "behalten Sie das Wechselgeld",
+      "meaning": "keep the change"
+    },
+    {
+      "id": "es.u05-x-23",
+      "lemma": "una mesa para dos",
+      "meaning": "a table for two"
+    },
+    {
+      "id": "fr.u05-x-23",
+      "lemma": "une table pour deux",
+      "meaning": "a table for two"
+    },
+    {
+      "id": "de.u05-x-23",
+      "lemma": "einen Tisch für zwei",
+      "meaning": "a table for two"
+    },
+    {
+      "id": "es.u05-x-24",
+      "lemma": "sin azúcar",
+      "meaning": "without sugar"
+    },
+    {
+      "id": "fr.u05-x-24",
+      "lemma": "sans sucre",
+      "meaning": "without sugar"
+    },
+    {
+      "id": "de.u05-x-24",
+      "lemma": "ohne Zucker",
+      "meaning": "without sugar"
+    },
+    {
+      "id": "es.u05-x-25",
+      "lemma": "con leche",
+      "meaning": "with milk"
+    },
+    {
+      "id": "fr.u05-x-25",
+      "lemma": "avec du lait",
+      "meaning": "with milk"
+    },
+    {
+      "id": "de.u05-x-25",
+      "lemma": "mit Milch",
+      "meaning": "with milk"
+    },
+    {
+      "id": "fr.u05-x-26",
+      "lemma": "eau plate",
+      "meaning": "still water"
+    },
+    {
+      "id": "de.u05-x-26",
+      "lemma": "stilles Wasser",
+      "meaning": "still water"
+    },
+    {
+      "id": "es.u05-x-27",
+      "lemma": "agua con gas",
+      "meaning": "sparkling water"
+    },
+    {
+      "id": "fr.u05-x-27",
+      "lemma": "eau gazeuse",
+      "meaning": "sparkling water"
+    },
+    {
+      "id": "de.u05-x-27",
+      "lemma": "Wasser mit Kohlensäure",
+      "meaning": "sparkling water"
+    },
+    {
+      "id": "es.u05-x-28",
+      "lemma": "medio kilo",
+      "meaning": "half a kilo"
+    },
+    {
+      "id": "fr.u05-x-28",
+      "lemma": "un demi-kilo",
+      "meaning": "half a kilo"
+    },
+    {
+      "id": "de.u05-x-28",
+      "lemma": "ein halbes Kilo",
+      "meaning": "half a kilo"
+    },
+    {
+      "id": "es.u05-x-29",
+      "lemma": "una rebanada de pan",
+      "meaning": "a slice of bread"
+    },
+    {
+      "id": "fr.u05-x-29",
+      "lemma": "une tranche de pain",
+      "meaning": "a slice of bread"
+    },
+    {
+      "id": "de.u05-x-29",
+      "lemma": "eine Scheibe Brot",
+      "meaning": "a slice of bread"
+    },
+    {
+      "id": "es.u05-x-30",
+      "lemma": "una taza de café",
+      "meaning": "a cup of coffee"
+    },
+    {
+      "id": "fr.u05-x-30",
+      "lemma": "une tasse de café",
+      "meaning": "a cup of coffee"
+    },
+    {
+      "id": "de.u05-x-30",
+      "lemma": "eine Tasse Kaffee",
+      "meaning": "a cup of coffee"
+    },
+    {
+      "id": "es.u05-x-31",
+      "lemma": "agotado",
+      "meaning": "out of stock"
+    },
+    {
+      "id": "fr.u05-x-31",
+      "lemma": "en rupture de stock",
+      "meaning": "out of stock"
+    },
+    {
+      "id": "de.u05-x-31",
+      "lemma": "ausverkauft",
+      "meaning": "out of stock"
+    },
+    {
+      "id": "es.u05-x-32",
+      "lemma": "en oferta",
+      "meaning": "on special offer"
+    },
+    {
+      "id": "fr.u05-x-32",
+      "lemma": "en promotion",
+      "meaning": "on special offer"
+    },
+    {
+      "id": "de.u05-x-32",
+      "lemma": "im Angebot",
+      "meaning": "on special offer"
+    },
+    {
+      "id": "es.u06-v-stay",
+      "lemma": "quedarse",
+      "meaning": "stay"
+    },
+    {
+      "id": "es.u06-a-19",
+      "lemma": "sin coches",
+      "meaning": "car-free"
+    },
+    {
+      "id": "fr.u06-a-19",
+      "lemma": "sans voiture",
+      "meaning": "car-free"
+    },
+    {
+      "id": "fr.u06-x-1",
+      "lemma": "à gauche",
+      "meaning": "left"
+    },
+    {
+      "id": "fr.u06-x-2",
+      "lemma": "à droite",
+      "meaning": "right"
+    },
+    {
+      "id": "es.u06-x-3",
+      "lemma": "todo recto",
+      "meaning": "straight ahead"
+    },
+    {
+      "id": "fr.u06-x-3",
+      "lemma": "tout droit",
+      "meaning": "straight ahead"
+    },
+    {
+      "id": "es.u06-x-4",
+      "lemma": "hacia atrás",
+      "meaning": "back"
+    },
+    {
+      "id": "fr.u06-x-4",
+      "lemma": "en arrière",
+      "meaning": "back"
+    },
+    {
+      "id": "es.u06-x-5",
+      "lemma": "hacia delante",
+      "meaning": "forward"
+    },
+    {
+      "id": "fr.u06-x-5",
+      "lemma": "en avant",
+      "meaning": "forward"
+    },
+    {
+      "id": "fr.u06-x-8",
+      "lemma": "vers le haut",
+      "meaning": "upwards"
+    },
+    {
+      "id": "fr.u06-x-9",
+      "lemma": "vers le bas",
+      "meaning": "downwards"
+    },
+    {
+      "id": "fr.u06-x-10",
+      "lemma": "en face",
+      "meaning": "opposite"
+    },
+    {
+      "id": "es.u06-x-11",
+      "lemma": "perdone, ¿dónde está …?",
+      "meaning": "excuse me, where is …?"
+    },
+    {
+      "id": "fr.u06-x-11",
+      "lemma": "excusez-moi, où est … ?",
+      "meaning": "excuse me, where is …?"
+    },
+    {
+      "id": "de.u06-x-11",
+      "lemma": "entschuldigen Sie, wo ist …?",
+      "meaning": "excuse me, where is …?"
+    },
+    {
+      "id": "fr.u06-x-12",
+      "lemma": "à pied",
+      "meaning": "on foot"
+    },
+    {
+      "id": "es.u06-x-13",
+      "lemma": "en autobús",
+      "meaning": "by bus"
+    },
+    {
+      "id": "fr.u06-x-13",
+      "lemma": "en bus",
+      "meaning": "by bus"
+    },
+    {
+      "id": "de.u06-x-13",
+      "lemma": "mit dem Bus",
+      "meaning": "by bus"
+    },
+    {
+      "id": "es.u06-x-14",
+      "lemma": "en tren",
+      "meaning": "by train"
+    },
+    {
+      "id": "fr.u06-x-14",
+      "lemma": "en train",
+      "meaning": "by train"
+    },
+    {
+      "id": "es.u06-x-15",
+      "lemma": "en coche",
+      "meaning": "by car"
+    },
+    {
+      "id": "fr.u06-x-15",
+      "lemma": "en voiture",
+      "meaning": "by car"
+    },
+    {
+      "id": "de.u06-x-15",
+      "lemma": "mit dem Auto",
+      "meaning": "by car"
+    },
+    {
+      "id": "es.u06-x-16",
+      "lemma": "en bicicleta",
+      "meaning": "by bicycle"
+    },
+    {
+      "id": "fr.u06-x-16",
+      "lemma": "à vélo",
+      "meaning": "by bicycle"
+    },
+    {
+      "id": "de.u06-x-16",
+      "lemma": "mit dem Fahrrad",
+      "meaning": "by bicycle"
+    },
+    {
+      "id": "es.u06-x-17",
+      "lemma": "un billete de ida",
+      "meaning": "a single ticket"
+    },
+    {
+      "id": "fr.u06-x-17",
+      "lemma": "un aller simple",
+      "meaning": "a single ticket"
+    },
+    {
+      "id": "de.u06-x-17",
+      "lemma": "eine einfache Fahrkarte",
+      "meaning": "a single ticket"
+    },
+    {
+      "id": "es.u06-x-18",
+      "lemma": "un billete de ida y vuelta",
+      "meaning": "a return ticket"
+    },
+    {
+      "id": "fr.u06-x-18",
+      "lemma": "un aller-retour",
+      "meaning": "a return ticket"
+    },
+    {
+      "id": "de.u06-x-18",
+      "lemma": "eine Hin- und Rückfahrkarte",
+      "meaning": "a return ticket"
+    },
+    {
+      "id": "es.u06-x-19",
+      "lemma": "próxima parada",
+      "meaning": "next stop"
+    },
+    {
+      "id": "fr.u06-x-19",
+      "lemma": "prochain arrêt",
+      "meaning": "next stop"
+    },
+    {
+      "id": "de.u06-x-19",
+      "lemma": "nächste Haltestelle",
+      "meaning": "next stop"
+    },
+    {
+      "id": "es.u06-x-20",
+      "lemma": "hacer transbordo",
+      "meaning": "change trains"
+    },
+    {
+      "id": "fr.u06-x-20",
+      "lemma": "changer de train",
+      "meaning": "change trains"
+    },
+    {
+      "id": "de.u06-x-20",
+      "lemma": "umsteigen",
+      "meaning": "change trains"
+    },
+    {
+      "id": "es.u06-x-21",
+      "lemma": "subir",
+      "meaning": "get on"
+    },
+    {
+      "id": "fr.u06-x-21",
+      "lemma": "monter",
+      "meaning": "get on"
+    },
+    {
+      "id": "es.u06-x-22",
+      "lemma": "bajar",
+      "meaning": "get off"
+    },
+    {
+      "id": "fr.u06-x-23",
+      "lemma": "à côté de",
+      "meaning": "next to"
+    },
+    {
+      "id": "es.u06-x-25",
+      "lemma": "detrás de",
+      "meaning": "behind"
+    },
+    {
+      "id": "es.u06-x-27",
+      "lemma": "al final de la calle",
+      "meaning": "at the end of the street"
+    },
+    {
+      "id": "fr.u06-x-27",
+      "lemma": "au bout de la rue",
+      "meaning": "at the end of the street"
+    },
+    {
+      "id": "de.u06-x-27",
+      "lemma": "am Ende der Straße",
+      "meaning": "at the end of the street"
+    },
+    {
+      "id": "es.u06-x-28",
+      "lemma": "a la vuelta de la esquina",
+      "meaning": "around the corner"
+    },
+    {
+      "id": "fr.u06-x-28",
+      "lemma": "au coin de la rue",
+      "meaning": "around the corner"
+    },
+    {
+      "id": "de.u06-x-28",
+      "lemma": "um die Ecke",
+      "meaning": "around the corner"
+    },
+    {
+      "id": "es.u06-x-29",
+      "lemma": "al otro lado",
+      "meaning": "on the other side"
+    },
+    {
+      "id": "fr.u06-x-29",
+      "lemma": "de l’autre côté",
+      "meaning": "on the other side"
+    },
+    {
+      "id": "de.u06-x-29",
+      "lemma": "auf der anderen Seite",
+      "meaning": "on the other side"
+    },
+    {
+      "id": "es.u06-x-30",
+      "lemma": "a cinco minutos",
+      "meaning": "five minutes away"
+    },
+    {
+      "id": "fr.u06-x-30",
+      "lemma": "à cinq minutes",
+      "meaning": "five minutes away"
+    },
+    {
+      "id": "de.u06-x-30",
+      "lemma": "fünf Minuten entfernt",
+      "meaning": "five minutes away"
+    },
+    {
+      "id": "es.u06-x-31",
+      "lemma": "estoy perdido",
+      "meaning": "I am lost"
+    },
+    {
+      "id": "fr.u06-x-31",
+      "lemma": "je suis perdu",
+      "meaning": "I am lost"
+    },
+    {
+      "id": "de.u06-x-31",
+      "lemma": "ich habe mich verirrt",
+      "meaning": "I am lost"
+    },
+    {
+      "id": "es.u06-x-32",
+      "lemma": "¿está lejos?",
+      "meaning": "is it far?"
+    },
+    {
+      "id": "fr.u06-x-32",
+      "lemma": "c’est loin ?",
+      "meaning": "is it far?"
+    },
+    {
+      "id": "de.u06-x-32",
+      "lemma": "ist es weit?",
+      "meaning": "is it far?"
+    },
+    {
+      "id": "es.u07-v-may",
+      "lemma": "tener permiso",
+      "meaning": "be allowed to"
+    },
+    {
+      "id": "fr.u07-v-may",
+      "lemma": "avoir le droit",
+      "meaning": "be allowed to"
+    },
+    {
+      "id": "es.u07-v-intend",
+      "lemma": "tener intención",
+      "meaning": "intend"
+    },
+    {
+      "id": "fr.u07-v-intend",
+      "lemma": "avoir l’intention",
+      "meaning": "intend"
+    },
+    {
+      "id": "fr.u07-v-meet",
+      "lemma": "se rencontrer",
+      "meaning": "meet"
+    },
+    {
+      "id": "de.u07-v-meet",
+      "lemma": "sich treffen",
+      "meaning": "meet"
+    },
+    {
+      "id": "fr.u07-v-agree",
+      "lemma": "être d’accord",
+      "meaning": "agree"
+    },
+    {
+      "id": "de.u07-v-promise",
+      "lemma": "versprechen",
+      "meaning": "promise"
+    },
+    {
+      "id": "es.u07-x-1",
+      "lemma": "mañana por la mañana",
+      "meaning": "tomorrow morning"
+    },
+    {
+      "id": "de.u07-x-1",
+      "lemma": "morgen früh",
+      "meaning": "tomorrow morning"
+    },
+    {
+      "id": "fr.u07-x-2",
+      "lemma": "ce soir",
+      "meaning": "tonight"
+    },
+    {
+      "id": "es.u07-x-3",
+      "lemma": "pasado mañana",
+      "meaning": "the day after tomorrow"
+    },
+    {
+      "id": "fr.u07-x-3",
+      "lemma": "après-demain",
+      "meaning": "the day after tomorrow"
+    },
+    {
+      "id": "fr.u07-x-5",
+      "lemma": "à l’avance",
+      "meaning": "beforehand"
+    },
+    {
+      "id": "fr.u07-x-7",
+      "lemma": "entre-temps",
+      "meaning": "meanwhile"
+    },
+    {
+      "id": "fr.u07-x-9",
+      "lemma": "certainement",
+      "meaning": "definitely"
+    },
+    {
+      "id": "de.u07-x-9",
+      "lemma": "auf jeden Fall",
+      "meaning": "definitely"
+    },
+    {
+      "id": "fr.u07-x-10",
+      "lemma": "éventuellement",
+      "meaning": "possibly"
+    },
+    {
+      "id": "es.u07-x-11",
+      "lemma": "la semana que viene",
+      "meaning": "next week"
+    },
+    {
+      "id": "fr.u07-x-11",
+      "lemma": "la semaine prochaine",
+      "meaning": "next week"
+    },
+    {
+      "id": "de.u07-x-11",
+      "lemma": "nächste Woche",
+      "meaning": "next week"
+    },
+    {
+      "id": "es.u07-x-12",
+      "lemma": "el mes que viene",
+      "meaning": "next month"
+    },
+    {
+      "id": "fr.u07-x-12",
+      "lemma": "le mois prochain",
+      "meaning": "next month"
+    },
+    {
+      "id": "de.u07-x-12",
+      "lemma": "nächsten Monat",
+      "meaning": "next month"
+    },
+    {
+      "id": "fr.u07-x-13",
+      "lemma": "l’année prochaine",
+      "meaning": "next year"
+    },
+    {
+      "id": "de.u07-x-13",
+      "lemma": "nächstes Jahr",
+      "meaning": "next year"
+    },
+    {
+      "id": "es.u07-x-14",
+      "lemma": "dentro de una hora",
+      "meaning": "in an hour"
+    },
+    {
+      "id": "fr.u07-x-14",
+      "lemma": "dans une heure",
+      "meaning": "in an hour"
+    },
+    {
+      "id": "de.u07-x-14",
+      "lemma": "in einer Stunde",
+      "meaning": "in an hour"
+    },
+    {
+      "id": "es.u07-x-15",
+      "lemma": "a las tres",
+      "meaning": "at three o'clock"
+    },
+    {
+      "id": "fr.u07-x-15",
+      "lemma": "à trois heures",
+      "meaning": "at three o'clock"
+    },
+    {
+      "id": "de.u07-x-15",
+      "lemma": "um drei Uhr",
+      "meaning": "at three o'clock"
+    },
+    {
+      "id": "es.u07-x-16",
+      "lemma": "sobre las tres",
+      "meaning": "around three o'clock"
+    },
+    {
+      "id": "fr.u07-x-16",
+      "lemma": "vers trois heures",
+      "meaning": "around three o'clock"
+    },
+    {
+      "id": "de.u07-x-16",
+      "lemma": "gegen drei Uhr",
+      "meaning": "around three o'clock"
+    },
+    {
+      "id": "es.u07-x-17",
+      "lemma": "de tres a cuatro",
+      "meaning": "from three to four"
+    },
+    {
+      "id": "fr.u07-x-17",
+      "lemma": "de trois à quatre",
+      "meaning": "from three to four"
+    },
+    {
+      "id": "de.u07-x-17",
+      "lemma": "von drei bis vier",
+      "meaning": "from three to four"
+    },
+    {
+      "id": "es.u07-x-18",
+      "lemma": "¿te viene bien?",
+      "meaning": "does that suit you?"
+    },
+    {
+      "id": "fr.u07-x-18",
+      "lemma": "ça te convient ?",
+      "meaning": "does that suit you?"
+    },
+    {
+      "id": "de.u07-x-18",
+      "lemma": "passt dir das?",
+      "meaning": "does that suit you?"
+    },
+    {
+      "id": "es.u07-x-19",
+      "lemma": "me viene bien",
+      "meaning": "that suits me"
+    },
+    {
+      "id": "fr.u07-x-19",
+      "lemma": "ça me convient",
+      "meaning": "that suits me"
+    },
+    {
+      "id": "de.u07-x-19",
+      "lemma": "das passt mir",
+      "meaning": "that suits me"
+    },
+    {
+      "id": "es.u07-x-20",
+      "lemma": "no puedo ir",
+      "meaning": "I can't make it"
+    },
+    {
+      "id": "fr.u07-x-20",
+      "lemma": "je ne peux pas venir",
+      "meaning": "I can't make it"
+    },
+    {
+      "id": "de.u07-x-20",
+      "lemma": "ich kann nicht kommen",
+      "meaning": "I can't make it"
+    },
+    {
+      "id": "es.u07-x-21",
+      "lemma": "en otra ocasión",
+      "meaning": "another time"
+    },
+    {
+      "id": "fr.u07-x-21",
+      "lemma": "une autre fois",
+      "meaning": "another time"
+    },
+    {
+      "id": "fr.u07-x-22",
+      "lemma": "allons-y",
+      "meaning": "let's go"
+    },
+    {
+      "id": "de.u07-x-22",
+      "lemma": "gehen wir",
+      "meaning": "let's go"
+    },
+    {
+      "id": "es.u07-x-23",
+      "lemma": "¿quedamos?",
+      "meaning": "shall we meet?"
+    },
+    {
+      "id": "fr.u07-x-23",
+      "lemma": "on se retrouve ?",
+      "meaning": "shall we meet?"
+    },
+    {
+      "id": "de.u07-x-23",
+      "lemma": "wollen wir uns treffen?",
+      "meaning": "shall we meet?"
+    },
+    {
+      "id": "es.u07-x-24",
+      "lemma": "¿qué tiempo hace?",
+      "meaning": "what's the weather like?"
+    },
+    {
+      "id": "fr.u07-x-24",
+      "lemma": "quel temps fait-il ?",
+      "meaning": "what's the weather like?"
+    },
+    {
+      "id": "de.u07-x-24",
+      "lemma": "wie ist das Wetter?",
+      "meaning": "what's the weather like?"
+    },
+    {
+      "id": "fr.u07-x-25",
+      "lemma": "il pleut",
+      "meaning": "it's raining"
+    },
+    {
+      "id": "de.u07-x-25",
+      "lemma": "es regnet",
+      "meaning": "it's raining"
+    },
+    {
+      "id": "es.u07-x-26",
+      "lemma": "nieva",
+      "meaning": "it's snowing"
+    },
+    {
+      "id": "fr.u07-x-26",
+      "lemma": "il neige",
+      "meaning": "it's snowing"
+    },
+    {
+      "id": "de.u07-x-26",
+      "lemma": "es schneit",
+      "meaning": "it's snowing"
+    },
+    {
+      "id": "es.u07-x-27",
+      "lemma": "hace sol",
+      "meaning": "it's sunny"
+    },
+    {
+      "id": "fr.u07-x-27",
+      "lemma": "il y a du soleil",
+      "meaning": "it's sunny"
+    },
+    {
+      "id": "de.u07-x-27",
+      "lemma": "die Sonne scheint",
+      "meaning": "it's sunny"
+    },
+    {
+      "id": "es.u07-x-28",
+      "lemma": "hace frío",
+      "meaning": "it's cold"
+    },
+    {
+      "id": "fr.u07-x-28",
+      "lemma": "il fait froid",
+      "meaning": "it's cold"
+    },
+    {
+      "id": "de.u07-x-28",
+      "lemma": "es ist kalt",
+      "meaning": "it's cold"
+    },
+    {
+      "id": "es.u07-x-29",
+      "lemma": "hace calor",
+      "meaning": "it's hot"
+    },
+    {
+      "id": "fr.u07-x-29",
+      "lemma": "il fait chaud",
+      "meaning": "it's hot"
+    },
+    {
+      "id": "de.u07-x-29",
+      "lemma": "es ist heiß",
+      "meaning": "it's hot"
+    },
+    {
+      "id": "fr.u07-x-30",
+      "lemma": "joyeux anniversaire",
+      "meaning": "happy birthday"
+    },
+    {
+      "id": "de.u07-x-30",
+      "lemma": "alles Gute zum Geburtstag",
+      "meaning": "happy birthday"
+    },
+    {
+      "id": "es.u07-x-31",
+      "lemma": "buen viaje",
+      "meaning": "have a good trip"
+    },
+    {
+      "id": "fr.u07-x-31",
+      "lemma": "bon voyage",
+      "meaning": "have a good trip"
+    },
+    {
+      "id": "de.u07-x-31",
+      "lemma": "gute Reise",
+      "meaning": "have a good trip"
+    },
+    {
+      "id": "fr.u07-x-32",
+      "lemma": "bonne chance",
+      "meaning": "good luck"
+    },
+    {
+      "id": "de.u07-x-32",
+      "lemma": "viel Glück",
+      "meaning": "good luck"
+    },
+    {
+      "id": "es.u08-n-insurance-policy",
+      "lemma": "póliza de seguro",
+      "meaning": "insurance policy"
+    },
+    {
+      "id": "fr.u08-n-insurance-policy",
+      "lemma": "police d’assurance",
+      "meaning": "insurance policy"
+    },
+    {
+      "id": "fr.u08-v-hurt",
+      "lemma": "faire mal",
+      "meaning": "hurt"
+    },
+    {
+      "id": "es.u08-v-recover",
+      "lemma": "recuperarse",
+      "meaning": "recover"
+    },
+    {
+      "id": "fr.u08-v-recover",
+      "lemma": "se rétablir",
+      "meaning": "recover"
+    },
+    {
+      "id": "es.u08-x-1",
+      "lemma": "con cuidado",
+      "meaning": "carefully"
+    },
+    {
+      "id": "fr.u08-x-1",
+      "lemma": "avec précaution",
+      "meaning": "carefully"
+    },
+    {
+      "id": "de.u08-x-1",
+      "lemma": "vorsichtig",
+      "meaning": "carefully"
+    },
+    {
+      "id": "fr.u08-x-3",
+      "lemma": "urgemment",
+      "meaning": "urgently"
+    },
+    {
+      "id": "de.u08-x-3",
+      "lemma": "dringend",
+      "meaning": "urgently"
+    },
+    {
+      "id": "fr.u08-x-4",
+      "lemma": "soudain",
+      "meaning": "suddenly"
+    },
+    {
+      "id": "fr.u08-x-7",
+      "lemma": "mieux",
+      "meaning": "better"
+    },
+    {
+      "id": "fr.u08-x-8",
+      "lemma": "plus mal",
+      "meaning": "worse"
+    },
+    {
+      "id": "es.u08-x-11",
+      "lemma": "¡socorro!",
+      "meaning": "help!"
+    },
+    {
+      "id": "fr.u08-x-11",
+      "lemma": "au secours !",
+      "meaning": "help!"
+    },
+    {
+      "id": "de.u08-x-11",
+      "lemma": "Hilfe!",
+      "meaning": "help!"
+    },
+    {
+      "id": "es.u08-x-12",
+      "lemma": "llame a un médico",
+      "meaning": "call a doctor"
+    },
+    {
+      "id": "fr.u08-x-12",
+      "lemma": "appelez un médecin",
+      "meaning": "call a doctor"
+    },
+    {
+      "id": "de.u08-x-12",
+      "lemma": "rufen Sie einen Arzt",
+      "meaning": "call a doctor"
+    },
+    {
+      "id": "es.u08-x-13",
+      "lemma": "llame a una ambulancia",
+      "meaning": "call an ambulance"
+    },
+    {
+      "id": "fr.u08-x-13",
+      "lemma": "appelez une ambulance",
+      "meaning": "call an ambulance"
+    },
+    {
+      "id": "de.u08-x-13",
+      "lemma": "rufen Sie einen Krankenwagen",
+      "meaning": "call an ambulance"
+    },
+    {
+      "id": "es.u08-x-14",
+      "lemma": "necesito ayuda",
+      "meaning": "I need help"
+    },
+    {
+      "id": "fr.u08-x-14",
+      "lemma": "j’ai besoin d’aide",
+      "meaning": "I need help"
+    },
+    {
+      "id": "de.u08-x-14",
+      "lemma": "ich brauche Hilfe",
+      "meaning": "I need help"
+    },
+    {
+      "id": "es.u08-x-15",
+      "lemma": "no me encuentro bien",
+      "meaning": "I don't feel well"
+    },
+    {
+      "id": "fr.u08-x-15",
+      "lemma": "je ne me sens pas bien",
+      "meaning": "I don't feel well"
+    },
+    {
+      "id": "de.u08-x-15",
+      "lemma": "ich fühle mich nicht wohl",
+      "meaning": "I don't feel well"
+    },
+    {
+      "id": "fr.u08-x-16",
+      "lemma": "j’ai mal à la tête",
+      "meaning": "I have a headache"
+    },
+    {
+      "id": "de.u08-x-16",
+      "lemma": "ich habe Kopfschmerzen",
+      "meaning": "I have a headache"
+    },
+    {
+      "id": "es.u08-x-17",
+      "lemma": "me duele el estómago",
+      "meaning": "I have a stomachache"
+    },
+    {
+      "id": "fr.u08-x-17",
+      "lemma": "j’ai mal au ventre",
+      "meaning": "I have a stomachache"
+    },
+    {
+      "id": "de.u08-x-17",
+      "lemma": "ich habe Bauchschmerzen",
+      "meaning": "I have a stomachache"
+    },
+    {
+      "id": "fr.u08-x-18",
+      "lemma": "j’ai de la fièvre",
+      "meaning": "I have a fever"
+    },
+    {
+      "id": "de.u08-x-18",
+      "lemma": "ich habe Fieber",
+      "meaning": "I have a fever"
+    },
+    {
+      "id": "fr.u08-x-19",
+      "lemma": "je suis enrhumé",
+      "meaning": "I have a cold"
+    },
+    {
+      "id": "de.u08-x-19",
+      "lemma": "ich bin erkältet",
+      "meaning": "I have a cold"
+    },
+    {
+      "id": "es.u08-x-20",
+      "lemma": "soy alérgico a …",
+      "meaning": "I'm allergic to …"
+    },
+    {
+      "id": "fr.u08-x-20",
+      "lemma": "je suis allergique à …",
+      "meaning": "I'm allergic to …"
+    },
+    {
+      "id": "de.u08-x-20",
+      "lemma": "ich bin allergisch gegen …",
+      "meaning": "I'm allergic to …"
+    },
+    {
+      "id": "es.u08-x-21",
+      "lemma": "que te mejores",
+      "meaning": "get well soon"
+    },
+    {
+      "id": "fr.u08-x-21",
+      "lemma": "bon rétablissement",
+      "meaning": "get well soon"
+    },
+    {
+      "id": "de.u08-x-21",
+      "lemma": "gute Besserung",
+      "meaning": "get well soon"
+    },
+    {
+      "id": "fr.u08-x-22",
+      "lemma": "fais attention",
+      "meaning": "be careful"
+    },
+    {
+      "id": "de.u08-x-22",
+      "lemma": "sei vorsichtig",
+      "meaning": "be careful"
+    },
+    {
+      "id": "fr.u08-x-23",
+      "lemma": "ne t’inquiète pas",
+      "meaning": "don't worry"
+    },
+    {
+      "id": "de.u08-x-23",
+      "lemma": "mach dir keine Sorgen",
+      "meaning": "don't worry"
+    },
+    {
+      "id": "es.u08-x-24",
+      "lemma": "todo va bien",
+      "meaning": "everything is fine"
+    },
+    {
+      "id": "fr.u08-x-24",
+      "lemma": "tout va bien",
+      "meaning": "everything is fine"
+    },
+    {
+      "id": "de.u08-x-24",
+      "lemma": "alles ist in Ordnung",
+      "meaning": "everything is fine"
+    },
+    {
+      "id": "es.u08-x-25",
+      "lemma": "¿qué ha pasado?",
+      "meaning": "what happened?"
+    },
+    {
+      "id": "fr.u08-x-25",
+      "lemma": "qu’est-ce qui s’est passé ?",
+      "meaning": "what happened?"
+    },
+    {
+      "id": "de.u08-x-25",
+      "lemma": "was ist passiert?",
+      "meaning": "what happened?"
+    },
+    {
+      "id": "es.u08-x-26",
+      "lemma": "he perdido el pasaporte",
+      "meaning": "I've lost my passport"
+    },
+    {
+      "id": "fr.u08-x-26",
+      "lemma": "j’ai perdu mon passeport",
+      "meaning": "I've lost my passport"
+    },
+    {
+      "id": "de.u08-x-26",
+      "lemma": "ich habe meinen Reisepass verloren",
+      "meaning": "I've lost my passport"
+    },
+    {
+      "id": "es.u08-x-27",
+      "lemma": "¿dónde está la farmacia?",
+      "meaning": "where is the pharmacy?"
+    },
+    {
+      "id": "fr.u08-x-27",
+      "lemma": "où est la pharmacie ?",
+      "meaning": "where is the pharmacy?"
+    },
+    {
+      "id": "de.u08-x-27",
+      "lemma": "wo ist die Apotheke?",
+      "meaning": "where is the pharmacy?"
+    },
+    {
+      "id": "es.u08-x-28",
+      "lemma": "tengo una reserva",
+      "meaning": "I have a reservation"
+    },
+    {
+      "id": "fr.u08-x-28",
+      "lemma": "j’ai une réservation",
+      "meaning": "I have a reservation"
+    },
+    {
+      "id": "de.u08-x-28",
+      "lemma": "ich habe eine Reservierung",
+      "meaning": "I have a reservation"
+    },
+    {
+      "id": "es.u08-x-29",
+      "lemma": "una habitación para una noche",
+      "meaning": "a room for one night"
+    },
+    {
+      "id": "fr.u08-x-29",
+      "lemma": "une chambre pour une nuit",
+      "meaning": "a room for one night"
+    },
+    {
+      "id": "de.u08-x-29",
+      "lemma": "ein Zimmer für eine Nacht",
+      "meaning": "a room for one night"
+    },
+    {
+      "id": "es.u08-x-30",
+      "lemma": "desayuno incluido",
+      "meaning": "breakfast included"
+    },
+    {
+      "id": "fr.u08-x-30",
+      "lemma": "petit-déjeuner compris",
+      "meaning": "breakfast included"
+    },
+    {
+      "id": "de.u08-x-30",
+      "lemma": "Frühstück inklusive",
+      "meaning": "breakfast included"
+    },
+    {
+      "id": "es.u08-x-31",
+      "lemma": "¿hay wifi?",
+      "meaning": "is there Wi-Fi?"
+    },
+    {
+      "id": "fr.u08-x-31",
+      "lemma": "y a-t-il le wifi ?",
+      "meaning": "is there Wi-Fi?"
+    },
+    {
+      "id": "de.u08-x-31",
+      "lemma": "gibt es WLAN?",
+      "meaning": "is there Wi-Fi?"
+    },
+    {
+      "id": "es.u08-x-32",
+      "lemma": "¿cuál es la contraseña?",
+      "meaning": "what's the password?"
+    },
+    {
+      "id": "fr.u08-x-32",
+      "lemma": "quel est le mot de passe ?",
+      "meaning": "what's the password?"
+    },
+    {
+      "id": "de.u08-x-32",
+      "lemma": "wie lautet das Passwort?",
+      "meaning": "what's the password?"
+    },
+    {
+      "id": "es.u09-n-tour",
+      "lemma": "visita guiada",
+      "meaning": "tour"
+    },
+    {
+      "id": "fr.u09-n-tour",
+      "lemma": "visite guidée",
+      "meaning": "tour"
+    },
+    {
+      "id": "fr.u09-n-ticket-admission",
+      "lemma": "billet d’entrée",
+      "meaning": "admission ticket"
+    },
+    {
+      "id": "es.u09-n-sight",
+      "lemma": "atracción turística",
+      "meaning": "sight"
+    },
+    {
+      "id": "fr.u09-n-sight",
+      "lemma": "attraction touristique",
+      "meaning": "sight"
+    },
+    {
+      "id": "fr.u09-a-19",
+      "lemma": "réussi",
+      "meaning": "successful"
+    },
+    {
+      "id": "es.u09-x-2",
+      "lemma": "anteayer",
+      "meaning": "the day before yesterday"
+    },
+    {
+      "id": "fr.u09-x-2",
+      "lemma": "avant-hier",
+      "meaning": "the day before yesterday"
+    },
+    {
+      "id": "fr.u09-x-4",
+      "lemma": "à l’instant",
+      "meaning": "just now"
+    },
+    {
+      "id": "fr.u09-x-6",
+      "lemma": "d’abord",
+      "meaning": "first"
+    },
+    {
+      "id": "fr.u09-x-7",
+      "lemma": "puis",
+      "meaning": "then"
+    },
+    {
+      "id": "es.u09-x-8",
+      "lemma": "por último",
+      "meaning": "lastly"
+    },
+    {
+      "id": "fr.u09-x-8",
+      "lemma": "enfin",
+      "meaning": "lastly"
+    },
+    {
+      "id": "fr.u09-x-9",
+      "lemma": "une fois",
+      "meaning": "once"
+    },
+    {
+      "id": "fr.u09-x-10",
+      "lemma": "deux fois",
+      "meaning": "twice"
+    },
+    {
+      "id": "fr.u09-x-11",
+      "lemma": "la semaine dernière",
+      "meaning": "last week"
+    },
+    {
+      "id": "es.u09-x-12",
+      "lemma": "el mes pasado",
+      "meaning": "last month"
+    },
+    {
+      "id": "fr.u09-x-12",
+      "lemma": "le mois dernier",
+      "meaning": "last month"
+    },
+    {
+      "id": "de.u09-x-12",
+      "lemma": "letzten Monat",
+      "meaning": "last month"
+    },
+    {
+      "id": "es.u09-x-13",
+      "lemma": "el año pasado",
+      "meaning": "last year"
+    },
+    {
+      "id": "fr.u09-x-13",
+      "lemma": "l’année dernière",
+      "meaning": "last year"
+    },
+    {
+      "id": "de.u09-x-13",
+      "lemma": "letztes Jahr",
+      "meaning": "last year"
+    },
+    {
+      "id": "es.u09-x-14",
+      "lemma": "hace dos días",
+      "meaning": "two days ago"
+    },
+    {
+      "id": "fr.u09-x-14",
+      "lemma": "il y a deux jours",
+      "meaning": "two days ago"
+    },
+    {
+      "id": "de.u09-x-14",
+      "lemma": "vor zwei Tagen",
+      "meaning": "two days ago"
+    },
+    {
+      "id": "es.u09-x-15",
+      "lemma": "hace mucho tiempo",
+      "meaning": "a long time ago"
+    },
+    {
+      "id": "fr.u09-x-15",
+      "lemma": "il y a longtemps",
+      "meaning": "a long time ago"
+    },
+    {
+      "id": "de.u09-x-15",
+      "lemma": "vor langer Zeit",
+      "meaning": "a long time ago"
+    },
+    {
+      "id": "es.u09-x-17",
+      "lemma": "ayer por la tarde",
+      "meaning": "yesterday evening"
+    },
+    {
+      "id": "fr.u09-x-17",
+      "lemma": "hier soir",
+      "meaning": "yesterday evening"
+    },
+    {
+      "id": "fr.u09-x-18",
+      "lemma": "au début",
+      "meaning": "at first"
+    },
+    {
+      "id": "de.u09-x-18",
+      "lemma": "am Anfang",
+      "meaning": "at first"
+    },
+    {
+      "id": "es.u09-x-19",
+      "lemma": "al final",
+      "meaning": "in the end"
+    },
+    {
+      "id": "fr.u09-x-19",
+      "lemma": "à la fin",
+      "meaning": "in the end"
+    },
+    {
+      "id": "es.u09-x-20",
+      "lemma": "por primera vez",
+      "meaning": "for the first time"
+    },
+    {
+      "id": "fr.u09-x-20",
+      "lemma": "pour la première fois",
+      "meaning": "for the first time"
+    },
+    {
+      "id": "es.u09-x-21",
+      "lemma": "por última vez",
+      "meaning": "for the last time"
+    },
+    {
+      "id": "fr.u09-x-21",
+      "lemma": "pour la dernière fois",
+      "meaning": "for the last time"
+    },
+    {
+      "id": "de.u09-x-21",
+      "lemma": "zum letzten Mal",
+      "meaning": "for the last time"
+    },
+    {
+      "id": "es.u09-x-24",
+      "lemma": "por error",
+      "meaning": "by mistake"
+    },
+    {
+      "id": "fr.u09-x-24",
+      "lemma": "par erreur",
+      "meaning": "by mistake"
+    },
+    {
+      "id": "fr.u09-x-26",
+      "lemma": "l’un après l’autre",
+      "meaning": "one after another"
+    },
+    {
+      "id": "es.u09-x-27",
+      "lemma": "qué sorpresa",
+      "meaning": "what a surprise"
+    },
+    {
+      "id": "fr.u09-x-27",
+      "lemma": "quelle surprise",
+      "meaning": "what a surprise"
+    },
+    {
+      "id": "de.u09-x-27",
+      "lemma": "was für eine Überraschung",
+      "meaning": "what a surprise"
+    },
+    {
+      "id": "es.u09-x-28",
+      "lemma": "valió la pena",
+      "meaning": "it was worth it"
+    },
+    {
+      "id": "fr.u09-x-28",
+      "lemma": "ça valait la peine",
+      "meaning": "it was worth it"
+    },
+    {
+      "id": "de.u09-x-28",
+      "lemma": "es hat sich gelohnt",
+      "meaning": "it was worth it"
+    },
+    {
+      "id": "es.u09-x-29",
+      "lemma": "lo pasamos bien",
+      "meaning": "we had a good time"
+    },
+    {
+      "id": "fr.u09-x-29",
+      "lemma": "nous nous sommes bien amusés",
+      "meaning": "we had a good time"
+    },
+    {
+      "id": "de.u09-x-29",
+      "lemma": "wir haben uns gut amüsiert",
+      "meaning": "we had a good time"
+    },
+    {
+      "id": "es.u09-x-30",
+      "lemma": "¿qué tal el viaje?",
+      "meaning": "how was your trip?"
+    },
+    {
+      "id": "fr.u09-x-30",
+      "lemma": "comment s’est passé ton voyage ?",
+      "meaning": "how was your trip?"
+    },
+    {
+      "id": "de.u09-x-30",
+      "lemma": "wie war deine Reise?",
+      "meaning": "how was your trip?"
+    },
+    {
+      "id": "fr.u09-x-31",
+      "lemma": "bon retour",
+      "meaning": "welcome back"
+    },
+    {
+      "id": "de.u09-x-31",
+      "lemma": "willkommen zurück",
+      "meaning": "welcome back"
+    },
+    {
+      "id": "es.u09-x-32",
+      "lemma": "me gustó",
+      "meaning": "I enjoyed it"
+    },
+    {
+      "id": "fr.u09-x-32",
+      "lemma": "ça m’a plu",
+      "meaning": "I enjoyed it"
+    },
+    {
+      "id": "de.u09-x-32",
+      "lemma": "es hat mir gefallen",
+      "meaning": "I enjoyed it"
+    },
+    {
+      "id": "es.u10-v-grow-up",
+      "lemma": "criarse",
+      "meaning": "grow up"
+    },
+    {
+      "id": "es.u10-x-2",
+      "lemma": "entonces",
+      "meaning": "back then"
+    },
+    {
+      "id": "fr.u10-x-2",
+      "lemma": "à l’époque",
+      "meaning": "back then"
+    },
+    {
+      "id": "de.u10-x-2",
+      "lemma": "damals",
+      "meaning": "back then"
+    },
+    {
+      "id": "es.u10-x-3",
+      "lemma": "por lo general",
+      "meaning": "normally"
+    },
+    {
+      "id": "fr.u10-x-3",
+      "lemma": "normalement",
+      "meaning": "normally"
+    },
+    {
+      "id": "fr.u10-x-6",
+      "lemma": "occasionnellement",
+      "meaning": "occasionally"
+    },
+    {
+      "id": "es.u10-x-7",
+      "lemma": "casi nunca",
+      "meaning": "hardly ever"
+    },
+    {
+      "id": "fr.u10-x-7",
+      "lemma": "presque jamais",
+      "meaning": "hardly ever"
+    },
+    {
+      "id": "fr.u10-x-9",
+      "lemma": "progressivement",
+      "meaning": "gradually"
+    },
+    {
+      "id": "es.u10-x-11",
+      "lemma": "cuando era pequeño",
+      "meaning": "when I was little"
+    },
+    {
+      "id": "fr.u10-x-11",
+      "lemma": "quand j’étais petit",
+      "meaning": "when I was little"
+    },
+    {
+      "id": "de.u10-x-11",
+      "lemma": "als ich klein war",
+      "meaning": "when I was little"
+    },
+    {
+      "id": "es.u10-x-12",
+      "lemma": "en mi infancia",
+      "meaning": "in my childhood"
+    },
+    {
+      "id": "fr.u10-x-12",
+      "lemma": "dans mon enfance",
+      "meaning": "in my childhood"
+    },
+    {
+      "id": "de.u10-x-12",
+      "lemma": "in meiner Kindheit",
+      "meaning": "in my childhood"
+    },
+    {
+      "id": "es.u10-x-13",
+      "lemma": "en aquellos tiempos",
+      "meaning": "in those days"
+    },
+    {
+      "id": "fr.u10-x-13",
+      "lemma": "en ce temps-là",
+      "meaning": "in those days"
+    },
+    {
+      "id": "de.u10-x-13",
+      "lemma": "zu jener Zeit",
+      "meaning": "in those days"
+    },
+    {
+      "id": "fr.u10-x-14",
+      "lemma": "dans le passé",
+      "meaning": "in the past"
+    },
+    {
+      "id": "de.u10-x-14",
+      "lemma": "in der Vergangenheit",
+      "meaning": "in the past"
+    },
+    {
+      "id": "fr.u10-x-15",
+      "lemma": "comme d’habitude",
+      "meaning": "as usual"
+    },
+    {
+      "id": "es.u10-x-16",
+      "lemma": "todo el día",
+      "meaning": "all day long"
+    },
+    {
+      "id": "fr.u10-x-16",
+      "lemma": "toute la journée",
+      "meaning": "all day long"
+    },
+    {
+      "id": "de.u10-x-16",
+      "lemma": "den ganzen Tag",
+      "meaning": "all day long"
+    },
+    {
+      "id": "es.u10-x-17",
+      "lemma": "toda la noche",
+      "meaning": "all night long"
+    },
+    {
+      "id": "fr.u10-x-17",
+      "lemma": "toute la nuit",
+      "meaning": "all night long"
+    },
+    {
+      "id": "de.u10-x-17",
+      "lemma": "die ganze Nacht",
+      "meaning": "all night long"
+    },
+    {
+      "id": "es.u10-x-18",
+      "lemma": "durante horas",
+      "meaning": "for hours"
+    },
+    {
+      "id": "fr.u10-x-18",
+      "lemma": "pendant des heures",
+      "meaning": "for hours"
+    },
+    {
+      "id": "es.u10-x-19",
+      "lemma": "durante años",
+      "meaning": "for years"
+    },
+    {
+      "id": "fr.u10-x-19",
+      "lemma": "pendant des années",
+      "meaning": "for years"
+    },
+    {
+      "id": "es.u10-x-20",
+      "lemma": "de la mañana a la noche",
+      "meaning": "from morning to night"
+    },
+    {
+      "id": "fr.u10-x-20",
+      "lemma": "du matin au soir",
+      "meaning": "from morning to night"
+    },
+    {
+      "id": "de.u10-x-20",
+      "lemma": "von morgens bis abends",
+      "meaning": "from morning to night"
+    },
+    {
+      "id": "es.u10-x-21",
+      "lemma": "poco a poco",
+      "meaning": "little by little"
+    },
+    {
+      "id": "fr.u10-x-22",
+      "lemma": "encore et encore",
+      "meaning": "time and again"
+    },
+    {
+      "id": "es.u10-x-23",
+      "lemma": "pase lo que pase",
+      "meaning": "no matter what"
+    },
+    {
+      "id": "fr.u10-x-23",
+      "lemma": "quoi qu’il arrive",
+      "meaning": "no matter what"
+    },
+    {
+      "id": "de.u10-x-23",
+      "lemma": "was auch immer passiert",
+      "meaning": "no matter what"
+    },
+    {
+      "id": "es.u10-x-24",
+      "lemma": "es una pena",
+      "meaning": "it's a pity"
+    },
+    {
+      "id": "fr.u10-x-24",
+      "lemma": "c’est dommage",
+      "meaning": "it's a pity"
+    },
+    {
+      "id": "de.u10-x-24",
+      "lemma": "das ist schade",
+      "meaning": "it's a pity"
+    },
+    {
+      "id": "es.u10-x-25",
+      "lemma": "qué bonito",
+      "meaning": "how lovely"
+    },
+    {
+      "id": "fr.u10-x-25",
+      "lemma": "comme c’est beau",
+      "meaning": "how lovely"
+    },
+    {
+      "id": "de.u10-x-25",
+      "lemma": "wie schön",
+      "meaning": "how lovely"
+    },
+    {
+      "id": "fr.u10-x-26",
+      "lemma": "tu me manques",
+      "meaning": "I miss you"
+    },
+    {
+      "id": "de.u10-x-26",
+      "lemma": "du fehlst mir",
+      "meaning": "I miss you"
+    },
+    {
+      "id": "es.u10-x-27",
+      "lemma": "me acuerdo",
+      "meaning": "I remember"
+    },
+    {
+      "id": "fr.u10-x-27",
+      "lemma": "je me souviens",
+      "meaning": "I remember"
+    },
+    {
+      "id": "de.u10-x-27",
+      "lemma": "ich erinnere mich",
+      "meaning": "I remember"
+    },
+    {
+      "id": "es.u10-x-28",
+      "lemma": "no me acuerdo",
+      "meaning": "I can't remember"
+    },
+    {
+      "id": "fr.u10-x-28",
+      "lemma": "je ne me souviens pas",
+      "meaning": "I can't remember"
+    },
+    {
+      "id": "de.u10-x-28",
+      "lemma": "ich kann mich nicht erinnern",
+      "meaning": "I can't remember"
+    },
+    {
+      "id": "es.u10-x-29",
+      "lemma": "eso me recuerda a …",
+      "meaning": "that reminds me of …"
+    },
+    {
+      "id": "fr.u10-x-29",
+      "lemma": "ça me rappelle …",
+      "meaning": "that reminds me of …"
+    },
+    {
+      "id": "de.u10-x-29",
+      "lemma": "das erinnert mich an …",
+      "meaning": "that reminds me of …"
+    },
+    {
+      "id": "es.u10-x-30",
+      "lemma": "hace mucho",
+      "meaning": "long ago"
+    },
+    {
+      "id": "fr.u10-x-30",
+      "lemma": "il y a bien longtemps",
+      "meaning": "long ago"
+    },
+    {
+      "id": "de.u10-x-30",
+      "lemma": "vor langer Zeit",
+      "meaning": "long ago"
+    },
+    {
+      "id": "fr.u10-x-31",
+      "lemma": "il était une fois",
+      "meaning": "once upon a time"
+    },
+    {
+      "id": "es.u10-x-32",
+      "lemma": "aquellos eran buenos tiempos",
+      "meaning": "those were the days"
+    },
+    {
+      "id": "fr.u10-x-32",
+      "lemma": "c’était le bon temps",
+      "meaning": "those were the days"
+    },
+    {
+      "id": "de.u10-x-32",
+      "lemma": "das waren noch Zeiten",
+      "meaning": "those were the days"
+    },
+    {
+      "id": "fr.u11-n-laptop",
+      "lemma": "ordinateur portable",
+      "meaning": "laptop"
+    },
+    {
+      "id": "es.u11-n-internet",
+      "lemma": "internet",
+      "meaning": "internet"
+    },
+    {
+      "id": "fr.u11-n-internet",
+      "lemma": "Internet",
+      "meaning": "internet"
+    },
+    {
+      "id": "fr.u11-n-address-book",
+      "lemma": "carnet d’adresses",
+      "meaning": "address book"
+    },
+    {
+      "id": "es.u11-n-invitation-card",
+      "lemma": "tarjeta de invitación",
+      "meaning": "invitation card"
+    },
+    {
+      "id": "fr.u11-n-invitation-card",
+      "lemma": "carton d’invitation",
+      "meaning": "invitation card"
+    },
+    {
+      "id": "es.u11-n-wrapping-paper",
+      "lemma": "papel de regalo",
+      "meaning": "wrapping paper"
+    },
+    {
+      "id": "fr.u11-n-wrapping-paper",
+      "lemma": "papier cadeau",
+      "meaning": "wrapping paper"
+    },
+    {
+      "id": "fr.u11-a-18",
+      "lemma": "connecté",
+      "meaning": "connected"
+    },
+    {
+      "id": "es.u11-a-20",
+      "lemma": "poco fiable",
+      "meaning": "unreliable"
+    },
+    {
+      "id": "fr.u11-a-20",
+      "lemma": "peu fiable",
+      "meaning": "unreliable"
+    },
+    {
+      "id": "fr.u11-x-1",
+      "lemma": "personnellement",
+      "meaning": "personally"
+    },
+    {
+      "id": "fr.u11-x-3",
+      "lemma": "indirectement",
+      "meaning": "indirectly"
+    },
+    {
+      "id": "es.u11-x-4",
+      "lemma": "en privado",
+      "meaning": "privately"
+    },
+    {
+      "id": "fr.u11-x-4",
+      "lemma": "en privé",
+      "meaning": "privately"
+    },
+    {
+      "id": "fr.u11-x-5",
+      "lemma": "publiquement",
+      "meaning": "publicly"
+    },
+    {
+      "id": "fr.u11-x-6",
+      "lemma": "brièvement",
+      "meaning": "briefly"
+    },
+    {
+      "id": "fr.u11-x-7",
+      "lemma": "poliment",
+      "meaning": "politely"
+    },
+    {
+      "id": "fr.u11-x-9",
+      "lemma": "en ligne",
+      "meaning": "online"
+    },
+    {
+      "id": "es.u11-x-10",
+      "lemma": "sin conexión",
+      "meaning": "offline"
+    },
+    {
+      "id": "fr.u11-x-10",
+      "lemma": "hors ligne",
+      "meaning": "offline"
+    },
+    {
+      "id": "es.u11-x-11",
+      "lemma": "para ti",
+      "meaning": "for you"
+    },
+    {
+      "id": "fr.u11-x-11",
+      "lemma": "pour toi",
+      "meaning": "for you"
+    },
+    {
+      "id": "de.u11-x-11",
+      "lemma": "für dich",
+      "meaning": "for you"
+    },
+    {
+      "id": "es.u11-x-12",
+      "lemma": "para mí",
+      "meaning": "for me"
+    },
+    {
+      "id": "fr.u11-x-12",
+      "lemma": "pour moi",
+      "meaning": "for me"
+    },
+    {
+      "id": "de.u11-x-12",
+      "lemma": "für mich",
+      "meaning": "for me"
+    },
+    {
+      "id": "es.u11-x-13",
+      "lemma": "contigo",
+      "meaning": "with you"
+    },
+    {
+      "id": "fr.u11-x-13",
+      "lemma": "avec toi",
+      "meaning": "with you"
+    },
+    {
+      "id": "de.u11-x-13",
+      "lemma": "mit dir",
+      "meaning": "with you"
+    },
+    {
+      "id": "es.u11-x-14",
+      "lemma": "conmigo",
+      "meaning": "with me"
+    },
+    {
+      "id": "fr.u11-x-14",
+      "lemma": "avec moi",
+      "meaning": "with me"
+    },
+    {
+      "id": "de.u11-x-14",
+      "lemma": "mit mir",
+      "meaning": "with me"
+    },
+    {
+      "id": "es.u11-x-15",
+      "lemma": "¿a quién?",
+      "meaning": "whom?"
+    },
+    {
+      "id": "fr.u11-x-15",
+      "lemma": "à qui ?",
+      "meaning": "whom?"
+    },
+    {
+      "id": "de.u11-x-15",
+      "lemma": "wem?",
+      "meaning": "whom?"
+    },
+    {
+      "id": "es.u11-x-16",
+      "lemma": "¿de quién?",
+      "meaning": "from whom?"
+    },
+    {
+      "id": "fr.u11-x-16",
+      "lemma": "de qui ?",
+      "meaning": "from whom?"
+    },
+    {
+      "id": "de.u11-x-16",
+      "lemma": "von wem?",
+      "meaning": "from whom?"
+    },
+    {
+      "id": "fr.u11-x-17",
+      "lemma": "voici",
+      "meaning": "here you are"
+    },
+    {
+      "id": "de.u11-x-17",
+      "lemma": "bitte schön",
+      "meaning": "here you are"
+    },
+    {
+      "id": "es.u11-x-18",
+      "lemma": "gracias por su ayuda",
+      "meaning": "thank you for your help"
+    },
+    {
+      "id": "fr.u11-x-18",
+      "lemma": "merci pour votre aide",
+      "meaning": "thank you for your help"
+    },
+    {
+      "id": "de.u11-x-18",
+      "lemma": "vielen Dank für Ihre Hilfe",
+      "meaning": "thank you for your help"
+    },
+    {
+      "id": "es.u11-x-19",
+      "lemma": "es muy amable",
+      "meaning": "that's very kind"
+    },
+    {
+      "id": "fr.u11-x-19",
+      "lemma": "c’est très gentil",
+      "meaning": "that's very kind"
+    },
+    {
+      "id": "de.u11-x-19",
+      "lemma": "das ist sehr nett",
+      "meaning": "that's very kind"
+    },
+    {
+      "id": "fr.u11-x-20",
+      "lemma": "je vous en prie",
+      "meaning": "you're welcome"
+    },
+    {
+      "id": "de.u11-x-20",
+      "lemma": "gern geschehen",
+      "meaning": "you're welcome"
+    },
+    {
+      "id": "es.u11-x-21",
+      "lemma": "saludos a …",
+      "meaning": "give my regards to …"
+    },
+    {
+      "id": "fr.u11-x-21",
+      "lemma": "mes salutations à …",
+      "meaning": "give my regards to …"
+    },
+    {
+      "id": "de.u11-x-21",
+      "lemma": "viele Grüße an …",
+      "meaning": "give my regards to …"
+    },
+    {
+      "id": "es.u11-x-22",
+      "lemma": "un cordial saludo",
+      "meaning": "best wishes"
+    },
+    {
+      "id": "fr.u11-x-22",
+      "lemma": "bien cordialement",
+      "meaning": "best wishes"
+    },
+    {
+      "id": "de.u11-x-22",
+      "lemma": "mit freundlichen Grüßen",
+      "meaning": "best wishes"
+    },
+    {
+      "id": "es.u11-x-23",
+      "lemma": "hasta pronto",
+      "meaning": "talk to you soon"
+    },
+    {
+      "id": "fr.u11-x-23",
+      "lemma": "à bientôt",
+      "meaning": "talk to you soon"
+    },
+    {
+      "id": "de.u11-x-23",
+      "lemma": "bis bald",
+      "meaning": "talk to you soon"
+    },
+    {
+      "id": "es.u11-x-24",
+      "lemma": "adjunto …",
+      "meaning": "please find attached …"
+    },
+    {
+      "id": "fr.u11-x-24",
+      "lemma": "veuillez trouver ci-joint …",
+      "meaning": "please find attached …"
+    },
+    {
+      "id": "de.u11-x-24",
+      "lemma": "anbei finden Sie …",
+      "meaning": "please find attached …"
+    },
+    {
+      "id": "es.u11-x-25",
+      "lemma": "en respuesta a su mensaje",
+      "meaning": "in reply to your message"
+    },
+    {
+      "id": "fr.u11-x-25",
+      "lemma": "en réponse à votre message",
+      "meaning": "in reply to your message"
+    },
+    {
+      "id": "de.u11-x-25",
+      "lemma": "als Antwort auf Ihre Nachricht",
+      "meaning": "in reply to your message"
+    },
+    {
+      "id": "es.u11-x-26",
+      "lemma": "responda, por favor",
+      "meaning": "please reply"
+    },
+    {
+      "id": "fr.u11-x-26",
+      "lemma": "veuillez répondre",
+      "meaning": "please reply"
+    },
+    {
+      "id": "de.u11-x-26",
+      "lemma": "bitte antworten Sie",
+      "meaning": "please reply"
+    },
+    {
+      "id": "fr.u11-x-27",
+      "lemma": "faux numéro",
+      "meaning": "wrong number"
+    },
+    {
+      "id": "de.u11-x-27",
+      "lemma": "falsche Nummer",
+      "meaning": "wrong number"
+    },
+    {
+      "id": "es.u11-x-28",
+      "lemma": "no cuelgue",
+      "meaning": "hold the line"
+    },
+    {
+      "id": "fr.u11-x-28",
+      "lemma": "ne quittez pas",
+      "meaning": "hold the line"
+    },
+    {
+      "id": "de.u11-x-28",
+      "lemma": "bleiben Sie bitte dran",
+      "meaning": "hold the line"
+    },
+    {
+      "id": "es.u11-x-29",
+      "lemma": "volveré a llamar",
+      "meaning": "I'll call back"
+    },
+    {
+      "id": "fr.u11-x-29",
+      "lemma": "je rappellerai",
+      "meaning": "I'll call back"
+    },
+    {
+      "id": "de.u11-x-29",
+      "lemma": "ich rufe zurück",
+      "meaning": "I'll call back"
+    },
+    {
+      "id": "es.u11-x-30",
+      "lemma": "¿me oye?",
+      "meaning": "can you hear me?"
+    },
+    {
+      "id": "fr.u11-x-30",
+      "lemma": "vous m’entendez ?",
+      "meaning": "can you hear me?"
+    },
+    {
+      "id": "de.u11-x-30",
+      "lemma": "hören Sie mich?",
+      "meaning": "can you hear me?"
+    },
+    {
+      "id": "es.u11-x-31",
+      "lemma": "la conexión es mala",
+      "meaning": "the connection is bad"
+    },
+    {
+      "id": "fr.u11-x-31",
+      "lemma": "la connexion est mauvaise",
+      "meaning": "the connection is bad"
+    },
+    {
+      "id": "de.u11-x-31",
+      "lemma": "die Verbindung ist schlecht",
+      "meaning": "the connection is bad"
+    },
+    {
+      "id": "es.u11-x-32",
+      "lemma": "mensaje recibido",
+      "meaning": "message received"
+    },
+    {
+      "id": "fr.u11-x-32",
+      "lemma": "message reçu",
+      "meaning": "message received"
+    },
+    {
+      "id": "de.u11-x-32",
+      "lemma": "Nachricht erhalten",
+      "meaning": "message received"
+    },
+    {
+      "id": "de.u12-n-appointment-service",
+      "lemma": "Servicetermin",
+      "meaning": "service appointment"
+    },
+    {
+      "id": "fr.u12-a-2",
+      "lemma": "abîmé",
+      "meaning": "damaged"
+    },
+    {
+      "id": "fr.u12-a-6",
+      "lemma": "desserré",
+      "meaning": "loose"
+    },
+    {
+      "id": "fr.u12-x-1",
+      "lemma": "doucement",
+      "meaning": "gently"
+    },
+    {
+      "id": "fr.u12-x-2",
+      "lemma": "fermement",
+      "meaning": "firmly"
+    },
+    {
+      "id": "es.u12-x-3",
+      "lemma": "correctamente",
+      "meaning": "properly"
+    },
+    {
+      "id": "fr.u12-x-3",
+      "lemma": "correctement",
+      "meaning": "properly"
+    },
+    {
+      "id": "es.u12-x-5",
+      "lemma": "parcialmente",
+      "meaning": "partly"
+    },
+    {
+      "id": "fr.u12-x-5",
+      "lemma": "partiellement",
+      "meaning": "partly"
+    },
+    {
+      "id": "fr.u12-x-6",
+      "lemma": "simplement",
+      "meaning": "simply"
+    },
+    {
+      "id": "es.u12-x-7",
+      "lemma": "con seguridad",
+      "meaning": "safely"
+    },
+    {
+      "id": "fr.u12-x-7",
+      "lemma": "en toute sécurité",
+      "meaning": "safely"
+    },
+    {
+      "id": "fr.u12-x-8",
+      "lemma": "soigneusement",
+      "meaning": "thoroughly"
+    },
+    {
+      "id": "fr.u12-x-9",
+      "lemma": "manuellement",
+      "meaning": "manually"
+    },
+    {
+      "id": "fr.u12-x-10",
+      "lemma": "étape par étape",
+      "meaning": "step by step"
+    },
+    {
+      "id": "de.u12-x-10",
+      "lemma": "Schritt für Schritt",
+      "meaning": "step by step"
+    },
+    {
+      "id": "fr.u12-x-11",
+      "lemma": "hors service",
+      "meaning": "out of order"
+    },
+    {
+      "id": "es.u12-x-12",
+      "lemma": "no funciona",
+      "meaning": "it doesn't work"
+    },
+    {
+      "id": "fr.u12-x-12",
+      "lemma": "ça ne marche pas",
+      "meaning": "it doesn't work"
+    },
+    {
+      "id": "de.u12-x-12",
+      "lemma": "es funktioniert nicht",
+      "meaning": "it doesn't work"
+    },
+    {
+      "id": "es.u12-x-13",
+      "lemma": "¿qué pasa?",
+      "meaning": "what's wrong?"
+    },
+    {
+      "id": "fr.u12-x-13",
+      "lemma": "qu’est-ce qui ne va pas ?",
+      "meaning": "what's wrong?"
+    },
+    {
+      "id": "de.u12-x-13",
+      "lemma": "was ist los?",
+      "meaning": "what's wrong?"
+    },
+    {
+      "id": "es.u12-x-14",
+      "lemma": "hay un problema",
+      "meaning": "there's a problem"
+    },
+    {
+      "id": "fr.u12-x-14",
+      "lemma": "il y a un problème",
+      "meaning": "there's a problem"
+    },
+    {
+      "id": "de.u12-x-14",
+      "lemma": "es gibt ein Problem",
+      "meaning": "there's a problem"
+    },
+    {
+      "id": "fr.u12-x-15",
+      "lemma": "attention",
+      "meaning": "watch out"
+    },
+    {
+      "id": "de.u12-x-15",
+      "lemma": "Vorsicht",
+      "meaning": "watch out"
+    },
+    {
+      "id": "es.u12-x-16",
+      "lemma": "no tocar",
+      "meaning": "do not touch"
+    },
+    {
+      "id": "fr.u12-x-16",
+      "lemma": "ne pas toucher",
+      "meaning": "do not touch"
+    },
+    {
+      "id": "de.u12-x-16",
+      "lemma": "nicht berühren",
+      "meaning": "do not touch"
+    },
+    {
+      "id": "es.u12-x-17",
+      "lemma": "prohibido el paso",
+      "meaning": "do not enter"
+    },
+    {
+      "id": "fr.u12-x-17",
+      "lemma": "entrée interdite",
+      "meaning": "do not enter"
+    },
+    {
+      "id": "de.u12-x-17",
+      "lemma": "Zutritt verboten",
+      "meaning": "do not enter"
+    },
+    {
+      "id": "fr.u12-x-18",
+      "lemma": "défense de fumer",
+      "meaning": "no smoking"
+    },
+    {
+      "id": "de.u12-x-18",
+      "lemma": "Rauchen verboten",
+      "meaning": "no smoking"
+    },
+    {
+      "id": "fr.u12-x-19",
+      "lemma": "premiers secours",
+      "meaning": "first aid"
+    },
+    {
+      "id": "de.u12-x-19",
+      "lemma": "erste Hilfe",
+      "meaning": "first aid"
+    },
+    {
+      "id": "es.u12-x-20",
+      "lemma": "salida de emergencia",
+      "meaning": "fire exit"
+    },
+    {
+      "id": "fr.u12-x-20",
+      "lemma": "issue de secours",
+      "meaning": "fire exit"
+    },
+    {
+      "id": "de.u12-x-20",
+      "lemma": "Notausgang",
+      "meaning": "fire exit"
+    },
+    {
+      "id": "es.u12-x-21",
+      "lemma": "en caso de emergencia",
+      "meaning": "in case of emergency"
+    },
+    {
+      "id": "fr.u12-x-21",
+      "lemma": "en cas d’urgence",
+      "meaning": "in case of emergency"
+    },
+    {
+      "id": "de.u12-x-21",
+      "lemma": "im Notfall",
+      "meaning": "in case of emergency"
+    },
+    {
+      "id": "es.u12-x-22",
+      "lemma": "siga las instrucciones",
+      "meaning": "follow the instructions"
+    },
+    {
+      "id": "fr.u12-x-22",
+      "lemma": "suivez les instructions",
+      "meaning": "follow the instructions"
+    },
+    {
+      "id": "de.u12-x-22",
+      "lemma": "befolgen Sie die Anweisungen",
+      "meaning": "follow the instructions"
+    },
+    {
+      "id": "es.u12-x-23",
+      "lemma": "corte la corriente",
+      "meaning": "turn off the power"
+    },
+    {
+      "id": "fr.u12-x-23",
+      "lemma": "coupez le courant",
+      "meaning": "turn off the power"
+    },
+    {
+      "id": "de.u12-x-23",
+      "lemma": "schalten Sie den Strom ab",
+      "meaning": "turn off the power"
+    },
+    {
+      "id": "es.u12-x-24",
+      "lemma": "tenga paciencia",
+      "meaning": "be patient"
+    },
+    {
+      "id": "fr.u12-x-24",
+      "lemma": "soyez patient",
+      "meaning": "be patient"
+    },
+    {
+      "id": "de.u12-x-24",
+      "lemma": "haben Sie Geduld",
+      "meaning": "be patient"
+    },
+    {
+      "id": "fr.u12-x-25",
+      "lemma": "un instant, s’il vous plaît",
+      "meaning": "one moment, please"
+    },
+    {
+      "id": "de.u12-x-25",
+      "lemma": "einen Moment, bitte",
+      "meaning": "one moment, please"
+    },
+    {
+      "id": "es.u12-x-26",
+      "lemma": "inténtalo de nuevo",
+      "meaning": "try again"
+    },
+    {
+      "id": "fr.u12-x-26",
+      "lemma": "réessaie",
+      "meaning": "try again"
+    },
+    {
+      "id": "de.u12-x-26",
+      "lemma": "versuch es noch einmal",
+      "meaning": "try again"
+    },
+    {
+      "id": "es.u12-x-27",
+      "lemma": "déjamelo a mí",
+      "meaning": "leave it to me"
+    },
+    {
+      "id": "fr.u12-x-27",
+      "lemma": "laisse-moi faire",
+      "meaning": "leave it to me"
+    },
+    {
+      "id": "de.u12-x-27",
+      "lemma": "überlass das mir",
+      "meaning": "leave it to me"
+    },
+    {
+      "id": "es.u12-x-28",
+      "lemma": "me encargo yo",
+      "meaning": "I'll take care of it"
+    },
+    {
+      "id": "fr.u12-x-28",
+      "lemma": "je m’en occupe",
+      "meaning": "I'll take care of it"
+    },
+    {
+      "id": "de.u12-x-28",
+      "lemma": "ich kümmere mich darum",
+      "meaning": "I'll take care of it"
+    },
+    {
+      "id": "es.u12-x-29",
+      "lemma": "problema resuelto",
+      "meaning": "problem solved"
+    },
+    {
+      "id": "fr.u12-x-29",
+      "lemma": "problème résolu",
+      "meaning": "problem solved"
+    },
+    {
+      "id": "de.u12-x-29",
+      "lemma": "Problem gelöst",
+      "meaning": "problem solved"
+    },
+    {
+      "id": "es.u12-x-30",
+      "lemma": "en garantía",
+      "meaning": "under warranty"
+    },
+    {
+      "id": "fr.u12-x-30",
+      "lemma": "sous garantie",
+      "meaning": "under warranty"
+    },
+    {
+      "id": "de.u12-x-30",
+      "lemma": "mit Garantie",
+      "meaning": "under warranty"
+    },
+    {
+      "id": "fr.u12-x-31",
+      "lemma": "gratuitement",
+      "meaning": "free of charge"
+    },
+    {
+      "id": "fr.u12-x-32",
+      "lemma": "dès que possible",
+      "meaning": "as soon as possible"
+    },
+    {
+      "id": "fr.u13-n-zip",
+      "lemma": "fermeture éclair",
+      "meaning": "zip"
+    },
+    {
+      "id": "es.u13-v-try-on",
+      "lemma": "probarse",
+      "meaning": "try on"
+    },
+    {
+      "id": "es.u13-v-fit",
+      "lemma": "quedar bien",
+      "meaning": "fit"
+    },
+    {
+      "id": "es.u13-v-look-like",
+      "lemma": "parecerse",
+      "meaning": "look like"
+    },
+    {
+      "id": "fr.u13-v-match",
+      "lemma": "s’accorder",
+      "meaning": "match"
+    },
+    {
+      "id": "fr.u13-a-9",
+      "lemma": "coloré",
+      "meaning": "colorful"
+    },
+    {
+      "id": "es.u13-a-12",
+      "lemma": "de cuadros",
+      "meaning": "checked"
+    },
+    {
+      "id": "fr.u13-a-12",
+      "lemma": "à carreaux",
+      "meaning": "checked"
+    },
+    {
+      "id": "fr.u13-a-20",
+      "lemma": "d’occasion",
+      "meaning": "used"
+    },
+    {
+      "id": "fr.u13-x-3",
+      "lemma": "également",
+      "meaning": "equally"
+    },
+    {
+      "id": "de.u13-x-3",
+      "lemma": "gleichermaßen",
+      "meaning": "equally"
+    },
+    {
+      "id": "es.u13-x-4",
+      "lemma": "de otra manera",
+      "meaning": "differently"
+    },
+    {
+      "id": "fr.u13-x-4",
+      "lemma": "différemment",
+      "meaning": "differently"
+    },
+    {
+      "id": "fr.u13-x-5",
+      "lemma": "à la place",
+      "meaning": "instead"
+    },
+    {
+      "id": "de.u13-x-5",
+      "lemma": "stattdessen",
+      "meaning": "instead"
+    },
+    {
+      "id": "fr.u13-x-6",
+      "lemma": "sinon",
+      "meaning": "otherwise"
+    },
+    {
+      "id": "fr.u13-x-8",
+      "lemma": "légèrement",
+      "meaning": "slightly"
+    },
+    {
+      "id": "fr.u13-x-9",
+      "lemma": "considérablement",
+      "meaning": "considerably"
+    },
+    {
+      "id": "de.u13-x-9",
+      "lemma": "erheblich",
+      "meaning": "considerably"
+    },
+    {
+      "id": "es.u13-x-11",
+      "lemma": "mejor que",
+      "meaning": "better than"
+    },
+    {
+      "id": "fr.u13-x-11",
+      "lemma": "meilleur que",
+      "meaning": "better than"
+    },
+    {
+      "id": "de.u13-x-11",
+      "lemma": "besser als",
+      "meaning": "better than"
+    },
+    {
+      "id": "es.u13-x-12",
+      "lemma": "peor que",
+      "meaning": "worse than"
+    },
+    {
+      "id": "fr.u13-x-12",
+      "lemma": "pire que",
+      "meaning": "worse than"
+    },
+    {
+      "id": "de.u13-x-12",
+      "lemma": "schlechter als",
+      "meaning": "worse than"
+    },
+    {
+      "id": "es.u13-x-13",
+      "lemma": "tan bueno como",
+      "meaning": "as good as"
+    },
+    {
+      "id": "fr.u13-x-13",
+      "lemma": "aussi bon que",
+      "meaning": "as good as"
+    },
+    {
+      "id": "es.u13-x-14",
+      "lemma": "lo mismo que",
+      "meaning": "the same as"
+    },
+    {
+      "id": "fr.u13-x-14",
+      "lemma": "la même chose que",
+      "meaning": "the same as"
+    },
+    {
+      "id": "de.u13-x-14",
+      "lemma": "dasselbe wie",
+      "meaning": "the same as"
+    },
+    {
+      "id": "es.u13-x-15",
+      "lemma": "diferente de",
+      "meaning": "different from"
+    },
+    {
+      "id": "fr.u13-x-15",
+      "lemma": "différent de",
+      "meaning": "different from"
+    },
+    {
+      "id": "de.u13-x-15",
+      "lemma": "anders als",
+      "meaning": "different from"
+    },
+    {
+      "id": "es.u13-x-16",
+      "lemma": "en comparación con",
+      "meaning": "compared with"
+    },
+    {
+      "id": "fr.u13-x-16",
+      "lemma": "par rapport à",
+      "meaning": "compared with"
+    },
+    {
+      "id": "es.u13-x-17",
+      "lemma": "por una parte",
+      "meaning": "on the one hand"
+    },
+    {
+      "id": "fr.u13-x-17",
+      "lemma": "d’une part",
+      "meaning": "on the one hand"
+    },
+    {
+      "id": "fr.u13-x-18",
+      "lemma": "d’autre part",
+      "meaning": "on the other hand"
+    },
+    {
+      "id": "de.u13-x-18",
+      "lemma": "andererseits",
+      "meaning": "on the other hand"
+    },
+    {
+      "id": "fr.u13-x-19",
+      "lemma": "à mon avis",
+      "meaning": "in my opinion"
+    },
+    {
+      "id": "de.u13-x-19",
+      "lemma": "meiner Meinung nach",
+      "meaning": "in my opinion"
+    },
+    {
+      "id": "es.u13-x-20",
+      "lemma": "te queda bien",
+      "meaning": "it suits you"
+    },
+    {
+      "id": "fr.u13-x-20",
+      "lemma": "ça te va bien",
+      "meaning": "it suits you"
+    },
+    {
+      "id": "de.u13-x-20",
+      "lemma": "das steht dir gut",
+      "meaning": "it suits you"
+    },
+    {
+      "id": "es.u13-x-21",
+      "lemma": "es demasiado grande",
+      "meaning": "it's too big"
+    },
+    {
+      "id": "fr.u13-x-21",
+      "lemma": "c’est trop grand",
+      "meaning": "it's too big"
+    },
+    {
+      "id": "de.u13-x-21",
+      "lemma": "es ist zu groß",
+      "meaning": "it's too big"
+    },
+    {
+      "id": "es.u13-x-22",
+      "lemma": "es demasiado pequeño",
+      "meaning": "it's too small"
+    },
+    {
+      "id": "fr.u13-x-22",
+      "lemma": "c’est trop petit",
+      "meaning": "it's too small"
+    },
+    {
+      "id": "de.u13-x-22",
+      "lemma": "es ist zu klein",
+      "meaning": "it's too small"
+    },
+    {
+      "id": "es.u13-x-23",
+      "lemma": "¿tiene otra talla?",
+      "meaning": "do you have another size?"
+    },
+    {
+      "id": "fr.u13-x-23",
+      "lemma": "avez-vous une autre taille ?",
+      "meaning": "do you have another size?"
+    },
+    {
+      "id": "de.u13-x-23",
+      "lemma": "haben Sie eine andere Größe?",
+      "meaning": "do you have another size?"
+    },
+    {
+      "id": "es.u13-x-24",
+      "lemma": "¿puedo probármelo?",
+      "meaning": "may I try it on?"
+    },
+    {
+      "id": "fr.u13-x-24",
+      "lemma": "est-ce que je peux l’essayer ?",
+      "meaning": "may I try it on?"
+    },
+    {
+      "id": "de.u13-x-24",
+      "lemma": "darf ich es anprobieren?",
+      "meaning": "may I try it on?"
+    },
+    {
+      "id": "es.u13-x-25",
+      "lemma": "me lo llevo",
+      "meaning": "I'll take it"
+    },
+    {
+      "id": "fr.u13-x-25",
+      "lemma": "je le prends",
+      "meaning": "I'll take it"
+    },
+    {
+      "id": "de.u13-x-25",
+      "lemma": "ich nehme es",
+      "meaning": "I'll take it"
+    },
+    {
+      "id": "es.u13-x-26",
+      "lemma": "solo estoy mirando",
+      "meaning": "I'm just looking"
+    },
+    {
+      "id": "fr.u13-x-26",
+      "lemma": "je regarde seulement",
+      "meaning": "I'm just looking"
+    },
+    {
+      "id": "de.u13-x-26",
+      "lemma": "ich schaue mich nur um",
+      "meaning": "I'm just looking"
+    },
+    {
+      "id": "es.u13-x-27",
+      "lemma": "relación calidad-precio",
+      "meaning": "value for money"
+    },
+    {
+      "id": "fr.u13-x-27",
+      "lemma": "rapport qualité-prix",
+      "meaning": "value for money"
+    },
+    {
+      "id": "es.u13-x-28",
+      "lemma": "de segunda mano",
+      "meaning": "second-hand"
+    },
+    {
+      "id": "fr.u13-x-28",
+      "lemma": "d’occasion",
+      "meaning": "second-hand"
+    },
+    {
+      "id": "es.u13-x-29",
+      "lemma": "nuevo a estrenar",
+      "meaning": "brand new"
+    },
+    {
+      "id": "fr.u13-x-29",
+      "lemma": "tout neuf",
+      "meaning": "brand new"
+    },
+    {
+      "id": "de.u13-x-29",
+      "lemma": "brandneu",
+      "meaning": "brand new"
+    },
+    {
+      "id": "es.u13-x-30",
+      "lemma": "hecho a medida",
+      "meaning": "made to measure"
+    },
+    {
+      "id": "fr.u13-x-30",
+      "lemma": "sur mesure",
+      "meaning": "made to measure"
+    },
+    {
+      "id": "de.u13-x-30",
+      "lemma": "maßgeschneidert",
+      "meaning": "made to measure"
+    },
+    {
+      "id": "es.u13-x-31",
+      "lemma": "en buen estado",
+      "meaning": "in good condition"
+    },
+    {
+      "id": "fr.u13-x-31",
+      "lemma": "en bon état",
+      "meaning": "in good condition"
+    },
+    {
+      "id": "de.u13-x-31",
+      "lemma": "in gutem Zustand",
+      "meaning": "in good condition"
+    },
+    {
+      "id": "es.u13-x-32",
+      "lemma": "todo incluido",
+      "meaning": "all included"
+    },
+    {
+      "id": "fr.u13-x-32",
+      "lemma": "tout compris",
+      "meaning": "all included"
+    },
+    {
+      "id": "de.u13-x-32",
+      "lemma": "alles inklusive",
+      "meaning": "all included"
+    },
+    {
+      "id": "es.u14-n-application-job",
+      "lemma": "solicitud de empleo",
+      "meaning": "job application"
+    },
+    {
+      "id": "fr.u14-v-train",
+      "lemma": "s’entraîner",
+      "meaning": "train"
+    },
+    {
+      "id": "fr.u14-a-4",
+      "lemma": "qualifié",
+      "meaning": "qualified"
+    },
+    {
+      "id": "fr.u14-x-1",
+      "lemma": "donc",
+      "meaning": "therefore"
+    },
+    {
+      "id": "fr.u14-x-4",
+      "lemma": "de plus",
+      "meaning": "moreover"
+    },
+    {
+      "id": "es.u14-x-5",
+      "lemma": "en consecuencia",
+      "meaning": "consequently"
+    },
+    {
+      "id": "fr.u14-x-5",
+      "lemma": "par conséquent",
+      "meaning": "consequently"
+    },
+    {
+      "id": "fr.u14-x-6",
+      "lemma": "à savoir",
+      "meaning": "namely"
+    },
+    {
+      "id": "fr.u14-x-7",
+      "lemma": "en effet",
+      "meaning": "indeed"
+    },
+    {
+      "id": "de.u14-x-7",
+      "lemma": "tatsächlich",
+      "meaning": "indeed"
+    },
+    {
+      "id": "de.u14-x-9",
+      "lemma": "offensichtlich",
+      "meaning": "obviously"
+    },
+    {
+      "id": "fr.u14-x-10",
+      "lemma": "généralement",
+      "meaning": "generally"
+    },
+    {
+      "id": "fr.u14-x-15",
+      "lemma": "bien que",
+      "meaning": "although"
+    },
+    {
+      "id": "fr.u14-x-17",
+      "lemma": "avant que",
+      "meaning": "before"
+    },
+    {
+      "id": "es.u14-x-18",
+      "lemma": "después de que",
+      "meaning": "after"
+    },
+    {
+      "id": "fr.u14-x-18",
+      "lemma": "après que",
+      "meaning": "after"
+    },
+    {
+      "id": "es.u14-x-21",
+      "lemma": "es decir",
+      "meaning": "that is to say"
+    },
+    {
+      "id": "fr.u14-x-21",
+      "lemma": "c’est-à-dire",
+      "meaning": "that is to say"
+    },
+    {
+      "id": "de.u14-x-21",
+      "lemma": "das heißt",
+      "meaning": "that is to say"
+    },
+    {
+      "id": "fr.u14-x-22",
+      "lemma": "autrement dit",
+      "meaning": "in other words"
+    },
+    {
+      "id": "de.u14-x-26",
+      "lemma": "um … zu",
+      "meaning": "in order to"
+    },
+    {
+      "id": "es.u14-x-27",
+      "lemma": "como resultado",
+      "meaning": "as a result"
+    },
+    {
+      "id": "fr.u14-x-27",
+      "lemma": "en conséquence",
+      "meaning": "as a result"
+    },
+    {
+      "id": "de.u14-x-27",
+      "lemma": "infolgedessen",
+      "meaning": "as a result"
+    },
+    {
+      "id": "es.u14-x-28",
+      "lemma": "por esta razón",
+      "meaning": "for this reason"
+    },
+    {
+      "id": "fr.u14-x-28",
+      "lemma": "pour cette raison",
+      "meaning": "for this reason"
+    },
+    {
+      "id": "de.u14-x-28",
+      "lemma": "aus diesem Grund",
+      "meaning": "for this reason"
+    },
+    {
+      "id": "fr.u14-x-29",
+      "lemma": "en fait",
+      "meaning": "in fact"
+    },
+    {
+      "id": "de.u14-x-29",
+      "lemma": "eigentlich",
+      "meaning": "in fact"
+    },
+    {
+      "id": "es.u14-x-30",
+      "lemma": "en general",
+      "meaning": "in general"
+    },
+    {
+      "id": "fr.u14-x-30",
+      "lemma": "en général",
+      "meaning": "in general"
+    },
+    {
+      "id": "es.u14-x-32",
+      "lemma": "que yo sepa",
+      "meaning": "as far as I know"
+    },
+    {
+      "id": "fr.u14-x-32",
+      "lemma": "à ma connaissance",
+      "meaning": "as far as I know"
+    },
+    {
+      "id": "de.u15-n-cost",
+      "lemma": "Kostenpunkt",
+      "meaning": "cost"
+    },
+    {
+      "id": "es.u15-n-booking-change",
+      "lemma": "cambio de reserva",
+      "meaning": "booking change"
+    },
+    {
+      "id": "fr.u15-n-booking-change",
+      "lemma": "modification de réservation",
+      "meaning": "booking change"
+    },
+    {
+      "id": "es.u15-n-possibility-of-change",
+      "lemma": "cambio de plan",
+      "meaning": "change of plan"
+    },
+    {
+      "id": "fr.u15-n-possibility-of-change",
+      "lemma": "changement de programme",
+      "meaning": "change of plan"
+    },
+    {
+      "id": "de.u15-n-possibility-of-change",
+      "lemma": "Planänderung",
+      "meaning": "change of plan"
+    },
+    {
+      "id": "fr.u15-v-expect",
+      "lemma": "s’attendre",
+      "meaning": "expect"
+    },
+    {
+      "id": "fr.u15-a-14",
+      "lemma": "préparé",
+      "meaning": "prepared"
+    },
+    {
+      "id": "fr.u15-x-1",
+      "lemma": "finalement",
+      "meaning": "eventually"
+    },
+    {
+      "id": "fr.u15-x-2",
+      "lemma": "sous peu",
+      "meaning": "soon"
+    },
+    {
+      "id": "de.u15-x-2",
+      "lemma": "in Kürze",
+      "meaning": "soon"
+    },
+    {
+      "id": "es.u15-x-3",
+      "lemma": "de ahora en adelante",
+      "meaning": "henceforth"
+    },
+    {
+      "id": "fr.u15-x-3",
+      "lemma": "désormais",
+      "meaning": "henceforth"
+    },
+    {
+      "id": "fr.u15-x-4",
+      "lemma": "initialement",
+      "meaning": "initially"
+    },
+    {
+      "id": "fr.u15-x-5",
+      "lemma": "temporairement",
+      "meaning": "temporarily"
+    },
+    {
+      "id": "fr.u15-x-6",
+      "lemma": "en permanence",
+      "meaning": "permanently"
+    },
+    {
+      "id": "es.u15-x-7",
+      "lemma": "desde luego que no",
+      "meaning": "certainly not"
+    },
+    {
+      "id": "fr.u15-x-7",
+      "lemma": "certainement pas",
+      "meaning": "certainly not"
+    },
+    {
+      "id": "de.u15-x-7",
+      "lemma": "sicher nicht",
+      "meaning": "certainly not"
+    },
+    {
+      "id": "fr.u15-x-8",
+      "lemma": "espérons-le",
+      "meaning": "hopefully"
+    },
+    {
+      "id": "fr.u15-x-9",
+      "lemma": "nécessairement",
+      "meaning": "necessarily"
+    },
+    {
+      "id": "es.u15-x-10",
+      "lemma": "en cualquier caso",
+      "meaning": "in any event"
+    },
+    {
+      "id": "fr.u15-x-10",
+      "lemma": "en tout cas",
+      "meaning": "in any event"
+    },
+    {
+      "id": "de.u15-x-10",
+      "lemma": "jedenfalls",
+      "meaning": "in any event"
+    },
+    {
+      "id": "fr.u15-x-12",
+      "lemma": "à moins que",
+      "meaning": "unless"
+    },
+    {
+      "id": "de.u15-x-12",
+      "lemma": "es sei denn",
+      "meaning": "unless"
+    },
+    {
+      "id": "fr.u15-x-13",
+      "lemma": "dès que",
+      "meaning": "as soon as"
+    },
+    {
+      "id": "fr.u15-x-14",
+      "lemma": "tant que",
+      "meaning": "as long as"
+    },
+    {
+      "id": "es.u15-x-15",
+      "lemma": "si es posible",
+      "meaning": "if possible"
+    },
+    {
+      "id": "fr.u15-x-15",
+      "lemma": "si possible",
+      "meaning": "if possible"
+    },
+    {
+      "id": "de.u15-x-15",
+      "lemma": "wenn möglich",
+      "meaning": "if possible"
+    },
+    {
+      "id": "es.u15-x-16",
+      "lemma": "si es necesario",
+      "meaning": "if necessary"
+    },
+    {
+      "id": "fr.u15-x-16",
+      "lemma": "si nécessaire",
+      "meaning": "if necessary"
+    },
+    {
+      "id": "fr.u15-x-17",
+      "lemma": "au cas où",
+      "meaning": "just in case"
+    },
+    {
+      "id": "de.u15-x-17",
+      "lemma": "für alle Fälle",
+      "meaning": "just in case"
+    },
+    {
+      "id": "es.u15-x-18",
+      "lemma": "en ese caso",
+      "meaning": "in that case"
+    },
+    {
+      "id": "fr.u15-x-18",
+      "lemma": "dans ce cas",
+      "meaning": "in that case"
+    },
+    {
+      "id": "de.u15-x-18",
+      "lemma": "in diesem Fall",
+      "meaning": "in that case"
+    },
+    {
+      "id": "fr.u15-x-19",
+      "lemma": "tôt ou tard",
+      "meaning": "sooner or later"
+    },
+    {
+      "id": "fr.u15-x-20",
+      "lemma": "pour le moment",
+      "meaning": "for the time being"
+    },
+    {
+      "id": "fr.u15-x-21",
+      "lemma": "dans un avenir proche",
+      "meaning": "in the near future"
+    },
+    {
+      "id": "de.u15-x-21",
+      "lemma": "in naher Zukunft",
+      "meaning": "in the near future"
+    },
+    {
+      "id": "es.u15-x-22",
+      "lemma": "a largo plazo",
+      "meaning": "in the long term"
+    },
+    {
+      "id": "fr.u15-x-22",
+      "lemma": "à long terme",
+      "meaning": "in the long term"
+    },
+    {
+      "id": "fr.u15-x-23",
+      "lemma": "à court terme",
+      "meaning": "in the short term"
+    },
+    {
+      "id": "es.u15-x-24",
+      "lemma": "esperemos que sí",
+      "meaning": "let's hope so"
+    },
+    {
+      "id": "fr.u15-x-24",
+      "lemma": "espérons que oui",
+      "meaning": "let's hope so"
+    },
+    {
+      "id": "de.u15-x-24",
+      "lemma": "hoffen wir es",
+      "meaning": "let's hope so"
+    },
+    {
+      "id": "es.u15-x-25",
+      "lemma": "espero que no",
+      "meaning": "I hope not"
+    },
+    {
+      "id": "fr.u15-x-25",
+      "lemma": "j’espère que non",
+      "meaning": "I hope not"
+    },
+    {
+      "id": "de.u15-x-25",
+      "lemma": "ich hoffe nicht",
+      "meaning": "I hope not"
+    },
+    {
+      "id": "es.u15-x-26",
+      "lemma": "ya veremos",
+      "meaning": "we'll see"
+    },
+    {
+      "id": "fr.u15-x-26",
+      "lemma": "on verra",
+      "meaning": "we'll see"
+    },
+    {
+      "id": "de.u15-x-26",
+      "lemma": "wir werden sehen",
+      "meaning": "we'll see"
+    },
+    {
+      "id": "es.u15-x-27",
+      "lemma": "tú decides",
+      "meaning": "it's up to you"
+    },
+    {
+      "id": "fr.u15-x-27",
+      "lemma": "à toi de décider",
+      "meaning": "it's up to you"
+    },
+    {
+      "id": "de.u15-x-27",
+      "lemma": "du entscheidest",
+      "meaning": "it's up to you"
+    },
+    {
+      "id": "es.u15-x-28",
+      "lemma": "lo pensaré",
+      "meaning": "I'll think about it"
+    },
+    {
+      "id": "fr.u15-x-28",
+      "lemma": "je vais y réfléchir",
+      "meaning": "I'll think about it"
+    },
+    {
+      "id": "de.u15-x-28",
+      "lemma": "ich werde darüber nachdenken",
+      "meaning": "I'll think about it"
+    },
+    {
+      "id": "es.u15-x-29",
+      "lemma": "te avisaré",
+      "meaning": "I'll let you know"
+    },
+    {
+      "id": "fr.u15-x-29",
+      "lemma": "je te tiendrai au courant",
+      "meaning": "I'll let you know"
+    },
+    {
+      "id": "de.u15-x-29",
+      "lemma": "ich gebe dir Bescheid",
+      "meaning": "I'll let you know"
+    },
+    {
+      "id": "es.u15-x-30",
+      "lemma": "avísame",
+      "meaning": "let me know"
+    },
+    {
+      "id": "fr.u15-x-30",
+      "lemma": "tiens-moi au courant",
+      "meaning": "let me know"
+    },
+    {
+      "id": "de.u15-x-30",
+      "lemma": "gib mir Bescheid",
+      "meaning": "let me know"
+    },
+    {
+      "id": "es.u15-x-31",
+      "lemma": "crucemos los dedos",
+      "meaning": "fingers crossed"
+    },
+    {
+      "id": "fr.u15-x-31",
+      "lemma": "croisons les doigts",
+      "meaning": "fingers crossed"
+    },
+    {
+      "id": "de.u15-x-31",
+      "lemma": "drücken wir die Daumen",
+      "meaning": "fingers crossed"
+    },
+    {
+      "id": "es.u15-x-32",
+      "lemma": "hasta la próxima",
+      "meaning": "see you next time"
+    },
+    {
+      "id": "fr.u15-x-32",
+      "lemma": "à la prochaine",
+      "meaning": "see you next time"
+    },
+    {
+      "id": "de.u15-x-32",
+      "lemma": "bis zum nächsten Mal",
+      "meaning": "see you next time"
+    },
+    {
+      "id": "de.u16-v-imagine",
+      "lemma": "sich vorstellen",
+      "meaning": "imagine"
+    },
+    {
+      "id": "fr.u16-v-realize",
+      "lemma": "se rendre compte",
+      "meaning": "realize"
+    },
+    {
+      "id": "fr.u16-v-practice",
+      "lemma": "s’exercer",
+      "meaning": "practice"
+    },
+    {
+      "id": "fr.u16-a-3",
+      "lemma": "sans rapport",
+      "meaning": "irrelevant"
+    },
+    {
+      "id": "fr.u16-x-1",
+      "lemma": "clairement",
+      "meaning": "clearly"
+    },
+    {
+      "id": "fr.u16-x-2",
+      "lemma": "précisément",
+      "meaning": "precisely"
+    },
+    {
+      "id": "de.u16-x-2",
+      "lemma": "präzise",
+      "meaning": "precisely"
+    },
+    {
+      "id": "es.u16-x-3",
+      "lemma": "a grandes rasgos",
+      "meaning": "roughly"
+    },
+    {
+      "id": "fr.u16-x-3",
+      "lemma": "en gros",
+      "meaning": "roughly"
+    },
+    {
+      "id": "fr.u16-x-4",
+      "lemma": "couramment",
+      "meaning": "fluently"
+    },
+    {
+      "id": "fr.u16-x-5",
+      "lemma": "littéralement",
+      "meaning": "literally"
+    },
+    {
+      "id": "fr.u16-x-6",
+      "lemma": "au sens figuré",
+      "meaning": "figuratively"
+    },
+    {
+      "id": "de.u16-x-6",
+      "lemma": "bildlich",
+      "meaning": "figuratively"
+    },
+    {
+      "id": "fr.u16-x-7",
+      "lemma": "honnêtement",
+      "meaning": "honestly"
+    },
+    {
+      "id": "fr.u16-x-8",
+      "lemma": "franchement",
+      "meaning": "frankly"
+    },
+    {
+      "id": "de.u16-x-8",
+      "lemma": "offen gesagt",
+      "meaning": "frankly"
+    },
+    {
+      "id": "fr.u16-x-9",
+      "lemma": "essentiellement",
+      "meaning": "essentially"
+    },
+    {
+      "id": "fr.u16-x-10",
+      "lemma": "spécifiquement",
+      "meaning": "specifically"
+    },
+    {
+      "id": "de.u16-x-10",
+      "lemma": "insbesondere",
+      "meaning": "specifically"
+    },
+    {
+      "id": "es.u16-x-11",
+      "lemma": "en resumen",
+      "meaning": "sum up"
+    },
+    {
+      "id": "fr.u16-x-11",
+      "lemma": "en résumé",
+      "meaning": "sum up"
+    },
+    {
+      "id": "de.u16-x-11",
+      "lemma": "zusammenfassend",
+      "meaning": "sum up"
+    },
+    {
+      "id": "fr.u16-x-12",
+      "lemma": "en conclusion",
+      "meaning": "in conclusion"
+    },
+    {
+      "id": "de.u16-x-12",
+      "lemma": "abschließend",
+      "meaning": "in conclusion"
+    },
+    {
+      "id": "es.u16-x-13",
+      "lemma": "ante todo",
+      "meaning": "first of all"
+    },
+    {
+      "id": "fr.u16-x-13",
+      "lemma": "tout d’abord",
+      "meaning": "first of all"
+    },
+    {
+      "id": "fr.u16-x-14",
+      "lemma": "enfin et surtout",
+      "meaning": "last but not least"
+    },
+    {
+      "id": "de.u16-x-14",
+      "lemma": "zu guter Letzt",
+      "meaning": "last but not least"
+    },
+    {
+      "id": "fr.u16-x-15",
+      "lemma": "au fait",
+      "meaning": "by the way"
+    },
+    {
+      "id": "es.u16-x-16",
+      "lemma": "hablando de …",
+      "meaning": "speaking of …"
+    },
+    {
+      "id": "fr.u16-x-16",
+      "lemma": "à propos de …",
+      "meaning": "speaking of …"
+    },
+    {
+      "id": "de.u16-x-16",
+      "lemma": "wo wir gerade von … sprechen",
+      "meaning": "speaking of …"
+    },
+    {
+      "id": "es.u16-x-17",
+      "lemma": "volviendo al tema",
+      "meaning": "back to the subject"
+    },
+    {
+      "id": "fr.u16-x-17",
+      "lemma": "pour revenir au sujet",
+      "meaning": "back to the subject"
+    },
+    {
+      "id": "de.u16-x-17",
+      "lemma": "zurück zum Thema",
+      "meaning": "back to the subject"
+    },
+    {
+      "id": "es.u16-x-18",
+      "lemma": "lo que quiero decir es …",
+      "meaning": "what I mean is …"
+    },
+    {
+      "id": "fr.u16-x-18",
+      "lemma": "ce que je veux dire, c’est …",
+      "meaning": "what I mean is …"
+    },
+    {
+      "id": "de.u16-x-18",
+      "lemma": "was ich meine, ist …",
+      "meaning": "what I mean is …"
+    },
+    {
+      "id": "es.u16-x-19",
+      "lemma": "déjame explicar",
+      "meaning": "let me explain"
+    },
+    {
+      "id": "fr.u16-x-19",
+      "lemma": "laisse-moi expliquer",
+      "meaning": "let me explain"
+    },
+    {
+      "id": "de.u16-x-19",
+      "lemma": "lass mich erklären",
+      "meaning": "let me explain"
+    },
+    {
+      "id": "es.u16-x-20",
+      "lemma": "si entiendo bien",
+      "meaning": "if I understand correctly"
+    },
+    {
+      "id": "fr.u16-x-20",
+      "lemma": "si je comprends bien",
+      "meaning": "if I understand correctly"
+    },
+    {
+      "id": "de.u16-x-20",
+      "lemma": "wenn ich richtig verstehe",
+      "meaning": "if I understand correctly"
+    },
+    {
+      "id": "es.u16-x-21",
+      "lemma": "¿quieres decir …?",
+      "meaning": "do you mean …?"
+    },
+    {
+      "id": "fr.u16-x-21",
+      "lemma": "tu veux dire … ?",
+      "meaning": "do you mean …?"
+    },
+    {
+      "id": "de.u16-x-21",
+      "lemma": "meinst du …?",
+      "meaning": "do you mean …?"
+    },
+    {
+      "id": "es.u16-x-22",
+      "lemma": "¿podría decirlo de otra manera?",
+      "meaning": "could you rephrase that?"
+    },
+    {
+      "id": "fr.u16-x-22",
+      "lemma": "pourriez-vous reformuler ?",
+      "meaning": "could you rephrase that?"
+    },
+    {
+      "id": "de.u16-x-22",
+      "lemma": "könnten Sie das anders formulieren?",
+      "meaning": "could you rephrase that?"
+    },
+    {
+      "id": "es.u16-x-23",
+      "lemma": "¿podría dar un ejemplo?",
+      "meaning": "could you give an example?"
+    },
+    {
+      "id": "fr.u16-x-23",
+      "lemma": "pourriez-vous donner un exemple ?",
+      "meaning": "could you give an example?"
+    },
+    {
+      "id": "de.u16-x-23",
+      "lemma": "könnten Sie ein Beispiel geben?",
+      "meaning": "could you give an example?"
+    },
+    {
+      "id": "es.u16-x-24",
+      "lemma": "no lo he entendido",
+      "meaning": "I didn't catch that"
+    },
+    {
+      "id": "fr.u16-x-24",
+      "lemma": "je n’ai pas compris",
+      "meaning": "I didn't catch that"
+    },
+    {
+      "id": "de.u16-x-24",
+      "lemma": "ich habe das nicht verstanden",
+      "meaning": "I didn't catch that"
+    },
+    {
+      "id": "es.u16-x-25",
+      "lemma": "¿cómo se dice …?",
+      "meaning": "how do you say …?"
+    },
+    {
+      "id": "fr.u16-x-25",
+      "lemma": "comment dit-on … ?",
+      "meaning": "how do you say …?"
+    },
+    {
+      "id": "de.u16-x-25",
+      "lemma": "wie sagt man …?",
+      "meaning": "how do you say …?"
+    },
+    {
+      "id": "es.u16-x-26",
+      "lemma": "¿qué significa eso?",
+      "meaning": "what does that mean?"
+    },
+    {
+      "id": "fr.u16-x-26",
+      "lemma": "qu’est-ce que ça veut dire ?",
+      "meaning": "what does that mean?"
+    },
+    {
+      "id": "de.u16-x-26",
+      "lemma": "was bedeutet das?",
+      "meaning": "what does that mean?"
+    },
+    {
+      "id": "es.u16-x-27",
+      "lemma": "he olvidado la palabra",
+      "meaning": "I've forgotten the word"
+    },
+    {
+      "id": "fr.u16-x-27",
+      "lemma": "j’ai oublié le mot",
+      "meaning": "I've forgotten the word"
+    },
+    {
+      "id": "de.u16-x-27",
+      "lemma": "ich habe das Wort vergessen",
+      "meaning": "I've forgotten the word"
+    },
+    {
+      "id": "es.u16-x-28",
+      "lemma": "déjame empezar de nuevo",
+      "meaning": "let me start again"
+    },
+    {
+      "id": "fr.u16-x-28",
+      "lemma": "laisse-moi recommencer",
+      "meaning": "let me start again"
+    },
+    {
+      "id": "de.u16-x-28",
+      "lemma": "lass mich noch einmal anfangen",
+      "meaning": "let me start again"
+    },
+    {
+      "id": "es.u16-x-29",
+      "lemma": "eso es lo que quería decir",
+      "meaning": "that's what I meant"
+    },
+    {
+      "id": "fr.u16-x-29",
+      "lemma": "c’est ce que je voulais dire",
+      "meaning": "that's what I meant"
+    },
+    {
+      "id": "de.u16-x-29",
+      "lemma": "das habe ich gemeint",
+      "meaning": "that's what I meant"
+    },
+    {
+      "id": "es.u16-x-30",
+      "lemma": "gracias por corregirme",
+      "meaning": "thanks for correcting me"
+    },
+    {
+      "id": "fr.u16-x-30",
+      "lemma": "merci de m’avoir corrigé",
+      "meaning": "thanks for correcting me"
+    },
+    {
+      "id": "de.u16-x-30",
+      "lemma": "danke für die Korrektur",
+      "meaning": "thanks for correcting me"
+    },
+    {
+      "id": "es.u16-x-31",
+      "lemma": "ahora lo entiendo",
+      "meaning": "now I understand"
+    },
+    {
+      "id": "fr.u16-x-31",
+      "lemma": "maintenant, je comprends",
+      "meaning": "now I understand"
+    },
+    {
+      "id": "de.u16-x-31",
+      "lemma": "jetzt verstehe ich",
+      "meaning": "now I understand"
+    },
+    {
+      "id": "es.u16-x-32",
+      "lemma": "eso tiene sentido",
+      "meaning": "that makes sense"
+    },
+    {
+      "id": "fr.u16-x-32",
+      "lemma": "c’est logique",
+      "meaning": "that makes sense"
+    },
+    {
+      "id": "de.u16-x-32",
+      "lemma": "das ergibt Sinn",
+      "meaning": "that makes sense"
+    }
+  ],
+  "formFlags": [
+    [
+      "de.u01-language-german",
+      "part of speech",
+      "Deutsch"
+    ],
+    [
+      "es-leer",
+      "verb",
+      "leés",
+      2,
+      "singular",
+      [
+        "lees"
+      ]
+    ],
+    [
+      "es-write",
+      "verb",
+      "escribís",
+      2,
+      "singular",
+      [
+        "escribes",
+        "te escribes"
+      ]
+    ],
+    [
+      "es-buy",
+      "verb",
+      "comprás",
+      2,
+      "singular",
+      [
+        "compras",
+        "te compras"
+      ]
+    ],
+    [
+      "es-want",
+      "verb",
+      "querés",
+      2,
+      "singular",
+      [
+        "quieres"
+      ]
+    ],
+    [
+      "es-take",
+      "verb",
+      "tomás",
+      2,
+      "singular",
+      [
+        "tomas"
+      ]
+    ],
+    [
+      "es-open",
+      "verb",
+      "abrís",
+      2,
+      "singular",
+      [
+        "abres",
+        "te abres"
+      ]
+    ],
+    [
+      "es-close",
+      "verb",
+      "cerrás",
+      2,
+      "singular",
+      [
+        "cierras"
+      ]
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "estoy de pie",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "estás de pie",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "está de pie",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "estamos de pie",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "estáis de pie",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u02-v-stand",
+      "verb",
+      "están de pie",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "suis debout",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "es debout",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "est debout",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "sommes debout",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "êtes debout",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "fr.u02-v-stand",
+      "verb",
+      "sont debout",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "me tumbo",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "te tumbas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "se tumba",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "nos tumbamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "os tumbáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u02-v-lie-down",
+      "verb",
+      "se tumban",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "me levanto",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "te levantas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "se levanta",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "nos levantamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "os levantáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u03-v-get-up",
+      "verb",
+      "se levantan",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "de.u03-a-18",
+      "part of speech",
+      "laut"
+    ],
+    [
+      "de.u04-n-knowledge",
+      "part of speech",
+      "Wissen"
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "quiero decir",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "quieres decir",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "quiere decir",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "queremos decir",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "queréis decir",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u04-v-mean",
+      "verb",
+      "quieren decir",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "veux dire",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "veux dire",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "veut dire",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "voulons dire",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "voulez dire",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "fr.u04-v-mean",
+      "verb",
+      "veulent dire",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u04-a-14",
+      "part of speech",
+      "otro"
+    ],
+    [
+      "de.u05-n-plate",
+      "gender",
+      "masculine",
+      [
+        "strong"
+      ]
+    ],
+    [
+      "es.u05-n-sugar",
+      "gender",
+      "masculine",
+      []
+    ],
+    [
+      "de.u05-a-12",
+      "part of speech",
+      "gekocht"
+    ],
+    [
+      "de.u05-a-14",
+      "part of speech",
+      "geröstet"
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "me quedo",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "te quedas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "se queda",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "nos quedamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "os quedáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u06-v-stay",
+      "verb",
+      "se quedan",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "me encuentro",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "te encuentras",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "se encuentra",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "nos encontramos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "os encontráis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u07-v-meet",
+      "verb",
+      "se encuentran",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "de.u07-v-promise",
+      "part of speech",
+      "versprechen"
+    ],
+    [
+      "de.u07-a-20",
+      "part of speech",
+      "verpflichtend"
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "hago daño",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "haces daño",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "hace daño",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "hacemos daño",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "hacéis daño",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-hurt",
+      "verb",
+      "hacen daño",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "fais mal",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "fais mal",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "fait mal",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "faisons mal",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "faites mal",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "fr.u08-v-hurt",
+      "verb",
+      "font mal",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "llevo puesto",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "llevas puesto",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "lleva puesto",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "llevamos puesto",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "lleváis puesto",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-wear",
+      "verb",
+      "llevan puesto",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "me recupero",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "te recuperas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "se recupera",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "nos recuperamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "os recuperáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u08-v-recover",
+      "verb",
+      "se recuperan",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u09-n-holiday",
+      "plural",
+      "vacaciones",
+      []
+    ],
+    [
+      "fr.u09-n-holiday",
+      "plural",
+      "vacances",
+      []
+    ],
+    [
+      "fr.u09-a-19",
+      "part of speech",
+      "réussi"
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "me crío",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "te crías",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "se cría",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "nos criamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "os criáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u10-v-grow-up",
+      "verb",
+      "se crían",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u11-n-internet",
+      "gender",
+      "masculine",
+      []
+    ],
+    [
+      "fr.u11-n-internet",
+      "part of speech",
+      "Internet"
+    ],
+    [
+      "fr.u11-a-18",
+      "part of speech",
+      "connecté"
+    ],
+    [
+      "es.u12-n-pan",
+      "gender",
+      "feminine",
+      []
+    ],
+    [
+      "fr.u12-n-smoke",
+      "plural",
+      "fumées",
+      []
+    ],
+    [
+      "es.u12-n-scissors",
+      "plural",
+      "tijeras",
+      []
+    ],
+    [
+      "fr.u12-n-scissors",
+      "plural",
+      "ciseaux",
+      []
+    ],
+    [
+      "fr.u12-a-2",
+      "part of speech",
+      "abîmé"
+    ],
+    [
+      "de.u12-a-2",
+      "part of speech",
+      "beschädigt"
+    ],
+    [
+      "es.u12-a-3",
+      "part of speech",
+      "bloqueado"
+    ],
+    [
+      "de.u12-a-3",
+      "part of speech",
+      "blockiert"
+    ],
+    [
+      "fr.u12-a-6",
+      "part of speech",
+      "desserré"
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "me pruebo",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "te pruebas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "se prueba",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "nos probamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "os probáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u13-v-try-on",
+      "verb",
+      "se prueban",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "me parezco",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "te pareces",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "se parece",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "nos parecemos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "os parecéis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u13-v-look-like",
+      "verb",
+      "se parecen",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "fr.u13-a-9",
+      "part of speech",
+      "coloré"
+    ],
+    [
+      "es.u13-a-13",
+      "part of speech",
+      "de moda"
+    ],
+    [
+      "es.u14-n-curriculum-vitae",
+      "plural",
+      "currículums",
+      [
+        "currículum"
+      ]
+    ],
+    [
+      "fr.u14-n-curriculum-vitae",
+      "plural",
+      "CV",
+      []
+    ],
+    [
+      "fr.u14-a-4",
+      "part of speech",
+      "qualifié"
+    ],
+    [
+      "de.u14-a-4",
+      "part of speech",
+      "qualifiziert"
+    ],
+    [
+      "fr.u15-n-fee",
+      "plural",
+      "frais",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "me mudo",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "te mudas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "se muda",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "nos mudamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "os mudáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u15-v-move-home",
+      "verb",
+      "se mudan",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "me caso",
+      1,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "te casas",
+      2,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "se casa",
+      3,
+      "singular",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "nos casamos",
+      1,
+      "plural",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "os casáis",
+      2,
+      "plural",
+      []
+    ],
+    [
+      "es.u15-v-marry",
+      "verb",
+      "se casan",
+      3,
+      "plural",
+      []
+    ],
+    [
+      "fr.u15-a-14",
+      "part of speech",
+      "préparé"
+    ],
+    [
+      "de.u15-a-14",
+      "part of speech",
+      "vorbereitet"
+    ]
+  ]
+}

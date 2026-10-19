@@ -1,6 +1,6 @@
 # Perlingo curriculum specification
 
-Status: **course specification v1, 2026-10-18; continuous local authoring authorized**. The user accepts the existing source-comparison process and does not require individual batch approvals. Numerical targets below remain design targets, not completed inventory. This defines the intended course, not authored or released content. The current implementation remains the 34-concept starter bank plus the separate 50-concept draft foundation preview, committed in `e3ddcf7`. C3 continues; C4 AI chat comes later.
+Status: **course specification v1, 2026-10-18; full content draft authored locally**. All 16 inventories and 384 new examples per language are present, with production, contrast and transfer practice. See [actual counts and verification limits](course-authoring.md). Evidence coverage, complete component analysis, release review and the proposed mastery/progression system are not complete. C4 AI chat remains separate.
 
 ## Scope and endpoint
 
@@ -18,7 +18,7 @@ Units run in the order below. Each assumes previous units; the prerequisite colu
 
 ## Ordered units and observable milestones
 
-Each milestone is a proposed content/assessment requirement. None of these units is complete today.
+Each milestone is a proposed assessment requirement. All units have draft content, but none has an implemented unit-mastery assessment.
 
 | Unit | Goal and vocabulary domain | Key prerequisites | Exit task using new combinations of taught material |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ Three target clusters per language per unit. Split each cluster into small objec
 | U04 | Question words/intonation; no and negative expressions; frequency placement | Intonation/est-ce que; ne…pas and common alternatives; question words and frequency | Verb-first and W-questions; nicht versus kein; time expressions and inversion |
 | U05 | Count/mass quantities; gustar-type preferences; querer/necesitar + noun/infinitive | Partitives/quantity phrases; negation with de; vouloir/besoin and polite formulas | Accusative objects; quantity/price phrases; möchten/brauchen and preferences |
 | U06 | hay versus estar; place/direction prepositions; ir and a/al | il y a/location; à/de contractions; aller and place prepositions | Dative fixed prepositions; two-way location/direction contrasts; gehen/fahren patterns |
-| U07 | ir a + infinitive; poder/tener que; date/time arrangements | aller + infinitive; pouvoir/devoir; dates/time and requests | Modal verb bracket; time-marked present plans; dates and appointment expressions |
+| U07 | ir a + infinitive; poder/tener que; date/time arrangements | aller + infinitive; pouvoir/devoir; dates/time and requests | Modal verb bracket; time-marked present plans, bounded werden-future previews; dates and appointment expressions |
 | U08 | ser/estar consolidation; por/para in bounded uses; integrated subject/number contrasts | c’est/il est contrasts; demonstratives; integrated article/subject contrasts | Possessive determiners by case; demonstratives; nominative/accusative/dative consolidation |
 | U09 | Perfect participles; present perfect in a named variety; preterite completed-event contrasts | Passé composé with avoir; être selection; frequent irregular participles | Perfekt with haben; sein selection; participles and sentence bracket |
 | U10 | Imperfect forms; past habitual/background uses; preterite/imperfect contrast | Imparfait forms; habitual/background uses; passé composé/imparfait contrast | Präteritum sein/haben; common past modal forms; explicit time markers for event/background meaning |
@@ -84,7 +84,7 @@ A lexical sense-item is one lemma+meaning or one conventional multiword expressi
 
 Select by communicative need first, then within each language by frequency and dispersion across relevant contexts. A high-frequency function word may matter more than the next concrete noun. For every candidate, record sense, domain/unit, productive versus recognition goal, variety/register, frequency source/corpus version and rank if actually measured, lexical evidence, and reviewer. No invented frequency ranks. Goethe’s A1/A2 wordlists are useful German reference inventories, not substitutes for pedagogical sequencing or translation verification. [A1 inventory](https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf), [A2 inventory](https://www.goethe.de/pro/relaunch/prf/en/Goethe-Zertifikat_A2_Wortliste.pdf).
 
-The exact lemma lists are **not yet selected**. Approving this specification fixes course boundaries and authoring rules; it does not mean the full content bank exists. Start with a 100-item U01 candidate inventory in each language, reconcile shared senses, and review it before scaling. Adjective/function-word teaching and scheduling require explicit design because the current standalone lesson types remain noun/verb/grammar/sentence.
+The exact inventories are now authored for all units. The type budgets above remain planning allocations rather than exact quotas: the draft contains more nouns/adjectives and useful expressions than the original allocation. Actual deduplicated counts and counting exclusions are documented in [course authoring](course-authoring.md). Frequency and dispersion ranking has not been performed. Non-noun/verb lexical practice uses the sentence quota while retaining its lexical type.
 
 ## Sentence and exercise authoring contract
 
@@ -94,7 +94,7 @@ Most lesson examples should introduce one target construction and use previously
 
 A grammar exercise isolates a form/contrast. A sentence exercise integrates already introduced targets into communication. Keep grammatical function words inside their useful phrase; the sidebar can explain components. A compact popover answers meaning here, the sidebar explains form. No English word-for-word segmentation requirement.
 
-Accepted-answer policy must precede release of a unit: specify alternatives for optional subject pronouns, register, regional vocabulary, equivalent word order, and contractions. Reject changes that alter the intended tense, referent, or meaning. The current app accepts only the taught string with its existing normalization; semantic variant evaluation and comprehension/transfer task modes are **not implemented**. Do not describe that exact-match behavior as evaluating all valid translations.
+Accepted-answer policy must precede release of a unit: specify alternatives for optional subject pronouns, register, regional vocabulary, equivalent word order, and contractions. Reject changes that alter the intended tense, referent, or meaning. The app accepts the taught string plus explicitly authored alternative strings, using its existing normalization. Two-choice comprehension and held-out-from-learning transfer modes are implemented. Open-ended semantic evaluation is **not implemented**. Do not describe that exact-match behavior as evaluating all valid translations.
 
 ## Varieties, conjugation, and review
 
@@ -110,7 +110,7 @@ Keep the existing one-perfect-round session rule. A session pass is not a unit p
 
 Track outcomes separately per language and objective. Revisit weak prerequisites without forcing every language to repeat mastered material. Learners may preview later units; future progression should recommend readiness rather than falsely declare proficiency. Help/reveals must warn beforehand, mark the response assisted, and exclude it from perfect-round/mastery credit. No progression engine, checkpoint mode, objective scheduling, or mastery dashboard is introduced by this specification.
 
-## Current coverage audit
+## Baseline coverage audit (before course authoring)
 
 As of `e3ddcf7`: **84 concepts / 252 language versions**, split into 46 noun concepts, 16 verb concepts, 8 grammar exercises, and 14 sentence/expression concepts. The reading pilot is part of the 34 starter concepts, not an additional three. Starter content is accessible; foundation content remains draft-only. The 114 source-compared foundation lexical records are 38 concepts × 3 languages, not 114 new concepts. No complete unit or independently approved curriculum is claimed.
 
@@ -125,18 +125,16 @@ As of `e3ddcf7`: **84 concepts / 252 language versions**, split into 46 noun con
 | U07–U08 | Existing go/come/want/take meanings can be reused | No dedicated plan/modal/date/integration sequence |
 | U09–U16 | Earlier vocabulary is reusable | No dedicated past narrative, comparison, command, connected-clause, or extension checkpoint sequence |
 
-The remaining foundation sentences (writing letters, opening doors, closing windows, including the plural writing example) are U03 agreement/action seeds. Every noun/verb seed still needs unit assignment and variety/sense review in the exact inventory. The eight grammar exercises are audited individually in [grammar topics](grammar-topics.md). Incidental case or article use in a sentence is not a completed grammar objective. Do not compute course completion as 84 divided by a planned vocabulary budget: those are different units of measurement.
+The remaining foundation sentences (writing letters, opening doors, closing windows, including the plural writing example) are U03 agreement/action seeds. Seeds now have unit assignments; variety/sense review remains separate. The eight grammar exercises are audited individually in [grammar topics](grammar-topics.md). Incidental case or article use in a sentence is not a completed grammar objective. Do not compute course completion as 84 divided by a planned vocabulary budget: those are different units of measurement.
 
-## Implementation order and acceptance
+## Implementation and remaining acceptance work
 
-1. Review this course scope, target varieties, and milestones with the user. No content promotion yet.
-2. Author the U01 inventory and objective-level specification in all three languages: exact senses, prerequisites, target forms, and evidence. Establish independent review arrangements.
-3. Author/review U01 examples and answer variants. Pilot the full teach → practice → delayed-recall loop before authoring U02 at scale.
-4. Add unit/objective metadata, missing lexical authoring support, variant checking, comprehension/transfer tasks, and per-language progress in separately reviewable tasks. Keep current behavior documented until each lands.
-5. Expand units sequentially; reassess budgets and prerequisite difficulty from learner results. C4 chat and C5 polish do not substitute for curriculum authoring.
+All 16 unit inventories and the 4/2/2 example mix are authored and playable. Existing seed IDs/evidence are retained. The local course includes unit selection, explicit answer variants, contrast and transfer tasks, reference-form selection and coverage auditing.
 
-Specification acceptance means the sequence, coverage boundaries, and completion criteria are agreed. Unit release additionally requires reviewed inventories/examples, supported task modes, accessible pronunciation, correct chunks/forms, accepted-answer tests, source/reuse metadata, and strict pack admission. Full course release requires all 16 units to satisfy those conditions. No timeline or all-language proficiency guarantee is implied.
+Remaining verification work includes full source/sense and sentence comparisons, detailed component notes, concrete situation metadata (current examples retain generic situation labels), comprehensive accepted-answer policies and reuse review. The specification’s reviewed-examples/two-situations requirement is not satisfied merely by the numeric example count. Proposed prerequisite recommendations, objective scheduling, checkpoints and delayed assessment remain separate implementation work. These limitations do not block authorized local authoring or preview, and must not be described as implemented.
+
+Unit release still requires reviewed inventories/examples, correct chunks/forms, appropriate accepted answers, source/reuse metadata and strict pack admission. No CEFR proficiency guarantee is implied.
 
 ## Reference access and limits
 
-References consulted 2026-10-18. The Council of Europe, Goethe inventories, and UT Austin index were readable. Instituto Cervantes’ [A1–A2 grammar inventory](https://cvc.cervantes.es/Ensenanza/biblioteca_ele/plan_curricular/niveles/02_gramatica_inventario_a1-a2.htm) appeared in search but its page redirected to maintenance; France Éducation international’s [DELF A1 page](https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a1?langue=en) and [A2 page](https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2) blocked retrieval. Detailed Spanish/French level alignment against those references remains pending. Do not present our sequence as their prescribed syllabus. No source text, wordlist, or corpus was imported into the game by this task.
+References consulted 2026-10-18. The Council of Europe, Goethe inventories, and UT Austin index were readable. Instituto Cervantes’ [A1–A2 grammar inventory](https://cvc.cervantes.es/Ensenanza/biblioteca_ele/plan_curricular/niveles/02_gramatica_inventario_a1-a2.htm) appeared in search but its page redirected to maintenance; France Éducation international’s [DELF A1 page](https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a1?langue=en) and [A2 page](https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2) blocked retrieval. Detailed Spanish/French level alignment against those references remains pending. Do not present our sequence as their prescribed syllabus. The curriculum-planning step imported no source material. The subsequent authoring step compares dictionary pairs and includes attributed extracted reference forms; see course-authoring.md for exact provenance and reuse limits.

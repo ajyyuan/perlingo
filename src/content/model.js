@@ -1,3 +1,4 @@
+import {unitById} from './course/units.js';
 import {grammarTopics} from './grammar-topics.js';
 const languages=['es','fr','de'];
 const present=value=>typeof value==='string'&&value.trim().length>0;
@@ -19,7 +20,7 @@ export function validatePack(pack,{release=false}={}){
  require(present(pack.id)&&Number.isInteger(pack.version)&&pack.version>0,'Pack ID and positive version required');
  for(const [id,s] of Object.entries(pack.sources||{})){if(release)require(s.reuseReviewed===true,`Source ${id}: reuse terms not reviewed`);require(present(s.title)&&/^https:\/\//.test(s.url||'')&&present(s.accessedAt)&&present(s.attribution)&&present(s.license)&&present(s.scope),`Source ${id}: incomplete provenance`);}
  for(const [id,l] of Object.entries(pack.lexemes||{})){
-  require(l.id===id&&languages.includes(l.lang)&&['noun','verb','pronoun','determiner','adverb','adjective','preposition','conjunction'].includes(l.pos)&&present(l.lemma)&&present(l.senseId),`Lexeme ${id}: invalid identity`);
+  require(l.id===id&&languages.includes(l.lang)&&['noun','verb','pronoun','determiner','adverb','adjective','preposition','conjunction','numeral','expression'].includes(l.pos)&&present(l.lemma)&&present(l.senseId),`Lexeme ${id}: invalid identity`);
   require(Array.isArray(l.forms)&&l.forms.length>0&&l.forms.every(f=>present(f.text)),`Lexeme ${id}: forms required`);
   if(l.pos==='noun')require(['masculine','feminine','neuter'].includes(l.gender),`Lexeme ${id}: gender required`);
   if(l.paradigm?.complete){
@@ -41,6 +42,8 @@ export function validatePack(pack,{release=false}={}){
  for(const e of pack.entries||[]){
   require(present(e.id)&&!seen.has(e.id),`Duplicate or missing entry ID: ${e.id}`);seen.add(e.id);
   require(present(e.senseId)&&present(e.definition)&&present(e.prompt)&&['noun','verb','sentence','grammar'].includes(e.type),`${e.id}: incomplete meaning`);
+  if(e.unitId){const unit=unitById(e.unitId);require(Boolean(unit),`${e.id}: unknown unit`);require(['vocabulary','example'].includes(e.kind),`${e.id}: course entry kind required`);if(e.kind==='example'){require(unit?.objectives.some(o=>o.id===e.objectiveId),`${e.id}: unknown objective`);require(['production','contrast','transfer'].includes(e.mode)&&present(e.situation),`${e.id}: example mode and situation required`);}}
+  if(e.mode==='contrast')require(Array.isArray(e.contrastOptions)&&e.contrastOptions.length===2&&new Set(e.contrastOptions).size===2&&e.contrastOptions.includes(e.prompt),`${e.id}: contrast requires two distinct meanings including the target`);
   if(e.type==='grammar')require(Object.hasOwn(grammarTopics,e.grammarTopic||''),`${e.id}: recognized grammarTopic required`);
   for(const lang of languages){
    const t=e.translations?.[lang];require(Boolean(t),`${e.id}: missing ${lang}`);if(!t)continue;
@@ -48,6 +51,7 @@ export function validatePack(pack,{release=false}={}){
     require(t.text.includes(word)&&present(detail.meaning)&&present(detail.role)&&present(detail.note),`${e.id}/${lang}: invalid word detail ${word}`);
     if(detail.lexeme)refs([detail.lexeme],pack.lexemes,`${e.id}/${lang}`,lang);
    }
+   if(t.acceptedAnswers!==undefined)require(Array.isArray(t.acceptedAnswers)&&t.acceptedAnswers.every(present),`${e.id}/${lang}: invalid accepted answers`);
    const label=`${e.id}/${lang}`;require(present(t.text),`${label}: text required`);review(t,label);
    refs(t.sourceIds,pack.sources,label);refs(t.lexemeIds,pack.lexemes,label,lang);refs(t.grammarIds,pack.grammar,label,lang);
    require(Array.isArray(t.chunks)&&t.chunks.length>0,`${label}: chunks required`);
@@ -64,7 +68,7 @@ export function validatePack(pack,{release=false}={}){
 export function assertPack(pack,options){const errors=validatePack(pack,options);if(errors.length)throw new Error(errors.join('\n'));return pack;}
 export function lessonEntries(pack){
  assertPack(pack);
- return pack.entries.map(e=>({id:e.id,type:e.type,en:e.prompt,...(e.grammarTopic?{grammarTopic:e.grammarTopic}:{}),...Object.fromEntries(languages.map(lang=>[lang,e.translations[lang].text]))}));
+ return pack.entries.map(e=>({id:e.id,type:e.type,en:e.prompt,...(e.unitId?{unitId:e.unitId,kind:e.kind,objectiveId:e.objectiveId,mode:e.mode,...(e.contrastOptions?{contrastOptions:e.contrastOptions}:{})}:{}),...(languages.some(lang=>e.translations[lang].acceptedAnswers?.length)?{acceptedAnswers:Object.fromEntries(languages.map(lang=>[lang,e.translations[lang].acceptedAnswers||[]]))}:{}),...(e.grammarTopic?{grammarTopic:e.grammarTopic}:{}),...Object.fromEntries(languages.map(lang=>[lang,e.translations[lang].text]))}));
 }
 // A future release exporter must use this gate, not the migration adapter above.
 export function approvedEntries(pack){assertPack(pack,{release:true});return lessonEntries(pack);}

@@ -4,7 +4,7 @@
 
 On 2026-10-18, the user accepted the initial work and authorized continued curriculum authoring with roughly the same source-comparison method, without reviewing every batch. Use lexical references to check intended senses, gender, plural forms and conjugations; check construction rules against grammatical references. Author contextual explanations and examples, and record exactly which claims have been checked. Do not describe generated candidates as corpus-attested or independently reviewed. Independent linguistic review can improve confidence but does not block local authoring under this authorization.
 
-The full 16-unit inventory is still unfinished. Acceptance of the method neither completes that inventory nor establishes linguistic accuracy by itself. The existing `approvedEntries` release gate and explicit commit/publication permissions are unchanged. Docs must distinguish authoring status, evidence status, and deployment status.
+The full 16-unit content draft is authored; evidence, sentence/component checks and release review remain incomplete. Acceptance of the method does not establish linguistic accuracy by itself. The existing `approvedEntries` release gate and explicit commit/publication permissions are unchanged. Docs must distinguish authoring status, evidence status, and deployment status.
 
 ## Reporting an issue
 
