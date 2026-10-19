@@ -1,6 +1,6 @@
 # Perlingo roadmap
 
-The sequence is C1–C6.1, replacing the previous suggested ordering. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
+Completed work is tracked as C1–C7; C7 status and the C8–C10 backlog are below. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
 
 | Task | Scope | Status |
 | --- | --- | --- |
@@ -14,6 +14,20 @@ The sequence is C1–C6.1, replacing the previous suggested ordering. The user a
 
 Completed earlier: B1 quiet pronunciation and B2 contextual learning-chunk popovers. B4 is partially implemented through chunk selection; individual word selection within a chunk is C2. C1 stores selected word forms, not complete conjugation tables. No external content API, AI generation, import at scale, or new teaching content is introduced by C1.
 
-Current local update: promote the full course to the default route, preserve existing course progress, and move the main-screen content-quality notice into Settings → About. Legacy starter access is explicit at `?pack=starter`. Pending user testing and commit; not yet published.
+Published: promote the full course to the default route, preserve existing course progress, and move the main-screen content-quality notice into Settings → About. Legacy starter access is explicit at `?pack=starter`. Included in production.
 
-Current local SRS update: app-days with 4 → 32 → graduate scheduling, review misses reset to +4, one attempt per review, perfect full rounds for new material, and a 108 planned-answer cap with reviews prioritized. Unfinished days resume from browser-local storage. See [spaced review](spaced-review.md). Approved for commit and production publication.
+Published SRS: app-days with 4 → 32 → graduate scheduling, review misses reset to +4, one attempt per review, perfect full rounds for new material, and a 108 planned-answer cap with reviews prioritized. Unfinished days resume from browser-local storage. See [spaced review](spaced-review.md). Included in production.
+
+
+## Next backlog (2026-10-19)
+
+C7 is implemented locally and approved for commit on 2026-10-19; C8–C10 remain planned. Work on one agreed task at a time; the ordering below is a proposal, not authorization to implement the entire backlog.
+
+| Task | Scope | Next decision / acceptance criteria |
+| --- | --- | --- |
+| C7 | Answer feedback: a short chime after each submitted recall answer, followed by pronunciation of the correct answer; simple correct/incorrect animation | Implemented locally: original quiet synthesized cues, then the taught translation through the existing voice player; saved Settings sound toggle and post-submission pronunciation replay and Quick meaning/Pronunciation/Grammar help on the revealed correct translation, submission-only correct/miss motion, reduced-motion support, and cancellation on navigation/mute/page hiding. Scoring/SRS unchanged. 94 tests and content checks pass. Approved for commit on 2026-10-19; not yet published. See [behavior and testing](answer-feedback.md). |
+| C8 | Optional sign-in and saved/synchronized progress | Choose authentication and storage before integration. Preserve guest use and existing browser progress; define account migration, cross-device conflicts, and recovery. No provider chosen yet. |
+| C9 | Mobile usability and consistent pronunciation audio | Swipe up for next and down for previous learning cards, without interfering with scrolling, overlays, or recall input. Test small screens and mobile keyboards. Separately compare recorded/pre-generated audio providers, pronunciation quality, coverage, licenses, cost, caching, and fallback behavior to reduce reliance on installed browser voices. No provider chosen yet. |
+| C10 | Custom domain and eventual iOS app | Choose a domain and hosting setup; evaluate mobile web/PWA versus a native or wrapped iOS app after C9. Domain purchases, accounts, and App Store release require separate explicit authorization. |
+
+Handoff baseline: `ac3fec1` is committed, pushed, and deployed as public Sites version 8 at https://perlingo-parallel.ayuan2.chatgpt.site. Includes pronunciation/grammar overlays, human IPA recordings, and contextual German ʁ/ɐ normalization. All 88 tests and content checks passed. C7 and this backlog documentation are subsequent changes, not part of that publication.

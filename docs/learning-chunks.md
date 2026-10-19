@@ -39,7 +39,7 @@ Parentheses are a display convention for low-emphasis grammatical information, n
 3. The **grammar cue** opens the C2 details overlay. It answers **“Why this form?”**, retains the original sentence and English prompt, and lets the learner select words within the chunk. The reading pilot and C3 foundation preview have curated word roles, base forms, gender, present-tense conjugation tables, and noun singular/plural tables. Other legacy entries retain their phrase explanation and explicitly identify missing word analysis.
 4. The popover overlays the lesson without moving its background. Clicking outside, pressing Escape, or closing it dismisses it; Escape and the close button return focus to the selected chunk.
 5. The speaker button pronounces the complete translation. Preserve the quiet playback indicator and French Thomas voice preference.
-6. These interactions currently belong to learning screens. If help is introduced during recall, warn before revealing it, record the answer as assisted, and prevent that round from counting as perfect.
+6. These interactions are available on learning screens and, after a recall answer has been scored, on the revealed correct translation. Post-submission help does not change the recorded score. If help is introduced before recall submission, warn before revealing it, record the answer as assisted, and prevent that round from counting as perfect.
 
 ## Authoring and current implementation
 
@@ -49,7 +49,7 @@ The implementation is in `src/explanations.js`, with rendering and interaction i
 
 Notes are authored in sentence context and shown as prose through Grammar. The original translation remains visible behind the popover. No automatic parser is used: the rule about tightly attached modifiers is an authoring requirement for future content; the expanded course includes modified noun phrases with authored spans.
 
-The overlay and selection inside a chunk are implemented in C2 (formerly B3/remaining B4), with detailed word analysis in the C1 pilot and the C3 draft foundation pack. C3 adds present-indicative paradigms; the expanded course adds supplied reference tenses and draft content; full linguistic review remains pending. Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
+The overlay and selection inside a chunk are implemented in C2 (formerly B3/remaining B4), with detailed word analysis in the C1 pilot and the C3 draft foundation pack. C3 adds present-indicative paradigms; the expanded course adds supplied reference tenses and draft content; full linguistic review remains pending. Recall uses the same authored chunks and overlays after submission, including correct answers, misses, and meaning contrasts. The assisted-answer rule above applies to any future help before submission.
 
 `tests/explanations.test.js` checks coverage, original-text reconstruction, punctuation boundaries, contextual details, explicit failure for undefined constructions, and the documented chunking examples. Run `npm test` and `npm run check` before handoff, then verify the popover in the local browser.
 
@@ -71,7 +71,7 @@ Right/Down advances learning cards; Left/Up returns to the previous card. Shortc
 
 Learning cards and their explanation controls now show only unseen concept/language pairs. Due pairs are recalled directly in the app-day’s review phase, without showing their translations first; future-due pairs are omitted. This may leave fewer language columns on a mixed-history concept. See [spaced review](spaced-review.md).
 
-Pronunciation: Quick meaning shows approximate IPA for the selected chunk in isolation as a button. It opens a separate Pronunciation overlay with clickable sound tokens and playable vowel/consonant charts. Grammar contains grammar, forms, context and reporting, with no pronunciation content. Cards and recall do not display IPA. See [pronunciation guides](pronunciation.md).
+Pronunciation: Quick meaning shows approximate IPA for the selected chunk in isolation as a button. It opens a separate Pronunciation overlay with clickable sound tokens and playable vowel/consonant charts. Grammar contains grammar, forms, context and reporting, with no pronunciation content. Cards do not display inline IPA; recall offers IPA through Quick meaning only after submission. See [pronunciation guides](pronunciation.md).
 
 ## Floating details (local)
 
@@ -81,7 +81,7 @@ The grammar cue and the IPA button replace Quick meaning with separate centered,
 
 Quick meaning omits the repeated source word; its meaning comes first, followed by the transcription and grammar cue. Grammar omits draft-status notices and lexical-reference blocks; source data remains in the review tooling, linked from Settings → About. Repeated selected-word roles/notes are omitted when identical to the chunk explanation. Report an issue remains in Grammar.
 
-The whole Quick meaning grammar cue is one dotted-underlined button that opens Grammar. Inside Grammar, recognized grammar terms are dotted-underlined buttons. They open short floating definitions (including present indicative, mood/tense terms, person, number, gender and case); Back, Escape or an outside click returns to the original panel. They explain terminology, not new per-sentence linguistic analysis. Unknown terms remain plain text. Quick meaning contains no inline grammar definitions or separate More button. Its close button sits in the top-right corner without reserving a header row. Recall has no grammar-help buttons.
+The whole Quick meaning grammar cue is one dotted-underlined button that opens Grammar. Inside Grammar, recognized grammar terms are dotted-underlined buttons. They open short floating definitions (including present indicative, mood/tense terms, person, number, gender and case); Back, Escape or an outside click returns to the original panel. They explain terminology, not new per-sentence linguistic analysis. Unknown terms remain plain text. Quick meaning contains no inline grammar definitions or separate More button. Its close button sits in the top-right corner without reserving a header row. Recall exposes this grammar help only through the revealed answer after submission.
 
 ## Compact grammar and German article guide
 

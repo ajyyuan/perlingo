@@ -153,7 +153,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 
 .prompt-note { display: inline-block; color: var(--muted); font-size: .34em; letter-spacing: 0; vertical-align: middle; }
 
-.translation .translation-text { border: 0; border-bottom: 1px solid transparent; background: none; padding: 0; color: inherit; text-align: left; font: inherit; letter-spacing: inherit; line-height: inherit; }
+.translation .translation-text, .correct-translation .translation-text { border: 0; border-bottom: 1px solid transparent; background: none; padding: 0; color: inherit; text-align: left; font: inherit; letter-spacing: inherit; line-height: inherit; }
 .translation-text:hover, .translation-text[aria-expanded="true"] { border-bottom-color: var(--line); color: var(--accent); }
 .explanation { position: fixed; z-index: 20; width: min(300px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow-y: auto; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); box-shadow: 0 8px 28px #282b2518; }
 .explanation-head { display: flex; align-items: center; justify-content: space-between; }
@@ -255,7 +255,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 .review-card .study-head > .eyebrow { color: var(--review); }
 .course-unit { background: #fffefa; border-top: 3px solid #b8cdbb; }
 
-/* IPA stays secondary to the translation, and is never shown during recall. */
+/* IPA stays secondary to the translation, and is available in recall only after submission. */
 .ipa-guide { margin: 8px 0 0; color: var(--muted); font-family: 'DejaVu Sans', 'Arial', sans-serif; font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
 .ipa-label { font-family: Inter, sans-serif; font-size: 9px; letter-spacing: .5px; white-space: nowrap; }
 .explanation .ipa-guide { margin: 2px 0 10px; }
@@ -392,3 +392,16 @@ button.ipa-guide:hover { color: var(--ink); }
 .help-overlay h2 { font-size: 20px; margin-bottom: 12px; }
 .help-overlay::backdrop { background: #282b251c; }
 .ipa-selection .help-link { display: inline-block; margin: 0 0 0 8px; font-size: 12px; }
+
+/* C7: animate feedback only after a new submission, never restored feedback. */
+.answer-sound { font-size: 12px; margin-bottom: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  .answer-correct #answer-feedback, .answer-correct .contrast-choices { animation: answer-lift 240ms ease-out; }
+  .answer-incorrect #answer-feedback, .answer-incorrect .contrast-choices { animation: answer-nudge 240ms ease-out; }
+}
+@keyframes answer-lift { 50% { transform: translateY(-3px); } }
+@keyframes answer-nudge { 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+
+.correct-translation { display: flex; align-items: center; gap: 10px; }
+.correct-translation strong { min-width: 0; overflow-wrap: anywhere; }
+.correct-translation > button { flex-shrink: 0; display: inline-flex; align-items: center; padding: 8px; }
