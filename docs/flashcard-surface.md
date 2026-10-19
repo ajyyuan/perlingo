@@ -2,7 +2,7 @@
 
 The active learning panel (`.concept`) and recall panel (`.quiz.typed`, including contrast practice) have a subtle raised-paper treatment: a warm near-white gradient, a fine warm-gray border, rounded corners, and a faint layered shadow. This is CSS shading, with no image texture or additional dependencies.
 
-The desktop card has 40 px horizontal padding and a 722 px maximum outer width, preserving the previous 640 px content width. At 600 px and below, padding reduces to 20 px horizontally and the corner radius reduces from 16 to 12 px. Content remains in normal flow and the card grows for long sentences and feedback. The surface itself introduces no clipping. C6.1 adds temporary directional entrance transforms during learning-card navigation; these are cancelled before opening translation popovers, which remain viewport-positioned. More remains a fixed sidebar. Reduced Motion disables the card entrances.
+The desktop card has 40 px horizontal padding and a 722 px maximum outer width, preserving the previous 640 px content width. At 600 px and below, padding reduces to 20 px horizontally and the corner radius reduces from 16 to 12 px. Content remains in normal flow and the card grows for long sentences and feedback. The surface itself introduces no clipping. C6.1 adds temporary directional entrance transforms during learning-card navigation; these are cancelled before opening translation popovers, which remain viewport-positioned. More remains a fixed overlay. Reduced Motion disables the card entrances.
 
 Settings, the course list, history, and completion screens retain their existing styling. Pronunciation, recall scoring, and content are unchanged.
 

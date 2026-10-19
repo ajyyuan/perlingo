@@ -36,7 +36,7 @@ Parentheses are a display convention for low-emphasis grammatical information, n
 
 1. Clicking a chunk pronounces that chunk and opens a compact popover anchored to it.
 2. The popover answers **“What does this mean here?”**: selected text, a contextual English gloss, and a brief grammatical cue. Parenthetical cues are small and muted.
-3. **More** opens the C2 details sidebar. It answers **“Why this form?”**, retains the original sentence and English prompt, and lets the learner select words within the chunk. The reading pilot and C3 foundation preview have curated word roles, base forms, gender, present-tense conjugation tables, and noun singular/plural tables. Other legacy entries retain their phrase explanation and explicitly identify missing word analysis.
+3. **More** opens the C2 details overlay. It answers **“Why this form?”**, retains the original sentence and English prompt, and lets the learner select words within the chunk. The reading pilot and C3 foundation preview have curated word roles, base forms, gender, present-tense conjugation tables, and noun singular/plural tables. Other legacy entries retain their phrase explanation and explicitly identify missing word analysis.
 4. The popover overlays the lesson without moving its background. Clicking outside, pressing Escape, or closing it dismisses it; Escape and the close button return focus to the selected chunk.
 5. The speaker button pronounces the complete translation. Preserve the quiet playback indicator and French Thomas voice preference.
 6. These interactions currently belong to learning screens. If help is introduced during recall, warn before revealing it, record the answer as assisted, and prevent that round from counting as perfect.
@@ -49,19 +49,19 @@ The implementation is in `src/explanations.js`, with rendering and interaction i
 
 Notes are authored in sentence context and shown as prose through More. The original translation remains visible behind the popover. No automatic parser is used: the rule about tightly attached modifiers is an authoring requirement for future content; the expanded course includes modified noun phrases with authored spans.
 
-The sidebar and selection inside a chunk are implemented in C2 (formerly B3/remaining B4), with detailed word analysis in the C1 pilot and the C3 draft foundation pack. C3 adds present-indicative paradigms; the expanded course adds supplied reference tenses and draft content; full linguistic review remains pending. Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
+The overlay and selection inside a chunk are implemented in C2 (formerly B3/remaining B4), with detailed word analysis in the C1 pilot and the C3 draft foundation pack. C3 adds present-indicative paradigms; the expanded course adds supplied reference tenses and draft content; full linguistic review remains pending. Recall currently has no chunk popovers or help controls; the assisted-answer rule above is a requirement for any future recall help.
 
 `tests/explanations.test.js` checks coverage, original-text reconstruction, punctuation boundaries, contextual details, explicit failure for undefined constructions, and the documented chunking examples. Run `npm test` and `npm run check` before handoff, then verify the popover in the local browser.
 
-For review, check that chunks reconstruct the original translation exactly, glosses fit the sentence, articles stay with nouns, multiword verb constructions stay together, and opening a popover or sidebar causes no lesson layout shift. The sidebar is a modal dialog: it traps keyboard focus, closes with Escape, its close button, or a backdrop click, and returns focus to the originating chunk. On narrow screens it fills the viewport.
+For review, check that chunks reconstruct the original translation exactly, glosses fit the sentence, articles stay with nouns, multiword verb constructions stay together, and opening a popover or overlay causes no lesson layout shift. The overlay is a modal dialog: it traps keyboard focus, closes with Escape, its close button, or a backdrop click, and returns focus to the originating chunk. On narrow screens it remains centered with a 12 px outer margin and internal scrolling.
 
 ## Compound-word notes in the foundation preview
 
-Keep `la pomme de terre` and `un stylo à bille` as whole clickable noun phrases. Inside the sidebar, `de` and `à` are prepositions; the other components have their own roles and component glosses, with a note retaining the meaning of the whole expression. A component is not itself a lexical entry for the full compound. French elided article+noun tokens such as `l’œuf` explicitly describe both elements. These annotations remain draft prose even when the compound’s dictionary meaning and plural have been source-compared.
+Keep `la pomme de terre` and `un stylo à bille` as whole clickable noun phrases. Inside the overlay, `de` and `à` are prepositions; the other components have their own roles and component glosses, with a note retaining the meaning of the whole expression. A component is not itself a lexical entry for the full compound. French elided article+noun tokens such as `l’œuf` explicitly describe both elements. These annotations remain draft prose even when the compound’s dictionary meaning and plural have been source-compared.
 
 ## Course draft
 
-All 16 units have authored chunk meanings. `examples.js` parses explicit `span{contextual meaning}` annotations from the core/extension example inventories; it does not infer syntax. Punctuation and elision reconstruct the original text. Objective-level notes explain the target construction, while detailed individual component analyses remain partial. Missing word analysis is labeled explicitly. A whole-expression selection can expose the lexical record/forms without assigning the expression’s meaning to one component. The sidebar uses “Recorded forms” for non-noun/verb records, noun case labels, and a tense selector for supplied verb groups. See [exact coverage and limits](course-authoring.md).
+All 16 units have authored chunk meanings. `examples.js` parses explicit `span{contextual meaning}` annotations from the core/extension example inventories; it does not infer syntax. Punctuation and elision reconstruct the original text. Objective-level notes explain the target construction, while detailed individual component analyses remain partial. Missing word analysis is labeled explicitly. A whole-expression selection can expose the lexical record/forms without assigning the expression’s meaning to one component. The overlay uses “Recorded forms” for non-noun/verb records, noun case labels, and a tense selector for supplied verb groups. See [exact coverage and limits](course-authoring.md).
 
 ## Learning-card controls (C6.1)
 
@@ -70,3 +70,9 @@ Right/Down advances learning cards; Left/Up returns to the previous card. Shortc
 ## New material versus due review
 
 Learning cards and their explanation controls now show only unseen concept/language pairs. Due pairs are recalled directly in the app-day’s review phase, without showing their translations first; future-due pairs are omitted. This may leave fewer language columns on a mixed-history concept. See [spaced review](spaced-review.md).
+
+Pronunciation: Quick meaning shows approximate IPA for the selected chunk in isolation as a button. It opens a separate Pronunciation overlay with Reading IPA help and playable vowel/consonant charts. Word details (More) contains grammar, forms, context and reporting, with no pronunciation content. Cards and recall do not display IPA. See [pronunciation guides](pronunciation.md).
+
+## Floating details (local)
+
+More and the IPA button replace Quick meaning with separate centered, rounded modal overlays: Word details and Pronunciation respectively. Both have a 680 px maximum width, capped viewport-relative height, internal scrolling, and sticky Close control. Escape, Close or a backdrop click dismisses the overlay and returns focus to the originating chunk. Closing Pronunciation stops its recording. Native dialog focus containment and reduced-motion behavior remain. The underlying learning card does not reflow. There is no nested sound-chart view or Back button.

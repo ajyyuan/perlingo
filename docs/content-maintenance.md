@@ -10,7 +10,7 @@ The full 16-unit content draft is authored; evidence, sentence/component checks 
 
 `src/reports.js` provides local issue capture for starter and foundation lessons:
 
-- Learning: open a translation popover, choose **More**, then **Report an issue** in the details sidebar. The compact dropdown contains no report action.
+- Learning: open a translation popover, choose **More**, then **Report an issue** in the details overlay. The compact dropdown contains no report action.
 - Recall: check or skip an answer first, then choose **Report an issue with this answer**. No report action reveals the answer before it is scored. Reporting does not undo a mistake or alter progress.
 - Describe a suspected translation, explanation, form, or missing accepted-answer problem. **Save locally** appends the report in localStorage under `perlingo-content-reports-v1`. The store is shared across packs on the same origin, separate from learning progress.
 - **Export this report** works without saving. Settings → **Content reports** → **Export saved reports** downloads all saved reports. Share the JSON file with the maintainer to request review. Nothing is automatically sent; there is no server inbox or cross-device synchronization.

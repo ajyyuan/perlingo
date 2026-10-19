@@ -1,14 +1,16 @@
+import {chartMarkup,mountChart} from './ipa-chart.js';
+import {ipaGuide} from './ipa.js';
 import {openReport,reportContext} from './reports.js';
 import {inspectChunk,formLabel,formsForWord} from './details.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let dialog=null,returnFocus=null;
-export function closeDetails(){if(dialog){dialog.close();dialog.remove();dialog=null;returnFocus?.focus({preventScroll:true});returnFocus=null;}}
+let dialog=null,returnFocus=null,stopChart=null;
+export function closeDetails(){stopChart?.();stopChart=null;if(dialog){dialog.close();dialog.remove();dialog=null;returnFocus?.focus({preventScroll:true});returnFocus=null;}}
 export function openDetails(item,lang,chunk,anchor){
  closeDetails();returnFocus=anchor;
  const details=inspectChunk(item,lang,chunk);
- dialog=document.createElement('dialog');dialog.className='details-sidebar';dialog.setAttribute('aria-labelledby','details-title');
- dialog.innerHTML=`<header class="details-header"><span class="eyebrow">Why this form?</span><button class="plain" data-close aria-label="Close details">×</button></header><h2 id="details-title" lang="${lang}">${esc(chunk.text)}</h2><p class="details-gloss">${esc(chunk.meaning)}</p><p class="muted">${esc(chunk.summary)}</p><p>${esc(chunk.detail)}</p><section><h3>In context</h3><p lang="${lang}" class="details-context">${esc(details.sentence)}</p><p class="muted">${esc(details.english)}</p></section><section><h3>Inspect a word</h3><div class="word-picker">${details.words.map((w,i)=>`<button data-word="${i}" lang="${lang}" aria-pressed="false">${esc(w.text)}</button>`).join('')}</div><div id="word-details" role="region" aria-label="Selected word details" aria-live="polite"></div></section><p class="hint">${details.pilot?'Draft content · Independent linguistic review pending.':'Starter content · Independent linguistic review pending. Structured forms are not yet available for this entry.'}</p>${details.sources.length?`<details class="detail-sources"><summary>Lexical references</summary>${details.sources.map(s=>`<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></p>`).join('')}<p class="hint">These references do not certify every sentence or explanation.</p></details>`:''}`;
- const reportButton=document.createElement('button');reportButton.className='plain';reportButton.textContent='Report an issue';reportButton.onclick=()=>openReport(reportContext(item,lang,{chunk}),reportButton);dialog.append(reportButton);
+ dialog=document.createElement('dialog');dialog.className='details-overlay';dialog.setAttribute('aria-labelledby','details-title');
+ dialog.innerHTML=`<header class="details-header"><span class="eyebrow" data-details-heading>Why this form?</span><button class="plain" data-close aria-label="Close details">×</button></header><div data-details-view><h2 id="details-title" lang="${lang}">${esc(chunk.text)}</h2><p class="details-gloss">${esc(chunk.meaning)}</p><p class="muted">${esc(chunk.summary)}</p><p>${esc(chunk.detail)}</p><section><h3>In context</h3><p lang="${lang}" class="details-context">${esc(details.sentence)}</p><p class="muted">${esc(details.english)}</p></section><section><h3>Inspect a word</h3><div class="word-picker">${details.words.map((w,i)=>`<button data-word="${i}" lang="${lang}" aria-pressed="false">${esc(w.text)}</button>`).join('')}</div><div id="word-details" role="region" aria-label="Selected word details" aria-live="polite"></div></section><p class="hint">${details.pilot?'Draft content · Independent linguistic review pending.':'Starter content · Independent linguistic review pending. Structured forms are not yet available for this entry.'}</p>${details.sources.length?`<details class="detail-sources"><summary>Lexical references</summary>${details.sources.map(s=>`<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></p>`).join('')}<p class="hint">These references do not certify every sentence or explanation.</p></details>`:''}</div>`;
+ const reportButton=document.createElement('button');reportButton.className='plain';reportButton.textContent='Report an issue';reportButton.onclick=()=>openReport(reportContext(item,lang,{chunk}),reportButton);dialog.querySelector('[data-details-view]').append(reportButton);
  const select=(i,tense)=>{
   const w=details.words[i],lexeme=w.lexeme;
   const forms=formsForWord(w),tenses=[...new Set(forms.map(f=>f.tense).filter(Boolean))];
@@ -21,4 +23,14 @@ export function openDetails(item,lang,chunk,anchor){
  dialog.addEventListener('change',e=>{if(e.target.matches('[data-tense]')){select(Number(e.target.dataset.selectedWord),e.target.value);dialog.querySelector('[data-tense]')?.focus();}});
  dialog.addEventListener('cancel',e=>{e.preventDefault();closeDetails();});
  document.body.append(dialog);dialog.showModal();if(details.words.length)select(0);dialog.querySelector('[data-close]').focus();
+}
+
+export function openPronunciation(lang,chunk,anchor){
+ closeDetails();returnFocus=anchor;
+ dialog=document.createElement('dialog');dialog.className='details-overlay pronunciation-overlay';dialog.setAttribute('aria-labelledby','pronunciation-title');
+ dialog.innerHTML=`<header class="details-header"><span class="eyebrow">Pronunciation</span><button class="plain" data-close aria-label="Close pronunciation">×</button></header><h2 id="pronunciation-title" lang="${lang}">${esc(chunk.text)}</h2>${ipaGuide(chunk.text,lang)}<details class="ipa-help"><summary>Reading IPA</summary><p>Symbols show sounds, not spelling. ˈ marks primary stress, ˌ secondary stress, ː a longer sound, and ̃ a nasal vowel.</p><p>Approximate IPA generated by <a href="https://github.com/espeak-ng/espeak-ng" target="_blank" rel="noopener noreferrer">eSpeak NG</a>, using Spanish (Spain), French (France), and German voices. Not independently reviewed. Regional accents, connected speech, and your audio voice may differ. A chunk is transcribed on its own; use the full phrase for context.</p></details><div data-sounds-view>${chartMarkup(lang)}</div>`;
+ dialog.querySelector('.sound-reference').open=true;
+ dialog.addEventListener('click',e=>{if(e.target.closest('[data-close]'))closeDetails();else if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDetails();}});
+ dialog.addEventListener('cancel',e=>{e.preventDefault();closeDetails();});
+ document.body.append(dialog);stopChart=mountChart(dialog);dialog.showModal();dialog.querySelector('[data-close]').focus();
 }

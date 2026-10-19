@@ -3,7 +3,7 @@
 Motion is optional polish, implemented entirely in `src/style.css`. Effects apply only when `prefers-reduced-motion: no-preference` matches:
 
 - Translation popovers and content-report dialogs fade in over 140 ms.
-- The More sidebar fades in and moves 10 px from the right over 180 ms. Modal backdrops fade in over 140 ms.
+- The More overlay fades in and moves 8 px upward over 180 ms. Modal backdrops fade in over 140 ms.
 - Nonempty typed-answer feedback fades in over 140 ms, for both correct answers and revealed corrections.
 - Buttons transition text, background, and border colors over 120 ms.
 
@@ -13,7 +13,7 @@ With OS/browser Reduced Motion enabled, none of these animations or transitions 
 
 ## Local testing
 
-1. Open the course preview, click a translation, and open More. Observe the short popover fade and small sidebar entrance, with the lesson remaining in place.
+1. Open the course preview, click a translation, and open More. Observe the short popover fade and small overlay entrance, with the lesson remaining in place.
 2. Close with Escape and the close button; dismissal and focus return should be immediate. Reopen and select another word or tense; the panel should not animate again.
 3. Open Report an issue from More, then close it. It should fade in without delaying interaction.
 4. Start recall and check an answer or choose I don’t know. Feedback should fade in without moving the prompt; Continue should respond immediately. French pronunciation should still use Thomas when available, with quiet feedback.

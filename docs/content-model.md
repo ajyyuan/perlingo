@@ -53,7 +53,7 @@ The existing local game uses `lessonEntries` as an explicit **migration adapter*
 
 ## C2 consumer
 
-`src/details.js` resolves selected pilot words to lexical records and contextual roles. `src/sidebar.js` displays them in a modal details sidebar with sentence context, selected-form tables, and lexical source links. It displays present-indicative paradigms and singular/plural noun tables, highlights the selected grammatical form, and exposes draft review status. Legacy content receives no inferred word analyses. The current sentence is the contextual example. C3 adds 50 draft concepts and present-indicative paradigms; see the separate expansion plan.
+`src/details.js` resolves selected pilot words to lexical records and contextual roles. `src/sidebar.js` displays them in a modal details overlay with sentence context, selected-form tables, and lexical source links. It displays present-indicative paradigms and singular/plural noun tables, highlights the selected grammatical form, and exposes draft review status. Legacy content receives no inferred word analyses. The current sentence is the contextual example. C3 adds 50 draft concepts and present-indicative paradigms; see the separate expansion plan.
 
 ## Validation and testing
 

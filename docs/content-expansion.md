@@ -9,13 +9,13 @@ C2 was committed as `db63ea1`; the first C3 tranche was committed as `e3ddcf7`. 
 - Review: http://127.0.0.1:5173/content-review.html?pack=foundation
 - Regular lessons remain the existing 34 concepts. New draft entries do not silently enter that bank.
 - Preview settings/progress use `perlingo-preview-foundation-v1`, independent of `perlingo-v1`. Return to regular lessons via the preview banner. Export works on whichever bank is active.
-- The same learning, recall, pronunciation, popover, and sidebar interfaces operate on the draft pack. Preview recall still accepts the exact taught translation; it does not evaluate every valid paraphrase.
+- The same learning, recall, pronunciation, popover, and overlay interfaces operate on the draft pack. Preview recall still accepts the exact taught translation; it does not evaluate every valid paraphrase.
 
 ## Conjugation and word inspection
 
 Reading-pilot v3 and foundation v3 provide present-indicative tables for all their verbs: 27 language-specific verbs in total. Tables cover six grammatical person/number slots, plus a common Spanish vos form. Spanish includes tú, usted, vosotros, and ustedes; French vous/on and German formal Sie are explained. The tables do not claim to cover all regional voseo variants, other tenses, or other moods.
 
-The sidebar heading is **Present-tense conjugation**, with subject and form columns. A finite verb selected in a sentence highlights the matching person/number row, not every row with the same spelling. Infinitive selections show the table without implying a person. Nouns show **Singular and plural**, not “available forms.” Multiword noun entries remain chunks. Inside them, word notes distinguish the head noun, preposition, and modifier, give component glosses, and retain the whole expression’s meaning. Components do not inherit the compound’s lexical forms as if they were standalone entries.
+The overlay heading is **Present-tense conjugation**, with subject and form columns. A finite verb selected in a sentence highlights the matching person/number row, not every row with the same spelling. Infinitive selections show the table without implying a person. Nouns show **Singular and plural**, not “available forms.” Multiword noun entries remain chunks. Inside them, word notes distinguish the head noun, preposition, and modifier, give component glosses, and retain the whole expression’s meaning. Components do not inherit the compound’s lexical forms as if they were standalone entries.
 
 Word annotations and forms belong to their draft pack and inherit its review obligations. `src/content/catalog.js` resolves pack ownership and rejects colliding entry IDs. `src/details.js` and `src/explanations.js` use this catalog for all registered packs; other starter-bank explanations remain unchanged.
 
