@@ -13,6 +13,8 @@
   font-synthesis: none;
 }
 * { box-sizing: border-box; }
+/* Keep native scrolling and pinch zoom, without double-tap page zoom. */
+html { touch-action: manipulation; }
 body { margin: 0; }
 button, input { font: inherit; }
 button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
@@ -461,3 +463,30 @@ button.ipa-guide:hover { color: var(--ink); }
 .report-note { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
 .inbox-report summary { cursor: pointer; font-size: 12px; color: var(--muted); }
 .inbox-report pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; max-height: 300px; overflow: auto; }
+
+/* Mobile navigation stays reachable while the lesson itself scrolls normally. */
+.mobile-nav-label { display: none; }
+@media (max-width: 600px) {
+  .shell:has(.learning-navigation) { padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)); }
+  .concept, .recall-ready { padding-bottom: 20px; }
+  .learning-navigation {
+    position: fixed; z-index: 10; left: 0; right: 0; bottom: 0;
+    margin: 0; gap: 12px;
+    padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+    background: var(--bg); box-shadow: 0 -4px 20px #282b2508;
+  }
+  .learning-navigation button:first-child, .learning-navigation button:last-child {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 56px; border: 1px solid var(--line); border-radius: 10px;
+  }
+  .learning-navigation button:last-child { background: var(--accent); color: white; border-color: var(--accent); }
+  .learning-navigation button:last-child:hover { background: #285440; color: white; }
+  .mobile-nav-label { display: inline; font-size: 14px; font-weight: 500; line-height: 1.3; }
+  .shell:has(.explanation:not([hidden])) .learning-navigation { visibility: hidden; }
+  /* Transform only the content: a transformed card would trap its fixed toolbar. */
+  .concept.card-next, .concept.card-prev { animation: none !important; }
+}
+@media (max-width: 600px) and (prefers-reduced-motion: no-preference) {
+  .concept.card-next .concept-body { animation: card-up 240ms cubic-bezier(.2,.7,.3,1); }
+  .concept.card-prev .concept-body { animation: card-down 240ms cubic-bezier(.2,.7,.3,1); }
+}

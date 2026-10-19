@@ -35,3 +35,11 @@ Due-review sessions skip learning cards and the Ready screen. Home offers Start 
 ## Mobile navigation
 
 Use the existing previous/next arrow buttons on touch devices. The experimental C9 swipe strip was removed on 2026-10-19 after the user reported that iPhone gestures frequently scrolled the page instead of navigating. No swipe gesture is intercepted. A future replacement requires real-device validation before publication.
+
+### Fixed mobile controls (local trial)
+
+Both swipe experiments have been removed. At viewport widths up to 600 px, learning and Ready show a fixed bottom bar with large labeled Previous/Next controls (Finish learning on the last card, Back to cards/Begin recall on Ready). The page reserves space beneath its content, and the bar includes the iPhone safe-area inset. Quick meaning temporarily hides the bar; modal dialogs cover it. Recall and other pages have no fixed navigation bar.
+
+On mobile only the card body animates, so transforms cannot pull the fixed bar into the card. Reduced Motion disables that animation. Desktop retains its original split arrow panel. No JavaScript touch gestures are intercepted. The root uses `touch-action: manipulation` to suppress double-tap page zoom while retaining native scrolling and pinch-to-zoom; viewport scaling is not disabled.
+
+Local checks: 117 tests and syntax/content checks pass. The user tested the iPhone preview and approved commit, push and publication on 2026-10-19, including double-tap zoom suppression. Included in the approved release package. In the same-Wi-Fi guest preview, scroll a tall learning card and confirm the bar stays reachable without hiding content. Tap Next/Previous, open and close Quick meaning, advance to Ready and then recall, and verify the keyboard has no navigation bar above it. Rotate the phone and check the home-indicator area. Double-tap blank card space and controls to confirm the page does not zoom; pinch with two fingers to confirm zoom still works.
