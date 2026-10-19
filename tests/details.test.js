@@ -17,3 +17,17 @@ test('legacy words do not inherit pilot annotations by spelling',()=>{
  const item=bank.find(e=>e.id==='c31'),detail=inspectChunk(item,'es',segments(item,'es')[0]);assert.equal(detail.pilot,false);assert.equal(detail.words[0].lexeme,null);assert.match(detail.words[0].note,/not yet recorded/);
 });
 test('form labels expose person, number, tense, and mood',()=>{assert.equal(formLabel({text:'leo',tense:'present',mood:'indicative',person:1,number:'singular'}),'present · indicative · First person · singular');});
+
+test('identical noun spellings do not mark multiple grammatical forms as here',async()=>{
+ const {formsForWord}=await import('../src/details.js');
+ const lexeme={pos:'noun',forms:[{text:'Kugelschreiber',number:'singular'},{text:'Kugelschreiber',number:'plural'}]};
+ assert.equal(formsForWord({text:'Kugelschreiber',lexeme}).filter(f=>f.selected).length,0);
+ assert.deepEqual(formsForWord({text:'Kugelschreiber',lexeme,features:{number:'singular'}}).filter(f=>f.selected).map(f=>f.number),['singular']);
+ assert.deepEqual(formsForWord({text:'Kugelschreiber',lexeme,features:{number:'plural'}}).filter(f=>f.selected).map(f=>f.number),['plural']);
+});
+test('foundation pen has explicit contextual number for matching forms',async()=>{
+ const {foundation}=await import('../src/content/foundation.js');const {lessonEntries}=await import('../src/content/model.js');const {formsForWord}=await import('../src/details.js');
+ const item=lessonEntries(foundation).find(e=>e.de==='der Kugelschreiber');
+ const w=inspectChunk(item,'de',segments(item,'de')[0]).words.find(w=>w.lexeme);
+ assert.deepEqual(formsForWord(w).filter(f=>f.selected).map(f=>f.number),['singular']);
+});

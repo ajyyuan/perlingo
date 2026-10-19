@@ -76,3 +76,9 @@ Pronunciation: Quick meaning shows approximate IPA for the selected chunk in iso
 ## Floating details (local)
 
 More and the IPA button replace Quick meaning with separate centered, rounded modal overlays: Word details and Pronunciation respectively. Both have a 680 px maximum width, capped viewport-relative height, internal scrolling, and sticky Close control. Escape, Close or a backdrop click dismisses the overlay and returns focus to the originating chunk. Closing Pronunciation stops its recording. Native dialog focus containment and reduced-motion behavior remain. The underlying learning card does not reflow. There is no nested sound-chart view or Back button.
+
+## Form highlighting
+
+A shaded row with “← here” identifies one unambiguous form matching the selected word and its recorded grammatical features. Equal spellings alone do not justify marking several rows as the form used here. If the supplied annotations cannot distinguish candidates, no row is marked. This applies to nouns and conjugated verbs; the selected word button remains a separate indication of which word is being inspected.
+
+The singular noun authoring helpers now record number explicitly, including the foundation entries used by the course. This fixes `der Kugelschreiber`, whose singular and plural spellings are identical: only singular is marked in that singular phrase. Lexical forms and translations are unchanged. Regression tests cover explicit singular/plural selections and ambiguous spelling without contextual features.

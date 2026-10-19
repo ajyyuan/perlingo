@@ -49,7 +49,7 @@ const compoundWords={
 };
 function nounWords(lemma,id,meaning,summary,note){
  if(compoundWords[lemma])return Object.fromEntries(Object.entries(compoundWords[lemma]).map(([word,[literal,role]])=>[word,{meaning:literal,role,note:`Part of ${lemma}, meaning “${meaning}” as a whole. This component gloss explains the structure, not a separate translation of the expression.`}]));
- return {[lemma]:{lexeme:id,meaning,role:summary,note}};
+ return {[lemma]:{lexeme:id,meaning,role:summary,note,features:{number:'singular'}}};
 }
 for(const [en,...values] of nounRows){
  const definition={station:'A railway station.',ticket:'A ticket for transport.',room:'A room, especially a bedroom.',letter:'A written message, not an alphabet character.',orange:'The citrus fruit.',meal:'An occasion or portion of food eaten.',pen:'A ballpoint writing instrument.'}[en]||`The everyday noun meaning ${en}.`;
@@ -59,7 +59,7 @@ for(const [en,...values] of nounRows){
   foundation.lexemes[id]={id,lang,lemma,pos:'noun',senseId:entry.senseId,gender:genderNames[g],forms:[{text:lemma,number:'singular'},{text:plural,number:'plural'}],sourceIds:[],review:review()};
   const summary=`${genderNames[g]} singular noun`,detail=`${a} is the definite article; ${lemma} means “${en}” in this entry. Learn the noun with its grammatical gender. ${definition}`;
   const words={};
-  if(a==='l’')words[text]={lexeme:id,meaning:`(the) ${meaning}`,role:`Elided article + ${summary}`,note:`l’ is the definite article before this vowel sound; ${detail}`};
+  if(a==='l’')words[text]={features:{number:'singular'},lexeme:id,meaning:`(the) ${meaning}`,role:`Elided article + ${summary}`,note:`l’ is the definite article before this vowel sound; ${detail}`};
   else Object.assign(words,{[a]:{meaning:'the',role:'Definite article',note:`The article agrees with ${lemma}.`}},nounWords(lemma,id,meaning,summary,detail));
   entry.translations[lang]=translation(text,[chunk(text,`(the) ${meaning}`,summary,detail,[id])],words,[id]);
  });

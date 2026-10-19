@@ -13,6 +13,10 @@ export function inspectChunk(item,lang,chunk){
 export function formLabel(form){return [form.verbForm==='infinitive'?'Infinitive':null,form.tense,form.mood,form.person?`${['','First','Second','Third'][form.person]} person`:null,form.number,form.gender,form.case,form.usage].filter(Boolean).join(' · ')||'Base form';}
 
 export function formsForWord(word){
- const forms=word.lexeme?.forms||[];
- return forms.filter(f=>word.lexeme.pos!=='verb'||f.verbForm==='finite').map(f=>({...f,selected:word.features?Object.entries(word.features).every(([key,value])=>f[key]===value)&&f.text.toLocaleLowerCase()===word.text.toLocaleLowerCase():word.lexeme.pos!=='verb'&&f.text===word.text}));
+ const forms=(word.lexeme?.forms||[]).filter(f=>word.lexeme.pos!=='verb'||f.verbForm==='finite');
+ const normalize=s=>s.normalize('NFC').toLocaleLowerCase();
+ const candidates=forms.filter(f=>normalize(f.text)===normalize(word.text)&&Object.entries(word.features||{}).every(([key,value])=>f[key]===value));
+ // A shared spelling is not enough to label multiple grammatical forms “here”.
+ const selected=candidates.length===1&&(word.features||word.lexeme.pos!=='verb')?candidates[0]:null;
+ return forms.map(f=>({...f,selected:f===selected}));
 }
