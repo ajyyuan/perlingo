@@ -407,3 +407,57 @@ button.ipa-guide:hover { color: var(--ink); }
 .correct-translation > button { flex-shrink: 0; display: inline-flex; align-items: center; padding: 8px; }
 
 .top .restart-day { margin-right: 18px; }
+
+#account-form { display: grid; gap: 12px; max-width: 360px; }
+#account-form input { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 12px; background: var(--bg); color: var(--ink); font: inherit; }
+.account-actions { display: flex; gap: 18px; flex-wrap: wrap; }
+
+/* Settings: everyday preferences first, maintenance on demand. */
+.settings { width: min(100%, 560px); margin: 28px auto 48px; }
+.settings .back { margin-bottom: 12px; }
+.settings-heading { margin-bottom: 28px; }
+.settings-heading h1 { margin: 8px 0 10px; }
+.settings-heading p { font-size: 14px; }
+.settings-section { margin: 0 0 12px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 14px; background: #fffefa; }
+.settings-section h2 { margin-bottom: 8px; font-size: 14px; font-weight: 600; }
+.settings-section .hint { line-height: 1.6; margin-bottom: 16px; }
+.settings-section p:last-child { margin-bottom: 0; }
+.settings .langs { gap: 8px; }
+.settings .lang { border-radius: 8px; padding: 12px; }
+.sound-setting { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.sound-setting .hint { margin: 0; }
+.sound-toggle { flex: 0 0 48px; height: 44px; padding: 8px 0; border: 0; background: transparent; position: relative; }
+.sound-toggle::before { content: ''; position: absolute; inset: 9px 0; border-radius: 20px; background: #d6d9d0; }
+.sound-toggle span { display: block; position: relative; width: 20px; height: 20px; margin-left: 3px; border-radius: 50%; background: white; box-shadow: 0 1px 3px #0002; }
+.sound-toggle[aria-checked="true"]::before { background: var(--accent); }
+.sound-toggle[aria-checked="true"] span { transform: translateX(22px); }
+.account-identity { font-size: 14px; overflow-wrap: anywhere; margin: 0 0 10px; }
+.account-status { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0 0 12px; }
+.account-actions { gap: 8px 18px; }
+.account-actions .secondary { font-size: 12px; padding: 11px 15px; border-radius: 8px; }
+.account-options { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 4px; }
+.account-options summary { font-size: 12px; color: var(--muted); cursor: pointer; padding: 14px 0 8px; }
+.account-options .hint { margin: 12px 0 0; }
+.settings > .routine { padding: 0 4px; }
+.settings > .routine summary { padding: 20px 0; font-size: 13px; }
+.settings > .routine[open] { padding-bottom: 20px; }
+.settings > .routine > p { margin-top: 0; font-size: 13px; line-height: 1.7; }
+.settings > .routine .counts { margin: 20px 0; }
+.session-facts { display: grid; gap: 12px; margin-top: 24px; color: var(--muted); }
+@media (max-width: 540px) {
+  .settings-section { padding: 18px; }
+  .settings .lang { gap: 8px; padding: 12px 10px; }
+  .account-actions .secondary { flex: 1; }
+}
+
+.account-actions .provider-button { padding: 0; border: 0; background: transparent; height: 44px; border-radius: 4px; flex: none; }
+.provider-button img { display: block; height: 44px; width: auto; }
+.provider-button:hover:not(:disabled) { box-shadow: 0 0 0 2px #282b2518; }
+.report-inbox { width: min(760px, calc(100vw - 32px)); }
+.inbox-report { border-top: 1px solid var(--line); padding: 20px 0; }
+.inbox-report h3 { font-size: 17px; font-weight: 500; margin: 16px 0 8px; }
+.inbox-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.inbox-meta select { padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.report-note { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
+.inbox-report summary { cursor: pointer; font-size: 12px; color: var(--muted); }
+.inbox-report pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; max-height: 300px; overflow: auto; }

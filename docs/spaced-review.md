@@ -23,11 +23,11 @@ For example, learned on day 1 → review on day 5 → review on day 37 → gradu
 
 ## Persistence and migration
 
-The plan freezes when started. The active phase, shuffled queue, position, typed input, feedback, first attempts and round statistics are saved in the bank's existing localStorage key. Reload or exit offers Resume day. Settings/unit changes apply to the next plan, not an unfinished batch. Completing a phase applies its scheduling once and records a session; finishing all planned phases advances the day once. Review and new phases have separate history records. Session accuracy includes new-material retries.
+The plan freezes when started. The active phase, shuffled queue, position, typed input, feedback, first attempts and round statistics are saved in the bank's existing guest localStorage key, or an isolated account/pack draft when signed in. Reload or exit offers Resume day. Settings/unit changes apply to the next plan, not an unfinished batch. Completing a phase applies its scheduling once and records a session; finishing all planned phases advances the day once. Review and new phases have separate history records. Session accuracy includes new-material retries.
 
 Existing elapsed-time history migrates once to `srsVersion: 2`, starting at app-day 1. Original pair records are retained as `legacyHistory` in storage and exports. Already overdue pairs become due on app-day 1; others on day 5. All start at stage 0, with counts preserved and no inferred graduation. Settings and completed session records remain. Clock time is used only for this migration and journal dates/durations, not ongoing due scheduling. Legacy elapsed-time helpers in `engine.js` are retained for compatibility/tests but are not used by the app.
 
-Storage is browser-local and origin-specific, without account sync. The course, foundation and starter retain separate histories and app-day counters. The active batch is saved on each answer/input/navigation; unavailable browser storage shows a warning.
+Guest storage is browser-local and origin-specific. The local C8 integration optionally syncs signed-in progress once Supabase is configured; [live setup and validation](accounts.md) remain pending. The course, foundation and starter retain separate histories and app-day counters. The active batch is saved on each answer/input/navigation; unavailable browser storage shows a warning.
 
 ## Verification and acceptance
 
