@@ -17,7 +17,7 @@ test('every taught phrase and clickable chunk has current IPA coverage',()=>{
 test('IPA is exact-text keyed and marked approximate, without fabricated fallback',()=>{
  assert.equal(ipaFor('missing text','es'),null);
  assert.equal(ipaGuide('missing text','es'),'');
- assert.match(ipaGuide('el agua','es'),/IPA ≈/);
+ assert.match(ipaGuide('el agua','es'),/Approximate, automatically generated IPA/);
  assert.match(ipaGuide('el agua','es'),/lang="es-fonipa"/);
  assert.match(ipaFor('el agua','es'),/aɣwa/);
 });

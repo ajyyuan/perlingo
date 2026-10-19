@@ -54,3 +54,9 @@ Retrieved 2026-10-19 from Wikimedia Commons. Audio retains its individual licens
 - **ɑ̃** — open back unrounded nasal vowel. YodaMaster445. [Source](https://commons.wikimedia.org/wiki/File:Open_back_unrounded_nasal_vowel.ogg); [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). File: 251-303.mp3.
 - **ɔ̃** — nasalised open-mid back rounded vowel. Manuel Pégourié-Gonnard. [Source](https://commons.wikimedia.org/wiki/File:Nasalised_open-mid_back_rounded_vowel.ogg); [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en). File: 254-303.mp3.
 - **ɛ̃** — nasalised open-mid front unrounded vowel. Manuel Pégourié-Gonnard. [Source](https://commons.wikimedia.org/wiki/File:Nasalised_open-mid_front_unrounded_vowel.ogg); [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en). File: 25b-303.mp3.
+
+- [ɜ: open-mid central unrounded vowel](https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg) — Denelson83 (attributed by Commons), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). `25c.mp3`: unchanged Commons MP3 transcode.
+
+- [ʝ: voiced palatal fricative](https://commons.wikimedia.org/wiki/File:Voiced_palatal_fricative.ogg) — Peter Isotalo, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). `29d.mp3`: unchanged Commons MP3 transcode.
+
+- [ʎ: voiced palatal lateral approximant](https://commons.wikimedia.org/wiki/File:Voiced_palatal_lateral_approximant.ogg) — Dan Palraz, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). `28e.mp3`: unchanged Commons MP3 transcode.

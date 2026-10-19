@@ -3,7 +3,7 @@
 Motion is optional polish, implemented entirely in `src/style.css`. Effects apply only when `prefers-reduced-motion: no-preference` matches:
 
 - Translation popovers and content-report dialogs fade in over 140 ms.
-- The More overlay fades in and moves 8 px upward over 180 ms. Modal backdrops fade in over 140 ms.
+- The Grammar overlay fades in and moves 8 px upward over 180 ms. Modal backdrops fade in over 140 ms.
 - Nonempty typed-answer feedback fades in over 140 ms, for both correct answers and revealed corrections.
 - Buttons transition text, background, and border colors over 120 ms.
 

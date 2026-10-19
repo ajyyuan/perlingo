@@ -1052,5 +1052,62 @@ export const ipaSounds=[
     "file": "25b-303.mp3",
     "sha256": "6d25d150e97775928144b40b8e5a0e6de7298fd44c7c68046f79425fbfc36eec",
     "accessed": "2026-10-19"
+  },
+  {
+    "symbol": "ɜ",
+    "name": "open-mid central unrounded vowel",
+    "row": "Open-mid",
+    "column": "Central",
+    "languages": [
+      "de"
+    ],
+    "kind": "vowels",
+    "title": "File:Open-mid central unrounded vowel.ogg",
+    "source": "https://commons.wikimedia.org/wiki/File:Open-mid_central_unrounded_vowel.ogg",
+    "author": "Denelson83 (attributed by Commons)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/01/Open-mid_central_unrounded_vowel.ogg/Open-mid_central_unrounded_vowel.ogg.mp3",
+    "file": "25c.mp3",
+    "sha256": "0b1f8b35c5825dbb39efbf71356eaa5349257be7bc7210bae9c77fc731b28a49",
+    "accessed": "2026-10-19"
+  },
+  {
+    "symbol": "ʝ",
+    "name": "voiced palatal fricative",
+    "row": "Fricative",
+    "column": "Palate",
+    "languages": [
+      "es"
+    ],
+    "kind": "consonants",
+    "title": "File:Voiced palatal fricative.ogg",
+    "source": "https://commons.wikimedia.org/wiki/File:Voiced_palatal_fricative.ogg",
+    "author": "Peter Isotalo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ac/Voiced_palatal_fricative.ogg/Voiced_palatal_fricative.ogg.mp3",
+    "file": "29d.mp3",
+    "sha256": "f071d198b081ade3b1f23d4be75b94351d6a766163f4e5e163477002882f9d60",
+    "accessed": "2026-10-19"
+  },
+  {
+    "symbol": "ʎ",
+    "name": "voiced palatal lateral approximant",
+    "row": "Lateral",
+    "column": "Palate",
+    "languages": [
+      "es"
+    ],
+    "kind": "consonants",
+    "title": "File:Voiced palatal lateral approximant.ogg",
+    "source": "https://commons.wikimedia.org/wiki/File:Voiced_palatal_lateral_approximant.ogg",
+    "author": "Dan Palraz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c3/Voiced_palatal_lateral_approximant.ogg/Voiced_palatal_lateral_approximant.ogg.mp3",
+    "file": "28e.mp3",
+    "sha256": "72aef846886ccea3dba2f36ce5b6b6b98b43fd160742f7e79dde37e0f3e1522f",
+    "accessed": "2026-10-19"
   }
 ];
