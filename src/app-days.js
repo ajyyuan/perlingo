@@ -30,7 +30,7 @@ export function planDay(bank,settings,history,day,{unitId}={}){
    fresh.push(...pairs);remaining-=pairs.length;count++;concepts++;
   }
  }
- return {day,unitId:unitId??null,languages:[...settings.languages],reviews:selected,fresh,overflow:Math.max(0,reviews.length-selected.length),phase:selected.length?'review':'new',state:null};
+ return checkpointDay({day,unitId:unitId??null,languages:[...settings.languages],reviews:selected,fresh,overflow:Math.max(0,reviews.length-selected.length),phase:selected.length?'review':'new',state:null},history);
 }
 
 export function applyPhase(history,pairs,first,day,kind){
@@ -48,4 +48,25 @@ export function applyPhase(history,pairs,first,day,kind){
   }
  }
  return next;
+}
+
+// Older unfinished batches can be upgraded only before review results were applied.
+export function checkpointDay(batch,history){
+ if(!batch||batch.restartHistory||(batch.phase==='new'&&batch.reviews.length))return batch;
+ return {...batch,restartHistory:Object.fromEntries([...batch.reviews,...batch.fresh].map(({id,lang})=>{
+  const k=key(id,lang);return [k,history[k]?structuredClone(history[k]):null];
+ }))};
+}
+
+export function restartDay(data){
+ const batch=data.activeDay;
+ if(!batch?.restartHistory||batch.day!==data.appDay)throw new Error('No starting point is available for this day.');
+ const history={...data.history};
+ for(const [k,record] of Object.entries(batch.restartHistory)){
+  if(record===null)delete history[k];else history[k]=structuredClone(record);
+ }
+ return {...data,history,
+  sessions:data.sessions.filter(s=>!(s.appDay===batch.day&&['review','new'].includes(s.sessionKind))),
+  activeDay:{...batch,phase:batch.reviews.length?'review':'new',state:null},
+ };
 }

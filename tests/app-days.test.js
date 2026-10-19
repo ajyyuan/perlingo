@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {migrateProgress,planDay,applyPhase,ANSWER_CAP} from '../src/app-days.js';
+import {migrateProgress,planDay,applyPhase,ANSWER_CAP,checkpointDay,restartDay} from '../src/app-days.js';
 const settings={languages:['es','fr','de'],noun:4,verb:2,grammar:1,sentence:2};
 const bank=Array.from({length:150},(_,i)=>({id:`c${String(i).padStart(3,'0')}`,type:'noun',unitId:i<145?'u01':'u02'}));
 const pair={id:'c000',lang:'es'};
@@ -69,4 +69,41 @@ test('active batches survive JSON storage with frozen queue, feedback and next p
  data.activeDay.state={view:'quiz',queue:[pair],qi:0,feedback:{input:'wrong',correct:false},first:{'c000:es':false},round:1};
  const restored=migrateProgress(JSON.parse(JSON.stringify(data)));
  assert.deepEqual(restored.activeDay,data.activeDay);assert.equal(restored.appDay,1);
+});
+
+test('restart rolls back completed reviews, keeps the frozen plan and does not advance the day',()=>{
+ const history={'c000:es':{stage:0,dueDay:5,seen:1,correct:1},other:{stage:1,dueDay:60}};
+ const batch=planDay(bank,settings,history,5);
+ const scheduled=applyPhase(history,batch.reviews,{'c000:es':true},5,'review');
+ const data={appDay:5,settings,history:scheduled,activeDay:{...batch,phase:'new',state:{view:'quiz',feedback:{correct:false}}},sessions:[{appDay:4,sessionKind:'new'},{appDay:5,sessionKind:'review'},{mode:'contrast'}]};
+ const restarted=restartDay(JSON.parse(JSON.stringify(data)));
+ assert.deepEqual(restarted.history,history);assert.equal(restarted.appDay,5);
+ assert.equal(restarted.activeDay.phase,'review');assert.equal(restarted.activeDay.state,null);
+ assert.deepEqual(restarted.activeDay.reviews,batch.reviews);assert.deepEqual(restarted.activeDay.fresh,batch.fresh);
+ assert.deepEqual(restarted.sessions,[data.sessions[0],data.sessions[2]]);
+ assert.equal(data.history['c000:es'].dueDay,37);
+ assert.deepEqual(restartDay(restarted),restarted);
+ const replayed=applyPhase(restarted.history,batch.reviews,{'c000:es':false},5,'review');
+ assert.equal(replayed['c000:es'].seen,2);assert.equal(replayed['c000:es'].dueDay,9);
+});
+test('new-only and review-only days restart after serialization without replacing the batch',()=>{
+ for(const noun of [0,1]){
+  const history=noun?{}:{'c000:es':{stage:1,dueDay:37,seen:2,correct:2}};
+  const batch=planDay(bank,{...settings,noun,verb:0,grammar:0,sentence:0},history,37);
+  const data={appDay:37,history,settings,sessions:[],activeDay:{...batch,state:{round:3,qi:2,first:{'c000:es':false}}}};
+  const restarted=restartDay(JSON.parse(JSON.stringify(data)));
+  assert.equal(restarted.activeDay.phase,noun?'new':'review');assert.equal(restarted.activeDay.state,null);
+  assert.deepEqual(restarted.history,history);assert.deepEqual(restarted.activeDay.fresh,batch.fresh);
+ }
+});
+test('legacy unfinished days gain checkpoints only when their starting history is still known',()=>{
+ const history={'c000:es':{stage:0,dueDay:1}};
+ const batch={day:1,reviews:[pair],fresh:[],phase:'review',state:{qi:1}};
+ const upgraded=checkpointDay(batch,history);assert.deepEqual(upgraded.restartHistory,history);
+ history['c000:es'].stage=1;assert.equal(upgraded.restartHistory['c000:es'].stage,0);
+ const completedReview={...batch,phase:'new'};
+ assert.equal(checkpointDay(completedReview,history),completedReview);
+ assert.throws(()=>restartDay({appDay:1,activeDay:completedReview}));
+ assert.throws(()=>restartDay({appDay:2,activeDay:upgraded}));
+ assert.throws(()=>restartDay({appDay:2,activeDay:null}));
 });

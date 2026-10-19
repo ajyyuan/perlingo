@@ -405,3 +405,5 @@ button.ipa-guide:hover { color: var(--ink); }
 .correct-translation { display: flex; align-items: center; gap: 10px; }
 .correct-translation strong { min-width: 0; overflow-wrap: anywhere; }
 .correct-translation > button { flex-shrink: 0; display: inline-flex; align-items: center; padding: 8px; }
+
+.top .restart-day { margin-right: 18px; }

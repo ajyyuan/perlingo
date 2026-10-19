@@ -19,7 +19,7 @@ Schedules are independent per concept/language:
 | Correct second review | Graduate (stage 2); no further automatic reviews |
 | Miss either review, including I don’t know | Reset to stage 0; review in 4 app-days |
 
-For example, learned on day 1 → review on day 5 → review on day 37 → graduate. Gaps are measured from the actual day of the attempt, including delayed reviews. First-attempt statistics are retained for new material, but scheduling starts at +4 after its required perfect pass regardless of earlier misses. Recall has no help popovers; any future help must count as assisted, equivalent to a miss.
+For example, learned on day 1 → review on day 5 → review on day 37 → graduate. Gaps are measured from the actual day of the attempt, including delayed reviews. First-attempt statistics are retained for new material, but scheduling starts at +4 after its required perfect pass regardless of earlier misses. After submission, the revealed correct answer offers Quick meaning and pronunciation/grammar help without changing the recorded result. Any future help before submission must count as assisted, equivalent to a miss.
 
 ## Persistence and migration
 
@@ -42,4 +42,24 @@ Acceptance steps:
 4. Finish both phases: advance exactly one app-day. A review-only day also advances; calendar waiting does not.
 5. With more than 108 due pairs, admit exactly 108 and no new material; remaining reviews carry over.
 
-Approved for production publication. `dist/` mirrors the application source.
+The original SRS flow is published. Local C7 feedback/help and C7.5 restart behavior are not yet included in `dist/`.
+
+
+## Restart day (C7.5)
+
+Implemented locally and approved for commit on 2026-10-19. **Restart day** in the header is available while a production app-day is unfinished, including its resume/home screen and the pause after completing reviews. It is hidden during optional contrast/transfer practice and after a day is fully completed. The confirmation explicitly says today's answers and completed review results will be cleared; Cancel leaves them intact.
+
+Confirming restores the starting history for the frozen day's planned pairs, removes that day's production phase journal entries, and resets its answers, draft input, feedback, first attempts, round counts, and timer. It retains the same review/new pairs, selected languages, unit, overflow, and app-day number. Review days begin again in recall; new-only days return to the first learning card, followed by the existing Ready screen. Recall order may reshuffle. Earlier days, other pairs, settings, and optional practice journal entries remain intact. Restarting or reloading repeatedly does not count completed reviews twice. Current audio and overlays close on restart.
+
+`planDay` saves `restartHistory` for its planned pairs, including null entries for unseen pairs. This checkpoint persists with the unfinished day and is discarded when the day finishes. Existing saved days gain a checkpoint when still in review or when they contain only new material. If an old day already completed its reviews without a checkpoint, the restart control is withheld: the original SRS records cannot be reconstructed reliably. Finish that day normally; subsequent days support restart. Completed days are not reopened by this feature.
+
+Validation adds regression coverage for rolling back a completed review phase, retaining the frozen batch and earlier/optional practice history, replay scoring without double counting, repeated restart, serialization, new-only/review-only days, and safe handling of older saved batches.
+
+Local testing at http://127.0.0.1:5173:
+1. Start or resume a day, answer a question, then choose Restart day → Cancel. The question and answer should remain unchanged.
+2. Choose Restart day and confirm. Expect the first learning card for a new-only day, or the beginning of review recall when reviews are scheduled. The day number and material should be unchanged.
+3. Reload and resume: the restarted state should persist, without old feedback or attempts.
+4. On a mixed day, finish reviews, then restart before completing new material. Reviews should be due again, and their superseded journal entry should disappear. Complete them again and verify only one set of review results is recorded.
+5. Finish the whole day. Restart day should disappear until another day is started. Verify Settings and earlier progress remain intact.
+
+These actions intentionally replace the current unfinished day's attempt; test on a disposable browser profile if you want to preserve that attempt.

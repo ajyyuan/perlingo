@@ -18,7 +18,7 @@ const bank=courseMode?courseLessonEntries():foundationMode?lessonEntries(foundat
 // Retain the existing keys so promoting the course does not reset progress.
 const storageKey=courseMode?'perlingo-preview-course-v1':foundationMode?'perlingo-preview-foundation-v1':'perlingo-v1';
 import {key,questions,shuffle} from './engine.js';
-import {migrateProgress,planDay,applyPhase} from './app-days.js';
+import {migrateProgress,planDay,applyPhase,checkpointDay,restartDay} from './app-days.js';
 import {checkAnswer,roundPassed} from './recall.js';
 import {segments} from './explanations.js';
 import {createPronouncer} from './speech.js';
@@ -34,6 +34,7 @@ const defaults={languages:['es','fr','de'],noun:4,verb:2,grammar:1,sentence:2};
 let data={settings:defaults,history:{},sessions:[]},storageError=false;
 try{const stored=JSON.parse(localStorage.getItem(storageKey));if(stored?.settings&&stored?.history&&Array.isArray(stored.sessions))data=stored;}catch{storageError=true;}
 data=migrateProgress(data);
+data.activeDay=checkpointDay(data.activeDay,data.history);
 const currentUnit=()=>unitById(data.settings.unitId)?.id||'u01';
 const studyBank=courseMode?learningBank(bank):bank;
 const itemById=new Map(bank.map(item=>[item.id,item]));
@@ -58,7 +59,7 @@ const topicLabel=item=>grammarTopicLabel(item)?`<p class="grammar-topic">${esc(g
 function save(){try{localStorage.setItem(storageKey,JSON.stringify(data));}catch{storageError=true;}}
 const due=()=>{const p=planDay(studyBank,data.settings,data.history,data.appDay);return p.reviews.length+p.overflow;};
 const duration=ms=>`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}`;
-function shell(content){const active=['study','ready','quiz','round'].includes(view);root.innerHTML=`<div class="shell"><header class="top"><button class="brand" data-action="home" aria-label="Perlingo home">perlingo<span>.</span></button><nav>${active?'<button class="plain" data-action="home">Exit session</button>':`<button class="plain icon" data-action="settings" aria-label="Settings" title="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--bg)"/><circle cx="15" cy="17" r="3" fill="var(--bg)"/></svg></button>`}</nav></header>${storageError?'<p class="error">Browser storage is unavailable. Progress may not survive a reload.</p>':''}<main>${content}</main>${active?'':`<footer class="footer"><div><button class="plain" data-action="history">Progress</button>${courseMode?'<button class="plain" data-action="course">Course</button>':''}</div><span>${data.settings.languages.map(l=>languages[l].name).join(' / ')}</span></footer>`}</div>`;}
+function shell(content){const active=['study','ready','quiz','round'].includes(view);root.innerHTML=`<div class="shell"><header class="top"><button class="brand" data-action="home" aria-label="Perlingo home">perlingo<span>.</span></button><nav>${data.activeDay?.restartHistory&&(!active||practiceMode==='production')?'<button class="plain restart-day" data-action="restart-day">Restart day</button>':''}${active?'<button class="plain" data-action="home">Exit session</button>':`<button class="plain icon" data-action="settings" aria-label="Settings" title="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--bg)"/><circle cx="15" cy="17" r="3" fill="var(--bg)"/></svg></button>`}</nav></header>${storageError?'<p class="error">Browser storage is unavailable. Progress may not survive a reload.</p>':''}<main>${content}</main>${active?'':`<footer class="footer"><div><button class="plain" data-action="history">Progress</button>${courseMode?'<button class="plain" data-action="course">Course</button>':''}</div><span>${data.settings.languages.map(l=>languages[l].name).join(' / ')}</span></footer>`}</div>`;}
 function persistDay(){
  if(practiceMode!=='production'||!data.activeDay||!['study','ready','quiz','round'].includes(view))return;
  data.activeDay.state={view,index,round,queue:queue.map(q=>({id:q.item.id,lang:q.lang})),qi,feedback,mistakes,answers,correct,first,started,draftInput};save();
@@ -151,6 +152,13 @@ if(b.dataset.practice&&courseMode){persistDay();practiceMode=b.dataset.practice;
 if(b.dataset.choice!==undefined&&practiceMode==='contrast'&&view==='quiz'&&!feedback){const q=queue[qi],input=b.dataset.choice,ok=input===q.item.en;answers++;correct+=Number(ok);mistakes+=Number(!ok);const k=key(q.item.id,q.lang);if(!(k in first))first[k]=ok;feedback={input,correct:ok};render();playAnswerFeedback(q);return;}
 if(b.dataset.unit&&courseMode&&bank.some(i=>i.unitId===b.dataset.unit)){data.settings.unitId=b.dataset.unit;save();view='home';render();return;}
 if(a==='export-reports'){root.querySelector('#report-export-status').textContent=exportReports();return;}
+if(a==='restart-day'&&data.activeDay?.restartHistory){
+ answerAudio.stop();
+ if(!confirm(`Restart Day ${data.appDay}? This clears today's answers and completed review results, then repeats the same reviews and new material. Earlier days stay saved.`))return;
+ data=restartDay(data);practiceMode='production';sessionPlan=nextSession();lesson=sessionPlan.items;
+ index=0;round=1;qi=0;queue=[];feedback=null;mistakes=0;answers=0;correct=0;first={};draftInput='';result=null;started=Date.now();
+ if(sessionPlan.kind==='review')startRound();else{view='study';render();}return;
+}
 if(a==='answer-sound'){data.settings.answerSound=data.settings.answerSound===false;save();answerAudio.stop();b.textContent=`Answer sound: ${data.settings.answerSound?'on':'off'}`;b.setAttribute('aria-pressed',String(data.settings.answerSound));return;}
 if(a==='replay-answer'&&view==='quiz'&&feedback){const q=queue[qi];answerAudio.stop();pronunciation.speak(q.item[q.lang],languages[q.lang].locale,languages[q.lang].name,({state,message})=>{if(b.isConnected){b.dataset.audioState=state;b.title=message||'Listen';}});return;}
 if(a==='report-answer'&&view==='quiz'&&feedback){const q=queue[qi];answerAudio.stop();openReport(reportContext(q.item,q.lang,{phase:'recall-feedback',input:feedback.input}),b);return;}
