@@ -461,3 +461,17 @@ button.ipa-guide:hover { color: var(--ink); }
 .report-note { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
 .inbox-report summary { cursor: pointer; font-size: 12px; color: var(--muted); }
 .inbox-report pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; max-height: 300px; overflow: auto; }
+
+/* Only this explicit strip consumes a vertical touch gesture; content still scrolls. */
+.learning-swipe { display: none; }
+@media (any-pointer: coarse) {
+  .learning-swipe {
+    display: grid; place-items: center; min-height: 48px;
+    margin: 0 -40px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 11px;
+    touch-action: pan-x pinch-zoom; user-select: none; -webkit-user-select: none;
+  }
+}
+@media (any-pointer: coarse) and (max-width: 600px) {
+  .learning-swipe { margin-inline: -20px; }
+}

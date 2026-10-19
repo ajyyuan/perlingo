@@ -47,7 +47,7 @@ The original SRS flow is published. Local C7 feedback/help and C7.5 restart beha
 
 ## Restart day (C7.5)
 
-Implemented locally and approved for commit on 2026-10-19. **Restart day** in the header is available while a production app-day is unfinished, including its resume/home screen and the pause after completing reviews. It is hidden during optional contrast/transfer practice and after a day is fully completed. The confirmation explicitly says today's answers and completed review results will be cleared; Cancel leaves them intact.
+Implemented and approved for publication on 2026-10-19; included in the release package. **Restart day** in the header is available while a production app-day is unfinished, including its resume/home screen and the pause after completing reviews. It is hidden during optional contrast/transfer practice and after a day is fully completed. The confirmation explicitly says today's answers and completed review results will be cleared; Cancel leaves them intact.
 
 Confirming restores the starting history for the frozen day's planned pairs, removes that day's production phase journal entries, and resets its answers, draft input, feedback, first attempts, round counts, and timer. It retains the same review/new pairs, selected languages, unit, overflow, and app-day number. Review days begin again in recall; new-only days return to the first learning card, followed by the existing Ready screen. Recall order may reshuffle. Earlier days, other pairs, settings, and optional practice journal entries remain intact. Restarting or reloading repeatedly does not count completed reviews twice. Current audio and overlays close on restart.
 

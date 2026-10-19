@@ -31,3 +31,18 @@ Recall is unchanged: type an answer, Enter checks, then Enter on the focused Con
 New-material production lessons, including one-card lessons, stop at a compact **Recall · Ready?** card after learning. It uses the same split ↑/↓ panel: Right/Down or ↓ starts recall; Left/Up or ↑ returns to the final learning card. Accessible labels identify both actions. There is no automatic focus jump. Native Tab and Enter/Space activation remain available. Arrow key repeats are ignored, so a held key cannot pass the pause; a fresh press can. Double-click follow-through on Begin recall is ignored. Returning preserves the lesson and does not score a round. Leaving saves the unfinished production day for resumption. Contrast/transfer practice and subsequent recall rounds do not show this card.
 
 Due-review sessions skip learning cards and the Ready screen. Home offers Start review; Right/Down activates it, then recall uses normal text-editing keys. After completion, Learn new material opens the same day’s planned new material, or Continue to Day N opens the next day when no new material remains. Reviews never repeat missed answers; new recall retains the perfect-round rule. See [spaced review](spaced-review.md).
+
+## Touch navigation (C9, local)
+
+Touch-capable devices show a 48 px swipe strip immediately above the learning-card arrow buttons. Start a one-finger swipe on that strip: up advances, down returns. The gesture must travel at least 40 px, be predominantly vertical, and finish within 900 ms. Each gesture changes at most one card. At the first card, swiping down does nothing; advancing past the last card opens Ready. Ready itself keeps explicit buttons and keyboard navigation, without a swipe strip.
+
+The strip reserves vertical gestures; the lesson text and remaining page retain normal scrolling and text selection. Horizontal browser gestures and pinch zoom remain available. Short drags, mouse drags, multi-touch, canceled touches, removed cards, and open explanation/dialog states do not navigate. Recall and its answer input have no swipe navigation. Existing card motion and Reduced Motion behavior are reused.
+
+Automated coverage exercises direction, distance/time thresholds, cancellation, multiple fingers, stale surfaces and overlay blocking. Physical iOS/Android touch, narrow-screen layout and virtual-keyboard verification remain pending.
+
+### Device acceptance checks
+
+1. Open the local preview in a touch-capable browser (or use browser device emulation with touch enabled), then resume a learning day. Swipe on the labeled strip in both directions. A long swipe must still change only one card; the first card must not go backward.
+2. Scroll from the lesson text, open Usage note, select text, and open Quick meaning/Grammar. None should advance the lesson. Try a two-finger pinch on the strip: it must not navigate.
+3. Advance to Ready and confirm a swipe cannot start recall. Use the button to begin, type with the mobile keyboard, edit with cursor controls, submit, and continue normally.
+4. At 320 px and 390 px widths, check long translations, Settings and overlays for horizontal overflow and reachable close/submit controls. Repeat navigation with Reduced Motion enabled.

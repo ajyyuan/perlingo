@@ -153,7 +153,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 
 .prompt-note { display: inline-block; color: var(--muted); font-size: .34em; letter-spacing: 0; vertical-align: middle; }
 
-.translation .translation-text { border: 0; border-bottom: 1px solid transparent; background: none; padding: 0; color: inherit; text-align: left; font: inherit; letter-spacing: inherit; line-height: inherit; }
+.translation .translation-text, .correct-translation .translation-text { border: 0; border-bottom: 1px solid transparent; background: none; padding: 0; color: inherit; text-align: left; font: inherit; letter-spacing: inherit; line-height: inherit; }
 .translation-text:hover, .translation-text[aria-expanded="true"] { border-bottom-color: var(--line); color: var(--accent); }
 .explanation { position: fixed; z-index: 20; width: min(300px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow-y: auto; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); box-shadow: 0 8px 28px #282b2518; }
 .explanation-head { display: flex; align-items: center; justify-content: space-between; }
@@ -255,7 +255,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 .review-card .study-head > .eyebrow { color: var(--review); }
 .course-unit { background: #fffefa; border-top: 3px solid #b8cdbb; }
 
-/* IPA stays secondary to the translation, and is never shown during recall. */
+/* IPA stays secondary to the translation, and is available in recall only after submission. */
 .ipa-guide { margin: 8px 0 0; color: var(--muted); font-family: 'DejaVu Sans', 'Arial', sans-serif; font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
 .ipa-label { font-family: Inter, sans-serif; font-size: 9px; letter-spacing: .5px; white-space: nowrap; }
 .explanation .ipa-guide { margin: 2px 0 10px; }
@@ -392,3 +392,86 @@ button.ipa-guide:hover { color: var(--ink); }
 .help-overlay h2 { font-size: 20px; margin-bottom: 12px; }
 .help-overlay::backdrop { background: #282b251c; }
 .ipa-selection .help-link { display: inline-block; margin: 0 0 0 8px; font-size: 12px; }
+
+/* C7: animate feedback only after a new submission, never restored feedback. */
+.answer-sound { font-size: 12px; margin-bottom: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  .answer-correct #answer-feedback, .answer-correct .contrast-choices { animation: answer-lift 240ms ease-out; }
+  .answer-incorrect #answer-feedback, .answer-incorrect .contrast-choices { animation: answer-nudge 240ms ease-out; }
+}
+@keyframes answer-lift { 50% { transform: translateY(-3px); } }
+@keyframes answer-nudge { 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+
+.correct-translation { display: flex; align-items: center; gap: 10px; }
+.correct-translation strong { min-width: 0; overflow-wrap: anywhere; }
+.correct-translation > button { flex-shrink: 0; display: inline-flex; align-items: center; padding: 8px; }
+
+.top .restart-day { margin-right: 18px; }
+
+#account-form { display: grid; gap: 12px; max-width: 360px; }
+#account-form input { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 12px; background: var(--bg); color: var(--ink); font: inherit; }
+.account-actions { display: flex; gap: 18px; flex-wrap: wrap; }
+
+/* Settings: everyday preferences first, maintenance on demand. */
+.settings { width: min(100%, 560px); margin: 28px auto 48px; }
+.settings .back { margin-bottom: 12px; }
+.settings-heading { margin-bottom: 28px; }
+.settings-heading h1 { margin: 8px 0 10px; }
+.settings-heading p { font-size: 14px; }
+.settings-section { margin: 0 0 12px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 14px; background: #fffefa; }
+.settings-section h2 { margin-bottom: 8px; font-size: 14px; font-weight: 600; }
+.settings-section .hint { line-height: 1.6; margin-bottom: 16px; }
+.settings-section p:last-child { margin-bottom: 0; }
+.settings .langs { gap: 8px; }
+.settings .lang { border-radius: 8px; padding: 12px; }
+.sound-setting { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.sound-setting .hint { margin: 0; }
+.sound-toggle { flex: 0 0 48px; height: 44px; padding: 8px 0; border: 0; background: transparent; position: relative; }
+.sound-toggle::before { content: ''; position: absolute; inset: 9px 0; border-radius: 20px; background: #d6d9d0; }
+.sound-toggle span { display: block; position: relative; width: 20px; height: 20px; margin-left: 3px; border-radius: 50%; background: white; box-shadow: 0 1px 3px #0002; }
+.sound-toggle[aria-checked="true"]::before { background: var(--accent); }
+.sound-toggle[aria-checked="true"] span { transform: translateX(22px); }
+.account-identity { font-size: 14px; overflow-wrap: anywhere; margin: 0 0 10px; }
+.account-status { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0 0 12px; }
+.account-actions { gap: 8px 18px; }
+.account-actions .secondary { font-size: 12px; padding: 11px 15px; border-radius: 8px; }
+.account-options { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 4px; }
+.account-options summary { font-size: 12px; color: var(--muted); cursor: pointer; padding: 14px 0 8px; }
+.account-options .hint { margin: 12px 0 0; }
+.settings > .routine { padding: 0 4px; }
+.settings > .routine summary { padding: 20px 0; font-size: 13px; }
+.settings > .routine[open] { padding-bottom: 20px; }
+.settings > .routine > p { margin-top: 0; font-size: 13px; line-height: 1.7; }
+.settings > .routine .counts { margin: 20px 0; }
+.session-facts { display: grid; gap: 12px; margin-top: 24px; color: var(--muted); }
+@media (max-width: 540px) {
+  .settings-section { padding: 18px; }
+  .settings .lang { gap: 8px; padding: 12px 10px; }
+  .account-actions .secondary { flex: 1; }
+}
+
+.account-actions .provider-button { padding: 0; border: 0; background: transparent; height: 44px; border-radius: 4px; flex: none; }
+.provider-button img { display: block; height: 44px; width: auto; }
+.provider-button:hover:not(:disabled) { box-shadow: 0 0 0 2px #282b2518; }
+.report-inbox { width: min(760px, calc(100vw - 32px)); }
+.inbox-report { border-top: 1px solid var(--line); padding: 20px 0; }
+.inbox-report h3 { font-size: 17px; font-weight: 500; margin: 16px 0 8px; }
+.inbox-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.inbox-meta select { padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+.report-note { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
+.inbox-report summary { cursor: pointer; font-size: 12px; color: var(--muted); }
+.inbox-report pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; max-height: 300px; overflow: auto; }
+
+/* Only this explicit strip consumes a vertical touch gesture; content still scrolls. */
+.learning-swipe { display: none; }
+@media (any-pointer: coarse) {
+  .learning-swipe {
+    display: grid; place-items: center; min-height: 48px;
+    margin: 0 -40px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 11px;
+    touch-action: pan-x pinch-zoom; user-select: none; -webkit-user-select: none;
+  }
+}
+@media (any-pointer: coarse) and (max-width: 600px) {
+  .learning-swipe { margin-inline: -20px; }
+}

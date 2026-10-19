@@ -1,6 +1,6 @@
 # Answer feedback (C7)
 
-Implemented locally and approved for commit on 2026-10-19. Not included in the published `dist/` copy.
+Implemented and approved for publication on 2026-10-19; included in the release package in `dist/`.
 
 Each scored submission in production recall, transfer recall, and meaning contrast triggers a brief original two-note sine-wave cue, then pronunciation of the taught translation in the question's language. Correct answers use an ascending cue; misses (including “I don’t know”) use a descending cue. Accepted alternatives still play the canonical taught translation. Contrast questions pronounce the target-language sentence, not the English meaning. Blank typed submissions do not trigger audio or scoring.
 
