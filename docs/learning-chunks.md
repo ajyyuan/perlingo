@@ -62,3 +62,7 @@ Keep `la pomme de terre` and `un stylo à bille` as whole clickable noun phrases
 ## Course draft
 
 All 16 units have authored chunk meanings. `examples.js` parses explicit `span{contextual meaning}` annotations from the core/extension example inventories; it does not infer syntax. Punctuation and elision reconstruct the original text. Objective-level notes explain the target construction, while detailed individual component analyses remain partial. Missing word analysis is labeled explicitly. A whole-expression selection can expose the lexical record/forms without assigning the expression’s meaning to one component. The sidebar uses “Recorded forms” for non-noun/verb records, noun case labels, and a tense selector for supplied verb groups. See [exact coverage and limits](course-authoring.md).
+
+## Learning-card controls (C6.1)
+
+Right/Down advances learning cards; Left/Up returns to the previous card. Shortcuts pause while explanations or dialogs are open. Opening a translation cancels any card entrance animation so its fixed popover remains correctly positioned. There is no custom focus tour; native button/Tab access and Escape dismissal remain available. Recall is unchanged. See [navigation](keyboard-navigation.md).

@@ -5,6 +5,6 @@ export function normalizeAnswer(text){
 }
 export function checkAnswer(input,expected){
  const normalized=normalizeAnswer(input);
- return normalized.length>0&&normalized===normalizeAnswer(expected);
+ return normalized.length>0&&(Array.isArray(expected)?expected:[expected]).some(answer=>normalized===normalizeAnswer(answer));
 }
 export const roundPassed=mistakes=>mistakes===0;

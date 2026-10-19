@@ -30,7 +30,7 @@ h2 { font-size: 14px; font-weight: 500; margin: 0 0 20px; }
 main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .concept, .quiz { width: min(100%, 640px); margin: 52px auto; }
 /* A quiet paper surface for the active lesson; keep its original content width. */
-.concept, .quiz.typed {
+.concept, .quiz.typed, .recall-ready {
   width: min(100%, 722px);
   padding: 30px 40px 26px;
   border: 1px solid #e5e3da;
@@ -119,7 +119,7 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 @media (max-width: 600px) {
   .shell { padding: 16px 24px; }
   .concept, .quiz { margin: 36px auto; }
-  .concept, .quiz.typed { padding: 24px 20px 20px; border-radius: 12px; }
+  .concept, .quiz.typed, .recall-ready { padding: 24px 20px 20px; border-radius: 12px; }
   .concept-body { padding: 34px 0 30px; }
   .word { font-size: 48px; margin-bottom: 30px; }
   .translations { grid-template-columns: 1fr; gap: 12px; }
@@ -215,3 +215,28 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 }
 @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
 @keyframes details-enter { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+
+/* Learning-card movement only; no transform while a fixed popover is open. */
+@media (prefers-reduced-motion: no-preference) {
+  .concept.card-next:not(:has(.explanation:not([hidden]))) { animation: card-up 240ms cubic-bezier(.2,.7,.3,1); }
+  .concept.card-prev:not(:has(.explanation:not([hidden]))) { animation: card-down 240ms cubic-bezier(.2,.7,.3,1); }
+}
+@keyframes card-up { from { opacity: .35; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes card-down { from { opacity: .35; transform: translateY(-24px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Equal navigation halves form the bottom edge of the learning card. */
+.concept, .recall-ready { padding-bottom: 0; }
+.learning-navigation { display: grid; grid-template-columns: 1fr 1fr; margin: 0 -40px; border-top: 1px solid var(--line); }
+.learning-navigation button { min-height: 64px; border: 0; background: #536a4603; color: var(--ink); font-size: 26px; line-height: 1; }
+.learning-navigation button:first-child { border-right: 1px solid var(--line); border-radius: 0 0 0 15px; }
+.learning-navigation button:last-child { border-radius: 0 0 15px 0; }
+.learning-navigation button:hover:not(:disabled) { background: #536a460c; }
+.learning-navigation button:focus-visible { outline-offset: -6px; }
+@media (max-width: 600px) {
+  .learning-navigation { margin-inline: -20px; }
+  .learning-navigation button { min-height: 60px; }
+  .learning-navigation button:first-child { border-bottom-left-radius: 11px; }
+  .learning-navigation button:last-child { border-bottom-right-radius: 11px; }
+}
+
+.ready-body { padding: 40px 0 56px; }

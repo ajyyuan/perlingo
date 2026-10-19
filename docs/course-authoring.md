@@ -46,7 +46,7 @@ Run `npm test`, `npm run check`, and `node scripts/check-course.mjs`. The covera
 4. Try **Try new combinations**. It should begin with an English prompt and empty answer field, without a learning pass. The reveal control warns that revealing prevents a perfect round.
 5. Open http://127.0.0.1:5173/content-review.html?pack=course-u16 and use the pack selector to inspect any unit, evidence scopes and release blockers.
 
-Local source only. `dist/` is unchanged. C4 AI chat and C5 animation are outside this content-authoring change.
+Publication authorized by the user on 2026-10-18. `dist/` now includes the full current draft course and approved interface updates. Content remains draft with the evidence limits described above; publication is not independent linguistic approval. C4 AI chat was removed.
 
 ## Repeating source comparisons
 

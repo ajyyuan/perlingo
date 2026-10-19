@@ -49,7 +49,7 @@ Source reuse terms are recorded as pending inspection and are not marked reviewe
 5. `node scripts/check-content.mjs --release` and `approvedEntries(pack)` reject any unapproved records, missing evidence, or unreviewed source reuse terms. This gate currently fails **by design** for the pilot. There is no deployment/export pipeline in C1; future pack release tooling must call this gate.
 6. Any material edit to reviewed text, facts, forms, or supporting evidence must reset affected review metadata to draft and increment the pack version before release. This reset is an authoring requirement. C3 additionally detects stale lexical evidence snapshots for checked fields; prose and source changes still need manual review.
 
-The existing local game uses `lessonEntries` as an explicit **migration adapter**, which validates structure but allows draft content. This preserves access to three lessons already present before C1; it does not certify them, and must not become the default admission path for newly imported C3 material. The remaining legacy bank is also not independently reviewed. `dist/` stays unchanged.
+The existing local game uses `lessonEntries` as an explicit **migration adapter**, which validates structure but allows draft content. This preserves access to three lessons already present before C1; it does not certify them, and must not become the default admission path for newly imported C3 material. The remaining legacy bank is also not independently reviewed. The 2026-10-18 publication package now mirrors this draft adapter and the expanded course; draft status remains explicit.
 
 ## C2 consumer
 
