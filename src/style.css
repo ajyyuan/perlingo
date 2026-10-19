@@ -194,3 +194,14 @@ main { flex: 1; display: flex; flex-direction: column; justify-content: center; 
 .contrast-choices {display:grid;gap:12px;margin:28px 0;}
 .contrast-choices button {text-align:left;white-space:normal;}
 .course-unit > button {margin:8px 12px 0 0;}
+
+/* C5: optional, brief motion. No timers or animation-dependent interactions. */
+@media (prefers-reduced-motion: no-preference) {
+  button { transition: color 120ms ease-out, background-color 120ms ease-out, border-color 120ms ease-out; }
+  .explanation:not([hidden]), .report-dialog[open] { animation: reveal 140ms ease-out; }
+  .details-sidebar[open] { animation: details-enter 180ms ease-out; }
+  .details-sidebar[open]::backdrop, .report-dialog[open]::backdrop { animation: reveal 140ms ease-out; }
+  .typed-feedback:not(:empty) { animation: reveal 140ms ease-out; }
+}
+@keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+@keyframes details-enter { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
