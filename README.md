@@ -2,7 +2,7 @@
 
 A browser app for learning Spanish, French, and German in parallel.
 
-Run `npm run dev`, then open http://127.0.0.1:5173. Guest preview needs no install or API key. Optional accounts require the [Supabase setup](docs/accounts.md); Google sign-in works locally and email login is disabled; Apple production sign-in and page-reload persistence are verified. The user registered `perlingo.app` with Cloudflare; domain hosting is not yet configured.
+Run `npm run dev`, then open http://127.0.0.1:5173. Guest preview needs no install or API key. Optional accounts require the [Supabase setup](docs/accounts.md); Google sign-in works locally and email login is disabled; Apple production sign-in and page-reload persistence are verified. The app is live at https://perlingo.app with the existing Sites address retained.
 Run `npm test` and `npm run check` for validation.
 
 The home screen offers due reviews first; otherwise it opens on a new concept. Settings groups account status, answer sound, and languages into compact cards. Manage account contains sync, recovery export, and sign-out actions; pending progress choices stay visible. Concept counts and review rules are tucked under Session structure. For new material, study unseen translations side by side, then type them from English prompts in shuffled order. Due reviews skip learning cards and go directly to recall. Reviews get one attempt, with corrections after misses. New material requires a perfect full round; a miss or “I don’t know” requires another full round of the new material.
@@ -79,8 +79,10 @@ Next workstreams: [D1–D4 roadmap](docs/roadmap.md#next-workstreams-d1d4)—con
 
 
 
-D3 account verification: live provider login, phone/computer resume, offline conflict choices, recovery export, phone browser restart and sign-out isolation passed within the [recorded scope](docs/accounts.md#d3-verification-checkpoint--2026-10-19). A real forced SDK token refresh and authenticated progress read passed; long-duration automatic persistence is not certified. Google public rollout is blocked by incomplete branding and public-page/domain setup. Local [introduction](http://127.0.0.1:5173/about.html) and [privacy policy](http://127.0.0.1:5173/privacy.html) are ready for owner review; Settings → About links to them. The pages are included in the approved publication package; deployment/domain status is tracked in docs/accounts.md.
+D3 account verification: live provider login, phone/computer resume, offline conflict choices, recovery export, phone browser restart and sign-out isolation passed within the [recorded scope](docs/accounts.md#d3-verification-checkpoint--2026-10-19). A real forced SDK token refresh and authenticated progress read passed; long-duration automatic persistence is not certified. Google audience is In production; its separate branding verification is being checked. Local [introduction](http://127.0.0.1:5173/about.html) and [privacy policy](http://127.0.0.1:5173/privacy.html) are ready for owner review; Settings → About links to them. The pages are included in the approved publication package; deployment/domain status is tracked in docs/accounts.md.
 
 Privacy operations: [maintainer data-request procedure](docs/account-data-requests.md) documents account verification and deletion dependencies. Its relational cleanup order passed an isolated synthetic PostgreSQL rehearsal; full Auth-service deletion was not tested. Public information-page hosting can be evaluated separately from app-domain migration.
 
-D3 final checks: runtime Google authorization requests only email/profile; credential-safe SDK refresh and relational deletion/rollback rehearsal passed. General-public rollout still requires approval to publish the reviewed pages and configure a verified domain/Google branding.
+D3 final checks: runtime Google authorization requests only email/profile; credential-safe SDK refresh and relational deletion/rollback rehearsal passed. The user approved publication and domain/branding setup; the live rollout record is in docs/accounts.md.
+
+Publication (2026-10-19): version 12 published commit `3b655ac`; perlingo.app now routes to the same public Sites project with active HTTPS. Google ownership is DNS-verified and its audience is In production. The follow-up package removes the obsolete Google Testing note.
