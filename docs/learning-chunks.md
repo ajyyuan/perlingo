@@ -66,3 +66,7 @@ All 16 units have authored chunk meanings. `examples.js` parses explicit `span{c
 ## Learning-card controls (C6.1)
 
 Right/Down advances learning cards; Left/Up returns to the previous card. Shortcuts pause while explanations or dialogs are open. Opening a translation cancels any card entrance animation so its fixed popover remains correctly positioned. There is no custom focus tour; native button/Tab access and Escape dismissal remain available. Recall is unchanged. See [navigation](keyboard-navigation.md).
+
+## New material versus due review
+
+Learning cards and their explanation controls now show only unseen concept/language pairs. Due pairs are recalled directly in the app-day’s review phase, without showing their translations first; future-due pairs are omitted. This may leave fewer language columns on a mixed-history concept. See [spaced review](spaced-review.md).

@@ -1,6 +1,6 @@
 # Learning-card navigation (C6.1)
 
-The initial study phase is **learning**: its panels are **learning cards**. The typed-answer phase is **recall**. The number of learning cards depends on lesson settings, so it is not necessarily nine. Contrast and transfer remain separate practice modes.
+For new material, the initial study phase is **learning**: its panels are **learning cards**. The typed-answer phase is **recall**. The number of learning cards depends on lesson settings, so it is not necessarily nine. Contrast and transfer remain separate practice modes.
 
 ## Learning controls
 
@@ -28,4 +28,6 @@ Recall is unchanged: type an answer, Enter checks, then Enter on the focused Con
 
 ## Before recall
 
-Production lessons, including one-card lessons, stop at a compact **Recall · Ready?** card after learning. It uses the same split ↑/↓ panel: Right/Down or ↓ starts recall; Left/Up or ↑ returns to the final learning card. Accessible labels identify both actions. There is no automatic focus jump. Native Tab and Enter/Space activation remain available. Arrow key repeats are ignored, so a held key cannot pass the pause; a fresh press can. Double-click follow-through on Begin recall is ignored. Returning preserves the lesson and does not score a round. Leaving uses the usual unfinished-session confirmation. Contrast/transfer practice and subsequent recall rounds do not show this card.
+New-material production lessons, including one-card lessons, stop at a compact **Recall · Ready?** card after learning. It uses the same split ↑/↓ panel: Right/Down or ↓ starts recall; Left/Up or ↑ returns to the final learning card. Accessible labels identify both actions. There is no automatic focus jump. Native Tab and Enter/Space activation remain available. Arrow key repeats are ignored, so a held key cannot pass the pause; a fresh press can. Double-click follow-through on Begin recall is ignored. Returning preserves the lesson and does not score a round. Leaving saves the unfinished production day for resumption. Contrast/transfer practice and subsequent recall rounds do not show this card.
+
+Due-review sessions skip learning cards and the Ready screen. Home offers Start review; Right/Down activates it, then recall uses normal text-editing keys. After completion, Learn new material opens the same day’s planned new material, or Continue to Day N opens the next day when no new material remains. Reviews never repeat missed answers; new recall retains the perfect-round rule. See [spaced review](spaced-review.md).

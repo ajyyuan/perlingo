@@ -16,3 +16,22 @@ export function schedule(previous,correct,now=Date.now()){
  return {interval,due:now+interval*86400000,seen:(previous?.seen||0)+1,correct:(previous?.correct||0)+Number(correct)};
 }
 export function questions(items,langs){return shuffle(items.flatMap(item=>langs.map(lang=>({item,lang}))));}
+
+// A production session is either cold due review or learning of unseen pairs.
+export function planSession(bank,settings,history,now=Date.now(),options={}){
+ const reviews=bank.flatMap(item=>settings.languages.filter(lang=>{
+  const h=history[key(item.id,lang)];return h&&h.due<=now;
+ }).map(lang=>({item,lang})));
+ if(reviews.length)return {kind:'review',items:[...new Map(reviews.map(q=>[q.item.id,q.item])).values()],pairs:reviews};
+ const items=makeLesson(bank,settings,history,now,options);
+ const pairs=items.flatMap(item=>settings.languages.filter(lang=>!history[key(item.id,lang)]).map(lang=>({item,lang})));
+ return {kind:'new',items,pairs};
+}
+export function scheduleSession(history,pairs,first,now=Date.now()){
+ const next={...history};
+ for(const {item,lang} of pairs){
+  const k=key(item.id,lang),previous=history[k];
+  if(typeof first[k]==='boolean'&&(!previous||previous.due<=now))next[k]=schedule(previous,first[k],now);
+ }
+ return next;
+}

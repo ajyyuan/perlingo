@@ -13,3 +13,7 @@ The sequence is C1–C6.1, replacing the previous suggested ordering. The user a
 | C6.1 | Simple learning-card navigation and motion | Implemented and user-approved: Right/Down next, Left/Up previous, directional card entrances, reduced-motion support, and an explicit ready screen before recall. Custom focus tour removed; recall unchanged. See [controls](keyboard-navigation.md). |
 
 Completed earlier: B1 quiet pronunciation and B2 contextual learning-chunk popovers. B4 is partially implemented through chunk selection; individual word selection within a chunk is C2. C1 stores selected word forms, not complete conjugation tables. No external content API, AI generation, import at scale, or new teaching content is introduced by C1.
+
+Current local update: promote the full course to the default route, preserve existing course progress, and move the main-screen content-quality notice into Settings → About. Legacy starter access is explicit at `?pack=starter`. Pending user testing and commit; not yet published.
+
+Current local SRS update: app-days with 4 → 32 → graduate scheduling, review misses reset to +4, one attempt per review, perfect full rounds for new material, and a 108 planned-answer cap with reviews prioritized. Unfinished days resume from browser-local storage. See [spaced review](spaced-review.md). Approved for commit and production publication.
