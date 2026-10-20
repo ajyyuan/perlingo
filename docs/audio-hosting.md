@@ -20,8 +20,17 @@ for the library, $0.28 for its initial upload, and $0.40 per million reads,
 excluding bandwidth and repeat/range requests. The first 100 GB/month of
 internet egress is free across the account. Costs are usage-based, not capped.
 The owner approved creation with a $5/month target. The storage account `perlingoaudio` is created. All 54,784 recordings are uploaded and checksum-verified with zero failures; see `audio-generation/hosting-upload-validation.json`.
-The portal shows trial credits expiring November 18, 2026; continuity after the
-trial needs to be addressed. Only public authored recordings belong here.
+The owner authorized and completed the subscription upgrade to pay-as-you-go
+with included Basic support on October 19, 2026. Azure confirmed the upgraded
+account; remaining trial credits expire November 18, 2026. Usage beyond free
+allowances is now billable across the subscription. Only public authored
+recordings belong here.
+
+Azure is the selected production speech provider. ElevenLabs Starter was
+cancelled on October 19 and ends November 19, 2026; automatic top-up is off.
+Google Cloud Text-to-Speech (`texttospeech.googleapis.com`) was disabled in
+`perlingo-512119`. Google OAuth, project and billing account were not changed.
+Historical audition files remain available locally.
 
 Sources: [Blob pricing](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/),
 [bandwidth](https://azure.microsoft.com/en-us/pricing/details/bandwidth/),
