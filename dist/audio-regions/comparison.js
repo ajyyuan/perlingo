@@ -1,4 +1,5 @@
 import {ipaFor} from '../src/ipa.js';
+import {audioBaseUrl} from '../src/audio-host.js';
 import {pronunciationRegions} from '../src/pronunciation-control.js';
 const samples={es:['la calle','la playa','yo','cinco','la cerveza','el zapato'],fr:['tu','dire','petit'],de:['ich','die Kirche','zwanzig','das Auto']};
 const voice=document.querySelector('#voice'),container=document.querySelector('#comparisons'),status=document.querySelector('#status');
@@ -7,7 +8,7 @@ function stop(){serial++;audio.pause();audio.removeAttribute('src');audio.load()
 async function play(button,text,locale){
  if(active===button){stop();return;}stop();const token=serial;
  const file=manifests[voice.value].clips[locale]?.[text];if(!file){status.textContent='Recording unavailable.';return;}
- active=button;button.textContent='■';button.setAttribute('aria-pressed','true');audio.src='../src/audio/azure/'+file;
+ active=button;button.textContent='■';button.setAttribute('aria-pressed','true');audio.src=audioBaseUrl+file;
  try{await audio.play();}catch{if(token===serial){stop();status.textContent='Could not play this recording. Try again.';}}
 }
 audio.onended=stop;audio.onerror=()=>{stop();status.textContent='Could not load this recording. Try again.';};

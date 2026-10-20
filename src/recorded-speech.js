@@ -1,7 +1,8 @@
 import {normalizeAudioText} from './azure-voices.js';
+import {audioBaseUrl} from './audio-host.js';
 
-// All synthesis happens offline. This player only fetches same-origin assets.
-export function createRecordedPronouncer({loadManifest,makeAudio,fallback,loadFeminineManifest=()=>null,baseUrl='/src/audio/azure/'}){
+// All synthesis happens offline. Playback fetches existing recordings only.
+export function createRecordedPronouncer({loadManifest,makeAudio,fallback,loadFeminineManifest=()=>null,baseUrl=audioBaseUrl}){
  let generation=0,audio=null,reportState=null,timer=null,manifestPromise,femininePromise;
  const load=()=>manifestPromise??=Promise.resolve().then(loadManifest).catch(()=>{manifestPromise=null;return null;});
  const loadFeminine=()=>femininePromise??=Promise.resolve().then(loadFeminineManifest).catch(()=>{femininePromise=null;return null;});

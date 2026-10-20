@@ -25,3 +25,10 @@ test('missing feminine recording uses device fallback instead of a masculine rec
  const p=createRecordedPronouncer({loadManifest:()=>({clips:{'fr-FR':{bonjour:'masculine.mp3'}}}),loadFeminineManifest:()=>({clips:{}}),fallback:{stop(){},speak(){deviceCalls++;}},makeAudio(){assert.fail('Must not silently use masculine recording');}});
  p.speak('bonjour','fr-FR','French',()=>{},'feminine');await flush();assert.equal(deviceCalls,1);p.stop();
 });
+
+test('external recording host preserves locale paths and uses fallback on network failure',async()=>{
+ let clip,fallBack=0;
+ const player=createRecordedPronouncer({baseUrl:'https://audio.example.test/library/',loadManifest:()=>({clips:{'fr-FR':{bonjour:'fr-FR/hello.mp3'}}}),fallback:{stop(){},speak(){fallBack++;}},makeAudio(){return clip={play:()=>Promise.resolve(),pause(){},removeAttribute(){},load(){}};}});
+ player.speak('bonjour','fr-FR','French',()=>{});await flush();
+ assert.equal(clip.src,'https://audio.example.test/library/fr-FR/hello.mp3');clip.onerror();assert.equal(fallBack,1);player.stop();
+});
