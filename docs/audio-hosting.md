@@ -51,3 +51,5 @@ use a new path; do not replace cached immutable clips with different bytes.
 
 The Azure budget form could not load cost/filter data during setup, so no budget
 alert is configured. The approved $5/month target is not an enforced cap.
+
+Publication completed October 19, 2026: Sites version **14**, deployment `appgdep_6ad6d5cafd548191b12139c69fa79992`, succeeded. GitHub application commit `1aa49d4c` corresponds to Sites source commit `8de0a2d1e18c1cb896fdffb1f0b65d43753bfa25`. The existing public site and perlingo.app domain are retained. All 54,784 Azure recordings were verified before release.
