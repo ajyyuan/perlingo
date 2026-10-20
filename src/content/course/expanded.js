@@ -1,3 +1,4 @@
+import {nounUsage} from './noun-usage.js';
 import {essentialNouns} from './essential-nouns.js';
 import {referenceForms} from './reference-forms.js';
 import {courseSources} from './course-sources.js';
@@ -26,6 +27,7 @@ export function presentForms(cell,lang){
 for(const [unitId,...cells] of inventoryRows(essentialNouns))nounInventory[unitId]+='\n'+cells.join('|');
 export const expandedPacks=Object.keys(nounInventory).map(unitId=>{
  const pack=createCoursePack(`course-${unitId}`);
+ if(['u09','u12','u15'].includes(unitId))pack.version=2;
  for(const [key,meaning,...cells] of inventoryRows(nounInventory[unitId])){
   const id=`${unitId}-n-${key}`;
   const forms=cells.map((cell,i)=>{
@@ -33,10 +35,17 @@ export const expandedPacks=Object.keys(nounInventory).map(unitId=>{
    if(!genderNames[gender]||!lemma||!plural)throw new Error(`Incomplete noun: ${id}/${lang}`);
    const f=noun(lemma,plural,genderNames[gender],override||articles[lang][gender]);
    if(plural==='-'){f.forms=[{text:lemma,number:'singular'}];f.note=`${meaning}. Only the singular is taught for this sense; absence of a plural here is not a claim that no plural can exist.`;}
-   if(['las','los','les'].includes(override)){f.forms=[{text:lemma,number:'plural'}];f.summary=`${genderNames[gender]} plural noun`;f.note=`${meaning}. This sense is conventionally taught in the plural; do not replace it with a singular that has a different meaning.`;}
+   if(['las','los','les'].includes(override)){f.forms=[{text:lemma,number:'plural'}];f.summary=`${genderNames[gender]} plural noun`;f.note=`${meaning}. This entry teaches the plural form for this sense.`;}
    // Supply the English contextual gloss, never the foreign lemma as its own definition.
    if(gender==='f'&&override==='el'){f.note+=' Feminine nouns beginning with stressed a use el immediately before the singular noun; the noun remains feminine.';f.wordDetails.el.note='El precedes this feminine noun because its initial a is stressed; adjective agreement remains feminine.';}
    f.wordDetails[lemma]={features:{number:['las','los','les'].includes(override)?'plural':'singular',...(lang==='de'?{case:'nominative'}:{})},lexeme:`${lang}.${id}`,meaning,role:`Noun · ${genderNames[gender]} ${['las','los','les'].includes(override)?'plural':'singular'}`,note:plural==='-'?f.note:`${meaning}. The recorded plural is ${plural}.`};
+   const usage=nounUsage[`${lang}.${id}`];
+   if(usage){
+    f.note=usage.note;f.wordDetails[lemma].note=usage.note;
+    f.wordDetails[override].note='Plural definite article agreeing with the noun.';
+    if(usage.singular)f.forms.push({text:usage.singular,number:'singular'});
+    f.acceptedAnswers=usage.acceptedAnswers||[];
+   }
    return f;
   });
   addLexical(pack,{id,unitId,pos:'noun',meaning,forms});

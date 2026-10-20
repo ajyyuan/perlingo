@@ -1,6 +1,28 @@
 # Perlingo roadmap
 
-Completed work is tracked below. The next workstreams are D1–D4. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
+The active backlog is E1–E3 below; C and D retain implementation history. The user authorized continuous curriculum work using the established source-comparison method; individual content batches do not require separate approval. User approval still precedes each commit. Keep this file and the relevant specifications current with implementation.
+
+## E task list — handoff October 19, 2026
+
+Work on E1 first. E2 and E3 are deferred until the owner resumes them; listing
+them here does not authorize implementing the whole backlog.
+
+| Task | Scope | Remaining work / acceptance criteria |
+| --- | --- | --- |
+| E1 | Curriculum accuracy (formerly D4) | Audit the 16-unit draft against sources; resolve evidence gaps, meanings, forms, accepted answers, component explanations, sentence naturalness and reuse permissions. Follow [content maintenance](content-maintenance.md), [course authoring](course-authoring.md), and [learning chunks](learning-chunks.md). Fix related entries together, add regression checks, and keep evidence honest about its scope. Deliver bounded local batches with specific preview steps for owner review. Independent linguistic review is optional additional assurance. |
+| E2 | Installable app / iOS delivery (remaining D2) | Compare PWA, wrapper and native options, then agree on scope before implementation. Validate installation, standalone navigation, updates, account persistence and any promised offline behavior on iPhone. Domain and HTTPS are already complete. |
+| E3 | Audio follow-up (remaining D1) | Test published Azure playback on the phone, including region/voice changes, interruptions, caching and failed-recording fallback. Continue listening review with explicit coverage records; file existence and checksum checks do not certify pronunciation. Correct confirmed issues with new immutable audio paths and matching manifests. Budget alerts remain unconfigured; revisit the $5/month hosting target when this work resumes. Recording-matched/regional IPA remains deferred, not an acceptance requirement. |
+
+E1 local progress: [five noun-number comparisons](evidence/e1-noun-number.md) completed for units 09, 12 and 15; Spanish singular alternatives and French sense-specific notes were approved by the owner for a local commit on October 19, 2026. Publication and full-course certification are not claimed.
+
+### Handoff baseline
+
+- Production: https://perlingo.app, Sites version 14. Azure is the selected provider; 54,784 recordings are hosted and checksum-verified. The previous release passed 129 tests.
+- Azure is upgraded to pay-as-you-go with Basic support. ElevenLabs Starter is cancelled effective November 19, 2026; Google TTS is disabled. Google sign-in remains configured. See [hosting and costs](audio-hosting.md).
+- D3 is complete within its documented scope. Long-duration automatic session soak is not claimed; it is not a blocker for E1.
+- GitHub `main` is pushed through `cf265228`. This E-list documentation handoff accompanies the subsequent owner-approved local E1 commit; it has not been pushed or published.
+- Preserve minimalism, quiet feedback, French Thomas fallback, shared approximate IPA, existing progress and the current release workflow. Future publications must use the lightweight Sites checkout described in [audio hosting](audio-hosting.md), not the large development Git history.
+- Start E1 by inspecting current evidence and validation gaps, then complete one bounded accuracy batch locally. Read repository instructions first. Do not commit, push, publish, or incur new service costs without applicable owner approval.
 
 | Task | Scope | Status |
 | --- | --- | --- |
@@ -36,7 +58,7 @@ Publication history: Sites version 9 published commit `c1c1c98`, including C7 fe
 Sites version 11 published commit `b214e6c`: fixed mobile Previous/Next controls, safe-area spacing and double-tap zoom suppression with pinch zoom preserved. Both swipe experiments remain removed. All 117 tests and syntax/content checks passed.
 
 
-## Next workstreams: D1–D4
+## D-series history (remaining work moved to E above)
 
 These IDs replace the four next-step workstreams discussed on 2026-10-19. They do not authorize implementing or publishing the whole backlog. Suggested execution order: D3 account verification first, then D1 audio; D2 and D4 remain separately scoped work.
 

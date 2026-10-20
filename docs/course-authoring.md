@@ -54,4 +54,8 @@ Publication authorized by the user on 2026-10-18. `dist/` now includes the full 
 
 ## Default course (local update)
 
-The full course now opens at `/` as well as `?pack=course`; both retain `perlingo-preview-course-v1` progress. The old starter bank is explicitly available at `?pack=starter`, preserving `perlingo-v1`. The foundation route is unchanged. Unknown pack values open the course. The prominent preview banner and regular-lessons link are removed; Settings → About explains structural validation, scoped source checks, incomplete coverage, and pending independent linguistic review. Detailed content metadata remains honest about draft status. This routing/presentation update is local pending approval and publication.
+The full course now opens at `/` as well as `?pack=course`; both retain `perlingo-preview-course-v1` progress. The old starter bank is explicitly available at `?pack=starter`, preserving `perlingo-v1`. The foundation route is unchanged. Unknown pack values open the course. The prominent preview banner and regular-lessons link are removed; Settings → About explains structural validation, scoped source checks, incomplete coverage, and pending independent linguistic review. Detailed content metadata remains honest about draft status. This routing/presentation update is included in production.
+
+## E1 local accuracy batch — October 19, 2026
+
+[Five noun-number checks](evidence/e1-noun-number.md) resolve the holiday, scissors and fee extraction flags through manual reference consultation. Spanish singular alternatives are recorded and accepted; French sense-specific plural notes replace the generic warning. Units 09, 12 and 15 are version 2 locally. Counts above are unchanged; prior extraction evidence remains historical. The owner approved this batch for a local commit on October 19, 2026; it remains unpublished and does not clear release or reuse gates.

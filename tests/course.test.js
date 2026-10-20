@@ -66,3 +66,29 @@ test('identical German noun spellings retain the selected case and number',()=>{
  const p=coursePacks.find(p=>p.id==='course-u16'),t=p.entries.find(e=>e.id==='course-u16-n-newspaper-article').translations.de;
  assert.deepEqual(t.wordDetails.Artikel.features,{number:'singular',case:'nominative'});
 });
+
+test('source-checked plural noun senses distinguish Spanish variants from French singular meanings',()=>{
+ const get=(unit,id,lang)=>{
+  const p=coursePacks.find(p=>p.id===`course-${unit}`);
+  assert.equal(p.version,2);
+  return {l:p.lexemes[`${lang}.${unit}-n-${id}`],t:p.entries.find(e=>e.id===`course-${unit}-n-${id}`).translations[lang]};
+ };
+ for(const [unit,id,singular] of [['u09','holiday','vacación'],['u12','scissors','tijera']]){
+  const {l,t}=get(unit,id,'es');
+  assert.ok(l.forms.some(f=>f.text===singular&&f.number==='singular'));
+  assert.ok(checkAnswer(`la ${singular}`,[t.text,...t.acceptedAnswers]));
+  assert.equal(checkAnswer(`las ${singular}`,[t.text,...t.acceptedAnswers]),false);
+  assert.equal(t.wordDetails[l.lemma].features.number,'plural');
+  assert.equal(t.wordDetails[l.lemma].note,t.chunks[0].detail);
+ }
+ for(const [unit,id,wrong,note] of [['u09','holiday','la vacance',/vacancy/],['u12','scissors','le ciseau',/chisel/],['u15','fee','le frais',/plural agreement/]]){
+  const {l,t}=get(unit,id,'fr');
+  assert.ok(l.forms.every(f=>f.number==='plural'));
+  assert.equal(checkAnswer(wrong,[t.text,...t.acceptedAnswers]),false);
+  assert.match(t.chunks[0].detail,note);
+  assert.equal(t.wordDetails[l.lemma].note,t.chunks[0].detail);
+ }
+ const changed=structuredClone(coursePacks.find(p=>p.id==='course-u12'));
+ changed.lexemes['es.u12-n-scissors'].forms.pop();
+ assert.ok(validatePack(changed).some(e=>e.includes('source check is stale')));
+});

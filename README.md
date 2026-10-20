@@ -69,7 +69,7 @@ C9 mobile navigation: the experimental swipe strip was removed at the user’s r
 
 The approved C9 mobile update replaces gestures with a fixed bottom Previous/Next bar on screens up to 600 px. It respects the iPhone safe area, reserves content space and disappears for recall. Double-tap page zoom is suppressed while scrolling and pinch-to-zoom remain available. Desktop navigation is unchanged. User-tested and approved for publication on 2026-10-19; [iPhone testing steps](docs/keyboard-navigation.md#fixed-mobile-controls-local-trial).
 
-Next workstreams: [D1–D4 roadmap](docs/roadmap.md#next-workstreams-d1d4)—consistent audio, domain/app delivery, account verification, and curriculum verification. Mobile controls are live in Sites version 11 (`b214e6c`).
+Current workstreams: [E1–E3 roadmap](docs/roadmap.md#e-task-list--handoff-october-19-2026)—curriculum accuracy first; app delivery and audio follow-up deferred. Mobile controls first shipped in Sites version 11 (`b214e6c`).
 
 
 
@@ -108,4 +108,6 @@ Separate Azure Blob audio hosting is configured after the Sites source-upload fa
 
 Publication completed October 19, 2026: Sites version **14**, deployment `appgdep_6ad6d5cafd548191b12139c69fa79992`, succeeded. GitHub application commit `1aa49d4c` corresponds to Sites source commit `8de0a2d1e18c1cb896fdffb1f0b65d43753bfa25`. The existing public site and perlingo.app domain are retained. All 54,784 Azure recordings were verified before release.
 
-Provider decision (October 19, 2026): Azure is retained for speech generation and recording hosting. Its subscription upgrade to pay-as-you-go with Basic support is complete. ElevenLabs Starter is cancelled effective November 19, and Google Cloud Text-to-Speech is disabled; Google sign-in remains configured. The storage target remains $5/month, without a hard cap or configured budget alert. See [billing status](docs/audio-hosting.md). Curriculum accuracy is next; other roadmap work is deferred.
+Provider decision (October 19, 2026): Azure is retained for speech generation and recording hosting. Its subscription upgrade to pay-as-you-go with Basic support is complete. ElevenLabs Starter is cancelled effective November 19, and Google Cloud Text-to-Speech is disabled; Google sign-in remains configured. The storage target remains $5/month, without a hard cap or configured budget alert. See [billing status](docs/audio-hosting.md). The [E task list](docs/roadmap.md#e-task-list--handoff-october-19-2026) carries forward E1 curriculum accuracy first, with E2 app delivery and E3 audio follow-up deferred.
+
+E1 local accuracy batch: [five noun-number comparisons](docs/evidence/e1-noun-number.md) correct Spanish singular alternatives and clarify French plural senses in units 09, 12 and 15. Local only; source/release limitations remain.
