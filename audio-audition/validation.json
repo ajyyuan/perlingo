@@ -1,0 +1,546 @@
+{
+  "check": "afinfo decode metadata; nonzero duration; exact fixture text/locale; file hash recorded in provider ledgers",
+  "clips": [
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-1.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-1.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-2.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-2.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-3.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-3.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-4.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-4.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-5.mp3",
+      "durationSeconds": 2.064,
+      "bytes": 12384
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-5.mp3",
+      "durationSeconds": 2.184,
+      "bytes": 13104
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-AlvaroNeural-6.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "es-ES-ElviraNeural-6.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-7.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-7.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-8.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-8.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-9.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-9.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-10.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-10.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-11.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-11.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 11376
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-HenriNeural-12.mp3",
+      "durationSeconds": 2.328,
+      "bytes": 13968
+    },
+    {
+      "provider": "azure",
+      "file": "fr-FR-DeniseNeural-12.mp3",
+      "durationSeconds": 2.472,
+      "bytes": 14832
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-13.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-13.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-14.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-14.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-15.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-15.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-16.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-16.mp3",
+      "durationSeconds": 1.872,
+      "bytes": 11232
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-17.mp3",
+      "durationSeconds": 2.016,
+      "bytes": 12096
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-17.mp3",
+      "durationSeconds": 2.088,
+      "bytes": 12528
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-ConradNeural-18.mp3",
+      "durationSeconds": 3.456,
+      "bytes": 20736
+    },
+    {
+      "provider": "azure",
+      "file": "de-DE-KatjaNeural-18.mp3",
+      "durationSeconds": 3.48,
+      "bytes": 20880
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-1.mp3",
+      "durationSeconds": 1.056,
+      "bytes": 4224
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-1.mp3",
+      "durationSeconds": 1.368,
+      "bytes": 5472
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-2.mp3",
+      "durationSeconds": 1.008,
+      "bytes": 4032
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-2.mp3",
+      "durationSeconds": 0.816,
+      "bytes": 3264
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-3.mp3",
+      "durationSeconds": 1.056,
+      "bytes": 4224
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-3.mp3",
+      "durationSeconds": 1.464,
+      "bytes": 5856
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-4.mp3",
+      "durationSeconds": 1.848,
+      "bytes": 7392
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-4.mp3",
+      "durationSeconds": 1.848,
+      "bytes": 7392
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-5.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 5664
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-5.mp3",
+      "durationSeconds": 1.128,
+      "bytes": 4512
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Charon-6.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 7584
+    },
+    {
+      "provider": "google",
+      "file": "es-ES-Kore-6.mp3",
+      "durationSeconds": 1.728,
+      "bytes": 6912
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-7.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 5664
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-7.mp3",
+      "durationSeconds": 1.056,
+      "bytes": 4224
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-8.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 4704
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-8.mp3",
+      "durationSeconds": 1.224,
+      "bytes": 4896
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-9.mp3",
+      "durationSeconds": 1.008,
+      "bytes": 4032
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-9.mp3",
+      "durationSeconds": 0.288,
+      "bytes": 1152
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-10.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 5664
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-10.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 4704
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-11.mp3",
+      "durationSeconds": 1.224,
+      "bytes": 4896
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-11.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 5952
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Charon-12.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 7296
+    },
+    {
+      "provider": "google",
+      "file": "fr-FR-Kore-12.mp3",
+      "durationSeconds": 2.088,
+      "bytes": 8352
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-13.mp3",
+      "durationSeconds": 1.368,
+      "bytes": 5472
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-13.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 5952
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-14.mp3",
+      "durationSeconds": 1.056,
+      "bytes": 4224
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-14.mp3",
+      "durationSeconds": 1.536,
+      "bytes": 6144
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-15.mp3",
+      "durationSeconds": 1.128,
+      "bytes": 4512
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-15.mp3",
+      "durationSeconds": 0.456,
+      "bytes": 1824
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-16.mp3",
+      "durationSeconds": 1.464,
+      "bytes": 5856
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-16.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 4992
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-17.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 5664
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-17.mp3",
+      "durationSeconds": 1.848,
+      "bytes": 7392
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Charon-18.mp3",
+      "durationSeconds": 3.528,
+      "bytes": 14112
+    },
+    {
+      "provider": "google",
+      "file": "de-DE-Kore-18.mp3",
+      "durationSeconds": 2.856,
+      "bytes": 11424
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-1.mp3",
+      "durationSeconds": 0.992625,
+      "bytes": 15926
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-2.mp3",
+      "durationSeconds": 0.91425,
+      "bytes": 14672
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-3.mp3",
+      "durationSeconds": 0.992625,
+      "bytes": 15926
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-4.mp3",
+      "durationSeconds": 0.992625,
+      "bytes": 15926
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-5.mp3",
+      "durationSeconds": 1.22775,
+      "bytes": 19688
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "es-ES-Marco-6.mp3",
+      "durationSeconds": 1.071,
+      "bytes": 17180
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-7.mp3",
+      "durationSeconds": 0.835875,
+      "bytes": 13418
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-8.mp3",
+      "durationSeconds": 0.91425,
+      "bytes": 14672
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-9.mp3",
+      "durationSeconds": 0.835875,
+      "bytes": 13418
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-10.mp3",
+      "durationSeconds": 0.992625,
+      "bytes": 15926
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-11.mp3",
+      "durationSeconds": 1.22775,
+      "bytes": 19688
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "fr-FR-Florian-12.mp3",
+      "durationSeconds": 1.645687,
+      "bytes": 26375
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-13.mp3",
+      "durationSeconds": 1.22775,
+      "bytes": 19688
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-14.mp3",
+      "durationSeconds": 1.071,
+      "bytes": 17180
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-15.mp3",
+      "durationSeconds": 0.7575,
+      "bytes": 12164
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-16.mp3",
+      "durationSeconds": 1.071,
+      "bytes": 17180
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-17.mp3",
+      "durationSeconds": 1.410562,
+      "bytes": 22613
+    },
+    {
+      "provider": "elevenlabs",
+      "file": "de-DE-Hans-18.mp3",
+      "durationSeconds": 3.160813,
+      "bytes": 50617
+    }
+  ],
+  "total": 90
+}

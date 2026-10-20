@@ -1,5 +1,7 @@
 # Perlingo working agreement
 
+- Favor minimalism throughout the application whenever accuracy and accessibility can be preserved. Prefer compact, self-explanatory controls; omit redundant headings, helper text, confirmations, and implementation details. Keep necessary explanations contextual rather than permanently visible.
+
 - Keep documentation synchronized with implementation in the same change. Update README.md and relevant docs whenever behavior, architecture, content conventions, setup, or workflow changes. Only genuinely minor changes such as small test-only adjustments may omit documentation updates.
 - Before handing off, check documentation against the actual implementation. Clearly label future plans; do not describe planned behavior as implemented. Maintain this rule going forward.
 - Implement one agreed task, run relevant checks, and provide a local preview with specific testing steps. The user tests and requests revisions or approves. Commit only after explicit approval of those changes. Do not push or publish unless requested.

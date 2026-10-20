@@ -4,3 +4,6 @@ node_modules/
 
 # Supabase CLI cache
 supabase/.temp/
+
+# Temporary Azure download archives (recordings and ledgers are retained)
+audio-generation/*.zip

@@ -11,5 +11,5 @@ export function ipaGuide(text,lang,clickable=false){
 
 export function interactiveIPA(text,lang){
  const ipa=ipaFor(text,lang);if(!ipa)return '';
- return `<div class="ipa-transcription" lang="${lang}-fonipa" aria-label="Pronunciation transcription">[${ipaTokens(ipa).map(t=>/^\s+$/.test(t.text)?esc(t.text):`<button type="button" ${t.sound?`data-transcription-sound="${esc(t.text)}" aria-label="Hear ${esc(t.text)}"`:`data-ipa-note="${esc(t.note||`No recording available for ${t.text}.`)}" aria-label="Explain ${esc(t.text)}"`}>${esc(t.text)}</button>`).join('')}]</div>`;
+ return `<div class="ipa-transcription" title="Approximate, automatically generated IPA. Audio may differ by voice and accent." lang="${lang}-fonipa" aria-label="Pronunciation transcription">[${ipaTokens(ipa).map(t=>/^\s+$/.test(t.text)?esc(t.text):`<button type="button" ${t.sound?`data-transcription-sound="${esc(t.text)}" aria-label="Hear ${esc(t.text)}"`:`data-ipa-note="${esc(t.note||`No recording available for ${t.text}.`)}" aria-label="Explain ${esc(t.text)}"`}>${esc(t.text)}</button>`).join('')}]</div>`;
 }

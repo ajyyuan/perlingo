@@ -1,9 +1,9 @@
 const localeKey=value=>value.toLowerCase().replaceAll('_','-');
-export function matchingVoices(voices,locale){
+export function matchingVoices(voices,locale,{exactLocale=false}={}){
  const target=localeKey(locale),language=target.split('-')[0];
  // Prefer the standard French system voice over enhanced voices that may be advertised but unavailable.
  const score=v=>Number(language==='fr'&&/^Thomas(?:$| \()/i.test(v.name||''))*8+Number(Boolean(v.localService))*4+Number(localeKey(v.lang)===target)*2+Number(Boolean(v.default));
- return voices.filter(v=>localeKey(v.lang).split('-')[0]===language).sort((a,b)=>score(b)-score(a));
+ return voices.filter(v=>exactLocale?localeKey(v.lang)===target:localeKey(v.lang).split('-')[0]===language).sort((a,b)=>score(b)-score(a));
 }
 
 export function createPronouncer(synth,Utterance){
@@ -12,7 +12,7 @@ export function createPronouncer(synth,Utterance){
  function stop(){request++;clear();utterance=null;synth?.cancel();reportState?.({state:'idle',message:''});reportState=null;}
  // Kick off asynchronous voice discovery before the first click.
  synth?.getVoices();
- function speak(text,locale,label,report){
+ function speak(text,locale,label,report,options={}){
   stop();const id=request;reportState=report;
   const notify=(state,message='')=>report({state,message});
   if(!synth||!Utterance){notify('error','Pronunciation is unavailable in this browser.');return;}
@@ -35,7 +35,7 @@ export function createPronouncer(synth,Utterance){
   };
   const select=()=>{
    if(id!==request)return;
-   const voices=matchingVoices(synth.getVoices(),locale);
+   const voices=matchingVoices(synth.getVoices(),locale,options);
    if(voices.length){clear();play(voices);return true;}
    return false;
   };

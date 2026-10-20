@@ -9,3 +9,9 @@ test('tries another French voice after engine error',()=>{const t=setup([french,
 test('rapid replay ignores callbacks from cancelled utterances',()=>{const t=setup();t.speak();const old=t.spoken[0];t.speak();const count=t.messages.length;old.onstart();old.onend();old.onerror();assert.equal(t.spoken.length,2);assert.equal(t.messages.length,count);t.player.stop();});
 test('leaving screen cancels pending voice loading',()=>{const t=setup([]);t.speak();t.player.stop();t.load([french]);assert.equal(t.spoken.length,0);});
 test('prefers standard Thomas over advertised enhanced French voices',()=>{const thomas={name:'Thomas',lang:'fr-FR',localService:true};const daniel={name:'Daniel (French (France))',lang:'fr-FR',localService:true,default:true};assert.equal(matchingVoices([daniel,thomas],'fr-FR')[0],thomas);});
+test('explicit region never substitutes another region and retains Thomas within France',()=>{
+ const thomas={name:'Thomas',lang:'fr-FR',localService:true},canadian={name:'Canada',lang:'fr-CA',localService:false};
+ assert.deepEqual(matchingVoices([thomas,canadian],'fr-CA',{exactLocale:true}),[canadian]);
+ assert.deepEqual(matchingVoices([thomas],'fr-CA',{exactLocale:true}),[]);
+ assert.equal(matchingVoices([french,thomas],'fr-FR',{exactLocale:true})[0],thomas);
+});

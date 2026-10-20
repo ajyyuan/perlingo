@@ -490,3 +490,37 @@ button.ipa-guide:hover { color: var(--ink); }
   .concept.card-next .concept-body { animation: card-up 240ms cubic-bezier(.2,.7,.3,1); }
   .concept.card-prev .concept-body { animation: card-down 240ms cubic-bezier(.2,.7,.3,1); }
 }
+
+/* Regional pronunciation stays separate from general settings. */
+.top nav { display:flex; align-items:center; gap:12px; }
+.pronunciation-control { display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; border:1px solid var(--line); border-radius:50%; }
+.pronunciation-control:hover,.pronunciation-control[aria-expanded="true"] { background:var(--line); }
+/* Compact, quiet rows: native menus retain familiar keyboard/mobile behavior. */
+.accent-panel { position:fixed; inset:82px max(20px,calc((100vw - 960px)/2)) auto auto; margin:0; width:310px; max-width:calc(100vw - 32px); max-height:calc(100dvh - 110px); overflow:auto; box-sizing:border-box; border:1px solid #dce2d7; border-radius:20px; padding:8px; background:var(--bg); color:var(--ink); box-shadow:0 16px 48px #25372b18,0 2px 6px #25372b08; }
+.accent-panel::backdrop { background:#20282008; }
+.accent-row { display:grid; grid-template-columns:30px 100px minmax(0,1fr); align-items:center; gap:4px; padding:6px 8px; }
+.accent-row + .accent-row { border-top:1px solid var(--line); }
+.accent-row > span { font-size:11px; font-weight:600; letter-spacing:.06em; color:var(--muted); }
+.accent-row select { appearance:none; min-height:44px; min-width:0; width:100%; padding:8px 20px 8px 10px; border:0; border-radius:10px; background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%23758375' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 6px center; color:var(--ink); font:inherit; font-size:13px; cursor:pointer; }
+.accent-row select:hover { background-color:#eaf0e5; }
+.accent-row select:focus-visible { outline:2px solid var(--accent); outline-offset:0; background-color:#eaf0e5; }
+@media(max-width:600px) { .accent-panel { inset:76px 16px auto auto; } .top nav { gap:8px; } .top .restart-day { margin-right:0; } }
+
+/* Settings: one calm list, with secondary information kept in disclosures. */
+.settings { max-width:620px; margin:0 auto; }
+.settings-heading { margin:24px 0 32px; }
+.settings-heading h1 { font-size:32px; letter-spacing:-1px; font-weight:500; }
+.settings-section { margin:0; padding:24px 0; border:0; border-bottom:1px solid var(--line); border-radius:0; background:transparent; }
+.settings-section h2 { font-size:14px; font-weight:500; margin:0 0 12px; }
+.sound-setting h2 { margin:0 0 4px; }
+.settings .langs { display:flex; gap:8px; margin:0; }
+.settings .lang { flex:1; min-height:48px; border:1px solid transparent; border-radius:12px; background:#eef0e8; padding:12px 14px; font-size:13px; }
+.settings .lang.selected { background:#e0ebdf; border-color:#b9ccbb; color:var(--accent); }
+.settings .lang span { font-size:12px; }
+.settings > .routine { padding:0; }
+.settings > .routine summary { padding:22px 0; font-size:13px; }
+.settings .account-identity { font-weight:500; }
+.settings .account-status { margin-bottom:12px; }
+.settings .account-options { border:0; margin-top:4px; padding-top:0; }
+.settings .account-options summary { padding:10px 0; }
+@media(max-width:540px) { .settings-heading { margin-top:18px; margin-bottom:20px; } .settings-section { padding:22px 0; } .settings .lang { padding:12px 10px; } }

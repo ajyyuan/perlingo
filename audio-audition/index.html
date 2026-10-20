@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perlingo · Pronunciation comparison</title>
+<style>body{font:16px/1.5 system-ui;background:#f6f4ee;color:#202820;max-width:1160px;margin:auto;padding:32px}h1{font:36px Georgia,serif}p{max-width:800px;color:#586258}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:16px;border-bottom:1px solid #ddd;text-align:left;vertical-align:top}th{font-size:14px}audio{width:100%;min-width:190px}small{display:block;color:#627062}.scroll{overflow:auto}button,select{padding:10px;border:1px solid #aab4aa;border-radius:8px;background:white;font:inherit}nav{display:flex;gap:12px;margin:24px 0}.pending{color:#747974;font-size:14px}.phrase{min-width:150px;font-size:19px}footer{margin-top:24px;color:#627062;font-size:13px}</style>
+<header><small>PERLINGO · PRIVATE LISTENING TRIAL</small><h1>Compare the pronunciation.</h1><p>Listen to the same text from Azure, ElevenLabs and Google. Judge the sounds and stress first, then voice preference. Azure and Google each have two candidate voices; ElevenLabs has one native-language candidate. These samples are for evaluation, not approved course audio.</p></header>
+<nav><label>Language <select id="language"><option value="es-ES">Spanish · Spain</option><option value="fr-FR">French · France</option><option value="de-DE">German · Germany</option></select></label><button id="stop">Stop audio</button></nav>
+<p id="status" role="status">Loading sample inventory…</p><div class="scroll"><table><thead><tr><th>Lesson text</th><th>Azure</th><th>ElevenLabs</th><th>Google</th></tr></thead><tbody id="samples"></tbody></table></div>
+<footer>Compare at a comfortable volume. Recordings are played as generated; loudness has not yet been normalized. An isolated fragment can need context even when a full sentence sounds correct.</footer>
+<script type="module">
+const providers=['azure','elevenlabs','google'];let inventory,clips=[];
+const stop=()=>document.querySelectorAll('audio').forEach(a=>a.pause());
+document.querySelector('#stop').onclick=stop;
+document.addEventListener('play',e=>{if(e.target.tagName==='AUDIO')document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause();});},true);
+window.addEventListener('pagehide',stop);document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+function render(){stop();const body=document.querySelector('#samples');body.replaceChildren();let count=0;
+for(const sample of inventory.samples.filter(s=>s.locale===document.querySelector('#language').value)){
+ const row=document.createElement('tr'),label=document.createElement('th');label.scope='row';label.className='phrase';label.lang=sample.locale;label.textContent=sample.text;row.append(label);
+ for(const provider of providers){const cell=document.createElement('td');const found=clips.filter(c=>c.provider===provider&&c.locale===sample.locale&&c.text===sample.text&&c.status==='generated');
+ if(!found.length){const pending=document.createElement('span');pending.className='pending';pending.textContent='Awaiting generation';cell.append(pending);}
+ for(const c of found){const name=document.createElement('small');name.textContent=`${c.voice} · ${c.model||'model recorded in generation log'}`;const audio=document.createElement('audio');audio.controls=true;audio.preload='none';audio.src=c.file;audio.setAttribute('aria-label',`${provider}: ${sample.text}, ${c.voice}`);audio.onerror=()=>{name.textContent+=' · audio unavailable';};cell.append(name,audio);count++;}
+ row.append(cell);}body.append(row);
+}document.querySelector('#status').textContent=count?`${count} generated clips available for this language.`:'No generated clips available for this language.';}
+try{inventory=await (await fetch('../docs/audio-audition.json')).json();for(const p of providers){const response=await fetch(`${p}/generation.json`);if(response.ok){const data=await response.json();clips.push(...data.clips.map(c=>({...c,provider:p,file:`${p}/${c.file}`})));}}
+// Retain compatibility with the prepared Google-only generator's output.
+const legacy=await fetch('generation.json');if(legacy.ok){const data=await legacy.json();clips.push(...data.clips.map(c=>({...c,provider:'google',model:'Chirp 3 HD'})));}
+render();document.querySelector('#language').onchange=render;
+}catch{document.querySelector('#status').textContent='Could not load the comparison inventory. Open this page through the local preview server.';}
+</script></html>
