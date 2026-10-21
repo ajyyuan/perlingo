@@ -1,14 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {calendar,todayUTC,challengeFor,archiveDays,challengeSettings,challengeRandom} from '../public/challenges.js';
+import {calendar,todayET,challengeFor,archiveDays,challengeSettings,challengeRandom} from '../public/challenges.js';
 import {languages,packs} from '../public/content.js';
 import {getRecording} from '../public/recordings.js';
 import {shuffle} from '../public/engine.js';
-test('UTC date changes at midnight and archive excludes today and future',()=>{
- assert.equal(todayUTC(new Date('2026-10-21T23:59:59Z')),'2026-10-21');
- assert.equal(todayUTC(new Date('2026-10-22T00:00:00Z')),'2026-10-22');
- assert.deepEqual(archiveDays('2026-10-22').map(c=>c.date),['2026-10-21']);
+test('Eastern date changes at local midnight in daylight and standard time',()=>{
+ assert.equal(todayET(new Date('2026-10-22T03:59:59Z')),'2026-10-21');
+ assert.equal(todayET(new Date('2026-10-22T04:00:00Z')),'2026-10-22');
+ assert.equal(todayET(new Date('2026-12-22T04:59:59Z')),'2026-12-21');
+ assert.equal(todayET(new Date('2026-12-22T05:00:00Z')),'2026-12-22');
+ for(const instant of ['2026-03-08T06:59:59Z','2026-03-08T07:00:00Z'])assert.equal(todayET(new Date(instant)),'2026-03-08');
+ for(const instant of ['2026-11-01T05:59:59Z','2026-11-01T06:00:00Z'])assert.equal(todayET(new Date(instant)),'2026-11-01');
+});
+test('demo archive has two past dates and excludes today and future',()=>{
+ assert.deepEqual(archiveDays('2026-10-21').map(c=>[c.date,c.pack,c.demo]),[['2026-10-20','tree',true],['2026-10-19','moon',true]]);
+ assert.equal(challengeFor('2026-10-21','2026-10-21').pack,'bread');
  assert.equal(challengeFor('2026-10-22','2026-10-21'),null);
  assert.equal(challengeFor('2026-10-31','2026-10-31'),null);
 });
