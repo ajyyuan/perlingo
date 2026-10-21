@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {exactAudioWord} from '../scripts/audio-word-match.mjs';
+test('audio screening accepts orthographic equivalents, but rejects extra words and wrong targets',()=>{assert(exactAudioWord('น้ํา','น้ำ','th'));assert(exactAudioWord('Voda.','вода','sr'));assert(exactAudioWord('Pain.','pain','fr'));assert(!exactAudioWord('Temps.','pain','fr'));assert(!exactAudioWord('le pain','pain','fr'));assert(!exactAudioWord('Bánh mì.','nước','vi'));});

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-21T01:11:31.883Z",
+  "source": "macOS synthetic voices; one sample per language/category; NOT human accuracy",
+  "configuredProviders": [
+    "elevenlabs",
+    "soniox"
+  ],
+  "missingProviders": [],
+  "rows": [
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 422,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 144
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 443,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": null,
+          "error": "Soniox rejected the stream (code 402). Check permissions and language support."
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 363,
+          "text": "Water.",
+          "accepted": false,
+          "afterClipMs": 184
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": null,
+          "error": "Soniox connection closed. Please retry."
+        }
+      ]
+    }
+  ],
+  "status": "Stopped early: Soniox returned payment-required 402; not an accuracy comparison"
+}

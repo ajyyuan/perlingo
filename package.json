@@ -10,7 +10,9 @@
     "check:content": "node scripts/check-content.mjs",
     "build:auth": "node scripts/build-auth.mjs",
     "check:audio": "node scripts/check-audio-library.mjs",
-    "build:static": "node scripts/build-static.mjs"
+    "build:static": "node scripts/build-static.mjs",
+    "dev:challenge": "node perlingo-challenge/server.mjs",
+    "test:challenge": "node --test perlingo-challenge/tests/*.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0"

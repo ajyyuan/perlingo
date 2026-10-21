@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';
+import {recordings,getRecording,RecordingPlayer} from '../public/recordings.js';import {getEntry} from '../public/content.js';
+test('recording assets match their manifest, exact tile word, and attribution',async()=>{
+ assert(recordings.length>0);const keys=new Set();
+ for(const r of recordings){const key=r.pack+':'+r.language;assert(!keys.has(key));keys.add(key);assert.equal(getEntry(r.pack,r.language).word,r.word);assert.match(r.file,/^\/audio\/(generated\/)?[a-z]+-[a-z]+\.mp3$/);for(const field of ['source','speaker','license','licenseUrl','provenance'])assert(r[field],`${key} ${field}`);const bytes=await readFile(new URL('../public'+r.file,import.meta.url));assert(bytes.length>1000);assert.equal(createHash('sha256').update(bytes).digest('hex'),r.sha256);assert.equal(getRecording(r.pack,r.language),r);if(r.kind==='generated'){assert.equal(r.voicePrimaryLanguage,r.language);assert.equal(r.reviewStatus,'automated-word-check-passed');assert.equal(r.check.sha256,r.sha256);assert.equal(r.check.exactMatch,true);}}
+});
+test('recording player interrupts audio and settles without overlapping or synthesizing',async()=>{
+ const old=globalThis.Audio;const audios=[];globalThis.Audio=class{constructor(src){this.src=src;audios.push(this);}play(){return Promise.resolve();}pause(){this.paused=true;}removeAttribute(){this.src='';}load(){}};
+ try{const p=new RecordingPlayer(),r=recordings[0],e={word:r.word},l={id:r.language,name:'Test'};const first=p.play(r.pack,e,l);const second=p.play(r.pack,e,l);await first;assert(audios[0].paused);assert.equal(audios[0].src,'');audios[1].onended();await second;assert.equal(p.current,null);await assert.rejects(p.play('missing',e,l),/not available/);assert.equal(audios.length,2);}finally{globalThis.Audio=old;}
+});
+test('recording playback errors settle and are actionable',async()=>{const old=globalThis.Audio;globalThis.Audio=class{play(){return Promise.reject(Object.assign(Error(),{name:'NotAllowedError'}));}};try{const r=recordings[0];await assert.rejects(new RecordingPlayer().play(r.pack,{word:r.word},{id:r.language,name:'Test'}),/Tap the tile again/);}finally{globalThis.Audio=old;}});

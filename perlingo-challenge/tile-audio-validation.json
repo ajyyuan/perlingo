@@ -1,0 +1,614 @@
+{
+  "method": "All MP3 files decoded to 16kHz mono PCM with FFmpeg 7.1; duration and non-silence checks. This does not validate accent or word pronunciation.",
+  "rows": [
+    {
+      "pack": "bread",
+      "language": "en",
+      "durationSeconds": 0.557,
+      "peak": 8261,
+      "sha256": "8bc2cd32258b9e85a2e5f1bf9b5128d3a1248beed5cac5b277c25fe4010debbe"
+    },
+    {
+      "pack": "bread",
+      "language": "zh",
+      "durationSeconds": 1.043,
+      "peak": 10026,
+      "sha256": "85fa26c03ed51cb32d690e79b4ed6b8539bb34484c3fd863cfefeed37320aa00"
+    },
+    {
+      "pack": "bread",
+      "language": "hi",
+      "durationSeconds": 1.224,
+      "peak": 25726,
+      "sha256": "6f12cd088b859cfce56c694efb323fe3ef851ae507890534a398b29c6224afe2"
+    },
+    {
+      "pack": "bread",
+      "language": "es",
+      "durationSeconds": 0.943,
+      "peak": 7433,
+      "sha256": "5fe70b36a960a3847f180862c54690c5ffc2f933c3e04cca44c3fc033b40c957"
+    },
+    {
+      "pack": "bread",
+      "language": "ar",
+      "durationSeconds": 0.627,
+      "peak": 6736,
+      "sha256": "c00f5144b792a6e05866f6c4b6009e17b147bb4438eccf5a660062324d2c7a79"
+    },
+    {
+      "pack": "bread",
+      "language": "fr",
+      "durationSeconds": 1.339,
+      "peak": 32768,
+      "sha256": "9e4ad70be214e2a3b2a119c054ab5ee14234c3ca62432ef225822c5f0ddb8576"
+    },
+    {
+      "pack": "bread",
+      "language": "bn",
+      "durationSeconds": 0.968,
+      "peak": 6975,
+      "sha256": "2c86ba56a0c5d03e9acf2b15bd75d7b35293ce3af5a80d8c010a4035bdbc0adf"
+    },
+    {
+      "pack": "bread",
+      "language": "ru",
+      "durationSeconds": 0.883,
+      "peak": 26081,
+      "sha256": "08c590b49aab5b873a6b0b554952895b147b93a1b8a3bfc6600d31985d16b7b0"
+    },
+    {
+      "pack": "bread",
+      "language": "id",
+      "durationSeconds": 1.139,
+      "peak": 10410,
+      "sha256": "971a757bca4f9b37f66b4002c68f5ccef3618b438f122f2d91c3e4ea7a550fb0"
+    },
+    {
+      "pack": "bread",
+      "language": "de",
+      "durationSeconds": 1.453,
+      "peak": 32767,
+      "sha256": "add2691ab1d47d66ffd54fe80fbe85e2a6e5549776dc87557fd7153088e310c2"
+    },
+    {
+      "pack": "bread",
+      "language": "ja",
+      "durationSeconds": 0.599,
+      "peak": 24207,
+      "sha256": "2f229b0d071001c07d63b3cbfe06b0c45c1c30870a102b008a8736032194abd3"
+    },
+    {
+      "pack": "bread",
+      "language": "mr",
+      "durationSeconds": 0.883,
+      "peak": 30993,
+      "sha256": "8f7a9d35ca123cde874e7c93651c7b8462d5da0c5050470e88bb684413d58824"
+    },
+    {
+      "pack": "bread",
+      "language": "te",
+      "durationSeconds": 1.129,
+      "peak": 9778,
+      "sha256": "09b46d3e20117a435d7b3849613fda26644da3c391b9485886b5887267204aec"
+    },
+    {
+      "pack": "bread",
+      "language": "tr",
+      "durationSeconds": 0.968,
+      "peak": 16917,
+      "sha256": "0544ceb287b74106921f5620952e3c54fd736718679c9325cbe3f9251c77d883"
+    },
+    {
+      "pack": "bread",
+      "language": "ta",
+      "durationSeconds": 1.129,
+      "peak": 9883,
+      "sha256": "5cde06802772afe5062fd0264982e1b896d7a41358fcf359f3248352b41f091b"
+    },
+    {
+      "pack": "bread",
+      "language": "vi",
+      "durationSeconds": 1.395,
+      "peak": 9226,
+      "sha256": "73d3ff3c473b42fbedf169c15e0423c9fafddd6c1188b7acf5c2ecc6668482f9"
+    },
+    {
+      "pack": "bread",
+      "language": "ko",
+      "durationSeconds": 0.733,
+      "peak": 21025,
+      "sha256": "51ca588f620f582f3597f2fc611e3d3a189d0b2ac837cf60eedb98e2bfedded9"
+    },
+    {
+      "pack": "bread",
+      "language": "fa",
+      "durationSeconds": 0.883,
+      "peak": 18200,
+      "sha256": "b07b071115546dcb89c87447916e8c3d6aa4d085e176dcaa82754b362185b324"
+    },
+    {
+      "pack": "bread",
+      "language": "it",
+      "durationSeconds": 1.49,
+      "peak": 25199,
+      "sha256": "2e3ebd5aaff108c445a0e811827c872530e8597d39b3fad1fb165f2e0155c787"
+    },
+    {
+      "pack": "bread",
+      "language": "th",
+      "durationSeconds": 1.224,
+      "peak": 15567,
+      "sha256": "ababc631fde220339ca8de1f05f4784e2c91b2e1ee652057cf0f1f355adae986"
+    },
+    {
+      "pack": "bread",
+      "language": "gu",
+      "durationSeconds": 1.053,
+      "peak": 23641,
+      "sha256": "16160c00f453300e606a912ea723409db9f1c3dcdeed03d728ce32fd4115d0ef"
+    },
+    {
+      "pack": "bread",
+      "language": "pl",
+      "durationSeconds": 0.782,
+      "peak": 32768,
+      "sha256": "bd3640e6c5407704b0769b11d69795c7785a77791c18725de50c2a54aef653b3"
+    },
+    {
+      "pack": "bread",
+      "language": "uk",
+      "durationSeconds": 1.218,
+      "peak": 29177,
+      "sha256": "2986748146b59788f626e4e6089dca527ec5c26d413fe779d65fcfc999a8c17c"
+    },
+    {
+      "pack": "bread",
+      "language": "ml",
+      "durationSeconds": 1.053,
+      "peak": 8331,
+      "sha256": "10e62d1330942f82800ec43b71984fff2fffccb3e3e1bd9fa09be399ae605cb0"
+    },
+    {
+      "pack": "bread",
+      "language": "kn",
+      "durationSeconds": 0.995,
+      "peak": 10007,
+      "sha256": "5fb89a8b786392984d2bf1d4c1bb76924b1494750bd0face6fd460438c92d2a0"
+    },
+    {
+      "pack": "bread",
+      "language": "ro",
+      "durationSeconds": 0.883,
+      "peak": 13468,
+      "sha256": "f64b052d3220c56e903be86f76482747839a88428e0f51c8ba94a051c63000a7"
+    },
+    {
+      "pack": "bread",
+      "language": "nl",
+      "durationSeconds": 1.168,
+      "peak": 21945,
+      "sha256": "f446a949917c60b010eaa358e41195b46ec46333015be0fbb96574bf239d30c3"
+    },
+    {
+      "pack": "bread",
+      "language": "cs",
+      "durationSeconds": 1.011,
+      "peak": 29529,
+      "sha256": "20690612996d445ea3f2175e0b5944e695d1ba202db25d8e38f6225eedaa245f"
+    },
+    {
+      "pack": "bread",
+      "language": "sv",
+      "durationSeconds": 0.843,
+      "peak": 4784,
+      "sha256": "dcb971a39ae1b8055ce5e5e88fe451eb1ef2939f4161d33c12d1fff56d36fc93"
+    },
+    {
+      "pack": "bread",
+      "language": "he",
+      "durationSeconds": 1.053,
+      "peak": 11653,
+      "sha256": "f02ced56e6f65afdcf8deb7dbb666d2379c1103e3702cb9a4eb664141ec33086"
+    },
+    {
+      "pack": "bread",
+      "language": "da",
+      "durationSeconds": 0.859,
+      "peak": 16987,
+      "sha256": "6c5010c56116d4341d989a56e4779eba965f431a8dc45c4446197aafb9a75b48"
+    },
+    {
+      "pack": "bread",
+      "language": "no",
+      "durationSeconds": 0.779,
+      "peak": 21160,
+      "sha256": "6a63c1964256f2a8830bf50190f821b531b219b78d935f0b7ae9b2c171871b87"
+    },
+    {
+      "pack": "bread",
+      "language": "sk",
+      "durationSeconds": 0.893,
+      "peak": 24023,
+      "sha256": "5e430f738e8a5ec4d7798241d981f4cda7cf2b7cd59a2efebe37889c6c5716a3"
+    },
+    {
+      "pack": "bread",
+      "language": "bg",
+      "durationSeconds": 0.797,
+      "peak": 21882,
+      "sha256": "a27c1c25e1919ab1fd98336dd387bed680a980607ed174ff3aaedfc111b53217"
+    },
+    {
+      "pack": "bread",
+      "language": "sr",
+      "durationSeconds": 1.1,
+      "peak": 29147,
+      "sha256": "ddb8b8d4db0f4b357d0f9b426d01ca2f3248a4232b5bfd301629ecafe1c59ac7"
+    },
+    {
+      "pack": "bread",
+      "language": "ms",
+      "durationSeconds": 1.053,
+      "peak": 11313,
+      "sha256": "2f86fbc7f783fb37fc74253af64db607676029ad9f04aa970ca31e36e62a236f"
+    },
+    {
+      "pack": "bread",
+      "language": "fil",
+      "durationSeconds": 1.07,
+      "peak": 19845,
+      "sha256": "95265caee577f2cbe3e8faad0a10c7260341f084a0c90b87eb6dcdbcaa537505"
+    },
+    {
+      "pack": "bread",
+      "language": "sw",
+      "durationSeconds": 0.87,
+      "peak": 31029,
+      "sha256": "59a19e5dc99cc23f228282559ceec6c7ce074850d7d7ba7e15b8eb4eb6de0f4b"
+    },
+    {
+      "pack": "bread",
+      "language": "af",
+      "durationSeconds": 0.968,
+      "peak": 18931,
+      "sha256": "d53ba632b052b72e36bb3031ef8cf76e6585f4e9b61d9cec2fe2bf26c96f3bbe"
+    },
+    {
+      "pack": "bread",
+      "language": "ca",
+      "durationSeconds": 0.712,
+      "peak": 7106,
+      "sha256": "a523539a1c574a2bd683684753bf4f9e2b801854c99f5f4f3a3aadae80a7ab5a"
+    },
+    {
+      "pack": "bread",
+      "language": "et",
+      "durationSeconds": 0.715,
+      "peak": 13695,
+      "sha256": "d4ac0ee89ee87acdaa63ee09f35e82a4c6600ce2e614e93b0165b280fd0bb1a5"
+    },
+    {
+      "pack": "bread",
+      "language": "lv",
+      "durationSeconds": 2.225,
+      "peak": 22376,
+      "sha256": "d5954d3a6c3c5754e39704420ee1d0089e0009b23a64e73a1e2b34e731a44cc8"
+    },
+    {
+      "pack": "water",
+      "language": "en",
+      "durationSeconds": 0.766,
+      "peak": 19240,
+      "sha256": "ae67777cfa794d6f72a2e26d4e033a100261f07c7b1c7895d873838cd23bd359"
+    },
+    {
+      "pack": "water",
+      "language": "zh",
+      "durationSeconds": 1.222,
+      "peak": 11380,
+      "sha256": "a469ddcb91f2eaf9a4f7771f6d4603a15a522d5a7148e48719fd83b410c31936"
+    },
+    {
+      "pack": "water",
+      "language": "hi",
+      "durationSeconds": 1.036,
+      "peak": 13795,
+      "sha256": "ad0b0935a92e144fdccde0d29bb307f06995c0d32cee50fe12a9f6e941e406e6"
+    },
+    {
+      "pack": "water",
+      "language": "es",
+      "durationSeconds": 1.222,
+      "peak": 11916,
+      "sha256": "f5747e4df03501978f3301ee706e3adb75db56083c5994944b946d3bce7313b0"
+    },
+    {
+      "pack": "water",
+      "language": "ar",
+      "durationSeconds": 0.797,
+      "peak": 8439,
+      "sha256": "1e3c86190472925e6475e9250b4a77c2cdfc847fdfad879faf2ab40bfdf0903f"
+    },
+    {
+      "pack": "water",
+      "language": "fr",
+      "durationSeconds": 0.797,
+      "peak": 22862,
+      "sha256": "5aa62a7a85fc2af81ce08efdd47c5137a27f1db583c51f895f67478aa407ca01"
+    },
+    {
+      "pack": "water",
+      "language": "bn",
+      "durationSeconds": 0.968,
+      "peak": 28474,
+      "sha256": "46a3dbe3bbd5e4bcd746350d6de161afcb6f725284fd69af5b23aef24ee5f080"
+    },
+    {
+      "pack": "water",
+      "language": "pt",
+      "durationSeconds": 0.723,
+      "peak": 4722,
+      "sha256": "1af8d1a5fb1be756cc13203f6f90c2bad43f087d405756080c8d6de1a8dd40af"
+    },
+    {
+      "pack": "water",
+      "language": "ru",
+      "durationSeconds": 2.056,
+      "peak": 10793,
+      "sha256": "a8621072079687331dd0a31de48a8c4e837cba64ac74a6020b3875e246e2d35b"
+    },
+    {
+      "pack": "water",
+      "language": "ur",
+      "durationSeconds": 0.968,
+      "peak": 22586,
+      "sha256": "9cc956c4d28eaffff3072e81b83efddf2434e10e331af2a9f4394cc4e1a6d806"
+    },
+    {
+      "pack": "water",
+      "language": "id",
+      "durationSeconds": 1.139,
+      "peak": 15370,
+      "sha256": "e62e62725796e8d247a3453cc8490165d9c572e7a86e92bfc071f3de618a5dba"
+    },
+    {
+      "pack": "water",
+      "language": "de",
+      "durationSeconds": 0.625,
+      "peak": 19328,
+      "sha256": "7edd93f3aed9ffb9d337c2d28b5b3b54a8d956c129eccb0f233b3e6feeb1a3b4"
+    },
+    {
+      "pack": "water",
+      "language": "ja",
+      "durationSeconds": 0.942,
+      "peak": 11008,
+      "sha256": "f36088447868b3f9c5a758c590c3de2208fa83c06aada2ae61ed9fab5094f775"
+    },
+    {
+      "pack": "water",
+      "language": "mr",
+      "durationSeconds": 0.797,
+      "peak": 19616,
+      "sha256": "2ff6008b649bc22c8a86870f7d7b35a2adcac96264d651f5cb514cc8ee040c45"
+    },
+    {
+      "pack": "water",
+      "language": "te",
+      "durationSeconds": 3.014,
+      "peak": 18900,
+      "sha256": "e5748803b39b25a3499efa76b6948a47a3a063b5ae2358c50049603f6ad7994c"
+    },
+    {
+      "pack": "water",
+      "language": "tr",
+      "durationSeconds": 0.797,
+      "peak": 7379,
+      "sha256": "7dffc5c81cad0e38ce592590b8e892b31033f0a9eb043f8c65e952a918443714"
+    },
+    {
+      "pack": "water",
+      "language": "ta",
+      "durationSeconds": 1.117,
+      "peak": 14247,
+      "sha256": "13b60e0899872990a9e77d2f7cf8c4dbffd38eab80127ef7165e69f394c71567"
+    },
+    {
+      "pack": "water",
+      "language": "vi",
+      "durationSeconds": 0.725,
+      "peak": 17056,
+      "sha256": "35da67d967ebad0c2267f3228aeb0b8cce95e3e63c68f4dcfccc53b7b1de3756"
+    },
+    {
+      "pack": "water",
+      "language": "ko",
+      "durationSeconds": 1.29,
+      "peak": 32642,
+      "sha256": "9de8855b82e7adeb76947d95a69a8d92a699bdafa81591258fbd3aa00201a163"
+    },
+    {
+      "pack": "water",
+      "language": "it",
+      "durationSeconds": 1.647,
+      "peak": 32767,
+      "sha256": "c1ff9fad4fdff4493dc3b7c27f370aff7510235d0046ce53d8c348d928925d28"
+    },
+    {
+      "pack": "water",
+      "language": "th",
+      "durationSeconds": 1.4,
+      "peak": 32767,
+      "sha256": "c9494263cd8b01912ded9be433512a78623e1464533bfea73b7d941bd03a4029"
+    },
+    {
+      "pack": "water",
+      "language": "pl",
+      "durationSeconds": 0.643,
+      "peak": 32768,
+      "sha256": "d56b5bdc19b1d7ce07c9d9ed03e671b4f9889da5c22598f3012defde9b71b671"
+    },
+    {
+      "pack": "water",
+      "language": "uk",
+      "durationSeconds": 1.302,
+      "peak": 29565,
+      "sha256": "0ed8350c051c7794d24d1bff18bd2bea57327ee09a64a94091d6e9eab55ee46f"
+    },
+    {
+      "pack": "water",
+      "language": "ml",
+      "durationSeconds": 1.036,
+      "peak": 11798,
+      "sha256": "0f7c3727294b850095cef1ddaf7cf12e37c61dfe84e208919ba04460ee566656"
+    },
+    {
+      "pack": "water",
+      "language": "kn",
+      "durationSeconds": 1.099,
+      "peak": 22194,
+      "sha256": "d974409ce68c84031d6207b67a1413ca62bddbb441d99113b5ba0927076dc58c"
+    },
+    {
+      "pack": "water",
+      "language": "ro",
+      "durationSeconds": 1.053,
+      "peak": 11880,
+      "sha256": "cdae2ef9c591624eb5eccc4466d995a0726650002c778df1d14cf4d3e3b8a198"
+    },
+    {
+      "pack": "water",
+      "language": "nl",
+      "durationSeconds": 0.649,
+      "peak": 31296,
+      "sha256": "3d9f2e4c64bb9124d8d97245ec2a420ab4f437e2e25d18de2f26a710ef72bef6"
+    },
+    {
+      "pack": "water",
+      "language": "hu",
+      "durationSeconds": 1.122,
+      "peak": 30762,
+      "sha256": "ee3572071dffde70eec063312f9153cf62a71f631798f898a58b3c6b6a9c361e"
+    },
+    {
+      "pack": "water",
+      "language": "cs",
+      "durationSeconds": 1.151,
+      "peak": 29073,
+      "sha256": "6dfed72f7f0913faef12bc55224cbf70b3145d99c3681bd67cd1fb331f653df2"
+    },
+    {
+      "pack": "water",
+      "language": "sv",
+      "durationSeconds": 1.267,
+      "peak": 26353,
+      "sha256": "97b300f07e9eef7b2fea39f5dcc5df40e79e1069fb443c59b71385ac021e0f0d"
+    },
+    {
+      "pack": "water",
+      "language": "he",
+      "durationSeconds": 0.883,
+      "peak": 16819,
+      "sha256": "da18e55f0a3a3a35180fb56d8f94b67f1359f7a4b61c76f3c2a716b0567e5d63"
+    },
+    {
+      "pack": "water",
+      "language": "fi",
+      "durationSeconds": 0.987,
+      "peak": 32767,
+      "sha256": "bcb87ea6405a86e5ebae6bd02ae0fa6e46e086baf6219ea616ac65087da5aa65"
+    },
+    {
+      "pack": "water",
+      "language": "da",
+      "durationSeconds": 0.445,
+      "peak": 30090,
+      "sha256": "041a24d98d2882e19e1f799fce1f50bd1bac1a1b43348d99080a5b3d40e6c897"
+    },
+    {
+      "pack": "water",
+      "language": "no",
+      "durationSeconds": 0.883,
+      "peak": 14038,
+      "sha256": "e46ff65b755e616c856c55e9b0a6955932373802e9057b3de87e6bf9bd852df0"
+    },
+    {
+      "pack": "water",
+      "language": "sk",
+      "durationSeconds": 1.398,
+      "peak": 28799,
+      "sha256": "2b7151605897a77f0703c6ca44218802cf6a2a349e4a8ce0b05598c0778977f7"
+    },
+    {
+      "pack": "water",
+      "language": "bg",
+      "durationSeconds": 0.712,
+      "peak": 6705,
+      "sha256": "f6c8ad8f45d200b19be9f871e3c3fe61d3b6f8543c16beddd57d50a70c355c48"
+    },
+    {
+      "pack": "water",
+      "language": "sr",
+      "durationSeconds": 0.744,
+      "peak": 10575,
+      "sha256": "aaa4916954de36cdc82e1033d3ccd1bdb71cda14a1437745bbb1063c0de66b4b"
+    },
+    {
+      "pack": "water",
+      "language": "ms",
+      "durationSeconds": 1.139,
+      "peak": 28117,
+      "sha256": "144e958806e72d4c5c44630a3669332913ee029718470c33e7325ef89cde45e4"
+    },
+    {
+      "pack": "water",
+      "language": "fil",
+      "durationSeconds": 0.787,
+      "peak": 13168,
+      "sha256": "1ef9b947282b4704dd8f3b3402869fdb04ddd4515589112937011327b513f9b3"
+    },
+    {
+      "pack": "water",
+      "language": "sw",
+      "durationSeconds": 0.73,
+      "peak": 30978,
+      "sha256": "fdadbe967aa82283ebc28797c8305206f9611f5c7260e6835d22883a24f8b879"
+    },
+    {
+      "pack": "water",
+      "language": "af",
+      "durationSeconds": 1.139,
+      "peak": 18055,
+      "sha256": "30c9150ad5c63699fd152744f031c399f4061157e5d241427f245763990683ae"
+    },
+    {
+      "pack": "water",
+      "language": "ca",
+      "durationSeconds": 1.053,
+      "peak": 17421,
+      "sha256": "752b2c08ebfe03c4db616df192ec196bf766236e3cb55be37c2cd9df572a6b50"
+    },
+    {
+      "pack": "water",
+      "language": "et",
+      "durationSeconds": 0.829,
+      "peak": 18155,
+      "sha256": "6b954a56a991ef8675fd60a7df5faee7631a3b3f844f2f3407f0846a4219f2bf"
+    },
+    {
+      "pack": "water",
+      "language": "lv",
+      "durationSeconds": 1.223,
+      "peak": 30480,
+      "sha256": "d57b5c4e5c9a52cec2929ff2abba1375554804e5c36a6c6480c5b07b6307ac6e"
+    },
+    {
+      "pack": "water",
+      "language": "sl",
+      "durationSeconds": 1.053,
+      "peak": 9331,
+      "sha256": "111baaa1fb44ba600b84dd880105cd99b2ef48b77c3462d3f7a98d74f88f03a2"
+    }
+  ]
+}

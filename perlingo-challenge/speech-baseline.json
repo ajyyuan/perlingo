@@ -1,0 +1,407 @@
+{
+  "date": "2026-10-21T01:15:42.208Z",
+  "source": "macOS synthetic voices; one sample per language/category; NOT human accuracy",
+  "configuredProviders": [
+    "elevenlabs",
+    "soniox"
+  ],
+  "missingProviders": [],
+  "rows": [
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 367,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 162
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 269,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 365,
+          "text": "Water.",
+          "accepted": false,
+          "afterClipMs": 139
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 229,
+          "text": "Water.",
+          "accepted": false,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 298,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 437
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 236,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 436
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 1032,
+          "text": "Fain.",
+          "accepted": false,
+          "afterClipMs": 241
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 1031,
+          "text": "Tiens.",
+          "accepted": false,
+          "afterClipMs": 88
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 517,
+          "text": "Oui.",
+          "accepted": false,
+          "afterClipMs": 183
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 469,
+          "text": "Ou.",
+          "accepted": false,
+          "afterClipMs": 77
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 388,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 192
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 341,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 71
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 389,
+          "text": "Ven.",
+          "accepted": false,
+          "afterClipMs": 187
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 336,
+          "text": "Bien.",
+          "accepted": false,
+          "afterClipMs": 49
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 458,
+          "text": "Agua.",
+          "accepted": false,
+          "afterClipMs": 238
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 449,
+          "text": "Agua.",
+          "accepted": false,
+          "afterClipMs": 103
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 327,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 177
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 217,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 103
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 454,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 186
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 428,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 47
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 397,
+          "text": "Wasser.",
+          "accepted": false,
+          "afterClipMs": 173
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 378,
+          "text": "Wasser.",
+          "accepted": false,
+          "afterClipMs": 130
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 390,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 199
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 252,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 92
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 504,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 207
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 498,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 79
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 355,
+          "text": "水。",
+          "accepted": false,
+          "afterClipMs": 185
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 381,
+          "text": "水。",
+          "accepted": false,
+          "afterClipMs": 75
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 390,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 179
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 256,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 57
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 446,
+          "text": "パン。",
+          "accepted": true,
+          "afterClipMs": 191
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 332,
+          "text": "番。",
+          "accepted": false,
+          "afterClipMs": 105
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 490,
+          "text": "水。",
+          "accepted": false,
+          "afterClipMs": 370
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 293,
+          "text": "水。",
+          "accepted": false,
+          "afterClipMs": 328
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "silence",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 926,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 184
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 925,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 44
+        }
+      ]
+    }
+  ]
+}

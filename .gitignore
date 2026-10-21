@@ -7,3 +7,12 @@ supabase/.temp/
 
 # Temporary Azure download archives (recordings and ledgers are retained)
 audio-generation/*.zip
+
+# Local API credentials
+.env
+.env.*
+!.env.example
+perlingo-challenge/.cache/
+
+# Local preview screenshots
+/.cache/

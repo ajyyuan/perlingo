@@ -1,0 +1,999 @@
+{
+  "date": "2026-10-21T15:42:39.288Z",
+  "method": "FFmpeg decode; transcription by provider named on each row (legacy rows: Soniox stt-rt-v5; elevenlabs: Scribe v2 Realtime), expected language only, no target-word hint; exact normalized word match, including Thai Unicode decomposition and Serbian Latin/Cyrillic equivalents (not game substring scoring). This checks intelligibility, not accent, stress, tone or native-speaker quality. No listening review performed.",
+  "rows": [
+    {
+      "pack": "bread",
+      "language": "en",
+      "word": "bread",
+      "sha256": "e002d6b616a04d0f4ca64266e7646a787649b378c5c3c4db22dd25a6da59a972",
+      "duration": 1.52,
+      "transcript": "Bread.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "en",
+      "word": "water",
+      "sha256": "83280c0c4501e8a0994a82d19de68e22b6f974634eec0ac5d208af2cd0c2858a",
+      "duration": 1.04,
+      "transcript": "Water.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "zh",
+      "word": "面包",
+      "sha256": "e8524356eaeb44cb885fe3768ca2dc5036cd1a37fd18ff807c42161755de8691",
+      "duration": 0.72,
+      "transcript": "面包。",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "zh",
+      "word": "水",
+      "sha256": "9d3a01d0d94d9a93d9cd8bde47feb05b4c94fe4768027dc19954bc18c7b23203",
+      "duration": 1.6,
+      "transcript": "水。",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "hi",
+      "word": "रोटी",
+      "sha256": "8aabd96dcdbb5eb83aa8080d0a6759beb013c7a43abf9a88c1f0bfaa4813c9d0",
+      "duration": 0.96,
+      "transcript": "रोटी।",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "hi",
+      "word": "पानी",
+      "sha256": "64e0b91b63518c67ecd50819dfad9682fba81bdd5f0b152a47c2aa9219d06b8e",
+      "duration": 0.96,
+      "transcript": "पानी।",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "es",
+      "word": "pan",
+      "sha256": "e41b3c965dbf17e112e2309f66cc73e00007434aeacf33781073c88811b37d70",
+      "duration": 0.64,
+      "transcript": "Pan.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "es",
+      "word": "agua",
+      "sha256": "4ea4b8514c63273761f484059888a2da99230532b3b9a9cd6ae07c3910645106",
+      "duration": 1.2,
+      "transcript": "Agua.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "fr",
+      "word": "pain",
+      "sha256": "709e700690977f53117b86f5846d388d781c12e29c99d50e64697d8914c6f92e",
+      "duration": 1.12,
+      "transcript": "Temps.",
+      "exactMatch": false
+    },
+    {
+      "pack": "water",
+      "language": "fr",
+      "word": "eau",
+      "sha256": "9373064a76f01b19a5f50ca7283cae740149b3f898d7a3cac1bd40b5eaea9d34",
+      "duration": 0.56,
+      "transcript": "Eau.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "bn",
+      "word": "রুটি",
+      "sha256": "df32e208d38c34f500f4e5a92156dcf25c8a1de93ed7250a989a12cb8463b373",
+      "duration": 1.36,
+      "transcript": "রুটি।",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "bn",
+      "word": "পানি",
+      "sha256": "714ddcd7a37532cdcbf78521f653d02ae349a39cb9f76a03bcf7dc252da1a794",
+      "duration": 0.96,
+      "transcript": "পানি।",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ar",
+      "word": "خبز",
+      "sha256": "84574a6af35cfdbcd7b3debe25206253baf011c507b6a0be7d765eb621adcc15",
+      "duration": 1.12,
+      "transcript": "خوبس.",
+      "exactMatch": false
+    },
+    {
+      "pack": "water",
+      "language": "ar",
+      "word": "ماء",
+      "sha256": "661ad373d193b14a89ae2a6c0cba0dfb58d6d9e52cca3aa102afdc086ec0315f",
+      "duration": 1.2,
+      "transcript": "ماء.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "pt",
+      "word": "pão",
+      "sha256": "476b366a3ecf5dd44bc806194bc5417830c2e2d64dd2c7d8441593e533e08193",
+      "duration": 0.56,
+      "transcript": "Pão.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "pt",
+      "word": "água",
+      "sha256": "61d5d37b5b3feea3342f9327f4ccebd7a4ecd8754f5108c9789987b55cd39b4e",
+      "duration": 0.64,
+      "transcript": "Água.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ru",
+      "word": "хлеб",
+      "sha256": "8440a7ca26fd40ea704e4d639323d3b1d8096b558696c295264c3f345de67227",
+      "duration": 0.88,
+      "transcript": "Хлеб.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ru",
+      "word": "вода",
+      "sha256": "3fe10a724836509c0a0632705ff68851371aa77430c56a678807275e0bbec8a0",
+      "duration": 0.64,
+      "transcript": "Вода.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ur",
+      "word": "روٹی",
+      "sha256": "eaaeab2336bf243bb464bab7393e66b43ecb984b85afd1cefe337e267ce6a376",
+      "duration": 2.8,
+      "transcript": "روٹی۔",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ur",
+      "word": "پانی",
+      "sha256": "6a2d0d03812bf3590dec9411ae3c80309594e37880dc49102a43053b5bb0d773",
+      "duration": 2.88,
+      "transcript": "پانی۔",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "id",
+      "word": "roti",
+      "sha256": "e84686e14dd84a2c84b892caef5d00f79f425b3e1f476e4fefdcad482b4e8961",
+      "duration": 0.64,
+      "transcript": "Roti.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "id",
+      "word": "air",
+      "sha256": "12aaf8810c45064a45129c832468963b390b17c8d18d0b79e1636a67d531c244",
+      "duration": 0.64,
+      "transcript": "Air.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "de",
+      "word": "Brot",
+      "sha256": "66c613ede3b409f30fd87a059bf8554312507c5e2b1db134224ef2332fcddcbf",
+      "duration": 1.12,
+      "transcript": "Brot.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "de",
+      "word": "Wasser",
+      "sha256": "4e3f085c5740b07dca25a11709d0119db708f81cd29fa7d49991906861bee680",
+      "duration": 1.2,
+      "transcript": "Wasser.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ja",
+      "word": "パン",
+      "sha256": "9ab16b2450c4d101759b5b550b8c81942909e3441b75de8865db05434dad065d",
+      "duration": 1.04,
+      "transcript": "パン。",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ja",
+      "word": "水",
+      "sha256": "ce6cddef98de8bd63791a21be8af3274610d5033f348ea5ae48dda30a5faef79",
+      "duration": 1.92,
+      "transcript": "根津。",
+      "exactMatch": false
+    },
+    {
+      "pack": "bread",
+      "language": "mr",
+      "word": "पाव",
+      "sha256": "3f217ba9d1209b42c0e0ecef8812c897969928ecfa965bedd7b20d179e9197a0",
+      "duration": 1.12,
+      "transcript": "पाव.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "mr",
+      "word": "पाणी",
+      "sha256": "703e494a450e3a4e69cc1f4d8f794130221269de9cef490290ae090cd6c2a3b2",
+      "duration": 0.96,
+      "transcript": "पाणी.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "te",
+      "word": "రొట్టె",
+      "sha256": "b8954ea149ed570954f73366c04a4eaadb42b1fc256b65f865d1dce51919861c",
+      "duration": 3.76,
+      "transcript": "రొట్టె.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "te",
+      "word": "నీరు",
+      "sha256": "6e59b90bb033a4e5a7bad1617b7d5590fdbfa189a5893a57a7da27eddef42e9d",
+      "duration": 3.6,
+      "transcript": "నీరు.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "tr",
+      "word": "ekmek",
+      "sha256": "9b19dc727907bba3b78ffa4333998f2a33a944dcd0bb62a1fe3b4bc9513ce314",
+      "duration": 1.2,
+      "transcript": "Ekmek.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "tr",
+      "word": "su",
+      "sha256": "8ac173c2d93980686ecff191f3d7eb5397ff08ecace45af36b80271ad88c97b5",
+      "duration": 0.64,
+      "transcript": "Su.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ta",
+      "word": "தண்ணீர்",
+      "sha256": "4806149de17f6946cafa7a30ff502b9127f8421d2b4f68f5b7a65663075eae53",
+      "duration": 0.96,
+      "transcript": "தண்ணீர்.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ko",
+      "word": "빵",
+      "sha256": "f1042f68d299f4dbe6595ee22fb8d014eb8bb0be3b4602018ff9eedc1c49f87c",
+      "duration": 1.04,
+      "transcript": "빵.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ta",
+      "word": "ரொட்டி",
+      "sha256": "a11144103ef19e6ca38c6106170bc2f6b33a60491b99e66977082c9b56697b5d",
+      "duration": 0.96,
+      "transcript": "ரொட்டி.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ko",
+      "word": "물",
+      "sha256": "3f532c670ab3895aceafadaa37ac1e25f14b93b37a1c53d8a4c93abe6ce0e088",
+      "duration": 0.64,
+      "transcript": "물.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "vi",
+      "word": "nước",
+      "sha256": "8caf1e6e84758528c9beae2501f56a9effd0eea1202c26dda0bac06b531782f7",
+      "duration": 0.56,
+      "transcript": "Được.",
+      "exactMatch": false
+    },
+    {
+      "pack": "bread",
+      "language": "vi",
+      "word": "bánh mì",
+      "sha256": "055339cd65af6ed9c8374c50cffe9becf0c4fc6579cf7ce2d00df7da8c56d064",
+      "duration": 0.64,
+      "transcript": "Bánh mì.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "it",
+      "word": "pane",
+      "sha256": "4fdce50e258f085da9f880a25c22851edee41cb0dd85527bec1670215b2eda1a",
+      "duration": 1.2,
+      "transcript": "Pane.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "it",
+      "word": "acqua",
+      "sha256": "c9fc9ffafe42eac94d69a3168cfdf34082649a64055a191967505af0d5efebe3",
+      "duration": 1.2,
+      "transcript": "Acqua.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "pl",
+      "word": "chleb",
+      "sha256": "3b4d93df74cb1bb9be02763e40b5903261734fd92cfc349cdb41fd5425db181d",
+      "duration": 1.36,
+      "transcript": "Chleb.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "pl",
+      "word": "woda",
+      "sha256": "4f8e11d0ab51a276f496e9f4560fa63dc34c48d611e784986e42bb50f7e110cf",
+      "duration": 1.36,
+      "transcript": "Woda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "uk",
+      "word": "хліб",
+      "sha256": "73d4867a7d8ea4d358c54afd276ba4da7b3838a58dc77414f0ca7ce36775f418",
+      "duration": 0.64,
+      "transcript": "Хліб.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "gu",
+      "word": "રોટલી",
+      "sha256": "9015944d3308a9b4e8494e7fd8eea1180cf3c537ac5652d8c2b92a9b6a0eb862",
+      "duration": 3.52,
+      "transcript": "રોટલી.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "gu",
+      "word": "પાણી",
+      "sha256": "345202b3ea59d7c3d297d0be66f74632f216ee38c53e743f6bd2fa79f94ca0e2",
+      "duration": 3.6,
+      "transcript": "પાણી.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "uk",
+      "word": "вода",
+      "sha256": "6c4b799fa8131dd0b3964a4b17e544a4a0bb21320fd574b53492c883a58af446",
+      "duration": 1.04,
+      "transcript": "Вода.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ml",
+      "word": "റൊട്ടി",
+      "sha256": "37f74640d74d91f9e496f462ac2dd3d5a800f5b79cb217f3fe87d69f7f5d9b64",
+      "duration": 1.12,
+      "transcript": "റൊട്ടി.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ml",
+      "word": "വെള്ളം",
+      "sha256": "34f14423f2ec06e2b74200239e3f6ee70e2a112801227e513561a7e75c4e16f3",
+      "duration": 1.28,
+      "transcript": "വെള്ളം.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "kn",
+      "word": "ರೊಟ್ಟಿ",
+      "sha256": "6dcaa47f9d1ea36fc203d2d15b0418c48d57b210e2f6f5443d03f3ad48623187",
+      "duration": 0.56,
+      "transcript": "ರೊಟ್ಟಿ.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "kn",
+      "word": "ನೀರು",
+      "sha256": "9cafda223860b0d433837caedd74e107ce2b03d867a6fa14e7771a8df72963ee",
+      "duration": 0.48,
+      "transcript": "ನೀರು.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ro",
+      "word": "pâine",
+      "sha256": "363789d57a9647b5d5f06f7e327583ab99d55c5f6eae6cee506ea6c45c5215e7",
+      "duration": 0.88,
+      "transcript": "Pâine.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ro",
+      "word": "apă",
+      "sha256": "c82ed1454e19f0433a34432f5cf25a1dcebda65931d54336e11c876dd5934835",
+      "duration": 0.72,
+      "transcript": "Apă.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "hu",
+      "word": "kenyér",
+      "sha256": "64c8e8cefb0082978b7db0d1cce37134b85d5fe61d7519406122527a930ad76b",
+      "duration": 1.6,
+      "transcript": "Kenyér.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "hu",
+      "word": "víz",
+      "sha256": "6da7b69d5c487089a70943f10ea45537098d8bf96e9c22f44a4dcd26217e306d",
+      "duration": 1.6,
+      "transcript": "Víz.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "nl",
+      "word": "brood",
+      "sha256": "3956ae3d4b4f3b4aedfc45948fc5aed9f20f825b1498685263d89bd1f72dc4d5",
+      "duration": 1.44,
+      "transcript": "Brood.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "nl",
+      "word": "water",
+      "sha256": "9bd9cb43906973be4d48621c8a787ab850164aeea196b8c2b1fe0280e2e621e6",
+      "duration": 0.88,
+      "transcript": "Water.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "el",
+      "word": "νερό",
+      "sha256": "a134b1d9e706a492b0a59af57b68c1bbe3a7848acb7b60972fc3a1e1dc0d99fb",
+      "duration": 0.96,
+      "transcript": "Νερό.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "el",
+      "word": "ψωμί",
+      "sha256": "157a5e6666038f527f65c652e3c30e2766726de825ba04a0e17ab21d82218456",
+      "duration": 1.36,
+      "transcript": "Ψωμί.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "cs",
+      "word": "chléb",
+      "sha256": "7c3f874ce9ce67e5b13639ec695743fbea9ba7b6b28c88772cfe2cea656fe886",
+      "duration": 1.12,
+      "transcript": "Chléb.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "cs",
+      "word": "voda",
+      "sha256": "ce3de22ee9320edf2c2aeaa340169632ddcf4388aee1a161b777eebba38ac0d4",
+      "duration": 0.96,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sv",
+      "word": "bröd",
+      "sha256": "111b58539431614e9cad2e402006ca7747ba9ef95ff61138ee56f5db2a80786a",
+      "duration": 1.76,
+      "transcript": "Bröd.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "sv",
+      "word": "vatten",
+      "sha256": "f4c68ec675267fe45680b01b0e1dc419fa204c64bb1f7eba07b4fac2530be720",
+      "duration": 0.96,
+      "transcript": "Vatten.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "no",
+      "word": "brød",
+      "sha256": "dede7322bf167a9e3658313dbe42d34730ce90c6ca6b40928a127ceaad076f0a",
+      "duration": 0.64,
+      "transcript": "Brød.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "fi",
+      "word": "leipä",
+      "sha256": "4134fa6924f83ce889fa72c71c0a02cd48a5626c97d8400e3e61e3a901df6d20",
+      "duration": 1.92,
+      "transcript": "Leipä.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "fi",
+      "word": "vesi",
+      "sha256": "85660097b08016cd5ee667ccac0d49c16bdaba91d528584118e99952e2822941",
+      "duration": 1.28,
+      "transcript": "Vesi.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "da",
+      "word": "brød",
+      "sha256": "794e2c091e48074840b345812a5f435ef101850361df3029b32d47539a09e23b",
+      "duration": 0.88,
+      "transcript": "Brød.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "da",
+      "word": "vand",
+      "sha256": "00339215160e1341f271eb055efae860d113e6f7cbac62b2e24e0a8c85481b33",
+      "duration": 0.56,
+      "transcript": "Vand.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "no",
+      "word": "vann",
+      "sha256": "1c149b6b8f27cd84421af2ffc45e0a21a378b477872dd931c677369a67e6f863",
+      "duration": 1.36,
+      "transcript": "Vann.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "sk",
+      "word": "voda",
+      "sha256": "c7f0741e16e1df1c3fa5af9ddad543cc0bcc10595e2b118e580cd0999fa58ab9",
+      "duration": 0.96,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sk",
+      "word": "chlieb",
+      "sha256": "5ebce6ab7bcc6f4e96a04b82252633edc11afa5684a5684be740c0b324ccf497",
+      "duration": 1.12,
+      "transcript": "Chlieb.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "bg",
+      "word": "хляб",
+      "sha256": "def3c6ecb4d6263e47152b222f584c372223fb1a3bb4095be71882f5d7269e4a",
+      "duration": 1.12,
+      "transcript": "Хляб.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "hr",
+      "word": "kruh",
+      "sha256": "43cd211b0d4afca4364a27d97934696c5379d20c96fe8166a7148ed254236d6a",
+      "duration": 0.96,
+      "transcript": "Kruh.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "bg",
+      "word": "вода",
+      "sha256": "9b9b94f9068742535edc3ad59b4d06bda3d30bbb7b50e10ecdeaff41f826acf1",
+      "duration": 1.28,
+      "transcript": "Вода.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "hr",
+      "word": "voda",
+      "sha256": "912018e98cdfbe2fe8d3cbbb9dc6c650fd929cdda47baf4f36de09ec368fd6c7",
+      "duration": 0.96,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sr",
+      "word": "хлеб",
+      "sha256": "a92f2d42c2341d457bc4b29500eedb67266987134358491db84eb18d1ee190f9",
+      "duration": 1.12,
+      "transcript": "Хлеб.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ms",
+      "word": "roti",
+      "sha256": "cf810079d63d15bb2c12821826a6e27669c1f7eb980ff982f55a349eef78c30a",
+      "duration": 0.88,
+      "transcript": "Roti.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "sr",
+      "word": "вода",
+      "sha256": "531b884cce8a6616db940982ffa8ccf215bdd7b7b208b90996a44db7d5fa6cde",
+      "duration": 1.2,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ca",
+      "word": "pa",
+      "sha256": "f72e6b2d8aaeb9a8c62c473c94f2075dd2ca5badb44356285a01397c9ebecae4",
+      "duration": 0.4,
+      "transcript": "Va.",
+      "exactMatch": false
+    },
+    {
+      "pack": "water",
+      "language": "ms",
+      "word": "air",
+      "sha256": "9715210f540f9d5290d2a2ac438345fdb97024f7c2c70bd61f6b83cba107caa9",
+      "duration": 0.72,
+      "transcript": "Air.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "fil",
+      "word": "tinapay",
+      "sha256": "28bc1e2ea51a868a0259a08b71ed2a73bbef493e30ac9b50918510040d325446",
+      "duration": 1.36,
+      "transcript": "Tinapay.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ca",
+      "word": "aigua",
+      "sha256": "81cccdaa41e60162379dd70395a5087df23585a5df36362abfa575f36b823179",
+      "duration": 2.72,
+      "transcript": "Aigua.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "fil",
+      "word": "tubig",
+      "sha256": "ae933e6e6b8948191db7942e63e74c958057f74a243154e7da31438be84a47f3",
+      "duration": 1.6,
+      "transcript": "2B.",
+      "exactMatch": false
+    },
+    {
+      "pack": "bread",
+      "language": "fr",
+      "word": "pain",
+      "sha256": "46916214aebf51b0bff3a817882b068b50ea25cff3b617234e5cf6f66c5b1d32",
+      "duration": 0.64,
+      "transcript": "Pain.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "he",
+      "word": "מים",
+      "sha256": "5c675c260394806b8bc0e4937fcb1c5f95fc6bb2330b0a05966b39cf776a13c5",
+      "duration": 0.72,
+      "transcript": "מים.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "he",
+      "word": "לחם",
+      "sha256": "f706e06e2464255eca483f4679ab243dacfd11ccaef80b490a6ddff51a0045f0",
+      "duration": 0.8,
+      "transcript": "לחם.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "fa",
+      "word": "آب",
+      "sha256": "f0f252f138f4ba411af0261768d991e17cf26eb7d2f004f0ea4f9466f6b887db",
+      "duration": 0.64,
+      "transcript": "آب.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "fa",
+      "word": "نان",
+      "sha256": "181ae70974165954fa57d90233390b4e0125af8d26082c7b9c8a8bec9206d343",
+      "duration": 0.8,
+      "transcript": "نان.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "th",
+      "word": "ขนมปัง",
+      "sha256": "ccff75b9ba6184ae88227c4be28f1473ef444b145854422f7889d452333dec56",
+      "duration": 1.12,
+      "transcript": "ขนมปัง.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "th",
+      "word": "น้ำ",
+      "sha256": "d317003684b6b8eb195db17a3643a7980a2725db736b882f3d3d1c9cacd5ff64",
+      "duration": 0.88,
+      "transcript": "น้ํา",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ar",
+      "word": "خبز",
+      "sha256": "5ce8096375407763375699cc261c2e4fa3c5f84750c09b02b7f3f5bc9cc2fff1",
+      "duration": 0.8,
+      "transcript": "خبز.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "ja",
+      "word": "水",
+      "sha256": "382fc1317b20ce9c8f35a4a0ec23404964a9b900d56d05dd8d8d49797a914274",
+      "duration": 0.72,
+      "transcript": "水。",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "vi",
+      "word": "nước",
+      "sha256": "cd36e0b601fb0e1b389eea1624359f3f1f9906cb1432dd31203227ca83e2bcac",
+      "duration": 0.8,
+      "transcript": "Nước.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "ca",
+      "word": "pa",
+      "sha256": "e2d1b3cd7e33e88e2f2b68f240ebb33f8d418a1d7eabb921f40623b2a3fa82a0",
+      "duration": 0.72,
+      "transcript": "Pa.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "fil",
+      "word": "tubig",
+      "sha256": "53b6577152ba1bab35c40b920ee3d01e12401ef7325c8688a7f5cabe6a1f47e2",
+      "duration": 0.88,
+      "transcript": "Tubig.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sw",
+      "word": "mkate",
+      "sha256": "729adb52a5a1c38fbb49db7194f0b9f3fd2937d579c6c2fe23a6103b8b5dd277",
+      "duration": 1.872,
+      "transcript": "Mkate.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "af",
+      "word": "brood",
+      "sha256": "678c018deab89994229f122744edfb4f2aea7f2229aeeeb43fbf3c3429be73cf",
+      "duration": 1.872,
+      "transcript": "Brood.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "sw",
+      "word": "maji",
+      "sha256": "e874287cdb426d6b6740c797e80ecdb2280c30712fdb819eeb7facfdad85b1f2",
+      "duration": 1.872,
+      "transcript": "Maji.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "et",
+      "word": "vesi",
+      "sha256": "7ccf7479483adad2e524aebd5baf24d43a864fe04d6c7ddd41d060e81e4376ba",
+      "duration": 1.872,
+      "transcript": "Vesi.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "et",
+      "word": "leib",
+      "sha256": "d60a3d5b39b491dab400a35afc20293ae3295d2bbbf9653cb805e3d8e83ce19d",
+      "duration": 1.872,
+      "transcript": "Leib.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "af",
+      "word": "water",
+      "sha256": "0cd4fdce14890569a691124a35fe6bab19fd1829ceda0aef3cca5171e80d244c",
+      "duration": 1.872,
+      "transcript": "Water.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "lv",
+      "word": "ūdens",
+      "sha256": "0be24c112bf19767183fa07a201f3aabea16c140505b0535fead50c9da965e44",
+      "duration": 1.872,
+      "transcript": "Ūdens.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "lv",
+      "word": "maize",
+      "sha256": "a562272b75d55a5166e672fbdea7c58b2824aa53440a7004c9d3e2f069fdc147",
+      "duration": 1.872,
+      "transcript": "Maize.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "lt",
+      "word": "duona",
+      "sha256": "3a43d7a69a2bb6dc623ca6edbc85e88020b769426083eeb5e34f4ebe97d815b8",
+      "duration": 2.064,
+      "transcript": "Duona.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sl",
+      "word": "kruh",
+      "sha256": "f78859a2a45992b6dc9499fc6b0d50fb5c256e3adda1b4eead84c1dfcfcb7d68",
+      "duration": 1.872,
+      "transcript": "Kreh?",
+      "exactMatch": false
+    },
+    {
+      "pack": "water",
+      "language": "lt",
+      "word": "vanduo",
+      "sha256": "64d82104dcf3ed0b59b21e8bc907b066c4e9744d765ffb867f5b23251d9e2e1a",
+      "duration": 1.992,
+      "transcript": "Vanduo.",
+      "exactMatch": true
+    },
+    {
+      "pack": "water",
+      "language": "sl",
+      "word": "voda",
+      "sha256": "4a66800cdce7439ed712df1e6af30bb1a63aa5efe2f0b3bf116ed13fdaba889d",
+      "duration": 1.872,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "pack": "bread",
+      "language": "sl",
+      "word": "kruh",
+      "sha256": "52db170e2d1321834b86a3cd9f013076f5c7ec2f0cc74264e178250f86225fb1",
+      "duration": 1.872,
+      "transcript": "Kri.",
+      "exactMatch": false
+    },
+    {
+      "provider": "elevenlabs",
+      "pack": "bread",
+      "language": "sl",
+      "word": "kruh",
+      "sha256": "52db170e2d1321834b86a3cd9f013076f5c7ec2f0cc74264e178250f86225fb1",
+      "duration": 1.872,
+      "transcript": "Kri.",
+      "exactMatch": false
+    },
+    {
+      "provider": "elevenlabs",
+      "pack": "water",
+      "language": "sl",
+      "word": "voda",
+      "sha256": "4a66800cdce7439ed712df1e6af30bb1a63aa5efe2f0b3bf116ed13fdaba889d",
+      "duration": 1.872,
+      "transcript": "Voda.",
+      "exactMatch": true
+    },
+    {
+      "provider": "soniox",
+      "pack": "bread",
+      "language": "sl",
+      "word": "kruh",
+      "sha256": "6abffd5d30b6d32853a895772c6d5c8a0dd404cdb92b5aebcf46aa9a5a7535ca",
+      "duration": 0.72,
+      "transcript": "Kruh.",
+      "exactMatch": true
+    }
+  ]
+}

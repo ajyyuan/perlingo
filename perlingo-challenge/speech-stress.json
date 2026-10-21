@@ -1,0 +1,407 @@
+{
+  "date": "2026-10-21T01:17:05.926Z",
+  "source": "macOS synthetic voices; one sample per language/category; NOT human accuracy",
+  "configuredProviders": [
+    "elevenlabs",
+    "soniox"
+  ],
+  "missingProviders": [],
+  "rows": [
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 363,
+          "text": "Water, bread.",
+          "accepted": true,
+          "afterClipMs": 157
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 284,
+          "text": "Water, bread.",
+          "accepted": true,
+          "afterClipMs": 53
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 359,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 157
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 245,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 66
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "voice": "Samantha",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 347,
+          "text": "Red.",
+          "accepted": false,
+          "afterClipMs": 186
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 300,
+          "text": "Red.",
+          "accepted": false,
+          "afterClipMs": 68
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 677,
+          "text": "Oui.",
+          "accepted": false,
+          "afterClipMs": 186
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 275,
+          "text": "Ou fin.",
+          "accepted": false,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 415,
+          "text": "Fin.",
+          "accepted": false,
+          "afterClipMs": 187
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 332,
+          "text": "Tiens.",
+          "accepted": false,
+          "afterClipMs": 88
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "voice": "Thomas",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 350,
+          "text": "Fin.",
+          "accepted": false,
+          "afterClipMs": 141
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 228,
+          "text": "Fin.",
+          "accepted": false,
+          "afterClipMs": 53
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 281,
+          "text": "Agua, pan.",
+          "accepted": true,
+          "afterClipMs": 120
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 232,
+          "text": "Agua, pan.",
+          "accepted": true,
+          "afterClipMs": 80
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 283,
+          "text": "Pan.",
+          "accepted": true,
+          "afterClipMs": 161
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 253,
+          "text": "Bien.",
+          "accepted": false,
+          "afterClipMs": 136
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "voice": "Mónica",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 303,
+          "text": "Ven.",
+          "accepted": false,
+          "afterClipMs": 154
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 258,
+          "text": "Ben.",
+          "accepted": false,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 373,
+          "text": "Wasser, Brot.",
+          "accepted": true,
+          "afterClipMs": 141
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 246,
+          "text": "Wasser, Brot.",
+          "accepted": true,
+          "afterClipMs": 56
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 373,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 116
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 285,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 86
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "voice": "Anna",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 357,
+          "text": "Roth.",
+          "accepted": false,
+          "afterClipMs": 143
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 41
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 292,
+          "text": "水，面包。",
+          "accepted": true,
+          "afterClipMs": 131
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "水、面包。",
+          "accepted": true,
+          "afterClipMs": 48
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 294,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 175
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 56
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "voice": "Tingting",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 338,
+          "text": "面条。",
+          "accepted": false,
+          "afterClipMs": 102
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 296,
+          "text": "面条。",
+          "accepted": false,
+          "afterClipMs": 75
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "self-correction",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 368,
+          "text": "水、パン。",
+          "accepted": true,
+          "afterClipMs": 164
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 270,
+          "text": "水、パン。",
+          "accepted": true,
+          "afterClipMs": 49
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 430,
+          "text": "バン。",
+          "accepted": false,
+          "afterClipMs": 97
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "番。",
+          "accepted": false,
+          "afterClipMs": 49
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "voice": "Kyoko",
+      "kind": "near-miss",
+      "shouldAccept": false,
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 361,
+          "text": "パンダ。",
+          "accepted": false,
+          "afterClipMs": 139
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 220,
+          "text": "ワンダ。",
+          "accepted": false,
+          "afterClipMs": 54
+        }
+      ]
+    }
+  ]
+}

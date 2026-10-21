@@ -1,0 +1,17 @@
+import {languages,getEntry} from './content.js';
+import {createTree,visualChildren} from './tree-model.js';
+import {RecordingPlayer} from './recordings.js';
+const player=new RecordingPlayer(),main=document.querySelector('#forest'),pack=document.querySelector('#pack'),status=document.querySelector('#audio-status');let tree,token=0;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function cards(ids){return ids.map(id=>{const l=languages.find(l=>l.id===id),e=getEntry(pack.value,id);return `<button class="word-card" data-id="${id}" aria-label="Play ${esc(e.word)} in ${esc(l.name)}"><span class="language">${esc(l.name)}<span aria-hidden="true">▸</span></span><b lang="${id}" dir="auto">${esc(e.word)}</b><small>${e.reading!==e.word?esc(e.reading):'&nbsp;'}</small></button>`;}).join('');}
+function render(){player.stop();token++;status.textContent='';const roots=tree.roots.filter(id=>tree.nodes.get(id).playable.length).sort((a,b)=>(b==='indo1319')-(a==='indo1319')||tree.nodes.get(b).playable.length-tree.nodes.get(a).playable.length);
+ main.innerHTML=roots.map(id=>{const n=tree.nodes.get(id),large=n.playable.length>8,children=large?visualChildren(tree,id).sort((a,b)=>tree.nodes.get(b.id).playable.length-tree.nodes.get(a.id).playable.length):[];
+ const priority=['roma1334','germ1287','slav1255','indo1321','east2280','iran1269'];if(large)children.sort((a,b)=>(priority.indexOf(a.id)<0?99:priority.indexOf(a.id))-(priority.indexOf(b.id)<0?99:priority.indexOf(b.id)));
+ return `<section class="family ${large?'large':''}" style="--span:${large?14:Math.max(2,n.playable.length)}"><h2>${esc(n.name)} <small>${n.playable.length}</small></h2>${large?`<div class="branches">${children.map(({id})=>{const branch=tree.nodes.get(id),count=branch.playable.length;return `<section class="branch ${count<3?'small-branch':''}"><h3>${esc(branch.own.length?languages.find(l=>l.id===branch.own[0]).name:branch.name)} <small>${count}</small></h3><div class="cards" style="--cols:${count>8?3:Math.min(count,2)}">${cards(branch.playable)}</div></section>`;}).join('')}</div>`:`<div class="cards" style="--cols:${n.playable.length>=3?2:n.playable.length}">${cards(n.playable)}</div>`}</section>`;}).join('');
+ fitWords();
+}
+function fitWords(){for(const word of main.querySelectorAll('.word-card b')){word.style.fontSize='20px';const available=word.clientWidth,needed=word.scrollWidth;if(needed>available)word.style.fontSize=Math.max(14,20*available/needed)+'px';}}
+addEventListener('resize',fitWords);
+main.addEventListener('click',async e=>{const button=e.target.closest('[data-id]');if(!button)return;const id=button.dataset.id,current=++token;for(const b of main.querySelectorAll('.playing'))b.classList.remove('playing');button.classList.add('playing');status.textContent='';try{await player.play(pack.value,getEntry(pack.value,id),languages.find(l=>l.id===id));}catch(error){if(current===token)status.textContent=error.message;}finally{if(current===token)button.classList.remove('playing');}});
+pack.addEventListener('change',()=>{if(tree)render();});addEventListener('pagehide',()=>player.stop());document.addEventListener('visibilitychange',()=>{if(document.hidden)player.stop();});
+try{const r=await fetch('/language-tree.json');if(!r.ok)throw Error();const data=await r.json();tree=createTree(data,languages);document.querySelector('#citation').textContent=data.meta.citation;render();}catch{main.textContent='Could not load the forest. Reload to try again.';}

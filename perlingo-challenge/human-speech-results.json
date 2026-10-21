@@ -1,0 +1,680 @@
+{
+  "date": "2026-10-21T01:35:09.741Z",
+  "source": "Human Commons/Lingua Libre recordings; provenance tiers in human-audio-sources.json",
+  "models": {
+    "elevenlabs": "scribe_v2_realtime",
+    "soniox": "stt-rt-v5"
+  },
+  "method": "Identical PCM; 16 kHz mono; 3 seconds; real-time streaming; one finalization at end; known language, no answer hint. Spliced corrections are constructed, not natural human self-corrections.",
+  "plannedCases": 26,
+  "completedCases": 26,
+  "rows": [
+    {
+      "language": "en",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "3e29d3c9daef"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "8d89a6eae9dec992b86d3f2ec23abb58ef7bff008ec7580ba5694765c30d8ddc",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 407,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 148
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 390,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 76
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "3e29d3c9daef"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "8027c00edde07e32e21738ec491cbf9ba2734026368623594be08f64c7acb005",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 363,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 150
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 227,
+          "text": "Bread.",
+          "accepted": true,
+          "afterClipMs": 72
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "sources": [
+        "b310d26a4fb5"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "cf7fb4b3e3c6328bff4a7f4a3d27bcdee2f5e5206f0a36da6ed962080976a86d",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 322,
+          "text": "Red.",
+          "accepted": false,
+          "afterClipMs": 161
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 174,
+          "text": "Red.",
+          "accepted": false,
+          "afterClipMs": 43
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "sources": [
+        "6c534d51e544"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "395e6c3792af5b97fcbdb1a0c31c143dd2af9b3efac020bdc064b10f12cae9bf",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 348,
+          "text": "Water.",
+          "accepted": false,
+          "afterClipMs": 95
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 177,
+          "text": "Water.",
+          "accepted": false,
+          "afterClipMs": 48
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "3c424153da85"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "e6c963d49672bf87dacbdbd81d5180df0961eab87dc89b6af47dc115dcd1e954",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 320,
+          "text": "Pain.",
+          "accepted": true,
+          "afterClipMs": 123
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 263,
+          "text": "Pain.",
+          "accepted": true,
+          "afterClipMs": 69
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "3c424153da85"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "e89191595f7195aa2b4839edaf09b64b1398adf0cdaa3b52623d2ccd38085742",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 315,
+          "text": "Pan.",
+          "accepted": false,
+          "afterClipMs": 131
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 168,
+          "text": "Pain.",
+          "accepted": true,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "sources": [
+        "158141b9bc04"
+      ],
+      "nativeProvenance": false,
+      "audioSha256": "5a31af2528378916115a797018179d35c034c534014938914c7f5772f11403cd",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 299,
+          "text": "De l'eau.",
+          "accepted": false,
+          "afterClipMs": 84
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 187,
+          "text": "De l'eau.",
+          "accepted": false,
+          "afterClipMs": 54
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "sources": [
+        "157c551831e4"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "ca9190fdb80fa23c7e97d4ccedccbad1ae8add7e27c17c533ade44041b13f712",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 316,
+          "text": "Agua.",
+          "accepted": false,
+          "afterClipMs": 151
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 168,
+          "text": "Agua.",
+          "accepted": false,
+          "afterClipMs": 65
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "93503cbd6caa"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "a5d7bf3e685111f30cc14fa14dad97933ddcbac129e98bca3f0b05ba523d17b5",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 307,
+          "text": "Pan.",
+          "accepted": true,
+          "afterClipMs": 149
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 243,
+          "text": "Pan.",
+          "accepted": true,
+          "afterClipMs": 76
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "93503cbd6caa"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "3904c8bff8f57f449c9acc8015b570e8de3e11724b05682b584d0c1c1c983983",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 366,
+          "text": "Pan.",
+          "accepted": true,
+          "afterClipMs": 169
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 183,
+          "text": "Pan.",
+          "accepted": true,
+          "afterClipMs": 54
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "47e9734b3d33"
+      ],
+      "nativeProvenance": false,
+      "audioSha256": "c36e0887b135674df5d65d1bcbc00430e4cbfddbfb5f7c3058c99a95b2ef573d",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 281,
+          "text": "パン。",
+          "accepted": true,
+          "afterClipMs": 141
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 156,
+          "text": "パン。",
+          "accepted": true,
+          "afterClipMs": 53
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "47e9734b3d33"
+      ],
+      "nativeProvenance": false,
+      "audioSha256": "605673d6381652d8806444bfca4f1924398557099461f3e3b0ad0abb56768164",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 301,
+          "text": "パン。",
+          "accepted": true,
+          "afterClipMs": 161
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 170,
+          "text": "パン。",
+          "accepted": true,
+          "afterClipMs": 52
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "57ceeb73f1e7"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "b3a75b028c11956cd91f8686eed73248431f0dd726f16bb155d5d256305abdb7",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 301,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 187
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 281,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 83
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "57ceeb73f1e7"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "7b1feda1ff394099a721b53e1d5b2256a36c30d2cfac96b615cb665ee00defc7",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 293,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 123
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 159,
+          "text": "面包。",
+          "accepted": true,
+          "afterClipMs": 51
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "kind": "correct",
+      "shouldAccept": true,
+      "sources": [
+        "901430631c0b"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "0a9402b1c506cc6eca4ca66257920adf24f9581789198675d6b60fa474025d05",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 343,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 143
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 261,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 77
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "kind": "late-correct",
+      "shouldAccept": true,
+      "sources": [
+        "901430631c0b"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "b4e4eb1fe070170cddcfec9bbd60e02a5be4b0339f2d59ced74d321877298321",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 300,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 153
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 189,
+          "text": "Brot.",
+          "accepted": true,
+          "afterClipMs": 46
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "kind": "wrong",
+      "shouldAccept": false,
+      "sources": [
+        "c76e0453ce14"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "b89671cf2a8745f3465181e10edf2964bdc8ca939b32216ff8f023f7d80af84a",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 289,
+          "text": "Rot.",
+          "accepted": false,
+          "afterClipMs": 130
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 228,
+          "text": "Rot.",
+          "accepted": false,
+          "afterClipMs": 66
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 290,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 142
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 170,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 40
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "kind": "spliced-correction",
+      "shouldAccept": true,
+      "sources": [
+        "b310d26a4fb5",
+        "3e29d3c9daef"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "bb434619f883b4a634f7b27157fca8728c3502743823ba606c6b1c5777bacff5",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 304,
+          "text": "Red bread.",
+          "accepted": true,
+          "afterClipMs": 132
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 165,
+          "text": "Red. Bread.",
+          "accepted": true,
+          "afterClipMs": 49
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 302,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 183
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 154,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 39
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "kind": "spliced-correction",
+      "shouldAccept": true,
+      "sources": [
+        "158141b9bc04",
+        "3c424153da85"
+      ],
+      "nativeProvenance": false,
+      "audioSha256": "075e521fbd8d8647de3a26871bd63509d08e6d63651d7b5023cdadcad7a712f0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 299,
+          "text": "De l'eau. Pain.",
+          "accepted": true,
+          "afterClipMs": 145
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 247,
+          "text": "De l'eau. Pain.",
+          "accepted": true,
+          "afterClipMs": 74
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 293,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 141
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 162,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 48
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "kind": "spliced-correction",
+      "shouldAccept": true,
+      "sources": [
+        "157c551831e4",
+        "93503cbd6caa"
+      ],
+      "nativeProvenance": true,
+      "audioSha256": "d5b2676896c055a45686feedf89ac4f113769a494dadac6739e888cc35c0d3ba",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 515,
+          "text": "Agua, pan.",
+          "accepted": true,
+          "afterClipMs": 133
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 191,
+          "text": "Agua. Pan.",
+          "accepted": true,
+          "afterClipMs": 49
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 301,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 132
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 255,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 73
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 317,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 146
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 211,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 50
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "kind": "silence",
+      "shouldAccept": false,
+      "sources": [],
+      "nativeProvenance": false,
+      "audioSha256": "55873fecc61a79e87ca550c7072e38ccdd7ecb600ace286fe4717952a97c42b0",
+      "results": [
+        {
+          "name": "elevenlabs",
+          "connectionMs": 302,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 209
+        },
+        {
+          "name": "soniox",
+          "connectionMs": 163,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 42
+        }
+      ]
+    }
+  ]
+}
