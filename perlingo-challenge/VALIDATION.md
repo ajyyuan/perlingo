@@ -209,3 +209,9 @@ Simplified forest layout now groups larger families by their projected child bra
 - Public anonymous recognition has per-isolate request throttles, not a durable global spending cap. Existing course accounts/audio are preserved. Deployment outcome is recorded after publication.
 
 Publication completed October 21, 2026: **Sites version 15**, deployment `appgdep_6ad92a1b85348191b7053198d9185ae9`, succeeded. Learning is live at https://perlingo.app/ and Challenge at https://perlingo.app/challenge/. GitHub source `e18b5b26` maps to Sites source `372693b8d606131183124dc7e74842a54bd3e33e`; runtime environment revision 1 contains the provider secrets. Live checks passed for both apps, cached French audio and ElevenLabs temporary-token issuance. The retired forest route returns 404. 171 repository tests passed. Live microphone recognition accuracy and phone behavior remain user acceptance checks.
+
+## Modes and word-bank staging — October 21, 2026 (local)
+
+Added tests for UTC boundaries, archive visibility, unscheduled dates, fixed-rule overrides without preference mutation, deterministic dated recall order, scheduled 50-language/audio coverage, and separation of the 491-noun candidate inventory / Sun source candidates from playable packs. Sun extraction retains the Wiktionary revision and exact sense-table scope; it is not an approved translation or audio pack. Existing two-pack content and 100 recordings are unchanged.
+
+Validation: 176 repository tests passed (46 Challenge tests). Browser checks confirmed Daily’s 50-language/2-minute study launch despite Unlimited’s Type/Latin/30-second preferences, restoration of those Unlimited preferences, and the first-day Archive empty state. Application syntax and diff whitespace checks passed. Narrow-phone layout and new live microphone accuracy were not verified in this revision.

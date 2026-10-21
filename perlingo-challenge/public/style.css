@@ -35,8 +35,27 @@ dialog.tree-picker{width:min(940px,calc(100% - 32px));max-width:940px;max-height
 .intro-footer a:hover{text-decoration:underline}
 .study-layout{gap:12px;flex-wrap:wrap}
 @media(max-width:520px){.intro-steps{gap:18px;grid-template-columns:1fr}.intro-reveal{text-align:left;margin-top:24px}.intro-footer{justify-content:flex-start;gap:12px 20px}}
-main:has(.intro-hero){padding-top:32px}
-.intro-hero{margin-bottom:24px}
-.intro-hero h1{font-size:clamp(36px,4.5vw,54px)}
-.intro-languages details{margin:0}
-main:has(.intro-hero) .setup-note{margin-bottom:8px}
+/* Intro: all round controls share one card. */
+main:has(.intro-hero){max-width:1040px;padding-top:28px}
+.intro-hero{margin-bottom:22px}
+.intro-hero h1{font-size:clamp(32px,4.5vw,48px);letter-spacing:-1.8px;margin-bottom:10px}
+.intro-hero .subtitle{margin-bottom:0}
+.intro-hero .word-stamp{width:88px;height:88px;font-size:46px;border-radius:24px}
+.challenge-setup{display:block;padding:22px 24px}
+.setup-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 24px}
+.setup-fields select,.setup-fields .language-picker-button{width:100%;min-height:34px;font-size:14px}
+.setup-fields select:disabled{opacity:.45;cursor:default}
+.setup-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.intro-steps{margin:24px 0 0;gap:20px}
+.intro-footer{margin-top:24px;padding-top:16px}
+@media(max-width:600px){
+ .setup-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
+ .challenge-setup{padding:18px}
+ .intro-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ .intro-steps li{display:block}
+ .intro-steps li>span{display:none}
+ .intro-steps p{font-size:11px;line-height:1.5}
+ .setup-bottom .notice{max-width:180px}
+}
+
+.mode-tabs{display:flex;gap:6px;margin:0 0 18px}.mode-tabs button{border:1px solid transparent;background:none;border-radius:8px;padding:10px 16px;font-weight:600;font-size:13px;color:var(--muted)}.mode-tabs button[aria-pressed=true]{background:#e8eedf;border-color:#d5dfc8;color:var(--green)}.fixed-setup{justify-content:space-between;align-items:center}.fixed-setup h2{margin:0 0 12px;font-size:25px}.fixed-setup p:last-child{margin-bottom:0}.fixed-setup p{font-size:13px}.archive-date{margin-bottom:16px;max-width:240px}

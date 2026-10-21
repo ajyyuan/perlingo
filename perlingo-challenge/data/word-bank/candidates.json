@@ -1,0 +1,4424 @@
+{
+  "policy": "Noun-first candidate inventory, not a translated or playable bank. Resolve exact senses and cross-language coverage before authoring. Noun-only is not a permanent constraint.",
+  "entries": [
+    {
+      "id": "sun",
+      "label": "Sun",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "source-candidates",
+      "priority": 1,
+      "sense": null
+    },
+    {
+      "id": "moon",
+      "label": "Moon",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": 2,
+      "sense": null
+    },
+    {
+      "id": "star",
+      "label": "Star",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": 3,
+      "sense": null
+    },
+    {
+      "id": "sky",
+      "label": "Sky",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cloud",
+      "label": "Cloud",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rain",
+      "label": "Rain",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "snow",
+      "label": "Snow",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ice",
+      "label": "Ice",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wind",
+      "label": "Wind",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "storm",
+      "label": "Storm",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "thunder",
+      "label": "Thunder",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lightning",
+      "label": "Lightning",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fog",
+      "label": "Fog",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rainbow",
+      "label": "Rainbow",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "river",
+      "label": "River",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lake",
+      "label": "Lake",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sea",
+      "label": "Sea",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ocean",
+      "label": "Ocean",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "island",
+      "label": "Island",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "beach",
+      "label": "Beach",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sand",
+      "label": "Sand",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stone",
+      "label": "Stone",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rock",
+      "label": "Rock",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mountain",
+      "label": "Mountain",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hill",
+      "label": "Hill",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "valley",
+      "label": "Valley",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "forest",
+      "label": "Forest",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tree",
+      "label": "Tree",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": 4,
+      "sense": null
+    },
+    {
+      "id": "leaf",
+      "label": "Leaf",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "branch",
+      "label": "Branch",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "root",
+      "label": "Root",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "flower",
+      "label": "Flower",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "grass",
+      "label": "Grass",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "seed",
+      "label": "Seed",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "soil",
+      "label": "Soil",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mud",
+      "label": "Mud",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "smoke",
+      "label": "Smoke",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ash",
+      "label": "Ash",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "dust",
+      "label": "Dust",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "waterfall",
+      "label": "Waterfall",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cave",
+      "label": "Cave",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cliff",
+      "label": "Cliff",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "desert",
+      "label": "Desert",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "volcano",
+      "label": "Volcano",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wave",
+      "label": "Wave",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shore",
+      "label": "Shore",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pond",
+      "label": "Pond",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stream",
+      "label": "Stream",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pebble",
+      "label": "Pebble",
+      "partOfSpeech": "noun",
+      "category": "nature",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "dog",
+      "label": "Dog",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": 7,
+      "sense": null
+    },
+    {
+      "id": "cat",
+      "label": "Cat",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": 6,
+      "sense": null
+    },
+    {
+      "id": "bird",
+      "label": "Bird",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fish",
+      "label": "Fish",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "horse",
+      "label": "Horse",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cow",
+      "label": "Cow",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pig",
+      "label": "Pig",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sheep",
+      "label": "Sheep",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "goat",
+      "label": "Goat",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chicken",
+      "label": "Chicken",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "duck",
+      "label": "Duck",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "goose",
+      "label": "Goose",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "turkey",
+      "label": "Turkey",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rabbit",
+      "label": "Rabbit",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mouse",
+      "label": "Mouse",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rat",
+      "label": "Rat",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lion",
+      "label": "Lion",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tiger",
+      "label": "Tiger",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bear",
+      "label": "Bear",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wolf",
+      "label": "Wolf",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fox",
+      "label": "Fox",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "deer",
+      "label": "Deer",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "elephant",
+      "label": "Elephant",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "giraffe",
+      "label": "Giraffe",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "zebra",
+      "label": "Zebra",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "monkey",
+      "label": "Monkey",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "gorilla",
+      "label": "Gorilla",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "camel",
+      "label": "Camel",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "donkey",
+      "label": "Donkey",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "buffalo",
+      "label": "Buffalo",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "kangaroo",
+      "label": "Kangaroo",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "koala",
+      "label": "Koala",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "panda",
+      "label": "Panda",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "squirrel",
+      "label": "Squirrel",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hedgehog",
+      "label": "Hedgehog",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bat",
+      "label": "Bat",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "whale",
+      "label": "Whale",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "dolphin",
+      "label": "Dolphin",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shark",
+      "label": "Shark",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "seal",
+      "label": "Seal",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "penguin",
+      "label": "Penguin",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eagle",
+      "label": "Eagle",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "owl",
+      "label": "Owl",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "parrot",
+      "label": "Parrot",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "crow",
+      "label": "Crow",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sparrow",
+      "label": "Sparrow",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "swan",
+      "label": "Swan",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "flamingo",
+      "label": "Flamingo",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ostrich",
+      "label": "Ostrich",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "peacock",
+      "label": "Peacock",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "snake",
+      "label": "Snake",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lizard",
+      "label": "Lizard",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "turtle",
+      "label": "Turtle",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "crocodile",
+      "label": "Crocodile",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "frog",
+      "label": "Frog",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "toad",
+      "label": "Toad",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "butterfly",
+      "label": "Butterfly",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bee",
+      "label": "Bee",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ant",
+      "label": "Ant",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fly",
+      "label": "Fly",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mosquito",
+      "label": "Mosquito",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "spider",
+      "label": "Spider",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "beetle",
+      "label": "Beetle",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "worm",
+      "label": "Worm",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "snail",
+      "label": "Snail",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "crab",
+      "label": "Crab",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lobster",
+      "label": "Lobster",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shrimp",
+      "label": "Shrimp",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "octopus",
+      "label": "Octopus",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "jellyfish",
+      "label": "Jellyfish",
+      "partOfSpeech": "noun",
+      "category": "animals",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "apple",
+      "label": "Apple",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": 5,
+      "sense": null
+    },
+    {
+      "id": "pear",
+      "label": "Pear",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "banana",
+      "label": "Banana",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lemon",
+      "label": "Lemon",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lime",
+      "label": "Lime",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "peach",
+      "label": "Peach",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "plum",
+      "label": "Plum",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cherry",
+      "label": "Cherry",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "grape",
+      "label": "Grape",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "strawberry",
+      "label": "Strawberry",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "raspberry",
+      "label": "Raspberry",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "blueberry",
+      "label": "Blueberry",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pineapple",
+      "label": "Pineapple",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mango",
+      "label": "Mango",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "papaya",
+      "label": "Papaya",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "coconut",
+      "label": "Coconut",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "melon",
+      "label": "Melon",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "watermelon",
+      "label": "Watermelon",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fig",
+      "label": "Fig",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pomegranate",
+      "label": "Pomegranate",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "apricot",
+      "label": "Apricot",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "avocado",
+      "label": "Avocado",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "olive",
+      "label": "Olive",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tomato",
+      "label": "Tomato",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "potato",
+      "label": "Potato",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "carrot",
+      "label": "Carrot",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "onion",
+      "label": "Onion",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "garlic",
+      "label": "Garlic",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cabbage",
+      "label": "Cabbage",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lettuce",
+      "label": "Lettuce",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "spinach",
+      "label": "Spinach",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cucumber",
+      "label": "Cucumber",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pumpkin",
+      "label": "Pumpkin",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eggplant",
+      "label": "Eggplant",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "broccoli",
+      "label": "Broccoli",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cauliflower",
+      "label": "Cauliflower",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pea",
+      "label": "Pea",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bean",
+      "label": "Bean",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lentil",
+      "label": "Lentil",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "corn",
+      "label": "Corn",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rice",
+      "label": "Rice",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wheat",
+      "label": "Wheat",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "oat",
+      "label": "Oat",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "barley",
+      "label": "Barley",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "flour",
+      "label": "Flour",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "salt",
+      "label": "Salt",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sugar",
+      "label": "Sugar",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "honey",
+      "label": "Honey",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "milk",
+      "label": "Milk",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": 10,
+      "sense": null
+    },
+    {
+      "id": "butter",
+      "label": "Butter",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cheese",
+      "label": "Cheese",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "yogurt",
+      "label": "Yogurt",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "egg",
+      "label": "Egg",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "meat",
+      "label": "Meat",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "soup",
+      "label": "Soup",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "salad",
+      "label": "Salad",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "noodle",
+      "label": "Noodle",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cake",
+      "label": "Cake",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "biscuit",
+      "label": "Biscuit",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chocolate",
+      "label": "Chocolate",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tea",
+      "label": "Tea",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "coffee",
+      "label": "Coffee",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "juice",
+      "label": "Juice",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "oil",
+      "label": "Oil",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "vinegar",
+      "label": "Vinegar",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pepper",
+      "label": "Pepper",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cinnamon",
+      "label": "Cinnamon",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ginger",
+      "label": "Ginger",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mushroom",
+      "label": "Mushroom",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "almond",
+      "label": "Almond",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "walnut",
+      "label": "Walnut",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "peanut",
+      "label": "Peanut",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bread",
+      "label": "Bread",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "existing-playable",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "water",
+      "label": "Water",
+      "partOfSpeech": "noun",
+      "category": "food",
+      "status": "existing-playable",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hair",
+      "label": "Hair",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "face",
+      "label": "Face",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eye",
+      "label": "Eye",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ear",
+      "label": "Ear",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "nose",
+      "label": "Nose",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mouth",
+      "label": "Mouth",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tooth",
+      "label": "Tooth",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tongue",
+      "label": "Tongue",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lip",
+      "label": "Lip",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chin",
+      "label": "Chin",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "neck",
+      "label": "Neck",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shoulder",
+      "label": "Shoulder",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "arm",
+      "label": "Arm",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "elbow",
+      "label": "Elbow",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hand",
+      "label": "Hand",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "finger",
+      "label": "Finger",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "thumb",
+      "label": "Thumb",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "nail",
+      "label": "Nail",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chest",
+      "label": "Chest",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "back",
+      "label": "Back",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stomach",
+      "label": "Stomach",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "leg",
+      "label": "Leg",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "knee",
+      "label": "Knee",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "foot",
+      "label": "Foot",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "toe",
+      "label": "Toe",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "skin",
+      "label": "Skin",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bone",
+      "label": "Bone",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "blood",
+      "label": "Blood",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "heart",
+      "label": "Heart",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "brain",
+      "label": "Brain",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lung",
+      "label": "Lung",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eyelash",
+      "label": "Eyelash",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wrist",
+      "label": "Wrist",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ankle",
+      "label": "Ankle",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "heel",
+      "label": "Heel",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cheek",
+      "label": "Cheek",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "beard",
+      "label": "Beard",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mustache",
+      "label": "Mustache",
+      "partOfSpeech": "noun",
+      "category": "body",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "house",
+      "label": "House",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": 8,
+      "sense": null
+    },
+    {
+      "id": "door",
+      "label": "Door",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "window",
+      "label": "Window",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "roof",
+      "label": "Roof",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "floor",
+      "label": "Floor",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ceiling",
+      "label": "Ceiling",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "room",
+      "label": "Room",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bedroom",
+      "label": "Bedroom",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bathroom",
+      "label": "Bathroom",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "garden",
+      "label": "Garden",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fence",
+      "label": "Fence",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "gate",
+      "label": "Gate",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stairs",
+      "label": "Stairs",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "table",
+      "label": "Table",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chair",
+      "label": "Chair",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bed",
+      "label": "Bed",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pillow",
+      "label": "Pillow",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "blanket",
+      "label": "Blanket",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mattress",
+      "label": "Mattress",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sofa",
+      "label": "Sofa",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shelf",
+      "label": "Shelf",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cupboard",
+      "label": "Cupboard",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "drawer",
+      "label": "Drawer",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mirror",
+      "label": "Mirror",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lamp",
+      "label": "Lamp",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "candle",
+      "label": "Candle",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "clock",
+      "label": "Clock",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "carpet",
+      "label": "Carpet",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "curtain",
+      "label": "Curtain",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "towel",
+      "label": "Towel",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "soap",
+      "label": "Soap",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "brush",
+      "label": "Brush",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "comb",
+      "label": "Comb",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "toothbrush",
+      "label": "Toothbrush",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bucket",
+      "label": "Bucket",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "broom",
+      "label": "Broom",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sponge",
+      "label": "Sponge",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "basket",
+      "label": "Basket",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bottle",
+      "label": "Bottle",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cup",
+      "label": "Cup",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "glass",
+      "label": "Glass",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "plate",
+      "label": "Plate",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bowl",
+      "label": "Bowl",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "spoon",
+      "label": "Spoon",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fork",
+      "label": "Fork",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "knife",
+      "label": "Knife",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pot",
+      "label": "Pot",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pan",
+      "label": "Pan",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "kettle",
+      "label": "Kettle",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "oven",
+      "label": "Oven",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stove",
+      "label": "Stove",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "refrigerator",
+      "label": "Refrigerator",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sink",
+      "label": "Sink",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tap",
+      "label": "Tap",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shower",
+      "label": "Shower",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "toilet",
+      "label": "Toilet",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "key",
+      "label": "Key",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "lock",
+      "label": "Lock",
+      "partOfSpeech": "noun",
+      "category": "home",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shirt",
+      "label": "Shirt",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "trousers",
+      "label": "Trousers",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "skirt",
+      "label": "Skirt",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "dress",
+      "label": "Dress",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "coat",
+      "label": "Coat",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "jacket",
+      "label": "Jacket",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sweater",
+      "label": "Sweater",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sock",
+      "label": "Sock",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shoe",
+      "label": "Shoe",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "boot",
+      "label": "Boot",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hat",
+      "label": "Hat",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cap",
+      "label": "Cap",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "scarf",
+      "label": "Scarf",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "glove",
+      "label": "Glove",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "belt",
+      "label": "Belt",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pocket",
+      "label": "Pocket",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "button",
+      "label": "Button",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "zipper",
+      "label": "Zipper",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "umbrella",
+      "label": "Umbrella",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bag",
+      "label": "Bag",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "backpack",
+      "label": "Backpack",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wallet",
+      "label": "Wallet",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ring",
+      "label": "Ring",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "necklace",
+      "label": "Necklace",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bracelet",
+      "label": "Bracelet",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "earring",
+      "label": "Earring",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "watch",
+      "label": "Watch",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "helmet",
+      "label": "Helmet",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sandal",
+      "label": "Sandal",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "slipper",
+      "label": "Slipper",
+      "partOfSpeech": "noun",
+      "category": "clothing",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "book",
+      "label": "Book",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": 9,
+      "sense": null
+    },
+    {
+      "id": "page",
+      "label": "Page",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "paper",
+      "label": "Paper",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pen",
+      "label": "Pen",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pencil",
+      "label": "Pencil",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "eraser",
+      "label": "Eraser",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ruler",
+      "label": "Ruler",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "notebook",
+      "label": "Notebook",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "envelope",
+      "label": "Envelope",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stamp",
+      "label": "Stamp",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "letter",
+      "label": "Letter",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "newspaper",
+      "label": "Newspaper",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "photo",
+      "label": "Photo",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "camera",
+      "label": "Camera",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "computer",
+      "label": "Computer",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "keyboard",
+      "label": "Keyboard",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "screen",
+      "label": "Screen",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "radio",
+      "label": "Radio",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "television",
+      "label": "Television",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "battery",
+      "label": "Battery",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wire",
+      "label": "Wire",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "plug",
+      "label": "Plug",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "coin",
+      "label": "Coin",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "banknote",
+      "label": "Banknote",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "box",
+      "label": "Box",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "gift",
+      "label": "Gift",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "toy",
+      "label": "Toy",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ball",
+      "label": "Ball",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "doll",
+      "label": "Doll",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "kite",
+      "label": "Kite",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rope",
+      "label": "Rope",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "string",
+      "label": "String",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "needle",
+      "label": "Needle",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "thread",
+      "label": "Thread",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "scissors",
+      "label": "Scissors",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hammer",
+      "label": "Hammer",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "screw",
+      "label": "Screw",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "nut",
+      "label": "Nut",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bolt",
+      "label": "Bolt",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "saw",
+      "label": "Saw",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ladder",
+      "label": "Ladder",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shovel",
+      "label": "Shovel",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "axe",
+      "label": "Axe",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "wheel",
+      "label": "Wheel",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "engine",
+      "label": "Engine",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "chain",
+      "label": "Chain",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bell",
+      "label": "Bell",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "drum",
+      "label": "Drum",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "flute",
+      "label": "Flute",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "piano",
+      "label": "Piano",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "violin",
+      "label": "Violin",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "trumpet",
+      "label": "Trumpet",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "whistle",
+      "label": "Whistle",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "flag",
+      "label": "Flag",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tent",
+      "label": "Tent",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "torch",
+      "label": "Torch",
+      "partOfSpeech": "noun",
+      "category": "objects",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "road",
+      "label": "Road",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "street",
+      "label": "Street",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "path",
+      "label": "Path",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bridge",
+      "label": "Bridge",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tunnel",
+      "label": "Tunnel",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "station",
+      "label": "Station",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "airport",
+      "label": "Airport",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "port",
+      "label": "Port",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "school",
+      "label": "School",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hospital",
+      "label": "Hospital",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "shop",
+      "label": "Shop",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "market",
+      "label": "Market",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "restaurant",
+      "label": "Restaurant",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "hotel",
+      "label": "Hotel",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bank",
+      "label": "Bank",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "office",
+      "label": "Office",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "factory",
+      "label": "Factory",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "farm",
+      "label": "Farm",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "park",
+      "label": "Park",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "museum",
+      "label": "Museum",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cinema",
+      "label": "Cinema",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "theater",
+      "label": "Theater",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "stadium",
+      "label": "Stadium",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pool",
+      "label": "Pool",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "playground",
+      "label": "Playground",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "church",
+      "label": "Church",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "temple",
+      "label": "Temple",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mosque",
+      "label": "Mosque",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "castle",
+      "label": "Castle",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tower",
+      "label": "Tower",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "palace",
+      "label": "Palace",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "prison",
+      "label": "Prison",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "village",
+      "label": "Village",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "town",
+      "label": "Town",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "city",
+      "label": "City",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "capital",
+      "label": "Capital",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "continent",
+      "label": "Continent",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "border",
+      "label": "Border",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "harbor",
+      "label": "Harbor",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pavement",
+      "label": "Pavement",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "crossroads",
+      "label": "Crossroads",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "fountain",
+      "label": "Fountain",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "square",
+      "label": "Square",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "platform",
+      "label": "Platform",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "classroom",
+      "label": "Classroom",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bakery",
+      "label": "Bakery",
+      "partOfSpeech": "noun",
+      "category": "places",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "car",
+      "label": "Car",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "train",
+      "label": "Train",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "bicycle",
+      "label": "Bicycle",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "motorcycle",
+      "label": "Motorcycle",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "truck",
+      "label": "Truck",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "van",
+      "label": "Van",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "taxi",
+      "label": "Taxi",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "boat",
+      "label": "Boat",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ship",
+      "label": "Ship",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "airplane",
+      "label": "Airplane",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "helicopter",
+      "label": "Helicopter",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tram",
+      "label": "Tram",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "subway",
+      "label": "Subway",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "scooter",
+      "label": "Scooter",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "tractor",
+      "label": "Tractor",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "ambulance",
+      "label": "Ambulance",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "rocket",
+      "label": "Rocket",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "submarine",
+      "label": "Submarine",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "carriage",
+      "label": "Carriage",
+      "partOfSpeech": "noun",
+      "category": "transport",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "person",
+      "label": "Person",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "child",
+      "label": "Child",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "baby",
+      "label": "Baby",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "mother",
+      "label": "Mother",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "father",
+      "label": "Father",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "parent",
+      "label": "Parent",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "sister",
+      "label": "Sister",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "brother",
+      "label": "Brother",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "daughter",
+      "label": "Daughter",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "son",
+      "label": "Son",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "grandmother",
+      "label": "Grandmother",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "grandfather",
+      "label": "Grandfather",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "friend",
+      "label": "Friend",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "neighbor",
+      "label": "Neighbor",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "teacher",
+      "label": "Teacher",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "doctor",
+      "label": "Doctor",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "nurse",
+      "label": "Nurse",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "farmer",
+      "label": "Farmer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "cook",
+      "label": "Cook",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "driver",
+      "label": "Driver",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "pilot",
+      "label": "Pilot",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "artist",
+      "label": "Artist",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "singer",
+      "label": "Singer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "dancer",
+      "label": "Dancer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "writer",
+      "label": "Writer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "actor",
+      "label": "Actor",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "soldier",
+      "label": "Soldier",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "police-officer",
+      "label": "Police officer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "firefighter",
+      "label": "Firefighter",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "worker",
+      "label": "Worker",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "customer",
+      "label": "Customer",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "guest",
+      "label": "Guest",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "king",
+      "label": "King",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    },
+    {
+      "id": "queen",
+      "label": "Queen",
+      "partOfSpeech": "noun",
+      "category": "people",
+      "status": "proposed",
+      "priority": null,
+      "sense": null
+    }
+  ]
+}

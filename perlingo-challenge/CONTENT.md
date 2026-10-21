@@ -38,3 +38,20 @@ Current tile selection covers all 100 entries with generated audio: 89 ElevenLab
 ## Family classification
 
 The original 50 playable entries map explicitly to Glottolog 5.3 identifiers in `data/playable-glottocodes.json`. This classification does not expand the lesson, audio or recognition inventory. See [GLOTTOLOG.md](GLOTTOLOG.md) for mapping qualifications and licensing.
+
+## Expansion started October 21, 2026
+
+`data/word-bank/candidates.json` holds **491 noun candidates** (including the two existing packs), grouped by topic. This is a planning inventory, not 491 translated packs. Noun-first is a practical starting policy, not a permanent noun-only restriction. It includes ambiguous labels that need explicit senses before authoring: orange the fruit, date the fruit, nail the body part, bank the financial institution, and so on. Do not copy an English label into translation work without resolving its sense. Compound nouns and languages without a one-word equivalent are allowed; no English-style grammatical category is imposed on every translation.
+
+The first proposed batch is Sun, Moon, Star, Tree, Apple, Cat, Dog, House, Book and Milk. `sun.json` begins Sun with source candidates for all 50 language slots, extracted from Wiktionary’s exact “the star around which the Earth revolves” table. English comes from the source headword. It retains revision, source URL, source-byte hash and CC BY-SA attribution. Mandarin is extracted with `cmn`, Filipino with `tl`, Norwegian with `nb`, and Croatian/Serbian with `sh`; these mappings require explicit variety review. Source variants and accent marks are not automatically taught forms or accepted answers. The source’s proper-noun classification is retained in the sense evidence; it does not settle our eventual teaching-label convention.
+
+Reproduce after downloading the public source HTML:
+
+```sh
+curl -fsSL https://en.wiktionary.org/wiki/sun/translations -o /tmp/perlingo-sun-source.html
+python3 perlingo-challenge/scripts/import-sun-candidates.py /tmp/perlingo-sun-source.html
+```
+
+Review the resulting diff and revision; regeneration is a new source snapshot, not approval. Sun remains **staged, not playable**: taught form, reading and accepted answers are deliberately unset, with audio not started. Extraction is not linguistic verification. No new generated audio or native listening review was performed in this change.
+
+Admission to a playable pack requires all 50 taught forms and readings, explicit accepted answers with source/sense checks, meaningful lexical regression checks, and checked exact-word audio under the existing pronunciation workflow. Daily calendar tests additionally reject scheduled packs with missing entries or selected recordings. Stage incomplete work outside `public/`; do not silently reduce Daily’s 50 languages. Keep the original course’s article-and-noun and contextual chunk conventions unchanged.
