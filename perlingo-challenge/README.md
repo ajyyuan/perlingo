@@ -72,7 +72,7 @@ Try these in the preview:
 4. Select Speak. On the ready screen choose **Check microphone**, allow access, and say “hello.” Then start a round and try correct answers, wrong guesses, a self-correction and a last-moment answer.
 5. Change script/language/timing controls and test narrow-window layout. Switch away during spoken recall; it should pause and release the microphone.
 
-Manual accent accuracy, live-microphone browser behavior and real-phone testing remain user acceptance checks. Synthetic smoke tests are not a substitute for them. No challenge push or deployment has been performed.
+Manual accent accuracy, live-microphone browser behavior and real-phone testing remain user acceptance checks. Synthetic smoke tests are not a substitute for them. Challenge is published as Sites version 15; deployment does not replace these acceptance checks.
 
 ## Recognition comparison
 
@@ -130,7 +130,7 @@ node perlingo-challenge/scripts/build-recording-credits.mjs
 npm run test:challenge
 ```
 
-Generation resumes without repeating cached entries and uses an exclusive lock. After an interrupted process, verify it has stopped before removing `.cache/voices/generation.lock`. For a targeted replacement, set `AUDIO_LANGUAGE`, `AUDIO_PACK`, `AUDIO_VOICE_INDEX`, `AUDIO_MODEL`, and `AUDIO_REPLACE=1`; old bytes/metadata are retained under ignored `.cache/voices/rejected/`. Run one generator process at a time and recheck each new hash before rebuilding selection. Do not silently reuse screening results from old audio. Restart the preview after changing the manifest so its exact asset allowlist refreshes. Credits identify generated provider terms and human licenses separately. Nothing is published.
+Generation resumes without repeating cached entries and uses an exclusive lock. After an interrupted process, verify it has stopped before removing `.cache/voices/generation.lock`. For a targeted replacement, set `AUDIO_LANGUAGE`, `AUDIO_PACK`, `AUDIO_VOICE_INDEX`, `AUDIO_MODEL`, and `AUDIO_REPLACE=1`; old bytes/metadata are retained under ignored `.cache/voices/rejected/`. Run one generator process at a time and recheck each new hash before rebuilding selection. Do not silently reuse screening results from old audio. Restart the preview after changing the manifest so its exact asset allowlist refreshes. Credits identify generated provider terms and human licenses separately. Generation scripts do not publish changes; use the separate release workflow.
 
 Local review: refresh http://127.0.0.1:5174, play Bread and Water tiles (especially the six replacement cases), rapidly switch tiles to check interruption, and use **Audio sources → Compare human reference** for side-by-side listening. Check that Adjust challenge still selects ElevenLabs. Report any pronunciation issue with language and pack; automatic screening is not final linguistic approval.
 
@@ -145,3 +145,5 @@ Intro navigation is limited to Learning and the language-only tree. Pronunciatio
 `scripts/build-hosted.mjs` takes an absolute Sites `build-site.mjs` helper path. It builds the existing course with its verified Azure audio host, mounts Challenge assets under `/challenge/`, and builds the retained Sites/Vinext Worker integration in `hosting/`. Source code stays in this repository; ignored output goes to `dist/`. Production Learning/Challenge links share the same origin, while their storage keys stay separate. Local scores do not migrate automatically to the production origin.
 
 The hosted broker in `hosted-api.mjs` reads ElevenLabs/Soniox runtime secrets from Sites, returns only short-lived provider tokens, rejects foreign browser origins and unknown providers, and masks upstream errors. Anonymous voice mode remains available. Throttling is 180 requests per IP per minute **per Worker isolate**, best effort; it is not a durable global spending limit. Audio is cached and makes no live TTS calls. Private source files, comparison lab and pronunciation forest are excluded from the release. Content/audio can still be inspected with developer tools; this is not an anti-cheating boundary.
+
+Publication completed October 21, 2026: **Sites version 15**, deployment `appgdep_6ad92a1b85348191b7053198d9185ae9`, succeeded. Learning is live at https://perlingo.app/ and Challenge at https://perlingo.app/challenge/. GitHub source `e18b5b26` maps to Sites source `372693b8d606131183124dc7e74842a54bd3e33e`; runtime environment revision 1 contains the provider secrets. Live checks passed for both apps, cached French audio and ElevenLabs temporary-token issuance. The retired forest route returns 404. 171 repository tests passed. Live microphone recognition accuracy and phone behavior remain user acceptance checks.
