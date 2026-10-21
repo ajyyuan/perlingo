@@ -137,7 +137,7 @@ Google Search Console verified perlingo.app ownership through a TXT record. Bran
 
 ## Challenge accounts — local implementation
 
-Status (2026-10-21): frontend implemented locally, not committed/published. The separate Supabase schema and redirect allowlist are active. Live SQL checks and authenticated preview reads passed. A new Challenge OAuth round-trip and physical cross-device acceptance remain pending.
+Status (2026-10-21): frontend published in Sites version 19. The separate Supabase schema and redirect allowlist are active. Live SQL checks and authenticated preview reads passed. A new Challenge OAuth round-trip and physical cross-device acceptance remain pending.
 
 Challenge imports `account-client.js` / `account-config.js` and the same `perlingo-auth-v1` session. On the production origin, signing in/out is shared with Learning; the two progress models remain independent. `npm run dev` serves both apps at port 5173, with Challenge at `/challenge/`. The optional standalone port 5174 preview cannot share origin-local sessions with port 5173.
 
@@ -160,4 +160,6 @@ Browser check: the same-origin 5173 Challenge preview restored the existing Lear
 
 Using only the Codex in-app browser, applied `supabase/challenge.sql` to the existing project. Supabase returned success. Ran `supabase/verify-challenge.sql`: PASS for daily uniqueness, idempotence, completed score protection, owner isolation, direct-write denial, anonymous denial and deletion cascade. All synthetic auth/round fixtures were rolled back; no real attempts were consumed.
 
-Added exactly `https://perlingo.app/challenge/` and `http://127.0.0.1:5174/` to the existing nine return URLs (eleven total). Retained Site URL `https://perlingo.app/` and the existing `http://127.0.0.1:5173/**` wildcard, which already covers the shared local preview. The local shared preview restored the existing Learning identity and its Account dialog showed **Synced** after an authenticated cloud read. No frontend publication or new OAuth round-trip is claimed. The account/attempt behavior is ready for user testing before commit.
+Added exactly `https://perlingo.app/challenge/` and `http://127.0.0.1:5174/` to the existing nine return URLs (eleven total). Retained Site URL `https://perlingo.app/` and the existing `http://127.0.0.1:5173/**` wildcard, which already covers the shared local preview. The local shared preview restored the existing Learning identity and its Account dialog showed **Synced** after an authenticated cloud read. No frontend publication or new OAuth round-trip is claimed. The account/attempt behavior was approved for commit and publication; physical two-device acceptance remains available for user testing.
+
+Publication: GitHub `d8fec39a` maps to Sites source `ebca60a5a067e3f32c1fdca404c1facad601d643`. Sites version 19 deployed successfully as `appgdep_6ad9421597648191b96673d2e552dfbb` on October 21, 2026. Public audience, custom domain and runtime environment revision 1 were preserved. All 193 tests and the production build passed.
