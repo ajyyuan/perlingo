@@ -182,3 +182,8 @@ Simplified forest layout now groups larger families by their projected child bra
 - Full repository `npm test`: 168 tests passed; `npm run check` passed syntax/content validation.
 - Challenge-specific suite: 38 tests passed. These checks do not establish native pronunciation or live microphone accuracy; the limitations above still apply.
 - Reviewed pending files for credential matches; local env files, generation caches and preview screenshots are excluded from Git. No push or publication is included.
+
+### Spoiler-free intro (2026-10-21)
+- Intro renders setup, script filtering and a closed-by-default language-name disclosure, with no translation tiles or audio playback. Start studying reveals answers and starts the timer. Exploration links move to the footer; layout and guide controls move to study.
+- Syntax check and all 38 challenge tests passed. Browser verified zero translation tiles on intro (including with all 50 names expanded), 50 tiles after starting study, working guide/layout switches, and returning to the spoiler-free intro. Existing timing code retains its deadline when controls change.
+- Review at http://127.0.0.1:5174/: expand the names, change settings, start study, switch layout/guide, then End round. No new microphone/provider test was needed for this UI change.
