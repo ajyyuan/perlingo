@@ -25,3 +25,18 @@ export function challengeSettings(preferences,challenge,languages){
  return {...preferences,...challenge.rules,pack:challenge.pack,count:languages.length,languageIds:languages.map(l=>l.id)};
 }
 export function challengeRandom(date){let seed=Number(date.replaceAll('-',''));return ()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};}
+
+export const attemptStorageKey='pc-dated-attempts-v1';
+export function datedAttempts(storage,history=[]){
+ const attempts=JSON.parse(storage.getItem(attemptStorageKey)||'{}');
+ if(!attempts||Array.isArray(attempts)||typeof attempts!=='object')throw Error('Invalid attempt storage');
+ for(const h of history)if(h.challengeDate&&h.playMode!=='unlimited'&&!attempts[h.challengeDate])attempts[h.challengeDate]={startedAt:h.date,completedAt:h.date,score:h.score,total:h.total,record:h};
+ return attempts;
+}
+export async function claimDatedAttempt(date,{storage,locks,history=[],now=new Date()}){
+ if(!locks)throw Error('This browser cannot safely save a daily attempt. Try Unlimited.');
+ return locks.request('perlingo-dated-attempts',()=>{const attempts=datedAttempts(storage,history);if(attempts[date])return false;attempts[date]={startedAt:now.toISOString()};storage.setItem(attemptStorageKey,JSON.stringify(attempts));return true;});
+}
+export async function completeDatedAttempt(date,record,{storage,locks,completed=true}){
+ return locks.request('perlingo-dated-attempts',()=>{const attempts=datedAttempts(storage);if(!attempts[date])throw Error('Missing dated attempt');attempts[date]={...attempts[date],...(completed?{completedAt:record.date}:{}),score:record.score,total:record.total,record};storage.setItem(attemptStorageKey,JSON.stringify(attempts));});
+}
