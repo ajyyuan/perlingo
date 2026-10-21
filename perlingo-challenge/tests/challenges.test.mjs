@@ -22,7 +22,7 @@ test('demo archive has two past dates and excludes today and future',()=>{
 test('scheduled rules override every freeplay setting without mutating preferences',()=>{
  const prefs={study:180,recall:120,window:8,mode:'typed',provider:'soniox',script:'Latin',languageIds:['en'],pack:'water',layout:'compact'};
  const before=structuredClone(prefs),c=calendar[0],s=challengeSettings(prefs,c,languages);
- assert.deepEqual(prefs,before);assert.equal(s.study,120);assert.equal(s.recall,60);assert.equal(s.window,3);assert.equal(s.mode,'voice');assert.equal(s.provider,'elevenlabs');assert.equal(s.script,'All scripts');assert.equal(s.languageIds.length,50);assert.equal(s.pack,c.pack);assert.equal(s.layout,'compact');
+ assert.deepEqual(prefs,before);assert.equal(s.study,120);assert.equal(s.recall,60);assert.equal(s.window,5);assert.equal(s.mode,'voice');assert.equal(s.provider,'elevenlabs');assert.equal(s.script,'All scripts');assert.equal(s.languageIds.length,50);assert.equal(s.pack,c.pack);assert.equal(s.layout,'compact');
  assert(Object.isFrozen(c.rules));
 });
 test('each scheduled word has 50 entries and selected recordings; dates are unique',()=>{

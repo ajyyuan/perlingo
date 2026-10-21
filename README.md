@@ -152,3 +152,5 @@ Publication completed October 21, 2026: **Sites version 18**, deployment `appgde
 
 
 Challenge account integration (published in Sites version 19): Challenge reuses Learning’s Supabase session and Google/Apple sign-in, with separate `challenge_rounds` records and per-user browser caches. Signed-in dated rounds must claim their date online before revealing the word. Scores/transcripts and completed Unlimited history use an idempotent per-round outbox; reconnect, return-to-page, 30-second polling and Sync now retry uploads. Guest records remain device-only and are not silently imported. Learning snapshots and scheduling are untouched. The separate backend and callback URLs are active; live SQL permission checks and authenticated preview sync passed. Physical two-device acceptance remains pending; see [Challenge account setup](docs/accounts.md#challenge-accounts--local-implementation).
+
+Answer-window revision: new Daily/Archive attempts use rules v2 with 5 seconds per answer. Unlimited defaults to 5 seconds; existing 3-second preferences migrate once, after which explicit choices are preserved. Existing saved scores/attempts remain unchanged.

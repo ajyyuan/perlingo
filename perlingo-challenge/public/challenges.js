@@ -1,19 +1,19 @@
 // Explicit local-preview calendar. Never silently recycle words on unscheduled dates.
-const rulesV1=Object.freeze({study:120,recall:60,window:3,script:'All scripts',mode:'voice',provider:'elevenlabs'});
+const rulesV2=Object.freeze({study:120,recall:60,window:5,script:'All scripts',mode:'voice',provider:'elevenlabs'});
 export const calendar=Object.freeze([
  // Seeded demo history for archive testing, not prior public challenges.
- Object.freeze({date:'2026-10-19',pack:'moon',demo:true,rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-20',pack:'tree',demo:true,rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-21',pack:'bread',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-22',pack:'water',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-23',pack:'sun',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-24',pack:'star',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-25',pack:'apple',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-26',pack:'cat',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-27',pack:'dog',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-28',pack:'house',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-29',pack:'book',rulesVersion:1,rules:rulesV1}),
- Object.freeze({date:'2026-10-30',pack:'milk',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-19',pack:'moon',demo:true,rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-20',pack:'tree',demo:true,rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-21',pack:'bread',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-22',pack:'water',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-23',pack:'sun',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-24',pack:'star',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-25',pack:'apple',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-26',pack:'cat',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-27',pack:'dog',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-28',pack:'house',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-29',pack:'book',rulesVersion:2,rules:rulesV2}),
+ Object.freeze({date:'2026-10-30',pack:'milk',rulesVersion:2,rules:rulesV2}),
 ]);
 export const challengeTimeZone='America/New_York';
 const dateFormatter=new Intl.DateTimeFormat('en-US',{timeZone:challengeTimeZone,year:'numeric',month:'2-digit',day:'2-digit'});

@@ -15,7 +15,9 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const load=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{toast('Browser storage is unavailable; this round will not be saved.');}};
 let familyTree=null;
-let settings={layout:'families',pack:'bread',count:50,study:120,recall:60,window:3,script:'All scripts',guide:'reading',mode:'voice',provider:'elevenlabs',...load('pc-settings-v1',{})};
+let settings={layout:'families',pack:'bread',count:50,study:120,recall:60,window:5,script:'All scripts',guide:'reading',mode:'voice',provider:'elevenlabs',...load('pc-settings-v1',{})};
+// Migrate the previous default once; subsequent explicit choices are preserved.
+if(!load('pc-five-second-default-v1',false)){if(settings.window===3)settings.window=5;try{localStorage.setItem('pc-settings-v1',JSON.stringify(settings));localStorage.setItem('pc-five-second-default-v1','true');}catch{}}
 settings.provider='elevenlabs';
 settings.languageIds=initialSelection(settings,languages);
 let preferences=structuredClone(settings),playMode='daily',archiveDate='',activeChallenge=null,replayPack=null;
