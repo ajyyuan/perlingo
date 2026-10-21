@@ -42,7 +42,7 @@ main:has(.intro-hero){max-width:1040px;padding-top:28px}
 .intro-hero .subtitle{margin-bottom:0}
 .intro-hero .word-stamp{width:88px;height:88px;font-size:46px;border-radius:24px}
 .challenge-setup{display:block;padding:22px 24px}
-.setup-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 24px}
+.setup-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 24px}
 .setup-fields select,.setup-fields .language-picker-button{width:100%;min-height:34px;font-size:14px}
 .setup-fields select:disabled{opacity:.45;cursor:default}
 .setup-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
@@ -76,5 +76,3 @@ main:has(.intro-hero){padding-top:42px}.intro-hero{margin-bottom:30px}.intro-her
 .dated-score{display:flex;align-items:center;gap:24px}.dated-score>strong{font-size:32px;letter-spacing:-1px;font-variant-numeric:tabular-nums;white-space:nowrap}.dated-score small{font-size:15px;color:var(--muted);font-weight:400;letter-spacing:0}@media(max-width:600px){.dated-score{width:100%;justify-content:space-between}.dated-score .primary{width:auto}}
 
 .dated-actions{display:flex;flex-direction:column;align-items:center;gap:10px}.dated-actions .text-button{font-size:11px;white-space:normal;text-align:center}.history-row .dated-actions{align-items:flex-end;max-width:160px}
-
-.word-assignment{display:block;font-size:14px;font-weight:600;padding:7px 0;min-height:34px}
