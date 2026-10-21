@@ -33,7 +33,7 @@ test('standalone exploration page and modules are served locally',async()=>{
 
 test('pronunciation forest is a separate served page with links to the language artifact',async()=>{
  for(const path of ['/forest.html','/forest.js','/forest.css'])assert.equal((await request(path)).status,200);
- const forest=await request('/forest.html'),tree=await request('/tree.html');assert(forest.body.includes('href="/tree.html"'));assert(tree.body.includes('href="/forest.html"'));assert(!forest.body.includes('<svg'));
+ const forest=await request('/forest.html'),tree=await request('/tree.html');assert(forest.body.includes('href="/tree.html"'));assert(!tree.body.includes('href="/forest.html"'));assert(!forest.body.includes('<svg'));
 });
 
 test('challenge family layout assets are served and stylesheet is linked',async()=>{

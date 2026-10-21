@@ -524,3 +524,5 @@ button.ipa-guide:hover { color: var(--ink); }
 .settings .account-options { border:0; margin-top:4px; padding-top:0; }
 .settings .account-options summary { padding:10px 0; }
 @media(max-width:540px) { .settings-heading { margin-top:18px; margin-bottom:20px; } .settings-section { padding:22px 0; } .settings .lang { padding:12px 10px; } }
+
+.app-switch{text-decoration:none;display:inline-flex;align-items:center}.app-switch:hover{text-decoration:underline}

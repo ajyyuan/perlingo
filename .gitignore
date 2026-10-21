@@ -16,3 +16,11 @@ perlingo-challenge/.cache/
 
 # Local preview screenshots
 /.cache/
+
+# Reproducible hosted builds
+/dist/
+/hosting/public/
+/hosting/dist/
+/hosting/.sites-runtime/
+/hosting/.wrangler/
+/hosting/.vinext/

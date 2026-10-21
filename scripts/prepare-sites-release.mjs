@@ -9,10 +9,12 @@ if(git(['rev-parse','--show-toplevel'],target)!==target)throw Error('Target must
 const manifest=JSON.parse(readFileSync('.openai/hosting.json','utf8'));
 if(JSON.parse(readFileSync(target+'/.openai/hosting.json','utf8')).project_id!==manifest.project_id)throw Error('Wrong Sites project.');
 if(git(['status','--porcelain'],source)||git(['status','--porcelain'],target))throw Error('Commit development changes and start with a clean Sites checkout.');
-if(!readFileSync('dist/src/audio-host.js','utf8').includes('https://'))throw Error('Build the external-audio release first.');
+if(!readFileSync('dist/client/src/audio-host.js','utf8').includes('https://'))throw Error('Build the external-audio release first.');
 const files=git(['ls-files','-z'],source).split('\0').filter(Boolean).filter(f=>!((f.startsWith('src/audio/azure/')||f.startsWith('dist/src/audio/azure/'))&&f.endsWith('.mp3'))&&!f.startsWith('audio-audition/')&&!f.startsWith('audio-generation/'));
 const wanted=new Set(files);
 for(const f of git(['ls-files','-z'],target).split('\0').filter(Boolean))if(!wanted.has(f))rmSync(resolve(target,f),{force:true});
 for(const f of files){if(!existsSync(f))throw Error('Missing tracked source: '+f);const out=resolve(target,f);mkdirSync(dirname(out),{recursive:true});cpSync(f,out);}
 writeFileSync(target+'/.openai/release-source.json',JSON.stringify({repository:'https://github.com/ajyyuan/perlingo',commit:git(['rev-parse','HEAD'],source)},null,2)+'\n');
+// The verified Worker build is ignored source output, copied only for packaging.
+rmSync(target+'/dist',{recursive:true,force:true});cpSync('dist',target+'/dist',{recursive:true});
 console.log(`Prepared ${files.length} files in ${target}; publish with the Sites source helper.`);

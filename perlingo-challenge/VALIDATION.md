@@ -187,3 +187,23 @@ Simplified forest layout now groups larger families by their projected child bra
 - Intro renders setup, script filtering and a closed-by-default language-name disclosure, with no translation tiles or audio playback. Start studying reveals answers and starts the timer. Exploration links move to the footer; layout and guide controls move to study.
 - Syntax check and all 38 challenge tests passed. Browser verified zero translation tiles on intro (including with all 50 names expanded), 50 tiles after starting study, working guide/layout switches, and returning to the spoiler-free intro. Existing timing code retains its deadline when controls change.
 - Review at http://127.0.0.1:5174/: expand the names, change settings, start study, switch layout/guide, then End round. No new microphone/provider test was needed for this UI change.
+
+### Local app navigation (2026-10-21)
+- Added Course/Challenge header links between local ports 5173 and 5174. The course exposes Challenge only outside active practice and only on local preview hosts. Course progress and Challenge scores remain separate.
+- Full suite: 168 tests passed; both app modules passed syntax checks. Browser followed Challenge → Course → Challenge successfully, retaining the existing course resume state and Challenge settings.
+- Run both preview commands before trying the links. No deployment or shared-account integration is included.
+
+### Learning footer link (2026-10-21)
+- Renamed the Challenge return link to Learning and moved it into the intro footer. It is absent from the header and timed study screen. Destination remains the local learning app on port 5173.
+- App syntax and diff whitespace checks passed. The destination is unchanged from the verified local navigation flow above.
+
+### Intro spoiler links (2026-10-21)
+- Main action renamed Begin. Removed pronunciation-forest links from intro/tree and the dictionary answer link from How to play; moved Audio sources from intro to study. Retained the old forest artifact at its direct URL.
+- This removes answer previews from normal intro navigation, not direct-URL or developer-tools access.
+- All 38 challenge tests pass, including the updated expectation that the language tree does not link to the pronunciation forest. Browser verified Begin and an intro footer containing only Learning and the language-only tree.
+
+### Combined hosted release preparation (2026-10-21)
+- Learning remains at `/`; Challenge mounts at `/challenge/` with production-relative navigation, cached audio and a Worker token broker. Site runtime secrets are configured separately from source.
+- 171 repository tests and syntax/content checks pass, including hosted broker origin/provider rejection, sanitized errors and bounded single-use Soniox tokens.
+- Built Worker preview verified Learning → Challenge navigation, 50 study tiles in 18 groups, French playback interaction and typed recall entry. HTTP checks returned 200 for both apps, catalog, cached French MP3 and status; 404 for env files, the retired forest and comparison lab. Live microphone accuracy is not re-certified by this deployment check.
+- Public anonymous recognition has per-isolate request throttles, not a durable global spending cap. Existing course accounts/audio are preserved. Deployment outcome is recorded after publication.

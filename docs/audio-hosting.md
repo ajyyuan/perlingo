@@ -42,7 +42,7 @@ Deleting audio in a new commit does not remove the large files from Git ancestry
 Use a separate checkout of the existing Sites branch and copy the small app
 release into it, recording the GitHub source SHA. GitHub remains the development
 repository and recording backup. No GitHub history rewrite is needed.
-After committing a verified external-audio build, run `node scripts/prepare-sites-release.mjs /absolute/path/to/clean-sites-checkout`. Open that checkout with the Sites helper first; the preparation script checks project identity and clean working trees, copies tracked application files while omitting Azure pronunciation MP3s and audition/generation records, and writes `.openai/release-source.json` with the GitHub SHA. Use the Sites helper to commit, push and package this checkout, then save and deploy its exact returned commit/archive. Do not push development `main` directly to Sites, since its history contains the recordings. Use the Sites deployment result for publication status.
+For the combined Learning/Challenge release, install dependencies in `hosting/` using the Sites installer, then run `node scripts/build-hosted.mjs /absolute/path/to/sites/scripts/build-site.mjs`. This emits a Worker build with static assets under `dist/client`, retaining the verified external course audio host. Generated output is ignored by Git. After committing the verified source, run `node scripts/prepare-sites-release.mjs /absolute/path/to/clean-sites-checkout`. Open that checkout with the Sites helper first; the preparation script checks project identity and clean working trees, copies tracked application files while omitting Azure pronunciation MP3s and audition/generation records, and writes `.openai/release-source.json` with the GitHub SHA. Use the Sites helper to commit, push and package this checkout, then save and deploy its exact returned commit/archive. Do not push development `main` directly to Sites, since its history contains the recordings. Use the Sites deployment result for publication status.
 
 ## Uploads
 
@@ -62,3 +62,5 @@ The Azure budget form could not load cost/filter data during setup, so no budget
 alert is configured. The approved $5/month target is not an enforced cap.
 
 Publication completed October 19, 2026: Sites version **14**, deployment `appgdep_6ad6d5cafd548191b12139c69fa79992`, succeeded. GitHub application commit `1aa49d4c` corresponds to Sites source commit `8de0a2d1e18c1cb896fdffb1f0b65d43753bfa25`. The existing public site and perlingo.app domain are retained. All 54,784 Azure recordings were verified before release.
+
+The October 21 release adds a hosted speech-token broker and mounts Challenge at `/challenge/`; runtime provider keys are Sites secrets. The site audience stays public. Course authentication, course progress and remote audio URLs are unchanged. Publication success is recorded only after the deployment returns a terminal success result.
