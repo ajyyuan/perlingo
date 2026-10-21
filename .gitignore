@@ -24,3 +24,6 @@ perlingo-challenge/.cache/
 /hosting/.sites-runtime/
 /hosting/.wrangler/
 /hosting/.vinext/
+
+# Ignore dependency symlinks as well as directories
+**/node_modules
