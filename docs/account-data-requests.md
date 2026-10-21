@@ -4,20 +4,20 @@ Maintainer procedure for requests sent to reports@perlingo.app. This is a docume
 
 ## Verify and scope the request
 
-Verify the requester controls the relevant account using a trusted account channel. Never request a password, refresh token or provider verification code. Resolve the exact Supabase user UUID and linked identities; Apple private-relay and Google accounts may be separate. Confirm whether the request concerns progress, reports or the whole account. Record only the minimum request/audit information needed; do not copy progress or credentials into logs.
+Verify the requester controls the relevant account using a trusted account channel. Never request a password, refresh token or provider verification code. Resolve the exact Supabase user UUID and linked identities; Apple private-relay and Google accounts may be separate. Confirm whether the request concerns Learning progress, Challenge history/attempts, reports or the whole account. Record only the minimum request/audit information needed; do not copy progress or credentials into logs.
 
 For access requests, use the app's Progress export where sufficient. Recovery exports contain both the device and cloud snapshots and must be handled as private data. Use authenticated maintainer access for other records and send results only through an agreed private channel after ownership verification.
 
 ## Whole-account deletion preparation
 
-Inspect the deployed schema, not only these source files. Count target progress rows, reports, associated notification rows and admin membership. Identify any additional dependencies before proceeding. If the target is the sole maintainer/admin, resolve the intended ownership outcome before deleting it. Do not silently create replacement admins.
+Inspect the deployed schema, not only these source files. Count target progress rows, Challenge rounds (when the migration is deployed), reports, associated notification rows and admin membership. Identify any additional dependencies before proceeding. If the target is the sole maintainer/admin, resolve the intended ownership outcome before deleting it. Do not silently create replacement admins.
 
 Prepare and review a transaction scoped to the verified UUID. The current dependency order is:
 
 1. Delete report notification rows joined to reports owned by the target user.
 2. Delete the target user's content reports.
 3. Delete the target user's report_admins membership, if applicable.
-4. Delete the matching auth user with a reviewed privileged account-deletion procedure; public.progress cascades on auth-user deletion.
+4. Delete the matching auth user with a reviewed privileged account-deletion procedure; public.progress and public.challenge_rounds cascade on auth-user deletion.
 
 `content_reports.user_id`, `report_admins.user_id` and `report_notifications.report_id` do not have cascading deletes. Deleting only the auth user can fail. Do not run broad or email-substring deletes. Prefer one reviewed transaction covering relational cleanup and auth deletion; if using the Auth admin API separately, document the non-atomic boundary and reconcile failures rather than claiming full completion. Coordinate concurrent report submissions and queued/in-flight notification workers before executing; deleting a queue row does not retract an email already sent.
 
@@ -29,8 +29,10 @@ Confirm no target rows remain in the applicable live tables and that the auth ac
 
 Tell the requester to clear Perlingo site data on each browser/origin and delete any downloaded exports they no longer want. Server deletion cannot remove browser-local drafts or downloads. Signing in again can create a new account and offer to upload retained device progress. Revoking Google/Apple access alone does not erase Perlingo data. Direct support emails and already-delivered report-ID notifications are separate from the database cleanup and need explicit retention/deletion consideration.
 
-Related implementation: supabase/schema.sql, supabase/content-reports.sql, supabase/report-notifications.sql. Public wording: privacy.html. Current account verification: accounts.md.
+Related implementation: supabase/schema.sql, supabase/challenge.sql, supabase/content-reports.sql, supabase/report-notifications.sql. Public wording: privacy.html. Current account verification: accounts.md.
 
 ## Rehearsal evidence — 2026-10-19
 
 `supabase/verify-account-deletion.sql` passed in an isolated local PostgreSQL database with no network worker. Direct auth deletion was rejected, ordered cleanup and progress cascade passed, an unrelated control user remained, and savepoint rollback restored all target relations. Fixtures were rolled back and the server stopped. Application tables/functions/queue trigger came from repository SQL; auth.users contained only id and auth.uid was stubbed. This proves relational dependency handling, not provider sessions, GoTrue internals, backup erasure or production deletion authorization.
+
+Challenge-only access requests include scores, dates, transcripts and attempt status from `challenge_rounds`. Account caches and pending uploads remain on each device after sign-out; include those local copies in deletion instructions. The Challenge cascade passed `verify-challenge.sql` in disposable PostgreSQL on 2026-10-21; the migration and the same rolled-back verification subsequently passed in live Supabase on the same date.

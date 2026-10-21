@@ -76,3 +76,5 @@ main:has(.intro-hero){padding-top:42px}.intro-hero{margin-bottom:30px}.intro-her
 .dated-score{display:flex;align-items:center;gap:24px}.dated-score>strong{font-size:32px;letter-spacing:-1px;font-variant-numeric:tabular-nums;white-space:nowrap}.dated-score small{font-size:15px;color:var(--muted);font-weight:400;letter-spacing:0}@media(max-width:600px){.dated-score{width:100%;justify-content:space-between}.dated-score .primary{width:auto}}
 
 .dated-actions{display:flex;flex-direction:column;align-items:center;gap:10px}.dated-actions .text-button{font-size:11px;white-space:normal;text-align:center}.history-row .dated-actions{align-items:flex-end;max-width:160px}
+
+.account-providers{display:flex;flex-wrap:wrap;gap:12px}.provider-signin{padding:0;border:0;background:transparent}.provider-signin img{display:block;height:40px;width:auto}

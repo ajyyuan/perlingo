@@ -1,4 +1,5 @@
 import http from 'node:http';
+import {challengePaths} from './paths.mjs';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
@@ -8,8 +9,8 @@ try{process.loadEnvFile(path.join(root,'../.env.local'));}catch(error){if(error.
 const key=process.env.ELEVENLABS_API_KEY;
 const sonioxKey=process.env.SONIOX_API_KEY;
 const port=Number(process.env.CHALLENGE_PORT||5174);
-const allowedHosts=new Set([`127.0.0.1:${port}`,`localhost:${port}`]);
-const publicFiles=new Set(['index.html','style.css','app.js','content.js','noun-packs.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
+const allowedHosts=new Set([`127.0.0.1:${port}`,`localhost:${port}`,'127.0.0.1:5173','localhost:5173']);
+const publicFiles=new Set(['index.html','style.css','app.js','account-store.js','content.js','noun-packs.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
 let requests=[];
 function json(res,status,data){res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));}
 async function upstream(endpoint,body){
@@ -25,9 +26,10 @@ async function upstream(endpoint,body){
 }
 export const server=http.createServer(async(req,res)=>{
  res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','no-referrer');
- res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' wss://api.elevenlabs.io wss://stt-rt.soniox.com; media-src 'self' blob:; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
+ res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://buuxjzibgblnlmfafpny.supabase.co wss://api.elevenlabs.io wss://stt-rt.soniox.com; media-src 'self' blob:; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
  if(!allowedHosts.has(req.headers.host)){json(res,403,{error:'Local access only.'});return;}
  const url=new URL(req.url,`http://${req.headers.host}`);
+ const prefixed=url.pathname.startsWith('/challenge/');if(prefixed)url.pathname=url.pathname.slice('/challenge'.length);
  try{
   if(url.pathname.startsWith('/api/')){
    if(req.headers.origin&&req.headers.origin!==url.origin){json(res,403,{error:'Origin not allowed.'});return;}
@@ -49,9 +51,11 @@ export const server=http.createServer(async(req,res)=>{
    json(res,404,{error:'Not found.'});return;
   }
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405);res.end();return;}
+  const shared=new Set(['/src/account-client.js','/src/account-config.js','/src/vendor/supabase.js','/src/assets/auth/google-sign-in.png','/src/assets/auth/apple-sign-in.png']);
+  if(shared.has(url.pathname)){const body=await readFile(path.join(root,'..',url.pathname));res.writeHead(200,{'Content-Type':url.pathname.endsWith('.png')?'image/png':'text/javascript','Cache-Control':'no-cache'});res.end(body);return;}
   const file=url.pathname==='/'?'index.html':url.pathname.slice(1);
   if(!publicFiles.has(file)){res.writeHead(404);res.end('Not found');return;}
-  const body=await readFile(path.join(root,'public',file));res.writeHead(200,{'Content-Type':({'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.mp3':'audio/mpeg','.ogg':'audio/ogg','.wav':'audio/wav'})[path.extname(file)],'Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:body);
+  let body=await readFile(path.join(root,'public',file));if(prefixed&&/\.(js|css|html)$/.test(file))body=challengePaths(body.toString(),new Set([...publicFiles].map(f=>f.split('/')[0])));res.writeHead(200,{'Content-Type':({'.json':'application/json; charset=utf-8','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.mp3':'audio/mpeg','.ogg':'audio/ogg','.wav':'audio/wav'})[path.extname(file)],'Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:body);
  }catch(error){json(res,error.status||502,{error:error.name==='TimeoutError'?'Speech service timed out. Try again.':error.status?error.message:'Speech service unavailable. Try again.'});}
 });
 if(process.argv[1]===fileURLToPath(import.meta.url))server.listen(port,'127.0.0.1',()=>console.log(`Perlingo Challenge: http://127.0.0.1:${port}`));

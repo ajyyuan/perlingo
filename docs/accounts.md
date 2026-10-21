@@ -133,3 +133,31 @@ The user approved committing, pushing, publishing, attaching perlingo.app and co
 Supabase Site URL is now `https://perlingo.app/`. Exact root/course/starter/foundation return URLs were added, preserving old Sites and localhost redirects. Google sign-in completed on the new domain and showed the existing owner identity and cloud choice. Account cloud data is shared across domains; browser-local sessions and guest data are origin-specific. Use cloud progress when moving an existing account. Old guest-only progress requires export before migration; it is not automatically copied.
 
 Google Search Console verified perlingo.app ownership through a TXT record. Branding now has homepage `https://perlingo.app/about.html`, privacy `https://perlingo.app/privacy.html`, and the owned domain alongside the existing Supabase callback domain. Only the observed email/profile runtime scopes were declared, as userinfo.email and userinfo.profile; no sensitive/restricted scopes. Audience is External/In production. Verification Center says data-access verification is unnecessary for these scopes; separate branding verification passed and Publish branding completed. Google explicitly confirms: “Your branding has been verified and is being shown to users.”
+
+
+## Challenge accounts — local implementation
+
+Status (2026-10-21): frontend implemented locally, not committed/published. The separate Supabase schema and redirect allowlist are active. Live SQL checks and authenticated preview reads passed. A new Challenge OAuth round-trip and physical cross-device acceptance remain pending.
+
+Challenge imports `account-client.js` / `account-config.js` and the same `perlingo-auth-v1` session. On the production origin, signing in/out is shared with Learning; the two progress models remain independent. `npm run dev` serves both apps at port 5173, with Challenge at `/challenge/`. The optional standalone port 5174 preview cannot share origin-local sessions with port 5173.
+
+`supabase/challenge.sql` adds an RLS-protected `challenge_rounds` table keyed by user and round UUID, plus unique user/date. Authenticated users can select only their own rows; writes go through `claim_challenge_round` and `save_challenge_round`, deriving the owner from `auth.uid()`. Daily admission requires a successful online claim before word reveal. Date validity uses America/New_York. Completed results cannot be replaced; stale shorter partial snapshots are ignored. This enforces account attempt uniqueness, not anti-cheating: scoring/content remain client-side. Guests retain browser-only attempts.
+
+The Challenge store caches by `pc-account-v1:<user-id>:` and uses separate per-round pending keys to avoid losing simultaneous tabs’ uploads. Requests time out after 15 seconds; pending records retry on reconnect, visibility, 30-second polling and Sync now. Per-answer dated progress and completed results include transcripts; no microphone recording is stored. Account changes dispose the old store and end active play. Guest history is not automatically copied to accounts. Challenge preferences stay device-local; Learning’s progress snapshots, consent/conflict handling and SRS are unchanged.
+
+Activation:
+1. Apply `supabase/challenge.sql` in the existing project, then run `supabase/verify-challenge.sql`. It uses synthetic identities and rolls back all fixtures.
+2. Preserve the current redirect allowlist and add `https://perlingo.app/challenge/`, `http://127.0.0.1:5173/challenge/`, and standalone `http://127.0.0.1:5174/` if testing it. Existing 5173 wildcard may already cover the combined preview.
+3. Verify signed-in Learning → Challenge uses the same identity; sign-in from Challenge returns to Challenge.
+4. On two devices using the same account, begin the same dated challenge: only one may enter. Complete it and sync the other device; verify score, Review and Unlimited replay.
+5. Complete Unlimited offline, reload and reconnect; verify one history entry uploads. Sign out, verify original guest history, then use another account and verify isolation. Confirm Learning progress did not change.
+
+Verification: 193 local tests passed including five Challenge store tests (two clients, offline reload/retry, account/guest isolation, competing tabs, fail-closed admission). Disposable PostgreSQL 16 passed the migration and `verify-challenge.sql`: daily uniqueness, idempotent claim, completed result protection, RLS, direct-write/anonymous denial and deletion cascade. This used a minimal auth stub, not live Supabase Auth. No real user records were changed.
+
+Browser check: the same-origin 5173 Challenge preview restored the existing Learning identity without another login. It displayed “Account · Not synced” while the migration was unavailable. Signed-out 5174 preview rendered the existing Google/Apple buttons. The combined hosted build passed. These checks do not establish cloud score persistence; this initial check was followed by the successful activation below.
+
+### Challenge backend activation — 2026-10-21
+
+Using only the Codex in-app browser, applied `supabase/challenge.sql` to the existing project. Supabase returned success. Ran `supabase/verify-challenge.sql`: PASS for daily uniqueness, idempotence, completed score protection, owner isolation, direct-write denial, anonymous denial and deletion cascade. All synthetic auth/round fixtures were rolled back; no real attempts were consumed.
+
+Added exactly `https://perlingo.app/challenge/` and `http://127.0.0.1:5174/` to the existing nine return URLs (eleven total). Retained Site URL `https://perlingo.app/` and the existing `http://127.0.0.1:5173/**` wildcard, which already covers the shared local preview. The local shared preview restored the existing Learning identity and its Account dialog showed **Synced** after an authenticated cloud read. No frontend publication or new OAuth round-trip is claimed. The account/attempt behavior is ready for user testing before commit.
