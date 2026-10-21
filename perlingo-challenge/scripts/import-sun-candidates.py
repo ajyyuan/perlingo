@@ -4,23 +4,7 @@ from datetime import datetime,timezone
 from html.parser import HTMLParser
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-class Node:
- def __init__(self,tag='',attrs=()):self.tag=tag;self.attrs=dict(attrs);self.children=[]
- def text(self):return ''.join(c if isinstance(c,str) else c.text() for c in self.children)
- def all(self,tag):
-  for c in self.children:
-   if isinstance(c,Node):
-    if c.tag==tag:yield c
-    yield from c.all(tag)
-class Parser(HTMLParser):
- def __init__(self):super().__init__();self.root=Node();self.stack=[self.root]
- def handle_starttag(self,tag,attrs):
-  n=Node(tag,attrs);self.stack[-1].children.append(n)
-  if tag not in ('meta','link','img','br','hr','input','wbr'):self.stack.append(n)
- def handle_endtag(self,tag):
-  for i in range(len(self.stack)-1,0,-1):
-   if self.stack[i].tag==tag:self.stack=self.stack[:i];break
- def handle_data(self,data):self.stack[-1].children.append(data)
+from source_html import Parser
 source=Path(sys.argv[1]).read_bytes();page=source.decode();p=Parser();p.feed(page)
 sense='the star around which the Earth revolves'
 table=next(t for t in p.root.all('table') if t.attrs.get('data-gloss')==sense)

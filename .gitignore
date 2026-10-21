@@ -27,3 +27,6 @@ perlingo-challenge/.cache/
 
 # Ignore dependency symlinks as well as directories
 **/node_modules
+
+# Local Python source-check caches
+__pycache__/

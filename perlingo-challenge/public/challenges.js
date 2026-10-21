@@ -3,6 +3,14 @@ const rulesV1=Object.freeze({study:120,recall:60,window:3,script:'All scripts',m
 export const calendar=Object.freeze([
  Object.freeze({date:'2026-10-21',pack:'bread',rulesVersion:1,rules:rulesV1}),
  Object.freeze({date:'2026-10-22',pack:'water',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-23',pack:'sun',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-24',pack:'star',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-25',pack:'apple',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-26',pack:'cat',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-27',pack:'dog',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-28',pack:'house',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-29',pack:'book',rulesVersion:1,rules:rulesV1}),
+ Object.freeze({date:'2026-10-30',pack:'milk',rulesVersion:1,rules:rulesV1}),
 ]);
 export const todayUTC=(now=new Date())=>now.toISOString().slice(0,10);
 export function challengeFor(date,today=todayUTC()){return date<=today?calendar.find(c=>c.date===date)||null:null;}

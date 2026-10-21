@@ -9,7 +9,7 @@ const key=process.env.ELEVENLABS_API_KEY;
 const sonioxKey=process.env.SONIOX_API_KEY;
 const port=Number(process.env.CHALLENGE_PORT||5174);
 const allowedHosts=new Set([`127.0.0.1:${port}`,`localhost:${port}`]);
-const publicFiles=new Set(['index.html','style.css','app.js','content.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
+const publicFiles=new Set(['index.html','style.css','app.js','content.js','noun-packs.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
 let requests=[];
 function json(res,status,data){res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));}
 async function upstream(endpoint,body){

@@ -1,3 +1,4 @@
+import {nounPacks} from './noun-packs.js';
 // Authored starter collection. See ../CONTENT.md for source scope and review limits.
 const rows = [
 // code, name, locale flag, script, bread, reading, broad IPA, water, reading
@@ -58,4 +59,5 @@ export const packs=[{id:'bread',label:'Bread',emoji:'🍞',sense:'Bread as food;
  const [id,,,,bread,reading,ipa,water,waterReading]=row;
  return {id,word:pack.id==='bread'?bread:water,reading:pack.id==='bread'?reading:waterReading,ipa:pack.id==='bread'?ipa:null,accepted:[pack.id==='bread'?bread:water,...(alternatives[pack.id][id]||[])],source:`https://en.wiktionary.org/wiki/${encodeURIComponent(pack.id==='bread'?bread:water)}`,status:'draft'};
 })}));
+packs.push(...nounPacks);
 export function getEntry(packId,languageId){return packs.find(p=>p.id===packId)?.entries.find(e=>e.id===languageId);}

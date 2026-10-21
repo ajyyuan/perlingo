@@ -10,7 +10,7 @@ test('UTC date changes at midnight and archive excludes today and future',()=>{
  assert.equal(todayUTC(new Date('2026-10-22T00:00:00Z')),'2026-10-22');
  assert.deepEqual(archiveDays('2026-10-22').map(c=>c.date),['2026-10-21']);
  assert.equal(challengeFor('2026-10-22','2026-10-21'),null);
- assert.equal(challengeFor('2026-10-23','2026-10-23'),null);
+ assert.equal(challengeFor('2026-10-31','2026-10-31'),null);
 });
 test('scheduled rules override every freeplay setting without mutating preferences',()=>{
  const prefs={study:180,recall:120,window:8,mode:'typed',provider:'soniox',script:'Latin',languageIds:['en'],pack:'water',layout:'compact'};
@@ -25,7 +25,7 @@ test('each scheduled word has 50 entries and selected recordings; dates are uniq
 test('daily and archive share a stable initial queue for the same date',()=>{
  const ids=languages.map(l=>l.id);assert.deepEqual(shuffle(ids,challengeRandom('2026-10-21')),shuffle(ids,challengeRandom('2026-10-21')));assert.notDeepEqual(shuffle(ids,challengeRandom('2026-10-21')),shuffle(ids,challengeRandom('2026-10-22')));
 });
-test('word-bank candidates remain distinct from playable packs and preserve review gaps',()=>{
+test('candidate inventory and historical Sun snapshot preserve review gaps',()=>{
  const read=name=>JSON.parse(readFileSync(new URL(`../data/word-bank/${name}.json`,import.meta.url)));
- const bank=read('candidates').entries,sun=read('sun');assert(bank.length>=400);assert.equal(new Set(bank.map(e=>e.id)).size,bank.length);assert(bank.every(e=>e.partOfSpeech==='noun'));assert.equal(sun.entries.length,50);assert.equal(new Set(sun.entries.map(e=>e.id)).size,50);assert(sun.source.revision);assert(sun.entries.every(e=>e.sourceForms.length&&e.taughtForm===null&&e.accepted.length===0));assert(!packs.some(p=>p.id==='sun'));
+ const bank=read('candidates').entries,sun=read('sun');assert(bank.length>=400);assert.equal(new Set(bank.map(e=>e.id)).size,bank.length);assert(bank.every(e=>e.partOfSpeech==='noun'));assert.equal(sun.entries.length,50);assert.equal(new Set(sun.entries.map(e=>e.id)).size,50);assert(sun.source.revision);assert(sun.entries.every(e=>e.sourceForms.length&&e.taughtForm===null&&e.accepted.length===0));assert(packs.some(p=>p.id==='sun'));assert(packs.some(p=>p.id==='moon'));assert(packs.some(p=>p.id==='tree'));
 });

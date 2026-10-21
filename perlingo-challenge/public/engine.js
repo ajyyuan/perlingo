@@ -31,3 +31,6 @@ export class Round{
  cancel(){this.active=null;}
  get done(){return this.remaining<=0||!this.queue.length;}
 }
+
+// Explicit speech-only transcript formatting; typed spelling stays unchanged.
+export function matchesSpokenAnswer(text,entry){return matchesAnswer(text,[...entry.accepted,...(entry.transcriptAlternatives||[])],entry.id);}
