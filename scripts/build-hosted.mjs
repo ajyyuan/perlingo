@@ -21,4 +21,4 @@ writeFileSync(path.join(publicDir,'_headers'),`/challenge/*
 // Give the worker a minimal framework route; static assets preserve existing URLs.
 execFileSync(process.execPath,[sitesBuildHelper],{cwd:hosting,stdio:'inherit'});
 rmSync('dist',{recursive:true,force:true});cpSync(path.join(hosting,'dist'),'dist',{recursive:true});
-console.log('Hosted build: Learning at /; Challenge at /challenge/.');
+console.log('Hosted build: Learning at /learning; Challenge at /challenge/.');

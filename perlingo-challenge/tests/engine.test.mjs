@@ -9,7 +9,7 @@ test('pass and timeout cycle to back; correct removes and cannot double-score',(
  c=r.begin(3300);assert.equal(r.finish(c.token,'correct',4000),true);assert.equal(r.finish(c.token,'correct',4100),false);assert.deepEqual(r.correct,['es']);assert.equal(r.remaining,6200);
 });
 test('late verdicts charge only capture time; stale card tokens ignored',()=>{
- const r=new Round(['en','fr'],{seconds:5,random:()=>.999});const c=r.begin(0);r.finish(c.token,'correct',4200,'bread');assert.equal(r.remaining,2000);const next=r.begin(5000);assert.equal(next.duration,2000);assert.equal(r.finish(c.token,'correct',5200),false);r.finish(next.token,'timeout',9000);assert.equal(r.done,true);
+ const r=new Round(['en','fr'],{seconds:5,windowSeconds:3,random:()=>.999});const c=r.begin(0);r.finish(c.token,'correct',4200,'bread');assert.equal(r.remaining,2000);const next=r.begin(5000);assert.equal(next.duration,2000);assert.equal(r.finish(c.token,'correct',5200),false);r.finish(next.token,'timeout',9000);assert.equal(r.done,true);
 });
 test('technical interruption restarts without changing score or budget',()=>{const r=new Round(['en']);r.begin(10);r.cancel();assert.equal(r.remaining,60000);assert.equal(r.attempts.length,0);assert.equal(r.begin(400).id,'en');});
 test('self correction accepted, partial substrings and similar spellings rejected',()=>{
@@ -88,4 +88,12 @@ test('jumped-to cards advance clockwise through visible dots, including wrap and
  r.prioritize('ja');c=r.begin(5);r.finish(c.token,'pass',6);assert.equal(r.begin(7).id,'en');r.cancel();
  r.prioritize('fr');c=r.begin(8);r.finish(c.token,'correct',9);assert.equal(r.begin(10).id,'es');
  assert.deepEqual(r.initial,['en','fr','de','es','ja']);
+});
+
+test('shared recall clock allows long answers and carries time across passes',()=>{
+ const r=new Round(['en','fr'],{seconds:120,random:()=>.999});
+ let c=r.begin(0);assert.equal(c.duration,120000);
+ r.finish(c.token,'pass',15000);assert.equal(r.remaining,105000);
+ c=r.begin(16000);assert.equal(c.duration,105000);
+ r.finish(c.token,'timeout',121000);assert(r.done);assert.equal(r.begin(122000),null);
 });

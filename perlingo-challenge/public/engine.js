@@ -15,7 +15,7 @@ export function matchesAnswer(text,accepted,language){
 }
 export function shuffle(items,random=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export class Round{
- constructor(ids,{seconds=60,windowSeconds=3,untimed=false,random=Math.random}={}){
+ constructor(ids,{seconds=60,windowSeconds=Infinity,untimed=false,random=Math.random}={}){
   this.queue=shuffle([...new Set(ids)],random);this.initial=[...this.queue];this.untimed=untimed;this.remaining=untimed?Infinity:seconds*1000;this.windowMs=untimed?Infinity:windowSeconds*1000;this.correct=[];this.attempts=[];this.serial=0;this.active=null;
  }
  begin(now){if(this.active)throw Error('Card already active');if(this.done)return null;this.active={id:this.queue[0],token:++this.serial,start:now,duration:Math.min(this.windowMs,this.remaining)};return this.active;}

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {calendar,todayET,challengeFor,archiveDays,challengeSettings,challengeRandom} from '../public/challenges.js';
+import {defaultTiming,calendar,todayET,challengeFor,archiveDays,challengeSettings,challengeRandom} from '../public/challenges.js';
 import {activeLanguages as languages,activePacks as packs} from '../public/content.js';
 import {getRecording} from '../public/recordings.js';
 import {shuffle} from '../public/engine.js';
@@ -22,7 +22,7 @@ test('demo archive has two past dates and excludes today and future',()=>{
 test('scheduled rules override every freeplay setting without mutating preferences',()=>{
  const prefs={study:180,recall:120,window:8,mode:'typed',provider:'soniox',script:'Latin',languageIds:['en'],pack:'water',layout:'compact'};
  const before=structuredClone(prefs),c=calendar[0],s=challengeSettings(prefs,c,languages);
- assert.deepEqual(prefs,before);assert.equal(s.study,120);assert.equal(s.recall,60);assert.equal(s.window,5);assert.equal(s.mode,'voice');assert.equal(s.provider,'elevenlabs');assert.equal(s.script,'All scripts');assert.equal(s.languageIds.length,33);assert.equal(s.pack,c.pack);assert.equal(s.layout,'compact');
+ assert.deepEqual(prefs,before);assert.equal(s.study,180);assert.equal(s.recall,120);assert.equal(s.window,0);assert.equal(s.mode,'voice');assert.equal(s.provider,'elevenlabs');assert.equal(s.script,'All scripts');assert.equal(s.languageIds.length,33);assert.equal(s.pack,c.pack);assert.equal(s.layout,'compact');
  assert(Object.isFrozen(c.rules));
 });
 test('each scheduled word has 33 entries and selected recordings; dates are unique',()=>{
@@ -42,4 +42,12 @@ test('all scheduled dates use the 33-language roster',()=>{
  const next=challengeSettings({},calendar.find(c=>c.date==='2026-10-22'),languages);
  assert.equal(old.languageIds.length,33);assert.equal(next.languageIds.length,33);assert.equal(next.count,33);
  assert(next.languageIds.includes('ar'));assert(!next.languageIds.includes('vi'));assert(!next.languageIds.includes('da'));
+});
+
+test('every scheduled mode shares the three-minute study and two-minute recall defaults',()=>{
+ assert.deepEqual(defaultTiming,{study:180,recall:120,window:0});
+ for(const c of calendar){
+  assert.equal(c.rulesVersion,5);
+  for(const key of Object.keys(defaultTiming))assert.equal(c.rules[key],defaultTiming[key]);
+ }
 });

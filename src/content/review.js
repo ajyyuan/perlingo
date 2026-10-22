@@ -5,7 +5,7 @@ import {validatePack} from './model.js';
 const add=(parent,tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;parent.append(node);return node;};
 const picker=document.createElement('select');picker.setAttribute('aria-label','Content pack');for(const p of packs){const option=new Option(p.id,p.id,p.id===pack.id,p.id===pack.id);picker.add(option);}picker.addEventListener('change',()=>{location.search='?pack='+encodeURIComponent(picker.value);});document.querySelector('#validation').before(picker);
 const issues=validatePack(pack);
-document.querySelector('#pack-preview').href=pack.id.startsWith('course-')?'/?pack=course':pack.id==='foundation'?'/?pack=foundation':'/';
+document.querySelector('#pack-preview').href=pack.id.startsWith('course-')?'/learning?pack=course':pack.id==='foundation'?'/learning?pack=foundation':'/learning';
 document.querySelector('#validation').textContent=issues.length?issues.join('\n'):`${pack.id} v${pack.version} · Structure valid · ${pack.entries.length} meanings / ${pack.entries.reduce((n,e)=>n+Object.keys(e.translations).length,0)} translations · Draft — no independent reviewer`;
 document.querySelector('#blockers').textContent=validatePack(pack,{release:true}).join('\n');
 const checked=Object.values(pack.lexemes).filter(l=>l.evidence).length;

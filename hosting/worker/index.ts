@@ -5,6 +5,11 @@ import type { ConnectorBinding } from "../lib/connector-contract.mjs";
 import {handleSpeechAPI} from "../../perlingo-challenge/hosted-api.mjs";
 const worker = {
   fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
+    const url = new URL(request.url);
+    if (["/", "/index.html"].includes(url.pathname)) {
+      url.pathname = "/challenge/";
+      return Response.redirect(url.href, 302);
+    }
     if(new URL(request.url).pathname.startsWith("/challenge/api/")) return handleSpeechAPI(request, env);
     let binding = ctx.props?.CONNECTORS;
     // Local preview emulates the same request-scoped capability. This branch and

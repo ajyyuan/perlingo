@@ -215,3 +215,10 @@ Publication completed October 21, 2026: **Sites version 15**, deployment `appgde
 Added tests for UTC boundaries, archive visibility, unscheduled dates, fixed-rule overrides without preference mutation, deterministic dated recall order, scheduled 50-language/audio coverage, and separation of the 491-noun candidate inventory / Sun source candidates from playable packs. Sun extraction retains the Wiktionary revision and exact sense-table scope; it is not an approved translation or audio pack. Existing two-pack content and 100 recordings are unchanged.
 
 Validation: 176 repository tests passed (46 Challenge tests). Browser checks confirmed Daily’s 50-language/2-minute study launch despite Unlimited’s Type/Latin/30-second preferences, restoration of those Unlimited preferences, and the first-day Archive empty state. Application syntax and diff whitespace checks passed. Narrow-phone layout and new live microphone accuracy were not verified in this revision.
+
+## October 22 local routing and shared-clock revision (unpublished)
+
+- `npm test`: 220 passing tests, including shared-budget carryover beyond five seconds, global expiry, and consistent 180s study / 120s recall defaults across every scheduled date. `npm run check` passes structural content validation; existing draft-content limitations remain.
+- Hosted build passed; generated assets contain `/learning/index.html`, and generated Worker configuration routes `/` and `/index.html` through the redirect handler before static assets.
+- Browser verified root → `/challenge/`, Learning → `/learning`, and return navigation with the existing account session. Unlimited study verified hidden translations (including accessible labels), individual reveal, preserved reveal state across Families/Compact, and a continuously decreasing study timer. Original study/recall/layout preferences were restored; no dated attempt was consumed.
+- No new live microphone test or production OAuth round-trip was performed. Learning production callback URLs were added and verified before release (see `docs/accounts.md`). All playable dates now share the revised rules; recorded results are retained.
