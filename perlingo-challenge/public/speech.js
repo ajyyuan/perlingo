@@ -78,25 +78,33 @@ export class ShortAudioProvider{
  constructor(name){this.name=name;}
  async prepare(language){
   if(!speechCandidates(language).includes(this.name))throw Error('Unsupported recognition language.');
-  const name=this.name,controllers=new Set();let chunks=[];
+  const name=this.name,controllers=new Set();let chunks=[],preRoll=new Uint8Array(),queued=false;
   const session={closed:false,failed:null,pending:0,uncommitted:0,onTranscript:null,onError:null,
-   push(buffer){
+   push(buffer,level){
     if(this.closed||this.failed)return;
+    // Keep 160ms before speech, not all the silence spent recalling a word.
+    // Omitted levels preserve raw-clip callers (including the comparison tool).
+    if(!this.uncommitted&&level!==undefined&&level<=.012){
+     const bytes=new Uint8Array(preRoll.length+buffer.byteLength);bytes.set(preRoll);bytes.set(new Uint8Array(buffer),preRoll.length);preRoll=bytes.slice(-5120);return;
+    }
+    if(preRoll.length){chunks.push(preRoll);this.uncommitted+=preRoll.length;preRoll=new Uint8Array();}
     if(this.uncommitted+buffer.byteLength>480000){this.failed=Error('Recognition is taking too long. Please reconnect.');this.onError?.(this.failed);return;}
     chunks.push(new Uint8Array(buffer.slice(0)));this.uncommitted+=buffer.byteLength;
     if(this.uncommitted>=384000&&!this.pending)this.commit();
    },
    commit(){
-    if(this.closed||this.failed||this.pending||!this.uncommitted)return false;
+    if(this.closed||this.failed||!this.uncommitted)return false;
+    if(this.pending){queued=true;return true;}
+    queued=false;
     const pcm=new Uint8Array(Math.max(3200,this.uncommitted));let offset=0;for(const c of chunks){pcm.set(c,offset);offset+=c.length;}chunks=[];this.uncommitted=0;this.pending++;
     const controller=new AbortController();controllers.add(controller);const timeout=setTimeout(()=>controller.abort(),14000);
     fetch(`/api/speech/transcribe?provider=${name}&language=${encodeURIComponent(language)}`,{method:'POST',headers:{'X-Perlingo-Challenge':'1','Content-Type':'application/octet-stream'},body:pcm,signal:controller.signal})
-     .then(async res=>{const data=await res.json();if(!res.ok)throw Error(data.error||'Recognition failed.');if(typeof data.text!=='string')throw Error('Invalid recognition response.');this.pending--;if(!this.closed)this.onTranscript?.({text:data.text,final:true});})
+     .then(async res=>{const data=await res.json();if(!res.ok)throw Error(data.error||'Recognition failed.');if(typeof data.text!=='string')throw Error('Invalid recognition response.');this.pending--;if(!this.closed)this.onTranscript?.({text:data.text,final:true});if(queued&&!this.closed&&!this.failed)this.commit();})
      .catch(error=>{this.pending=Math.max(0,this.pending-1);if(!this.closed){this.failed=Error(error.name==='AbortError'?'Recognition timed out. Please retry.':error.message);this.onError?.(this.failed);}})
      .finally(()=>{clearTimeout(timeout);controllers.delete(controller);});
     return true;
    },
-   close(){this.closed=true;chunks=[];this.uncommitted=0;for(const c of controllers)c.abort();controllers.clear();}
+   close(){this.closed=true;chunks=[];preRoll=new Uint8Array();queued=false;this.uncommitted=0;for(const c of controllers)c.abort();controllers.clear();}
   };return session;
  }
 }

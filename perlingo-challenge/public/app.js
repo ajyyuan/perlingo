@@ -57,7 +57,9 @@ function home(){cleanup();screen='home';
  settings=playMode==='unlimited'?structuredClone(preferences):activeChallenge?challengeSettings(preferences,activeChallenge,languages):structuredClone(preferences);
  provider=createRoutedSpeechProvider(status.routes);selected=eligible().map(l=>l.id);
  const field=(id,label,key,values)=>`<div class="field"><label for="${id}">${label}</label><select id="${id}" data-setting="${key}">${options(values,settings[key])}</select></div>`;
- app.innerHTML=`<section class="hero intro-hero"><div><p class="eyebrow"><span class="dot"></span> ONE WORD. A WORLD OF LANGUAGES.</p><h1>How far can you go?</h1><p class="subtitle">${untimed()?'Study the words, then practise at your own pace.':'Study the words, then recall each translation against the clock.'}</p></div><div class="word-stamp" aria-hidden="true">🌍</div></section>
+ const durationLabel=seconds=>seconds%60===0?`${seconds/60} ${seconds===60?'minute':'minutes'}`:`${seconds} seconds`;
+ const totalLabel=untimed()?'Your pace.':`${durationLabel(settings.study+settings.recall)}.`;
+ app.innerHTML=`<section class="intro-hero challenge-hook" aria-label="Your challenge"><p class="eyebrow">ONE WORD. HOW MANY CAN YOU REMEMBER?</p><h1><span>${selected.length} languages.</span><span class="hook-time">${totalLabel}</span></h1><div class="hook-timeline" aria-label="Round stages"><span><strong>${untimed()?'Study':durationLabel(settings.study)}</strong>${untimed()?'the words':'to learn'}</span><span class="hook-arrow" aria-hidden="true">→</span><span><strong>${untimed()?'Recall':durationLabel(settings.recall)}</strong>${untimed()?'at your pace':'to recall'}</span></div></section>
  <nav class="mode-tabs" aria-label="Challenge mode">${['daily','unlimited','archive'].map(m=>`<button data-play-mode="${m}" aria-pressed="${m===playMode}">${m[0].toUpperCase()+m.slice(1)}</button>`).join('')}</nav>
  ${playMode==='archive'&&past.length?`<div class="archive-list" role="group" aria-label="Past challenges">${past.map(c=>`<button class="archive-day" data-archive-date="${c.date}" aria-pressed="${c.date===archiveDate}"><time datetime="${c.date}">${c.date}</time><span aria-hidden="true">${played[c.date]?`${played[c.date].score??0}/${played[c.date].total??33}`:c.date===archiveDate?'✓':''}</span></button>`).join('')}</div>`:''}
  ${playMode==='unlimited'?`
@@ -68,8 +70,8 @@ function home(){cleanup();screen='home';
  ${untimed()?'':field('study-select','Study time','study',[[30,'30 seconds'],[60,'1 minute'],[120,'2 minutes'],[180,'3 minutes']])}
  ${field('recall-duration','Recall time','recall',[[0,'No time limit'],[30,'30 seconds'],[60,'1 minute'],[90,'90 seconds'],[120,'2 minutes']])}
  ${untimed()?'':field('card-duration','Per answer','window',[[3,'3 seconds'],[5,'5 seconds'],[8,'8 seconds']])}
- </div><div class="setup-bottom"><span class="notice">${!selected.length?'No languages match. Change the script or language selection.':'Translations appear when you begin.'}</span><button class="primary" id="start">Begin <span aria-hidden="true">↗</span></button></div></section>`:activeChallenge?`<section class="setup fixed-setup" aria-label="Challenge rules"><div><h2>${activeChallenge.date}</h2><p>${settings.languageIds.length} languages · All scripts · Spoken</p><p class="notice">${settings.study/60} min study · ${settings.recall}s recall · ${settings.window}s per answer</p></div>${played[activeChallenge.date]?`<div class="dated-score"><strong>${played[activeChallenge.date].score??0}<small> / ${played[activeChallenge.date].total??33}</small></strong><div class="dated-actions"><button class="primary" id="review">Review ↗</button><button class="text-button" data-replay-pack="${pack().id}">Play again in Unlimited</button></div></div>`:`<button class="primary" id="start">Begin ↗</button>`}</section>`:`<section class="setup"><p class="notice">${playMode==='archive'?'No past challenges yet.':'No word is scheduled for today yet.'} Try Unlimited.</p></section>`}
- <ol class="intro-steps"><li><span>01</span><div><strong>Study</strong><p>Tap a word to listen.</p></div></li><li><span>02</span><div><strong>Recall</strong><p>${playMode!=='unlimited'||settings.mode==='voice'?'Say':'Type'} it for each language.</p></div></li><li><span>03</span><div><strong>Try again</strong><p>Passes come back around.</p></div></li></ol>
+ </div><div class="setup-bottom"><span class="notice">${!selected.length?'No languages match. Change the script or language selection.':'Translations appear when you begin.'}</span><button class="primary" id="start">Begin <span aria-hidden="true">↗</span></button></div></section>`:activeChallenge?`<section class="setup fixed-setup" aria-label="Challenge rules"><div><h2>${activeChallenge.date}</h2><p>All scripts · Spoken</p><p class="notice">${settings.window}s per answer</p></div>${played[activeChallenge.date]?`<div class="dated-score"><strong>${played[activeChallenge.date].score??0}<small> / ${played[activeChallenge.date].total??33}</small></strong><div class="dated-actions"><button class="primary" id="review">Review ↗</button><button class="text-button" data-replay-pack="${pack().id}">Play again in Unlimited</button></div></div>`:`<button class="primary" id="start">Begin ↗</button>`}</section>`:`<section class="setup"><p class="notice">${playMode==='archive'?'No past challenges yet.':'No word is scheduled for today yet.'} Try Unlimited.</p></section>`}
+
  <div class="footer-line intro-footer"><a href="${learningUrl}">← Learning</a><a href="/tree.html">Explore the ${languages.length} languages ↗</a></div>`;
  $('#language-pool')?.addEventListener('change',e=>{if(e.target.value==='custom'){$('#choose-languages').click();return;}settings.languageIds=[...languagePools[e.target.value]];settings.script='All scripts';savePreferences();home();$('#language-pool').focus();});
  document.querySelectorAll('[data-setting]').forEach(el=>el.onchange=()=>{const key=el.dataset.setting,id=el.id;settings[key]=['study','recall','window'].includes(key)?Number(el.value):el.value;savePreferences();home();document.getElementById(id)?.focus();});
@@ -148,7 +150,7 @@ async function nextCard(generation=run){
  if(session){
   const token=card.token,entry=getEntry(pack().id,card.id);
   const competitors=packs.filter(p=>p.id!==pack().id).flatMap(p=>p.entries.find(e=>e.id===card.id)?.accepted||[]);
-  captureStart=mic.context.currentTime;mic.reset(token);session.push(new ArrayBuffer(6400));
+  captureStart=mic.context.currentTime;mic.reset(token);session.push(new ArrayBuffer(6400),0);
   session.onError=e=>{if(card?.token===token)ready(e.message,true);};
   session.onTranscript=r=>{
    if(card?.token!==token||generation!==run)return;
@@ -169,9 +171,9 @@ async function nextCard(generation=run){
    const from=Math.max(0,Math.ceil((captureStart-startTime)*16000));
    const to=Math.min(buffer.byteLength/2,Math.floor((captureStart+card.duration/1000-startTime)*16000));
    if(to<=from)return;
-   const clipped=buffer.slice(from*2,to*2);captureSamples+=clipped.byteLength/2;session.push(clipped);
+   const clipped=buffer.slice(from*2,to*2);captureSamples+=clipped.byteLength/2;session.push(clipped,level);
    if(level>.012){speaking=true;lastSpeech=now;}
-   if(speaking&&now-lastSpeech>=320){if(session.commit()){speaking=false;}}
+   if(speaking&&now-lastSpeech>=240){if(session.commit()){speaking=false;}}
   };
  }
  warmNext();tick();

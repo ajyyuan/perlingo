@@ -80,3 +80,22 @@ main:has(.intro-hero){padding-top:42px}.intro-hero{margin-bottom:30px}.intro-her
 .account-providers{display:flex;flex-wrap:wrap;gap:12px}.provider-signin{padding:0;border:0;background:transparent}.provider-signin img{display:block;height:40px;width:auto}
 
 .language-navigation{display:flex;align-items:center;gap:8px;flex:1;min-width:0}.language-navigation .dots{gap:0;max-width:440px}.language-dot{display:grid;place-items:center;width:24px;height:28px;padding:0;border:0;background:transparent;border-radius:5px;flex-shrink:0}.language-dot span{width:7px;height:7px;border-radius:50%;background:#dce4d2}.language-dot.done{opacity:1}.language-dot.done span{background:#719356}.language-dot[aria-current="true"] span{background:var(--green);outline:2px solid var(--green);outline-offset:3px}.language-dot:not(:disabled):hover{background:#e4eccf}.language-arrow{background:transparent;border:1px solid var(--line);border-radius:8px;min-width:36px;height:40px;font-size:20px;padding:0}.recall-bottom{gap:16px}@media(max-width:600px){.recall-bottom{flex-wrap:wrap}.language-navigation{flex-basis:100%}.language-navigation .dots{max-width:none;flex:1}.recall-bottom>.pass{margin-left:auto}}
+
+/* A short, number-led invitation; round settings supply the actual figures. */
+main:has(.challenge-hook){max-width:1000px;padding-top:42px}
+.challenge-hook{position:relative;padding:10px 0 32px;margin-bottom:22px}
+.challenge-hook .eyebrow{font-size:10px;letter-spacing:2px;margin:0 0 22px;color:#607666}
+.challenge-hook h1{font-family:Manrope,system-ui,sans-serif;font-size:clamp(44px,7.8vw,84px);font-weight:800;letter-spacing:-.065em;line-height:1.08;max-width:none;margin:0}
+.challenge-hook h1>span{display:block}
+.challenge-hook .hook-time{color:#7c9062}
+.hook-timeline{display:flex;align-items:center;gap:24px;margin-top:28px;font-size:13px;color:#6a796d}
+.hook-timeline>span:not(.hook-arrow){display:flex;align-items:baseline;gap:7px}
+.hook-timeline strong{font-size:14px;font-weight:600;color:#294c3b}
+.hook-arrow{color:#94a287;font-size:20px}
+main:has(.challenge-hook) .fixed-setup{border-left:1px solid #dce3d6;padding:24px 28px}
+main:has(.challenge-hook) .fixed-setup h2{font-size:21px;margin-bottom:9px}
+main:has(.challenge-hook) .fixed-setup p{display:inline;font-size:12px;color:#6a796d}
+main:has(.challenge-hook) .fixed-setup p+p:before{content:' · ';white-space:pre}
+main:has(.challenge-hook) .intro-footer{margin-top:28px}
+@media(max-width:600px){main:has(.challenge-hook){padding-top:24px}.challenge-hook{padding:8px 0 24px;margin-bottom:14px}.challenge-hook .eyebrow{font-size:9px;letter-spacing:1.35px;margin-bottom:20px}.challenge-hook h1{font-size:clamp(42px,11vw,64px)}.hook-timeline{gap:16px;margin-top:22px;font-size:12px}.hook-timeline strong{font-size:12px}.hook-timeline>span:not(.hook-arrow){gap:5px}main:has(.challenge-hook) .fixed-setup{padding:20px}}
+@media(max-width:360px){.hook-timeline{gap:12px}.hook-timeline>span:not(.hook-arrow){display:grid;gap:2px}}

@@ -59,3 +59,32 @@ test('specialist routes are language-restricted, server-authenticated and never 
  }});assert.deepEqual(await ar.json(),{text:'قمر',final:true});
  const fail=await handleSpeechAPI(request('munsit','ar'),keys,{upstream:async()=>Response.json({statusCode:401,message:'private-munsit'})});assert.equal(fail.status,502);assert(!(await fail.text()).includes('private-munsit'));
 });
+
+test('idle microphone silence stays bounded and is not uploaded as an answer',async t=>{
+ const bodies=[];t.mock.method(globalThis,'fetch',async(_url,options)=>{bodies.push(options.body);return Response.json({text:''});});
+ const session=await new ShortAudioProvider('azure').prepare('en');
+ for(let i=0;i<200;i++)session.push(new ArrayBuffer(2560),0);
+ assert.equal(session.uncommitted,0);assert.equal(session.commit(),false);assert.equal(bodies.length,0);
+ const voice=new Int16Array(1280).fill(2000);
+ session.push(voice.buffer,.06);session.push(new ArrayBuffer(2560),0);assert(session.commit());
+ await new Promise(r=>setTimeout(r,0));
+ assert.equal(bodies[0].byteLength,5120+2560+2560);
+ assert.equal(new Int16Array(bodies[0].buffer)[2560],2000);session.close();
+});
+
+test('a finished retry uploads immediately after the preceding response, without another microphone frame',async t=>{
+ const calls=[];t.mock.method(globalThis,'fetch',(_url,options)=>new Promise(resolve=>calls.push({resolve,options})));
+ const session=await new ShortAudioProvider('munsit').prepare('ar');const heard=[];session.onTranscript=r=>heard.push(r.text);
+ session.push(new ArrayBuffer(6400));assert(session.commit());
+ session.push(new ArrayBuffer(9600));assert(session.commit());assert.equal(calls.length,1);
+ calls[0].resolve(Response.json({text:'first'}));await new Promise(r=>setTimeout(r,0));
+ assert.equal(calls.length,2);assert.equal(calls[1].options.body.byteLength,9600);assert.equal(session.pending,1);
+ calls[1].resolve(Response.json({text:'retry'}));await new Promise(r=>setTimeout(r,0));assert.deepEqual(heard,['first','retry']);session.close();
+});
+
+test('accepting a previous result cancels queued retries rather than sending them for the next card',async t=>{
+ const calls=[];t.mock.method(globalThis,'fetch',(_url,options)=>new Promise(resolve=>calls.push({resolve,options})));
+ const session=await new ShortAudioProvider('azure').prepare('en');session.onTranscript=()=>session.close();
+ session.push(new ArrayBuffer(6400));session.commit();session.push(new ArrayBuffer(6400));session.commit();
+ calls[0].resolve(Response.json({text:'bread'}));await new Promise(r=>setTimeout(r,0));assert.equal(calls.length,1);assert.equal(session.closed,true);
+});
