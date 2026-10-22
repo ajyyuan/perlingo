@@ -216,7 +216,7 @@ Added tests for UTC boundaries, archive visibility, unscheduled dates, fixed-rul
 
 Validation: 176 repository tests passed (46 Challenge tests). Browser checks confirmed Daily’s 50-language/2-minute study launch despite Unlimited’s Type/Latin/30-second preferences, restoration of those Unlimited preferences, and the first-day Archive empty state. Application syntax and diff whitespace checks passed. Narrow-phone layout and new live microphone accuracy were not verified in this revision.
 
-## October 22 local routing and shared-clock revision (unpublished)
+## October 22 routing and shared-clock revision (published as version 22)
 
 - `npm test`: 220 passing tests, including shared-budget carryover beyond five seconds, global expiry, and consistent 180s study / 120s recall defaults across every scheduled date. `npm run check` passes structural content validation; existing draft-content limitations remain.
 - Hosted build passed; generated assets contain `/learning/index.html`, and generated Worker configuration routes `/` and `/index.html` through the redirect handler before static assets.
