@@ -1,4 +1,4 @@
-import {languages,getEntry} from './content.js';
+import {activeLanguages as languages,getEntry} from './content.js';
 import {createTree} from './tree-model.js';
 import {radialLayout,pronunciationLayout,forestLayout} from './tree-layout.js';
 import {RecordingPlayer} from './recordings.js';

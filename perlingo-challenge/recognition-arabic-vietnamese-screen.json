@@ -1,0 +1,1180 @@
+{
+  "date": "2026-10-22T02:05:37.948Z",
+  "method": "Cached generated study audio, identical 16kHz PCM, 200ms leading/600ms trailing silence. One commit after clip. Explicit language, no target-word hints, game speech matcher. Synthetic intelligibility screen, NOT learner-accent accuracy or browser endpointing. Non-target pack matches are limited negatives; synonyms need interpretation.",
+  "plannedCases": 26,
+  "completedCases": 26,
+  "rows": [
+    {
+      "language": "ar",
+      "pack": "bread",
+      "word": "خبز",
+      "sourceSha256": "5ce8096375407763375699cc261c2e4fa3c5f84750c09b02b7f3f5bc9cc2fff1",
+      "audioSha256": "c885d7182ff07def96e4a820491b37bdc3ba4d7d6fe5a03dac8b5231f2ddb812",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 1,
+          "text": "خبز",
+          "accepted": true,
+          "afterClipMs": 688,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "خبز.",
+          "accepted": true,
+          "afterClipMs": 738,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 480,
+          "text": "خبز.",
+          "accepted": true,
+          "afterClipMs": 186,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 374,
+          "text": "خبز.",
+          "accepted": true,
+          "afterClipMs": 95,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "water",
+      "word": "ماء",
+      "sourceSha256": "661ad373d193b14a89ae2a6c0cba0dfb58d6d9e52cca3aa102afdc086ec0315f",
+      "audioSha256": "559bc5466cf5f5205b207f1f43343163b78d59b26ff239cfe0c60cc12b852891",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 1,
+          "text": "ماء",
+          "accepted": true,
+          "afterClipMs": 707,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "ماء.",
+          "accepted": true,
+          "afterClipMs": 573,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 490,
+          "text": "ماء.",
+          "accepted": true,
+          "afterClipMs": 179,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 743,
+          "text": "ماء.",
+          "accepted": true,
+          "afterClipMs": 66,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "sun",
+      "word": "شمس",
+      "sourceSha256": "98d3fb04fb1f687a9d01c2d7a87f3df6d00b06e16aec3fa55e43eb2040482e67",
+      "audioSha256": "a039a48edd3aea2acc4aeae95437215004d4fb93a752c4baba356eb9791cec91",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "شمس",
+          "accepted": true,
+          "afterClipMs": 502,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "شمس.",
+          "accepted": true,
+          "afterClipMs": 467,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 388,
+          "text": "شمس.",
+          "accepted": true,
+          "afterClipMs": 149,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 387,
+          "text": "شمس.",
+          "accepted": true,
+          "afterClipMs": 47,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "moon",
+      "word": "قمر",
+      "sourceSha256": "3b2f395834e1d2211a025070443ee35596ef6628a76f0bdff66d37f175f1149d",
+      "audioSha256": "2955ef550a827074e857e0b9fbcf5ed7ab6d7579e11802bb0e7991b0fed182be",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "قمر",
+          "accepted": true,
+          "afterClipMs": 520,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "قمر.",
+          "accepted": true,
+          "afterClipMs": 420,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 309,
+          "text": "قمر.",
+          "accepted": true,
+          "afterClipMs": 147,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 314,
+          "text": "قمر.",
+          "accepted": true,
+          "afterClipMs": 77,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "star",
+      "word": "نجم",
+      "sourceSha256": "9a1e33cf8fd1acf1a760b8bebf39f40dcaceaef6bc6bd282955e90b5b23e0b8e",
+      "audioSha256": "dcbe01cd7f82498f741e1ded7556a7c41a5c136854cd19a55f39cd3a4ba8093f",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 1,
+          "text": "نجم",
+          "accepted": true,
+          "afterClipMs": 454,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "نجم.",
+          "accepted": true,
+          "afterClipMs": 453,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 439,
+          "text": "نجم.",
+          "accepted": true,
+          "afterClipMs": 149,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 268,
+          "text": "نجم.",
+          "accepted": true,
+          "afterClipMs": 46,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "tree",
+      "word": "شجرة",
+      "sourceSha256": "ce789fc46c39aa9b0cb026127b712464461cdb888c8f14abf566a658edfce52f",
+      "audioSha256": "ceed9dcd5c70724e4efcc84720a03a45849668317f37370a505b027b97773a9c",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "شجره",
+          "accepted": false,
+          "afterClipMs": 484,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "شجرة.",
+          "accepted": true,
+          "afterClipMs": 365,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 317,
+          "text": "شجرة.",
+          "accepted": true,
+          "afterClipMs": 146,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 168,
+          "text": "شجرة.",
+          "accepted": true,
+          "afterClipMs": 44,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "apple",
+      "word": "تفاحة",
+      "sourceSha256": "6a2555ef40821bf1d7ffc8560e76ea1ab74c51c59664661954dfee3bdf33252f",
+      "audioSha256": "9a7cb25b70bc60af0bf484b99fd8f1e942dcffe83e431f259e20f97303e86f6c",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "تفاحه",
+          "accepted": true,
+          "afterClipMs": 505,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "تفاحة.",
+          "accepted": true,
+          "afterClipMs": 486,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 317,
+          "text": "تفاحة.",
+          "accepted": true,
+          "afterClipMs": 142,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 143,
+          "text": "تفاحة.",
+          "accepted": true,
+          "afterClipMs": 38,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "cat",
+      "word": "قط",
+      "sourceSha256": "f4779665791649fff71f9f8a7fba3a1c384856b3807b42238b9010d3a7601313",
+      "audioSha256": "26200a6607a1c7af552d883581ac017cd233db13ab65e42a33ca7cd148e75e5c",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 466,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "قط.",
+          "accepted": true,
+          "afterClipMs": 416,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 340,
+          "text": "قط.",
+          "accepted": true,
+          "afterClipMs": 148,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 243,
+          "text": "قط.",
+          "accepted": true,
+          "afterClipMs": 45,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "house",
+      "word": "بيت",
+      "sourceSha256": "845be5d51e1d7936a4836da7a715a1b7b37d5051923325ce5c781a8809ddd095",
+      "audioSha256": "3f823bd9b3d34d16c176040f61ef9ed468412c0f360ba26702d301e7bc741056",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "بيت",
+          "accepted": true,
+          "afterClipMs": 442,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "بيت.",
+          "accepted": true,
+          "afterClipMs": 442,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 383,
+          "text": "بيت.",
+          "accepted": true,
+          "afterClipMs": 136,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 256,
+          "text": "بيت.",
+          "accepted": true,
+          "afterClipMs": 32,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "dog",
+      "word": "كلب",
+      "sourceSha256": "e611cfde5d084effccc1855e274463ae46cc33c536b425fc5875811ffe3302ba",
+      "audioSha256": "4005616c59cf2c92ecdf4e6205e5db1ee9fdee91b4d686271bbd834ea8455349",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 1,
+          "text": "كلب",
+          "accepted": true,
+          "afterClipMs": 525,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "كلب؟",
+          "accepted": true,
+          "afterClipMs": 401,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 479,
+          "text": "كلب.",
+          "accepted": true,
+          "afterClipMs": 148,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 285,
+          "text": "كلب.",
+          "accepted": true,
+          "afterClipMs": 62,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "book",
+      "word": "كتاب",
+      "sourceSha256": "4990c66ae3c40484aa5ae1a14e83c92b450c64a6e6c78c107291f41603b51710",
+      "audioSha256": "48f7ec81483911549587ebf24b4de926e78d4077c51be0034eb1d6c6368e2a24",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "كتاب",
+          "accepted": true,
+          "afterClipMs": 513,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "كتاب.",
+          "accepted": true,
+          "afterClipMs": 480,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 295,
+          "text": "كتاب.",
+          "accepted": true,
+          "afterClipMs": 124,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 193,
+          "text": "كتاب.",
+          "accepted": true,
+          "afterClipMs": 34,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "milk",
+      "word": "حليب",
+      "sourceSha256": "dc27dc3e5e181d3e40ee53793df77e4511a38c0b2c13a176c807fc69b63479b1",
+      "audioSha256": "4b2137979cd8edd118c5644e3acc05572b2dbd2c3178c284c6339b7336d7eb90",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "حليب",
+          "accepted": true,
+          "afterClipMs": 481,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "حليب؟",
+          "accepted": true,
+          "afterClipMs": 485,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 473,
+          "text": "حليب.",
+          "accepted": true,
+          "afterClipMs": 174,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 334,
+          "text": "حليب.",
+          "accepted": true,
+          "afterClipMs": 45,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "bread",
+      "word": "bánh mì",
+      "sourceSha256": "055339cd65af6ed9c8374c50cffe9becf0c4fc6579cf7ce2d00df7da8c56d064",
+      "audioSha256": "d3fe09950e49a7ce27056216310602310589c45a268db082ca0d70f742647166",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "bánh mì",
+          "accepted": true,
+          "afterClipMs": 611,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Bánh mì.",
+          "accepted": true,
+          "afterClipMs": 421,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 390,
+          "text": "Bánh mì.",
+          "accepted": true,
+          "afterClipMs": 189,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 255,
+          "text": "Bánh mì.",
+          "accepted": true,
+          "afterClipMs": 115,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ar",
+      "pack": "bread",
+      "silence": true,
+      "word": "خبز",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 590,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 450,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 298,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 248,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 160,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 92,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "water",
+      "word": "nước",
+      "sourceSha256": "cd36e0b601fb0e1b389eea1624359f3f1f9906cb1432dd31203227ca83e2bcac",
+      "audioSha256": "93bec345eff828954c3fc63497ec22836cc5961f1a512bbe5766319d825703ad",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "nước",
+          "accepted": true,
+          "afterClipMs": 508,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Nước",
+          "accepted": true,
+          "afterClipMs": 449,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 307,
+          "text": "Nước.",
+          "accepted": true,
+          "afterClipMs": 182,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 165,
+          "text": "Nước.",
+          "accepted": true,
+          "afterClipMs": 115,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "sun",
+      "word": "mặt trời",
+      "sourceSha256": "6bdcc1ddc60e315c840e4f6212b87600e3029a36507004f1bfe8c0fe11aa47c7",
+      "audioSha256": "94e873213887a1efac63df32f5342dae90115811577414ee615d8de5638f3923",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "mặt trời",
+          "accepted": true,
+          "afterClipMs": 556,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Mặt trời.",
+          "accepted": true,
+          "afterClipMs": 396,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 354,
+          "text": "Mặt trời.",
+          "accepted": true,
+          "afterClipMs": 136,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 292,
+          "text": "Mặt trời.",
+          "accepted": true,
+          "afterClipMs": 78,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "moon",
+      "word": "mặt trăng",
+      "sourceSha256": "ac19de6abd50a8791a042d73195ad06e15ee2bb586356f622e09ed0953cb5898",
+      "audioSha256": "25d1e8bb72f7f5384a49889094f74e5ddd3716ff444ac60fb9a401c5a342001c",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "Mặt Trăng",
+          "accepted": true,
+          "afterClipMs": 541,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Mặt trăng.",
+          "accepted": true,
+          "afterClipMs": 392,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 300,
+          "text": "Mặt trăng.",
+          "accepted": true,
+          "afterClipMs": 181,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 271,
+          "text": "Mặt trăng.",
+          "accepted": true,
+          "afterClipMs": 50,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "star",
+      "word": "sao",
+      "sourceSha256": "ad7380e4041c2850e0bc2cd004abc18222faff95c723107ac28f18d398e0a712",
+      "audioSha256": "edf49f3704395a205cad0c40e6228fa0a30ccc720ec5e18043f5f40c774a79b8",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 1,
+          "text": "sao",
+          "accepted": true,
+          "afterClipMs": 670,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "Sao?",
+          "accepted": true,
+          "afterClipMs": 685,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 309,
+          "text": "Sao?",
+          "accepted": true,
+          "afterClipMs": 182,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 293,
+          "text": "Sao.",
+          "accepted": true,
+          "afterClipMs": 148,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "tree",
+      "word": "cây",
+      "sourceSha256": "11e1f43ca55baff8a2755b34754f9da77a9d2e52a39cec63058d43214f293eda",
+      "audioSha256": "93400a28081c4a0af7dfe4657126219f2e33d6a91f01b98206a672b2cc97615e",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "cây",
+          "accepted": true,
+          "afterClipMs": 511,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Cây.",
+          "accepted": true,
+          "afterClipMs": 458,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 314,
+          "text": "Cây.",
+          "accepted": true,
+          "afterClipMs": 141,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 174,
+          "text": "Cây.",
+          "accepted": true,
+          "afterClipMs": 125,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "apple",
+      "word": "táo",
+      "sourceSha256": "e9b87731037eb5eae86c0283946d85393455e08c621d444e8a9c089d83da1a12",
+      "audioSha256": "9f518ac6446c4043efaa9148ad128be25f0183e4202e1096c16fa01cf00b4d90",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "táo",
+          "accepted": true,
+          "afterClipMs": 464,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Táo.",
+          "accepted": true,
+          "afterClipMs": 354,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 330,
+          "text": "Táo.",
+          "accepted": true,
+          "afterClipMs": 179,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 268,
+          "text": "Táo.",
+          "accepted": true,
+          "afterClipMs": 48,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "cat",
+      "word": "mèo",
+      "sourceSha256": "51d4d28d56f445facb835c77baf559e44fdee0c3e070060f84a8341974d900d8",
+      "audioSha256": "3c7d1d31a4c4cdd7ee2402771ddc368575660b3c6eeed0c829eeda2aaa4e858c",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "mèo",
+          "accepted": true,
+          "afterClipMs": 527,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Mèo.",
+          "accepted": true,
+          "afterClipMs": 331,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 294,
+          "text": "Meo.",
+          "accepted": true,
+          "afterClipMs": 189,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 264,
+          "text": "Mèo.",
+          "accepted": true,
+          "afterClipMs": 73,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "dog",
+      "word": "chó",
+      "sourceSha256": "f71bfbfc4a8a7be04f3bb7d27e691a84a87ec510372003d6049682eac371553f",
+      "audioSha256": "b84e7632605a0114b0d831439b283f5a437f1abaeb7cdf629c37439ef6aa66ae",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "chó",
+          "accepted": true,
+          "afterClipMs": 619,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Chó.",
+          "accepted": true,
+          "afterClipMs": 446,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 403,
+          "text": "Chó.",
+          "accepted": true,
+          "afterClipMs": 284,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 280,
+          "text": "Chó.",
+          "accepted": true,
+          "afterClipMs": 128,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "house",
+      "word": "nhà",
+      "sourceSha256": "1357902d65b839a46a6043ea7162fd7eaadb8cb930400dfbcf6fca495985768c",
+      "audioSha256": "1994f255eab8307f80feff18bd7f0001b5da71dc594edee8ed0384003edeaf15",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "nhà",
+          "accepted": true,
+          "afterClipMs": 466,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Nhà.",
+          "accepted": true,
+          "afterClipMs": 376,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 391,
+          "text": "Nhà.",
+          "accepted": true,
+          "afterClipMs": 228,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 297,
+          "text": "Nhà.",
+          "accepted": true,
+          "afterClipMs": 96,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "book",
+      "word": "sách",
+      "sourceSha256": "2115dd0c560260b9754828818287db2b0fa761698a92dd444a048a5445918115",
+      "audioSha256": "ee709c282b5a5d4156a806712493035338365f73b3d1e9fbb6c7ebe2163fa1c3",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "sách",
+          "accepted": true,
+          "afterClipMs": 580,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Sách.",
+          "accepted": true,
+          "afterClipMs": 410,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 373,
+          "text": "Sách.",
+          "accepted": true,
+          "afterClipMs": 223,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 303,
+          "text": "Sách.",
+          "accepted": true,
+          "afterClipMs": 74,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "milk",
+      "word": "sữa",
+      "sourceSha256": "edbf66bd3bf00b4d1f55db426032b2944fc9c081adf8382b6eb5bed026b9bf43",
+      "audioSha256": "176d22b1d421f47b192c52027b83f6e02860cf5a4f0a1621b7b3df3647b0aacc",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "sữa",
+          "accepted": true,
+          "afterClipMs": 474,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Sữa.",
+          "accepted": true,
+          "afterClipMs": 375,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 449,
+          "text": "Sửa.",
+          "accepted": true,
+          "afterClipMs": 184,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 327,
+          "text": "Sữa.",
+          "accepted": true,
+          "afterClipMs": 32,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "vi",
+      "pack": "bread",
+      "silence": true,
+      "word": "bánh mì",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "google",
+          "model": "latest_short",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 489,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 407,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 365,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 190,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 357,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 59,
+          "otherPacksAccepted": []
+        }
+      ]
+    }
+  ]
+}

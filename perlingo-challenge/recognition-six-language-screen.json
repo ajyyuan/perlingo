@@ -1,0 +1,3290 @@
+{
+  "date": "2026-10-22T01:06:55.024Z",
+  "method": "Cached generated study audio, identical 16kHz PCM, 200ms leading/600ms trailing silence. One commit after clip. Explicit language, no target-word hints, game speech matcher. Synthetic intelligibility screen, NOT learner-accent accuracy or browser endpointing. Non-target pack matches are limited negatives; synonyms need interpretation.",
+  "plannedCases": 78,
+  "completedCases": 78,
+  "rows": [
+    {
+      "language": "ta",
+      "pack": "bread",
+      "word": "ரொட்டி",
+      "sourceSha256": "a11144103ef19e6ca38c6106170bc2f6b33a60491b99e66977082c9b56697b5d",
+      "audioSha256": "e9d563906ffec8efea819dce6a208d765fe2af5ebabb4f4bbab4ce49eae7a7c4",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 2,
+          "text": "ரொட்டி",
+          "accepted": true,
+          "afterClipMs": 1371,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 2,
+          "text": "ரொட்டி.",
+          "accepted": true,
+          "afterClipMs": 482,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 608,
+          "text": "ரொட்டி.",
+          "accepted": true,
+          "afterClipMs": 173,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 415,
+          "text": "ரொட்டி.",
+          "accepted": true,
+          "afterClipMs": 42,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "water",
+      "word": "தண்ணீர்",
+      "sourceSha256": "4806149de17f6946cafa7a30ff502b9127f8421d2b4f68f5b7a65663075eae53",
+      "audioSha256": "067171929cd1545980efde5a2b37cadc4fe1f7faf974d94c26f1a95474d8fead",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 1,
+          "text": "தண்ணீர்",
+          "accepted": true,
+          "afterClipMs": 1519,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "தண்ணீர்.",
+          "accepted": true,
+          "afterClipMs": 607,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 479,
+          "text": "தன்னீர்.",
+          "accepted": false,
+          "afterClipMs": 148,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 386,
+          "text": "தண்ணீர்.",
+          "accepted": true,
+          "afterClipMs": 40,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "sun",
+      "word": "சூரியன்",
+      "sourceSha256": "a941a1c968ea03a97ef5b36141adc8958503dd19f01a7967defdb2bc67ceb2e3",
+      "audioSha256": "34ce8938072fe85e133863d9977f5124d7f90a0181bb33f0348221aa7acf682f",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "சூரியன்",
+          "accepted": true,
+          "afterClipMs": 383,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "சூரியன்.",
+          "accepted": true,
+          "afterClipMs": 339,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 305,
+          "text": "சூரியன்.",
+          "accepted": true,
+          "afterClipMs": 242,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 173,
+          "text": "சூரியன்.",
+          "accepted": true,
+          "afterClipMs": 44,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "moon",
+      "word": "நிலா",
+      "sourceSha256": "c9756bba0661cfd6276424a8d29763437630fbd7939dfaf55daf6bed90643cb4",
+      "audioSha256": "d6547899d4d8d6c9bea2d121bf3f4af4a133dc8f4ff05a7e8c60c43fd7701a92",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "நீலா",
+          "accepted": false,
+          "afterClipMs": 344,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "நீலா.",
+          "accepted": false,
+          "afterClipMs": 447,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 297,
+          "text": "நீலா.",
+          "accepted": false,
+          "afterClipMs": 184,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 246,
+          "text": "நிலா.",
+          "accepted": true,
+          "afterClipMs": 59,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "star",
+      "word": "நட்சத்திரம்",
+      "sourceSha256": "33ac4a5172c5dac39f69ab2f48bdec7915caaeface0b512d1831f930d44b5f77",
+      "audioSha256": "8ffdf3442f4608a700f5e22e4d1cb53148ab036e47ab391dd498678dc9a64f7c",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "நட்சத்திரம்.",
+          "accepted": true,
+          "afterClipMs": 434,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "நட்சத்திரம்.",
+          "accepted": true,
+          "afterClipMs": 401,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 362,
+          "text": "நட்சத்திரம்.",
+          "accepted": true,
+          "afterClipMs": 245,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 169,
+          "text": "நட்சத்திரம்.",
+          "accepted": true,
+          "afterClipMs": 118,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "tree",
+      "word": "மரம்",
+      "sourceSha256": "b34d8ed28172867c882c422d90e2f1318ae6d4a916649b936dc67a7f217d3ba0",
+      "audioSha256": "a84b4054e4727df88d3383188db426c483ebccbc8dcfc39c574d5b7a41a0eb45",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "மரம்",
+          "accepted": true,
+          "afterClipMs": 348,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "மரம்.",
+          "accepted": true,
+          "afterClipMs": 335,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 308,
+          "text": "மரம்.",
+          "accepted": true,
+          "afterClipMs": 170,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 174,
+          "text": "மரம்.",
+          "accepted": true,
+          "afterClipMs": 39,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "apple",
+      "word": "ஆப்பிள்",
+      "sourceSha256": "b9e89b3b35009176a9b28c81459b75a4e928b28ea34f8782de036163c7335d17",
+      "audioSha256": "a0afe567186e45017d4914d00e0040644e169a3a95d7c13e985d3dd2cca3a574",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ஆப்பிள்",
+          "accepted": true,
+          "afterClipMs": 343,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ஆப்பிள்.",
+          "accepted": true,
+          "afterClipMs": 321,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 397,
+          "text": "Apple.",
+          "accepted": false,
+          "afterClipMs": 449,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 241,
+          "text": "ஆப்பிள்.",
+          "accepted": true,
+          "afterClipMs": 52,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "cat",
+      "word": "பூனை",
+      "sourceSha256": "630023b8cfe5f2379cc382873f3c9c3e3c083bcc5609363d4b8cf1f62f774ac7",
+      "audioSha256": "75232768c09ffa9dbec6670e46a46a456dec99127545631c06bf091058521763",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "போனை",
+          "accepted": false,
+          "afterClipMs": 370,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "பூனை.",
+          "accepted": true,
+          "afterClipMs": 332,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 337,
+          "text": "4.",
+          "accepted": false,
+          "afterClipMs": 369,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 178,
+          "text": "பூனை.",
+          "accepted": true,
+          "afterClipMs": 45,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "dog",
+      "word": "நாய்",
+      "sourceSha256": "cd00061e54371f360ba3760cba7f07c28b930fe716a273e54dbff19c421f85c8",
+      "audioSha256": "0406cf3ec079fa2575410490121fe096cc5b88f46ecf628091819dddb687d88f",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "நாய்",
+          "accepted": true,
+          "afterClipMs": 418,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "நாய்.",
+          "accepted": true,
+          "afterClipMs": 395,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 359,
+          "text": "Night.",
+          "accepted": false,
+          "afterClipMs": 234,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 191,
+          "text": "நாய்.",
+          "accepted": true,
+          "afterClipMs": 118,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "house",
+      "word": "வீடு",
+      "sourceSha256": "9ddd0e8f78eaf8837ca5eb1a2d54eb4c4f9846322094b2eabc146bd95a026ef3",
+      "audioSha256": "db6453a473b5651b0375c2f533e6ecc893ec40b0423c3b52961577bbfecee3ce",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "வீடு",
+          "accepted": true,
+          "afterClipMs": 377,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "வீடு.",
+          "accepted": true,
+          "afterClipMs": 318,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 368,
+          "text": "வீடு.",
+          "accepted": true,
+          "afterClipMs": 124,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 224,
+          "text": "வீடு.",
+          "accepted": true,
+          "afterClipMs": 40,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "book",
+      "word": "புத்தகம்",
+      "sourceSha256": "5d8e1dfb302002cb6415ecc3efd35d7820901778c2cb49a673aad44ddf8f4d15",
+      "audioSha256": "dabce69f48c989da563977713f8a80880aa41176b35981d0ee0499ba064c066f",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "புத்தகம்",
+          "accepted": true,
+          "afterClipMs": 340,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "புத்தகம்.",
+          "accepted": true,
+          "afterClipMs": 340,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 369,
+          "text": "புத்தகம்.",
+          "accepted": true,
+          "afterClipMs": 163,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 222,
+          "text": "புத்தகம்.",
+          "accepted": true,
+          "afterClipMs": 43,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "milk",
+      "word": "பால்",
+      "sourceSha256": "f01cc14ac1e7a17fc6bb97d0aac2061a5d029ea2f5720df9d784d809e34db24f",
+      "audioSha256": "d95d7cd5fb604b51533203c6a3ad87d377fb86a5ba887205ddafe9c398a8056b",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "பால்",
+          "accepted": true,
+          "afterClipMs": 333,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "பால்.",
+          "accepted": true,
+          "afterClipMs": 331,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 349,
+          "text": "பால்.",
+          "accepted": true,
+          "afterClipMs": 181,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 250,
+          "text": "பால்.",
+          "accepted": true,
+          "afterClipMs": 38,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ta",
+      "pack": "bread",
+      "silence": true,
+      "word": "ரொட்டி",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 352,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 399,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 352,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 139,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 182,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 47,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "bread",
+      "word": "రొట్టె",
+      "sourceSha256": "b8954ea149ed570954f73366c04a4eaadb42b1fc256b65f865d1dce51919861c",
+      "audioSha256": "237b36119e688da1ebc775ae65eef8af5e9c864e8ec5e62219933f012c88a8a6",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ప్రొట్టే",
+          "accepted": false,
+          "afterClipMs": 383,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "రొట్టె.",
+          "accepted": true,
+          "afterClipMs": 838,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 309,
+          "text": "ప్రొట్టే ప్రొట్టే.",
+          "accepted": false,
+          "afterClipMs": 191,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 234,
+          "text": "రొట్టె.",
+          "accepted": true,
+          "afterClipMs": 36,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "water",
+      "word": "నీరు",
+      "sourceSha256": "6e59b90bb033a4e5a7bad1617b7d5590fdbfa189a5893a57a7da27eddef42e9d",
+      "audioSha256": "6102d72024b4ce116c8b6b4a91db79518ae4010d29cbc9c130918878fae30d64",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "నీరు",
+          "accepted": true,
+          "afterClipMs": 363,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "నీరు.",
+          "accepted": true,
+          "afterClipMs": 848,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 319,
+          "text": "నీరు.",
+          "accepted": true,
+          "afterClipMs": 130,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 165,
+          "text": "నీరు.",
+          "accepted": true,
+          "afterClipMs": 47,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "sun",
+      "word": "సూర్యుడు",
+      "sourceSha256": "534b272df0b6af11ef9f67daffc992c419f0cba3ea4399223ac38e0bc042ceeb",
+      "audioSha256": "c61d100ccab12921200e6963ad818856f3f0b6713853a4ab4e4bd4eb3f6a6723",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "సూర్యుడు.",
+          "accepted": true,
+          "afterClipMs": 364,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "సూర్యుడు.",
+          "accepted": true,
+          "afterClipMs": 673,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 394,
+          "text": "సూర్యుడు.",
+          "accepted": true,
+          "afterClipMs": 156,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 272,
+          "text": "సూర్యుడు.",
+          "accepted": true,
+          "afterClipMs": 92,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "star",
+      "word": "నక్షత్రం",
+      "sourceSha256": "e36d5179dcb6708cd9e1e4b5c11a614f662be22c8b4ea420b7b306b54f36678f",
+      "audioSha256": "3dc6dc9eef71a5aba2b9d8bbaa7b238d5453bec9bf519f5ecfbadd8b4b9fd24b",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "నక్షత్రం",
+          "accepted": true,
+          "afterClipMs": 372,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "నక్షత్రం.",
+          "accepted": true,
+          "afterClipMs": 343,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 339,
+          "text": "నక్షత్రం.",
+          "accepted": true,
+          "afterClipMs": 210,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 177,
+          "text": "నక్షత్రం.",
+          "accepted": true,
+          "afterClipMs": 47,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "moon",
+      "word": "చంద్రుడు",
+      "sourceSha256": "c64deaa1dfdae44092ef5745a57a0efac47cb1205f7c81d117080c5b5bdfafbe",
+      "audioSha256": "d6f94b8657a0f35a983177fb2d70e94ae9a144b8cc6980bbd101200d43137ab8",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "చంద్రుడు.",
+          "accepted": true,
+          "afterClipMs": 1628,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "చంద్రుడు.",
+          "accepted": true,
+          "afterClipMs": 854,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 307,
+          "text": "చంద్రుడు.",
+          "accepted": true,
+          "afterClipMs": 149,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 198,
+          "text": "చంద్రుడు.",
+          "accepted": true,
+          "afterClipMs": 37,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "apple",
+      "word": "ఆపిల్",
+      "sourceSha256": "8bfed2f936134d5c96321f6239d25335390317a11d6adb4f2763ccc85b35e88f",
+      "audioSha256": "c1bdf11b3e5a0c610c340bc52ac42497f5500510ba20c19ed6c000802a176472",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ఆపిల్",
+          "accepted": true,
+          "afterClipMs": 361,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ఆపిల్.",
+          "accepted": true,
+          "afterClipMs": 385,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 458,
+          "text": "Apple.",
+          "accepted": false,
+          "afterClipMs": 175,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 141,
+          "text": "ఆపిల్.",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "tree",
+      "word": "చెట్టు",
+      "sourceSha256": "a7cfbf1dc492b0a70741c3d5b401c409d594a522bf1fb38bf194020fe3f14244",
+      "audioSha256": "c63ce3dfca49d23617affb24a1bae15c239b1d279bc44605692a4feccdc6cc59",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "చెట్టు",
+          "accepted": true,
+          "afterClipMs": 409,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "చెట్టు.",
+          "accepted": true,
+          "afterClipMs": 811,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 357,
+          "text": "Check two.",
+          "accepted": false,
+          "afterClipMs": 179,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 246,
+          "text": "చెట్టు.",
+          "accepted": true,
+          "afterClipMs": 64,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "cat",
+      "word": "పిల్లి",
+      "sourceSha256": "73ed72f5cea41f765d43b9a208adc212ab6a10cf4792da838875b7505e02d95b",
+      "audioSha256": "eca395417ceb6a792c4c9c3577e34dc24682ea2aa95e9bfbbf00b9d0956d06b1",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "పిల్లి",
+          "accepted": true,
+          "afterClipMs": 347,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "పిల్లి.",
+          "accepted": true,
+          "afterClipMs": 312,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 384,
+          "text": "పిల్లి.",
+          "accepted": true,
+          "afterClipMs": 140,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 168,
+          "text": "పిల్లి.",
+          "accepted": true,
+          "afterClipMs": 35,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "dog",
+      "word": "కుక్క",
+      "sourceSha256": "2c7f18ea127b55e9047ebd0a4cdaf134c996372d56bf3021b4f26f71291e0ff3",
+      "audioSha256": "e20f30f4fac4b56c67ecb8d8a523fba0447423bf24ee23c5ee1a482bf75de8af",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "కుక్క",
+          "accepted": true,
+          "afterClipMs": 346,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "కుక్క.",
+          "accepted": true,
+          "afterClipMs": 387,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 372,
+          "text": "కుక్క.",
+          "accepted": true,
+          "afterClipMs": 149,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 244,
+          "text": "కుక్క.",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "house",
+      "word": "ఇల్లు",
+      "sourceSha256": "f6595e16e523d7e11fffb798b9d47639bedfba0b2a0ef6f9182599e134e59df0",
+      "audioSha256": "d8a0442d3b507d26a94bb03d52b09949898f63c9e425bb8444a508f353cc876e",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ఇల్లు",
+          "accepted": true,
+          "afterClipMs": 349,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ఇల్లు.",
+          "accepted": true,
+          "afterClipMs": 411,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 313,
+          "text": "Hello.",
+          "accepted": false,
+          "afterClipMs": 179,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 299,
+          "text": "ఇల్లు.",
+          "accepted": true,
+          "afterClipMs": 116,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "book",
+      "word": "పుస్తకం",
+      "sourceSha256": "b34c176fdd86cfa11907209e4a23ea7562757f6a9c8e214fe2118d1708227412",
+      "audioSha256": "500fedeacc436de272ed626405bd8cbc5760a68641eb4073ccbaef3d3525baa2",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "పుస్తకం",
+          "accepted": true,
+          "afterClipMs": 385,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "పుస్తకం.",
+          "accepted": true,
+          "afterClipMs": 383,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 388,
+          "text": "पुस्तकम्.",
+          "accepted": false,
+          "afterClipMs": 135,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 244,
+          "text": "పుస్తకం.",
+          "accepted": true,
+          "afterClipMs": 36,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "milk",
+      "word": "పాలు",
+      "sourceSha256": "2ed4adc185e5b066c82df9163b9679f63ca16b66d90104c5e879e46460cd74b3",
+      "audioSha256": "a078e837b1298a5e5b2c674b0b1a02f8ccbc943f41974c1e920e46a934220edd",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "పాలూ",
+          "accepted": false,
+          "afterClipMs": 342,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "పాలు.",
+          "accepted": true,
+          "afterClipMs": 413,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 392,
+          "text": "పాలు.",
+          "accepted": true,
+          "afterClipMs": 185,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 213,
+          "text": "పాలు?",
+          "accepted": true,
+          "afterClipMs": 44,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "te",
+      "pack": "bread",
+      "silence": true,
+      "word": "రొట్టె",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 344,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 396,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 347,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 214,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 218,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 54,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "bread",
+      "word": "റൊട്ടി",
+      "sourceSha256": "37f74640d74d91f9e496f462ac2dd3d5a800f5b79cb217f3fe87d69f7f5d9b64",
+      "audioSha256": "3305c732248d460aec1869d55f502223576c45afffde574ef67525c066c6922e",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 1,
+          "text": "റൊട്ടി",
+          "accepted": true,
+          "afterClipMs": 343,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "പ്രോട്ടീ.",
+          "accepted": false,
+          "afterClipMs": 384,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 439,
+          "text": "Proti.",
+          "accepted": false,
+          "afterClipMs": 200,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 238,
+          "text": "റൊട്ടി.",
+          "accepted": true,
+          "afterClipMs": 105,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "water",
+      "word": "വെള്ളം",
+      "sourceSha256": "34f14423f2ec06e2b74200239e3f6ee70e2a112801227e513561a7e75c4e16f3",
+      "audioSha256": "7249be45b79808fcd83b2f1101365cfd5b1ece5db77c1eea90d68ec45ad40410",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ബെല്ലം",
+          "accepted": false,
+          "afterClipMs": 343,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "വെള്ളം.",
+          "accepted": true,
+          "afterClipMs": 498,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 317,
+          "text": "വെള്ളം.",
+          "accepted": true,
+          "afterClipMs": 132,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 183,
+          "text": "വെള്ളം.",
+          "accepted": true,
+          "afterClipMs": 59,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "sun",
+      "word": "സൂര്യൻ",
+      "sourceSha256": "813611275e8f4b22d19957913484cb177c2b45b1e842bda1938487d3c18a9443",
+      "audioSha256": "8c86ad313714c5c483c2b455be8a9ffdb24937d406c8bbecdaa3b1057067dcb3",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "സൂര്യൻ",
+          "accepted": true,
+          "afterClipMs": 351,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "സൂര്യൻ.",
+          "accepted": true,
+          "afterClipMs": 379,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 397,
+          "text": "സൂര്യൻ.",
+          "accepted": true,
+          "afterClipMs": 178,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 226,
+          "text": "സൂര്യൻ.",
+          "accepted": true,
+          "afterClipMs": 66,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "moon",
+      "word": "ചന്ദ്രൻ",
+      "sourceSha256": "89bffacfdc413d05050cd767f0c3be9b4b9009127fcd5f897217c71f2189648f",
+      "audioSha256": "c8160ad2102ccb9b8223c0c62ce0989bb1f957c92e4a9975717b35e97fdbda06",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 1,
+          "text": "ചന്ദ്രൻ.",
+          "accepted": true,
+          "afterClipMs": 409,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ചന്ദ്രൻ.",
+          "accepted": true,
+          "afterClipMs": 471,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 316,
+          "text": "ചന്ദ്രൻ.",
+          "accepted": true,
+          "afterClipMs": 155,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 195,
+          "text": "ചന്ദ്രൻ.",
+          "accepted": true,
+          "afterClipMs": 43,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "star",
+      "word": "നക്ഷത്രം",
+      "sourceSha256": "98b358b729c76f38772791d9ea171abccd68af3f22479a508c90286b5dba6f56",
+      "audioSha256": "b375e987b71f40c6f31ad69ec5c527ed8e22837a2820afe19afe84af984d53fa",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "നക്ഷത്രം",
+          "accepted": true,
+          "afterClipMs": 390,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "നക്ഷത്രം.",
+          "accepted": true,
+          "afterClipMs": 490,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 314,
+          "text": "നക്ഷത്രം.",
+          "accepted": true,
+          "afterClipMs": 169,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 228,
+          "text": "നക്ഷത്രം.",
+          "accepted": true,
+          "afterClipMs": 35,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "tree",
+      "word": "മരം",
+      "sourceSha256": "4333048ae87873db0e340de501890e167ec4c93be1a2e6b5f5dea65fdff1c4cb",
+      "audioSha256": "c85a0c74a59b185746a7d6fa39dff29e2513254ea2c6791ee41de97780038c2a",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "മരം",
+          "accepted": true,
+          "afterClipMs": 408,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "മരം.",
+          "accepted": true,
+          "afterClipMs": 457,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 433,
+          "text": "മഴ.",
+          "accepted": false,
+          "afterClipMs": 223,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 248,
+          "text": "മരം.",
+          "accepted": true,
+          "afterClipMs": 130,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "apple",
+      "word": "ആപ്പിൾ",
+      "sourceSha256": "2461d27c7bd98fb7f03b070ef90793fa909345b58c91a9171275413d8f724a25",
+      "audioSha256": "2ab98615278b089c123534aa340a2be13ef0ce469592b0589fbad247228013aa",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ആപ്പിൾ",
+          "accepted": true,
+          "afterClipMs": 362,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ആപ്പിൾ.",
+          "accepted": true,
+          "afterClipMs": 425,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 334,
+          "text": "Apple.",
+          "accepted": false,
+          "afterClipMs": 111,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 207,
+          "text": "ആപ്പിൾ.",
+          "accepted": true,
+          "afterClipMs": 36,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "cat",
+      "word": "പൂച്ച",
+      "sourceSha256": "1ee7e8e6e748cf9d4e6e6cfb0fc14c0653b6058a5bf329c641f1389d8d2b3d9f",
+      "audioSha256": "2f2ea1b349888a20daf75d822c5b38d13d7ddd364a633381dacd2dd2c26e6d93",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "പൂച്ച",
+          "accepted": true,
+          "afterClipMs": 359,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "പൂച്ച.",
+          "accepted": true,
+          "afterClipMs": 416,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 306,
+          "text": "പൂച്ച.",
+          "accepted": true,
+          "afterClipMs": 826,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 258,
+          "text": "പൂച്ച.",
+          "accepted": true,
+          "afterClipMs": 43,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "dog",
+      "word": "നായ",
+      "sourceSha256": "4baafd2d278d6928f24d675e609c0e1a753e56383a7e1a2b14b2d888b7bbdd02",
+      "audioSha256": "a93820a168a1e495ba06b87e0894e4cef376e7934867055028001d8ffb97257f",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "നായ",
+          "accepted": true,
+          "afterClipMs": 363,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "നായ.",
+          "accepted": true,
+          "afterClipMs": 412,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 332,
+          "text": "നായ.",
+          "accepted": true,
+          "afterClipMs": 192,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 299,
+          "text": "നായ.",
+          "accepted": true,
+          "afterClipMs": 88,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "house",
+      "word": "വീട്",
+      "sourceSha256": "0e2f31e4e566c6919e4a059a8b5c0dc0ecaf997b0b42074bf4898988a2f8cec8",
+      "audioSha256": "54e908d943782fb018ee85919a17aa475151d1395e83e3bd4a8fe57573b2459e",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "വീട്",
+          "accepted": true,
+          "afterClipMs": 371,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "വീട്.",
+          "accepted": true,
+          "afterClipMs": 373,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 313,
+          "text": "വീട്.",
+          "accepted": true,
+          "afterClipMs": 114,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 170,
+          "text": "വീട്.",
+          "accepted": true,
+          "afterClipMs": 49,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "book",
+      "word": "പുസ്തകം",
+      "sourceSha256": "8bdaaf9c129e10f9fdf2fe6c764e9440d1665dbc7133c841abb3a88b65a7b063",
+      "audioSha256": "a23e8d796df075648024419cd43760e75f4f9267484c7cfb922b71f965f34189",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "പുസ്തകം",
+          "accepted": true,
+          "afterClipMs": 356,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "പുസ്തകം.",
+          "accepted": true,
+          "afterClipMs": 371,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 313,
+          "text": "പുസ്തകം.",
+          "accepted": true,
+          "afterClipMs": 165,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 255,
+          "text": "പുസ്തകം.",
+          "accepted": true,
+          "afterClipMs": 94,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "milk",
+      "word": "പാൽ",
+      "sourceSha256": "285868739538eed48f3a49bfeece25d774e5a833d8527dc1ba9d226bc721d1c0",
+      "audioSha256": "4432e92beadca1998b3762ae85758e6a91298a45c9afa3e992beb280660a85bc",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "പാല",
+          "accepted": false,
+          "afterClipMs": 361,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "പാൽ.",
+          "accepted": true,
+          "afterClipMs": 460,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 444,
+          "text": "പാൽ.",
+          "accepted": true,
+          "afterClipMs": 353,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 261,
+          "text": "പാൽ.",
+          "accepted": true,
+          "afterClipMs": 235,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "ml",
+      "pack": "bread",
+      "silence": true,
+      "word": "റൊട്ടി",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 382,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 395,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 349,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 130,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 224,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 33,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "bread",
+      "word": "brød",
+      "sourceSha256": "794e2c091e48074840b345812a5f435ef101850361df3029b32d47539a09e23b",
+      "audioSha256": "2e975c87307660191d406f1e4369f65b8fb67f54ba9cba19018edcd8e250dede",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Brød.",
+          "accepted": true,
+          "afterClipMs": 424,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 287,
+          "text": "Brød.",
+          "accepted": true,
+          "afterClipMs": 221,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 142,
+          "text": "Brød.",
+          "accepted": true,
+          "afterClipMs": 73,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "water",
+      "word": "vand",
+      "sourceSha256": "00339215160e1341f271eb055efae860d113e6f7cbac62b2e24e0a8c85481b33",
+      "audioSha256": "fe5085c308e4923aa933e6023973fa5ed798c7cb67822537bbeae330445f0c98",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Vand.",
+          "accepted": true,
+          "afterClipMs": 351,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 522,
+          "text": "Ved han?",
+          "accepted": false,
+          "afterClipMs": 169,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 171,
+          "text": "Vand.",
+          "accepted": true,
+          "afterClipMs": 30,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "sun",
+      "word": "sol",
+      "sourceSha256": "b305e16ec84022bf5dc6741eb305d58842fef4f27ff90d6e3318fbc7d92071b5",
+      "audioSha256": "390362a29e7d10d3fa146964eeddbae6a347a7034a7198f9810074a8cd49b983",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 504,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 321,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 150,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 264,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 35,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "moon",
+      "word": "måne",
+      "sourceSha256": "8841221a3c9a422fa764adbd19bae293cfd19ac9100848a5719269b5ca2ed37e",
+      "audioSha256": "fadaf58e095a96d01ebd4ee0fb3cdf145572501ace12fc04bb3300edf8c6f2b9",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Måned.",
+          "accepted": false,
+          "afterClipMs": 527,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 313,
+          "text": "Moon.",
+          "accepted": false,
+          "afterClipMs": 155,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 175,
+          "text": "Måne.",
+          "accepted": true,
+          "afterClipMs": 53,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "star",
+      "word": "stjerne",
+      "sourceSha256": "422fbe34239721721452b365bc507888eeaa2ff2929330310c6ce27131ab1707",
+      "audioSha256": "c30195496e1f671264de0e3a7a79d05079affc723c6597595b07dfae8046801f",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Stjerne.",
+          "accepted": true,
+          "afterClipMs": 451,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 321,
+          "text": "Stjerner.",
+          "accepted": true,
+          "afterClipMs": 176,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 199,
+          "text": "Stjerne.",
+          "accepted": true,
+          "afterClipMs": 40,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "tree",
+      "word": "træ",
+      "sourceSha256": "c04e390dd402931cc75c19f10c7b76899a38de68c5ea35c47ce6c7b3618da5f9",
+      "audioSha256": "bca22f308d0bcc3422aeb306de8700da0705d493c0b4f8cabbd844730d77080a",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "3.",
+          "accepted": false,
+          "afterClipMs": 388,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 387,
+          "text": "Tre.",
+          "accepted": false,
+          "afterClipMs": 157,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 229,
+          "text": "3.",
+          "accepted": false,
+          "afterClipMs": 44,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "apple",
+      "word": "æble",
+      "sourceSha256": "1eff64793126049f79bfff35235720c434d7ebdb69552cc9cd98a54448276da2",
+      "audioSha256": "124aa90d4dc4396de8a47ce9d5034079765fa1bcc74a738b8b646a912285d3d5",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Æble.",
+          "accepted": true,
+          "afterClipMs": 439,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 429,
+          "text": "Æble.",
+          "accepted": true,
+          "afterClipMs": 311,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 220,
+          "text": "Æble.",
+          "accepted": true,
+          "afterClipMs": 63,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "cat",
+      "word": "kat",
+      "sourceSha256": "f485312a75f3d4a07f4f4c53ec77913b36c025630613ea978a1e5da0ce31ae43",
+      "audioSha256": "294c74a63e5eb55ea38f3158ee2170fab41cd061f0f4f6e4da9a8ca89779251b",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Kat.",
+          "accepted": true,
+          "afterClipMs": 466,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 345,
+          "text": "Ket.",
+          "accepted": false,
+          "afterClipMs": 197,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 171,
+          "text": "Kat.",
+          "accepted": true,
+          "afterClipMs": 36,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "dog",
+      "word": "hund",
+      "sourceSha256": "3ea0974fad946dbaeb7408819f65010ddd0353199d807b4c8e0323794da68872",
+      "audioSha256": "110684092eaa61c1faee98689185ef5e2f2cf6bbdd94ca4f26dee7d374f851af",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 416,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 380,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 116,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 172,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 37,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "house",
+      "word": "hus",
+      "sourceSha256": "edf9b8af535537c47ce64510392a76c3d5bc2d58c3bce5297ef03c8890ec675d",
+      "audioSha256": "850f69e90d4d1a839ea9ded30acd3779ca9c11f9da6bac819dc9c37aaff2c980",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 593,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 376,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 173,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 166,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 36,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "milk",
+      "word": "mælk",
+      "sourceSha256": "d132521acad9986ccf74326a3788deaa13734e7e7dec755f9223c1e8c1e71b9c",
+      "audioSha256": "ca4eac4ae728dcac7edc32990812587230061743eb272e9a930c6c3e88577c77",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Mælk.",
+          "accepted": true,
+          "afterClipMs": 457,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 386,
+          "text": "Mælk.",
+          "accepted": true,
+          "afterClipMs": 175,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 241,
+          "text": "Mælk.",
+          "accepted": true,
+          "afterClipMs": 32,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "book",
+      "word": "bog",
+      "sourceSha256": "475e27acffcbc7a7f39e6e64a86f942f0380444a1caa800bb1662ab3eefcee24",
+      "audioSha256": "d0dfff89c7d0ce76ac865c005c43456580983d4636f05e40a013e097f7736a11",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Bog.",
+          "accepted": true,
+          "afterClipMs": 458,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 393,
+          "text": "Bo.",
+          "accepted": false,
+          "afterClipMs": 290,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 277,
+          "text": "Bog.",
+          "accepted": true,
+          "afterClipMs": 45,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "pack": "bread",
+      "silence": true,
+      "word": "brød",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 436,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 439,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 202,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 438,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 110,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "bread",
+      "word": "রুটি",
+      "sourceSha256": "df32e208d38c34f500f4e5a92156dcf25c8a1de93ed7250a989a12cb8463b373",
+      "audioSha256": "8a4d69f6eba43fe92345a33afe59ec86e8fcc134d81d0ca562d002c887cdf17e",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 1,
+          "text": "রুটি",
+          "accepted": true,
+          "afterClipMs": 1326,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "রুটি।",
+          "accepted": true,
+          "afterClipMs": 434,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 393,
+          "text": "রুটি।",
+          "accepted": true,
+          "afterClipMs": 198,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 263,
+          "text": "রুটি।",
+          "accepted": true,
+          "afterClipMs": 82,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "water",
+      "word": "পানি",
+      "sourceSha256": "714ddcd7a37532cdcbf78521f653d02ae349a39cb9f76a03bcf7dc252da1a794",
+      "audioSha256": "e55fb9bd968c88574df73486b0fb4ffb8affeb77563baf1e460a65d399a98807",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "পানি",
+          "accepted": true,
+          "afterClipMs": 422,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "পানি।",
+          "accepted": true,
+          "afterClipMs": 436,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 337,
+          "text": "পানি।",
+          "accepted": true,
+          "afterClipMs": 175,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 254,
+          "text": "পানি।",
+          "accepted": true,
+          "afterClipMs": 112,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "moon",
+      "word": "চাঁদ",
+      "sourceSha256": "dfe28b92ab334705fa3cbe6a6fb63da277e7f06eaa6c5dc3f5395af37b9ca155",
+      "audioSha256": "103e1c01d30b40fd9733151dcce9d3205b4e7989cfc04b29f9342a697eed0227",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "চাঁদ",
+          "accepted": true,
+          "afterClipMs": 777,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "চাঁদ।",
+          "accepted": true,
+          "afterClipMs": 400,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 345,
+          "text": "চাঁদ।",
+          "accepted": true,
+          "afterClipMs": 148,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 245,
+          "text": "চাঁদ।",
+          "accepted": true,
+          "afterClipMs": 40,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "sun",
+      "word": "সূর্য",
+      "sourceSha256": "6f6dd6a87f6924221a3653d1d9f6cbec15178029fdfb6e044618e712c13abfd5",
+      "audioSha256": "bb80329176fa53df20aa73f8e75d9a6f0ae0944442ebcb5b3c1059a2c5a8309c",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 1,
+          "text": "সূর্য",
+          "accepted": true,
+          "afterClipMs": 586,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "সূর্য।",
+          "accepted": true,
+          "afterClipMs": 1010,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 301,
+          "text": "সূর্য।",
+          "accepted": true,
+          "afterClipMs": 164,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 178,
+          "text": "সূর্য।",
+          "accepted": true,
+          "afterClipMs": 29,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "star",
+      "word": "তারা",
+      "sourceSha256": "baa99be1f7898adf67ddf84fe892721b2e45600585ebe201721f74fef519517c",
+      "audioSha256": "4bcd918a604596f37faa1ae04455f8d1eacba595c055310c62a5b9bcf410e152",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "তারা",
+          "accepted": true,
+          "afterClipMs": 365,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "তারা।",
+          "accepted": true,
+          "afterClipMs": 425,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 302,
+          "text": "তারা।",
+          "accepted": true,
+          "afterClipMs": 189,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 225,
+          "text": "তারা।",
+          "accepted": true,
+          "afterClipMs": 47,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "tree",
+      "word": "গাছ",
+      "sourceSha256": "39279588c8493e6c09bc802dbbe077fc0618b7d7e7c9647affe911a7896a3d43",
+      "audioSha256": "6cef79bb384691e26a6fbaa2e497180812394872e08c07a66e5300682d1cd4b4",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "গাছ",
+          "accepted": true,
+          "afterClipMs": 428,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "গাছ।",
+          "accepted": true,
+          "afterClipMs": 490,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 309,
+          "text": "গাছ।",
+          "accepted": true,
+          "afterClipMs": 307,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 246,
+          "text": "গাছ।",
+          "accepted": true,
+          "afterClipMs": 136,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "apple",
+      "word": "আপেল",
+      "sourceSha256": "51ea1d9ca1e470372cf7e0701be5e6b9a079aa2a144a6985d347d176ae031cb0",
+      "audioSha256": "d3e0858ae15e48eea11621fd3ff7396369d63237317117e2f2eb0ad395c53edf",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "আপেল",
+          "accepted": true,
+          "afterClipMs": 677,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "আপেল।",
+          "accepted": true,
+          "afterClipMs": 1024,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 385,
+          "text": "Apple.",
+          "accepted": false,
+          "afterClipMs": 350,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 165,
+          "text": "আপেল।",
+          "accepted": true,
+          "afterClipMs": 43,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "dog",
+      "word": "কুকুর",
+      "sourceSha256": "090b711d14af90fa791c7b814879f35fd4402d73dd2d9a3def0f4ae36694c49e",
+      "audioSha256": "e19f39067b66e6d94a0a6af0da274afd9a78618dedd6e29933345ae7ae961eb2",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "কুকুর",
+          "accepted": true,
+          "afterClipMs": 3379,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "কুকুর।",
+          "accepted": true,
+          "afterClipMs": 589,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 1377,
+          "text": "কুকুর।",
+          "accepted": true,
+          "afterClipMs": 261,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 1642,
+          "text": "কুকুর।",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "cat",
+      "word": "বিড়াল",
+      "sourceSha256": "50a76329f3c7f248a65295cfe7bed8f0ddc873ec6782640be3ccf5439024ed7d",
+      "audioSha256": "7f5e02108dd69a89e2ccc6ae54bf20bd24f77728295b119e5f876891866471d7",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "বিড়াল",
+          "accepted": true,
+          "afterClipMs": 8791,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "বিড়াল।",
+          "accepted": true,
+          "afterClipMs": 1128,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 395,
+          "text": "Viral.",
+          "accepted": false,
+          "afterClipMs": 141,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 225,
+          "text": "বিড়াল।",
+          "accepted": true,
+          "afterClipMs": 1104,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "house",
+      "word": "ঘর",
+      "sourceSha256": "1395e46bb7a56bf9add3dd2b144778291cb6bb0f2546790bf8d6264826425173",
+      "audioSha256": "9db0de415c058c7dfbfbf1f63beee9a33ae0af9908e09fac51e0aecb83fc0d35",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "ঘর",
+          "accepted": true,
+          "afterClipMs": 1057,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "ঘর।",
+          "accepted": true,
+          "afterClipMs": 927,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 434,
+          "text": "ঘর।",
+          "accepted": true,
+          "afterClipMs": 120,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 302,
+          "text": "ঘর।",
+          "accepted": true,
+          "afterClipMs": 52,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "book",
+      "word": "বই",
+      "sourceSha256": "eeee45063554a8963ffbba68cd179438dd92d7a4cec8cb7fe07e578fad9b71f6",
+      "audioSha256": "9fea91e84f50fc17e46ba77ddb9b0b47ac2d17768a82151bbfe9f43248c60bb7",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "বই",
+          "accepted": true,
+          "afterClipMs": 667,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "বই।",
+          "accepted": true,
+          "afterClipMs": 725,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 493,
+          "text": "বই।",
+          "accepted": true,
+          "afterClipMs": 163,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 177,
+          "text": "বই।",
+          "accepted": true,
+          "afterClipMs": 32,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "milk",
+      "word": "দুধ",
+      "sourceSha256": "3109ca877c20dcab5f7f699f606c362d7ed882e3593534dada26a8eb46a5f9cf",
+      "audioSha256": "ad528e6411a4b87d2ed6c9a234450ed2c78dd063f2da5b96ba2786853678d313",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "দুধ",
+          "accepted": true,
+          "afterClipMs": 378,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 547,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 371,
+          "text": "দুই।",
+          "accepted": false,
+          "afterClipMs": 134,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 173,
+          "text": "দুধ।",
+          "accepted": true,
+          "afterClipMs": 44,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "bn",
+      "pack": "bread",
+      "silence": true,
+      "word": "রুটি",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "sarvam",
+          "model": "saaras:v4",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 381,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 403,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 305,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 199,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 245,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 55,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "bread",
+      "word": "brød",
+      "sourceSha256": "dede7322bf167a9e3658313dbe42d34730ce90c6ca6b40928a127ceaad076f0a",
+      "audioSha256": "08d18c9e12fb4002d7837d6470af71a5027ff18e52df66c680b2c10390b314d1",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Pol.",
+          "accepted": false,
+          "afterClipMs": 465,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 368,
+          "text": "Brød.",
+          "accepted": true,
+          "afterClipMs": 107,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 225,
+          "text": "Brød.",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "sun",
+      "word": "sol",
+      "sourceSha256": "f0f894f374ed03b40692c3823aeab0bf30d95d71b2b3881c3eb3223a03d84d54",
+      "audioSha256": "d356d72d9e3d1b15056c15002ba2fdfb66bbd6b64fc3e6cca19580e1e73939ce",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 412,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 303,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 181,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 175,
+          "text": "Sol.",
+          "accepted": true,
+          "afterClipMs": 39,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "water",
+      "word": "vann",
+      "sourceSha256": "1c149b6b8f27cd84421af2ffc45e0a21a378b477872dd931c677369a67e6f863",
+      "audioSha256": "ee44cc7a60410d2d505a2a72a3d5856871cb57d2dbcfa02dbd1e33978b92e6ef",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Vann.",
+          "accepted": true,
+          "afterClipMs": 429,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 326,
+          "text": "Vamm.",
+          "accepted": false,
+          "afterClipMs": 151,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 161,
+          "text": "Vann.",
+          "accepted": true,
+          "afterClipMs": 33,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "moon",
+      "word": "måne",
+      "sourceSha256": "541c347677d883b32661e670d81d629f675b135abda4a7e524975f198e7a7d2b",
+      "audioSha256": "ea6fd3039f54e51d7670ce971bbd931530f45f9cbbb40de026c2743059892448",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Månene.",
+          "accepted": false,
+          "afterClipMs": 400,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 355,
+          "text": "Måne.",
+          "accepted": true,
+          "afterClipMs": 188,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 168,
+          "text": "Måne.",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "star",
+      "word": "stjerne",
+      "sourceSha256": "ff1b3ad3d0aec281183c9c2ee9a01c245efbed8c31c13e4fe15e017945177913",
+      "audioSha256": "3acabd553b56dceca35ae96ed28a881e080bc88414f2d51c534b45a35e10244b",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Stjerne.",
+          "accepted": true,
+          "afterClipMs": 411,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 440,
+          "text": "Stjern.",
+          "accepted": true,
+          "afterClipMs": 264,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 177,
+          "text": "Stjerne.",
+          "accepted": true,
+          "afterClipMs": 126,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "tree",
+      "word": "tre",
+      "sourceSha256": "1a4fff6ba493fb91733233c5ba9e21187880702752ff78954c6ebfa36d110dbb",
+      "audioSha256": "2662529213c57c4eccfaa0fbe25070bc0dc095033412ef1f4f4011740726eabd",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "3.",
+          "accepted": true,
+          "afterClipMs": 412,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 452,
+          "text": "Tre.",
+          "accepted": true,
+          "afterClipMs": 286,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 290,
+          "text": "3.",
+          "accepted": true,
+          "afterClipMs": 64,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "apple",
+      "word": "eple",
+      "sourceSha256": "6bc44e886e43b557ddfc3814e12882b27ef8316797b0f5fe2f392b72ad6ff293",
+      "audioSha256": "3655aef9b7c0f5f8fe81e8d81a9fc964c05bb911c207c813deea2f443e548ce6",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Eple.",
+          "accepted": true,
+          "afterClipMs": 432,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 648,
+          "text": "Eple.",
+          "accepted": true,
+          "afterClipMs": 242,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 227,
+          "text": "Eple.",
+          "accepted": true,
+          "afterClipMs": 38,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "cat",
+      "word": "katt",
+      "sourceSha256": "22429569a5636207952b2a3f7ed9c42e9bd473481775f314c3c0f71c4f1ca76e",
+      "audioSha256": "ce34bb65c5c9018cd0db84392e29383f6727b257f1a2b5fc52e3bfbcef1f69a1",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Katt.",
+          "accepted": true,
+          "afterClipMs": 424,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 378,
+          "text": "Katt.",
+          "accepted": true,
+          "afterClipMs": 179,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 190,
+          "text": "Katt.",
+          "accepted": true,
+          "afterClipMs": 41,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "dog",
+      "word": "hund",
+      "sourceSha256": "7ad04bddf647e4613ba98987fb0ff261532555519a2aaba246a4451cccf014e4",
+      "audioSha256": "67dfa51caa9a10e82913b31e4d65e1ff87749f3ac80d180be53ac27734eeea94",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 429,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 307,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 143,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 306,
+          "text": "Hund.",
+          "accepted": true,
+          "afterClipMs": 67,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "house",
+      "word": "hus",
+      "sourceSha256": "d6ffa9b6ee46cdf4fbab782bc49929ab6cfb7feddf1f169c4f3d4542c742c7b7",
+      "audioSha256": "0fd8c5251589bbbcc0f21265c015813cd205eb681c900b4907f6c147c12c64f7",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 405,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 278,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 136,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 147,
+          "text": "Hus.",
+          "accepted": true,
+          "afterClipMs": 42,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "book",
+      "word": "bok",
+      "sourceSha256": "34b80352f314e7d7c1f61d17a7b593ee03d1ea5021d2ab5738325aded3c5bc51",
+      "audioSha256": "bbbdcc69dba4c45d5770af7e93ecd678ef1f5fc2682857396ba4b9d4a5ca44fd",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Bok.",
+          "accepted": true,
+          "afterClipMs": 389,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 304,
+          "text": "Bok.",
+          "accepted": true,
+          "afterClipMs": 176,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 198,
+          "text": "Bok.",
+          "accepted": true,
+          "afterClipMs": 34,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "milk",
+      "word": "melk",
+      "sourceSha256": "9be81f4eca2935789428e3952f8205616c7b5f60dfb5d29c2b35aefc9c387a40",
+      "audioSha256": "b2ce052ac234d5687e929759ac96b06881156e6421fd61e4a38496c63f6dea37",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 0,
+          "text": "Melk.",
+          "accepted": true,
+          "afterClipMs": 493,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 338,
+          "text": "Melk.",
+          "accepted": true,
+          "afterClipMs": 159,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 199,
+          "text": "Melk.",
+          "accepted": true,
+          "afterClipMs": 42,
+          "otherPacksAccepted": []
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "pack": "bread",
+      "silence": true,
+      "word": "brød",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "results": [
+        {
+          "name": "azure",
+          "model": "locale-specific short-audio API (unversioned)",
+          "connectionMs": 1,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 719,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "elevenlabs",
+          "model": "scribe_v2_realtime",
+          "connectionMs": 306,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 176,
+          "otherPacksAccepted": []
+        },
+        {
+          "name": "soniox",
+          "model": "stt-rt-v5",
+          "connectionMs": 172,
+          "text": "",
+          "accepted": false,
+          "afterClipMs": 28,
+          "otherPacksAccepted": []
+        }
+      ]
+    }
+  ]
+}

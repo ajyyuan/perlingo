@@ -1,7 +1,7 @@
 // UI-independent tree and selection logic. The playable set comes only from local content.
 export function cleanSelection(ids,languages){const set=new Set(Array.isArray(ids)?ids:[]);return languages.filter(l=>set.has(l.id)).map(l=>l.id);}
 export function roundLanguages(languages,ids,script='All scripts'){const set=new Set(cleanSelection(ids,languages));return languages.filter(l=>set.has(l.id)&&(script==='All scripts'||l.script===script));}
-export function initialSelection(settings,languages){return Array.isArray(settings.languageIds)?cleanSelection(settings.languageIds,languages):languages.slice(0,Math.max(1,Math.min(50,Number(settings.count)||50))).map(l=>l.id);}
+export function initialSelection(settings,languages){return Array.isArray(settings.languageIds)?cleanSelection(settings.languageIds,languages):languages.slice(0,Math.max(1,Math.min(languages.length,Number(settings.count)||languages.length))).map(l=>l.id);}
 const fold=s=>String(s).normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
 export function createTree(data,languages){
  const nodes=new Map(data.nodes.map(([id,parent,name,level,iso,bookkeeping])=>[id,{id,parent,name,level,iso,bookkeeping,children:[],own:[],playable:[],languageCount:0}]));

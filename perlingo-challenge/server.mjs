@@ -1,3 +1,5 @@
+import {Readable} from 'node:stream';
+import {speechStatus,handleSpeechAPI} from './hosted-api.mjs';
 import http from 'node:http';
 import {challengePaths} from './paths.mjs';
 import {readFile} from 'node:fs/promises';
@@ -10,7 +12,7 @@ const key=process.env.ELEVENLABS_API_KEY;
 const sonioxKey=process.env.SONIOX_API_KEY;
 const port=Number(process.env.CHALLENGE_PORT||5174);
 const allowedHosts=new Set([`127.0.0.1:${port}`,`localhost:${port}`,'127.0.0.1:5173','localhost:5173']);
-const publicFiles=new Set(['index.html','style.css','app.js','account-store.js','content.js','noun-packs.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
+const publicFiles=new Set(['index.html','style.css','app.js','account-store.js','content.js','ipa-data.js','noun-packs.js','challenges.js','tree-model.js','family-board.js','family-board.css','tree-picker.js','tree.html','forest.html','forest.js','forest.css','tree-explorer.js','tree-explorer.css','tree-layout.js','language-tree.json','engine.js','speech.js','speech-profiles.js','language-pools.js','pcm-worklet.js','speech-lab.html','speech-lab.js','benchmark.js','recordings.js','recordings-data.js','audio-sources.html',...recordings.flatMap(r=>[r.file,...(r.reference?[r.reference.file]:[])]).map(file=>file.replace(/^\//,''))]);
 let requests=[];
 function json(res,status,data){res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));}
 async function upstream(endpoint,body){
@@ -33,9 +35,13 @@ export const server=http.createServer(async(req,res)=>{
  try{
   if(url.pathname.startsWith('/api/')){
    if(req.headers.origin&&req.headers.origin!==url.origin){json(res,403,{error:'Origin not allowed.'});return;}
-   if(url.pathname==='/api/status'&&req.method==='GET'){json(res,200,{configured:!!key,provider:'elevenlabs',model:'scribe_v2_realtime',providers:{elevenlabs:!!key,soniox:!!sonioxKey}});return;}
+   if(url.pathname==='/api/status'&&req.method==='GET'){json(res,200,speechStatus(process.env));return;}
    if(req.method!=='POST'||req.headers['x-perlingo-challenge']!=='1'){json(res,403,{error:'Unsupported request.'});return;}
    requests=requests.filter(t=>Date.now()-t<60000);if(requests.length>=180){json(res,429,{error:'Too many requests. Wait a moment.'});return;}requests.push(Date.now());
+   if(url.pathname==='/api/speech/transcribe'){
+    const request=new Request(url.origin+'/challenge'+url.pathname+url.search,{method:'POST',headers:req.headers,body:Readable.toWeb(req),duplex:'half'});
+    const response=await handleSpeechAPI(request,process.env);res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());return;
+   }
    if(url.pathname==='/api/speech/token'){
     const provider=url.searchParams.get('provider')||'elevenlabs';
     if(!['elevenlabs','soniox'].includes(provider)){json(res,400,{error:'Unknown provider.'});return;}

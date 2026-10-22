@@ -12,7 +12,7 @@ test('foreign hosts and cross-origin token requests are rejected',async()=>{
  assert.equal((await request('/api/speech/token','POST')).status,403);
 });
 test('retired shared-voice endpoint cannot spend API credits',async()=>{const r=await request('/api/pronounce?pack=arbitrary&language=en','POST',{'x-perlingo-challenge':'1'});assert.equal(r.status,410);});
-test('status exposes presence only and public page sets CSP',async()=>{const r=await request('/api/status');assert.deepEqual(Object.keys(JSON.parse(r.body)).sort(),['configured','model','provider','providers']);const home=await request('/');assert.equal(home.status,200);assert(home.headers['Content-Security-Policy'].includes("frame-ancestors 'none'"));});
+test('status exposes presence only and public page sets CSP',async()=>{const r=await request('/api/status');assert.deepEqual(Object.keys(JSON.parse(r.body)).sort(),['configured','provider','providers','routes']);const home=await request('/');assert.equal(home.status,200);assert(home.headers['Content-Security-Policy'].includes("frame-ancestors 'none'"));});
 test('unknown speech provider cannot spend credits',async()=>{assert.equal((await request('/api/speech/token?provider=other','POST',{'x-perlingo-challenge':'1'})).status,400);});
 
 test('only curated recording assets are served with an audio MIME type',async()=>{

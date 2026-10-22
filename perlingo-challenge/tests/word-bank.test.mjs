@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {firstTen} from '../data/word-bank/first-ten.js';
 import {languages,packs} from '../public/content.js';
+import {ipaGuides} from '../public/ipa-data.js';
 import {matchesAnswer,matchesSpokenAnswer} from '../public/engine.js';
 const evidence=JSON.parse(readFileSync(new URL('../data/word-bank/first-ten-checks.json',import.meta.url)));
 const entry=(pack,id)=>firstTen.find(p=>p.id===pack).entries.find(e=>e.id===id);
@@ -30,7 +31,7 @@ test('Norwegian tree accepts digit formatting only in spoken recognition',()=>{c
 test('ten noun packs have exact-file audio with only hash-bound approved exceptions',()=>{
  const sources=JSON.parse(readFileSync(new URL('../generated-audio-sources.json',import.meta.url))),checks=JSON.parse(readFileSync(new URL('../generated-audio-checks.json',import.meta.url))).rows;
  assert.equal(packs.length,12);
- for(const p of firstTen){const playable=packs.some(x=>x.id===p.id);assert.equal(playable,true);if(playable)assert.deepEqual(packs.find(x=>x.id===p.id),p);
+ for(const p of firstTen){const playable=packs.some(x=>x.id===p.id);assert.equal(playable,true);if(playable)assert.deepEqual(packs.find(x=>x.id===p.id),{...p,entries:p.entries.map(e=>({...e,ipa:ipaGuides[`${p.id}:${e.id}`].ipa}))});
  for(const e of p.entries){const source=sources.find(s=>s.pack===p.id&&s.language===e.id);const bytes=readFileSync(new URL('../'+(source.stagedFile||('public'+source.file)),import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),source.sha256);if(playable){assert(getRecording(p.id,e.id));assert(audioException(source)||checks.some(c=>c.pack===p.id&&c.language===e.id&&c.sha256===source.sha256&&c.provider==='soniox'&&c.exactMatch&&!c.error));}else{assert(!getRecording(p.id,e.id));assert(source.stagedFile);}}}
 });
 

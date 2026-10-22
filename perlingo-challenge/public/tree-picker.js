@@ -45,7 +45,7 @@ export async function openTreePicker({languages,selected,script,onApply}){
  function render(focus){
   list.classList.toggle('visual-tree',!query);list.classList.toggle('leaf-tree',!detailed&&!query);list.classList.toggle('forest-canvas',!query);scroll.classList.toggle('searching',!!query);
   if(query){const matches=tree.search(query,playableOnly),limit=limits.get('search')||pageSize;list.innerHTML=matches.length?`<ul class="tree-roots">${matches.slice(0,limit).map(n=>row(n.id,true)).join('')}${matches.length>limit?'<li class="tree-more"><button class="text-button" data-more="search">Show more results</button></li>':''}</ul>`:'<p class="tree-empty">No matching languages or families.</p>';dialog.querySelector('#tree-result-count').textContent=`${matches.length.toLocaleString()} matches`;}
-  else{const roots=childrenOf(null);list.innerHTML=`<ul class="tree-roots">${branch(roots,'roots')}</ul>`;dialog.querySelector('#tree-result-count').textContent=playableOnly?'50 languages · separate family trees':`${tree.nodes.size.toLocaleString()} catalog entries`;}
+  else{const roots=childrenOf(null);list.innerHTML=`<ul class="tree-roots">${branch(roots,'roots')}</ul>`;dialog.querySelector('#tree-result-count').textContent=playableOnly?`${languages.length} languages · separate family trees`:`${tree.nodes.size.toLocaleString()} catalog entries`;}
   applyZoom();sync();if(focus)dialog.querySelector(focus)?.focus({preventScroll:true});
  }
  function sync(){

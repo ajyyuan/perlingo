@@ -1,4 +1,4 @@
-import {languages,getEntry} from './content.js';
+import {activeLanguages as languages,getEntry} from './content.js';
 import {createTree,visualChildren} from './tree-model.js';
 import {RecordingPlayer} from './recordings.js';
 const player=new RecordingPlayer(),main=document.querySelector('#forest'),pack=document.querySelector('#pack'),status=document.querySelector('#audio-status');let tree,token=0;

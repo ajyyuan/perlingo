@@ -1,3 +1,4 @@
+import {speechCandidates,speechRoutes} from './speech-profiles.js';
 export async function requestJSON(url){
  const res=await fetch(url,{method:'POST',headers:{'X-Perlingo-Challenge':'1'},signal:AbortSignal.timeout(30000)});
  const data=await res.json();if(!res.ok)throw Error(data.error||'Speech service unavailable.');return data;
@@ -71,7 +72,39 @@ export class SonioxProvider{
   });return session;
  }
 }
-export function createSpeechProvider(name='elevenlabs'){if(name==='elevenlabs')return new ElevenLabsProvider();if(name==='soniox')return new SonioxProvider();throw Error('Unknown speech provider: '+name);}
+// Short-utterance adapters buffer one segment and return a final transcript. Closing
+// aborts in-flight work and suppresses callbacks from a previous card.
+export class ShortAudioProvider{
+ constructor(name){this.name=name;}
+ async prepare(language){
+  if(!speechCandidates(language).includes(this.name))throw Error('Unsupported recognition language.');
+  const name=this.name,controllers=new Set();let chunks=[];
+  const session={closed:false,failed:null,pending:0,uncommitted:0,onTranscript:null,onError:null,
+   push(buffer){
+    if(this.closed||this.failed)return;
+    if(this.uncommitted+buffer.byteLength>480000){this.failed=Error('Recognition is taking too long. Please reconnect.');this.onError?.(this.failed);return;}
+    chunks.push(new Uint8Array(buffer.slice(0)));this.uncommitted+=buffer.byteLength;
+    if(this.uncommitted>=384000&&!this.pending)this.commit();
+   },
+   commit(){
+    if(this.closed||this.failed||this.pending||!this.uncommitted)return false;
+    const pcm=new Uint8Array(Math.max(3200,this.uncommitted));let offset=0;for(const c of chunks){pcm.set(c,offset);offset+=c.length;}chunks=[];this.uncommitted=0;this.pending++;
+    const controller=new AbortController();controllers.add(controller);const timeout=setTimeout(()=>controller.abort(),14000);
+    fetch(`/api/speech/transcribe?provider=${name}&language=${encodeURIComponent(language)}`,{method:'POST',headers:{'X-Perlingo-Challenge':'1','Content-Type':'application/octet-stream'},body:pcm,signal:controller.signal})
+     .then(async res=>{const data=await res.json();if(!res.ok)throw Error(data.error||'Recognition failed.');if(typeof data.text!=='string')throw Error('Invalid recognition response.');this.pending--;if(!this.closed)this.onTranscript?.({text:data.text,final:true});})
+     .catch(error=>{this.pending=Math.max(0,this.pending-1);if(!this.closed){this.failed=Error(error.name==='AbortError'?'Recognition timed out. Please retry.':error.message);this.onError?.(this.failed);}})
+     .finally(()=>{clearTimeout(timeout);controllers.delete(controller);});
+    return true;
+   },
+   close(){this.closed=true;chunks=[];this.uncommitted=0;for(const c of controllers)c.abort();controllers.clear();}
+  };return session;
+ }
+}
+export function createRoutedSpeechProvider(routes){
+ const selected=speechRoutes(routes);
+ return {prepare(language){if(!selected[language])throw Error('Unsupported language.');return createSpeechProvider(selected[language]).prepare(language);}};
+}
+export function createSpeechProvider(name='elevenlabs'){if(name==='elevenlabs')return new ElevenLabsProvider();if(name==='soniox')return new SonioxProvider();if(['azure','sarvam','google','munsit'].includes(name))return new ShortAudioProvider(name);throw Error('Unknown speech provider: '+name);}
 // Explicit locale choices prevent Mandarin falling back to Cantonese, for example.
 export const voiceLocales={en:'en-US',zh:'zh-CN',es:'es-ES',fr:'fr-FR',pt:'pt-BR',ar:'ar-SA',no:'nb-NO',fil:'fil-PH'};
 export const preferredVoiceNames={en:'Samantha',zh:'Tingting',hi:'Lekha',es:'Mónica',ar:'Maged',fr:'Thomas',pt:'Luciana',ru:'Milena',id:'Damayanti',de:'Anna',ja:'Kyoko',tr:'Yelda',ta:'Vani',vi:'Linh',ko:'Yuna',it:'Alice',th:'Kanya',pl:'Zosia',uk:'Lesya',ro:'Ioana',nl:'Xander',hu:'Mariska',el:'Melina',cs:'Zuzana',sv:'Alva',he:'Carmit',fi:'Satu',da:'Sara',no:'Nora',sk:'Laura',bg:'Daria',hr:'Lana',ms:'Amira',ca:'Montse',sl:'Tina'};

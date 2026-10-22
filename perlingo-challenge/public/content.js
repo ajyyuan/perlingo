@@ -1,3 +1,5 @@
+import {defaultLanguageIds} from './language-pools.js';
+import {ipaGuides} from './ipa-data.js';
 import {nounPacks} from './noun-packs.js';
 // Authored starter collection. See ../CONTENT.md for source scope and review limits.
 const rows = [
@@ -59,5 +61,14 @@ export const packs=[{id:'bread',label:'Bread',emoji:'🍞',sense:'Bread as food;
  const [id,,,,bread,reading,ipa,water,waterReading]=row;
  return {id,word:pack.id==='bread'?bread:water,reading:pack.id==='bread'?reading:waterReading,ipa:pack.id==='bread'?ipa:null,accepted:[pack.id==='bread'?bread:water,...(alternatives[pack.id][id]||[])],source:`https://en.wiktionary.org/wiki/${encodeURIComponent(pack.id==='bread'?bread:water)}`,status:'draft'};
 })}));
-packs.push(...nounPacks);
+packs.push(...nounPacks.map(pack=>({...pack,entries:pack.entries.map(entry=>({...entry}))})));
+for(const pack of packs)for(const entry of pack.entries){
+ const guide=ipaGuides[`${pack.id}:${entry.id}`];
+ if(!guide||guide.word!==entry.word)throw Error(`Missing or stale IPA: ${pack.id}:${entry.id}`);
+ entry.ipa=guide.ipa;
+}
 export function getEntry(packId,languageId){return packs.find(p=>p.id===packId)?.entries.find(e=>e.id===languageId);}
+
+// Retain source-bank entries for existing result reviews; expose only this roster for new play.
+export const activeLanguages=languages.filter(l=>defaultLanguageIds.includes(l.id));
+export const activePacks=packs.map(p=>({...p,entries:p.entries.filter(e=>defaultLanguageIds.includes(e.id))}));

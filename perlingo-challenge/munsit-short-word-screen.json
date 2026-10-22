@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22T02:16:36.640Z",
+  "method": "Cached generated teaching clips, 16kHz PCM, 200ms lead/600ms tail. No answer hints. Bread/Moon positives and silence only. Not learner-accent or microphone endpointing validation.",
+  "rows": [
+    {
+      "language": "ar",
+      "locale": "ar-SA",
+      "pack": "bread",
+      "provider": "munsit",
+      "model": "munsit",
+      "sourceSha256": "5ce8096375407763375699cc261c2e4fa3c5f84750c09b02b7f3f5bc9cc2fff1",
+      "audioSha256": "c885d7182ff07def96e4a820491b37bdc3ba4d7d6fe5a03dac8b5231f2ddb812",
+      "status": 200,
+      "text": "خبز",
+      "final": true,
+      "accepted": true,
+      "elapsedMs": 1487
+    },
+    {
+      "language": "ar",
+      "locale": "ar-SA",
+      "pack": "moon",
+      "provider": "munsit",
+      "model": "munsit",
+      "sourceSha256": "3b2f395834e1d2211a025070443ee35596ef6628a76f0bdff66d37f175f1149d",
+      "audioSha256": "2955ef550a827074e857e0b9fbcf5ed7ab6d7579e11802bb0e7991b0fed182be",
+      "status": 200,
+      "text": "قمر",
+      "final": true,
+      "accepted": true,
+      "elapsedMs": 895
+    },
+    {
+      "language": "ar",
+      "locale": "ar-SA",
+      "pack": "silence",
+      "provider": "munsit",
+      "model": "munsit",
+      "sourceSha256": null,
+      "audioSha256": "4f7988030a00d082fe445e00a2ac5dab502300ff1b80e8592dd569867b60ef74",
+      "status": 200,
+      "text": "م ال",
+      "final": true,
+      "accepted": false,
+      "elapsedMs": 994
+    }
+  ]
+}

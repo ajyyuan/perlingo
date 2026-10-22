@@ -1,16 +1,17 @@
 import {createSpeechProvider} from './speech.js';
-import {matchesAnswer} from './engine.js';
+import {spokenVerdict} from './engine.js';
+import {speechModels} from './speech-profiles.js';
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 // Both providers receive the exact same PCM, at real-time pace, with no answer hints.
 // One finalization at clip end isolates recognizer accuracy from game endpointing.
-export async function comparePCM(pcm,language,accepted,names=['elevenlabs','soniox']){
- const prepared=await Promise.all(names.map(async name=>{const start=performance.now();try{return {name,session:await createSpeechProvider(name).prepare(language),connectionMs:Math.round(performance.now()-start)};}catch(e){return {name,error:e.message};}}));
+export async function comparePCM(pcm,language,accepted,names=['elevenlabs','soniox'],competitors=[]){
+ const prepared=await Promise.all(names.map(async name=>{const start=performance.now();try{return {name,model:speechModels[name],session:await createSpeechProvider(name).prepare(language),connectionMs:Math.round(performance.now()-start)};}catch(e){return {name,error:e.message};}}));
  const jobs=prepared.map(item=>{
   if(!item.session)return Promise.resolve(item);
   const {session,...row}=item;let end=0,text='',resolve,done=false;
   const result=new Promise(r=>resolve=r);
-  const finish=error=>{if(done)return;done=true;clearTimeout(timer);session.close();resolve({...row,text,accepted:!!text&&matchesAnswer(text,accepted,language),afterClipMs:end?Math.round(performance.now()-end):null,...(error?{error}: {})});};
-  const timer=setTimeout(()=>finish('Result timeout'),pcm.byteLength/32+10000);
+  const finish=error=>{if(done)return;done=true;clearTimeout(timer);session.close();resolve({...row,text,accepted:!!text&&spokenVerdict({text,final:true},Array.isArray(accepted)?{id:language,accepted}:accepted,competitors).accepted,afterClipMs:end?Math.round(performance.now()-end):null,...(error?{error}: {})});};
+  const timer=setTimeout(()=>finish('Result timeout'),pcm.byteLength/32+16000);
   session.onError=e=>finish(e.message);
   if(session.failed)finish(session.failed.message);
   session.onTranscript=r=>{if(r.final){text=r.text;if(end)finish();}};
