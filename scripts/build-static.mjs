@@ -7,7 +7,7 @@ if(audioHost){
  if(url.protocol!=='https:'||url.username||url.password||url.search||url.hash||!audioHost.endsWith('/'))throw Error('Audio host must be an HTTPS directory URL without credentials or query parameters.');
 }
 rmSync('dist',{recursive:true,force:true});mkdirSync('dist');
-for(const entry of ['index.html','about.html','privacy.html','content-review.html','src','audio-regions'])cpSync(entry,join('dist',entry),{recursive:true,filter:source=>!audioHost||!(source.startsWith('src/audio/azure/')&&source.endsWith('.mp3'))});
+for(const entry of ['index.html','about.html','privacy.html','content-review.html','src','audio-regions','lemmas'])cpSync(entry,join('dist',entry),{recursive:true,filter:source=>!audioHost||!(source.startsWith('src/audio/azure/')&&source.endsWith('.mp3'))});
 if(audioHost)writeFileSync('dist/src/audio-host.js',`export const audioBaseUrl = ${JSON.stringify(audioHost)};\n`);
 mkdirSync('dist/learning',{recursive:true});
 cpSync('index.html','dist/learning/index.html');

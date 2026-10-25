@@ -1,0 +1,2620 @@
+{
+  "title": "Edited CORPES study deck",
+  "version": 2,
+  "accessed": "2026-10-25",
+  "source": "RAE / ASALE, CORPES XXI: 5000 lemas",
+  "sourceUrl": "https://www.rae.es/corpes/assets/rae/files/corpes/5000_lemas.html",
+  "sourceVersion": "Not stated on the downloadable table",
+  "sourceSha256": "bdbf8452fc8a1b6b18e06b5e5ef6cbf6a75db9b89017dbd2e57c30fc483555de",
+  "dictionarySource": "English Wiktionary contributors, via Jeff Doozan spanish_data",
+  "dictionaryRevision": "b8ed076b4faea26a0985ee46ca736771c2e62dc4",
+  "dictionaryOriginalSha256": "7cb53827e68a6d8fabcc40c3072adf25c6279500d116bafd3c4a7aad70a0347f",
+  "dictionaryExtractSha256": "96ec17a546164829fdf2653b1ec665cbdb80623148e62d4d3203f3940e028613",
+  "teachingEditsSha256": "fc31f8ad49a88523f9d4701f15d7b31a152b00725d076a43139d649ec4d4275e",
+  "count": 1500,
+  "distinctSpellings": 1455,
+  "dataLicense": "CC BY-SA 4.0; retain RAE/ASALE and Wiktionary/Jeff Doozan attribution",
+  "counting": "One card per selected lemma/POS; interests folded into interés, without adding counts; backfilled religioso",
+  "decisions": [
+    {
+      "id": "corpes:el:T",
+      "sourceRank": 1,
+      "meanings": [
+        "the (el, la, los, las)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:de:P",
+      "sourceRank": 2,
+      "meanings": [
+        "of; from"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:y:C",
+      "sourceRank": 5,
+      "meanings": [
+        "and"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:en:P",
+      "sourceRank": 6,
+      "meanings": [
+        "in; on; at"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:a:P",
+      "sourceRank": 7,
+      "meanings": [
+        "to; at; also marks certain human direct objects"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:un:T",
+      "sourceRank": 8,
+      "meanings": [
+        "a; an (un, una); some (unos, unas)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:que:H",
+      "sourceRank": 9,
+      "meanings": [
+        "who; which; that (relative pronoun)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ser:V",
+      "sourceRank": 10,
+      "meanings": [
+        "to be: identity, characteristics or origin",
+        "also forms the passive voice"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "soy",
+        "eres",
+        "es",
+        "somos",
+        "son",
+        "fue"
+      ]
+    },
+    {
+      "id": "corpes:se:L",
+      "sourceRank": 11,
+      "meanings": [
+        "oneself; himself; herself; themselves",
+        "also used in reciprocal, impersonal and passive constructions"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:que:C",
+      "sourceRank": 12,
+      "meanings": [
+        "that; than (conjunction)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:suyo:X",
+      "sourceRank": 14,
+      "meanings": [
+        "his; hers; its; theirs; yours (formal)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:con:P",
+      "sourceRank": 15,
+      "meanings": [
+        "with"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:por:P",
+      "sourceRank": 17,
+      "meanings": [
+        "by; through; because of; in exchange for"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:para:P",
+      "sourceRank": 19,
+      "meanings": [
+        "for; to; in order to"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:lo:L",
+      "sourceRank": 20,
+      "meanings": [
+        "him; it; you (formal, masculine direct object)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:este:D",
+      "sourceRank": 21,
+      "meanings": [
+        "this; these (este, esta, estos, estas)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:como:C",
+      "sourceRank": 23,
+      "meanings": [
+        "as; since"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:estar:V",
+      "sourceRank": 24,
+      "meanings": [
+        "to be: state or location"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "estoy",
+        "estás",
+        "está",
+        "están"
+      ]
+    },
+    {
+      "id": "corpes:tener:V",
+      "sourceRank": 25,
+      "meanings": [
+        "to have; to possess"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "tengo",
+        "tienes",
+        "tiene",
+        "tienen"
+      ]
+    },
+    {
+      "id": "corpes:ir:V",
+      "sourceRank": 26,
+      "meanings": [
+        "to go"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "voy",
+        "vas",
+        "va",
+        "van",
+        "fui"
+      ]
+    },
+    {
+      "id": "corpes:le:L",
+      "sourceRank": 27,
+      "meanings": [
+        "to or for him, her or you (formal)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:me:L",
+      "sourceRank": 29,
+      "meanings": [
+        "me; to me; myself"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:hacer:V",
+      "sourceRank": 33,
+      "meanings": [
+        "to do; to make"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "hago",
+        "haces",
+        "hace",
+        "hizo"
+      ]
+    },
+    {
+      "id": "corpes:poder:V",
+      "sourceRank": 34,
+      "meanings": [
+        "can; to be able to"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "puedo",
+        "puedes",
+        "puede",
+        "pudo"
+      ]
+    },
+    {
+      "id": "corpes:ese:D",
+      "sourceRank": 35,
+      "meanings": [
+        "that; those (ese, esa, esos, esas)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:todo:Q",
+      "sourceRank": 36,
+      "meanings": [
+        "all; every"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:él:L",
+      "sourceRank": 40,
+      "meanings": [
+        "he; him (after a preposition)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:otro:Q",
+      "sourceRank": 41,
+      "meanings": [
+        "other; another"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:decir:V",
+      "sourceRank": 42,
+      "reason": "Selected common verb forms",
+      "forms": [
+        "digo",
+        "dices",
+        "dice",
+        "dijo"
+      ]
+    },
+    {
+      "id": "corpes:haber:V",
+      "sourceRank": 47,
+      "meanings": [
+        "auxiliary “have”: he comido = I have eaten",
+        "hay = there is / there are"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "he",
+        "has",
+        "ha",
+        "hay"
+      ]
+    },
+    {
+      "id": "corpes:mío:X",
+      "sourceRank": 49,
+      "meanings": [
+        "mine; my (after a noun)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:dar:V",
+      "sourceRank": 50,
+      "reason": "Selected common verb forms",
+      "forms": [
+        "doy",
+        "das",
+        "da",
+        "dio"
+      ]
+    },
+    {
+      "id": "corpes:ver:V",
+      "sourceRank": 51,
+      "reason": "Selected common verb forms",
+      "forms": [
+        "veo",
+        "ves",
+        "ve",
+        "vio"
+      ]
+    },
+    {
+      "id": "corpes:ya:R",
+      "sourceRank": 58,
+      "meanings": [
+        "already; now",
+        "ya no = not anymore"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:nos:L",
+      "sourceRank": 59,
+      "meanings": [
+        "us; to us; ourselves"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:te:L",
+      "sourceRank": 62,
+      "meanings": [
+        "you; to you; yourself (informal singular)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:muy:R",
+      "sourceRank": 63,
+      "meanings": [
+        "very"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:saber:V",
+      "sourceRank": 66,
+      "reason": "Selected common verb forms",
+      "forms": [
+        "sé",
+        "sabes",
+        "sabe",
+        "supo"
+      ]
+    },
+    {
+      "id": "corpes:primero:M",
+      "sourceRank": 67,
+      "meanings": [
+        "first (in a sequence)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mismo:Q",
+      "sourceRank": 69,
+      "meanings": [
+        "same; self; very (for emphasis)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:qué:W",
+      "sourceRank": 70,
+      "meanings": [
+        "what; which (in questions and exclamations)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:alguno:Q",
+      "sourceRank": 72,
+      "meanings": [
+        "some; any"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:vez:N",
+      "sourceRank": 73,
+      "meanings": [
+        "time; occasion"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:día:N",
+      "sourceRank": 74,
+      "meanings": [
+        "day"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:yo:L",
+      "sourceRank": 75,
+      "meanings": [
+        "I"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:querer:V",
+      "sourceRank": 76,
+      "reason": "Selected common verb forms",
+      "forms": [
+        "quiero",
+        "quieres",
+        "quiere",
+        "quiso"
+      ]
+    },
+    {
+      "id": "corpes:deber:V",
+      "sourceRank": 77,
+      "meanings": [
+        "must; should; to have to",
+        "to owe"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mucho:Q",
+      "sourceRank": 82,
+      "meanings": [
+        "much; many; a lot of"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:grande:A",
+      "sourceRank": 86,
+      "meanings": [
+        "big; large; great"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tiempo:N",
+      "sourceRank": 87,
+      "meanings": [
+        "time; weather"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:donde:R",
+      "sourceRank": 88,
+      "meanings": [
+        "where (relative: the place where...)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:nuestro:X",
+      "sourceRank": 89,
+      "meanings": [
+        "our; ours"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:llevar:V",
+      "sourceRank": 92,
+      "meanings": [
+        "to carry; to take somewhere; to wear"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:seguir:V",
+      "sourceRank": 94,
+      "meanings": [
+        "to follow; to continue"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cada:Q",
+      "sourceRank": 96,
+      "meanings": [
+        "each; every"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:encontrar:V",
+      "sourceRank": 97,
+      "meanings": [
+        "to find; to meet"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ni:C",
+      "sourceRank": 100,
+      "meanings": [
+        "nor; neither ... nor"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:quedar:V",
+      "sourceRank": 104,
+      "meanings": [
+        "to remain; to be left",
+        "quedar en: to agree on; quedarse: to stay"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:bueno:A",
+      "sourceRank": 105,
+      "meanings": [
+        "good"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:hablar:V",
+      "sourceRank": 109,
+      "meanings": [
+        "to speak; to talk"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:así:R",
+      "sourceRank": 110,
+      "meanings": [
+        "like this; like that; so"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:siempre:R",
+      "sourceRank": 119,
+      "meanings": [
+        "always"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mayor:A",
+      "sourceRank": 124,
+      "meanings": [
+        "bigger; greater; older"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:trabajo:N",
+      "sourceRank": 131,
+      "meanings": [
+        "work; job"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:sí:R",
+      "sourceRank": 138,
+      "meanings": [
+        "yes"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:conocer:V",
+      "sourceRank": 139,
+      "meanings": [
+        "to know; to be familiar with",
+        "to meet (a person for the first time)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tomar:V",
+      "sourceRank": 144,
+      "meanings": [
+        "to take; to drink"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tuyo:X",
+      "sourceRank": 148,
+      "meanings": [
+        "your; yours (informal singular)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:venir:V",
+      "sourceRank": 151,
+      "meanings": [
+        "to come"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison",
+      "forms": [
+        "vengo",
+        "vienes",
+        "viene",
+        "vino"
+      ]
+    },
+    {
+      "id": "corpes:estado:N",
+      "sourceRank": 156,
+      "meanings": [
+        "state; condition",
+        "state (political territory or government)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:nada:Q",
+      "sourceRank": 159,
+      "meanings": [
+        "nothing; not anything"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cual:H",
+      "sourceRank": 169,
+      "meanings": [
+        "which; who (relative, usually el cual / la cual)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:menos:R",
+      "sourceRank": 180,
+      "meanings": [
+        "less; least"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:esperar:V",
+      "sourceRank": 185,
+      "meanings": [
+        "to wait; to hope; to expect"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:nunca:R",
+      "sourceRank": 189,
+      "meanings": [
+        "never"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:político:A",
+      "sourceRank": 195,
+      "meanings": [
+        "political"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:más:Q",
+      "sourceRank": 197,
+      "meanings": [
+        "more (with a noun: más tiempo = more time)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuenta:N",
+      "sourceRank": 206,
+      "meanings": [
+        "account; bill; calculation"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:varios:Q",
+      "sourceRank": 208,
+      "meanings": [
+        "several; various"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:medio:N",
+      "sourceRank": 210,
+      "meanings": [
+        "means; medium; middle"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mí:L",
+      "sourceRank": 212,
+      "meanings": [
+        "me (after a preposition)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mucho:R",
+      "sourceRank": 217,
+      "meanings": [
+        "a lot; much (modifying a verb, adjective or adverb)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:uno:Q",
+      "sourceRank": 220,
+      "meanings": [
+        "one; someone; a person"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ninguno:Q",
+      "sourceRank": 225,
+      "meanings": [
+        "none; no; not any"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:convertir:V",
+      "sourceRank": 246,
+      "meanings": [
+        "to turn into; to convert",
+        "convertirse en: to become"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:aún:R",
+      "sourceRank": 260,
+      "meanings": [
+        "still; yet"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cualquiera:Q",
+      "sourceRank": 265,
+      "meanings": [
+        "any; anyone; whichever"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:entender:V",
+      "sourceRank": 267,
+      "meanings": [
+        "to understand"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:amigo:N",
+      "sourceRank": 277,
+      "meanings": [
+        "friend"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:hecho:N",
+      "sourceRank": 280,
+      "meanings": [
+        "fact; event; deed"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:diferente:A",
+      "sourceRank": 285,
+      "meanings": [
+        "different"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:ley:N",
+      "sourceRank": 288,
+      "meanings": [
+        "law"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:gustar:V",
+      "sourceRank": 299,
+      "meanings": [
+        "to be pleasing to; to like (the person who likes is the indirect object)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:usted:L",
+      "sourceRank": 300,
+      "meanings": [
+        "you (formal singular)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:nosotros:L",
+      "sourceRank": 302,
+      "meanings": [
+        "we; us (after a preposition)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:solo:A",
+      "sourceRank": 310,
+      "meanings": [
+        "alone; only; sole"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:músico:N",
+      "sourceRank": 326,
+      "lemma": "música",
+      "meanings": [
+        "music"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: música. The source labels this entry músico; its count may include other uses and is not an exact frequency for música.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/música#Spanish",
+        "https://dle.rae.es/música"
+      ]
+    },
+    {
+      "id": "corpes:poder:N",
+      "sourceRank": 340,
+      "meanings": [
+        "power; authority"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuyo:H",
+      "sourceRank": 343,
+      "meanings": [
+        "whose (cuyo, cuya, cuyos, cuyas agree with the thing possessed)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:dato:N",
+      "sourceRank": 354,
+      "meanings": [
+        "piece of information; data item"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tierra:N",
+      "sourceRank": 365,
+      "meanings": [
+        "earth; land; ground"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:luz:N",
+      "sourceRank": 372,
+      "meanings": [
+        "light"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:recurso:N",
+      "sourceRank": 381,
+      "meanings": [
+        "resource; means",
+        "appeal (law)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:principio:N",
+      "sourceRank": 386,
+      "meanings": [
+        "beginning; principle"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cierto:Q",
+      "sourceRank": 405,
+      "meanings": [
+        "a certain; some (before a noun)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:interés:N",
+      "sourceRank": 415,
+      "meanings": [
+        "interest; attention",
+        "intereses: interests, concerns or financial interest"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:red:N",
+      "sourceRank": 423,
+      "meanings": [
+        "network; net"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:policía:N",
+      "sourceRank": 447,
+      "meanings": [
+        "police; police officer"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:pagar:V",
+      "sourceRank": 454,
+      "meanings": [
+        "to pay"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:clase:N",
+      "sourceRank": 480,
+      "meanings": [
+        "class; kind; lesson"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:sí:L",
+      "sourceRank": 486,
+      "meanings": [
+        "himself; herself; itself; themselves (after a preposition)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:carrera:N",
+      "sourceRank": 510,
+      "meanings": [
+        "career; degree course; race"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:personaje:N",
+      "sourceRank": 543,
+      "meanings": [
+        "character (in a story); public figure"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:añadir:V",
+      "sourceRank": 556,
+      "meanings": [
+        "to add"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:aprender:V",
+      "sourceRank": 572,
+      "meanings": [
+        "to learn"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:técnico:N",
+      "sourceRank": 587,
+      "meanings": [
+        "technician; coach (sports)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:popular:A",
+      "sourceRank": 604,
+      "meanings": [
+        "popular; of the people"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:artículo:N",
+      "sourceRank": 607,
+      "meanings": [
+        "article; item"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:sueño:N",
+      "sourceRank": 625,
+      "meanings": [
+        "sleep; dream"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cargo:N",
+      "sourceRank": 636,
+      "meanings": [
+        "position; post; charge"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:teatro:N",
+      "sourceRank": 645,
+      "meanings": [
+        "theater; drama"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:término:N",
+      "sourceRank": 649,
+      "meanings": [
+        "term; end"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cámara:N",
+      "sourceRank": 685,
+      "meanings": [
+        "camera; chamber"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:planta:N",
+      "sourceRank": 696,
+      "meanings": [
+        "plant; factory; floor of a building"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:conjunto:N",
+      "sourceRank": 697,
+      "meanings": [
+        "group; set; ensemble"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:factor:N",
+      "sourceRank": 703,
+      "meanings": [
+        "factor"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:animal:N",
+      "sourceRank": 707,
+      "meanings": [
+        "animal"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:memoria:N",
+      "sourceRank": 711,
+      "meanings": [
+        "memory"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:presente:A",
+      "sourceRank": 720,
+      "meanings": [
+        "present; current"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:faltar:V",
+      "sourceRank": 733,
+      "meanings": [
+        "to be missing; to be lacking"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:trabajador:N",
+      "sourceRank": 736,
+      "meanings": [
+        "worker"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ingreso:N",
+      "sourceRank": 743,
+      "meanings": [
+        "income; admission; entry"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ti:L",
+      "sourceRank": 746,
+      "meanings": [
+        "you (after a preposition, informal singular)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:escenario:N",
+      "sourceRank": 748,
+      "meanings": [
+        "stage; setting; scenario"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:importar:V",
+      "sourceRank": 751,
+      "meanings": [
+        "to matter; to be important",
+        "to import (goods)"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:abuelo:N",
+      "sourceRank": 763,
+      "meanings": [
+        "grandfather"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cierto:A",
+      "sourceRank": 768,
+      "meanings": [
+        "true; certain"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:televisión:N",
+      "sourceRank": 781,
+      "meanings": [
+        "television"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:club:N",
+      "sourceRank": 793,
+      "meanings": [
+        "club"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:industria:N",
+      "sourceRank": 804,
+      "meanings": [
+        "industry"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:aprovechar:V",
+      "sourceRank": 809,
+      "meanings": [
+        "to make use of; to take advantage of"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:mexicano:A",
+      "sourceRank": 812,
+      "meanings": [
+        "Mexican"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:género:N",
+      "sourceRank": 821,
+      "meanings": [
+        "type; genre; gender"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:reunir:V",
+      "sourceRank": 823,
+      "meanings": [
+        "to gather; to bring together"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:noticia:N",
+      "sourceRank": 828,
+      "meanings": [
+        "news; a news item"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:advertir:V",
+      "sourceRank": 860,
+      "meanings": [
+        "to warn; to notice"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:característico:N",
+      "sourceRank": 870,
+      "lemma": "característica",
+      "meanings": [
+        "characteristic; feature"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: característica. The source labels this entry característico; its count may include other uses and is not an exact frequency for característica.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/característica#Spanish",
+        "https://dle.rae.es/característica"
+      ]
+    },
+    {
+      "id": "corpes:cuadro:N",
+      "sourceRank": 878,
+      "meanings": [
+        "picture; painting; chart"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:alrededor:R",
+      "sourceRank": 895,
+      "meanings": [
+        "around; approximately"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:maestro:N",
+      "sourceRank": 921,
+      "meanings": [
+        "teacher; master"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:español:N",
+      "sourceRank": 923,
+      "meanings": [
+        "Spanish (language); Spanish person"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:competencia:N",
+      "sourceRank": 929,
+      "meanings": [
+        "competition; competence"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:concluir:V",
+      "sourceRank": 930,
+      "meanings": [
+        "to conclude; to finish"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:igual:R",
+      "sourceRank": 938,
+      "meanings": [
+        "equally; in the same way",
+        "perhaps (informal)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:reír:V",
+      "sourceRank": 968,
+      "meanings": [
+        "to laugh"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:corresponder:V",
+      "sourceRank": 977,
+      "meanings": [
+        "to correspond; to belong; to be someone's responsibility"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:salido:N",
+      "sourceRank": 979,
+      "lemma": "salida",
+      "meanings": [
+        "exit; departure"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: salida. The source labels this entry salido; its count may include other uses and is not an exact frequency for salida.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/salida#Spanish",
+        "https://dle.rae.es/salida"
+      ]
+    },
+    {
+      "id": "corpes:listo:N",
+      "sourceRank": 988,
+      "lemma": "lista",
+      "meanings": [
+        "list"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: lista. The source labels this entry listo; its count may include other uses and is not an exact frequency for lista.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/lista#Spanish",
+        "https://dle.rae.es/lista"
+      ]
+    },
+    {
+      "id": "corpes:menos:Q",
+      "sourceRank": 991,
+      "meanings": [
+        "less; fewer (with a noun)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuarto:N",
+      "sourceRank": 1019,
+      "meanings": [
+        "room; quarter"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:perro:N",
+      "sourceRank": 1032,
+      "meanings": [
+        "dog"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuestión:N",
+      "sourceRank": 1047,
+      "meanings": [
+        "matter; issue; question"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:carne:N",
+      "sourceRank": 1062,
+      "meanings": [
+        "meat; flesh"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:propiedad:N",
+      "sourceRank": 1077,
+      "meanings": [
+        "property; ownership"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:costo:N",
+      "sourceRank": 1090,
+      "meanings": [
+        "cost (chiefly Latin America)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:gritar:V",
+      "sourceRank": 1096,
+      "meanings": [
+        "to shout; to scream"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:medio:A",
+      "sourceRank": 1103,
+      "meanings": [
+        "half; middle; average"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:digital:A",
+      "sourceRank": 1108,
+      "meanings": [
+        "digital; relating to fingers or toes"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:notar:V",
+      "sourceRank": 1124,
+      "meanings": [
+        "to notice; to feel"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:fenómeno:N",
+      "sourceRank": 1139,
+      "meanings": [
+        "phenomenon"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:banda:N",
+      "sourceRank": 1154,
+      "meanings": [
+        "band; group; strip"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:dedo:N",
+      "sourceRank": 1155,
+      "meanings": [
+        "finger; toe"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:quizás:R",
+      "sourceRank": 1170,
+      "meanings": [
+        "perhaps; maybe"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:disco:N",
+      "sourceRank": 1172,
+      "meanings": [
+        "disc; record"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:acudir:V",
+      "sourceRank": 1186,
+      "meanings": [
+        "to go to; to attend; to turn to for help"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:poseer:V",
+      "sourceRank": 1189,
+      "meanings": [
+        "to possess; to own"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:lectura:N",
+      "sourceRank": 1214,
+      "meanings": [
+        "reading"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuánto:W",
+      "sourceRank": 1215,
+      "meanings": [
+        "how much; how many"
+      ],
+      "reason": "Interrogative use, distinct from adverb"
+    },
+    {
+      "id": "corpes:coger:V",
+      "sourceRank": 1219,
+      "meanings": [
+        "to take; to catch (common in Spain)",
+        "Vulgar sexual meaning in many Latin American countries; use tomar for “take” there."
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "sourceRank": 1221,
+      "meanings": [
+        "to belong"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:hoja:N",
+      "sourceRank": 1231,
+      "meanings": [
+        "leaf; sheet (of paper)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:solicitar:V",
+      "sourceRank": 1265,
+      "meanings": [
+        "to request; to apply for"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:vino:N",
+      "sourceRank": 1279,
+      "meanings": [
+        "wine"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:qué:R",
+      "sourceRank": 1289,
+      "meanings": [
+        "how (in exclamations: ¡qué bien! = how nice!)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:alma:N",
+      "sourceRank": 1299,
+      "meanings": [
+        "soul"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cuidar:V",
+      "sourceRank": 1311,
+      "meanings": [
+        "to care for; to look after"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:aun:R",
+      "sourceRank": 1317,
+      "meanings": [
+        "even"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:caber:V",
+      "sourceRank": 1321,
+      "meanings": [
+        "to fit; to have room"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:perspectivo:N",
+      "sourceRank": 1324,
+      "lemma": "perspectiva",
+      "meanings": [
+        "perspective; viewpoint"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: perspectiva. The source labels this entry perspectivo; its count may include other uses and is not an exact frequency for perspectiva.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/perspectiva#Spanish",
+        "https://dle.rae.es/perspectiva"
+      ]
+    },
+    {
+      "id": "corpes:situar:V",
+      "sourceRank": 1326,
+      "meanings": [
+        "to place; to locate"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:gana:N",
+      "sourceRank": 1328,
+      "meanings": [
+        "desire; urge (usually ganas: tener ganas de = to feel like)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:contra:N",
+      "sourceRank": 1340,
+      "meanings": [
+        "disadvantage; objection"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:oro:N",
+      "sourceRank": 1342,
+      "meanings": [
+        "gold"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ejercer:V",
+      "sourceRank": 1355,
+      "meanings": [
+        "to exercise; to practice (a profession)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:baño:N",
+      "sourceRank": 1373,
+      "meanings": [
+        "bathroom; bath"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:rodear:V",
+      "sourceRank": 1379,
+      "meanings": [
+        "to surround"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:playa:N",
+      "sourceRank": 1399,
+      "meanings": [
+        "beach"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:pegar:V",
+      "sourceRank": 1412,
+      "meanings": [
+        "to stick; to glue; to hit"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:brindar:V",
+      "sourceRank": 1419,
+      "meanings": [
+        "to offer; to provide",
+        "to toast (raise a glass)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:deudo:N",
+      "sourceRank": 1425,
+      "lemma": "deuda",
+      "meanings": [
+        "debt"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: deuda. The source labels this entry deudo; its count may include other uses and is not an exact frequency for deuda.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/deuda#Spanish",
+        "https://dle.rae.es/deuda"
+      ]
+    },
+    {
+      "id": "corpes:según:R",
+      "sourceRank": 1430,
+      "meanings": [
+        "it depends (as a reply); according to how things are"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:leche:N",
+      "sourceRank": 1441,
+      "meanings": [
+        "milk"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:infantil:A",
+      "sourceRank": 1465,
+      "meanings": [
+        "children's; childlike; childish"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:cerebro:N",
+      "sourceRank": 1469,
+      "meanings": [
+        "brain"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:rico:A",
+      "sourceRank": 1480,
+      "meanings": [
+        "rich; tasty"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:casar:V",
+      "sourceRank": 1483,
+      "meanings": [
+        "to marry (someone to someone else)",
+        "casarse: to get married"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:conmigo:L",
+      "sourceRank": 1502,
+      "meanings": [
+        "with me"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:incremento:N",
+      "sourceRank": 1509,
+      "meanings": [
+        "increase"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:impuesto:N",
+      "sourceRank": 1521,
+      "meanings": [
+        "tax"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:fiscal:A",
+      "sourceRank": 1542,
+      "meanings": [
+        "fiscal; relating to taxation or prosecution"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:muerto:N",
+      "sourceRank": 1554,
+      "meanings": [
+        "a dead person; the deceased"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ruta:N",
+      "sourceRank": 1555,
+      "meanings": [
+        "route; road"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:estimar:V",
+      "sourceRank": 1556,
+      "meanings": [
+        "to estimate; to value"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:revisar:V",
+      "sourceRank": 1564,
+      "meanings": [
+        "to check; to review; to revise"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:os:L",
+      "sourceRank": 1566,
+      "meanings": [
+        "you; to you; yourselves (vosotros, informal plural in Spain)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tal:R",
+      "sourceRank": 1570,
+      "meanings": [
+        "like that; in that way (adverbial use)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tienda:N",
+      "sourceRank": 1571,
+      "meanings": [
+        "shop; store; tent"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:martes:N",
+      "sourceRank": 1577,
+      "meanings": [
+        "Tuesday"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:preocupación:N",
+      "sourceRank": 1581,
+      "meanings": [
+        "worry; concern"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:caído:N",
+      "sourceRank": 1583,
+      "lemma": "caída",
+      "meanings": [
+        "fall; drop"
+      ],
+      "reason": "Editorial choice of a useful feminine noun; not a recovered allocation of corpus tokens",
+      "sourceNote": "Teaching choice: caída. The source labels this entry caído; its count may include other uses and is not an exact frequency for caída.",
+      "evidence": [
+        "https://en.wiktionary.org/wiki/caída#Spanish",
+        "https://dle.rae.es/caída"
+      ]
+    },
+    {
+      "id": "corpes:ingresar:V",
+      "sourceRank": 1586,
+      "meanings": [
+        "to enter; to join; to deposit (money)"
+      ],
+      "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:jurídico:A",
+      "sourceRank": 1601,
+      "meanings": [
+        "legal; relating to law"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:disposición:N",
+      "sourceRank": 1604,
+      "meanings": [
+        "arrangement; willingness; provision (rule)"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:pecho:N",
+      "sourceRank": 1606,
+      "meanings": [
+        "chest; breast"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:gas:N",
+      "sourceRank": 1609,
+      "meanings": [
+        "gas"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:religioso:A",
+      "sourceRank": 1610,
+      "meanings": [
+        "religious"
+      ],
+      "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    }
+  ],
+  "exclusions": [
+    {
+      "sourceRank": 3,
+      "lemma": ",",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 4,
+      "lemma": ".",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 13,
+      "lemma": "del",
+      "tag": "P",
+      "reason": "contraction; teach with a/de + el"
+    },
+    {
+      "sourceRank": 18,
+      "lemma": "\"",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 22,
+      "lemma": "al",
+      "tag": "P",
+      "reason": "contraction; teach with a/de + el"
+    },
+    {
+      "sourceRank": 30,
+      "lemma": ":",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 31,
+      "lemma": ")",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 32,
+      "lemma": "(",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 39,
+      "lemma": "-",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 43,
+      "lemma": "—",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 44,
+      "lemma": "?",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 45,
+      "lemma": "¿",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 56,
+      "lemma": ";",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 57,
+      "lemma": "??",
+      "tag": "U",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 71,
+      "lemma": "...",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 95,
+      "lemma": "%",
+      "tag": "R",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 99,
+      "lemma": "»",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 102,
+      "lemma": "«",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 117,
+      "lemma": "'",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 118,
+      "lemma": "!",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 123,
+      "lemma": "¡",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 221,
+      "lemma": "sin embargo",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 234,
+      "lemma": "”",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 239,
+      "lemma": "“",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 276,
+      "lemma": "a través de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 292,
+      "lemma": "España",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 331,
+      "lemma": "ya que",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 348,
+      "lemma": "frente a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 363,
+      "lemma": "–",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 377,
+      "lemma": "Estados Unidos",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 391,
+      "lemma": "México",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 399,
+      "lemma": "a partir de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 424,
+      "lemma": "caso de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 451,
+      "lemma": "además de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 474,
+      "lemma": "junto a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 497,
+      "lemma": "1",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 502,
+      "lemma": "a pesar de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 511,
+      "lemma": "es decir",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 527,
+      "lemma": "así como",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 545,
+      "lemma": "2",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 582,
+      "lemma": "Madrid",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 600,
+      "lemma": "mientras que",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 643,
+      "lemma": "debido a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 675,
+      "lemma": "gracias a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 698,
+      "lemma": "así que",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 713,
+      "lemma": "3",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 714,
+      "lemma": "Colombia",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 756,
+      "lemma": "10",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 759,
+      "lemma": "Europa",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 811,
+      "lemma": "América",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 813,
+      "lemma": "ex",
+      "tag": "J",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 817,
+      "lemma": "Argentina",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 820,
+      "lemma": "Chile",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 826,
+      "lemma": "Dios",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 836,
+      "lemma": "tal vez",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 843,
+      "lemma": "El",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 901,
+      "lemma": "─",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 928,
+      "lemma": "ni siquiera",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 940,
+      "lemma": "20",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 982,
+      "lemma": "4",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 995,
+      "lemma": "5",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1006,
+      "lemma": "pese a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1008,
+      "lemma": "en cuanto a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1054,
+      "lemma": "Venezuela",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1089,
+      "lemma": "si bien",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1116,
+      "lemma": "Barcelona",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1117,
+      "lemma": "1",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1122,
+      "lemma": "a la que",
+      "tag": "C",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1142,
+      "lemma": "/",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 1158,
+      "lemma": "de acuerdo con",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1174,
+      "lemma": "30",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1182,
+      "lemma": "15",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1192,
+      "lemma": "]",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 1203,
+      "lemma": "[",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 1209,
+      "lemma": "Cuba",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1223,
+      "lemma": "$",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1225,
+      "lemma": "no obstante",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1229,
+      "lemma": "Francia",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1233,
+      "lemma": "10",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1245,
+      "lemma": "Brasil",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1247,
+      "lemma": "por supuesto",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1252,
+      "lemma": "2",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1274,
+      "lemma": "respecto a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1332,
+      "lemma": "a",
+      "tag": "N",
+      "reason": "letter name or single-letter entry"
+    },
+    {
+      "sourceRank": 1335,
+      "lemma": "intereses",
+      "tag": "N",
+      "reason": "Plural-specific interests included in interés:N; do not count as another study lemma or sum counts"
+    },
+    {
+      "sourceRank": 1356,
+      "lemma": "La",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1358,
+      "lemma": "6",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1371,
+      "lemma": "12",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1384,
+      "lemma": "Perú",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1387,
+      "lemma": "por tanto",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1406,
+      "lemma": "acerca de",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1426,
+      "lemma": "frente al",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1444,
+      "lemma": "•",
+      "tag": "Y",
+      "reason": "punctuation, unknown token, or affix"
+    },
+    {
+      "sourceRank": 1464,
+      "lemma": "en torno a",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1471,
+      "lemma": "20",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1472,
+      "lemma": "3",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1488,
+      "lemma": "50",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1510,
+      "lemma": "China",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1517,
+      "lemma": "7",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1533,
+      "lemma": "París",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    },
+    {
+      "sourceRank": 1544,
+      "lemma": "2008",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1560,
+      "lemma": "5",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1562,
+      "lemma": "junto con",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1563,
+      "lemma": "4",
+      "tag": "M",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1574,
+      "lemma": "b",
+      "tag": "N",
+      "reason": "letter name or single-letter entry"
+    },
+    {
+      "sourceRank": 1576,
+      "lemma": "por lo tanto",
+      "tag": "R",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1578,
+      "lemma": "2006",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1582,
+      "lemma": "2010",
+      "tag": "N",
+      "reason": "numeric or nonalphabetic entry"
+    },
+    {
+      "sourceRank": 1598,
+      "lemma": "a través del",
+      "tag": "P",
+      "reason": "multiword expression"
+    },
+    {
+      "sourceRank": 1599,
+      "lemma": "PP",
+      "tag": "N",
+      "reason": "capitalized entry (name/abbreviation heuristic)"
+    }
+  ],
+  "limitations": [
+    "Edited study selection, not an exact top 1500 lexical frequency inventory",
+    "Counts belong to original source entries, not necessarily the displayed headword/sense",
+    "No measured 90% coverage, retention or comprehension claim",
+    "Automatic dictionary extraction with scoped editorial review, not independent linguistic certification"
+  ]
+}
