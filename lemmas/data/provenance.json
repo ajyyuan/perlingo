@@ -10,7 +10,7 @@
   "dictionaryRevision": "b8ed076b4faea26a0985ee46ca736771c2e62dc4",
   "dictionaryOriginalSha256": "7cb53827e68a6d8fabcc40c3072adf25c6279500d116bafd3c4a7aad70a0347f",
   "dictionaryExtractSha256": "96ec17a546164829fdf2653b1ec665cbdb80623148e62d4d3203f3940e028613",
-  "teachingEditsSha256": "fc31f8ad49a88523f9d4701f15d7b31a152b00725d076a43139d649ec4d4275e",
+  "teachingEditsSha256": "15118a73f95f2bd98b00a5f0c3f27e8565e5e42717b871b420a7dba77938e95a",
   "count": 1500,
   "distinctSpellings": 1455,
   "dataLicense": "CC BY-SA 4.0; retain RAE/ASALE and Wiktionary/Jeff Doozan attribution",
@@ -458,6 +458,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:pasar:V",
+      "sourceRank": 81,
+      "meanings": [
+        "to pass; to happen; to spend time"
+      ]
+    },
+    {
       "id": "corpes:mucho:Q",
       "sourceRank": 82,
       "meanings": [
@@ -496,6 +503,13 @@
         "our; ours"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:dejar:V",
+      "sourceRank": 90,
+      "meanings": [
+        "to leave; to let; dejar de: to stop doing"
+      ]
     },
     {
       "id": "corpes:llevar:V",
@@ -538,6 +552,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:después:R",
+      "sourceRank": 101,
+      "meanings": [
+        "afterwards; later"
+      ]
+    },
+    {
       "id": "corpes:quedar:V",
       "sourceRank": 104,
       "meanings": [
@@ -569,6 +590,13 @@
         "like this; like that; so"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:parecer:V",
+      "sourceRank": 112,
+      "meanings": [
+        "to seem; to look like"
+      ]
     },
     {
       "id": "corpes:siempre:R",
@@ -612,12 +640,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:contar:V",
+      "sourceRank": 140,
+      "meanings": [
+        "to count; to tell (a story)"
+      ]
+    },
+    {
       "id": "corpes:tomar:V",
       "sourceRank": 144,
       "meanings": [
         "to take; to drink"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tratar:V",
+      "sourceRank": 147,
+      "meanings": [
+        "to treat; tratar de: to try to, to be about"
+      ]
     },
     {
       "id": "corpes:tuyo:X",
@@ -651,6 +693,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:realizar:V",
+      "sourceRank": 158,
+      "meanings": [
+        "to carry out; to perform"
+      ]
+    },
+    {
       "id": "corpes:nada:Q",
       "sourceRank": 159,
       "meanings": [
@@ -659,12 +708,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:importante:A",
+      "sourceRank": 168,
+      "meanings": [
+        "important"
+      ]
+    },
+    {
       "id": "corpes:cual:H",
       "sourceRank": 169,
       "meanings": [
         "which; who (relative, usually el cual / la cual)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:hoy:R",
+      "sourceRank": 174,
+      "meanings": [
+        "today"
+      ]
     },
     {
       "id": "corpes:menos:R",
@@ -705,6 +768,20 @@
         "more (with a noun: más tiempo = more time)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:partido:N",
+      "sourceRank": 198,
+      "meanings": [
+        "party (politics); match or game (sports)"
+      ]
+    },
+    {
+      "id": "corpes:alto:A",
+      "sourceRank": 203,
+      "meanings": [
+        "tall; high; loud"
+      ]
     },
     {
       "id": "corpes:cuenta:N",
@@ -772,6 +849,13 @@
       "reason": "Concise common senses; replace dictionary syntax shorthand"
     },
     {
+      "id": "corpes:escribir:V",
+      "sourceRank": 257,
+      "meanings": [
+        "to write"
+      ]
+    },
+    {
       "id": "corpes:aún:R",
       "sourceRank": 260,
       "meanings": [
@@ -796,12 +880,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:tema:N",
+      "sourceRank": 269,
+      "meanings": [
+        "topic; subject; theme"
+      ]
+    },
+    {
       "id": "corpes:amigo:N",
       "sourceRank": 277,
       "meanings": [
         "friend"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:señalar:V",
+      "sourceRank": 278,
+      "meanings": [
+        "to point out; to indicate; to signal"
+      ]
     },
     {
       "id": "corpes:hecho:N",
@@ -828,6 +926,20 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:terminar:V",
+      "sourceRank": 289,
+      "meanings": [
+        "to finish; to end"
+      ]
+    },
+    {
+      "id": "corpes:ganar:V",
+      "sourceRank": 296,
+      "meanings": [
+        "to win; to earn; to gain"
+      ]
+    },
+    {
       "id": "corpes:gustar:V",
       "sourceRank": 299,
       "meanings": [
@@ -852,12 +964,34 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:asegurar:V",
+      "sourceRank": 303,
+      "meanings": [
+        "to ensure; to assure; to secure"
+      ]
+    },
+    {
+      "id": "corpes:sector:N",
+      "sourceRank": 304,
+      "meanings": [
+        "sector; area; section"
+      ]
+    },
+    {
       "id": "corpes:solo:A",
       "sourceRank": 310,
       "meanings": [
         "alone; only; sole"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:ocurrir:V",
+      "sourceRank": 316,
+      "meanings": [
+        "to happen; to occur"
+      ],
+      "reason": "DLE ocurrir sense 2 is intransitive with a thing as subject; remove the misleading impersonal qualifier."
     },
     {
       "id": "corpes:músico:N",
@@ -871,6 +1005,13 @@
       "evidence": [
         "https://en.wiktionary.org/wiki/música#Spanish",
         "https://dle.rae.es/música"
+      ]
+    },
+    {
+      "id": "corpes:juego:N",
+      "sourceRank": 336,
+      "meanings": [
+        "game; play; set"
       ]
     },
     {
@@ -888,6 +1029,13 @@
         "whose (cuyo, cuya, cuyos, cuyas agree with the thing possessed)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:sacar:V",
+      "sourceRank": 350,
+      "meanings": [
+        "to take out; to remove; to obtain"
+      ]
     },
     {
       "id": "corpes:dato:N",
@@ -931,12 +1079,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:alcanzar:V",
+      "sourceRank": 387,
+      "meanings": [
+        "to reach; to catch up with"
+      ]
+    },
+    {
       "id": "corpes:cierto:Q",
       "sourceRank": 405,
       "meanings": [
         "a certain; some (before a noun)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:evitar:V",
+      "sourceRank": 412,
+      "meanings": [
+        "to avoid"
+      ]
     },
     {
       "id": "corpes:interés:N",
@@ -948,12 +1110,33 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:riesgo:N",
+      "sourceRank": 416,
+      "meanings": [
+        "risk"
+      ]
+    },
+    {
+      "id": "corpes:película:N",
+      "sourceRank": 422,
+      "meanings": [
+        "film; movie; thin layer"
+      ]
+    },
+    {
       "id": "corpes:red:N",
       "sourceRank": 423,
       "meanings": [
         "network; net"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:anterior:A",
+      "sourceRank": 426,
+      "meanings": [
+        "previous; earlier"
+      ]
     },
     {
       "id": "corpes:policía:N",
@@ -972,6 +1155,41 @@
       "reason": "Concise common senses; replace dictionary syntax shorthand"
     },
     {
+      "id": "corpes:destacar:V",
+      "sourceRank": 455,
+      "meanings": [
+        "to highlight; to stand out"
+      ]
+    },
+    {
+      "id": "corpes:cultural:A",
+      "sourceRank": 456,
+      "meanings": [
+        "cultural; relating to culture"
+      ]
+    },
+    {
+      "id": "corpes:dinero:N",
+      "sourceRank": 458,
+      "meanings": [
+        "money"
+      ]
+    },
+    {
+      "id": "corpes:cerca:R",
+      "sourceRank": 463,
+      "meanings": [
+        "near; nearby; approximately"
+      ]
+    },
+    {
+      "id": "corpes:difícil:A",
+      "sourceRank": 471,
+      "meanings": [
+        "difficult; hard"
+      ]
+    },
+    {
       "id": "corpes:clase:N",
       "sourceRank": 480,
       "meanings": [
@@ -988,12 +1206,55 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:menor:A",
+      "sourceRank": 506,
+      "meanings": [
+        "smaller; younger; minor"
+      ]
+    },
+    {
       "id": "corpes:carrera:N",
       "sourceRank": 510,
       "meanings": [
         "career; degree course; race"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:orden:N",
+      "sourceRank": 513,
+      "meanings": [
+        "order: la orden (command); el orden (arrangement)"
+      ]
+    },
+    {
+      "id": "corpes:suceder:V",
+      "sourceRank": 516,
+      "meanings": [
+        "to happen; to befall; to occur"
+      ],
+      "reason": "DLE suceder sense 4 has an explicit subject; third-person use is not the same as subjectless impersonal use."
+    },
+    {
+      "id": "corpes:oportunidad:N",
+      "sourceRank": 519,
+      "meanings": [
+        "opportunity; chance"
+      ]
+    },
+    {
+      "id": "corpes:oír:V",
+      "sourceRank": 538,
+      "meanings": [
+        "to hear; to listen to"
+      ]
+    },
+    {
+      "id": "corpes:traer:V",
+      "sourceRank": 539,
+      "meanings": [
+        "to bring"
+      ]
     },
     {
       "id": "corpes:personaje:N",
@@ -1004,12 +1265,47 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:viaje:N",
+      "sourceRank": 554,
+      "meanings": [
+        "trip; journey"
+      ]
+    },
+    {
+      "id": "corpes:capital:N",
+      "sourceRank": 555,
+      "meanings": [
+        "el capital: capital (money); la capital: capital city"
+      ]
+    },
+    {
       "id": "corpes:añadir:V",
       "sourceRank": 556,
       "meanings": [
         "to add"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:doctor:N",
+      "sourceRank": 564,
+      "meanings": [
+        "doctor; physician; holder of a doctorate"
+      ]
+    },
+    {
+      "id": "corpes:fuente:N",
+      "sourceRank": 566,
+      "meanings": [
+        "source; fountain; spring (water)"
+      ]
+    },
+    {
+      "id": "corpes:prueba:N",
+      "sourceRank": 571,
+      "meanings": [
+        "test; trial; proof; evidence"
+      ]
     },
     {
       "id": "corpes:aprender:V",
@@ -1044,6 +1340,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:profesor:N",
+      "sourceRank": 624,
+      "meanings": [
+        "teacher; professor"
+      ]
+    },
+    {
       "id": "corpes:sueño:N",
       "sourceRank": 625,
       "meanings": [
@@ -1074,6 +1377,41 @@
         "term; end"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:apoyar:V",
+      "sourceRank": 657,
+      "meanings": [
+        "to support; to lean or rest on"
+      ]
+    },
+    {
+      "id": "corpes:cuál:W",
+      "sourceRank": 660,
+      "meanings": [
+        "which; which one; what (in questions)"
+      ]
+    },
+    {
+      "id": "corpes:antiguo:A",
+      "sourceRank": 677,
+      "meanings": [
+        "old; ancient; former"
+      ]
+    },
+    {
+      "id": "corpes:formación:N",
+      "sourceRank": 678,
+      "meanings": [
+        "training; education; formation"
+      ]
+    },
+    {
+      "id": "corpes:comisión:N",
+      "sourceRank": 684,
+      "meanings": [
+        "committee; commission (fee or task)"
+      ]
     },
     {
       "id": "corpes:cámara:N",
@@ -1132,6 +1470,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:materia:N",
+      "sourceRank": 730,
+      "meanings": [
+        "matter; subject of study"
+      ]
+    },
+    {
       "id": "corpes:faltar:V",
       "sourceRank": 733,
       "meanings": [
@@ -1156,6 +1501,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:especialmente:R",
+      "sourceRank": 745,
+      "meanings": [
+        "especially; particularly"
+      ]
+    },
+    {
       "id": "corpes:ti:L",
       "sourceRank": 746,
       "meanings": [
@@ -1170,6 +1522,13 @@
         "stage; setting; scenario"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:corazón:N",
+      "sourceRank": 749,
+      "meanings": [
+        "heart"
+      ]
     },
     {
       "id": "corpes:importar:V",
@@ -1203,6 +1562,14 @@
         "television"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:gestión:N",
+      "sourceRank": 791,
+      "meanings": [
+        "management; administration; steps taken to get something done"
+      ],
+      "reason": "DLE gestión senses 1–2: bare process obscures the administrative or goal-directed sense; frozen dictionary also lists management and step."
     },
     {
       "id": "corpes:club:N",
@@ -1261,12 +1628,33 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:frente:N",
+      "sourceRank": 835,
+      "meanings": [
+        "la frente: forehead; el frente: front"
+      ]
+    },
+    {
+      "id": "corpes:organismo:N",
+      "sourceRank": 852,
+      "meanings": [
+        "organism; organization; body"
+      ]
+    },
+    {
       "id": "corpes:advertir:V",
       "sourceRank": 860,
       "meanings": [
         "to warn; to notice"
       ],
       "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:avanzar:V",
+      "sourceRank": 866,
+      "meanings": [
+        "to advance; to move forward"
+      ]
     },
     {
       "id": "corpes:característico:N",
@@ -1280,6 +1668,13 @@
       "evidence": [
         "https://en.wiktionary.org/wiki/característica#Spanish",
         "https://dle.rae.es/característica"
+      ]
+    },
+    {
+      "id": "corpes:quitar:V",
+      "sourceRank": 874,
+      "meanings": [
+        "to remove; to take away"
       ]
     },
     {
@@ -1299,6 +1694,27 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:resolver:V",
+      "sourceRank": 899,
+      "meanings": [
+        "to solve; to resolve"
+      ]
+    },
+    {
+      "id": "corpes:rostro:N",
+      "sourceRank": 911,
+      "meanings": [
+        "face (often formal in Spain)"
+      ]
+    },
+    {
+      "id": "corpes:etcétera:Q",
+      "sourceRank": 913,
+      "partOfSpeech": "expression",
+      "sourceNote": "The source classifies this entry as Q. The learner label follows DLE: an expression continuing an enumeration; the source tag and count are preserved.",
+      "reason": "DLE labels the enumeration use an expression; do not infer a quantity grammar explanation from the corpus tag."
+    },
+    {
       "id": "corpes:maestro:N",
       "sourceRank": 921,
       "meanings": [
@@ -1313,6 +1729,13 @@
         "Spanish (language); Spanish person"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:plazo:N",
+      "sourceRank": 924,
+      "meanings": [
+        "deadline; period; term"
+      ]
     },
     {
       "id": "corpes:competencia:N",
@@ -1331,6 +1754,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:destino:N",
+      "sourceRank": 937,
+      "meanings": [
+        "destination; destiny; fate"
+      ]
+    },
+    {
       "id": "corpes:igual:R",
       "sourceRank": 938,
       "meanings": [
@@ -1338,6 +1768,20 @@
         "perhaps (informal)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:disponer:V",
+      "sourceRank": 960,
+      "meanings": [
+        "to arrange; to order; disponer de: to have available"
+      ]
+    },
+    {
+      "id": "corpes:diario:N",
+      "sourceRank": 965,
+      "meanings": [
+        "diary; newspaper"
+      ]
     },
     {
       "id": "corpes:reír:V",
@@ -1370,6 +1814,20 @@
       ]
     },
     {
+      "id": "corpes:cifra:N",
+      "sourceRank": 980,
+      "meanings": [
+        "figure; number; digit"
+      ]
+    },
+    {
+      "id": "corpes:piso:N",
+      "sourceRank": 985,
+      "meanings": [
+        "floor; storey; flat or apartment (especially Spain)"
+      ]
+    },
+    {
       "id": "corpes:listo:N",
       "sourceRank": 988,
       "lemma": "lista",
@@ -1392,6 +1850,41 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:corte:N",
+      "sourceRank": 992,
+      "meanings": [
+        "el corte: cut; la corte: court"
+      ]
+    },
+    {
+      "id": "corpes:lengua:N",
+      "sourceRank": 996,
+      "meanings": [
+        "tongue; language"
+      ]
+    },
+    {
+      "id": "corpes:laboral:A",
+      "sourceRank": 1001,
+      "meanings": [
+        "relating to work or employment"
+      ]
+    },
+    {
+      "id": "corpes:interesar:V",
+      "sourceRank": 1003,
+      "meanings": [
+        "to interest; to be of interest to"
+      ]
+    },
+    {
+      "id": "corpes:tirar:V",
+      "sourceRank": 1012,
+      "meanings": [
+        "to throw; to throw away; tirar de: to pull"
+      ]
+    },
+    {
       "id": "corpes:cuarto:N",
       "sourceRank": 1019,
       "meanings": [
@@ -1408,12 +1901,33 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:pena:N",
+      "sourceRank": 1042,
+      "meanings": [
+        "sorrow; pity; punishment"
+      ]
+    },
+    {
+      "id": "corpes:bien:N",
+      "sourceRank": 1043,
+      "meanings": [
+        "good; benefit; bienes: goods or property"
+      ]
+    },
+    {
       "id": "corpes:cuestión:N",
       "sourceRank": 1047,
       "meanings": [
         "matter; issue; question"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:discurso:N",
+      "sourceRank": 1056,
+      "meanings": [
+        "speech; discourse"
+      ]
     },
     {
       "id": "corpes:carne:N",
@@ -1424,6 +1938,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:ambiente:N",
+      "sourceRank": 1070,
+      "meanings": [
+        "environment; atmosphere"
+      ]
+    },
+    {
       "id": "corpes:propiedad:N",
       "sourceRank": 1077,
       "meanings": [
@@ -1432,12 +1953,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:cuidado:N",
+      "sourceRank": 1085,
+      "meanings": [
+        "care; attention"
+      ]
+    },
+    {
       "id": "corpes:costo:N",
       "sourceRank": 1090,
       "meanings": [
         "cost (chiefly Latin America)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:exposición:N",
+      "sourceRank": 1094,
+      "meanings": [
+        "exhibition; exposition; exposure"
+      ]
     },
     {
       "id": "corpes:gritar:V",
@@ -1464,6 +1999,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:feliz:A",
+      "sourceRank": 1113,
+      "meanings": [
+        "happy; pleased"
+      ]
+    },
+    {
       "id": "corpes:notar:V",
       "sourceRank": 1124,
       "meanings": [
@@ -1472,12 +2014,33 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:curso:N",
+      "sourceRank": 1137,
+      "meanings": [
+        "course (study or direction); school year"
+      ]
+    },
+    {
       "id": "corpes:fenómeno:N",
       "sourceRank": 1139,
       "meanings": [
         "phenomenon"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:dificultad:N",
+      "sourceRank": 1149,
+      "meanings": [
+        "difficulty; trouble"
+      ]
+    },
+    {
+      "id": "corpes:pelo:N",
+      "sourceRank": 1153,
+      "meanings": [
+        "hair; fur"
+      ]
     },
     {
       "id": "corpes:banda:N",
@@ -1512,6 +2075,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:extraño:A",
+      "sourceRank": 1176,
+      "meanings": [
+        "strange; unusual"
+      ]
+    },
+    {
       "id": "corpes:acudir:V",
       "sourceRank": 1186,
       "meanings": [
@@ -1526,6 +2096,13 @@
         "to possess; to own"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:actitud:N",
+      "sourceRank": 1212,
+      "meanings": [
+        "attitude; stance"
+      ]
     },
     {
       "id": "corpes:lectura:N",
@@ -1569,6 +2146,34 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:juicio:N",
+      "sourceRank": 1232,
+      "meanings": [
+        "judgment; trial"
+      ]
+    },
+    {
+      "id": "corpes:mil:N",
+      "sourceRank": 1246,
+      "meanings": [
+        "a thousand; miles: thousands"
+      ]
+    },
+    {
+      "id": "corpes:deportivo:A",
+      "sourceRank": 1255,
+      "meanings": [
+        "relating to sport; sporting"
+      ]
+    },
+    {
+      "id": "corpes:determinado:A",
+      "sourceRank": 1259,
+      "meanings": [
+        "specific; particular; certain"
+      ]
+    },
+    {
       "id": "corpes:solicitar:V",
       "sourceRank": 1265,
       "meanings": [
@@ -1607,6 +2212,13 @@
         "to care for; to look after"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:probar:V",
+      "sourceRank": 1314,
+      "meanings": [
+        "to try; to test; to taste; to prove"
+      ]
     },
     {
       "id": "corpes:aun:R",
@@ -1671,6 +2283,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:sencillo:A",
+      "sourceRank": 1354,
+      "meanings": [
+        "simple; straightforward; plain"
+      ]
+    },
+    {
       "id": "corpes:ejercer:V",
       "sourceRank": 1355,
       "meanings": [
@@ -1687,12 +2306,33 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:raro:A",
+      "sourceRank": 1375,
+      "meanings": [
+        "strange; unusual; rare"
+      ]
+    },
+    {
       "id": "corpes:rodear:V",
       "sourceRank": 1379,
       "meanings": [
         "to surround"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:elaborar:V",
+      "sourceRank": 1381,
+      "meanings": [
+        "to prepare; to make; to develop"
+      ]
+    },
+    {
+      "id": "corpes:emplear:V",
+      "sourceRank": 1392,
+      "meanings": [
+        "to use; to employ or hire"
+      ]
     },
     {
       "id": "corpes:playa:N",
@@ -1703,12 +2343,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:concreto:A",
+      "sourceRank": 1408,
+      "meanings": [
+        "specific; concrete"
+      ]
+    },
+    {
       "id": "corpes:pegar:V",
       "sourceRank": 1412,
       "meanings": [
         "to stick; to glue; to hit"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:acceder:V",
+      "sourceRank": 1418,
+      "meanings": [
+        "to agree; acceder a: to access, to enter"
+      ]
     },
     {
       "id": "corpes:brindar:V",
@@ -1718,6 +2372,13 @@
         "to toast (raise a glass)"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:introducir:V",
+      "sourceRank": 1422,
+      "meanings": [
+        "to introduce; to insert; to bring in"
+      ]
     },
     {
       "id": "corpes:deudo:N",
@@ -1742,12 +2403,40 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:componer:V",
+      "sourceRank": 1434,
+      "meanings": [
+        "to compose; to make up; to repair"
+      ]
+    },
+    {
       "id": "corpes:leche:N",
       "sourceRank": 1441,
       "meanings": [
         "milk"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:masa:N",
+      "sourceRank": 1448,
+      "meanings": [
+        "mass; dough"
+      ]
+    },
+    {
+      "id": "corpes:campeón:N",
+      "sourceRank": 1453,
+      "meanings": [
+        "champion"
+      ]
+    },
+    {
+      "id": "corpes:canal:N",
+      "sourceRank": 1454,
+      "meanings": [
+        "channel; canal"
+      ]
     },
     {
       "id": "corpes:infantil:A",
@@ -1766,6 +2455,13 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:disminuir:V",
+      "sourceRank": 1479,
+      "meanings": [
+        "to decrease; to reduce"
+      ]
+    },
+    {
       "id": "corpes:rico:A",
       "sourceRank": 1480,
       "meanings": [
@@ -1781,6 +2477,20 @@
         "casarse: to get married"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:conservar:V",
+      "sourceRank": 1486,
+      "meanings": [
+        "to preserve; to keep"
+      ]
+    },
+    {
+      "id": "corpes:estación:N",
+      "sourceRank": 1487,
+      "meanings": [
+        "station; season of the year"
+      ]
     },
     {
       "id": "corpes:conmigo:L",
@@ -1805,6 +2515,34 @@
         "tax"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:emitir:V",
+      "sourceRank": 1530,
+      "meanings": [
+        "to emit; to issue; to broadcast"
+      ]
+    },
+    {
+      "id": "corpes:denunciar:V",
+      "sourceRank": 1531,
+      "meanings": [
+        "to report (an offense); to denounce"
+      ]
+    },
+    {
+      "id": "corpes:efectivo:A",
+      "sourceRank": 1535,
+      "meanings": [
+        "effective; real"
+      ]
+    },
+    {
+      "id": "corpes:despedir:V",
+      "sourceRank": 1536,
+      "meanings": [
+        "to dismiss; to fire; despedirse: to say goodbye"
+      ]
     },
     {
       "id": "corpes:fiscal:A",
@@ -1871,12 +2609,26 @@
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
     },
     {
+      "id": "corpes:encargar:V",
+      "sourceRank": 1575,
+      "meanings": [
+        "to entrust; to commission; to order"
+      ]
+    },
+    {
       "id": "corpes:martes:N",
       "sourceRank": 1577,
       "meanings": [
         "Tuesday"
       ],
       "reason": "Concise teaching sense selected or clarified after dictionary comparison"
+    },
+    {
+      "id": "corpes:tabla:N",
+      "sourceRank": 1580,
+      "meanings": [
+        "table or chart (data); board; plank"
+      ]
     },
     {
       "id": "corpes:preocupación:N",
@@ -1907,6 +2659,13 @@
         "to enter; to join; to deposit (money)"
       ],
       "reason": "Concise common senses; replace dictionary syntax shorthand"
+    },
+    {
+      "id": "corpes:actualidad:N",
+      "sourceRank": 1592,
+      "meanings": [
+        "the present; current affairs"
+      ]
     },
     {
       "id": "corpes:jurídico:A",

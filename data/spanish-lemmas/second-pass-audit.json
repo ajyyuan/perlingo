@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-25",
+  "status": "completed scoped second pass; not independent certification",
+  "reviewer": "Same authoring assistant; additional references are independent of the frozen Wiktionary extraction, but the reviewer is not independent.",
+  "method": [
+    "Read all 1500 base entries (meaning, displayed POS, pattern and inflection rows); read all 53 authored note entries and the usage overrides. This is linguistic screening, not 1500 independent dictionary lookups.",
+    "Inspect generator assumptions and all 10 invariant noun plurals, all adjective feminine outputs, and all five noun sections marked uncountable by the frozen extract.",
+    "Consult DLE/DPD for the specific ambiguities and unchanged decisions recorded below; compare four full irregular present tables by person.",
+    "Change only documented errors, misleading omissions/patterns or unsupported sense-specific teaching rows. Preserve valid variants."
+  ],
+  "coverage": {
+    "screenedEntries": 1500,
+    "changedEntries": 10,
+    "unchangedEntries": 1490,
+    "additionalReferenceEntryDecisions": 27,
+    "independentlyComparedFullPresentTables": 4,
+    "authoredExampleEntriesScreened": 53
+  },
+  "baseline": {
+    "deckSha256": "15ac09556fb393273cc8da40530233bbf952e517a607987406d16700db6d03d8",
+    "notesSha256": "effdc209dbd4230ca2401a5f141d2ffd080abdab01aeaec833db54dc2737fb64"
+  },
+  "result": {
+    "deckSha256": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "notesSha256": "7fb4259a3560a127743736704ebb4f871a9570f96494206f3b52013de7be1588"
+  },
+  "preserved": [
+    "id",
+    "rank",
+    "lemma",
+    "sourceLemma",
+    "sourceTag",
+    "sourceRank",
+    "count"
+  ],
+  "changes": [
+    {
+      "id": "corpes:mes:N",
+      "category": "error",
+      "reason": "A monosyllable ending in -s takes -es. The mapping contains the headword, which the old rule mistook for a plural.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ],
+      "fields": {
+        "forms": {
+          "before": [
+            [
+              "singular",
+              "el mes"
+            ],
+            [
+              "plural",
+              "los mes"
+            ]
+          ],
+          "after": [
+            [
+              "singular",
+              "el mes"
+            ],
+            [
+              "plural",
+              "los meses"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "corpes:ocurrir:V",
+      "category": "error",
+      "reason": "The happen sense has a thing/event as subject. DLE marks it intransitive and restricts it to third persons, not subjectless. Remove the source-derived impersonal label.",
+      "sources": [
+        "https://dle.rae.es/ocurrir"
+      ],
+      "fields": {
+        "meaning": {
+          "before": "to happen, to occur (impersonal)",
+          "after": "to happen; to occur"
+        }
+      }
+    },
+    {
+      "id": "corpes:escuchar:V",
+      "category": "misleading pattern",
+      "reason": "A pattern explicitly including person omitted personal a. DPD distinguishes listening to something from listening to someone; teach both constructions.",
+      "sources": [
+        "https://www.rae.es/dpd/escuchar"
+      ],
+      "fields": {
+        "pattern": {
+          "before": "escuchar + thing / person",
+          "after": "escuchar algo · escuchar a alguien"
+        },
+        "tip": {
+          "before": "Listen to: English to does not require a Spanish preposition.",
+          "after": "Listen to something; with a specific person, use personal a: escuchar a Ana."
+        }
+      }
+    },
+    {
+      "id": "corpes:español:A",
+      "category": "error",
+      "reason": "Removing every Unicode combining mark destroyed ñ, so espanola missed the source and silently fell back to español. Preserve ñ and require a resolved feminine candidate.",
+      "sources": [
+        "https://dle.rae.es/espa%C3%B1ol",
+        "https://www.rae.es/dpd/plural"
+      ],
+      "fields": {
+        "pattern": {
+          "before": "español",
+          "after": "español · española"
+        },
+        "tip": {
+          "before": "Same singular form for both genders.",
+          "after": "The ending agrees with the noun."
+        },
+        "forms": {
+          "before": [
+            [
+              "masculine singular",
+              "español"
+            ],
+            [
+              "feminine singular",
+              "español"
+            ],
+            [
+              "masculine plural",
+              "españoles"
+            ],
+            [
+              "feminine plural",
+              "españoles"
+            ]
+          ],
+          "after": [
+            [
+              "masculine singular",
+              "español"
+            ],
+            [
+              "feminine singular",
+              "española"
+            ],
+            [
+              "masculine plural",
+              "españoles"
+            ],
+            [
+              "feminine plural",
+              "españolas"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "corpes:suceder:V",
+      "category": "error",
+      "reason": "DLE sense 4 explicitly has a thing as subject. Remove the misleading impersonal label; retain the existing third-person teaching table.",
+      "sources": [
+        "https://dle.rae.es/suceder"
+      ],
+      "fields": {
+        "meaning": {
+          "before": "to happen, to befall, to occur (impersonal)",
+          "after": "to happen; to befall; to occur"
+        }
+      }
+    },
+    {
+      "id": "corpes:gestión:N",
+      "category": "misleading omission",
+      "reason": "Bare process hides the management/administration or practical steps sense. DLE senses 1–2 and the frozen entry support the replacement.",
+      "sources": [
+        "https://dle.rae.es/gesti%C3%B3n"
+      ],
+      "fields": {
+        "meaning": {
+          "before": "process",
+          "after": "management; administration; steps taken to get something done"
+        }
+      }
+    },
+    {
+      "id": "corpes:etcétera:Q",
+      "category": "misleading explanation",
+      "reason": "The corpus Q tag triggered generic quantity grammar. DLE labels this enumeration use an expression. Preserve sourceTag/ID/count; edit only the teaching label and explanation.",
+      "sources": [
+        "https://dle.rae.es/etc%C3%A9tera"
+      ],
+      "fields": {
+        "label": {
+          "before": "quantifier",
+          "after": "expression"
+        },
+        "tip": {
+          "before": "Quantifier",
+          "after": "Expression"
+        },
+        "tags": {
+          "before": [
+            "quantifier"
+          ],
+          "after": [
+            "enumeration"
+          ]
+        },
+        "more": {
+          "before": "",
+          "after": "The source classifies this entry as Q. The learner label follows DLE: an expression continuing an enumeration; the source tag and count are preserved."
+        }
+      }
+    },
+    {
+      "id": "corpes:inglés:N",
+      "category": "sense mismatch",
+      "reason": "The frozen language noun section is uncountable; the person noun is a separate section. DLE distinguishes those senses. Omit a generic plural row rather than teach los ingleses as the ordinary plural of the language. This does not prohibit specialized language-variety uses.",
+      "sources": [
+        "https://dle.rae.es/ingl%C3%A9s"
+      ],
+      "fields": {
+        "forms": {
+          "before": [
+            [
+              "singular",
+              "el inglés"
+            ],
+            [
+              "plural",
+              "los ingleses"
+            ]
+          ],
+          "after": [
+            [
+              "singular",
+              "el inglés"
+            ]
+          ]
+        },
+        "more": {
+          "before": "",
+          "after": "This card teaches the language. Los ingleses usually refers to English people, a different noun sense."
+        }
+      }
+    },
+    {
+      "id": "corpes:personal:N",
+      "category": "unsupported teaching form",
+      "reason": "The frozen staff sections explicitly mark the noun uncountable. DLE supports a collective staff sense. Omit the unqualified plural table row; this is a conservative teaching choice, not a claim that personales can never be a noun.",
+      "sources": [
+        "https://dle.rae.es/personal"
+      ],
+      "fields": {
+        "forms": {
+          "before": [
+            [
+              "singular",
+              "el personal"
+            ],
+            [
+              "plural",
+              "los personales"
+            ]
+          ],
+          "after": [
+            [
+              "singular",
+              "el personal"
+            ]
+          ]
+        },
+        "more": {
+          "before": "",
+          "after": "In the staff/personnel sense, personal is a collective noun normally used in the singular."
+        }
+      }
+    },
+    {
+      "id": "corpes:gas:N",
+      "category": "error",
+      "reason": "Same faulty invariant-plural branch as mes; DPD plural 1.6 supports gases.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ],
+      "fields": {
+        "forms": {
+          "before": [
+            [
+              "singular",
+              "el gas"
+            ],
+            [
+              "plural",
+              "los gas"
+            ]
+          ],
+          "after": [
+            [
+              "singular",
+              "el gas"
+            ],
+            [
+              "plural",
+              "los gases"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "retained": [
+    {
+      "id": "corpes:seguir:V",
+      "decision": "retain",
+      "reason": "All six displayed present-indicative person/form pairs match the DLE table.",
+      "sources": [
+        "https://dle.rae.es/seguir"
+      ]
+    },
+    {
+      "id": "corpes:arte:N",
+      "decision": "retain",
+      "reason": "Usual masculine singular and feminine plural are already qualified correctly.",
+      "sources": [
+        "https://www.rae.es/dpd/arte"
+      ]
+    },
+    {
+      "id": "corpes:crisis:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:análisis:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:club:N",
+      "decision": "retain",
+      "reason": "Clubes is valid alongside clubs; no reason to replace the chosen variant.",
+      "sources": [
+        "https://www.rae.es/dpd/club"
+      ]
+    },
+    {
+      "id": "corpes:reír:V",
+      "decision": "retain",
+      "reason": "All six displayed present-indicative person/form pairs match the DLE table.",
+      "sources": [
+        "https://dle.rae.es/re%C3%ADr"
+      ]
+    },
+    {
+      "id": "corpes:juez:N",
+      "decision": "retain",
+      "reason": "La juez is valid alongside jueza; retaining the existing common-gender paradigm is not an error.",
+      "sources": [
+        "https://www.rae.es/dpd/juez"
+      ]
+    },
+    {
+      "id": "corpes:adquirir:V",
+      "decision": "retain",
+      "reason": "All six displayed present-indicative person/form pairs match the DLE table.",
+      "sources": [
+        "https://dle.rae.es/adquirir"
+      ]
+    },
+    {
+      "id": "corpes:viernes:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:lunes:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:video:N",
+      "decision": "retain",
+      "reason": "Video and vídeo are both accepted regional accentuations; preserve the existing headword.",
+      "sources": [
+        "https://www.rae.es/dpd/video"
+      ]
+    },
+    {
+      "id": "corpes:radio:N",
+      "decision": "retain",
+      "reason": "Both genders for a receiver are valid regionally; retain both and the existing distinction from broadcasting/radius.",
+      "sources": [
+        "https://www.rae.es/dpd/radio"
+      ]
+    },
+    {
+      "id": "corpes:prever:V",
+      "decision": "retain",
+      "reason": "All six displayed present-indicative person/form pairs match the DLE table.",
+      "sources": [
+        "https://dle.rae.es/prever"
+      ]
+    },
+    {
+      "id": "corpes:jueves:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:miércoles:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:virus:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    },
+    {
+      "id": "corpes:martes:N",
+      "decision": "retain",
+      "reason": "Invariant plural is correct for this non-finally-stressed ending in -s. Retain it while correcting the monosyllables.",
+      "sources": [
+        "https://www.rae.es/dpd/plural"
+      ]
+    }
+  ],
+  "limits": [
+    "No separate second-reference semantic check for each of all 1500 entries; unchanged means no issue found in this screen, not certified correct.",
+    "Form membership and automated tests do not establish tense/person, naturalness, sense frequency or complete grammatical correctness.",
+    "The deck remains 1500 edited lemma/POS cards, 1455 spellings; original corpus counts are not independently disambiguated by taught sense.",
+    "A limited core gloss is not an exhaustive dictionary entry; additional valid senses were not added solely to enlarge the audit.",
+    "No measured 90% coverage or comprehension claim."
+  ]
+}

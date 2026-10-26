@@ -43,3 +43,9 @@ The edited deck has dictionary-backed meanings and selected verb forms with scop
 Run `python3 scripts/select-corpes-lemmas.py`. It reads only the frozen source and checks its hash, 5,000 unique lemma/POS rows, descending source counts, 1,500 selected entries and essential-function-word regressions. Generated output is deterministic. No network or package installation is needed.
 
 For local review, open `corpes-1500.txt`: inspect the first 50 rows, search for both *poder* entries, confirm *no*, *ser*, *estar* and *haber*, then inspect rank 1,500. Use source row numbers to compare against `corpes-5000-source.tsv`; every skipped row up to the cutoff appears in `exclusions.json`. These checks passed on October 25, including byte-identical regeneration. They validate the data pipeline, not linguistic perfection.
+
+## Full lexical notes (local)
+
+The current local preview has lexical notes for every card, with 53 separately authored sentence examples. `full-notes-gloss-review.json` records the 104-entry wording/sense audit; `notes-usage.json` holds construction notes. `notes-inflection-evidence.json` and `notes-manual-evidence.json` support the inflection/gender workflow, with unresolved candidates explicitly omitted in `notes-build-report.json`. Rebuild with `python3 scripts/build-corpes-deck.py` then `python3 scripts/build-lemma-notes.py`. [Current scope and checks](../../docs/lemmas.md). The user requested local preview first; this expansion is approved for commit but is not published.
+
+`second-pass-audit.json` separately records the October 25 second-pass baseline/result hashes, ten field-level changes with sources, and 17 explicit retain decisions. It distinguishes screening all entries from targeted additional-reference checks. Do not describe unchanged entries as independently verified. See [the readable report](../../docs/lemma-notes-second-pass.md).

@@ -104,3 +104,9 @@ A shaded row with “← here” identifies one unambiguous form matching the se
 The singular noun authoring helpers now record number explicitly, including the foundation entries used by the course. This fixes `der Kugelschreiber`, whose singular and plural spellings are identical: only singular is marked in that singular phrase. Lexical forms and translations are unchanged. Regression tests cover explicit singular/plural selections and ambiguous spelling without contextual features.
 
 Dotted-underlined grammar labels consistently open floating definitions in summaries, selected-word roles, part-of-speech/gender metadata, and form-type table cells. The glossary now also covers common parts of speech and definite/indefinite articles. Ordinary explanatory prose and foreign-language forms are not automatically turned into glossary links.
+
+## Spanish sprint notes (local draft)
+
+The independent `/lemmas/` sprint reuses these authoring conventions for its 53 authored sentence-note entries: explicit chunks, contextual English, and a grammar dialog retaining the full example. This is self-rated Reveal → Again/Know, not the main course’s scored recall engine. Help is available only after Reveal in study; standalone notes are learning/reference views and never grade cards. Punctuation is outside chunk buttons, including clause-separating commas. `lemmas/note-view.js` supplies the shared renderer; `tests/first-set-notes.test.js` validates the finite bank. See [scope and evidence](lemma-notes-sources.md).
+
+The full 1,500-card lexical note layer additionally has headword-level grammatical help and checked forms. Only the 53 authored sentence entries have clickable example chunks; no automatic sentence segmentation or fabricated sentence fallback is used. See [current scope](lemmas.md).

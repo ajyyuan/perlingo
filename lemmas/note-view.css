@@ -1,0 +1,41 @@
+.word-note .word-heading{display:flex;justify-content:space-between;align-items:center}
+.word-note .word-label{font-size:12px;color:var(--muted);margin:0 0 10px}
+.word-note h1{font-size:56px;margin:0;letter-spacing:-2px}
+.word-note .speaker{border:1px solid #cbd8c7;border-radius:50%;width:44px;height:44px;background:transparent;color:var(--accent);font-size:20px}
+.word-note .meaning{font-size:23px;margin:15px 0 20px}
+.word-note .concepts{display:flex;gap:12px;flex-wrap:wrap}
+.word-note .concepts button,.grammar-link{background:transparent;border:0;border-bottom:1px dotted #9aaa92;padding:2px 0;color:var(--accent);font-size:12px}
+.word-note .usage{border-left:2px solid #bfd0b6;padding-left:16px;margin:28px 0}
+.word-note .usage p{font-size:15px;margin:0 0 6px}
+.word-note .usage small,.word-note .translation{color:var(--muted);font-size:13px}
+.word-note .examples{background:#f1f5ed;padding:4px 20px;border-radius:10px}
+.word-note .example{padding:18px 0}
+.word-note .example+.example{border-top:1px solid #dbe3d6}
+.word-note .example-line{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.word-note .example-line p{margin:0;font-size:20px;line-height:1.8}
+.word-note .chunk{font:inherit;border:0;border-bottom:1px dotted #9cac92;background:transparent;padding:0;color:inherit}
+.word-note .chunk:hover,.word-note .chunk[aria-expanded=true]{background:#dde9d4;border-radius:3px}
+.word-note .example-speak{color:var(--accent);border:0;background:transparent;font-size:18px}
+.word-note .translation{margin:5px 0 0}
+.word-note .more{border-top:1px solid var(--line);padding:16px 0;font-size:14px}
+.word-note .more summary{cursor:pointer;color:var(--muted)}
+.word-note .more p{line-height:1.7}
+.word-note .more a{font-size:12px;color:var(--accent)}
+.word-note table{width:100%;border-collapse:collapse;margin-top:14px}
+.word-note th{text-align:left;font-weight:400;color:var(--muted);font-size:13px}
+.word-note td{padding:6px;text-align:right}
+.word-note td button{border:0;background:transparent;color:var(--accent);font-size:15px}
+.word-note textarea{box-sizing:border-box;width:100%;min-height:110px;border:1px solid var(--line);background:transparent;border-radius:6px;padding:12px;font:inherit;resize:vertical;margin:14px 0 5px}
+.word-note .more small{color:var(--muted);font-size:11px}
+#chunk-help{position:fixed;inset:auto;margin:0;box-sizing:border-box;width:min(290px,calc(100vw - 24px));padding:18px 20px;border:1px solid #d4ddce;border-radius:10px;background:#fffefa;box-shadow:0 8px 35px #29382220}
+.chunk-meaning{margin:0 0 12px;font-size:17px}
+.grammar-link{text-align:left;cursor:pointer}
+#grammar{box-sizing:border-box;width:min(480px,calc(100vw - 28px));max-height:85vh;overflow:auto;border:1px solid var(--line);border-radius:14px;padding:32px;background:#fffefa;color:var(--ink)}
+#grammar::backdrop{background:#20251e55}
+#grammar h2{font-size:25px;font-weight:500;line-height:1.2}
+#grammar-context{color:var(--accent);margin-bottom:4px}
+#grammar-translation{font-size:13px;color:var(--muted);margin-top:0}
+#grammar-text{line-height:1.75;font-size:15px}
+.close{float:right;border:0;background:transparent;font-size:25px;color:var(--muted);cursor:pointer}
+.word-note .note-audio{min-height:14px;font-size:12px;color:var(--muted);margin:10px 0}.word-note .note-storage{font-size:13px;color:#86511e}.word-note .note-storage:empty{display:none}.word-note .more small{display:block;line-height:1.6}.word-note :focus-visible,#grammar :focus-visible,#chunk-help :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:600px){.word-note .examples{padding:2px 14px}.word-note .example-line p{font-size:18px}.word-note .concepts{gap:10px}}

@@ -58,7 +58,7 @@ def build():
         assert meanings, f"Missing teaching meaning: {key}"
         card = dict(id=f"corpes:{source_lemma}:{tag}", rank=len(cards)+1, lemma=word,
                     sourceLemma=source_lemma, sourceTag=tag, sourceRank=source_rank,
-                    count=int(count), partOfSpeech=selection.TAGS[tag], meanings=meanings,
+                    count=int(count), partOfSpeech=edit.get('partOfSpeech',selection.TAGS[tag]), meanings=meanings,
                     forms=edit.get("forms", []), dictionary=f"https://en.wiktionary.org/wiki/{word}#Spanish",
                     editorial=bool(edit), sourceNote=edit.get("sourceNote", ""))
         cards.append(card)
