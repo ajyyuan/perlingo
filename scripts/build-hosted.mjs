@@ -9,7 +9,7 @@ const root=process.cwd(),hosting=path.join(root,'hosting'),publicDir=path.join(h
 execFileSync(process.execPath,['scripts/build-static.mjs'],{stdio:'inherit',env:{...process.env,PERLINGO_AUDIO_BASE_URL:'https://perlingoaudio.blob.core.windows.net/pronunciation/'}});
 rmSync(publicDir,{recursive:true,force:true});cpSync('dist',publicDir,{recursive:true});
 const source='perlingo-challenge/public',target=path.join(publicDir,'challenge');mkdirSync(target,{recursive:true});
-const excluded=new Set(['forest.html','forest.js','forest.css','speech-lab.html','speech-lab.js','benchmark.js']);
+const excluded=new Set(['developer.html','developer.js','developer.css','developer-session.js','forest.html','forest.js','forest.css','speech-lab.html','speech-lab.js','benchmark.js']);
 const names=new Set(readdirSync(source).filter(name=>!excluded.has(name)));
 const rewrite=text=>challengePaths(text,names);
 for(const name of names){const src=path.join(source,name),out=path.join(target,name);if(name==='audio')cpSync(src,out,{recursive:true});else writeFileSync(out,rewrite(readFileSync(src,'utf8')));}

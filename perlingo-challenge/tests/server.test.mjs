@@ -40,3 +40,8 @@ test('challenge family layout assets are served and stylesheet is linked',async(
  for(const path of ['/family-board.js','/family-board.css'])assert.equal((await request(path)).status,200);
  assert((await request('/')).body.includes('/family-board.css'));
 });
+
+test('developer review is available locally with correctly prefixed assets',async()=>{
+ const page=await request('/challenge/developer.html');assert.equal(page.status,200);assert(page.body.includes('/challenge/developer.js'));assert(page.body.includes('/challenge/developer.css'));
+ for(const file of ['developer.js','developer.css','developer-session.js'])assert.equal((await request('/challenge/'+file)).status,200);
+});
