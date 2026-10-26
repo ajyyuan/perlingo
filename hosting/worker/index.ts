@@ -8,7 +8,7 @@ const worker = {
     const url = new URL(request.url);
     if (["/", "/index.html"].includes(url.pathname)) {
       url.pathname = "/challenge/";
-      return Response.redirect(url.href, 302);
+      return Response.redirect(url.href, 308);
     }
     if(new URL(request.url).pathname.startsWith("/challenge/api/")) return handleSpeechAPI(request, env);
     let binding = ctx.props?.CONNECTORS;
