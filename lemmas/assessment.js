@@ -1,3 +1,4 @@
+import {matchesContextAnswer} from './context-answer.js';
 // Tests use the reviewed deck; no generated translations or fuzzy semantic grading.
 export const normalize=s=>String(s).normalize('NFC').replace(/[’‘]/gu,"'").toLocaleLowerCase('es').trim().replace(/[.!?¿¡]+$/u,'').trim().replace(/\s+/gu,' ');
 export const shuffle=(items,random=Math.random)=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -5,7 +6,7 @@ export function createTest(kind,ids,random=Math.random){return {rules:2,contextV
 export function checkAnswer(test,response,card){
  if(test.done||test.feedback)return test;
  const answers=test.kind==='context'?card.context.answers:[test.kind==='choice'?card.meaning:card.lemma];
- const correct=answers.some(a=>normalize(response)===normalize(a));
+ const correct=test.kind==='context'?matchesContextAnswer(response,card.context):answers.some(a=>normalize(response)===normalize(a));
  return {...test,failures:{...test.failures,...(!correct?{[card.id]:(test.failures[card.id]||0)+1}:{})},feedback:{correct,response:String(response),formError:test.kind==='context'&&!correct&&normalize(response)===normalize(card.lemma)},firstCorrect:test.firstCorrect+(test.round===1&&correct?1:0)};
 }
 export function advanceTest(test){

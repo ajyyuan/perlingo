@@ -7,7 +7,7 @@ function fixture(request=async()=>Response.json({text:'Buenos días.'})){
  return {d,texts,states,calls,timers,push:(chunk=new Uint8Array(new Int16Array(3200).fill(1000).buffer))=>push(chunk),closed:()=>closed};
 }
 test('recording stops microphone and sends only PCM in Spanish, never a reference answer',async()=>{
- const f=fixture();await f.d.start();f.push();assert.equal(f.calls.length,0);await f.d.stop();assert.equal(f.closed(),1);assert.deepEqual(f.texts,['Buenos días.']);assert.equal(f.calls[0][0],'/challenge/api/speech/transcribe?provider=azure&language=es');assert.equal(f.calls[0][1].body.byteLength,6400);assert.equal(f.timers.size,0);
+ const f=fixture();await f.d.start();f.push();assert.equal(f.calls.length,0);await f.d.stop();assert.equal(f.closed(),1);assert.deepEqual(f.texts,['Buenos días.']);assert.deepEqual(f.states.at(-1),['result','']);assert.equal(f.calls[0][0],'/challenge/api/speech/transcribe?provider=azure&language=es');assert.equal(f.calls[0][1].body.byteLength,6400);assert.equal(f.timers.size,0);
 });
 test('navigation aborts transcription and discards late results',async()=>{
  let resolve;const f=fixture(()=>new Promise(r=>resolve=r));await f.d.start();f.push();const pending=f.d.stop();f.d.cancel();assert.equal(f.calls[0][1].signal.aborted,true);resolve(Response.json({text:'late'}));await pending;assert.deepEqual(f.texts,[]);
