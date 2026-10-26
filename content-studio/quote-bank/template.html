@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The quote vault · Perlingo</title>
+<style>
+:root{color-scheme:dark;--bg:#131512;--card:#1c1f1a;--line:#383d33;--text:#f3f1e7;--muted:#b1b7a7;--accent:#d5ff75}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,sans-serif}main{max-width:1240px;margin:auto;padding:38px 32px 70px}a{color:var(--accent);text-underline-offset:4px}button,input,select,textarea{font:inherit}button,select{cursor:pointer}button,select,input,textarea{color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:10px 14px}button:hover,select:hover{border-color:var(--muted)}button[aria-pressed=true]{background:var(--accent);color:#152000;border-color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font:700 12px/1.4 ui-monospace,monospace;letter-spacing:.1em;color:var(--muted)}h1{font-size:clamp(40px,6.5vw,78px);line-height:1.04;letter-spacing:-.06em;margin:38px 0 16px;font-weight:650}h1 span{color:var(--accent)}.intro{max-width:680px;color:var(--muted);font-size:18px;margin:0 0 30px}.toolbar{display:grid;gap:12px;margin-bottom:24px}.search{width:100%;font-size:18px;padding:16px}.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.filters select{max-width:100%}.meta{display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--muted);margin:22px 0 14px;font-size:13px}.meta p{margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:25px;min-width:0}.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.eyebrow{font:12px ui-monospace,monospace;color:var(--muted);letter-spacing:.04em}.save{min-width:44px;min-height:44px;padding:7px 12px}.quote{font-size:clamp(22px,2.5vw,30px);line-height:1.2;font-weight:600;letter-spacing:-.025em;margin:18px 0 12px;overflow-wrap:anywhere}.speaker{color:var(--muted);font-size:14px;margin:0 0 18px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.tag{font:11px ui-monospace,monospace;border:1px solid #4a5141;border-radius:5px;color:#c4cdb8;padding:4px 7px}.tag.pick{background:#2d3c21;color:var(--accent);border-color:#4c6334}.tag.disputed{color:#ffcb94;border-color:#95643c}.performance{margin:0 0 20px;color:#dde1d5;font-size:14px}.reference{font-size:13px;font-weight:600}.details{border-top:1px solid var(--line);margin-top:20px;padding-top:13px}.details summary{color:var(--muted);font-size:13px;cursor:pointer;padding:3px 0}.details p{font-size:14px;line-height:1.6;margin:15px 0}.details strong{color:var(--text)}.details ul{padding-left:19px;font-size:13px}.details textarea{display:block;width:100%;min-height:85px;margin-top:7px;resize:vertical;font-size:14px}.note-label{display:block;color:var(--muted);font-size:13px;margin-top:18px}.empty{padding:65px 15px;text-align:center;border:1px dashed var(--line);border-radius:12px;color:var(--muted);grid-column:1/-1}footer{color:var(--muted);font-size:12px;margin-top:30px;max-width:850px}footer summary{cursor:pointer}footer p{line-height:1.7}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--accent);color:#162000;border-radius:10px;padding:12px 20px;max-width:90vw;z-index:4;font-size:14px}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.count{font-family:ui-monospace,monospace}.subtle{background:transparent}.actions{display:flex;gap:8px}.card a{overflow-wrap:anywhere}
+@media(max-width:720px){main{padding:24px 16px 50px}.grid{grid-template-columns:1fr}.card{padding:20px}header{align-items:flex-start}.brand{max-width:145px}.actions button{font-size:12px;padding:8px 10px}h1{margin-top:30px}.intro{font-size:16px}.filters button,.filters select{font-size:13px;padding:9px 11px}.meta{align-items:flex-start;flex-direction:column;gap:5px}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand">PERLINGO / CONTENT STUDIO</div><div class="actions"><button id="export">Export bank + saves</button></div></header>
+<h1>Serious effort.<br><span>Unserious dialogue.</span></h1>
+<p class="intro">The quote vault. NBA Twitter, confident nonsense, and internet lines worth performing in several languages.</p>
+<section class="toolbar" aria-label="Find quotes">
+<label class="sr-only" for="search">Search quotes, people, vibes and notes</label><input id="search" class="search" type="search" placeholder="Search Jaylen, compartmentalize, fake intellectualism…">
+<div class="filters"><label class="sr-only" for="lane">Category</label><select id="lane"><option value="">Every corner of the internet</option><option>NBA</option><option>Sports</option><option>Internet</option></select><label class="sr-only" for="format">Format</label><select id="format"><option value="">Every format</option></select><label class="sr-only" for="effort">Translation effort</label><select id="effort"><option value="">Any translation effort</option><option>Easy</option><option>Medium</option><option>Hard</option></select><button id="picks" aria-pressed="false">Start here</button><button id="saved" aria-pressed="false">Saved · 0</button><button id="clear" class="subtle">Clear filters</button></div>
+</section>
+<div class="meta"><p id="count" class="count" role="status" aria-live="polite"></p><p>Sources inside each card · filming notes are suggestions</p></div>
+<section id="grid" class="grid" aria-label="Quote bank"></section>
+<footer><details><summary>Research scope · 22 October 2026</summary><p id="scope"></p><p>Short excerpts and source links only. Playback has not been audited. “Start here” is an editorial selection for this project, not a popularity score. Your saves and notes stay in this browser; export them to keep a portable copy. This vault is separate from the language course.</p></details></footer>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<script id="bank-data" type="application/json">/* QUOTE_BANK_DATA */</script>
+<script>
+'use strict';
+const bank = JSON.parse(document.querySelector('#bank-data').textContent);
+const $ = id => document.getElementById(id);
+const storageKey = 'perlingo-quote-vault-v1';
+let personal = {saved: [], notes: {}};
+try {const old = JSON.parse(localStorage.getItem(storageKey)); if(old && Array.isArray(old.saved) && old.notes && typeof old.notes === 'object' && !Array.isArray(old.notes)) personal = old;} catch {}
+personal.saved = personal.saved.filter(id => bank.entries.some(entry => entry.id === id));
+let picksOnly = false, savedOnly = false, toastTimer;
+const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[’‘]/g,"'");
+function say(message) { $('toast').textContent = message; $('toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 2600); }
+function persist() {try {localStorage.setItem(storageKey, JSON.stringify(personal));} catch {say('Browser storage unavailable. Export to keep your saves and notes.');}}
+function element(tag, className, text) {const el = document.createElement(tag); if(className) el.className = className; if(text !== undefined) el.textContent = text; return el;}
+function sourceLink(source, text) {const a = element('a', '', text); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a;}
+function savedCount() {$('saved').textContent = 'Saved · ' + personal.saved.length;}
+function filterEntries() {const terms = normalize($('search').value).trim().split(/\s+/).filter(Boolean);return bank.entries.filter(e => {
+ const haystack = normalize([e.quote,e.speaker,e.vibe,e.context,e.performance,e.translation_note,e.format,personal.notes[e.id] || ''].join(' '));
+ return terms.every(term => haystack.includes(term)) && (!$('lane').value || e.lane === $('lane').value) && (!$('format').value || e.format === $('format').value) && (!$('effort').value || e.translation_effort === $('effort').value) && (!picksOnly || e.priority === 'Start here') && (!savedOnly || personal.saved.includes(e.id));
+});}
+function render() {
+ const entries = filterEntries(); $('grid').replaceChildren(); savedCount(); $('count').textContent = `${entries.length} / ${bank.entries.length} quotes`;
+ if(!entries.length) {$('grid').append(element('div','empty','No quotes match. Clear a filter or save a few favorites.'));return;}
+ for(const e of entries) {
+  const card = element('article','card'); card.id = e.id;
+  const top = element('div','card-top'); top.append(element('span','eyebrow',`${String(e.rank).padStart(3,'0')} / ${e.lane.toUpperCase()}`));
+  const save = element('button','save',personal.saved.includes(e.id) ? '★' : '☆');
+  save.setAttribute('aria-label',`Save ${e.speaker}: ${e.quote}`); save.setAttribute('aria-pressed',String(personal.saved.includes(e.id)));
+  save.addEventListener('click',() => {const active = personal.saved.includes(e.id);personal.saved = active ? personal.saved.filter(id => id !== e.id) : [...personal.saved,e.id];persist();savedCount();if(savedOnly && active){render();$('saved').focus();}else{save.textContent = active ? '☆' : '★';save.setAttribute('aria-pressed',String(!active));}});
+  top.append(save); card.append(top,element('h2','quote',e.quote),element('p','speaker',e.speaker));
+  const tags = element('div','tags'); for(const label of [e.format,e.priority === 'Start here' ? 'Start here' : e.vibe,e.translation_effort + ' to adapt'])tags.append(element('span','tag'+(label === 'Start here' ? ' pick' : ''),label));
+  if(e.evidence_status === 'Disputed attribution') tags.append(element('span','tag disputed','Disputed attribution'));
+  card.append(tags,element('p','performance',e.performance));
+  const link=sourceLink(e.sources[0], e.sources[0].kind.includes('clip') || e.sources[0].kind.includes('Clip') ? 'Clip reference ↗' : 'Source & context ↗'); link.className='reference';card.append(link);
+  const details = element('details','details');details.append(element('summary','', 'Context, translation & notes'));
+  for(const [label,text] of [['Context',e.context],['Across languages',e.translation_note],['Evidence',e.evidence_note]]){const p=element('p');p.append(element('strong','',label+' · '),document.createTextNode(text));details.append(p);}
+  const list=element('ul');for(const source of e.sources){const li=element('li');li.append(sourceLink(source,source.kind+' · '+new URL(source.url).hostname.replace(/^www\./,'')));list.append(li);}details.append(list);
+  const noteLabel=element('label','note-label','Your filming notes');noteLabel.htmlFor='note-'+e.id;const note=element('textarea');note.id='note-'+e.id;note.value=typeof personal.notes[e.id] === 'string' ? personal.notes[e.id] : '';note.placeholder='Setup, costume, language, punchline…';note.addEventListener('input',()=>{personal.notes[e.id]=note.value;persist();});details.append(noteLabel,note);card.append(details);$('grid').append(card);
+ }
+}
+for(const f of [...new Set(bank.entries.map(e=>e.format))].sort()) {const option=element('option','',f);option.value=f;$('format').append(option);}
+for(const id of ['search','lane','format','effort'])$(id).addEventListener(id === 'search' ? 'input' : 'change',render);
+$('picks').addEventListener('click',()=>{picksOnly=!picksOnly;$('picks').setAttribute('aria-pressed',String(picksOnly));render();});
+$('saved').addEventListener('click',()=>{savedOnly=!savedOnly;$('saved').setAttribute('aria-pressed',String(savedOnly));render();});
+$('clear').addEventListener('click',()=>{for(const id of ['search','lane','format','effort'])$(id).value='';picksOnly=savedOnly=false;for(const id of ['picks','saved'])$(id).setAttribute('aria-pressed','false');render();});
+$('export').addEventListener('click',()=>{const output={...bank,exported_at:new Date().toISOString(),personal};const blob=new Blob([JSON.stringify(output,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=element('a');a.href=url;a.download='perlingo-quote-bank.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);say('Exported all quotes, saves and notes.');});
+$('scope').textContent=bank.evidence_scope;
+render();
+</script>
+</body>
+</html>

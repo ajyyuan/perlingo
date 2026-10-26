@@ -1,5 +1,7 @@
 # Perlingo
 
+Content studio (local): the [quote vault](http://127.0.0.1:5175/index.html) contains 40 sourced meme references for multilingual Reels, including NBA commentary, interview reactions, text memes and short internet hooks. Search/filter, save favorites, add local filming notes and export JSON. Sources and uncertainty are recorded per entry; clip playback and translations are not certified. It is separate from the course and excluded from the static publication build. See [data, evidence and preview instructions](content-studio/quote-bank/README.md).
+
 A browser app for learning Spanish, French, and German in parallel.
 
 Run `npm run dev`, then open http://127.0.0.1:5173. Guest preview needs no install or API key. Optional accounts require the [Supabase setup](docs/accounts.md); Google sign-in works locally and email login is disabled; Apple production sign-in and page-reload persistence are verified. The app is live at https://perlingo.app with the existing Sites address retained.
