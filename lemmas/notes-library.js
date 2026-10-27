@@ -9,10 +9,10 @@ export function combineNotes(base,contextBank){
  const extraConcepts=Object.fromEntries(Object.entries(pilotConcepts).map(([k,v])=>['pilot:'+k,v]));
  for(const [word,id] of [['casa','corpes:casa:N'],['depender','corpes:depender:V'],['música','corpes:músico:N']]){const n=pilot.find(n=>n.word===word);authored.set(id,{...n,id,tags:n.tags.map(k=>'pilot:'+k),examples:n.examples.map(e=>({...e,chunks:e.chunks.map(c=>({...c,concept:'pilot:'+c.concept}))}))});}
  const contexts=new Map(contextBank.contexts.map(c=>[c.id,c]));
- const notes=base.notes.map(n=>{
+ const notes=base.notes.map((n,index)=>{
   const note=authored.has(n.id)?{...n,...authored.get(n.id)}:{...n};
   const context=contexts.get(n.id);if(!context)throw Error('Missing context: '+n.id);
-  return {...note,level:'sentence',examples:note.examples.some(e=>e.text===context.example.text)?note.examples:[...note.examples,context.example]};
+  return {...note,rank:index+1,level:'sentence',examples:note.examples.some(e=>e.text===context.example.text)?note.examples:[...note.examples,context.example]};
  });
  configureCardLinks(notes.map(n=>n.id==='corpes:tener:V'?{...n,forms:[...n.forms,...tenerGroups.flatMap(g=>g.rows.map(r=>[r.label,r.lemma]))]}:n),[...contexts.values(),...['tenido'].map(target=>({id:'corpes:tener:V',target}))]);configureSentenceHelp(contexts.values());
  return {notes,contexts,concepts:{...base.concepts,...extraConcepts,...firstSetConcepts,...contextBank.concepts}};

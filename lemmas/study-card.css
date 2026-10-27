@@ -19,3 +19,5 @@
 @media(max-width:680px){.course-study{max-height:none;padding:22px}.course-study .lesson-columns,.course-study.no-form-table .lesson-summary{display:flex;flex-direction:column;gap:26px;overflow:visible}.course-study .lesson-forms,.course-study.no-form-table .lesson-uses{border-left:0;border-top:1px solid var(--line);padding:22px 0 0}.course-study .word-overview{margin-bottom:24px}.course-study.no-form-table .word-overview{margin-bottom:0}.study-notes-dialog{padding:22px}}
 @media(max-height:520px) and (min-width:681px){.shell:has(.course-study){padding-top:10px;padding-bottom:10px}.shell:has(.course-study) main{padding:10px 0}.course-study{max-height:calc(100svh - 120px);padding:14px 22px}.course-study .study-head{margin-bottom:10px}.course-study .lesson-footer{margin-top:10px;padding-top:10px}}
 @media(max-width:360px){.course-study{padding:18px 14px}.course-study .lesson-steps{gap:8px}.course-study .primary{padding:10px}.course-study h1{font-size:36px}}
+
+.course-study .course-rank{margin-left:10px;font-size:12px;color:#73776f;font-variant-numeric:tabular-nums;white-space:nowrap}
