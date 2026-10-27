@@ -1,0 +1,3 @@
+.lemma-voice-control { display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:6px;border:0;border-radius:50%;color:var(--muted);background:transparent; }
+.lemma-voice-control:hover,.lemma-voice-control[aria-expanded="true"] { color:var(--ink);background:var(--line); }
+.lemma-voice-control:focus-visible { outline:2px solid var(--ink);outline-offset:2px; }

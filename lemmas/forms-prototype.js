@@ -4,9 +4,9 @@ import {tenerGroups,formGroup} from './tener-prototype.js';
 import {loadNotes} from './notes-library.js';
 import {esc,mountNote} from './note-view.js';
 import {prototypeLessons,freshPrototype,advanceLesson,restorePrototype} from './forms-prototype-model.js';
-import {createPronouncer} from '/src/speech.js';
+import {createLemmaVoice} from './pronunciation.js';
 const root=document.querySelector('#prototype'),storageKey='perlingo-forms-prototype-v2';
-const voice=createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance);
+const voice=createLemmaVoice();
 let lessons,state,concepts,tense='present',unmountNote=()=>{},notesAnchor;
 const notesDialog=document.querySelector('#full-notes');
 function openNotes(){stop();notesAnchor=document.activeElement;unmountNote();unmountNote=mountNote(document.querySelector('#full-note-content'),lessons[state.index],concepts,{voice,heading:true,overlayRoot:notesDialog});notesDialog.showModal();notesDialog.scrollTop=0;}

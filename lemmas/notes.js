@@ -2,9 +2,9 @@ import {bindCardPreview} from './card-preview.js';
 import {moveIndex} from './keyboard.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,esc} from './note-view.js';
-import {createPronouncer} from '/src/speech.js';
+import {createLemmaVoice} from './pronunciation.js';
 const host=document.querySelector('#note'),nav=document.querySelector('#words'),setSelect=document.querySelector('#note-set'),search=document.querySelector('#note-search');
-const voice=createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance);
+const voice=createLemmaVoice();
 let notes=[],concepts={},fragment='',index=0,unmount=()=>{},set=0;
 try{fragment=decodeURIComponent(location.hash.slice(1));}catch{}
 function renderNav(){

@@ -17,9 +17,9 @@ import {createTest,checkAnswer,advanceTest,optionsFor} from './assessment.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,notesOwnKeyboard,esc} from './note-view.js';
 import {KEY,idsForSet} from './session.js';
-import {createPronouncer} from '/src/speech.js';
+import {createLemmaVoice} from './pronunciation.js';
 const app=document.querySelector('#app'),warning=document.querySelector('#storage');
-const voice=createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance);
+const voice=createLemmaVoice({onOpen:()=>{dictation.cancel();answerAudio.stop();}});
 const answerAudio=createAnswerFeedback(voice,window.AudioContext||window.webkitAudioContext);
 const dictation=createRecordedDictation({
  onText:text=>{const input=app.querySelector('#answer');if(input&&!input.readOnly){const test=activeTest(),card=byId.get(test.queue[test.index]);const cleaned=cleanDictation(text,test.kind==='context'?card.context.answers:[],test.kind==='context'?card.context:null);input.value=cleaned;test.draft=cleaned;save();input.focus();}},
