@@ -62,3 +62,17 @@ test('account and pack storage is isolated; other-tab writes pause sync without 
 test('malformed cloud progress does not replace local progress',async()=>{
  const t=setup({row:{revision:1,payload:{appDay:99}}});await t.sync.sync();assert.equal(t.states.at(-1).state,'error');assert.equal(t.applied.length,0);assert.equal(validProgress({}),false);t.sync.dispose();
 });
+
+test('Learning reset backs up progress and replaces only its account pack',async()=>{
+ const store=storage(),a=setup({store}),b=setup({store,key:'account:a:starter'});
+ await a.sync.sync();await a.sync.choose('device');await b.sync.sync();await b.sync.choose('device');
+ const old=progress(9);old.activeDay={state:{draftInput:'unfinished'}};a.sync.save(old);await a.sync.sync();
+ await a.sync.reset(progress());assert.deepEqual(a.cloud().payload,progress());assert.deepEqual(a.applied.at(-1),progress());
+ assert.deepEqual(JSON.parse(store.getItem('account:a:course:recovery')).progress,old);assert.equal(b.cloud().revision,1);
+ a.sync.dispose();b.sync.dispose();
+});
+test('reset refuses a competing tab and preserves its snapshot',async()=>{
+ const t=setup();await t.sync.sync();await t.sync.choose('device');t.sync.save(progress(3));await t.sync.sync();
+ const other=JSON.stringify({progress:progress(8),revision:2,linked:true,dirty:true});t.store.setItem('account:a:course',other);
+ await assert.rejects(t.sync.reset(progress()),/Reload/);assert.equal(t.store.getItem('account:a:course'),other);assert.equal(t.cloud().payload.appDay,3);t.sync.dispose();
+});

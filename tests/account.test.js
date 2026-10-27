@@ -42,3 +42,17 @@ test('signed-out settings expose only gated Google and Apple login, never email 
  account.mount();assert.match(panel.innerHTML,/Sign in with Google/);assert.match(panel.innerHTML,/Sign in with Apple/);
  assert.equal((panel.innerHTML.match(/disabled/g)||[]).length,2);assert.doesNotMatch(panel.innerHTML,/<input|account-form|Send sign-in code/);
 });
+
+test('fresh-account policy never copies guest progress; identity changes remain isolated',async t=>{
+ const oldWindow=globalThis.window,oldDocument=globalThis.document;
+ globalThis.window={addEventListener(){}};globalThis.document={querySelector:()=>null,addEventListener(){},hidden:true};
+ t.after(()=>{globalThis.window=oldWindow;globalThis.document=oldDocument;});
+ const map=new Map(),storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v),removeItem:k=>map.delete(k)};
+ let changed,owner='a';const clouds=new Map(),applied=[];
+ const client={auth:{onAuthStateChange:fn=>changed=fn,getSession:async()=>({data:{session:{user:{id:'a'}}}})}};
+ const account=createAccount({config:{url:'https://example.test',publishableKey:'public'},pack:'lemmas',storage,getGuest:()=>progress(19),initialAccount:()=>progress(1),autoLink:true,apply:p=>applied.push(p),onStorageError:()=>assert.fail(),clientFactory:async()=>client,
+ remoteFactory:()=>{const id=owner;return {read:async()=>clouds.get(id)||null,write:async(r,p)=>{clouds.set(id,{revision:r+1,payload:structuredClone(p)});return r+1;}};}});
+ await account.start();assert.equal(clouds.get('a').payload.appDay,1);
+ owner='b';changed('SIGNED_IN',{user:{id:'b'}});await new Promise(r=>setTimeout(r,5));assert.equal(clouds.get('b').payload.appDay,1);
+ changed('SIGNED_OUT',null);await new Promise(r=>setTimeout(r,5));assert.equal(applied.at(-1).appDay,19);assert.equal(await account.reset(progress()),false);
+});

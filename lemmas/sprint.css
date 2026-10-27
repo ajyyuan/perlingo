@@ -29,3 +29,8 @@
 
 .other-apps{position:relative;color:var(--muted)}.other-apps summary{cursor:pointer;list-style:none;padding:10px 0;font-size:12px;min-height:40px;display:flex;align-items:center;box-sizing:border-box}.other-apps summary::-webkit-details-marker{display:none}.other-apps nav{position:absolute;bottom:calc(100% + 6px);left:0;z-index:5;display:flex;flex-direction:column;min-width:150px;padding:6px;background:#fffefa;border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 24px #20251e12}.other-apps nav a{padding:12px;font-size:14px;border-radius:6px}.other-apps nav a:hover{background:var(--accent-soft)}.other-apps :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 #keyboard-help-open{font-size:32px;line-height:1;min-width:36px;min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+
+#course-account{width:min(460px,calc(100vw - 32px));max-height:calc(100dvh - 48px);overflow:auto;border:1px solid var(--line);border-radius:18px;padding:32px;background:var(--bg);color:var(--ink)}
+#course-account::backdrop{background:rgb(30 29 25 / .25)}
+#course-account .course-reset{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+#course-account .course-reset p:empty{display:none}

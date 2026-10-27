@@ -6,7 +6,7 @@ export function validProgress(p){
   p.history&&typeof p.history==='object'&&!Array.isArray(p.history)&&Array.isArray(p.sessions));
 }
 // One versioned snapshot per account/pack. Never merge SRS counters by timestamp.
-export function createProgressSync({storage,key,initial,remote,onApply,onStatus,validate=validProgress}){
+export function createProgressSync({storage,key,initial,remote,onApply,onStatus,validate=validProgress,autoLink=false}){
  let raw=storage.getItem(key),envelope=raw?JSON.parse(raw):{progress:clone(initial),revision:0,linked:false,dirty:false};
  if(!validate(envelope.progress)||!Number.isInteger(envelope.revision))throw new Error('Saved account progress is invalid. Export or recover it before continuing.');
  let disposed=false,busy=false,localBlocked=false,timer=null,choice=null,remoteRow=null;
@@ -31,6 +31,9 @@ export function createProgressSync({storage,key,initial,remote,onApply,onStatus,
    const row=await remote.read();if(disposed)return;
    if(row&&(!Number.isInteger(row.revision)||!validate(row.payload)))throw new Error('Cloud progress has an unsupported format. Local progress has been kept.');
    remoteRow=row;
+   if(!envelope.linked&&autoLink&&!envelope.dirty){
+    envelope={progress:clone(row?.payload||envelope.progress),revision:row?.revision||0,linked:true,dirty:!row};persist();onApply(clone(envelope.progress));
+   }
    if(!envelope.linked){choice='initial';status('choice',row?'Choose which progress to use for this account.':'Save this device’s progress to your account?');return;}
    if((row?.revision||0)!==envelope.revision){choice='conflict';status('choice','Progress changed on another device. Choose which copy to keep.');return;}
    if(choice){status('choice','Choose which progress to keep.');return;}
@@ -63,5 +66,12 @@ export function createProgressSync({storage,key,initial,remote,onApply,onStatus,
   finally{busy=false;}
   await sync();
  }
- return {save,sync,choose,getProgress:()=>clone(envelope.progress),dispose(){disposed=true;clearTimeout(timer);}};
+ async function reset(progress){
+  if(disposed||busy||localBlocked||choice||!envelope.linked)throw new Error('Finish syncing or resolve the progress choice before resetting.');
+  if(!validate(progress))throw new Error('Invalid reset progress.');
+  backup();save(progress);
+  if(localBlocked)throw new Error('Reset could not be saved. Reload and try again.');
+  onApply(clone(envelope.progress));await sync();
+ }
+ return {save,sync,choose,reset,getProgress:()=>clone(envelope.progress),dispose(){disposed=true;clearTimeout(timer);}};
 }

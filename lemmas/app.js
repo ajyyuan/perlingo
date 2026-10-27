@@ -1,15 +1,19 @@
+import {createAccount} from '/src/account.js';
+import {accountConfig} from '/src/account-config.js';
+import {lemmaRemote} from './account-store.js';
+import {restoreProgress,validProgress} from './progress.js';
 import {mountStudyCard} from './study-card.js';
 import {keyboardCommand,moveIndex} from './keyboard.js';
 import {cleanDictation} from './dictation-text.js';
 import {createAnswerFeedback} from '/src/answer-feedback.js';
 import {createRecordedDictation} from './recorded-dictation.js';
 import {sentenceMarkup,wordButton} from './word-help.js';
-import {examIds,restoreExams} from './exam-state.js';
-import {createFlow,batchIds,completedCount,transition,restoreFlows,finishTest} from './workflow.js';
+import {examIds} from './exam-state.js';
+import {createFlow,batchIds,completedCount,transition,finishTest} from './workflow.js';
 import {createTest,checkAnswer,advanceTest,optionsFor} from './assessment.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,notesOwnKeyboard,esc} from './note-view.js';
-import {KEY,restore,idsForSet} from './session.js';
+import {KEY,idsForSet} from './session.js';
 import {createPronouncer} from '/src/speech.js';
 const app=document.querySelector('#app'),warning=document.querySelector('#storage');
 const voice=createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance);
@@ -20,8 +24,9 @@ const dictation=createRecordedDictation({
 });
 const microphone='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg>';
 const speaker='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/></svg>';
+let account=null;
 let deck,byId,notes,concepts,data,view='study',search='',unmount=()=>{},studyCard=null;
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(data));}catch{warning.hidden=false;warning.textContent='Progress could not be saved. Keep this tab open to continue.';}};
+const save=()=>{if(account?.save(data))return;try{localStorage.setItem(KEY,JSON.stringify(data));}catch{warning.hidden=false;warning.textContent='Progress could not be saved. Keep this tab open to continue.';}};
 const flow=()=>data.flows[data.set];
 const dayCards=d=>deck.slice(d*300,(d+1)*300);
 const setCount=d=>Array.from({length:6},(_,i)=>data.flows[d*6+i]?.phase==='done').filter(Boolean).length;
@@ -142,7 +147,7 @@ shortcuts.addEventListener('close',()=>{if(shortcutAnchor?.isConnected)shortcutA
 document.addEventListener('keydown',e=>{
  if(e.isComposing)return;
  if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button,input,summary')){e.preventDefault();return;}
- const overlay=Boolean(document.querySelector('#study-notes[open],#keyboard-help[open],#grammar[open],#chunk-help:popover-open'));
+ const overlay=Boolean(document.querySelector('#course-account[open],#study-notes[open],#keyboard-help[open],#grammar[open],#chunk-help:popover-open'));
  if(e.key==='Escape'&&!overlay){
   app.querySelectorAll('.quick-word').forEach(w=>w.classList.add('tip-dismissed'));
   if(app.querySelector('[data-action="dictate"][aria-pressed="true"]')){dictation.cancel();app.querySelector('#answer')?.focus();e.preventDefault();return;}
@@ -174,9 +179,27 @@ try{
  const response=await fetch('/lemmas/data/deck.json');if(!response.ok)throw Error('deck');const source=await response.json(),library=await loadNotes();notes=new Map(library.notes.map(n=>[n.id,n]));concepts=library.concepts;
  deck=source.map(c=>({...c,meaning:notes.get(c.id).meaning,context:library.contexts.get(c.id)}));byId=new Map(deck.map(c=>[c.id,c]));let raw;
  try{raw=JSON.parse(localStorage.getItem(KEY));}catch{warning.hidden=false;warning.textContent='Saved progress is unavailable. This session can still be used.';}
- data=restore(raw,deck);data.answerSound=raw?.answerSound!==false;data.previousAssessment=raw?.previousAssessment||(Object.values(raw?.flows||{}).some(f=>f.version!==4)?{flows:raw.flows,exams:raw.exams||{}}:null);data.flows=restoreFlows(raw?.flows,deck);data.practiced={};
- for(let s=0;s<30;s++){const n=raw?.practiced?.[s];data.practiced[s]=Math.max(Number.isInteger(n)&&n>=0&&n<=50&&n%10===0?n:0,completedCount(data.flows[s]));}
- Object.assign(data,restoreExams(raw,deck));
- data.activeExam=data.exams[raw?.activeExam]?raw.activeExam:null;
- if(!data.flows[data.set])data.flows[data.set]=createFlow();render();
+ data=restoreProgress(raw,deck);render();
+ account=createAccount({config:accountConfig,pack:'lemmas',storage:localStorage,
+  getGuest:()=>restoreProgress(JSON.parse(localStorage.getItem(KEY)),deck),
+  initialAccount:()=>restoreProgress(null,deck),autoLink:true,remoteFactory:lemmaRemote,
+  validate:p=>validProgress(p,deck),describe:p=>`day ${(p?.day||0)+1}`,
+  apply:p=>{dictation.cancel();answerAudio.stop();data=p;view='study';render();},
+  onStorageError:()=>{warning.hidden=false;warning.textContent='Account progress could not be saved. Open Account for details.';}
+ });
+ account.mount();account.start();
+
 }catch(error){app.innerHTML='<p>The deck could not load. Please reload this page.</p>';console.error(error);}
+
+const accountDialog=document.querySelector('#course-account');
+document.querySelector('#account-open').onclick=()=>{dictation.cancel();account?.mount();accountDialog.showModal();};
+accountDialog.querySelector('[data-close]').onclick=()=>accountDialog.close();
+accountDialog.addEventListener('close',()=>document.querySelector('#account-open').focus());
+accountDialog.querySelector('[data-reset-course]').onclick=async()=>{
+ if(!confirm('Reset all Lemmas progress and test results? You will stay signed in. This cannot be undone here.'))return;
+ const status=accountDialog.querySelector('[data-reset-status]');
+ try{const fresh=restoreProgress(null,deck);
+  if(!await account.reset(fresh)){localStorage.setItem(KEY+':recovery',JSON.stringify(data));localStorage.setItem(KEY,JSON.stringify(fresh));data=fresh;view='study';render();}
+  status.textContent='Course reset. Account sync status is shown above.';
+ }catch(error){status.textContent=error.message;}
+};
