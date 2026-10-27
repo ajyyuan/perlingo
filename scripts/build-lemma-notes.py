@@ -152,7 +152,7 @@ for c in cards:
    article='el' if gender=='m' or w in STRESSED_A else 'la'
    pattern=article+' '+w
    forms=[['singular',pattern]]
-   p=None if w in SINGULAR_SENSES else plural(w,'n')
+   p=None if w in SINGULAR_SENSES or w=='don' else plural(w,'n')
    if p:forms.append(['plural',('los' if gender=='m' else 'las')+' '+p])
    if w in SINGULAR_SENSES:more=SINGULAR_SENSES[w]
    if w in STRESSED_A:more=(more+' ' if more else '')+'Feminine despite el: the singular article changes immediately before stressed a. The plural article is las.'
@@ -189,6 +189,8 @@ for c in cards:
  if c['sourceNote']:more=(more+' ' if more else '')+c['sourceNote']
  if w in ['ocurrir','suceder','consistir'] and tag=='V':
   forms=[['singular subject',forms[2][1]],['plural subject',forms[5][1]]];more='For the meaning taught here, learn the third-person forms. The subject is what happens or what consists of something.'
+ if w=='don' and tag=='N':
+  forms=[['before a first name','don']];more='This card teaches the title don, used before a first name without an article. Los dones belongs to the separate gift or talent meaning.'
  if w=='gustar' and tag=='V':more='The grammatical subject is the thing or person that pleases, not the person who likes it: me gusta el libro means I like the book. Gusta agrees with one thing; gustan agrees with plural things.'
  override=usage.get(c['sourceLemma']+':'+tag,{})
  pattern=override.get('pattern',pattern);tip=override.get('tip',tip);more=override.get('more',more)

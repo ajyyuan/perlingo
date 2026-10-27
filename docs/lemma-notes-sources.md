@@ -44,3 +44,7 @@ Additional references checked: [RAE plural](https://www.rae.es/dpd/plural), [RAE
 ## Separately recorded second pass
 
 See [the second-pass report](lemma-notes-second-pass.md) and [field-level evidence](../data/spanish-lemmas/second-pass-audit.json). Ten entries changed, while 1,490 stayed identical. The second pass found real errors missed by membership checks, including los mes/los gas and the feminine of español. It adds DLE/DPD comparisons for specific decisions, including correct variants retained unchanged; it does not retroactively turn the first pass into independent validation. The 3,381 mapping matches remain membership evidence only.
+
+## Course-wide recheck — 27 October 2026
+
+See [the complete review and its limits](lemma-course-audit-2026-10-27.md). The later pass corrects the don title table, one shared English translation and 41 contextual word-hover hints. The selected deck and all accepted answers remain unchanged. The current generated form evidence has 3,380 matches after removing the gift-sense plural from the don title card.

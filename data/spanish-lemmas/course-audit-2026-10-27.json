@@ -1,0 +1,426 @@
+{
+  "date": "2026-10-27",
+  "reviewer": "Codex; same authoring assistant, not an independent reviewer",
+  "scope": {
+    "cardsScreened": 1500,
+    "displayedFormRowsScreenedBefore": 4537,
+    "distinctCombinedExamplesScreened": 540,
+    "distinctChunkGlossPairsScreened": 1848,
+    "distinctCourseHoverPairsScreenedBefore": 1881,
+    "extraTenseReference": "All nine tener groups read separately."
+  },
+  "beforeHashes": {
+    "lemmas/data/deck.json": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "lemmas/data/notes.json": "7fb4259a3560a127743736704ebb4f871a9570f96494206f3b52013de7be1588",
+    "lemmas/data/context.json": "a219e794f5748388175c2e1f2dd7a6bcc45f062f3a6c130047f257b401dff5cf",
+    "data/spanish-lemmas/dictionary-extract.json": "96ec17a546164829fdf2653b1ec665cbdb80623148e62d4d3203f3940e028613",
+    "data/spanish-lemmas/notes-inflection-evidence.json": "9500c1156c03618a1fdcc79f407e263be898dbeba714b28eb2ef828379fffaf6",
+    "data/spanish-lemmas/context/word-glosses.json": "9777ebaaa715f0107718851469a4f1221e5031d3e77f685010977e3880da5d0d",
+    "lemmas/tener-prototype.js": "3b8876d4537dc0b0a6693a69996214224cfda02353596a3464b45d2ac4e4066c"
+  },
+  "corrections": {
+    "don": {
+      "before": [
+        [
+          "singular",
+          "el don"
+        ],
+        [
+          "plural",
+          "los dones"
+        ]
+      ],
+      "after": [
+        [
+          "before a first name",
+          "don"
+        ]
+      ],
+      "sources": [
+        "https://dle.rae.es/don",
+        "https://www.rae.es/gramática/sintaxis/las-formas-de-tratamiento-ii-sustantivos-y-grupos-nominales"
+      ]
+    },
+    "translation": {
+      "sentence": "Ahí cambia mi dirección con cada paso.",
+      "before": "There, I change direction with each step.",
+      "after": "There, my direction changes with each step.",
+      "source": "https://dle.rae.es/cambiar"
+    },
+    "hoverHints": [
+      {
+        "word": "camino",
+        "before": [
+          "I walk"
+        ],
+        "after": "path; road; way (noun); I walk (verb)",
+        "example": "Cada persona sigue un camino distinto."
+      },
+      {
+        "word": "estudio",
+        "before": [
+          "I study"
+        ],
+        "after": "study; research (noun); I study (verb)",
+        "example": "Aunque parece fácil, estudio durante una hora."
+      },
+      {
+        "word": "vivo",
+        "before": [
+          "I live",
+          "alive"
+        ],
+        "after": "alive; living (adjective); I live (verb)",
+        "example": "El objeto histórico representa un ser vivo."
+      },
+      {
+        "word": "hecho",
+        "before": [
+          "fact; event; deed"
+        ],
+        "after": "fact; event; deed (noun); made; done (participle)",
+        "example": "Este hecho explica el resultado al fin del proceso."
+      },
+      {
+        "word": "grito",
+        "before": [
+          "to shout; to scream"
+        ],
+        "after": "shout; cry (noun)",
+        "example": "El trabajador abre la boca antes de lanzar un grito."
+      },
+      {
+        "word": "trato",
+        "before": [
+          "to treat; tratar de: to try to, to be about"
+        ],
+        "after": "treatment; dealings (noun)",
+        "example": "La lucha busca exigir un trato igual."
+      },
+      {
+        "word": "sobre",
+        "before": [
+          "on; above"
+        ],
+        "after": "on; above; about",
+        "example": "Ese hombre dice algo sobre esta cosa."
+      },
+      {
+        "word": "adoptar",
+        "before": [
+          "to adopt (legally take in a child from other parents) (transitive, law)"
+        ],
+        "after": "to adopt (a child, method or approach)",
+        "example": "El panadero sugiere adoptar un método nuevo para preparar la masa."
+      },
+      {
+        "word": "actividad",
+        "before": [
+          "activity (state of being active)"
+        ],
+        "after": "activity; something done",
+        "example": "Mi amigo señala una actividad para mañana."
+      },
+      {
+        "word": "actividades",
+        "before": [
+          "activity (state of being active)"
+        ],
+        "after": "activities; things done",
+        "example": "La clase llega a un acuerdo sobre una serie de actividades."
+      },
+      {
+        "word": "agencia",
+        "before": [
+          "agency (the office or function of an agent)"
+        ],
+        "after": "agency; branch; organization providing a service",
+        "example": "Cada individuo puede solicitar ayuda a la agencia."
+      },
+      {
+        "word": "aplicación",
+        "before": [
+          "application, use (the act of applying as a means; the employment of means to accomplish an end; specific use)"
+        ],
+        "after": "application; use; software app",
+        "example": "La industria lanza una aplicación para la nueva temporada."
+      },
+      {
+        "word": "campo",
+        "before": [
+          "countryside, country"
+        ],
+        "after": "field; countryside",
+        "example": "En esta región tengo que pagar para entrar en el campo."
+      },
+      {
+        "word": "consejo",
+        "before": [
+          "advice, counsel, piece of advice"
+        ],
+        "after": "advice; council; board",
+        "example": "El consejo considera necesario mantener el centro abierto."
+      },
+      {
+        "word": "detener",
+        "before": [
+          "to detain (transitive)"
+        ],
+        "after": "to stop; to detain",
+        "example": "Queremos detener la expansión de la crisis en este sitio."
+      },
+      {
+        "word": "echar",
+        "before": [
+          "to throw, toss, cast, jettison (to release an object from one's grasp so that it moves through the air) (transitive)"
+        ],
+        "after": "to throw; to put; echar un vistazo: to take a look",
+        "example": "No sé cuál elegir después de hacer un esfuerzo por echar un vistazo."
+      },
+      {
+        "word": "economía",
+        "before": [
+          "economy"
+        ],
+        "after": "economy; economics",
+        "example": "En mi tiempo libre quiero publicar un libro sobre economía."
+      },
+      {
+        "word": "elección",
+        "before": [
+          "election"
+        ],
+        "after": "choice; election",
+        "example": "Tener que elegir provoca un debate sobre la elección."
+      },
+      {
+        "word": "equipo",
+        "before": [
+          "team"
+        ],
+        "after": "team; equipment",
+        "example": "Creo que el equipo nacional puede salir ahora."
+      },
+      {
+        "word": "estrella",
+        "before": [
+          "star (celestial body)"
+        ],
+        "after": "star (in the sky or a famous performer)",
+        "example": "La estrella dice que el silencio es la peor respuesta a la violencia sexual."
+      },
+      {
+        "word": "exponer",
+        "before": [
+          "to exhibit"
+        ],
+        "after": "to exhibit; to present or explain",
+        "example": "Tengo confianza en tu capacidad para exponer ideas sobre el planeta."
+      },
+      {
+        "word": "historia",
+        "before": [
+          "history (the aggregate of past events)"
+        ],
+        "after": "history; story",
+        "example": "Sí, conozco a alguien que puede contar esa historia."
+      },
+      {
+        "word": "libre",
+        "before": [
+          "free (not imprisoned or enslaved)"
+        ],
+        "after": "free; available; without obligations",
+        "example": "En mi tiempo libre quiero publicar un libro sobre economía."
+      },
+      {
+        "word": "libres",
+        "before": [
+          "free (not imprisoned or enslaved)"
+        ],
+        "after": "free; available; without obligations (plural)",
+        "example": "El cocinero mexicano quiere aprovechar un par de horas libres."
+      },
+      {
+        "word": "logra",
+        "before": [
+          "to get, to obtain (transitive)",
+          "achieves"
+        ],
+        "after": "manages to; achieves",
+        "example": "El proyecto logra mejorar el servicio."
+      },
+      {
+        "word": "logro",
+        "before": [
+          "to get, to obtain (transitive)"
+        ],
+        "after": "I manage to; I achieve",
+        "example": "En mi sueño logro regresar mediante un paso secreto."
+      },
+      {
+        "word": "operación",
+        "before": [
+          "operation (a surgical procedure) (medicine)"
+        ],
+        "after": "operation; procedure; transaction",
+        "example": "El usuario completa la operación en el banco de la plaza."
+      },
+      {
+        "word": "papel",
+        "before": [
+          "paper"
+        ],
+        "after": "paper; role",
+        "example": "La mujer que dirige la película también interpreta un papel en ella."
+      },
+      {
+        "word": "plena",
+        "before": [
+          "full (containing the maximum amount possible)"
+        ],
+        "after": "full (feminine); en plena: in the middle of",
+        "example": "En plena presentación, la cadena se rompe."
+      },
+      {
+        "word": "profundo",
+        "before": [
+          "deep (having a bottom far from the surface or mouth)"
+        ],
+        "after": "deep; profound; thorough",
+        "example": "El diario quiere integrar un análisis profundo en su informe."
+      },
+      {
+        "word": "próximo",
+        "before": [
+          "near"
+        ],
+        "after": "next; upcoming; near",
+        "example": "El próximo mes vamos a formar un equipo para reconocer estos sonidos."
+      },
+      {
+        "word": "refiere",
+        "before": [
+          "to report"
+        ],
+        "after": "reports; se refiere a: refers to",
+        "example": "Se refiere a un aspecto del paisaje que está a la vista."
+      },
+      {
+        "word": "representación",
+        "before": [
+          "representation"
+        ],
+        "after": "representation; performance",
+        "example": "Este es el programa definitivo de la representación infantil."
+      },
+      {
+        "word": "sanitario",
+        "before": [
+          "sanitary"
+        ],
+        "after": "relating to health or healthcare; sanitary",
+        "example": "El servicio sanitario estatal puede prestar ayuda."
+      },
+      {
+        "word": "sentido",
+        "before": [
+          "sense (faculties of perception)"
+        ],
+        "after": "sense; meaning; tener sentido: to make sense",
+        "example": "Tiene sentido dejar el producto junto a la puerta."
+      },
+      {
+        "word": "sienta",
+        "before": [
+          "to seat (transitive)"
+        ],
+        "after": "seats; se sienta: sits down",
+        "example": "El poeta famoso se sienta a mi izquierda."
+      },
+      {
+        "word": "sostener",
+        "before": [
+          "to hold, to hold up, to prop up, to sustain, to underpin (physically)"
+        ],
+        "after": "to hold; to support; to maintain or argue",
+        "example": "El médico no puede sostener que el tratamiento es la causa."
+      },
+      {
+        "word": "superar",
+        "before": [
+          "to surpass, exceed"
+        ],
+        "after": "to overcome; to surpass",
+        "example": "El equipo científico quiere superar el problema antes de esa fecha."
+      },
+      {
+        "word": "visión",
+        "before": [
+          "vision (something seen; an object perceived visually)"
+        ],
+        "after": "vision; view; perspective",
+        "example": "La iniciativa ofrece una nueva visión en el marco de la ley."
+      },
+      {
+        "word": "vuelta",
+        "before": [
+          "turn"
+        ],
+        "after": "turn; return; a la vuelta: on the way back",
+        "example": "A la vuelta, comenta el significado del término."
+      },
+      {
+        "word": "web",
+        "before": [
+          "web (Internet)"
+        ],
+        "after": "web; website",
+        "example": "Según la web, el clima tiende a ser seco."
+      }
+    ]
+  },
+  "limits": [
+    "A linguistic screen of every entry is not a fresh dictionary lookup for every entry.",
+    "Automated membership, coverage and grading checks do not certify semantics.",
+    "Dictionary-style hover hints may list multiple senses; phrase glosses provide the contextual reading.",
+    "No claim of zero remaining errors, exhaustive lemma knowledge, exact top-1500 rank or 90-percent coverage."
+  ],
+  "answerIdentitySha256": "66905f3732d6df6a2abe6b1c56a97b45a2a45d6789f4e0a3219c461002676937",
+  "afterHashes": {
+    "lemmas/data/deck.json": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "lemmas/data/notes.json": "4cc635d34db6e2c018abf7b20464345b223ae01e6bdc1d4ebe670cd88bb5a272",
+    "lemmas/data/context.json": "8670310ee8c382d13a1ec13db7051dc398da21a8aee442b399539315666554e2",
+    "data/spanish-lemmas/dictionary-extract.json": "96ec17a546164829fdf2653b1ec665cbdb80623148e62d4d3203f3940e028613",
+    "data/spanish-lemmas/notes-inflection-evidence.json": "f19109160d8cc05a998cf03912fcecf51d12bcbf5608b56cb65bb2c624b23168",
+    "data/spanish-lemmas/context/word-glosses.json": "ecb500ed29bc628f43a05443cf3e0fa3829824484459b5229b731a461520456a",
+    "lemmas/tener-prototype.js": "3b8876d4537dc0b0a6693a69996214224cfda02353596a3464b45d2ac4e4066c"
+  },
+  "sources": {
+    "frozenDictionary": "data/spanish-lemmas/dictionary-extract.json; Doozan b8ed076b4faea26a0985ee46ca736771c2e62dc4; alternative senses compared for hover corrections",
+    "additionalHoverChecks": [
+      "https://dle.rae.es/grito",
+      "https://dle.rae.es/trato",
+      "https://dle.rae.es/sanitario",
+      "https://dle.rae.es/exponer",
+      "https://dle.rae.es/representación"
+    ],
+    "retained": [
+      {
+        "word": "internet",
+        "source": "https://www.rae.es/dpd/internet",
+        "decision": "Retain both genders and lowercase common-noun use; DPD also recognizes an interconnected-network common-noun sense. Do not label internets an impossible form."
+      },
+      {
+        "word": "salud",
+        "source": "https://dle.rae.es/salud",
+        "decision": "No correction claimed: saludes is attested, though rare and not an everyday health plural. Table membership does not imply equal frequency."
+      }
+    ]
+  },
+  "unchanged": {
+    "lexicalEntries": 1499,
+    "deckCards": 1500,
+    "contextTargets": 1500
+  }
+}

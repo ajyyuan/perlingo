@@ -59,3 +59,7 @@ Context tests now use version 3. Version-2 50-card pilot sessions are archived u
 Days 2–5 expose the previous day’s review above the sets. Every day has its own review below its typed day test, including Day 5. The notes route now defaults to all 1,500 words, without requiring `?set=1`. The older five-word prototype remains source material, not the default experience.
 
 Local browser verification covers the Day 5 300-card entry, target-bearing phrase submission, Enter-to-continue focus, reload with draft, and the final word’s example → contextual grammar dialog. Automated completion checks cover every question in all five days; browser checks are not a claim of manually completing 1,500 questions or re-testing live microphone recognition.
+
+## Course-wide recheck — 27 October 2026
+
+See [the complete review and its limits](lemma-course-audit-2026-10-27.md). The later pass corrects the don title table, one shared English translation and 41 contextual word-hover hints. The selected deck and all accepted answers remain unchanged. The current generated form evidence has 3,380 matches after removing the gift-sense plural from the don title card.
