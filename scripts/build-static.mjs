@@ -11,7 +11,7 @@ for(const entry of ['_redirects','index.html','about.html','privacy.html','conte
 if(audioHost)writeFileSync('dist/src/audio-host.js',`export const audioBaseUrl = ${JSON.stringify(audioHost)};\n`);
 mkdirSync('dist/learning',{recursive:true});
 cpSync('index.html','dist/learning/index.html');
-writeFileSync('dist/index.html','<!doctype html><html lang="en"><head><link rel="canonical" href="https://perlingo.app/challenge/"><meta http-equiv="refresh" content="0;url=/challenge/"></head><body><a href="/challenge/">Open Challenge</a></body></html>');
+writeFileSync('dist/index.html','<!doctype html><html lang="en"><head><link rel="canonical" href="https://perlingo.app/lemmas/"><meta http-equiv="refresh" content="0;url=/lemmas/"></head><body><a href="/lemmas/">Open Lemmas</a></body></html>');
 let count=0,bytes=0;
 function inspect(dir){for(const e of readdirSync(dir,{withFileTypes:true})){const path=join(dir,e.name);if(e.isDirectory())inspect(path);else{const size=statSync(path).size;if(size>25*1024*1024)throw Error(`Static asset exceeds 25 MiB: ${path}`);count++;bytes+=size;}}}
 inspect('dist');if(count>100000)throw Error('Static asset count exceeds Workers for Platforms limit');

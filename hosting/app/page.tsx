@@ -1,2 +1,2 @@
 import {redirect} from 'next/navigation';
-export default function Home(){redirect('/challenge/');}
+export default function Home(){redirect('/lemmas/');}

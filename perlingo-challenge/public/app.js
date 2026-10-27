@@ -13,6 +13,7 @@ import {providerLabels,speechModels} from './speech-profiles.js';
 import {RecordingPlayer,getRecording} from './recordings.js';
 const $=s=>document.querySelector(s),app=$('#app');
 const learningUrl=location.pathname.startsWith('/challenge/')?'/learning':`http://${location.hostname}:5173/learning`;
+document.querySelector('#lemmas-link').href=location.pathname.startsWith('/challenge/')?'/lemmas/':`http://${location.hostname}:5173/lemmas/`;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const load=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{toast('Browser storage is unavailable; this round will not be saved.');}};

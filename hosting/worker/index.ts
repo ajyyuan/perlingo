@@ -7,7 +7,7 @@ const worker = {
   fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
     const url = new URL(request.url);
     if (["/", "/index.html"].includes(url.pathname)) {
-      url.pathname = "/challenge/";
+      url.pathname = "/lemmas/";
       return Response.redirect(url.href, 308);
     }
     if(new URL(request.url).pathname.startsWith("/challenge/api/")) return handleSpeechAPI(request, env);

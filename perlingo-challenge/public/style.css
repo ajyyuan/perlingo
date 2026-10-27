@@ -99,3 +99,5 @@ main:has(.challenge-hook) .fixed-setup p+p:before{content:' · ';white-space:pre
 main:has(.challenge-hook) .intro-footer{margin-top:28px}
 @media(max-width:600px){main:has(.challenge-hook){padding-top:24px}.challenge-hook{padding:8px 0 24px;margin-bottom:14px}.challenge-hook .eyebrow{font-size:9px;letter-spacing:1.35px;margin-bottom:20px}.challenge-hook h1{font-size:clamp(42px,11vw,64px)}.hook-timeline{gap:16px;margin-top:22px;font-size:12px}.hook-timeline strong{font-size:12px}.hook-timeline>span:not(.hook-arrow){gap:5px}main:has(.challenge-hook) .fixed-setup{padding:20px}}
 @media(max-width:360px){.hook-timeline{gap:12px}.hook-timeline>span:not(.hook-arrow){display:grid;gap:2px}}
+
+.header-actions .lemmas-link{text-decoration:none;white-space:nowrap;font-size:13px;display:inline-flex;align-items:center;min-height:44px}.header-actions{flex-wrap:wrap}

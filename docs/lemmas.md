@@ -142,3 +142,11 @@ Validation for this expansion: **290 repository tests passed**, including the co
 ## Compact forms experiment
 
 `/lemmas/forms.html` is an isolated three-word prototype using existing notes: all six tener present forms, two casa number forms and four bueno agreement forms. A wider card groups meaning and uses on the left with forms on the right, with viewport-bounded desktop content and stacked narrow-screen content as reference material; Full notes opens in a modal overlay. Tener has a prototype-only horizontal tense/mood picker with short examples and `[` / `]` shortcuts; these extra forms are exploratory and do not enter recall. The separate form quiz has been removed; this reference uses isolated sessionStorage for the current word. The main course retains its four existing tests. It does not replace the current course UI or context reviews. See [exact scope and checks](lemma-forms-prototype.md). Course-wide adoption is a future decision, not implemented behavior.
+
+## Home and secondary experiences
+
+The root URL redirects to `/lemmas/`; the wordmark stays in Lemmas. A quiet More disclosure in the footer holds Learning and Challenge links. It uses native keyboard controls (Tab, Enter/Space); Escape closes it and returns focus to its summary. Existing test/progress behavior is unchanged. Hosting changes are local until deployment.
+
+Learning and Challenge expose a persistent Lemmas header link, including active sessions. Learning’s former Challenge header shortcut is replaced by Lemmas; Challenge remains accessible from the Lemmas More menu. Challenge’s standalone development server points this return link to the existing port-5173 preview, matching its Learning-link convention. Navigation does not reset saved progress.
+
+Return-link verification: source syntax, `npm run check` and whitespace checks passed. Browser checks confirmed Learning’s header link and keyboard activation of Challenge’s header link both return to `/lemmas/`, with the existing context review intact. Neither change is deployed.
