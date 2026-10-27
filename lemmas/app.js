@@ -83,17 +83,20 @@ function study(){
  if(['choice','test'].includes(f.phase)){testView();return;}
  testDone();
 }
-function browse(){
- app.innerHTML='<section class="course-page"><p class="eyebrow">The whole deck</p><h1>Find a word.</h1><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list"></div></section>';
- const input=app.querySelector('#search');input.value=search;input.addEventListener('input',()=>{search=input.value;renderList();});renderList();
-}
-function renderList(){const q=search.trim().toLocaleLowerCase(),matches=deck.filter(c=>(c.lemma+' '+c.meaning).toLocaleLowerCase().includes(q));app.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;app.querySelector('#list').innerHTML=matches.slice(0,100).map(c=>`<a class="search-row" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${esc(c.lemma)}<small>${esc(c.partOfSpeech)}</small></span><span>${esc(c.meaning)}</span></a>`).join('');}
+const searchDialog=document.createElement('dialog');searchDialog.className='lemma-search';searchDialog.setAttribute('aria-label','Find a word');
+searchDialog.innerHTML='<button class="plain keyboard-close" data-close aria-label="Close search">×</button><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list"></div>';
+document.body.append(searchDialog);let searchAnchor;
+searchDialog.querySelector('[data-close]').onclick=()=>searchDialog.close();
+searchDialog.addEventListener('close',()=>{if(searchAnchor?.isConnected)searchAnchor.focus();});
+searchDialog.querySelector('#search').addEventListener('input',e=>{search=e.target.value;renderList();});
+function browse(){searchAnchor=document.activeElement;dictation.cancel();answerAudio.stop();searchDialog.querySelector('#search').value=search;renderList();searchDialog.showModal();searchDialog.querySelector('#search').focus();}
+function renderList(){const q=search.trim().toLocaleLowerCase(),matches=deck.filter(c=>(c.lemma+' '+c.meaning).toLocaleLowerCase().includes(q));searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map(c=>`<a class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${esc(c.lemma)}<small>${esc(c.partOfSpeech)}</small></span><span>${esc(c.meaning)}</span></a>`).join('');}
 function render(focus){
  unmount();unmount=()=>{};answerAudio.stop();dictation.cancel();document.body.dataset.view=view;
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
  document.querySelector('#total-progress').textContent=`Day ${data.day+1} · ${practiced(data.day)} / 300 learned`;
- if(view==='home')home();else if(view==='browse')browse();else study();
- const fallback=view==='home'?'.day-heading .primary':view==='browse'?'#search':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled), [data-action="forward"]';
+ if(view==='home')home();else study();
+ const fallback=view==='home'?'.day-heading .primary':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled), [data-action="forward"]';
  (app.querySelector(focus||fallback)||app.querySelector(fallback))?.focus();
 }
 function openSet(set){data.set=set;data.day=Math.floor(set/6);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
@@ -127,7 +130,7 @@ function act(action){
 }
 function speak(text){answerAudio.stop();dictation.cancel();const mic=app.querySelector('[data-action="dictate"]');if(mic){mic.dataset.listening='false';mic.setAttribute('aria-pressed','false');mic.dataset.state='cancelled';mic.setAttribute('aria-label','Dictate answer');}voice.speak(text,'es-ES','Spanish',({message})=>{const s=document.querySelector('#audio-status');if(s)s.textContent=message||'';});}
 document.querySelector('#home').onclick=()=>{if(deck){view='home';render();}};
-document.querySelector('#browse').onclick=()=>{if(deck){view='browse';render('#search');}};
+document.querySelector('#browse').onclick=()=>{if(deck)browse();};
 app.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b||!deck)return;
  if(b.dataset.day!==undefined){data.day=Number(b.dataset.day);save();render(`[data-day="${data.day}"]`);}
@@ -165,7 +168,7 @@ document.addEventListener('keydown',e=>{
  if(command){
   if(command==='dictate'){const mic=app.querySelector('[data-action="dictate"]');if(!mic)return;e.preventDefault();act('dictate');}
   else if(command==='home'){e.preventDefault();act('home');}
-  else if(command==='search'){e.preventDefault();view='browse';render('#search');}
+  else if(command==='search'){e.preventDefault();browse();}
   else if(command==='help'){e.preventDefault();showShortcuts();}
   else if(command==='pronounce'){e.preventDefault();speak(byId.get(batchIds(idsForSet(deck,data.set),flow())[flow().index]).lemma);}
   else if(command.startsWith('choice-')){const b=app.querySelectorAll('.choice:not(:disabled)')[Number(command.slice(-1))];if(b){e.preventDefault();b.click();}}

@@ -207,3 +207,9 @@ Published October 27 with explicit approval. The production un lookup card displ
 `forms-view.js` renders the same `verb-forms.js` data for learning cards, lookup cards, Full notes and standalone notes. There is no duplicated conjugation table or new sentence bank. Nonverb tables retain their existing content. Tense examples retain word help, card links and whole-sentence pronunciation. Bracket keys belong to the dialog containing keyboard focus; background cards, text fields, grammar/help dialogs and search never change an underlying tense. Arrow/Home/End picker navigation remains.
 
 Bracket guards and the existing form-source regression tests pass. Browser checks verified brackets and translated tense examples in nested card/Full notes overlays. Approved for commit; not published.
+
+## Search overlay — local update
+
+Search is now a native modal over the current screen. Results open the existing course-card overlay; closing it restores the same result and query. Closing search restores its original trigger and leaves the course screen, position and typed answer intact. Normal modified link clicks retain their browser behavior. Account sync may still legitimately redraw the underlying course if remote progress changes.
+
+Browser checks confirmed filtering, card lookup and Escape restoration of query, focus and original learning card. Approved for commit; not published.

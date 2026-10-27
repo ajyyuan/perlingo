@@ -34,3 +34,5 @@
 #course-account::backdrop{background:rgb(30 29 25 / .25)}
 #course-account .course-reset{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
 #course-account .course-reset p:empty{display:none}
+
+.lemma-search{width:min(680px,calc(100vw - 32px));max-height:80svh;box-sizing:border-box;border:1px solid var(--line);border-radius:18px;padding:36px 28px 24px;background:var(--paper,#faf9f6);color:var(--ink);overflow:auto}.lemma-search::backdrop{background:#172c2140;backdrop-filter:blur(3px)}.lemma-search .search{width:100%;box-sizing:border-box;margin-top:12px}.lemma-search .search-row{display:flex;justify-content:space-between;gap:24px;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}.lemma-search .search-row small{display:block;color:var(--muted)}
