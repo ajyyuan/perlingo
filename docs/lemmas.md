@@ -156,7 +156,7 @@ Return-link verification: source syntax, `npm run check` and whitespace checks p
 
 `study-card.js` and its scoped stylesheet mount the prototype-style card for every learning word in `/lemmas/`. Existing combined notes supply meanings, patterns, tips, all examples and all form-table rows. Person labels use the prototype’s compact English labels with the original labels retained as titles. Full notes uses the shared note renderer inside a modal, including nested grammar help. Cleanup removes listeners and overlays when changing cards or entering a test. N opens notes; P pronounces the headword. The footer uses the existing previous/forward workflow actions; the tenth card offers Check these 10 and opens the original batch-test preparation screen.
 
-All 369 verbs have nine sourced tense/mood reference groups. `[` / `]` and picker arrows explore these groups. Tener retains its previously authored examples; other verbs retain their existing Uses examples. Full notes retains its original lexical tables. There is no new form test, progress migration or scoring change. See [source evidence, restrictions and rebuild instructions](lemma-verb-forms.md). Batch typed recall, set multiple choice, day typed recall and context review remain the four stages. Full notes is not exposed as pre-answer help in those tests.
+All 369 verbs have nine sourced tense/mood reference groups. `[` / `]` and picker arrows explore these groups. Tener retains its previously authored examples; other verbs retain their existing Uses examples. Full notes and standalone notes share the same tense picker, forms and available examples through `forms-view.js`. There is no new form test, progress migration or scoring change. See [source evidence, restrictions and rebuild instructions](lemma-verb-forms.md). Batch typed recall, set multiple choice, day typed recall and context review remain the four stages. Full notes is not exposed as pre-answer help in those tests.
 
 Desktop study cards fit within the viewport and keep navigation below a scrollable details region. Narrow layouts stack the sections and use page scrolling. Test styles are unchanged. Preview: open a learning set, inspect a verb and a word without a table, open Full notes with N, close nested help with Escape, and advance through ten words to Start batch recall.
 
@@ -200,3 +200,10 @@ The account frontend, reset controls and sentence interactions described above a
 Study cards, including sentence-linked lookup overlays, show a quiet #number beside the word type. Combined notes carry their one-based position in the unchanged deck order; filtering or opening a lookup does not renumber them. The accessible label reads “Word N of 1500.” No progress or assessment behavior changes.
 
 Published October 27 with explicit approval. The production un lookup card displays #6, and all 1,500 note ranks were checked against the deck. Twelve focused tests, syntax/whitespace checks and the production build passed. No study progress was advanced or reset.
+
+
+## Shared tense controls — local update
+
+`forms-view.js` renders the same `verb-forms.js` data for learning cards, lookup cards, Full notes and standalone notes. There is no duplicated conjugation table or new sentence bank. Nonverb tables retain their existing content. Tense examples retain word help, card links and whole-sentence pronunciation. Bracket keys belong to the dialog containing keyboard focus; background cards, text fields, grammar/help dialogs and search never change an underlying tense. Arrow/Home/End picker navigation remains.
+
+Bracket guards and the existing form-source regression tests pass. Browser checks verified brackets and translated tense examples in nested card/Full notes overlays. Approved for commit; not published.

@@ -282,3 +282,5 @@ All 312 tests, content/syntax checks and the hosted build passed. Custom-domain 
 Study cards and sentence-linked card overlays show a small, muted course number (for example, #253) beside the word type. This is the position in the 1,500-card course, not the original CORPES source rank.
 
 Publication — October 27, version 25: the card numbers are live at https://perlingo.app/lemmas/. GitHub `ac9ab914` maps to Sites source `dc5eddc96511cca32a96bc5536474a7d74b61df5`; deployment `appgdep_6ae0fd1fbe1c81919726ab82b45b11ff` succeeded with environment revision 2 and public access unchanged. The hosted build and 12 focused tests passed; all 1,500 displayed ranks match deck ranks. Published notes-library/study-card JS and CSS match the release exactly. The live un lookup card showed #6. An older open course tab reported a progress conflict; neither copy was selected or overwritten.
+
+Lemmas local UI update: Full notes and standalone notes now use the same tense picker/data as study cards, including existing tense examples. Bracket shortcuts operate on the active card or notes overlay. The original four tests are unchanged.

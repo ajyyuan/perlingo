@@ -16,3 +16,10 @@ test('learning and choice shortcuts are scoped to the active stage',()=>{
 test('arrow navigation wraps within groups and Home/End remain bounded',()=>{
  assert.equal(moveIndex('ArrowLeft',0,4),3);assert.equal(moveIndex('ArrowDown',3,4),0);assert.equal(moveIndex('Home',2,4),0);assert.equal(moveIndex('End',0,4),3);assert.equal(moveIndex('Enter',0,4),null);assert.equal(moveIndex('ArrowLeft',0,0),null);
 });
+
+test('tense bracket keys respect active overlays and text editing',async()=>{
+ const {tenseKeysAllowed}=await import('../lemmas/forms-view.js');
+ assert.equal(tenseKeysAllowed({key:']'},{active:true}),true);
+ for(const state of [{active:false},{editing:true}])assert.equal(tenseKeysAllowed({key:']'},state),false);
+ for(const flag of ['defaultPrevented','isComposing','repeat','altKey','ctrlKey','metaKey','shiftKey'])assert.equal(tenseKeysAllowed({key:'[',[flag]:true}),false);
+});

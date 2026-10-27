@@ -2,7 +2,7 @@
 
 Published October 27, 2026 as Sites version 26, deployment `appgdep_6ae103c84db4819180cae87f5170e44d` (succeeded). GitHub application commit `8e1ca5a8` maps to Sites source `b2599319e94a7692882f778660d7b68581acd702`. The existing public audience, perlingo.app domain and runtime environment revision 2 are preserved. Every one of the 369 verb cards has the compact nine-group picker previously available for tener: present, preterite, imperfect, future, conditional, present perfect, present subjunctive, affirmative commands and negative commands. The original four assessments, their question banks, scoring and progress are unchanged. These are reference tables, not additional tests.
 
-The picker retains its sliding three-option view, pronunciation, arrow-key navigation and `[` / `]` shortcuts. Tener retains its nine authored examples; other verbs keep their existing Uses examples and receive short general tense cues, not newly generated sentences. Full notes retains its existing lexical reference tables. Displayed reference forms and participles now participate in exact course-card lookup from sentence words.
+The picker retains its sliding three-option view, pronunciation, arrow-key navigation and `[` / `]` shortcuts. Tener retains its nine authored examples; other verbs keep their existing Uses examples and receive short general tense cues, not newly generated sentences. A subsequent local UI update makes Full notes and standalone notes use the shared forms renderer and the same tense data/examples as study cards; it awaits publication. Displayed reference forms and participles now participate in exact course-card lookup from sentence words.
 
 ## Sources and checks
 
