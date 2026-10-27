@@ -84,13 +84,29 @@ function study(){
  testDone();
 }
 const searchDialog=document.createElement('dialog');searchDialog.className='lemma-search';searchDialog.setAttribute('aria-label','Find a word');
-searchDialog.innerHTML='<button class="plain keyboard-close" data-close aria-label="Close search">×</button><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list"></div>';
+searchDialog.innerHTML='<button class="plain keyboard-close" data-close aria-label="Close search">×</button><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-controls="list" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list" role="listbox" aria-label="Matching words"></div>';
 document.body.append(searchDialog);let searchAnchor;
 searchDialog.querySelector('[data-close]').onclick=()=>searchDialog.close();
 searchDialog.addEventListener('close',()=>{if(searchAnchor?.isConnected)searchAnchor.focus();});
 searchDialog.querySelector('#search').addEventListener('input',e=>{search=e.target.value;renderList();});
+function selectSearchRow(row){
+ searchDialog.querySelectorAll('.search-row').forEach(el=>{el.classList.toggle('is-active',el===row);el.setAttribute('aria-selected',String(el===row));});
+ const input=searchDialog.querySelector('#search');if(row)input.setAttribute('aria-activedescendant',row.id);else input.removeAttribute('aria-activedescendant');
+}
+searchDialog.addEventListener('focusin',e=>{const row=e.target.closest('.search-row');if(row){selectSearchRow(row);searchDialog.querySelector('#search').focus({preventScroll:true});}});
+searchDialog.addEventListener('keydown',e=>{
+ if(e.isComposing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;
+ const input=searchDialog.querySelector('#search'),rows=[...searchDialog.querySelectorAll('.search-row')],row=e.target.closest('.search-row');
+ if(e.target!==input&&!row)return;
+ if(e.key==='Enter'&&e.target===input){const selected=searchDialog.querySelector('.search-row.is-active');if(selected){e.preventDefault();selected.click();}return;}
+ if(!['ArrowDown','ArrowUp'].includes(e.key)||!rows.length)return;
+ e.preventDefault();
+ const i=rows.indexOf(searchDialog.querySelector('.search-row.is-active'));
+ const next=rows[e.key==='ArrowDown'?Math.min(i+1,rows.length-1):Math.max(0,i-1)];
+ selectSearchRow(next);input.focus({preventScroll:true});next?.scrollIntoView({block:'nearest'});
+});
 function browse(){searchAnchor=document.activeElement;dictation.cancel();answerAudio.stop();searchDialog.querySelector('#search').value=search;renderList();searchDialog.showModal();searchDialog.querySelector('#search').focus();}
-function renderList(){const q=search.trim().toLocaleLowerCase(),matches=deck.filter(c=>(c.lemma+' '+c.meaning).toLocaleLowerCase().includes(q));searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map(c=>`<a class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${esc(c.lemma)}<small>${esc(c.partOfSpeech)}</small></span><span>${esc(c.meaning)}</span></a>`).join('');}
+function renderList(){const q=search.trim().toLocaleLowerCase(),matches=deck.filter(c=>(c.lemma+' '+c.meaning).toLocaleLowerCase().includes(q));searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${esc(c.lemma)}<small>${esc(c.partOfSpeech)}</small></span><span>${esc(c.meaning)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
 function render(focus){
  unmount();unmount=()=>{};answerAudio.stop();dictation.cancel();document.body.dataset.view=view;
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
