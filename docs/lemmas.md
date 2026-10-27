@@ -2,7 +2,7 @@
 
 ## Current local implementation
 
-`http://127.0.0.1:5173/lemmas/` contains 1,500 headword/POS cards (1,455 distinct spellings), in 30 sets of 50. The user explicitly selected the edited CORPES deck. The original deck and five-word prototype were committed; the expanded notes and latest audit are committed and remain unpublished. The user requested **local preview first**, not production deployment.
+`http://127.0.0.1:5173/lemmas/` contains 1,500 headword/POS cards (1,455 distinct spellings), in 30 sets of 50. The user explicitly selected the edited CORPES deck. The user approved publication on October 27, 2026. Sites version 23 now includes the course, integrated study cards and latest accuracy corrections at https://perlingo.app/lemmas/. See the README publication record for exact source and deployment IDs. Progress remains browser-local; Google sign-in does not synchronize Lemmas, and localhost progress is separate from production.
 
 The page opens on the saved activity. Learning cards now use the integrated two-column study layout: Spanish headword, meaning and uses on the left, every existing form-table row on the right. Click the headword, a form or an example to pronounce it. Full notes (or N) opens a modal with grammar help and personal notes. Cards without a recorded form table omit that column rather than inventing forms. The four assessment stages retain their existing screens, scoring and progress behavior. Your days and Search provide secondary navigation.
 

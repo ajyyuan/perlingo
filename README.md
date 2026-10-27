@@ -251,3 +251,9 @@ Home routing (local preview): `/` and `/index.html` now redirect to `/lemmas/`. 
 Learning and Challenge each keep a quiet Lemmas link in the header, including during sessions, for a direct return to the primary course.
 
 Main Lemmas study cards now show meaning/uses beside all recorded forms, with Full notes in a popup. The ten-word batch flow and original four tests are unchanged. Only tener currently has the additional exploratory tense groups. See [implementation and preview steps](docs/lemmas.md#integrated-study-cards--october-27).
+
+## Publication — 27 October 2026
+
+Sites version 23 is live on https://perlingo.app (deployment `appgdep_6ae0c9c3218c8191b9cf3de342a7d359`, environment revision 2). Development source `2a825d31` maps to Sites source `8d792f194a40135e290178a6119007cc550e48aa`. This supersedes the local-only status above for Lemmas, its study-card integration, audit corrections and home routing. Public access was preserved. The native deployment succeeded; custom-domain study-card JavaScript and both audited data files match the approved source byte-for-byte. Browser navigation from the root reached `/lemmas/` and loaded the integrated card; Learning and Challenge still serve. All 298 tests and the content checks passed before publication, and the hosted build succeeded. No live microphone test was performed.
+
+Lemmas progress remains browser-local under `perlingo-lemmas-corpes-v2`, without Google/Supabase account sync. Localhost and the production domain have separate storage; publication does not transfer progress between them. Existing Learning account sync is separate.

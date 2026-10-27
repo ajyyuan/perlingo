@@ -57,3 +57,7 @@ HTTP checks passed against the source preview on port 5173, built Worker on port
 The local implementation now makes Lemmas the home destination in the source server, Worker, framework fallback, static redirect rules and generated HTML fallback. `/learning/` remains served by the original source `index.html`, whose Learning canonical is intentionally retained; the generated root HTML has the Lemmas canonical. Root redirect query parameters remain intact. Learning and Challenge retain their own URLs and are linked from a quiet More disclosure in the Lemmas footer. The Lemmas wordmark stays within Lemmas. This change is not deployed.
 
 October 27 validation: all 293 repository tests and `npm run check` passed. Updated routing tests verified generated fallback canonicals/static rules and Worker root redirects with preserved query data; Lemmas, Learning, Challenge and speech API routes remain distinct. Browser preview confirmed `/` reaches `/lemmas/` with its query intact, the More menu exposes both legacy links, and Escape closes it with focus restored. Hosted deployment and production verification remain pending.
+
+## Publication — October 27
+
+The routing/canonical changes above are now published in Sites version 23. Browser verification on perlingo.app confirmed the root lands on `/lemmas/` and loads the study card. The root also serves the generated HTML fallback with the Lemmas canonical. This supersedes earlier deployment-pending statements; Search Console re-crawling, selected canonicals and issue resolution remain unverified.

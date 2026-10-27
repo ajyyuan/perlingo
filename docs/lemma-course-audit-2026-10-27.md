@@ -30,4 +30,4 @@ This is a complete **editorial screen** by the same authoring assistant, plus au
 
 Validation: all 298 tests pass; `npm run check` and `git diff --check` pass. The local notes page was inspected for both the don table and the corrected cambiar translation.
 
-Committed for local use; not published.
+Published with user approval in Sites version 23 on October 27, 2026; see the README publication record.
