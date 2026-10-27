@@ -1,3 +1,4 @@
+import {mountStudyCard} from './study-card.js';
 import {keyboardCommand,moveIndex} from './keyboard.js';
 import {cleanDictation} from './dictation-text.js';
 import {createAnswerFeedback} from '/src/answer-feedback.js';
@@ -19,7 +20,7 @@ const dictation=createRecordedDictation({
 });
 const microphone='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></svg>';
 const speaker='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/></svg>';
-let deck,byId,notes,concepts,data,view='study',search='',unmount=()=>{};
+let deck,byId,notes,concepts,data,view='study',search='',unmount=()=>{},studyCard=null;
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(data));}catch{warning.hidden=false;warning.textContent='Progress could not be saved. Keep this tab open to continue.';}};
 const flow=()=>data.flows[data.set];
 const dayCards=d=>deck.slice(d*300,(d+1)*300);
@@ -39,10 +40,10 @@ function home(){
 }
 function learning(){
  const f=flow(),c=byId.get(batchIds(idsForSet(deck,data.set),f)[f.index]);
- app.innerHTML=`<section class="concept learning-card">${head(`Day ${Math.floor(data.set/6)+1} · Set ${data.set+1} · Batch ${f.batch+1}`,`${String(f.index+1).padStart(2,'0')} / 10`)}<div class="concept-body"><h1 class="word ${c.meaning.length>30?'long-word':''}">${esc(c.meaning)}</h1><div class="translation"><p class="eyebrow">Spanish <span class="pos">· ${esc(c.partOfSpeech)}</span></p><div class="translation-value"><h3>${wordButton(c.lemma,c.meaning)}</h3>${listen(c)}</div></div><p id="audio-status" role="status"></p><details id="word-reference"><summary>Notes & examples</summary><div id="card-note"></div></details></div><nav class="learning-navigation" aria-label="Learning cards"><button data-action="previous" aria-label="Previous learning card" ${f.index===0?'disabled':''}>↑<span class="mobile-nav-label">Previous</span></button><button data-action="forward" aria-label="${f.index===9?'Start batch check':'Next learning card'}">${f.index===9?'<span class="check-label">Check these 10</span> →':'↓<span class="mobile-nav-label">Next</span>'}</button></nav></section>`;
- unmount=mountNote(app.querySelector('#card-note'),notes.get(c.id),concepts,{voice});
-
+ studyCard=mountStudyCard(app,notes.get(c.id),concepts,{voice,speak,heading:head(`Day ${Math.floor(data.set/6)+1} · Set ${data.set+1} · Batch ${f.batch+1}`,`${String(f.index+1).padStart(2,'0')} / 10`),index:f.index});
+ unmount=()=>{studyCard?.destroy();studyCard=null;};
 }
+
 function testView(){
  const t=activeTest();if(t.done){testDone();return;}
  const c=byId.get(t.queue[t.index]),choice=t.kind==='choice',context=t.kind==='context',feedback=t.feedback;
@@ -106,7 +107,7 @@ function act(action){
  if(action==='home'){view='home';save();render();return;}
  if(view!=='study')return;
  if(action==='answer-sound'){data.answerSound=data.answerSound===false;save();if(!data.answerSound)answerAudio.stop();const b=app.querySelector('[data-action="answer-sound"]');b.textContent=`Sound ${data.answerSound?'on':'off'}`;b.setAttribute('aria-pressed',String(data.answerSound));return;}
- if(action==='notes'){const d=app.querySelector('#word-reference');if(d){d.open=!d.open;d.querySelector('summary').focus();}return;}
+ if(action==='notes'){studyCard?.openNotes();return;}
  if(action==='next'){openSet(Math.min(29,data.set+1));return;}
  if(action==='next-day'){data.day=Math.min(4,Math.floor(data.set/6)+1);view='home';save();render();return;}
  if(action==='dictate'){const b=app.querySelector('[data-action="dictate"]');if(b?.dataset.listening==='true')dictation.stop();else{answerAudio.stop();dictation.start();}return;}
@@ -141,13 +142,14 @@ shortcuts.addEventListener('close',()=>{if(shortcutAnchor?.isConnected)shortcutA
 document.addEventListener('keydown',e=>{
  if(e.isComposing)return;
  if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button,input,summary')){e.preventDefault();return;}
- const overlay=Boolean(document.querySelector('#keyboard-help[open],#grammar[open],#chunk-help:popover-open'));
+ const overlay=Boolean(document.querySelector('#study-notes[open],#keyboard-help[open],#grammar[open],#chunk-help:popover-open'));
  if(e.key==='Escape'&&!overlay){
   app.querySelectorAll('.quick-word').forEach(w=>w.classList.add('tip-dismissed'));
   if(app.querySelector('[data-action="dictate"][aria-pressed="true"]')){dictation.cancel();app.querySelector('#answer')?.focus();e.preventDefault();return;}
   const detail=e.target.closest('details[open]');if(detail){detail.open=false;detail.querySelector('summary')?.focus();e.preventDefault();return;}
  }
  if(!deck)return;
+ if(e.target.matches('.course-study .lesson-columns')&&['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(e.key))return;
  const editing=Boolean(e.target.closest('input,textarea,select,[contenteditable=true]'));
  const notes=notesOwnKeyboard(e.target,false)||Boolean(e.target.closest('header,footer,details'));
  const learning=view==='study'&&!data.activeExam&&flow().phase==='learn';

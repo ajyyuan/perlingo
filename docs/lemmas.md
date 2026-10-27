@@ -4,7 +4,7 @@
 
 `http://127.0.0.1:5173/lemmas/` contains 1,500 headword/POS cards (1,455 distinct spellings), in 30 sets of 50. The user explicitly selected the edited CORPES deck. The original deck and five-word prototype were committed; the expanded notes and latest audit are committed and remain unpublished. The user requested **local preview first**, not production deployment.
 
-The page opens on the saved activity. It shares `/learning/`’s shell, card styling, English-first typography, Spanish translation row and arrow navigation. Hovering or focusing the Spanish headword shows its meaning; clicking it pronounces it. Notes & examples remains a separate disclosure. Grammar, forms, dictionary links and personal notes remain contextual. Your days and Search provide secondary navigation.
+The page opens on the saved activity. Learning cards now use the integrated two-column study layout: Spanish headword, meaning and uses on the left, every existing form-table row on the right. Click the headword, a form or an example to pronounce it. Full notes (or N) opens a modal with grammar help and personal notes. Cards without a recorded form table omit that column rather than inventing forms. The four assessment stages retain their existing screens, scoring and progress behavior. Your days and Search provide secondary navigation.
 
 ### Learning and tests
 
@@ -141,7 +141,7 @@ Validation for this expansion: **290 repository tests passed**, including the co
 
 ## Compact forms experiment
 
-`/lemmas/forms.html` is an isolated three-word prototype using existing notes: all six tener present forms, two casa number forms and four bueno agreement forms. A wider card groups meaning and uses on the left with forms on the right, with viewport-bounded desktop content and stacked narrow-screen content as reference material; Full notes opens in a modal overlay. Tener has a prototype-only horizontal tense/mood picker with short examples and `[` / `]` shortcuts; these extra forms are exploratory and do not enter recall. The separate form quiz has been removed; this reference uses isolated sessionStorage for the current word. The main course retains its four existing tests. It does not replace the current course UI or context reviews. See [exact scope and checks](lemma-forms-prototype.md). Course-wide adoption is a future decision, not implemented behavior.
+`/lemmas/forms.html` is an isolated three-word prototype using existing notes: all six tener present forms, two casa number forms and four bueno agreement forms. A wider card groups meaning and uses on the left with forms on the right, with viewport-bounded desktop content and stacked narrow-screen content as reference material; Full notes opens in a modal overlay. Tener has a horizontal tense/mood picker with short examples and `[` / `]` shortcuts; these extra forms are exploratory and do not enter recall. The separate form quiz has been removed; this reference uses isolated sessionStorage for the current word. The main course retains its four existing tests. The main course now adopts this study layout; context reviews are unchanged. See [exact scope and checks](lemma-forms-prototype.md). The three-word page remains a standalone reference preview.
 
 ## Home and secondary experiences
 
@@ -150,3 +150,14 @@ The root URL redirects to `/lemmas/`; the wordmark stays in Lemmas. A quiet More
 Learning and Challenge expose a persistent Lemmas header link, including active sessions. Learning’s former Challenge header shortcut is replaced by Lemmas; Challenge remains accessible from the Lemmas More menu. Challenge’s standalone development server points this return link to the existing port-5173 preview, matching its Learning-link convention. Navigation does not reset saved progress.
 
 Return-link verification: source syntax, `npm run check` and whitespace checks passed. Browser checks confirmed Learning’s header link and keyboard activation of Challenge’s header link both return to `/lemmas/`, with the existing context review intact. Neither change is deployed.
+
+
+## Integrated study cards — October 27
+
+`study-card.js` and its scoped stylesheet mount the prototype-style card for every learning word in `/lemmas/`. Existing combined notes supply meanings, patterns, tips, all examples and all form-table rows. Person labels use the prototype’s compact English labels with the original labels retained as titles. Full notes uses the shared note renderer inside a modal, including nested grammar help. Cleanup removes listeners and overlays when changing cards or entering a test. N opens notes; P pronounces the headword. The footer uses the existing previous/forward workflow actions; the tenth card offers Check these 10 and opens the original batch-test preparation screen.
+
+Only tener has the extra, previously authored tense groups, shared with the reference prototype. `[` / `]` and picker arrows explore these groups; other verbs retain their existing present tables. There is no new form test, new generated content, progress migration or scoring change. Batch typed recall, set multiple choice, day typed recall and context review remain the four stages. Full notes is not exposed as pre-answer help in those tests.
+
+Desktop study cards fit within the viewport and keep navigation below a scrollable details region. Narrow layouts stack the sections and use page scrolling. Test styles are unchanged. Preview: open a learning set, inspect a verb and a word without a table, open Full notes with N, close nested help with Escape, and advance through ten words to Start batch recall.
+
+Integration verification: all 294 repository tests, `npm run check`, JavaScript syntax and whitespace checks passed. The added test compares every displayed source-form row against all 1,500 combined notes. Browser checks covered the table-free de card, ser/saber forms, N → Full notes → nested grammar → Escape, and the original ten-word batch preparation and typed test. At 390 px width the card stacked without horizontal overflow; at 1024×600 the footer stayed within the viewport while details scrolled. Other assessment behavior is covered by the unchanged workflow/assessment suites; no answers were submitted during browser checking. Live microphone recognition was not re-tested.
