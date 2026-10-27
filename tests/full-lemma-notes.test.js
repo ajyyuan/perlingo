@@ -5,11 +5,11 @@ import {execFileSync} from 'node:child_process';
 import {combineNotes} from '../lemmas/notes-library.js';
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url)));
 const base=read('../lemmas/data/notes.json'),deck=read('../lemmas/data/deck.json');
-const library=combineNotes(base),byId=new Map(library.notes.map(n=>[n.id,n]));
+const library=combineNotes(base,read('../lemmas/data/context.json')),byId=new Map(library.notes.map(n=>[n.id,n]));
 test('every deck identity has a complete lexical entry and an honest example layer',()=>{
  assert.equal(library.notes.length,1500);assert.equal(byId.size,1500);
  assert.deepEqual(library.notes.map(n=>n.id),deck.map(c=>c.id));
- assert.equal(library.notes.filter(n=>n.level==='sentence').length,53);
+ assert.equal(library.notes.filter(n=>n.level==='sentence').length,1500);
  for(const [i,n] of library.notes.entries()){
   assert.equal(n.word,deck[i].lemma);assert.ok(n.meaning&&n.pattern&&n.tip&&n.source);
   for(const k of n.tags)assert.ok(library.concepts[k]?.text,`${n.id}: ${k}`);

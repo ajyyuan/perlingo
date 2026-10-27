@@ -45,6 +45,8 @@ test('all 60 displayed present forms have frozen lemma evidence and distinct sub
 test('punctuation is rendered outside chunk buttons, while text stays escaped',()=>{
  assert.match(chunkMarkup({text:'llueve,'},0,1),/>llueve<\/button>,/);
  assert.match(chunkMarkup({text:'<script>'},0,0),/&lt;script&gt;/);
+ assert.match(chunkMarkup({text:'¿Vendrás?'},0,0),/^¿<button[^>]*>Vendrás<\/button>\?$/);
+ assert.match(chunkMarkup({text:'¡Qué bien!'},0,0),/^¡<button[^>]*>Qué bien<\/button>!$/);
 });
 test('grammar, notes, text input and disclosures own their keyboard; ordinary study surface does not',()=>{
  const target=selector=>({closest:query=>query.split(',').map(s=>s.trim()).includes(selector)?{}:null});

@@ -25,13 +25,13 @@ The frozen dictionary's entre entry supports tú/yo in the ordinary “between�
 
 ## Validation and limits
 
-`tests/first-set-notes.test.js` checks exact first-set identity/order, explained chunks, original-text reconstruction, punctuation outside buttons, important contrast regressions, all table rows against evidence, and shortcut ownership. The pilot and session tests remain applicable. Browser checks must cover Reveal, popover → dialog → Escape, no grading while help is open, Again/Know, personal-note persistence, and navigation cleanup.
+`tests/first-set-notes.test.js` checks exact first-set identity/order, explained chunks, original-text reconstruction, punctuation outside buttons, important contrast regressions, all table rows against evidence, and shortcut ownership. The pilot and session tests remain applicable. Current browser checks cover Notes & examples, popover → dialog → Escape, no grading while help is open, typed/choice grading, personal-note persistence, and navigation cleanup.
 
 The first-set prose and examples remain a local review draft. No claim is made that 50 examples cover every sense or that 1,500 cards yield a measured text-coverage percentage. Attribution and licensing follow the [existing deck sources](../lemmas/sources.html); source-derived teaching adaptations retain CC BY-SA 4.0.
 
 ## Full lexical dataset expansion — October 25
 
-The current note library covers all 1,500 IDs. The original 50 sentence notes plus casa/depender/música supply **53** authored examples entries; the remaining **1,447** contain lexical notes and applicable forms. No claim is made that all 1,500 have sentence-level explanations.
+The lexical build covers all 1,500 IDs. At its October 25 checkpoint, 53 entries had authored examples. The October 26 context expansion now supplies sentence examples to all 1,500 entries, preserving those original examples. The new source scope and checks are recorded in [lemma-context-sources.md](lemma-context-sources.md); no exhaustive sense or inflection mastery is claimed.
 
 The entire displayed gloss list was read. `full-notes-gloss-review.json` records 104 changes checked against the frozen dictionary senses, including several misleadingly narrow first-sense extractions. `notes-usage.json` adds selected construction and contrast notes from the same entries. The dataset does not claim to cover every sense.
 

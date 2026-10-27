@@ -1,8 +1,8 @@
 // One renderer/controller for the standalone preview and revealed study cards.
 export const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function chunkMarkup(c,e,j){
- const [,text,punctuation]=c.text.match(/^(.*?)([,;:!?]*)$/u);
- return `<button class="chunk" data-example="${e}" data-chunk="${j}" aria-expanded="false" aria-controls="chunk-help">${esc(text)}</button>${esc(punctuation)}`;
+ const [,opening,text,punctuation]=c.text.match(/^([¿¡]*)(.*?)([,;:!?]*)$/u);
+ return `${esc(opening)}<button class="chunk" data-example="${e}" data-chunk="${j}" aria-expanded="false" aria-controls="chunk-help">${esc(text)}</button>${esc(punctuation)}`;
 }
 export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes-v1',heading=false}={}){
  const controller=new AbortController(),options={signal:controller.signal};

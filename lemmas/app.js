@@ -3,9 +3,9 @@ import {cleanDictation} from './dictation-text.js';
 import {createAnswerFeedback} from '/src/answer-feedback.js';
 import {createRecordedDictation} from './recorded-dictation.js';
 import {sentenceMarkup,wordButton} from './word-help.js';
-import {contextPilot} from './context-pilot.js';
+import {examIds,restoreExams} from './exam-state.js';
 import {createFlow,batchIds,completedCount,transition,restoreFlows,finishTest} from './workflow.js';
-import {createTest,checkAnswer,advanceTest,optionsFor,validTest} from './assessment.js';
+import {createTest,checkAnswer,advanceTest,optionsFor} from './assessment.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,notesOwnKeyboard,esc} from './note-view.js';
 import {KEY,restore,idsForSet} from './session.js';
@@ -34,8 +34,8 @@ function stage(title,copy,actions,label='Your progress'){
 }
 function home(){
  const day=data.day,start=day*6,sets=Array.from({length:6},(_,i)=>start+i),next=sets.includes(data.set)&&data.flows[data.set]?.phase!=='done'?data.set:sets.find(s=>data.flows[s]?.phase!=='done')??start;
- const contextEntry=`<div class="review-row"><div><strong>Context review · Set 1 pilot</strong><p>50 contextual questions available. Full 300-word reviews are not ready yet.</p></div><button class="secondary" data-exam="review-0">${data.exams['review-0']&&!data.exams['review-0'].test.done?'Resume':'Try pilot'} →</button></div>`;
- app.innerHTML=`<section class="course-page"><div class="course-title"><p class="eyebrow">Spanish · 1,500 words</p><h1>Your five days.</h1></div><nav class="days" aria-label="Study day">${Array.from({length:5},(_,d)=>`<button data-day="${d}" aria-pressed="${d===day}">Day ${d+1}</button>`).join('')}</nav>${day<2?contextEntry:'<p class="hint">Previous-day contextual review is not available for this day yet.</p>'}<div class="day-heading"><div><h2>Day ${day+1}</h2><span>${practiced(day)} / 300 learned · ${setCount(day)} / 6 sets tested</span></div><button class="primary" data-set="${next}">${data.flows[next]?'Continue':'Start'} →</button></div><div class="set-list">${sets.map(s=>{const f=data.flows[s],label=!f?'Not started':f.phase==='done'?`Test complete · ${f.test.firstCorrect}/50 first try`:['set-ready','test'].includes(f.phase)?'50 learned · Set test':`Batch ${f.batch+1} / 5 · ${f.phase==='choice'?'Typed recall':f.phase==='complete'?'Checked':'Learning'}`;return `<button data-set="${s}"><span class="set-number">${String(s+1).padStart(2,'0')}</span><span><strong>Words ${s*50+1}–${s*50+50}</strong><small>${label}</small></span><span aria-hidden="true">${f?.phase==='done'?'✓':'→'}</span></button>`;}).join('')}</div><div class="review-row"><div><strong>Day ${day+1} test</strong><p>All 300 words · typed Spanish recall${data.exams[`day-${day}`]?.test.done?` · ${data.exams[`day-${day}`].test.firstCorrect}/300 first try`:''}</p></div><button class="secondary" data-exam="day-${day}">${data.exams[`day-${day}`]&&!data.exams[`day-${day}`].test.done?'Resume':'Start'} →</button></div></section>`;
+ const reviewRow=(d,previous=false)=>{const exam=data.exams[`review-${d}`],done=exam?.test.done;return `<div class="review-row"><div><strong>${previous?'Previous day · ':''}Day ${d+1} context review</strong><p>All 300 words · complete the sentence${done?` · ${exam.test.firstCorrect}/300 first try · Passed`:''}</p></div><button class="secondary" data-exam="review-${d}">${done?'Review again':exam?'Resume':'Start'} →</button></div>`;};
+ app.innerHTML=`<section class="course-page"><div class="course-title"><p class="eyebrow">Spanish · 1,500 words</p><h1>Your five days.</h1></div><nav class="days" aria-label="Study day">${Array.from({length:5},(_,d)=>`<button data-day="${d}" aria-pressed="${d===day}">Day ${d+1}</button>`).join('')}</nav>${day>0?reviewRow(day-1,true):''}<div class="day-heading"><div><h2>Day ${day+1}</h2><span>${practiced(day)} / 300 learned · ${setCount(day)} / 6 sets tested</span></div><button class="primary" data-set="${next}">${data.flows[next]?'Continue':'Start'} →</button></div><div class="set-list">${sets.map(s=>{const f=data.flows[s],label=!f?'Not started':f.phase==='done'?`Test complete · ${f.test.firstCorrect}/50 first try`:['set-ready','test'].includes(f.phase)?'50 learned · Set test':`Batch ${f.batch+1} / 5 · ${f.phase==='choice'?'Typed recall':f.phase==='complete'?'Checked':'Learning'}`;return `<button data-set="${s}"><span class="set-number">${String(s+1).padStart(2,'0')}</span><span><strong>Words ${s*50+1}–${s*50+50}</strong><small>${label}</small></span><span aria-hidden="true">${f?.phase==='done'?'✓':'→'}</span></button>`;}).join('')}</div><div class="review-row"><div><strong>Day ${day+1} test</strong><p>All 300 words · typed Spanish recall${data.exams[`day-${day}`]?.test.done?` · ${data.exams[`day-${day}`].test.firstCorrect}/300 first try`:''}</p></div><button class="secondary" data-exam="day-${day}">${data.exams[`day-${day}`]&&!data.exams[`day-${day}`].test.done?'Resume':'Start'} →</button></div>${reviewRow(day)}</section>`;
 }
 function learning(){
  const f=flow(),c=byId.get(batchIds(idsForSet(deck,data.set),f)[f.index]);
@@ -47,7 +47,7 @@ function testView(){
  const t=activeTest();if(t.done){testDone();return;}
  const c=byId.get(t.queue[t.index]),choice=t.kind==='choice',context=t.kind==='context',feedback=t.feedback;
  const exam=data.activeExam?data.exams[data.activeExam]:null;
- const label=exam?`${context?'Context pilot · Set 1':'Day test · Day '+(exam.day+1)}`:choice?`Set ${data.set+1} · 50 words`:`Set ${data.set+1} · Batch ${flow().batch+1}`;
+ const label=exam?`${context?'Context review · Day '+(exam.day+1):'Day test · Day '+(exam.day+1)}`:choice?`Set ${data.set+1} · 50 words`:`Set ${data.set+1} · Batch ${flow().batch+1}`;
  const prompt=choice?c.lemma:c.meaning;
  if(choice&&(!Array.isArray(t.options)||!t.options.includes(c.meaning))){t.options=optionsFor(c,t.ids.map(id=>byId.get(id)),deck);save();}
  const sentence=context?sentenceMarkup(c.context,Boolean(feedback)):'';
@@ -58,7 +58,7 @@ function testView(){
 }
 
 function testDone(){
- if(data.activeExam){const ex=data.exams[data.activeExam],t=ex.test;stage(`${ex.type==='review'?'Review':'Day test'} complete.`,`${t.firstCorrect} / ${t.ids.length} on the first try. A fully correct pass completed.${ex.type==='review'?' This pilot covers Set 1’s 50 words; the full contextual review is not yet available.':''}`,button('home','Back to your day →'),`Day ${ex.day+1}`);return;}
+ if(data.activeExam){const ex=data.exams[data.activeExam],t=ex.test;stage(`${ex.type==='review'?'Review':'Day test'} complete.`,`${t.firstCorrect} / ${t.ids.length} on the first try. A fully correct pass completed.`,button('home','Back to your day →'),`Day ${ex.day+1}`);return;}
  const f=flow(),t=f.test,score=`${t.firstCorrect} / ${t.ids.length} on the first try. A fully correct pass completed.`;
  if(f.phase==='complete')stage('Ten checked.',score,button('forward','Learn the next 10 →')+button('home','Take a break','plain'),`Set ${data.set+1} · Batch ${f.batch+1} / 5`);
  else if(f.phase==='set-ready')stage('Now, recognize all fifty.',`${score} You’ve checked all five batches. Next: choose the English meaning for each of the 50 Spanish headwords.`,button('start-test','Start set test →')+button('home','Later','plain'),`Set ${data.set+1}`);
@@ -91,8 +91,7 @@ function render(focus){
 function openSet(set){data.set=set;data.day=Math.floor(set/6);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
 function openExam(key){
  const [type,d]=key.split('-'),day=Number(d);if(!['day','review'].includes(type)||!Number.isInteger(day)||day<0||day>4)return;
- if(type==='review'&&day!==0)return;
- if(!data.exams[key]||data.exams[key].test.done)data.exams[key]={type,day,test:createTest(type==='review'?'context':'typed',type==='review'?contextPilot.map(c=>c.id):dayCards(day).map(c=>c.id))};
+ if(!data.exams[key]||data.exams[key].test.done)data.exams[key]={type,day,test:createTest(type==='review'?'context':'typed',examIds(deck,day))};
  data.activeExam=key;view='study';save();render('#answer');
 }
 function submit(response){
@@ -171,15 +170,11 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('visibilitychange',()=>{if(document.hidden){answerAudio.stop();dictation.cancel();}});window.addEventListener('pagehide',()=>{answerAudio.stop();dictation.cancel();});
 try{
  const response=await fetch('/lemmas/data/deck.json');if(!response.ok)throw Error('deck');const source=await response.json(),library=await loadNotes();notes=new Map(library.notes.map(n=>[n.id,n]));concepts=library.concepts;
- deck=source.map(c=>({...c,meaning:notes.get(c.id).meaning,context:contextPilot.find(x=>x.id===c.id)}));byId=new Map(deck.map(c=>[c.id,c]));let raw;
+ deck=source.map(c=>({...c,meaning:notes.get(c.id).meaning,context:library.contexts.get(c.id)}));byId=new Map(deck.map(c=>[c.id,c]));let raw;
  try{raw=JSON.parse(localStorage.getItem(KEY));}catch{warning.hidden=false;warning.textContent='Saved progress is unavailable. This session can still be used.';}
- data=restore(raw,deck);data.answerSound=raw?.answerSound!==false;data.previousContext=raw?.previousContext||Object.fromEntries(Object.entries(raw?.exams||{}).filter(([,ex])=>ex?.test?.kind==='context'&&ex.test.contextVersion!==2));data.previousAssessment=raw?.previousAssessment||(Object.values(raw?.flows||{}).some(f=>f.version!==4)?{flows:raw.flows,exams:raw.exams||{}}:null);data.flows=restoreFlows(raw?.flows,deck);data.practiced={};
+ data=restore(raw,deck);data.answerSound=raw?.answerSound!==false;data.previousAssessment=raw?.previousAssessment||(Object.values(raw?.flows||{}).some(f=>f.version!==4)?{flows:raw.flows,exams:raw.exams||{}}:null);data.flows=restoreFlows(raw?.flows,deck);data.practiced={};
  for(let s=0;s<30;s++){const n=raw?.practiced?.[s];data.practiced[s]=Math.max(Number.isInteger(n)&&n>=0&&n<=50&&n%10===0?n:0,completedCount(data.flows[s]));}
- data.exams={};for(const [key,ex] of Object.entries(raw?.exams||{})){
-  if(!ex||!['day','review'].includes(ex.type)||!Number.isInteger(ex.day)||ex.day<0||ex.day>4||key!==`${ex.type}-${ex.day}`)continue;
-  const context=ex.type==='review',allowed=context?contextPilot.map(c=>c.id):dayCards(ex.day).map(c=>c.id);
-  if((!context||ex.day===0)&&ex.test?.kind===(context?'context':'typed')&&ex.test.ids?.length===allowed.length&&validTest(ex.test,allowed))data.exams[key]=ex;
- }
+ Object.assign(data,restoreExams(raw,deck));
  data.activeExam=data.exams[raw?.activeExam]?raw.activeExam:null;
  if(!data.flows[data.set])data.flows[data.set]=createFlow();render();
 }catch(error){app.innerHTML='<p>The deck could not load. Please reload this page.</p>';console.error(error);}

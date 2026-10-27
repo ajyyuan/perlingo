@@ -15,7 +15,7 @@ export function sentenceMarkup(context,revealed=false){
    result+=esc(chunk.text.slice(cursor,match.index));
    const hidden=chunkIndex===context.index&&match.index===context.offset;
    if(hidden&&!revealed)result+='<span class="cloze-blank" aria-label="Missing Spanish word"></span>';
-   else {const meaning=wordMeanings[match[0].toLocaleLowerCase('es')];if(!meaning)throw Error('Missing word meaning: '+match[0]);result+=wordButton(match[0],meaning,chunk.meaning,'sentence-word-'+wordIndex);}
+   else {const meaning=(context.wordMeanings||wordMeanings)[match[0].toLocaleLowerCase('es')];if(!meaning)throw Error('Missing word meaning: '+match[0]);result+=wordButton(match[0],meaning,chunk.meaning,'sentence-word-'+wordIndex);}
    cursor=match.index+match[0].length;wordIndex++;
   }
   return result+esc(chunk.text.slice(cursor));

@@ -2,7 +2,7 @@ import {matchesContextAnswer} from './context-answer.js';
 // Tests use the reviewed deck; no generated translations or fuzzy semantic grading.
 export const normalize=s=>String(s).normalize('NFC').replace(/[’‘]/gu,"'").toLocaleLowerCase('es').trim().replace(/[.!?¿¡]+$/u,'').trim().replace(/\s+/gu,' ');
 export const shuffle=(items,random=Math.random)=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
-export function createTest(kind,ids,random=Math.random){return {rules:2,contextVersion:kind==='context'?2:null,mode:'full',pass:1,failures:{},kind,ids:[...ids],queue:shuffle(ids,random),index:0,misses:[],round:1,firstCorrect:0,feedback:null,done:false};}
+export function createTest(kind,ids,random=Math.random){return {rules:2,contextVersion:kind==='context'?3:null,mode:'full',pass:1,failures:{},kind,ids:[...ids],queue:shuffle(ids,random),index:0,misses:[],round:1,firstCorrect:0,feedback:null,done:false};}
 export function checkAnswer(test,response,card){
  if(test.done||test.feedback)return test;
  const answers=test.kind==='context'?card.context.answers:[test.kind==='choice'?card.meaning:card.lemma];
@@ -35,7 +35,7 @@ export function sampleDay(deck,day,random=Math.random){
  return Array.from({length:6},(_,s)=>shuffle(deck.slice(day*300+s*50,day*300+s*50+50),random).slice(0,5).map(c=>c.id)).flat();
 }
 export function validTest(t,allowed){
- if(!t||(t.kind==='context'&&t.contextVersion!==2)||t.rules!==2||!['full','repair'].includes(t.mode)||!Number.isInteger(t.pass)||t.pass<1||!t.failures||typeof t.failures!=='object'||!Object.entries(t.failures).every(([id,n])=>allowed.includes(id)&&Number.isInteger(n)&&n>=0)||!['choice','typed','context'].includes(t.kind)||!Array.isArray(t.ids)||!t.ids.length||new Set(t.ids).size!==t.ids.length||!t.ids.every(id=>allowed.includes(id)))return false;
+ if(!t||(t.kind==='context'&&t.contextVersion!==3)||t.rules!==2||!['full','repair'].includes(t.mode)||!Number.isInteger(t.pass)||t.pass<1||!t.failures||typeof t.failures!=='object'||!Object.entries(t.failures).every(([id,n])=>allowed.includes(id)&&Number.isInteger(n)&&n>=0)||!['choice','typed','context'].includes(t.kind)||!Array.isArray(t.ids)||!t.ids.length||new Set(t.ids).size!==t.ids.length||!t.ids.every(id=>allowed.includes(id)))return false;
  if(!Array.isArray(t.queue)||!t.queue.length||new Set(t.queue).size!==t.queue.length||!t.queue.every(id=>t.ids.includes(id)))return false;
  if(!Number.isInteger(t.index)||t.index<0||t.index>(t.done?t.queue.length:t.queue.length-1)||typeof t.done!=='boolean'||(t.done&&t.index!==t.queue.length)||!Number.isInteger(t.round)||t.round<1)return false;
  if(t.mode==='full'&&(t.queue.length!==t.ids.length||!t.ids.every(id=>t.queue.includes(id))))return false;
