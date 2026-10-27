@@ -1,3 +1,4 @@
+import {keyboardCommand,moveIndex} from './keyboard.js';
 import {cleanDictation} from './dictation-text.js';
 import {createAnswerFeedback} from '/src/answer-feedback.js';
 import {createRecordedDictation} from './recorded-dictation.js';
@@ -84,7 +85,8 @@ function render(focus){
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
  document.querySelector('#total-progress').textContent=`Day ${data.day+1} · ${practiced(data.day)} / 300 learned`;
  if(view==='home')home();else if(view==='browse')browse();else study();
- if(focus)app.querySelector(focus)?.focus({preventScroll:true});
+ const fallback=view==='home'?'.day-heading .primary':view==='browse'?'#search':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled), [data-action="forward"]';
+ (app.querySelector(focus||fallback)||app.querySelector(fallback))?.focus();
 }
 function openSet(set){data.set=set;data.day=Math.floor(set/6);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
 function openExam(key){
@@ -105,7 +107,7 @@ function act(action){
  if(action==='home'){view='home';save();render();return;}
  if(view!=='study')return;
  if(action==='answer-sound'){data.answerSound=data.answerSound===false;save();if(!data.answerSound)answerAudio.stop();const b=app.querySelector('[data-action="answer-sound"]');b.textContent=`Sound ${data.answerSound?'on':'off'}`;b.setAttribute('aria-pressed',String(data.answerSound));return;}
- if(action==='notes'){const d=app.querySelector('#word-reference');if(d)d.open=!d.open;return;}
+ if(action==='notes'){const d=app.querySelector('#word-reference');if(d){d.open=!d.open;d.querySelector('summary').focus();}return;}
  if(action==='next'){openSet(Math.min(29,data.set+1));return;}
  if(action==='next-day'){data.day=Math.min(4,Math.floor(data.set/6)+1);view='home';save();render();return;}
  if(action==='dictate'){const b=app.querySelector('[data-action="dictate"]');if(b?.dataset.listening==='true')dictation.stop();else{answerAudio.stop();dictation.start();}return;}
@@ -121,7 +123,7 @@ document.querySelector('#home').onclick=()=>{if(deck){view='home';render();}};
 document.querySelector('#browse').onclick=()=>{if(deck){view='browse';render('#search');}};
 app.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b||!deck)return;
- if(b.dataset.day!==undefined){data.day=Number(b.dataset.day);save();render();}
+ if(b.dataset.day!==undefined){data.day=Number(b.dataset.day);save();render(`[data-day="${data.day}"]`);}
  else if(b.dataset.set!==undefined)openSet(Number(b.dataset.set));
  else if(b.dataset.exam)openExam(b.dataset.exam);
  else if(b.dataset.choice!==undefined)submit(b.dataset.choice);
@@ -131,13 +133,40 @@ app.addEventListener('click',e=>{
 });
 app.addEventListener('pointerover',e=>{const w=e.target.closest('.quick-word');if(w&&!w.contains(e.relatedTarget))w.classList.remove('tip-dismissed');});
 app.addEventListener('focusin',e=>e.target.closest('.quick-word')?.classList.remove('tip-dismissed'));
+const shortcuts=document.querySelector('#keyboard-help');
+let shortcutAnchor=null;
+function showShortcuts(){shortcutAnchor=document.activeElement;shortcuts.showModal();}
+document.querySelector('#keyboard-help-open').onclick=showShortcuts;
+shortcuts.querySelector('[data-close]').onclick=()=>shortcuts.close();
+shortcuts.addEventListener('close',()=>{if(shortcutAnchor?.isConnected)shortcutAnchor.focus();});
 document.addEventListener('keydown',e=>{
- if(e.key==='Escape'){app.querySelectorAll('.quick-word').forEach(w=>w.classList.add('tip-dismissed'));}
- if(!deck||view!=='study'||e.repeat||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||notesOwnKeyboard(e.target,Boolean(document.querySelector('#grammar[open], #chunk-help:popover-open')))||e.target.closest('header, footer, input, textarea, summary, details'))return;
- if(!data.activeExam&&flow().phase==='learn'){
-  const action={ArrowUp:'previous',ArrowDown:'forward',ArrowLeft:'previous',ArrowRight:'forward'}[e.key];
-  if(action){e.preventDefault();act(action);}else if(e.key.toLowerCase()==='p')speak(byId.get(batchIds(idsForSet(deck,data.set),flow())[flow().index]).lemma);
+ if(e.isComposing)return;
+ if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button,input,summary')){e.preventDefault();return;}
+ const overlay=Boolean(document.querySelector('#keyboard-help[open],#grammar[open],#chunk-help:popover-open'));
+ if(e.key==='Escape'&&!overlay){
+  app.querySelectorAll('.quick-word').forEach(w=>w.classList.add('tip-dismissed'));
+  if(app.querySelector('[data-action="dictate"][aria-pressed="true"]')){dictation.cancel();app.querySelector('#answer')?.focus();e.preventDefault();return;}
+  const detail=e.target.closest('details[open]');if(detail){detail.open=false;detail.querySelector('summary')?.focus();e.preventDefault();return;}
  }
+ if(!deck)return;
+ const editing=Boolean(e.target.closest('input,textarea,select,[contenteditable=true]'));
+ const notes=notesOwnKeyboard(e.target,false)||Boolean(e.target.closest('header,footer,details'));
+ const learning=view==='study'&&!data.activeExam&&flow().phase==='learn';
+ const choice=Boolean(app.querySelector('.choice:not(:disabled)'));
+ const command=keyboardCommand(e,{editing,overlay,notes,learning,choice});
+ if(command){
+  if(command==='dictate'){const mic=app.querySelector('[data-action="dictate"]');if(!mic)return;e.preventDefault();act('dictate');}
+  else if(command==='home'){e.preventDefault();act('home');}
+  else if(command==='search'){e.preventDefault();view='browse';render('#search');}
+  else if(command==='help'){e.preventDefault();showShortcuts();}
+  else if(command==='pronounce'){e.preventDefault();speak(byId.get(batchIds(idsForSet(deck,data.set),flow())[flow().index]).lemma);}
+  else if(command.startsWith('choice-')){const b=app.querySelectorAll('.choice:not(:disabled)')[Number(command.slice(-1))];if(b){e.preventDefault();b.click();}}
+  else {e.preventDefault();act(command);}
+  return;
+ }
+ if(overlay||editing||e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.repeat)return;
+ const group=e.target.closest('.choices,.days');
+ if(group){const buttons=[...group.querySelectorAll('button:not(:disabled)')],index=buttons.indexOf(e.target.closest('button')),next=moveIndex(e.key,index,buttons.length);if(next!==null&&index>=0){e.preventDefault();buttons[next].focus();}}
 });
 document.addEventListener('visibilitychange',()=>{if(document.hidden){answerAudio.stop();dictation.cancel();}});window.addEventListener('pagehide',()=>{answerAudio.stop();dictation.cancel();});
 try{

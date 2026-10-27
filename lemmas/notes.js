@@ -1,3 +1,4 @@
+import {moveIndex} from './keyboard.js';
 import {notes as pilot,concepts as pilotConcepts} from './notes-data.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,esc} from './note-view.js';
@@ -19,6 +20,7 @@ function render(){
 }
 function select(i){index=i;set=Math.floor(i/50);setSelect.value=String(set);history.replaceState(null,'',`${allMode?'?set='+String(set+1):''}#${encodeURIComponent(notes[index].id||notes[index].word)}`);render();nav.querySelector('[aria-pressed=true]')?.focus();}
 nav.addEventListener('click',e=>{const b=e.target.closest('[data-word]');if(b)select(Number(b.dataset.word));});
+nav.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.isComposing)return;const buttons=[...nav.querySelectorAll('button')],index=buttons.indexOf(e.target),next=moveIndex(e.key,index,buttons.length);if(index>=0&&next!==null){e.preventDefault();buttons[next].focus();}});
 search.addEventListener('input',renderNav);
 setSelect.addEventListener('change',()=>{search.value='';select(Number(setSelect.value)*50);});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)voice.stop();});window.addEventListener('pagehide',()=>voice.stop());

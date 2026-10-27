@@ -29,6 +29,7 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
   for(const [selector,text] of Object.entries({'#grammar-title':concepts[key].title,'#grammar-text':concepts[key].text,'#grammar-context':context,'#grammar-translation':translation}))dialog.querySelector(selector).textContent=text;
   dialog.showModal();
  }
+ popup.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();closePopup();anchor?.focus();}},options);
  popup.addEventListener('toggle',e=>{if(e.newState==='closed')anchor?.setAttribute('aria-expanded','false');},options);
  dialog.addEventListener('close',()=>{voice?.stop();if(modalAnchor?.isConnected)modalAnchor.focus();},options);
  dialog.querySelector('.close').addEventListener('click',()=>dialog.close(),options);
@@ -45,6 +46,7 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
    popup.innerHTML=`<p class="chunk-meaning">${esc(c.meaning)}</p><button class="grammar-link">${esc(concepts[c.concept].title)} →</button>`;
    popup.querySelector('button').onclick=()=>grammar(c.concept,ex.text,ex.translation,b);
    popup.showPopover();b.setAttribute('aria-expanded','true');const r=b.getBoundingClientRect(),p=popup.getBoundingClientRect();
+   popup.querySelector('button').focus({preventScroll:true});
    popup.style.left=`${Math.max(12,Math.min(r.left,innerWidth-p.width-12))}px`;popup.style.top=`${r.bottom+p.height+20<innerHeight?r.bottom+8:Math.max(12,r.top-p.height-8)}px`;speak(c.text);
   }
  },options);
