@@ -125,9 +125,9 @@ Post-transcription cleanup now resolves the explicit ay/hay homophone pair to th
 
 After rendering, focus moves to the relevant answer, first choice, Continue/start action, learning navigation, or search field. Day selection preserves focus on its selected day. Typed Enter submits; focused Continue uses native Enter/Space, then restores the next answer/choice focus. Arrow keys navigate learning cards; P pronounces and N opens notes with summary focus. In multiple choice, 1–4 submits an option; arrows/Home/End only move focus, with Enter/Space activating it. Day buttons and standalone note lists support the same focus movement. Tab/Shift+Tab remains available for every control, with visible focus and a skip-to-study link.
 
-Alt+M starts/stops/cancels dictation, including while typing; Alt+H opens days and Alt+S opens search. These shortcuts are suspended while grammar, example or keyboard-help overlays are open. Plain-character shortcuts are disabled inside editable fields, note content and secondary controls; composition and repeated keys are guarded. Escape cancels active dictation, closes a focused disclosure, dismisses quick meanings, or uses the active overlay’s close behavior. Example popovers focus their grammar action and Escape restores their trigger; modal dialogs restore focus on close. Footer ⌨ and ? outside text fields open a native modal shortcut guide. Native control activation is preserved.
+Command on Mac / Ctrl elsewhere: Shift+M starts/stops/cancels dictation, including while typing; Shift+H opens days and K opens search. Plain Command+H/M and Command/Ctrl+S are not intercepted. These shortcuts are suspended while grammar, example or keyboard-help overlays are open. Plain-character shortcuts are disabled inside editable fields, note content and secondary controls; composition and repeated keys are guarded. Escape cancels active dictation, closes a focused disclosure, dismisses quick meanings, or uses the active overlay’s close behavior. Example popovers focus their grammar action and Escape restores their trigger; modal dialogs restore focus on close. Footer ⌨ and ? outside text fields open a native modal shortcut guide. Native control activation is preserved.
 
-Keyboard verification: browser-only key sequences confirmed answer → Enter → Continue → Enter → next answer focus, Alt+S search, Alt+H days, shortcut-dialog opening/Escape focus restoration, learning arrows, N opening notes, grammar-dialog Enter/Escape focus restoration, and returning to the saved context review. Automated tests cover shortcut guards and group navigation; microphone activation was not exercised during this keyboard check.
+Earlier keyboard verification (before the modifier update): browser-only key sequences confirmed answer → Enter → Continue → Enter → next answer focus, Alt+S search, Alt+H days, shortcut-dialog opening/Escape focus restoration, learning arrows, N opening notes, grammar-dialog Enter/Escape focus restoration, and returning to the saved context review. Automated tests cover shortcut guards and group navigation; microphone activation was not exercised during this keyboard check.
 
 ## Course-wide context expansion · October 26, 2026
 
@@ -202,14 +202,12 @@ Study cards, including sentence-linked lookup overlays, show a quiet #number bes
 Published October 27 with explicit approval. The production un lookup card displays #6, and all 1,500 note ranks were checked against the deck. Twelve focused tests, syntax/whitespace checks and the production build passed. No study progress was advanced or reset.
 
 
-## Shared tense controls — local update
+## Shared forms and search overlays — local update
 
 `forms-view.js` renders the same `verb-forms.js` data for learning cards, lookup cards, Full notes and standalone notes. There is no duplicated conjugation table or new sentence bank. Nonverb tables retain their existing content. Tense examples retain word help, card links and whole-sentence pronunciation. Bracket keys belong to the dialog containing keyboard focus; background cards, text fields, grammar/help dialogs and search never change an underlying tense. Arrow/Home/End picker navigation remains.
 
-Bracket guards and the existing form-source regression tests pass. Browser checks verified brackets and translated tense examples in nested card/Full notes overlays. Approved for commit; not published.
-
-## Search overlay — local update
-
 Search is now a native modal over the current screen. Results open the existing course-card overlay; closing it restores the same result and query. Closing search restores its original trigger and leaves the course screen, position and typed answer intact. Normal modified link clicks retain their browser behavior. Account sync may still legitimately redraw the underlying course if remote progress changes.
 
-Browser checks confirmed filtering, card lookup and Escape restoration of query, focus and original learning card. Approved for commit; not published.
+Shortcuts use Command on Apple platforms and Ctrl elsewhere: K for search, Shift+H for days, Shift+M for dictation. The shortcut guide displays the platform modifier. No Alt/Option shortcut is required. Other existing plain-key shortcuts remain scoped as before.
+
+Validation: 318 tests and content checks passed. Local browser checks exercised Command+K, filtering tener, opening its lookup card, `]` selecting Future there, Full notes followed by `[` selecting Past with its translated example, and Escape restoring each previous layer and focus. These checks did not submit assessment answers or start microphone capture. Preview: reload `/lemmas/`, press Command/Ctrl+K, search tener, open its card, use brackets, then open Full notes and repeat. Approved for separate commits; not yet pushed or published.

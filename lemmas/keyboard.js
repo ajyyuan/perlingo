@@ -1,7 +1,8 @@
 // Keep shortcut decisions independent from DOM effects and grading.
-export function keyboardCommand(e,{editing=false,overlay=false,notes=false,learning=false,choice=false}={}){
+export function keyboardCommand(e,{editing=false,overlay=false,notes=false,learning=false,choice=false,mac=false}={}){
  if(e.defaultPrevented||e.isComposing||e.repeat||overlay)return null;
- if(e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey)return ({KeyM:'dictate',KeyH:'home',KeyS:'search'})[e.code]||null;
+ const primary=mac?e.metaKey&&!e.ctrlKey:e.ctrlKey&&!e.metaKey;
+ if(primary&&!e.altKey){if(!e.shiftKey&&e.code==='KeyK')return 'search';if(e.shiftKey)return ({KeyM:'dictate',KeyH:'home'})[e.code]||null;}
  if(e.altKey||e.ctrlKey||e.metaKey||editing||notes)return null;
  if(e.key==='?')return 'help';
  if(e.shiftKey)return null;

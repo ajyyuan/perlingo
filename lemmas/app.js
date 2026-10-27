@@ -143,6 +143,8 @@ app.addEventListener('click',e=>{
 });
 app.addEventListener('pointerover',e=>{const w=e.target.closest('.quick-word');if(w&&!w.contains(e.relatedTarget))w.classList.remove('tip-dismissed');});
 app.addEventListener('focusin',e=>e.target.closest('.quick-word')?.classList.remove('tip-dismissed'));
+const mac=/Mac|iPhone|iPad/.test(navigator.platform);
+document.querySelectorAll('[data-modifier]').forEach(el=>el.textContent=mac?'⌘':'Ctrl');
 const shortcuts=document.querySelector('#keyboard-help');
 let shortcutAnchor=null;
 function showShortcuts(){shortcutAnchor=document.activeElement;shortcuts.showModal();}
@@ -164,7 +166,7 @@ document.addEventListener('keydown',e=>{
  const notes=notesOwnKeyboard(e.target,false)||Boolean(e.target.closest('header,footer,details'));
  const learning=view==='study'&&!data.activeExam&&flow().phase==='learn';
  const choice=Boolean(app.querySelector('.choice:not(:disabled)'));
- const command=keyboardCommand(e,{editing,overlay,notes,learning,choice});
+ const command=keyboardCommand(e,{editing,overlay,notes,learning,choice,mac});
  if(command){
   if(command==='dictate'){const mic=app.querySelector('[data-action="dictate"]');if(!mic)return;e.preventDefault();act('dictate');}
   else if(command==='home'){e.preventDefault();act('home');}

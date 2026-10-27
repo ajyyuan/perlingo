@@ -6,9 +6,15 @@ test('typing, composition, overlays and held keys cannot trigger grading shortcu
  for(const event of [{key:'1',repeat:true},{key:'1',isComposing:true},{key:'1',ctrlKey:true},{key:'1',metaKey:true},{key:'1',defaultPrevented:true}])assert.equal(keyboardCommand(event,{choice:true}),null);
  assert.equal(keyboardCommand({key:'?'},{editing:true}),null);
 });
-test('explicit Alt shortcuts work in answers but never within overlays',()=>{
- const e={key:'µ',code:'KeyM',altKey:true};assert.equal(keyboardCommand(e,{editing:true}),'dictate');assert.equal(keyboardCommand(e,{overlay:true}),null);
- assert.equal(keyboardCommand({code:'KeyS',altKey:true},{editing:true}),'search');
+test('platform command shortcuts work in answers without intercepting ordinary browser chords',()=>{
+ for(const mac of [true,false]){const primary=mac?{metaKey:true}:{ctrlKey:true};
+ assert.equal(keyboardCommand({...primary,code:'KeyK'},{editing:true,mac}),'search');
+ assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyM'},{editing:true,mac}),'dictate');
+ assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyH'},{mac}),'home');
+ for(const code of ['KeyM','KeyH','KeyS'])assert.equal(keyboardCommand({...primary,code},{mac}),null);
+ assert.equal(keyboardCommand({...primary,code:'KeyK'},{overlay:true,mac}),null);
+ }
+ assert.equal(keyboardCommand({code:'KeyM',altKey:true},{editing:true}),null);
 });
 test('learning and choice shortcuts are scoped to the active stage',()=>{
  assert.equal(keyboardCommand({key:'ArrowRight'},{learning:true}),'forward');assert.equal(keyboardCommand({key:'n'},{learning:true}),'notes');assert.equal(keyboardCommand({key:'1'},{choice:true}),'choice-0');assert.equal(keyboardCommand({key:'1'},{learning:true}),null);assert.equal(keyboardCommand({key:'Enter'},{choice:true}),null);
