@@ -30,3 +30,6 @@ perlingo-challenge/.cache/
 
 # Local Python source-check caches
 __pycache__/
+
+# Temporary full lemma audio batch downloads
+/audio-generation/lemmas-library/*.zip

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "totalApprovedBudgetUSD": 45,
+  "sampleBudgetUSD": 0.1,
+  "ratePerMillion": 15,
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "texts": [
+    "hacer",
+    "hiciste",
+    "haríamos",
+    "Ayer hiciste la comida.",
+    "Espero que tengas tiempo.",
+    "La canción le gusta a Ana."
+  ],
+  "jobs": [
+    {
+      "locale": "es-ES",
+      "voice": "es-ES-AlvaroNeural",
+      "gender": "masculine"
+    },
+    {
+      "locale": "es-MX",
+      "voice": "es-MX-JorgeNeural",
+      "gender": "masculine"
+    },
+    {
+      "locale": "es-AR",
+      "voice": "es-AR-TomasNeural",
+      "gender": "masculine"
+    },
+    {
+      "locale": "es-CO",
+      "voice": "es-CO-GonzaloNeural",
+      "gender": "masculine"
+    },
+    {
+      "locale": "es-ES",
+      "voice": "es-ES-ElviraNeural",
+      "gender": "feminine"
+    },
+    {
+      "locale": "es-MX",
+      "voice": "es-MX-DaliaNeural",
+      "gender": "feminine"
+    },
+    {
+      "locale": "es-AR",
+      "voice": "es-AR-ElenaNeural",
+      "gender": "feminine"
+    },
+    {
+      "locale": "es-CO",
+      "voice": "es-CO-SalomeNeural",
+      "gender": "feminine"
+    }
+  ]
+}
