@@ -3,12 +3,16 @@ import {formGroups} from './verb-forms.js';
 import {exampleMarkup,sentenceAudio} from './sentence-help.js';
 import {esc} from './html.js';
 export {esc} from './html.js';
+export function supplementalMarkup(n,concepts,{personalNote='',loadError=''}={}){
+ const details=[...(formGroups(n).length?[n.pattern,n.tip]:[]),n.more].filter((text,i,all)=>text&&text!==n.meaning&&all.indexOf(text)===i);
+ return `<div class="word-heading"><h1 lang="es"><button class="say" data-speak="${esc(n.word)}" aria-label="Listen to ${esc(n.word)}">${esc(n.word)}</button></h1></div><div class="extra-usage">${details.map(text=>`<p>${esc(text)}</p>`).join('')}</div><div class="concepts">${n.tags.map(k=>`<button data-concept="${esc(k)}">${esc(concepts[k].title)}</button>`).join('')}</div>${n.examples.length?`<details class="more usage-context"><summary>Usage in context</summary>${n.examples.map(x=>`<div class="example"><div class="example-line"><p lang="es">${exampleMarkup(x,{grammar:true})}</p>${sentenceAudio(x.text)}</div><p class="translation">${esc(x.translation)}</p></div>`).join('')}</details>`:''}<a class="word-source" href="https://en.wiktionary.org/wiki/${encodeURIComponent(n.source)}#Spanish" target="_blank" rel="noopener">Wiktionary ↗</a><p class="note-audio" role="status"></p><details class="more"><summary>My note</summary><label class="sr-only" for="personal-note">Your note about ${esc(n.word)}</label><textarea id="personal-note" maxlength="4000" placeholder="An association, a phrase, something to remember…">${esc(personalNote)}</textarea><small>Saved in this browser.</small></details><p class="note-storage" role="status">${esc(loadError)}</p>`;
+}
 // One renderer/controller for the standalone preview and revealed study cards.
 export function chunkMarkup(c,e,j){
  const [,opening,text,punctuation]=c.text.match(/^([¿¡]*)(.*?)([,;:!?]*)$/u);
  return `${esc(opening)}<button class="chunk" data-example="${e}" data-chunk="${j}" aria-expanded="false" aria-controls="chunk-help">${esc(text)}</button>${esc(punctuation)}`;
 }
-export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes-v1',heading=false,overlayRoot=document.body}={}){
+export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes-v1',heading=false,supplemental=false,overlayRoot=document.body}={}){
  const controller=new AbortController(),options={signal:controller.signal};
  const id=n.id||n.word;
  let anchor=null,modalAnchor=null,saved={};
@@ -20,6 +24,12 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
  try{const value=JSON.parse(localStorage.getItem(storageKey));if(value&&typeof value==='object'&&!Array.isArray(value))saved=value;}catch{loadError='Personal notes cannot be loaded in this browser.';}
  host.classList.add('word-note');
  host.innerHTML=`${heading?`<div class="word-heading"><div><p class="word-label">${esc(n.label)}</p><h1 lang="es">${esc(n.word)}</h1></div><button class="speaker" data-speak="${esc(n.word)}" aria-label="Listen to ${esc(n.word)}">♫</button></div>`:''}<p class="meaning">${esc(n.meaning)}</p><div class="concepts">${n.tags.map(k=>`<button data-concept="${esc(k)}">${esc(concepts[k].title)}</button>`).join('')}</div><div class="usage"><p>${esc(n.pattern)}</p><small>${esc(n.tip)}</small></div>${n.examples.length?`<div class="examples">${n.examples.map((x,e)=>`<div class="example"><div class="example-line"><p lang="es">${exampleMarkup(x,{grammar:true})}</p>${sentenceAudio(x.text)}</div><p class="translation">${esc(x.translation)}</p></div>`).join('')}</div>`:''}<p class="note-audio" role="status"></p>${formGroups(n).length?'<section class="shared-forms note-forms" aria-label="Verb forms"></section>':n.forms.length?`<details class="more"><summary>${esc(n.formsTitle||(n.word==='haber'?'Auxiliary present forms':n.label==='verb'?'Present-tense forms':'Word forms'))}</summary><table><caption class="sr-only">${esc(n.word)} forms</caption><tbody>${n.forms.map(([label,form])=>`<tr><th scope="row">${esc(label)}</th><td><button data-speak="${esc(form)}" lang="es" aria-label="Listen to ${esc(form)}">${esc(form)}</button></td></tr>`).join('')}</tbody></table>${n.label==='verb'?'<small>Vosotros is mainly used in Spain; ustedes takes the third-person plural form. Voseo forms are not shown.</small>':''}</details>`:''}<details class="more"><summary>More about this word</summary>${n.more?`<p>${esc(n.more)}</p>`:''}<a href="https://en.wiktionary.org/wiki/${encodeURIComponent(n.source)}#Spanish" target="_blank" rel="noopener">Wiktionary · full entry ↗</a></details><details class="more"><summary>My note</summary><label class="sr-only" for="personal-note">Your note about ${esc(n.word)}</label><textarea id="personal-note" maxlength="4000" placeholder="An association, a phrase, something to remember…">${esc(typeof saved[id]==='string'?saved[id]:'')}</textarea><small>Saved in this browser.</small></details><p class="note-storage" role="status">${esc(loadError)}</p>`;
+ if(supplemental){
+  // Verb Uses now follows the tense picker; retain its original construction and tip here.
+  // Nonverb cards already show these details, so do not repeat them.
+  host.classList.add('supplemental-note');
+  host.innerHTML=supplementalMarkup(n,concepts,{personalNote:typeof saved[id]==='string'?saved[id]:'',loadError});
+ }
  const removeForms=host.querySelector('.note-forms')?mountForms(host.querySelector('.note-forms'),n,{voice}):()=>{};
  const status=host.querySelector('.note-storage');
  host.querySelector('textarea').addEventListener('input',e=>{
@@ -27,7 +37,7 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
   try{const latest=JSON.parse(localStorage.getItem(storageKey));if(latest&&typeof latest==='object'&&!Array.isArray(latest))saved={...latest,[id]:e.target.value};localStorage.setItem(storageKey,JSON.stringify(saved));status.textContent='';}
   catch{status.textContent='Your note could not be saved. Keep this tab open to retain it.';}
  },options);
- function speak(text){voice?.speak(text,'es-ES','Spanish',({message})=>{const status=host.querySelector('.note-audio');if(status)status.textContent=message||'';});}
+ function speak(text){voice?.speak(text,'es-ES','Spanish',({message})=>{const status=host.querySelector('.note-audio');if(status)status.textContent=supplemental?'':message||'';});}
  function closePopup(){if(popup.matches(':popover-open'))popup.hidePopover();anchor?.setAttribute('aria-expanded','false');}
  function grammar(key,context,translation,trigger){
   closePopup();modalAnchor=trigger;
@@ -38,7 +48,7 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
  }
  popup.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();closePopup();anchor?.focus();}},options);
  popup.addEventListener('toggle',e=>{if(e.newState==='closed')anchor?.setAttribute('aria-expanded','false');},options);
- dialog.addEventListener('close',()=>{voice?.stop();if(modalAnchor?.isConnected)modalAnchor.focus();},options);
+ dialog.addEventListener('close',()=>{voice?.stop();if(modalAnchor?.isConnected){const word=modalAnchor.closest('.quick-word');(word?.querySelector('.word-sound')||modalAnchor).focus();}},options);
  dialog.querySelector('.close').addEventListener('click',()=>dialog.close(),options);
  dialog.addEventListener('click',e=>{const audio=e.target.closest('[data-speak]');if(audio)speak(audio.dataset.speak);if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}},options);
  host.addEventListener('click',e=>{

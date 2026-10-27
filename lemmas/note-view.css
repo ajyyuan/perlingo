@@ -62,3 +62,5 @@
 .sentence-audio:hover,.sentence-audio:focus-visible{color:var(--accent)}
 .sentence-audio:focus-visible,.word-sound:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .quick-word>.quick-meaning[popover]:not(:popover-open){display:none}
+
+.supplemental-note .extra-usage p{font-size:16px;line-height:1.65;margin:0 0 16px}.supplemental-note .word-source{display:inline-block;font-size:13px;color:var(--muted);margin:18px 0}.supplemental-note .note-audio:empty{display:none}.supplemental-note .word-heading h1{margin:12px 0 24px}.supplemental-note .word-heading .say{font:inherit;color:inherit;background:none;border:0;border-bottom:1px dotted var(--line);padding:0;cursor:pointer}
