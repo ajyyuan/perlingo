@@ -1,5 +1,7 @@
+import {exampleMarkup,sentenceAudio} from './sentence-help.js';
+import {esc} from './html.js';
+export {esc} from './html.js';
 // One renderer/controller for the standalone preview and revealed study cards.
-export const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function chunkMarkup(c,e,j){
  const [,opening,text,punctuation]=c.text.match(/^([¿¡]*)(.*?)([,;:!?]*)$/u);
  return `${esc(opening)}<button class="chunk" data-example="${e}" data-chunk="${j}" aria-expanded="false" aria-controls="chunk-help">${esc(text)}</button>${esc(punctuation)}`;
@@ -15,7 +17,7 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
  let loadError='';
  try{const value=JSON.parse(localStorage.getItem(storageKey));if(value&&typeof value==='object'&&!Array.isArray(value))saved=value;}catch{loadError='Personal notes cannot be loaded in this browser.';}
  host.classList.add('word-note');
- host.innerHTML=`${heading?`<div class="word-heading"><div><p class="word-label">${esc(n.label)}</p><h1 lang="es">${esc(n.word)}</h1></div><button class="speaker" data-speak="${esc(n.word)}" aria-label="Listen to ${esc(n.word)}">♫</button></div>`:''}<p class="meaning">${esc(n.meaning)}</p><div class="concepts">${n.tags.map(k=>`<button data-concept="${esc(k)}">${esc(concepts[k].title)}</button>`).join('')}</div><div class="usage"><p>${esc(n.pattern)}</p><small>${esc(n.tip)}</small></div>${n.examples.length?`<div class="examples">${n.examples.map((x,e)=>`<div class="example"><div class="example-line"><p lang="es">${x.chunks.map((c,j)=>chunkMarkup(c,e,j)).join(' ')}.</p><button class="example-speak" data-speak="${esc(x.text)}" aria-label="Listen to ${esc(x.text)}">♫</button></div><p class="translation">${esc(x.translation)}</p></div>`).join('')}</div>`:''}<p class="note-audio" role="status"></p>${n.forms.length?`<details class="more"><summary>${esc(n.formsTitle||(n.word==='haber'?'Auxiliary present forms':n.label==='verb'?'Present-tense forms':'Word forms'))}</summary><table><caption class="sr-only">${esc(n.word)} forms</caption><tbody>${n.forms.map(([label,form])=>`<tr><th scope="row">${esc(label)}</th><td><button data-speak="${esc(form)}" lang="es" aria-label="Listen to ${esc(form)}">${esc(form)}</button></td></tr>`).join('')}</tbody></table>${n.label==='verb'?'<small>Vosotros is mainly used in Spain; ustedes takes the third-person plural form. Voseo forms are not shown.</small>':''}</details>`:''}<details class="more"><summary>More about this word</summary>${n.more?`<p>${esc(n.more)}</p>`:''}<a href="https://en.wiktionary.org/wiki/${encodeURIComponent(n.source)}#Spanish" target="_blank" rel="noopener">Wiktionary · full entry ↗</a></details><details class="more"><summary>My note</summary><label class="sr-only" for="personal-note">Your note about ${esc(n.word)}</label><textarea id="personal-note" maxlength="4000" placeholder="An association, a phrase, something to remember…">${esc(typeof saved[id]==='string'?saved[id]:'')}</textarea><small>Saved in this browser.</small></details><p class="note-storage" role="status">${esc(loadError)}</p>`;
+ host.innerHTML=`${heading?`<div class="word-heading"><div><p class="word-label">${esc(n.label)}</p><h1 lang="es">${esc(n.word)}</h1></div><button class="speaker" data-speak="${esc(n.word)}" aria-label="Listen to ${esc(n.word)}">♫</button></div>`:''}<p class="meaning">${esc(n.meaning)}</p><div class="concepts">${n.tags.map(k=>`<button data-concept="${esc(k)}">${esc(concepts[k].title)}</button>`).join('')}</div><div class="usage"><p>${esc(n.pattern)}</p><small>${esc(n.tip)}</small></div>${n.examples.length?`<div class="examples">${n.examples.map((x,e)=>`<div class="example"><div class="example-line"><p lang="es">${exampleMarkup(x,{grammar:true})}</p>${sentenceAudio(x.text)}</div><p class="translation">${esc(x.translation)}</p></div>`).join('')}</div>`:''}<p class="note-audio" role="status"></p>${n.forms.length?`<details class="more"><summary>${esc(n.formsTitle||(n.word==='haber'?'Auxiliary present forms':n.label==='verb'?'Present-tense forms':'Word forms'))}</summary><table><caption class="sr-only">${esc(n.word)} forms</caption><tbody>${n.forms.map(([label,form])=>`<tr><th scope="row">${esc(label)}</th><td><button data-speak="${esc(form)}" lang="es" aria-label="Listen to ${esc(form)}">${esc(form)}</button></td></tr>`).join('')}</tbody></table>${n.label==='verb'?'<small>Vosotros is mainly used in Spain; ustedes takes the third-person plural form. Voseo forms are not shown.</small>':''}</details>`:''}<details class="more"><summary>More about this word</summary>${n.more?`<p>${esc(n.more)}</p>`:''}<a href="https://en.wiktionary.org/wiki/${encodeURIComponent(n.source)}#Spanish" target="_blank" rel="noopener">Wiktionary · full entry ↗</a></details><details class="more"><summary>My note</summary><label class="sr-only" for="personal-note">Your note about ${esc(n.word)}</label><textarea id="personal-note" maxlength="4000" placeholder="An association, a phrase, something to remember…">${esc(typeof saved[id]==='string'?saved[id]:'')}</textarea><small>Saved in this browser.</small></details><p class="note-storage" role="status">${esc(loadError)}</p>`;
  const status=host.querySelector('.note-storage');
  host.querySelector('textarea').addEventListener('input',e=>{
   saved[id]=e.target.value;
@@ -27,28 +29,23 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
  function grammar(key,context,translation,trigger){
   closePopup();modalAnchor=trigger;
   for(const [selector,text] of Object.entries({'#grammar-title':concepts[key].title,'#grammar-text':concepts[key].text,'#grammar-context':context,'#grammar-translation':translation}))dialog.querySelector(selector).textContent=text;
+  const example=n.examples.find(x=>x.text===context);
+  if(example)dialog.querySelector('#grammar-context').innerHTML=exampleMarkup(example)+sentenceAudio(example.text);
   dialog.showModal();
  }
  popup.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();closePopup();anchor?.focus();}},options);
  popup.addEventListener('toggle',e=>{if(e.newState==='closed')anchor?.setAttribute('aria-expanded','false');},options);
  dialog.addEventListener('close',()=>{voice?.stop();if(modalAnchor?.isConnected)modalAnchor.focus();},options);
  dialog.querySelector('.close').addEventListener('click',()=>dialog.close(),options);
- dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}},options);
+ dialog.addEventListener('click',e=>{const audio=e.target.closest('[data-speak]');if(audio)speak(audio.dataset.speak);if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}},options);
  host.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   // Do not let the study controller handle this pronunciation a second time.
   e.stopPropagation();
   if(b.dataset.speak){speak(b.dataset.speak);return;}
   if(b.dataset.concept){const example=n.examples.find(x=>x.chunks.some(c=>c.concept===b.dataset.concept))||n.examples[0]||{text:n.word,translation:n.meaning};grammar(b.dataset.concept,example.text,example.translation,b);return;}
-  if(b.dataset.chunk!==undefined){
-   if(anchor===b&&popup.matches(':popover-open')){closePopup();return;}
-   closePopup();anchor=b;const ex=n.examples[Number(b.dataset.example)],c=ex.chunks[Number(b.dataset.chunk)];
-   popup.innerHTML=`<p class="chunk-meaning">${esc(c.meaning)}</p><button class="grammar-link">${esc(concepts[c.concept].title)} →</button>`;
-   popup.querySelector('button').onclick=()=>grammar(c.concept,ex.text,ex.translation,b);
-   popup.showPopover();b.setAttribute('aria-expanded','true');const r=b.getBoundingClientRect(),p=popup.getBoundingClientRect();
-   popup.querySelector('button').focus({preventScroll:true});
-   popup.style.left=`${Math.max(12,Math.min(r.left,innerWidth-p.width-12))}px`;popup.style.top=`${r.bottom+p.height+20<innerHeight?r.bottom+8:Math.max(12,r.top-p.height-8)}px`;speak(c.text);
-  }
+  if(b.dataset.sentenceConcept){grammar(b.dataset.sentenceConcept,b.dataset.sentence,b.dataset.translation,b);return;}
+
  },options);
  window.addEventListener('resize',closePopup,options);window.addEventListener('scroll',closePopup,{...options,passive:true});
  return ()=>{voice?.stop();controller.abort();if(dialog.open)dialog.close();closePopup();overlays.remove();};

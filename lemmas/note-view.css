@@ -39,3 +39,26 @@
 .close{float:right;border:0;background:transparent;font-size:25px;color:var(--muted);cursor:pointer}
 .word-note .note-audio{min-height:14px;font-size:12px;color:var(--muted);margin:10px 0}.word-note .note-storage{font-size:13px;color:#86511e}.word-note .note-storage:empty{display:none}.word-note .more small{display:block;line-height:1.6}.word-note :focus-visible,#grammar :focus-visible,#chunk-help :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 @media(max-width:600px){.word-note .examples{padding:2px 14px}.word-note .example-line p{font-size:18px}.word-note .concepts{gap:10px}}
+
+.lemma-card-link{display:block;width:fit-content;margin-top:10px;color:var(--accent);font-size:14px;line-height:1.5;text-decoration:none;border-bottom:1px dotted currentColor}
+.lemma-card-link small{display:inline!important;margin:0!important;font-size:12px;color:var(--muted)}
+.lemma-card-link:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.lemma-card-preview{position:fixed;width:min(1040px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:34px 12px 12px;border:1px solid var(--line);border-radius:20px;background:#fffefa;color:var(--ink);overflow:auto}
+.lemma-card-preview::backdrop{background:rgb(30 29 25 / .25)}
+.lemma-card-preview .preview-close{position:absolute;right:16px;top:4px;font-size:26px;min-width:32px;min-height:32px}
+.lemma-card-preview .course-study{border:0;max-height:calc(100dvh - 80px);padding:16px;max-width:none}
+.lemma-card-preview .lesson-footer{margin-top:16px}
+
+/* Shared sentence words: study cards, notes, lookup cards and review. */
+.quick-word{position:relative;display:inline-block}.word-sound{border:0;border-bottom:1px dotted #aab19f;background:none;padding:0;font:inherit;letter-spacing:inherit;line-height:inherit;color:inherit;text-align:inherit}.word-sound:hover,.word-sound:focus-visible{color:var(--accent)}.quick-meaning{display:none;position:absolute;z-index:20;bottom:calc(100% + 4px);left:0;min-width:140px;width:max-content;max-width:min(260px,70vw);padding:12px 15px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink);box-shadow:0 5px 25px #282b2518;font-size:14px;line-height:1.5;font-weight:400;letter-spacing:0;text-transform:none;white-space:normal}.quick-meaning small{display:block;font-size:13px;color:var(--muted);margin-top:6px}.quick-word:hover>.quick-meaning,.quick-word:has(:focus-visible)>.quick-meaning{display:block}.quick-word:last-child>.quick-meaning{left:auto;right:0}
+
+.quick-word.tip-dismissed>.quick-meaning{display:none}
+.quick-meaning::after{content:'';position:absolute;top:100%;left:0;width:100%;height:8px}
+.quick-meaning[popover]{display:none;position:fixed;inset:auto;margin:0;max-height:calc(100dvh - 24px);overflow:visible}
+.quick-meaning[popover]:popover-open{display:block}
+.quick-meaning[popover][data-side=below]::after{top:auto;bottom:100%}
+.quick-meaning .grammar-link{display:block;margin-top:10px;font-size:13px}
+.sentence-audio{display:inline-grid;place-items:center;vertical-align:middle;border:0;background:none;color:var(--muted);width:32px;height:32px;padding:4px;margin-left:6px;cursor:pointer}
+.sentence-audio:hover,.sentence-audio:focus-visible{color:var(--accent)}
+.sentence-audio:focus-visible,.word-sound:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.quick-word>.quick-meaning[popover]:not(:popover-open){display:none}

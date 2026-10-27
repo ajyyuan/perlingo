@@ -1,3 +1,4 @@
+import {bindCardPreview} from './card-preview.js';
 import {moveIndex} from './keyboard.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,esc} from './note-view.js';
@@ -23,7 +24,7 @@ search.addEventListener('input',renderNav);
 setSelect.addEventListener('change',()=>{search.value='';select(Number(setSelect.value)*50);});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)voice.stop();});window.addEventListener('pagehide',()=>voice.stop());
 try{
-  ({notes,concepts}=await loadNotes());
+  ({notes,concepts}=await loadNotes());bindCardPreview({notes,concepts,voice});
   const requested=Number(new URLSearchParams(location.search).get('set'));set=Number.isInteger(requested)&&requested>=1&&requested<=30?requested-1:0;
   document.querySelector('#note-tools').hidden=false;
   setSelect.innerHTML=Array.from({length:30},(_,i)=>`<option value="${i}">Set ${i+1} · ${i*50+1}–${(i+1)*50}</option>`).join('');

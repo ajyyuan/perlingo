@@ -31,3 +31,16 @@ This is a complete **editorial screen** by the same authoring assistant, plus au
 Validation: all 298 tests pass; `npm run check` and `git diff --check` pass. The local notes page was inspected for both the don table and the corrected cambiar translation.
 
 Published with user approval in Sites version 23 on October 27, 2026; see the README publication record.
+
+## Final readiness recheck — 27 October 2026
+
+The later readiness pass found no new evidenced content error and made no vocabulary, sentence, form or answer changes. It checked the existing editorial evidence and current implementation; it was not another independent translation of every field.
+
+- All **312 repository tests passed**, with no skips; `npm run check`, syntax checks for every `lemmas/*.js` module and `git diff --check` passed.
+- Course-wide checks cover all 1,500 identities, source ranks, lexical entries, existing inflection evidence, context targets/answers, displayed form rows and sentence-word gloss coverage. Notes and contexts rebuild deterministically. The deck and accepted-answer hashes remain unchanged from the accuracy audit.
+- An additional in-memory simulation used the actual combined course data to complete **all 190 stages**: 150 typed batches, 30 recognition sets, five typed day tests and five contextual reviews. It deliberately missed the first item of every stage, then completed repairs and a perfect full pass: **12,760 graded responses**. Every stage preserved its first-pass score, required a second full pass, and survived validation/serialization. The completed whole-course snapshot restored exactly. This did not read or write learner storage or the database.
+- Read-only browser inspection confirmed the local unanswered context review and the production study card still load. No learner answers were submitted, reset or advanced. Existing live sync verification remains the evidence for authenticated save/restore and guest-progress isolation; microphone quality and a physical second device were not re-tested in this pass.
+
+**Readiness:** the local course is ready to begin as the agreed edited CORPES vocabulary challenge. Production version 23 still lacks the newer account-sync/reset frontend and sentence interactions. Publish the reviewed changes and check production sign-in/sync before treating perlingo.app as the account-backed starting point. This audit does not publish or commit anything.
+
+The scope remains 1,500 headword/POS cards (1,455 distinct spellings), not 1,500 distinct spellings or measured 90% comprehension. Context review tests one authored use/form per card, with 537 distinct sentences shared across exercises; it is not an unseen-sentence or exhaustive conjugation exam. Exact target grading can reject a valid synonym. A perfect course score is evidence of performance on this material, not guaranteed long-term retention or comprehensive Spanish mastery.
