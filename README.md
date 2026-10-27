@@ -250,7 +250,7 @@ Home routing (local preview): `/` and `/index.html` now redirect to `/lemmas/`. 
 
 Learning and Challenge each keep a quiet Lemmas link in the header, including during sessions, for a direct return to the primary course.
 
-Main Lemmas study cards now show meaning/uses beside all recorded forms, with Full notes in a popup. The ten-word batch flow and original four tests are unchanged. Only tener currently has the additional exploratory tense groups. See [implementation and preview steps](docs/lemmas.md#integrated-study-cards--october-27).
+Main Lemmas study cards now show meaning/uses beside all recorded forms, with Full notes in a popup. The ten-word batch flow and original four tests are unchanged. All 369 verbs now have the same nine tense/mood reference groups, with sourced irregular forms and usage restrictions. See [conjugation scope and evidence](docs/lemma-verb-forms.md). See [implementation and preview steps](docs/lemmas.md#integrated-study-cards--october-27).
 
 ## Publication — 27 October 2026
 

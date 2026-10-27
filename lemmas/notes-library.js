@@ -1,4 +1,4 @@
-import {tenerGroups} from './tener-prototype.js';
+import {referenceForms} from './verb-forms.js';
 import {configureSentenceHelp} from './sentence-help.js';
 import {configureCardLinks} from './card-links.js';
 import {firstSetNotes,firstSetConcepts} from './first-set-notes.js';
@@ -14,7 +14,7 @@ export function combineNotes(base,contextBank){
   const context=contexts.get(n.id);if(!context)throw Error('Missing context: '+n.id);
   return {...note,rank:index+1,level:'sentence',examples:note.examples.some(e=>e.text===context.example.text)?note.examples:[...note.examples,context.example]};
  });
- configureCardLinks(notes.map(n=>n.id==='corpes:tener:V'?{...n,forms:[...n.forms,...tenerGroups.flatMap(g=>g.rows.map(r=>[r.label,r.lemma]))]}:n),[...contexts.values(),...['tenido'].map(target=>({id:'corpes:tener:V',target}))]);configureSentenceHelp(contexts.values());
+ configureCardLinks(notes.map(n=>({...n,forms:[...n.forms,...referenceForms(n)]})),contexts.values());configureSentenceHelp(contexts.values());
  return {notes,contexts,concepts:{...base.concepts,...extraConcepts,...firstSetConcepts,...contextBank.concepts}};
 }
 let pending;

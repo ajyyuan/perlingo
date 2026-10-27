@@ -1,6 +1,6 @@
 import {exampleMarkup,sentenceAudio} from './sentence-help.js';
 import {esc,mountNote} from './note-view.js';
-import {tenerGroups,formGroup} from './tener-prototype.js';
+import {formGroups,formGroup,tenseLabels} from './verb-forms.js';
 const labels={yo:'I',tú:'you · informal','él / ella / usted':'he / she / formal you','nosotros / nosotras':'we','vosotros / vosotras':'you · plural, Spain','ellos / ellas / ustedes':'they / you · plural',singular:'one',plural:'more than one','masculine singular':'masculine · one','feminine singular':'feminine · one','masculine plural':'masculine · plural','feminine plural':'feminine · plural'};
 export function studyRows(note){return note.forms.map(([label,lemma])=>({label:labels[label]||label,sourceLabel:label,lemma}));}
 let nextNoteDialog=0;
@@ -10,11 +10,11 @@ export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,ref
  const abort=new AbortController(),signal=abort.signal;
  const say=text=>`<button class="say" data-speak="${esc(text)}" lang="es" aria-label="Listen to ${esc(text)}">${esc(text)}</button>`;
  const stop=()=>voice.stop();
-const pickerGroups=['imperfect','preterite','present','future','conditional','perfect','subjunctive','commands','negative'].map(id=>tenerGroups.find(g=>g.id===id));
-const tenseLabels={present:'Present',preterite:'Past',imperfect:'Past · ongoing',future:'Future',conditional:'Conditional',perfect:'Perfect',subjunctive:'Subjunctive',commands:'Do',negative:'Don’t'};
+const pickerGroups=formGroups(note);
 function formsContent(lesson,g){
  const rows=g?.rows||lesson.rows;
- return (g?`<p class="tense-cue">${esc(g.cue)}</p>`:'')+`<table class="forms-table"><caption ${g?'class="sr-only"':''}>${esc(g?.title||lesson.formsTitle||'Word forms')}</caption><tbody>${rows.map(r=>`<tr><th scope="row" title="${esc(r.sourceLabel)}">${esc(r.label)}</th><td>${say(r.lemma)}</td></tr>`).join('')}</tbody></table>`+(g?`<div class="tense-example"><p>${exampleMarkup({text:g.text,translation:g.translation})}${sentenceAudio(g.text)}</p><p>${esc(g.translation)}</p></div>`:'');
+ if(g?.notice)return `<p class="tense-cue">${esc(g.notice)}</p>`;
+ return (g?`<p class="tense-cue">${esc(g.cue)}</p>`:'')+`<table class="forms-table"><caption ${g?'class="sr-only"':''}>${esc(g?.title||lesson.formsTitle||'Word forms')}</caption><tbody>${rows.map(r=>`<tr><th scope="row" title="${esc(r.sourceLabel)}">${esc(r.label)}</th><td>${(r.alternatives||[r.lemma]).map(say).join(' <span class="form-alternative">/</span> ')}</td></tr>`).join('')}</tbody></table>`+(g?.text?`<div class="tense-example"><p>${exampleMarkup({text:g.text,translation:g.translation})}${sentenceAudio(g.text)}</p><p>${esc(g.translation)}</p></div>`:'');
 }
 function formsPanel(lesson){
  const g=formGroup(lesson,tense);
