@@ -1,0 +1,272 @@
+{
+  "haber": {
+    "present": {
+      "text": "Hay una solución.",
+      "translation": "There is a solution.",
+      "target": "hay",
+      "wordMeanings": {
+        "hay": "there is / are"
+      }
+    },
+    "preterite": {
+      "text": "Ayer hubo una reunión.",
+      "translation": "There was a meeting yesterday.",
+      "target": "hubo",
+      "wordMeanings": {
+        "hubo": "there was / were"
+      }
+    },
+    "imperfect": {
+      "text": "Antes había un parque aquí.",
+      "translation": "There used to be a park here.",
+      "target": "había",
+      "wordMeanings": {
+        "había": "there used to be"
+      }
+    },
+    "future": {
+      "text": "Después habrá tiempo.",
+      "translation": "There will be time later.",
+      "target": "habrá",
+      "wordMeanings": {
+        "habrá": "there will be"
+      }
+    },
+    "conditional": {
+      "text": "En ese caso, habría un problema.",
+      "translation": "In that case, there would be a problem.",
+      "target": "habría",
+      "wordMeanings": {
+        "habría": "there would be"
+      }
+    },
+    "perfect": {
+      "text": "Ha habido un cambio.",
+      "translation": "There has been a change.",
+      "target": "ha habido",
+      "wordMeanings": {
+        "ha": "has (auxiliary)",
+        "habido": "been (with haber: there has been)"
+      }
+    },
+    "subjunctive": {
+      "text": "Espero que haya una solución.",
+      "translation": "I hope there is a solution.",
+      "target": "haya",
+      "wordMeanings": {
+        "haya": "there is (subjunctive)"
+      }
+    },
+    "commands": {
+      "notice": "Haber is not used in ordinary modern commands."
+    },
+    "negative": {
+      "notice": "Haber is not used in ordinary modern commands."
+    }
+  },
+  "soler": {
+    "present": {
+      "text": "Sueles leer por la noche.",
+      "translation": "You usually read at night.",
+      "target": "sueles",
+      "wordMeanings": {
+        "sueles": "you usually do (followed by an infinitive)",
+        "por": "at (in por la noche)",
+        "me": "me (person feeling glad)",
+        "alegra": "makes glad",
+        "has": "you have (auxiliary)"
+      }
+    },
+    "imperfect": {
+      "text": "Solías leer por la noche.",
+      "translation": "You used to read at night.",
+      "target": "solías",
+      "wordMeanings": {
+        "solías": "you used to (followed by an infinitive)",
+        "por": "at (in por la noche)",
+        "me": "me (person feeling glad)",
+        "alegra": "makes glad",
+        "has": "you have (auxiliary)"
+      }
+    },
+    "perfect": {
+      "text": "Has solido leer por la noche.",
+      "translation": "You have usually read at night.",
+      "target": "has solido",
+      "wordMeanings": {
+        "has": "you have (auxiliary)",
+        "solido": "have usually done (uncommon compound form)",
+        "por": "at (in por la noche)",
+        "me": "me (person feeling glad)",
+        "alegra": "makes glad"
+      }
+    },
+    "subjunctive": {
+      "text": "Me alegra que suelas leer.",
+      "translation": "I am glad you usually read.",
+      "target": "suelas",
+      "wordMeanings": {
+        "suelas": "you usually do (subjunctive)",
+        "por": "at (in por la noche)",
+        "me": "me (person feeling glad)",
+        "alegra": "makes glad",
+        "has": "you have (auxiliary)"
+      }
+    },
+    "future": {
+      "notice": "Soler is not used in this tense or mood. Use a different expression for the intended meaning."
+    },
+    "conditional": {
+      "notice": "Soler is not used in this tense or mood. Use a different expression for the intended meaning."
+    },
+    "commands": {
+      "notice": "Soler is not used in this tense or mood. Use a different expression for the intended meaning."
+    },
+    "negative": {
+      "notice": "Soler is not used in this tense or mood. Use a different expression for the intended meaning."
+    },
+    "preterite": {
+      "notice": "For ordinary past habits, use solía. A simple completed-past example is not taught here."
+    }
+  },
+  "perder": {
+    "commands": {
+      "text": "Pierde el miedo.",
+      "translation": "Lose your fear.",
+      "target": "pierde",
+      "wordMeanings": {
+        "pierde": "lose (command)"
+      }
+    }
+  },
+  "olvidar": {
+    "commands": {
+      "text": "Olvida el problema.",
+      "translation": "Forget the problem.",
+      "target": "olvida",
+      "wordMeanings": {
+        "olvida": "forget (command)"
+      }
+    }
+  },
+  "querer": {
+    "commands": {
+      "text": "Quiere a tu familia.",
+      "translation": "Love your family.",
+      "target": "quiere",
+      "wordMeanings": {
+        "quiere": "love (command)",
+        "a": "marks the person loved",
+        "familia": "family"
+      }
+    },
+    "negative": {
+      "text": "No quieras hacerlo todo.",
+      "translation": "Do not try to do everything.",
+      "target": "no quieras",
+      "wordMeanings": {
+        "no": "do not",
+        "quieras": "want (negative command; here: do not try)",
+        "hacerlo": "do it",
+        "todo": "everything"
+      }
+    }
+  },
+  "ser": {
+    "negative": {
+      "text": "No seas cruel.",
+      "translation": "Do not be cruel.",
+      "target": "no seas",
+      "wordMeanings": {
+        "no": "do not",
+        "seas": "be (negative command)",
+        "cruel": "cruel"
+      }
+    }
+  },
+  "saber": {
+    "commands": {
+      "text": "Sabe que no estás solo.",
+      "translation": "Know that you are not alone.",
+      "target": "sabe",
+      "wordMeanings": {
+        "sabe": "know (command; a formal reassurance)",
+        "estás": "you are",
+        "solo": "alone",
+        "no": "not"
+      }
+    },
+    "preterite": {
+      "text": "Ayer supiste la respuesta.",
+      "translation": "Yesterday you found out the answer.",
+      "target": "supiste",
+      "wordMeanings": {
+        "supiste": "you found out"
+      }
+    }
+  },
+  "conocer": {
+    "preterite": {
+      "text": "Ayer conociste la ciudad.",
+      "translation": "Yesterday you got to know the city.",
+      "target": "conociste",
+      "wordMeanings": {
+        "conociste": "you got to know"
+      }
+    }
+  },
+  "ganar": {
+    "negative": {
+      "text": "No ganes a cualquier precio.",
+      "translation": "Do not win at any cost.",
+      "target": "no ganes",
+      "wordMeanings": {
+        "no": "do not",
+        "ganes": "win (negative command)",
+        "a": "at",
+        "cualquier": "any",
+        "precio": "cost"
+      }
+    }
+  },
+  "sufrir": {
+    "negative": {
+      "text": "No sufras por eso.",
+      "translation": "Do not suffer over that.",
+      "target": "no sufras",
+      "wordMeanings": {
+        "no": "do not",
+        "sufras": "suffer (negative command)",
+        "por": "over; because of",
+        "eso": "that"
+      }
+    },
+    "commands": {
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    }
+  },
+  "cometer": {
+    "commands": {
+      "text": "Comete errores sin miedo.",
+      "translation": "Make mistakes without fear.",
+      "target": "comete",
+      "wordMeanings": {
+        "comete": "make; commit (command)",
+        "errores": "mistakes",
+        "sin": "without"
+      }
+    }
+  },
+  "amar": {
+    "negative": {
+      "text": "No ames solo el dinero.",
+      "translation": "Do not love only money.",
+      "target": "no ames",
+      "wordMeanings": {
+        "no": "do not",
+        "ames": "love (negative command)",
+        "solo": "only"
+      }
+    }
+  }
+}

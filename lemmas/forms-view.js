@@ -4,14 +4,14 @@ import {formGroups,formGroup,tenseLabels} from './verb-forms.js';
 export function tenseKeysAllowed(event,{active=true,editing=false}={}){
  return active&&!editing&&!event.defaultPrevented&&!event.isComposing&&!event.repeat&&!event.altKey&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&['[',']'].includes(event.key);
 }
-export function mountForms(host,note,{voice}={}){
+export function mountForms(host,note,{voice,onExample}={}){
  let tense='present';const abort=new AbortController(),signal=abort.signal;
  const say=text=>`<button class="say" data-speak="${esc(text)}" lang="es" aria-label="Listen to ${esc(text)}">${esc(text)}</button>`;
 const pickerGroups=formGroups(note);
 function formsContent(lesson,g){
  const rows=g?.rows||lesson.rows;
  if(g?.notice)return `<p class="tense-cue">${esc(g.notice)}</p>`;
- return (g?`<p class="tense-cue">${esc(g.cue)}</p>`:'')+`<table class="forms-table"><caption ${g?'class="sr-only"':''}>${esc(g?.title||lesson.formsTitle||'Word forms')}</caption><tbody>${rows.map(r=>`<tr><th scope="row" title="${esc(r.sourceLabel)}">${esc(r.label)}</th><td>${(r.alternatives||[r.lemma]).map(say).join(' <span class="form-alternative">/</span> ')}</td></tr>`).join('')}</tbody></table>`+(g?.text?`<div class="tense-example"><p>${exampleMarkup({text:g.text,translation:g.translation})}${sentenceAudio(g.text)}</p><p>${esc(g.translation)}</p></div>`:'');
+ return (g?`<p class="tense-cue">${esc(g.cue)}</p>`:'')+`<table class="forms-table"><caption ${g?'class="sr-only"':''}>${esc(g?.title||lesson.formsTitle||'Word forms')}</caption><tbody>${rows.map(r=>`<tr><th scope="row" title="${esc(r.sourceLabel)}">${esc(r.label)}</th><td>${(r.alternatives||[r.lemma]).map(say).join(' <span class="form-alternative">/</span> ')}</td></tr>`).join('')}</tbody></table>`+(!onExample&&g?.text?`<div class="tense-example"><p>${exampleMarkup(g)}${sentenceAudio(g.text)}</p><p>${esc(g.translation)}</p></div>`:!onExample&&g?.exampleNotice?`<p class="tense-cue">${esc(g.exampleNotice)}</p>`:'');
 }
 function formsPanel(lesson){
  const g=formGroup(lesson,tense);
@@ -24,7 +24,7 @@ function centerTense(smooth=false){
 }
 function chooseTense(id){
  const g=formGroup(note,id);if(!g)return;
- voice?.stop();tense=g.id;
+ voice?.stop();tense=g.id;onExample?.(g);
  host.querySelectorAll('[data-tense]').forEach(b=>{const selected=b.dataset.tense===tense;b.setAttribute('aria-checked',String(selected));b.tabIndex=selected?0:-1;});
  host.querySelector('[data-tense-step="-1"]').disabled=tense===pickerGroups[0].id;
  host.querySelector('[data-tense-step="1"]').disabled=tense===pickerGroups.at(-1).id;
@@ -41,6 +41,7 @@ host.addEventListener('keydown',e=>{
 },{signal});
 
  host.innerHTML=formsPanel(note);
+ if(pickerGroups.length)onExample?.(formGroup(note,tense));
  document.addEventListener('keydown',e=>{
   const dialogs=[...document.querySelectorAll('dialog[open]')];
   const owner=host.closest('dialog');

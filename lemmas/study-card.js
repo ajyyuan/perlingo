@@ -19,6 +19,10 @@ export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,ref
  dialog.querySelector('.notes-close').onclick=()=>dialog.close();
  dialog.addEventListener('close',()=>{removeNotes();removeNotes=()=>{};anchor?.isConnected&&anchor.focus();},{signal});
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();},{signal});
- const removeForms=hasForms?mountForms(root.querySelector('.shared-forms'),note,{voice}):()=>{};
+ function showTenseExample(group){
+  const uses=root.querySelector('.lesson-uses');
+  uses.innerHTML='<h2>Uses</h2>'+(group.text?`<div class="use-example"><p>${exampleMarkup(group)}${sentenceAudio(group.text)}</p><p class="use-translation">${esc(group.translation)}</p></div>`:`<p class="use-tip">${esc(group.notice||group.exampleNotice||'')}</p>`);
+ }
+ const removeForms=hasForms?mountForms(root.querySelector('.shared-forms'),note,{voice,onExample:showTenseExample}):()=>{};
  return {openNotes,destroy(){abort.abort();removeForms();removeNotes();dialog.remove();stop();}};
 }

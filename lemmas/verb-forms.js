@@ -1,4 +1,5 @@
 import {verbForms} from './verb-forms-data.js';
+import {tenseExamples} from './tense-examples-data.js';
 import {tenerGroups} from './tener-prototype.js';
 export const tenseOrder=['imperfect','preterite','present','future','conditional','perfect','subjunctive','commands','negative'];
 export const tenseLabels={present:'Present',preterite:'Past',imperfect:'Past · ongoing',future:'Future',conditional:'Conditional',perfect:'Perfect',subjunctive:'Subjunctive',commands:'Do',negative:'Don’t'};
@@ -30,9 +31,13 @@ export function formGroups(note){
    }
   }
   if(note.word==='describir'&&id==='perfect')cue+=' Descripto is a Río de la Plata variant.';
-  // Keep the nine previously checked examples; other verbs retain their authored Uses examples.
-  const example=note.word==='tener'?tenerGroups.find(g=>g.id===id):null;
-  return {id,title:titles[id],cue,notice,rows,...(example?{cue:example.cue,text:example.text,translation:example.translation}:{})};
+  if(note.word==='soler'){
+   if(['future','conditional','commands','negative','preterite'].includes(id)){rows=[];notice=tenseExamples[note.id][id].notice;}
+   if(id==='perfect')cue+=' This compound form of soler is uncommon.';
+  }
+  const example=tenseExamples[note.id]?.[id];
+  if(note.word==='tener')cue=tenerGroups.find(g=>g.id===id).cue;
+  return {id,title:titles[id],cue,notice,rows,...(example?.text?example:{exampleNotice:example?.notice||''})};
  });
 }
 export function formGroup(note,id='present'){const groups=formGroups(note);return groups.find(g=>g.id===id)||groups.find(g=>g.id==='present')||null;}
