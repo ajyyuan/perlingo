@@ -195,6 +195,8 @@ Validation: all 312 tests and syntax/content checks pass. Coverage checks render
 
 The account frontend, reset controls and sentence interactions described above are now published. This supersedes their local-only status in the earlier implementation records. On perlingo.app the existing Google session restored the saved account course position and displayed “Progress saved to your account.” No guest progress was imported and no learner answers were submitted or reset. A fresh production OAuth round-trip and physical second-device acceptance remain untested; the existing-session production restore is verified.
 
-### Course numbers — local preview
+### Course numbers — published in version 25
 
 Study cards, including sentence-linked lookup overlays, show a quiet #number beside the word type. Combined notes carry their one-based position in the unchanged deck order; filtering or opening a lookup does not renumber them. The accessible label reads “Word N of 1500.” No progress or assessment behavior changes.
+
+Published October 27 with explicit approval. The production un lookup card displays #6, and all 1,500 note ranks were checked against the deck. Twelve focused tests, syntax/whitespace checks and the production build passed. No study progress was advanced or reset.
