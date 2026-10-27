@@ -4,13 +4,13 @@ export function chunkMarkup(c,e,j){
  const [,opening,text,punctuation]=c.text.match(/^([¿¡]*)(.*?)([,;:!?]*)$/u);
  return `${esc(opening)}<button class="chunk" data-example="${e}" data-chunk="${j}" aria-expanded="false" aria-controls="chunk-help">${esc(text)}</button>${esc(punctuation)}`;
 }
-export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes-v1',heading=false}={}){
+export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes-v1',heading=false,overlayRoot=document.body}={}){
  const controller=new AbortController(),options={signal:controller.signal};
  const id=n.id||n.word;
  let anchor=null,modalAnchor=null,saved={};
  const overlays=document.createElement('div');
  overlays.innerHTML='<div id="chunk-help" popover="auto" role="dialog" aria-label="Example explanation"></div><dialog id="grammar" aria-labelledby="grammar-title"><button class="close" aria-label="Close grammar explanation">×</button><p class="eyebrow">A closer look</p><h2 id="grammar-title"></h2><p id="grammar-context" lang="es"></p><p id="grammar-translation"></p><p id="grammar-text"></p></dialog>';
- document.body.append(overlays);
+ overlayRoot.append(overlays);
  const popup=overlays.querySelector('#chunk-help'),dialog=overlays.querySelector('#grammar');
  let loadError='';
  try{const value=JSON.parse(localStorage.getItem(storageKey));if(value&&typeof value==='object'&&!Array.isArray(value))saved=value;}catch{loadError='Personal notes cannot be loaded in this browser.';}
