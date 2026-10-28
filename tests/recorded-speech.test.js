@@ -32,3 +32,16 @@ test('external recording host preserves locale paths and uses fallback on networ
  player.speak('bonjour','fr-FR','French',()=>{});await flush();
  assert.equal(clip.src,'https://audio.example.test/library/fr-FR/hello.mp3');clip.onerror();assert.equal(fallBack,1);player.stop();
 });
+
+test('recording waits for output activation and canceled activation cannot play later',async()=>{
+ let resolve,played=0,prepared=0;
+ const p=createRecordedPronouncer({beforeSpeak:()=>new Promise(r=>resolve=r),prepareAudio:(_a,url)=>{prepared++;return {url,release(){}};},loadManifest:()=>({clips:{'es-ES':{hola:'hola.mp3'}}}),fallback:{stop(){},speak(){assert.fail('Unexpected fallback');}},makeAudio:()=>({play(){played++;return Promise.resolve();},pause(){},load(){},removeAttribute(){}})});
+ p.speak('hola','es-ES','Spanish',()=>{});await flush();assert.equal(prepared,0);p.stop();resolve();await flush();assert.equal(played,0);
+ p.speak('hola','es-ES','Spanish',()=>{});await flush();resolve();await flush();assert.equal(prepared,1);assert.equal(played,1);p.stop();
+});
+
+test('canceling during normalization releases its graph without playing a stale clip',async()=>{
+ let finish,released=0,played=0;
+ const p=createRecordedPronouncer({loadManifest:()=>({clips:{'es-ES':{hola:'hola.mp3'}}}),prepareAudio:()=>new Promise(resolve=>finish=()=>resolve({url:'hola.mp3',release(){released++;}})),fallback:{stop(){},speak(){assert.fail('Unexpected fallback');}},makeAudio:()=>({play(){played++;},pause(){},load(){},removeAttribute(){}})});
+ p.speak('hola','es-ES','Spanish',()=>{});await flush();p.stop();finish();await flush();assert.equal(played,0);assert.equal(released,1);
+});

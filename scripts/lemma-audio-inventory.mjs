@@ -2,6 +2,7 @@
 import {readFileSync,statSync,writeFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+import {rowExamples} from '../lemmas/row-examples-data.js';
 import {combineNotes} from '../lemmas/notes-library.js';
 import {formGroups} from '../lemmas/verb-forms.js';
 import {azureVoices,feminineVoices,normalizeAudioText} from '../src/azure-voices.js';
@@ -18,9 +19,11 @@ for(const n of notes){
  for(const g of formGroups(n)){for(const r of g.rows)for(const form of r.alternatives||[r.lemma])add(form,'forms');if(g.text)sentence(g.text,'tense sentences');}
  for(const e of n.examples)sentence(e.text,'usage sentences');
 }
+for(const tenses of Object.values(rowExamples))for(const rows of Object.values(tenses))for(const examples of Object.values(rows))for(const example of examples)if(example.text)sentence(example.text,'conjugation-row sentences');
 for(const c of context.contexts){add(c.answers[0],'review answers');sentence(c.example.text,'review sentences');}
 for(const c of (Array.isArray(deck)?deck:deck.cards))add(c.lemma,'headwords');
 const items=[...targets].sort(([a],[b])=>a<b?-1:a>b?1:0).map(([text,kinds])=>({text,kinds:[...kinds].sort(),characters:[...text].length}));
+if(process.argv.includes('--targets-only')){writeFileSync(1,JSON.stringify(items));process.exit(0);}
 const jobs=[];
 for(const [gender,voices,file]of [['masculine',azureVoices,'manifest.json'],['feminine',feminineVoices,'manifest-feminine.json']]){
  const manifest=read('src/audio/azure/'+file);

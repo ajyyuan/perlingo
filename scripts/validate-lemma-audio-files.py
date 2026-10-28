@@ -1,6 +1,7 @@
 """Check every generated MP3's frames and hash, decode representative clips locally."""
-import pathlib,json,hashlib,subprocess
-R=pathlib.Path(__file__).resolve().parents[1];D=R/'audio-generation/lemmas-library';p=json.loads((D/'plan.json').read_text());count=0;frames=0;chosen={}
+import pathlib,json,hashlib,subprocess,argparse,tempfile,wave
+parser=argparse.ArgumentParser();parser.add_argument('--library',choices=['lemmas-library','lemma-row-library'],default='lemmas-library');args=parser.parse_args()
+R=pathlib.Path(__file__).resolve().parents[1];D=R/'audio-generation'/args.library;p=json.loads((D/'plan.json').read_text());count=0;frames=0;chosen={}
 for j in p['jobs']:
  rec=json.loads((D/(j['id']+'.json')).read_text());assert rec['status']=='downloaded'
  for text,f in zip(j['texts'],rec['files']):
@@ -19,6 +20,10 @@ for voice,files in chosen.items():
  files.sort()
  for size,path in [files[0],files[len(files)//2],files[-1]]:
   output=subprocess.check_output(['/usr/bin/afinfo',path],text=True,stderr=subprocess.STDOUT);assert 'estimated duration:' in output
+  with tempfile.TemporaryDirectory() as folder:
+   decoded=pathlib.Path(folder)/'decoded.wav'
+   subprocess.run(['/usr/bin/afconvert','-f','WAVE','-d','LEI16@24000','-c','1',path,str(decoded)],check=True,capture_output=True)
+   with wave.open(str(decoded)) as audio:assert audio.getnframes()>0 and audio.getframerate()==24000
   checks.append({'voice':voice,'file':path.split('/src/audio/azure/')[1],'bytes':size,'decoded':True})
 report={'checkedFiles':count,'validMP3Frames':frames,'estimatedDurationHours':frames*576/24000/3600,'localDecodeSamples':checks}
 (D/'mp3-validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='localDecodeSamples'}));print('Decoded',len(checks),'short/median/long representative clips')

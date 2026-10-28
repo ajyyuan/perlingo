@@ -34,3 +34,10 @@ test('muting cancels active audio and starts neither sound nor speech',async()=>
 test('without Web Audio, pronunciation remains available',()=>{
  const t=setup({unavailable:true});t.play();assert.equal(t.spoken[0][0],'bonjour');
 });
+
+test('answer gesture activates pronunciation before delayed playback, and mute does not activate it',()=>{
+ const calls=[];const voice={stop(){},unlock(){calls.push('unlock');return Promise.resolve();},speak(){calls.push('speak');}};
+ const feedback=createAnswerFeedback(voice,undefined);
+ feedback.play({correct:true,text:'hola',locale:'es-ES',label:'Spanish'});assert.deepEqual(calls,['unlock','speak']);
+ calls.length=0;feedback.play({correct:true,text:'hola',locale:'es-ES',label:'Spanish',enabled:false});assert.deepEqual(calls,[]);
+});

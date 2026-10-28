@@ -1,3 +1,4 @@
+import {createPronunciationBoost} from './pronunciation-boost.js';
 import {singleLetterAudio} from './single-letter-audio.js';
 import {createPronouncer} from '../src/speech.js';
 import {createRecordedPronouncer} from '../src/recorded-speech.js';
@@ -6,7 +7,8 @@ import {voiceSettings,voiceSettingsKey,lemmaPronouncer} from './pronunciation-se
 export function createLemmaVoice({onOpen=()=>{}}={}){
  let settings;try{settings=voiceSettings(JSON.parse(localStorage.getItem(voiceSettingsKey)));}catch{settings=voiceSettings();}
  const load=async name=>{const r=await fetch('/src/audio/azure/'+name,{signal:AbortSignal.timeout(5000)});if(!r.ok)throw Error('Audio manifest unavailable');return r.json();};
- const recorded=createRecordedPronouncer({clipOverrides:singleLetterAudio,fallbackText:text=>text==='y'?'i':text,fallback:createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance),loadManifest:()=>load('manifest.json'),loadFeminineManifest:()=>load('manifest-feminine.json'),makeAudio:()=>{const a=new Audio();a.hidden=true;a.dataset.pronunciationAudio='';document.body.append(a);return a;}});
+ const boost=createPronunciationBoost(window.AudioContext||window.webkitAudioContext);
+ const recorded=createRecordedPronouncer({beforeSpeak:()=>boost.unlock(),prepareAudio:(audio,url,options)=>boost.prepare(audio,url,options),clipOverrides:singleLetterAudio,fallbackText:text=>text==='y'?'i':text,fallback:createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance),loadManifest:()=>load('manifest.json'),loadFeminineManifest:()=>load('manifest-feminine.json'),makeAudio:()=>{const a=new Audio();a.hidden=true;a.dataset.pronunciationAudio='';document.body.append(a);return a;}});
  const voice=lemmaPronouncer(recorded,()=>settings);
  const persist=()=>{try{localStorage.setItem(voiceSettingsKey,JSON.stringify(settings));}catch{/* Keep the choice for this page if storage is unavailable. */}};
  const control=createPronunciationControl({pronouncer:voice,getLanguages:()=>['es'],getSettings:()=>settings,onOpen:()=>{voice.stop();onOpen();},onSelect:(_lang,locale)=>{settings=voiceSettings({...settings,pronunciationRegions:{es:locale}});persist();},onVoiceSelect:(_lang,gender)=>{settings=voiceSettings({...settings,pronunciationVoices:{es:gender}});persist();}});
@@ -14,5 +16,6 @@ export function createLemmaVoice({onOpen=()=>{}}={}){
  window.addEventListener('storage',event=>{if(event.key!==voiceSettingsKey&&event.key!==null)return;voice.stop();control.close();try{settings=voiceSettings(JSON.parse(event.newValue));}catch{settings=voiceSettings();}});
  window.addEventListener('pagehide',()=>{control.close();voice.stop();});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)voice.stop();});
+ voice.unlock=()=>boost.unlock();
  return voice;
 }

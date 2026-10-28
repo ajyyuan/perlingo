@@ -9,6 +9,8 @@ export function createAnswerFeedback(pronunciation,AudioContext,{cueGain=.055}={
  }
  function play({correct,text,locale,label,enabled=true}){
   stop();if(!enabled)return;
+  // Activate pronunciation during the answer gesture, before delayed chime completion.
+  Promise.resolve(pronunciation.unlock?.()).catch(()=>{});
   const id=generation;
   const speak=()=>{if(id===generation)pronunciation.speak(text,locale,label,()=>{});};
   if(!AudioContext){speak();return;}
