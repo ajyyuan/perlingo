@@ -353,3 +353,5 @@ Publication completed October 28, 2026: Sites version **31**, deployment `appgde
 Verb forms support `- / =` for previous/next conjugation rows and their examples, alongside `[ / ]` for tenses. Both pairs appear in keyboard help and remain inactive while typing.
 
 Search also accepts Cmd/Ctrl+Shift+K as an unlisted alias of Cmd/Ctrl+K, with the same test and dialog restrictions.
+
+Publication completed October 28, 2026: Sites version **32**, deployment `appgdep_6ae250aa30d48191a657dc538782ea8b`, succeeded. Application commit `3d678ea9d` maps to Sites source `4a1d2f682bbd5a904585d6554af92fcfeaf397e6`. Conjugation row shortcuts (`- / =`), updated keyboard help and the unlisted Cmd/Ctrl+Shift+K search alias are live. All 371 tests, content checks and the hosted build passed. Existing public access, domain and environment revision 2 are preserved.
