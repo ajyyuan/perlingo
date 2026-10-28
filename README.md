@@ -325,3 +325,5 @@ Publication completed October 27, 2026: Sites version **30**, deployment `appgde
 Local pronoun recall refinement: all 28 pronoun/possessive cards now have concise grammatical-role cues for headword recall. Seven sentence prompts clarify referent gender or which “you” is meant; five sentence-specific answer lists accept valid alternatives, including nosotras. Correct feedback/pronunciation uses the accepted alternative. See [scope, evidence and testing](docs/lemma-notes-sources.md#pronoun-recall-ambiguity-follow-up-local). Existing progress and prior scores are preserved. Approved for commit; not yet published.
 
 Lemma card search disables browser form-history autocomplete while retaining its own accessible matching-card suggestions. Typed recall already disables browser autocomplete.
+
+Lemma search ranks exact Spanish spelling first, then accent-insensitive exact matches, Spanish prefixes, Spanish substrings, and English meaning matches; ties retain deck order. Search and highlighting ignore accents (including ñ/n) while displaying original spelling. Blank search retains deck order; recall grading remains accent-sensitive.

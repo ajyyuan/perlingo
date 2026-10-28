@@ -1,5 +1,6 @@
 import {recallCue,contextFeedbackAnswer} from './recall-prompt.js';
 import {highlightMatch} from './search-highlight.js';
+import {searchCards} from './search.js';
 import {sentenceAudio} from './sentence-help.js';
 import {bindCardPreview} from './card-preview.js';
 import {createAccount} from '/src/account.js';
@@ -109,7 +110,7 @@ searchDialog.addEventListener('keydown',e=>{
  selectSearchRow(next);input.focus({preventScroll:true});next?.scrollIntoView({block:'nearest'});
 });
 function browse(){searchAnchor=document.activeElement;dictation.cancel();answerAudio.stop();searchDialog.querySelector('#search').value=search;renderList();searchDialog.showModal();searchDialog.querySelector('#search').focus();}
-function renderList(){const q=search.trim().toLocaleLowerCase(),matches=deck.filter(c=>(c.lemma+' '+c.meaning).toLocaleLowerCase().includes(q));searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${highlightMatch(c.lemma,q)}<small>${esc(c.partOfSpeech)}</small></span><span>${highlightMatch(c.meaning,q)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
+function renderList(){const q=search.trim().toLocaleLowerCase(),matches=searchCards(deck,q);searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${highlightMatch(c.lemma,q)}<small>${esc(c.partOfSpeech)}</small></span><span>${highlightMatch(c.meaning,q)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
 function render(focus){
  unmount();unmount=()=>{};answerAudio.stop();dictation.cancel();document.body.dataset.view=view;
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
