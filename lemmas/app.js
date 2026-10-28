@@ -87,7 +87,7 @@ function study(){
  testDone();
 }
 const searchDialog=document.createElement('dialog');searchDialog.className='lemma-search';searchDialog.setAttribute('aria-label','Find a word');
-searchDialog.innerHTML='<button class="plain keyboard-close" data-close aria-label="Close search">×</button><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-controls="list" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list" role="listbox" aria-label="Matching words"></div>';
+searchDialog.innerHTML='<button class="plain keyboard-close" data-close aria-label="Close search">×</button><label class="sr-only" for="search">Search Spanish or English</label><input class="search" id="search" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-controls="list" placeholder="Search Spanish or English"><p id="matches" class="hint" role="status"></p><div id="list" role="listbox" aria-label="Matching words"></div>';
 document.body.append(searchDialog);let searchAnchor;
 searchDialog.querySelector('[data-close]').onclick=()=>searchDialog.close();
 searchDialog.addEventListener('close',()=>{if(searchAnchor?.isConnected)searchAnchor.focus();});
