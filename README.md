@@ -327,3 +327,5 @@ Local pronoun recall refinement: all 28 pronoun/possessive cards now have concis
 Lemma card search disables browser form-history autocomplete while retaining its own accessible matching-card suggestions. Typed recall already disables browser autocomplete.
 
 Lemma search ranks exact Spanish spelling first, then accent-insensitive exact matches, Spanish prefixes, Spanish substrings, and English meaning matches; ties retain deck order. Search and highlighting ignore accents (including ñ/n) while displaying original spelling. Blank search retains deck order; recall grading remains accent-sensitive.
+
+During an unanswered test question, Search and its keyboard shortcut are disabled. Search becomes available after checking or revealing the answer, and locks again on the next question. This applies to batch, set, day and context tests, including repair passes and restored questions; learning and Your days retain search.

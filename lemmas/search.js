@@ -14,3 +14,5 @@ export function searchCards(deck,query){
  };
  return deck.map((card,index)=>({card,index,score:score(card)})).filter(c=>c.score<5).sort((a,b)=>a.score-b.score||a.index-b.index).map(c=>c.card);
 }
+
+export const searchAllowed=(view,test)=>view!=='study'||!test||test.done||Boolean(test.feedback);
