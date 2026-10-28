@@ -38,7 +38,7 @@ Lemmas recordings now use a shared, measured playback normalization across all s
 
 The public Azure library does not return CORS headers. For boosted playback in hosted builds, `/api/pronunciation/{locale}/{clip}` streams from the fixed public Azure library; only the four Spanish locale IDs and 24-character hexadecimal MP3 filenames are accepted. It forwards Range requests and cache/media headers, never credentials or arbitrary origins. Local audio and correction clips stay same-origin. The route adds a cached hosting hop rather than modifying or regenerating recordings. This requires the hosted Worker build; a bare static build with an external audio base does not serve the proxy route.
 
-Local preview: open a word in `/lemmas/`, use its speaker, then compare another region/voice and a full sentence. Stop/change cards during playback to check cancellation. Pending user review; not committed or published.
+Local preview: open a word in `/lemmas/`, use its speaker, then compare another region/voice and a full sentence. Stop/change cards during playback to check cancellation. Approved and committed; see the publication status below.
 
 ### Measured source differences
 
@@ -46,7 +46,7 @@ Local preview: open a word in `/lemmas/`, use its speaker, then compare another 
 
 Original headwords span -24.04 to -17.30 dBFS active RMS, forms -26.11 to -17.83, sentences -21.69 to -17.08. Matched-word spreads across voices are 4.08–6.81 dB (sentences 3.68–4.28). Corrected y spans -34.27 to -20.83 dBFS. The highest sampled source peak is -1.51 dBFS, motivating peak protection after the +3 dB gain. This scoped sample confirms real source-level differences; it is not an audit of all recordings. Source files remain unchanged; the subsequent playback normalization below is now implemented locally.
 
-### Playback normalization (local, awaiting review)
+### Playback normalization
 
 Each newly encountered recording is fetched and decoded before playback, then measured with the same speech-active 20 ms RMS approach as the sample audit. One constant gain targets -19 dBFS active RMS, capped at ±12 dB. Signals below -60 dBFS are left unboosted. The peak compressor remains downstream. This replaces the fixed boost, rather than stacking on top of it. It approximates consistent speech level, not broadcast LUFS normalization or identical perceived loudness across timbres.
 
@@ -68,8 +68,10 @@ Evidence is in `audio-generation/lemma-row-library/`: `plan.json`, per-batch led
 
 Validation: all 384 tests, content checks, the audio coverage check and the hosted build passed. Browser checks on the local casar card verified Azure MP3 playback (readyState 4, advancing playback time) for “Nosotros casamos a la pareja.” and “Después nosotros casaremos a la pareja.”, with no console errors.
 
-Local preview: reload http://127.0.0.1:5173/lemmas/, search for casar, select different tense/person rows and play the full sentence. Compare regions and masculine/feminine voices using the waveform preferences control. The recordings use the shared playback normalization described above. Device speech remains a fallback for network/playback failures or genuinely unrecorded text, but the current curriculum has no known coverage gaps. These changes are local, uncommitted and unpublished; upload the new MP3s before publishing the expanded manifests.
+Local preview: reload http://127.0.0.1:5173/lemmas/, search for casar, select different tense/person rows and play the full sentence. Compare regions and masculine/feminine voices using the waveform preferences control. The recordings use the shared playback normalization described above. Device speech remains a fallback for network/playback failures or genuinely unrecorded text, but the current curriculum has no known coverage gaps. The implementation is committed as `e9b9352ef4`, with regional recording commits `f2db6a743a`, `12a9a0b1d9`, `d38ef3222f` and `cd725369e0`. Upload the new MP3s before publishing the expanded manifests.
 
 ### Publication preparation
 
 The user approved commit, push, upload and publication on October 28. `scripts/upload-azure-audio.mjs <temporary-key-file> --lemma-rows` uploads only the 152,496 frozen expansion clips, preserving the earlier upload report. It checks the approved plan and synthesis-plus-retry estimate, uses conditional writes, verifies MD5s, and immediately removes the supplied key file after reading. Its report is written to `audio-generation/lemma-row-library/upload-validation.json`. The previous upload key was deleted; uploading awaits a replacement temporary credential file. Publication must follow successful audio upload.
+
+Sites version **34** is saved but not deployed: saved version ID `appgprj_6ad42d50df348191922f8c8aa5be12af~appgver_721854372dc881918d2e78694fea2149`, source `58d7697252236cbc9786513bb5dcaaaee0bdfd1a`, package `/private/tmp/perlingo-oct28-complete-audio.tar.gz`. The existing public audience and domain are preserved. A transient source-transfer failure was resolved by using HTTP/1.1 in the separate Sites checkout; no application or TLS-validation change was needed. Version 33 remains live. All implementation and recording commits are pushed to GitHub.
