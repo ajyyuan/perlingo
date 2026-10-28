@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {formGroups} from '../lemmas/verb-forms.js';
+import {mountForms} from '../lemmas/forms-view.js';
+import {combineNotes} from '../lemmas/notes-library.js';
+import {studyRows} from '../lemmas/study-card.js';
+import {readFileSync} from 'node:fs';
+const read=name=>JSON.parse(readFileSync(new URL(`../lemmas/data/${name}.json`,import.meta.url)));
+const source=combineNotes(read('notes'),read('context')).notes.find(n=>n.word==='tener');
+const note={...source,rows:studyRows(source)};
+
+test('brackets and clicks preserve focus; only reference picker arrows move it',t=>{
+ const documentHandlers={},hostHandlers={};let focused=0,selected='present',prevented=false;
+ const buttons=formGroups(note).map(({id:tense})=>({dataset:{tense},setAttribute(name,value){if(name==='aria-checked'&&value==='true')selected=tense;},focus(){focused++;}}));
+ const target={matches:()=>true,closest:()=>null};
+ const generic={innerHTML:'',disabled:false};
+ const host={closest:()=>null,querySelector(selector){if(selector==='.tense-rail')return null;if(selector.startsWith('[data-tense="'))return buttons.find(b=>selector.includes(`"${b.dataset.tense}"`));return generic;},querySelectorAll:()=>buttons,addEventListener(type,fn){hostHandlers[type]=fn;}};
+ const originals=Object.fromEntries(['document','ResizeObserver'].map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]));
+ t.after(()=>{for(const [key,descriptor] of Object.entries(originals)){if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];}});
+ globalThis.document={querySelectorAll:()=>[],addEventListener(type,fn){documentHandlers[type]=fn;}};
+ globalThis.ResizeObserver=class{observe(){} disconnect(){}};
+ const event=key=>({key,target,preventDefault(){prevented=true;},stopPropagation(){}});
+ let cleanup=mountForms(host,note,{cardNavigation:true});
+ documentHandlers.keydown(event(']'));
+ assert.equal(selected,'future');assert.equal(focused,0);
+ prevented=false;hostHandlers.keydown(event('ArrowRight'));
+ assert.equal(prevented,false);assert.equal(selected,'future');
+ hostHandlers.click({target:{closest:()=>({dataset:{tense:'preterite'}})}});
+ assert.equal(selected,'preterite');assert.equal(focused,0);
+ cleanup();cleanup=mountForms(host,note);
+ documentHandlers.keydown(event(']'));
+ assert.equal(focused,0);
+ hostHandlers.keydown(event('ArrowRight'));
+ assert.equal(prevented,true);assert.equal(focused,1);
+ cleanup();
+});

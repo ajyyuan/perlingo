@@ -113,7 +113,7 @@ function render(focus){
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
  document.querySelector('#total-progress').textContent=`Day ${data.day+1} · ${practiced(data.day)} / 300 learned`;
  if(view==='home')home();else study();
- const fallback=view==='home'?'.day-heading .primary':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled), [data-action="forward"]';
+ const fallback=view==='home'?'.day-heading .primary':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled)';
  (app.querySelector(focus||fallback)||app.querySelector(fallback))?.focus();
 }
 function openSet(set){data.set=set;data.day=Math.floor(set/6);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
@@ -143,7 +143,7 @@ function act(action){
   const t=activeTest();if(!t?.feedback)return;
   const next=advanceTest(t);if(data.activeExam)data.exams[data.activeExam].test=next;else data.flows[data.set]=finishTest(flow(),next);
  }else if(!data.activeExam)data.flows[data.set]=transition(flow(),action,idsForSet(deck,data.set));
- data.practiced[data.set]=Math.max(data.practiced[data.set]||0,completedCount(flow()));save();render('#answer, [data-action="forward"], [data-action="start-test"]');
+ data.practiced[data.set]=Math.max(data.practiced[data.set]||0,completedCount(flow()));save();render('#answer, [data-action="start-test"]');
 }
 function speak(text){answerAudio.stop();dictation.cancel();const mic=app.querySelector('[data-action="dictate"]');if(mic){mic.dataset.listening='false';mic.setAttribute('aria-pressed','false');mic.dataset.state='cancelled';mic.setAttribute('aria-label','Dictate answer');}voice.speak(text,'es-ES','Spanish',({message})=>{const s=document.querySelector('#audio-status');if(s)s.textContent=message||'';});}
 document.querySelector('#home').onclick=()=>{if(deck){view='home';render();}};
@@ -178,7 +178,7 @@ document.addEventListener('keydown',e=>{
   const detail=e.target.closest('details[open]');if(detail){detail.open=false;detail.querySelector('summary')?.focus();e.preventDefault();return;}
  }
  if(!deck)return;
- if(e.target.matches('.course-study .lesson-columns')&&['ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].includes(e.key))return;
+ if(e.target.matches('.course-study .lesson-columns')&&['PageUp','PageDown','Home','End'].includes(e.key))return;
  const editing=Boolean(e.target.closest('input,textarea,select,[contenteditable=true]'));
  const notes=notesOwnKeyboard(e.target,false)||Boolean(e.target.closest('header,footer,details'));
  const learning=view==='study'&&!data.activeExam&&flow().phase==='learn';

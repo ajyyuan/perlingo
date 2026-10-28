@@ -1,5 +1,7 @@
 # Perlingo
 
+The active Perlingo app is `/lemmas/`; `/learning/` and `/challenge/` are legacy projects. In lemma learning cards, arrows navigate cards and `[` / `]` change tenses without moving focus. Learning-card navigation does not automatically focus or highlight Next word. Tab remains available for accessible control and dialog access. See [Lemmas](docs/lemmas.md).
+
 Content studio (local): the [quote vault](http://127.0.0.1:5175/index.html) contains 40 sourced meme references for multilingual Reels, including NBA commentary, interview reactions, text memes and short internet hooks. Search/filter, save favorites, add local filming notes and export JSON. Sources and uncertainty are recorded per entry; clip playback and translations are not certified. It is separate from the course and excluded from the static publication build. See [data, evidence and preview instructions](content-studio/quote-bank/README.md).
 
 A browser app for learning Spanish, French, and German in parallel.

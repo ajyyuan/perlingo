@@ -1,5 +1,7 @@
 # Perlingo working agreement
 
+- “Perlingo” or “the app” means `/lemmas/`. Treat `/learning/` and `/challenge/` as legacy projects unless explicitly requested.
+
 - Favor minimalism throughout the application whenever accuracy and accessibility can be preserved. Prefer compact, self-explanatory controls; omit redundant headings, helper text, confirmations, and implementation details. Keep necessary explanations contextual rather than permanently visible. Prioritize minimalist, sleek styling; do not turn quiet text controls into prominent bordered buttons without an agreed design.
 
 - Keep documentation synchronized with implementation in the same change. Update README.md and relevant docs whenever behavior, architecture, content conventions, setup, or workflow changes. Only genuinely minor changes such as small test-only adjustments may omit documentation updates.
