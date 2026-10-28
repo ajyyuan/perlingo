@@ -1,6 +1,6 @@
 // Original synthesized two-note cues; no downloaded sound assets.
 // Completion is tied to the audio clock, so speech follows the final note.
-export function createAnswerFeedback(pronunciation,AudioContext){
+export function createAnswerFeedback(pronunciation,AudioContext,{cueGain=.055}={}){
  let context=null,generation=0,nodes=[];
  function stop(){
   generation++;
@@ -26,8 +26,8 @@ export function createAnswerFeedback(pronunciation,AudioContext){
       oscillator.type='sine';oscillator.frequency.value=frequency;
       const at=start+i*.12;
       gain.gain.setValueAtTime(0,at);
-      gain.gain.linearRampToValueAtTime(.055,at+.012);
-      gain.gain.exponentialRampToValueAtTime(.001,at+.105);
+      gain.gain.linearRampToValueAtTime(cueGain,at+.012);
+      gain.gain.exponentialRampToValueAtTime(.001*(cueGain/.055),at+.105);
       oscillator.connect(gain);gain.connect(context.destination);
       oscillator.feedbackGain=gain;nodes.push(oscillator);
       oscillator.onended=()=>{

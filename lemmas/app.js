@@ -1,3 +1,4 @@
+import {createCompletionFeedback} from './completion-feedback.js';
 import {setCourseExampleSeed} from './row-examples.js';
 import {exampleNoteHref} from './example-mode.js';
 import {recallCue,contextFeedbackAnswer} from './recall-prompt.js';
@@ -24,7 +25,7 @@ import {KEY,idsForSet} from './session.js';
 import {createLemmaVoice} from './pronunciation.js';
 const app=document.querySelector('#app'),warning=document.querySelector('#storage');
 const voice=createLemmaVoice({onOpen:()=>{dictation.cancel();answerAudio.stop();}});
-const answerAudio=createAnswerFeedback(voice,window.AudioContext||window.webkitAudioContext);
+const answerAudio=createAnswerFeedback(voice,window.AudioContext||window.webkitAudioContext,{cueGain:.055*10});
 const dictation=createRecordedDictation({
  onText:text=>{const input=app.querySelector('#answer');if(input&&!input.readOnly){const test=activeTest(),card=byId.get(test.queue[test.index]);const cleaned=cleanDictation(text,test.kind==='context'?card.context.answers:[],test.kind==='context'?card.context:null);input.value=cleaned;test.draft=cleaned;save();input.focus();}},
  onStatus:(state,message)=>{const b=app.querySelector('[data-action="dictate"]');if(b){const busy=['starting','listening','transcribing'].includes(state);b.dataset.listening=String(busy);b.dataset.state=state;const label=state==='transcribing'?'Cancel transcription':busy?'Stop dictation':'Dictate answer';b.setAttribute('aria-label',label);b.setAttribute('aria-pressed',String(busy));b.title=['error','ended'].includes(state)&&message?message:label;b.setAttribute('aria-description',['error','ended'].includes(state)?message:'');}}
@@ -71,6 +72,7 @@ function testView(){
  const form=app.querySelector('#answer-form');form?.querySelector('#answer').addEventListener('input',e=>{dictation.cancel();t.draft=e.target.value;save();});form?.addEventListener('submit',e=>{e.preventDefault();const input=form.querySelector('#answer');if(input.value.trim())submit(input.value);else input.focus();});
 }
 
+const completionFeedback=createCompletionFeedback({enabled:()=>data.answerSound!==false});
 function testDone(){
  if(data.activeExam){const ex=data.exams[data.activeExam],t=ex.test;stage(`${ex.type==='review'?'Review':'Day test'} complete.`,`${t.firstCorrect} / ${t.ids.length} on the first try. A fully correct pass completed.`,button('home','Back to your day →'),`Day ${ex.day+1}`);return;}
  const f=flow(),t=f.test,score=`${t.firstCorrect} / ${t.ids.length} on the first try. A fully correct pass completed.`;
@@ -140,6 +142,7 @@ function submit(response){
  answerAudio.play({correct:next.feedback.correct,text:c.context&&t.kind==='context'?(next.feedback.correct?contextFeedbackAnswer(c.context,response):c.context.answers[0]):c.lemma,locale:'es-ES',label:'Spanish',enabled:data.answerSound!==false});
 }
 function act(action){
+ let justCompleted=false;
  if(action==='home'){view='home';save();render();return;}
  if(view!=='study')return;
  if(action==='answer-sound'){data.answerSound=data.answerSound===false;save();if(!data.answerSound)answerAudio.stop();const b=app.querySelector('[data-action="answer-sound"]');b.textContent=`Sound ${data.answerSound?'on':'off'}`;b.setAttribute('aria-pressed',String(data.answerSound));return;}
@@ -150,9 +153,10 @@ function act(action){
  if(action==='skip'){submit('');return;}
  if(action==='continue'){
   const t=activeTest();if(!t?.feedback)return;
-  const next=advanceTest(t);if(data.activeExam)data.exams[data.activeExam].test=next;else data.flows[data.set]=finishTest(flow(),next);
+  const next=advanceTest(t);justCompleted=next.done&&!t.done;if(data.activeExam)data.exams[data.activeExam].test=next;else data.flows[data.set]=finishTest(flow(),next);
  }else if(!data.activeExam)data.flows[data.set]=transition(flow(),action,idsForSet(deck,data.set));
  data.practiced[data.set]=Math.max(data.practiced[data.set]||0,completedCount(flow()));save();render('#answer, [data-action="start-test"]');
+ if(justCompleted)completionFeedback.celebrate(app);
 }
 function speak(text){answerAudio.stop();dictation.cancel();const mic=app.querySelector('[data-action="dictate"]');if(mic){mic.dataset.listening='false';mic.setAttribute('aria-pressed','false');mic.dataset.state='cancelled';mic.setAttribute('aria-label','Dictate answer');}voice.speak(text,'es-ES','Spanish',({message})=>{const s=document.querySelector('#audio-status');if(s)s.textContent=message||'';});}
 document.querySelector('#home').onclick=()=>{if(deck){view='home';render();}};

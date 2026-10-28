@@ -343,3 +343,7 @@ Starting verb forms now use the top three eligible frequency-ranked spellings wi
 Starting-form assignments now persist via a course seed in saved/synced progress. Reloads and app restarts reproduce them; explicit course reset creates a new seed. Manual row browsing does not rewrite those assignments. Existing saves retain their progress and receive stable legacy assignments.
 
 The user approved committing the complete verb-example work: balanced comparison, frequency evidence, interactive row examples, 60/30/10 starting-form selection, and course-persistent assignments. This supersedes pending-review statements above for that work. All 370 tests and content/syntax checks pass; no push or publication is included.
+
+Completion feedback now adds a restrained checkmark animation and quiet chime after clearing a batch or test, respecting the existing Sound preference and reduced-motion support. Take a break returns to Your days; there is no break timer. [Behavior and local testing](docs/lemma-completion-feedback.md); [isolated preview](http://localhost:5173/lemmas/completion-preview.html). Approved for commit and publication.
+
+Lemmas answer and completion cues are now 20 dB louder than their original levels; pronunciation volume is unchanged.
