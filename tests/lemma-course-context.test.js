@@ -14,7 +14,7 @@ const cards=new Map(deck.map((c,i)=>[c.id,{...c,context:bank.contexts[i]}]));
 test('all five days have precisely 300 contextual cards in unchanged course order',()=>{
  assert.equal(bank.version,3);assert.equal(bank.contexts.length,1500);
  assert.deepEqual(bank.contexts.map(c=>c.id),deck.map(c=>c.id));
- assert.deepEqual(bank.contexts.slice(0,50),contextPilot);
+ assert.deepEqual(bank.contexts.slice(0,50).map(({headwordCue,recallCue,answerNote,...original})=>original),contextPilot);
  for(let day=0;day<5;day++)assert.deepEqual(bank.contexts.slice(day*300,day*300+300).map(c=>c.id),examIds(deck,day));
  for(const c of bank.contexts){
   assert.equal(c.example.chunks.map(ch=>ch.text).join(' ')+'.',c.example.text);

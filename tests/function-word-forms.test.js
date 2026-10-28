@@ -72,6 +72,6 @@ test('new ambiguous forms retain the reviewed meaning in every shared sentence',
 
 test('all assessment content retains the pre-audit fingerprint',()=>{
  const bank=read('../lemmas/data/context.json');
- const assessment=bank.contexts.map(c=>[c.id,c.target,c.answers,c.example.text,c.example.translation]);
+ const assessment=bank.contexts.map(c=>[c.id,c.target,read('../data/spanish-lemmas/pronoun-recall-audit.json').originalAnswers[c.id]||c.answers,c.example.text,c.example.translation]);
  assert.equal(createHash('sha256').update(JSON.stringify(assessment)).digest('hex'),audit.contextIntegrity.assessmentSha256);
 });

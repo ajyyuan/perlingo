@@ -5,6 +5,7 @@ import {wordMeanings} from '../lemmas/word-help.js';
 import {cardFormWords} from '../lemmas/card-links.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const exceptions=read('data/spanish-lemmas/context/form-exceptions.json');
+const recall=read('data/spanish-lemmas/context/pronoun-recall.json').entries;
 const deck=read('lemmas/data/deck.json'),notes=read('lemmas/data/notes.json').notes;
 const concepts={
  n:{title:'Noun phrase',text:'Read the noun together with its article and modifiers. Articles and adjectives agree with the noun in gender and number; a phrase beginning with de can add information about it.'},
@@ -18,7 +19,7 @@ const concepts={
 const targetConcepts={};
 const bank=[...contextPilot],errors=[],used=new Set(bank.map(c=>c.id));
 const rows=[];
-const sourceFiles=['scripts/build-lemma-context.mjs','lemmas/card-links.js','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
+const sourceFiles=['data/spanish-lemmas/context/pronoun-recall.json','scripts/build-lemma-context.mjs','lemmas/card-links.js','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
 for(let day=1;day<=5;day++)for(const [lineNo,line] of fs.readFileSync(`data/spanish-lemmas/context/day${day}.txt`,'utf8').split('\n').entries()){
  if(!line.trim()||line.startsWith('#'))continue;
  const [targets,translation,span,...extra]=line.split('|');
@@ -44,6 +45,11 @@ for(let day=1;day<=5;day++)for(const [lineNo,line] of fs.readFileSync(`data/span
 }
 if(errors.length){console.log(errors.join('\n'));process.exitCode=1;}else{
  const order=new Map(deck.map((c,i)=>[c.id,i]));bank.sort((a,b)=>order.get(a.id)-order.get(b.id));
+ for(const [id,entry] of Object.entries(recall)){
+  const c=bank.find(c=>c.id===id);if(!c)throw Error('Unknown recall entry: '+id);
+  for(const key of ['headwordCue','recallCue','answerNote'])if(entry[key])c[key]=entry[key];
+  if(entry.answers){if(!entry.answers.includes(c.target))throw Error('Recall alternatives omit original: '+id);c.answers=entry.answers;}
+ }
  if(bank.length!==1500)throw Error('Incomplete context bank: '+bank.length);
  const additions=fs.existsSync('data/spanish-lemmas/context/word-glosses.json')?read('data/spanish-lemmas/context/word-glosses.json'):{};
  const lexicon={...wordMeanings,...additions};

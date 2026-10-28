@@ -208,7 +208,8 @@
       ],
       "target": "que",
       "explanation": "Que refers back to el libro and is the object of quiero: the book is what I want. English can omit “that” here; Spanish keeps que.",
-      "headword": "que"
+      "headword": "que",
+      "headwordCue": "Relative pronoun"
     },
     {
       "id": "corpes:ser:V",
@@ -262,7 +263,8 @@
       ],
       "target": "se",
       "explanation": "Ana is both the person washing and the person washed. Se points back to the third-person subject; it does not mean “I know” (sé).",
-      "headword": "se"
+      "headword": "se",
+      "headwordCue": "Reflexive / reciprocal object"
     },
     {
       "id": "corpes:que:C",
@@ -331,7 +333,8 @@
       ],
       "target": "suyo",
       "explanation": "Suyo agrees with the thing owned: libro is masculine singular. It does not tell us the owner’s gender. Here “hers” is one possible interpretation.",
-      "headword": "suyo"
+      "headword": "suyo",
+      "headwordCue": "Possessive · long form · masculine singular"
     },
     {
       "id": "corpes:con:P",
@@ -466,7 +469,9 @@
       ],
       "target": "Lo",
       "explanation": "Lo stands for the thing seen, such as el libro. “Him” is also possible with a male referent. Here the translation assumes a thing.",
-      "headword": "lo"
+      "headword": "lo",
+      "headwordCue": "Direct object · masculine / neuter singular",
+      "recallCue": "“It” refers to a masculine noun."
     },
     {
       "id": "corpes:este:D",
@@ -643,7 +648,8 @@
       ],
       "target": "Le",
       "explanation": "Le identifies the recipient; un libro is what is given. “Her” is chosen for this example, but the context could instead identify him or formal you.",
-      "headword": "le"
+      "headword": "le",
+      "headwordCue": "Indirect object · singular"
     },
     {
       "id": "corpes:más:R",
@@ -707,7 +713,8 @@
       ],
       "target": "me",
       "explanation": "Me is the person seen. Ana is the subject performing the action. The object pronoun comes before ve.",
-      "headword": "me"
+      "headword": "me",
+      "headwordCue": "Object / reflexive · first-person singular"
     },
     {
       "id": "corpes:hacer:V",
@@ -916,7 +923,8 @@
       ],
       "target": "Él",
       "explanation": "Él is the subject of habla. Spanish often omits a subject pronoun when the person is clear; including it can clarify or emphasize who acts.",
-      "headword": "él"
+      "headword": "él",
+      "headwordCue": "Subject / after a preposition · masculine singular"
     },
     {
       "id": "corpes:otro:Q",
@@ -1103,7 +1111,8 @@
       ],
       "target": "mío",
       "explanation": "Mío agrees with masculine singular libro, not with the owner’s gender. The owner is the speaker.",
-      "headword": "mío"
+      "headword": "mío",
+      "headwordCue": "Possessive · long form · masculine singular"
     },
     {
       "id": "corpes:dar:V",
@@ -1359,7 +1368,8 @@
       ],
       "target": "nos",
       "explanation": "Nos is the group being seen, including the speaker. Ana performs the action.",
-      "headword": "nos"
+      "headword": "nos",
+      "headwordCue": "Object / reflexive · first-person plural"
     },
     {
       "id": "corpes:uno:M",
@@ -1440,7 +1450,9 @@
       ],
       "target": "Te",
       "explanation": "Te is the person seen, addressed informally in the singular. The verb veo identifies the speaker as the subject.",
-      "headword": "te"
+      "headword": "te",
+      "headwordCue": "Object / reflexive · informal singular",
+      "recallCue": "Informal singular."
     },
     {
       "id": "corpes:muy:R",
@@ -1794,10 +1806,13 @@
       "offset": 0,
       "target": "qué",
       "answers": [
-        "qué"
+        "qué",
+        "cuál"
       ],
       "headword": "qué",
       "explanation": "qué is used here as an interrogative. Interrogative",
+      "headwordCue": "Question word · what",
+      "answerNote": "Qué can ask what to choose or want; cuál selects a thing from contextual possibilities. Both fit here.",
       "wordMeanings": {
         "yo": "I",
         "ya": "already",
@@ -1999,6 +2014,7 @@
       ],
       "headword": "yo",
       "explanation": "yo is used here as a personal pronoun. Personal pronoun",
+      "headwordCue": "Subject · first-person singular",
       "wordMeanings": {
         "yo": "I",
         "ya": "already",
@@ -2596,6 +2612,7 @@
       ],
       "headword": "nuestro",
       "explanation": "nuestra: possessive agrees with feminine singular casa. Agree with what is owned, not with the owners.",
+      "headwordCue": "Possessive · masculine singular headword",
       "wordMeanings": {
         "tenemos": "We have",
         "tiempo": "time",
@@ -2999,6 +3016,7 @@
       ],
       "headword": "quien",
       "explanation": "quien is used here as a relative. Relative who; no accent in this use.",
+      "headwordCue": "Relative pronoun · person · singular",
       "wordMeanings": {
         "no": "Not",
         "encuentro": "I find",
@@ -5174,6 +5192,8 @@
       ],
       "headword": "tuyo",
       "explanation": "tuyo is used here as a possessive. Tu has no accent; tú is the subject pronoun.",
+      "headwordCue": "Possessive · long form · masculine singular · informal singular owner",
+      "recallCue": "One owner · informal singular.",
       "wordMeanings": {
         "este": "this",
         "libro": "book",
@@ -6257,10 +6277,13 @@
       "offset": 4,
       "target": "cual",
       "answers": [
-        "cual"
+        "cual",
+        "que"
       ],
       "headword": "cual",
       "explanation": "cual is used here as a relative. Relative which/who; agree with the antecedent.",
+      "headwordCue": "Relative pronoun · used with an article",
+      "answerNote": "Del cual and del que both fit this relative clause.",
       "wordMeanings": {
         "este": "This",
         "es": "is",
@@ -8442,6 +8465,7 @@
       ],
       "headword": "mí",
       "explanation": "mí is used here as a personal pronoun. Me after a preposition; mi without an accent means my.",
+      "headwordCue": "After a preposition · first-person singular",
       "wordMeanings": {
         "para": "for; to (purpose)",
         "mí": "me (after a preposition)",
@@ -12351,6 +12375,8 @@
       ],
       "headword": "usted",
       "explanation": "usted is used here as a personal pronoun. Formal you uses third-person verb forms.",
+      "headwordCue": "Personal pronoun · formal singular",
+      "recallCue": "Formal singular.",
       "wordMeanings": {
         "a": "to; at; marks a personal object",
         "usted": "you (formal singular)",
@@ -12444,10 +12470,13 @@
       "offset": 0,
       "target": "Nosotros",
       "answers": [
-        "Nosotros"
+        "Nosotros",
+        "Nosotras"
       ],
       "headword": "nosotros",
       "explanation": "nosotros is used here as a personal pronoun. Subject we or us after a preposition; compare object nos.",
+      "headwordCue": "Subject / after a preposition · masculine plural headword",
+      "answerNote": "Nosotros and nosotras both fit; the English sentence does not specify the group’s gender.",
       "wordMeanings": {
         "nosotros": "We",
         "aseguramos": "ensure",
@@ -14540,6 +14569,7 @@
       ],
       "headword": "cuyo",
       "explanation": "cuyo is used here as a relative. Whose: agree with the thing possessed, not its owner.",
+      "headwordCue": "Possessive relative · masculine singular headword",
       "wordMeanings": {
         "la": "the",
         "mujer": "woman",
@@ -15421,6 +15451,8 @@
       ],
       "headword": "tú",
       "explanation": "tú is used here as a personal pronoun. Personal pronoun",
+      "headwordCue": "Subject · informal singular",
+      "recallCue": "Informal singular · Spain.",
       "wordMeanings": {
         "tú": "You",
         "nos": "us; ourselves",
@@ -17067,6 +17099,7 @@
       ],
       "headword": "quién",
       "explanation": "quién is used here as an interrogative. Question/exclamation form: keep the accent.",
+      "headwordCue": "Question word · person · singular",
       "wordMeanings": {
         "ayer": "Yesterday",
         "descubrí": "I found out",
@@ -21168,10 +21201,13 @@
       "offset": 4,
       "target": "sí",
       "answers": [
-        "sí"
+        "sí",
+        "ella"
       ],
       "headword": "sí",
       "explanation": "sí is used here as a personal pronoun. Refers back to a third-person referent in the same sentence; with con, use consigo.",
+      "headwordCue": "Reflexive · after a preposition · third person",
+      "answerNote": "Both sí misma and ella misma can refer to her doing it herself; sí is the usual reflexive form.",
       "wordMeanings": {
         "lleva": "She takes",
         "la": "the",
@@ -29346,10 +29382,13 @@
       "offset": 0,
       "target": "cuál",
       "answers": [
-        "cuál"
+        "cuál",
+        "qué"
       ],
       "headword": "cuál",
       "explanation": "cuál is used here as an interrogative. Which/which one; usage before a noun varies by region.",
+      "headwordCue": "Question word · which one · singular",
+      "answerNote": "Qué can ask what to choose or want; cuál selects a thing from contextual possibilities. Both fit here.",
       "wordMeanings": {
         "no": "Not",
         "sé": "I know",
@@ -33528,6 +33567,8 @@
       ],
       "headword": "ti",
       "explanation": "ti is used here as a personal pronoun. Ti has no accent. With con, use contigo.",
+      "headwordCue": "After a preposition · informal singular",
+      "recallCue": "Informal singular · Spain.",
       "wordMeanings": {
         "esta": "this (feminine)",
         "campaña": "campaign",
@@ -54696,6 +54737,7 @@
       ],
       "headword": "cuánto",
       "explanation": "cuánto is used here as an interrogative. How much/many; agree when accompanying a noun.",
+      "headwordCue": "Quantity question · masculine singular headword",
       "wordMeanings": {
         "el": "the",
         "lunes": "Monday",
@@ -67698,6 +67740,7 @@
       ],
       "headword": "conmigo",
       "explanation": "conmigo is used here as a personal pronoun. Means with me; do not add another con.",
+      "headwordCue": "Combined form · with the speaker",
       "wordMeanings": {
         "ven": "Come",
         "conmigo": "with me",
@@ -70555,6 +70598,8 @@
       ],
       "headword": "os",
       "explanation": "os is used here as a personal pronoun. Object/reflexive form used with vosotros in Spain.",
+      "headwordCue": "Object / reflexive · informal plural in Spain",
+      "recallCue": "Informal plural · Spain.",
       "wordMeanings": {
         "os": "To you (informal plural, Spain)",
         "envío": "I send",

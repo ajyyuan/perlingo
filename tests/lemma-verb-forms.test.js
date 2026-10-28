@@ -66,7 +66,9 @@ test('all simple reference forms match frozen tagged source slots and older snap
  assert.equal(followUp.beforeSha256,audit.unchanged.context);
  const nounReview=read('data/spanish-lemmas/noun-adjective-audit.json').contextIntegrity;
  assert.equal(nounReview.beforeSha256,followUp.afterSha256);
- assert.equal(digest('lemmas/data/context.json'),nounReview.afterSha256);
+ const pronounReview=read('data/spanish-lemmas/pronoun-recall-audit.json');
+ assert.equal(pronounReview.beforeSha256,nounReview.afterSha256);
+ assert.equal(digest('lemmas/data/context.json'),pronounReview.afterSha256);
  for(const [file,hash]of Object.entries(audit.unchanged.assessment))assert.equal(digest(file),hash);
 });
 test('conjugation compilation is deterministic and offline',()=>{

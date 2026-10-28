@@ -1,0 +1,158 @@
+{
+  "scope": "All 28 personal, relative, interrogative and possessive source-tag L/H/W/X cards. Exact headword recall remains distinct from a one-word sentence blank. Alternative acceptance is authored per sentence, not inferred from form families.",
+  "sources": [
+    "https://www.rae.es/dpd/pronombres personales tónicos",
+    "https://www.rae.es/dpd/pronombres personales átonos",
+    "https://www.rae.es/dpd/cual",
+    "https://www.rae.es/dpd/qué",
+    "https://www.rae.es/dpd/cuál",
+    "https://www.rae.es/dpd/sí",
+    "https://www.rae.es/gtg/posesivo"
+  ],
+  "entries": {
+    "corpes:que:H": {
+      "headwordCue": "Relative pronoun",
+      "reason": "Book antecedent and no article before the blank require que."
+    },
+    "corpes:se:L": {
+      "headwordCue": "Reflexive / reciprocal object",
+      "reason": "Herself with Ana fixes the reflexive object."
+    },
+    "corpes:suyo:X": {
+      "headwordCue": "Possessive · long form · masculine singular",
+      "reason": "Libro fixes masculine singular; hers fixes third-person possession."
+    },
+    "corpes:lo:L": {
+      "headwordCue": "Direct object · masculine / neuter singular",
+      "reason": "Specify grammatical gender rather than rejecting a plausible feminine object silently.",
+      "recallCue": "“It” refers to a masculine noun."
+    },
+    "corpes:le:L": {
+      "headwordCue": "Indirect object · singular",
+      "reason": "Give her a book identifies a singular recipient."
+    },
+    "corpes:me:L": {
+      "headwordCue": "Object / reflexive · first-person singular",
+      "reason": "Me as the person Ana sees requires the object form."
+    },
+    "corpes:él:L": {
+      "headwordCue": "Subject / after a preposition · masculine singular",
+      "reason": "He fixes masculine singular; ella changes meaning."
+    },
+    "corpes:mío:X": {
+      "headwordCue": "Possessive · long form · masculine singular",
+      "reason": "Libro and predicate position require mío, not mi or mía."
+    },
+    "corpes:nos:L": {
+      "headwordCue": "Object / reflexive · first-person plural",
+      "reason": "Us as the group Ana sees requires nos, not nosotros."
+    },
+    "corpes:te:L": {
+      "headwordCue": "Object / reflexive · informal singular",
+      "reason": "Fix addressee number and treatment.",
+      "recallCue": "Informal singular."
+    },
+    "corpes:qué:W": {
+      "headwordCue": "Question word · what",
+      "reason": "Both interrogatives can refer to the thing wanted here; cuál selects among contextual possibilities.",
+      "answers": [
+        "qué",
+        "cuál"
+      ],
+      "answerNote": "Qué can ask what to choose or want; cuál selects a thing from contextual possibilities. Both fit here."
+    },
+    "corpes:yo:L": {
+      "headwordCue": "Subject · first-person singular",
+      "reason": "I and sé fix first-person singular."
+    },
+    "corpes:nuestro:X": {
+      "headwordCue": "Possessive · masculine singular headword",
+      "reason": "Nuestra agrees with casa; nuestro does not fit this blank."
+    },
+    "corpes:quien:H": {
+      "headwordCue": "Relative pronoun · person · singular",
+      "reason": "Nadie is a person, with no article after con; quien fits the single-word blank."
+    },
+    "corpes:tuyo:X": {
+      "headwordCue": "Possessive · long form · masculine singular · informal singular owner",
+      "reason": "Specify addressee; libro fixes masculine agreement and postnominal position excludes tu.",
+      "recallCue": "One owner · informal singular."
+    },
+    "corpes:cual:H": {
+      "headwordCue": "Relative pronoun · used with an article",
+      "reason": "Both del cual and del que introduce the relative clause about punto.",
+      "answers": [
+        "cual",
+        "que"
+      ],
+      "answerNote": "Del cual and del que both fit this relative clause."
+    },
+    "corpes:mí:L": {
+      "headwordCue": "After a preposition · first-person singular",
+      "reason": "Para requires mí, not me or possessive mi."
+    },
+    "corpes:usted:L": {
+      "headwordCue": "Personal pronoun · formal singular",
+      "reason": "Cue distinguishes formal you from plural ustedes and third-person references.",
+      "recallCue": "Formal singular."
+    },
+    "corpes:nosotros:L": {
+      "headwordCue": "Subject / after a preposition · masculine plural headword",
+      "reason": "English we does not specify group gender; both agree with aseguramos.",
+      "answers": [
+        "Nosotros",
+        "Nosotras"
+      ],
+      "answerNote": "Nosotros and nosotras both fit; the English sentence does not specify the group’s gender."
+    },
+    "corpes:cuyo:H": {
+      "headwordCue": "Possessive relative · masculine singular headword",
+      "reason": "Cuyo agrees with hijo, not mujer."
+    },
+    "corpes:tú:L": {
+      "headwordCue": "Subject · informal singular",
+      "reason": "Puedes fixes tú in the taught tuteo pattern; cue avoids a regional-voseo inference.",
+      "recallCue": "Informal singular · Spain."
+    },
+    "corpes:quién:W": {
+      "headwordCue": "Question word · person · singular",
+      "reason": "Tiene is singular, so quiénes cannot fill this unchanged sentence."
+    },
+    "corpes:sí:L": {
+      "headwordCue": "Reflexive · after a preposition · third person",
+      "reason": "Ella misma can refer reflexively to the woman taking the table; sí misma remains the recommended reflexive example.",
+      "answers": [
+        "sí",
+        "ella"
+      ],
+      "answerNote": "Both sí misma and ella misma can refer to her doing it herself; sí is the usual reflexive form."
+    },
+    "corpes:cuál:W": {
+      "headwordCue": "Question word · which one · singular",
+      "reason": "Both interrogatives can identify the thing to choose; keep singular which one, not cuáles.",
+      "answers": [
+        "cuál",
+        "qué"
+      ],
+      "answerNote": "Qué can ask what to choose or want; cuál selects a thing from contextual possibilities. Both fit here."
+    },
+    "corpes:ti:L": {
+      "headwordCue": "After a preposition · informal singular",
+      "reason": "Specify treatment and tuteo; para requires ti, not object te.",
+      "recallCue": "Informal singular · Spain."
+    },
+    "corpes:cuánto:W": {
+      "headwordCue": "Quantity question · masculine singular headword",
+      "reason": "Tiempo fixes masculine singular cuánto."
+    },
+    "corpes:conmigo:L": {
+      "headwordCue": "Combined form · with the speaker",
+      "reason": "Conmigo is the single word for with me; con mí is not standard."
+    },
+    "corpes:os:L": {
+      "headwordCue": "Object / reflexive · informal plural in Spain",
+      "reason": "Fix the vosotros variety and plural addressees; not te or les.",
+      "recallCue": "Informal plural · Spain."
+    }
+  }
+}
