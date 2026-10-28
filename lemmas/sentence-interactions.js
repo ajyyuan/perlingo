@@ -17,7 +17,7 @@ export function bindSentenceInteractions(){
  document.addEventListener('focusout',e=>{if(active&&!active.contains(e.relatedTarget)&&!active.matches(':hover'))hide();});
  document.addEventListener('keydown',e=>{
   if(e.key==='Tab'){keyboard=true;dismissed=null;}
-  if(e.key==='Escape'&&active){const button=active.querySelector('.word-sound');dismissed=active;hide();e.preventDefault();e.stopPropagation();button?.focus({preventScroll:true});}
+  if(e.key==='Escape'&&active){const button=active.querySelector('.word-sound'),restoreFocus=active.querySelector('.quick-meaning').contains(document.activeElement);dismissed=active;hide();e.preventDefault();e.stopPropagation();if(restoreFocus)button?.focus({preventScroll:true});}
  },true);
  window.addEventListener('resize',hide);document.addEventListener('scroll',hide,true);
 }

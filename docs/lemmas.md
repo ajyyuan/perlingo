@@ -222,3 +222,5 @@ The [More info audit](lemma-more-info-audit.md) covers all 1,500 supplemental vi
 
 
 Publication completed October 27, 2026: Sites version **28**, deployment `appgdep_6ae1494fdc288191b9fa56633dd37e85`, succeeded. Application commit `794b5f2ff` maps to Sites source `71faaf5ed4392025963d4dfed0171385b9a690ff`. This release includes all prior committed app changes and the approved learning-card focus fixes: brackets change tenses without moving focus, course arrows navigate cards from the tense picker or card area, and Next word is no longer automatically focused. Native Tab access remains. All 328 tests, content checks, and the hosted build passed; the user accepted the local behavior. Public access, perlingo.app, and environment revision 2 are retained. This publication supersedes earlier local-only status for the tense examples, search improvements, and More info changes.
+
+Local focus refinement: Escape dismisses a hovered sentence meaning without moving focus away from the answer field or another control. If focus is inside the meaning popup itself, Escape returns it to the corresponding word. User-tested and approved for publication; deployment pending.
