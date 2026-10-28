@@ -36,3 +36,7 @@ The ranked sampler is regression-tested at the 60% and 90% boundaries and on a d
 Persistence checks cover seed round-trips, legacy-save compatibility, deterministic choices after reload, unchanged manual selection on same-seed account updates, and seed replacement/recovery through the existing cloud-reset path.
 
 Course-persistence validation: 370 tests and content/syntax checks pass. A browser reload reproduced the same ser example. `course-seed-audit.json` records the intentional progress-format change against the earlier conjugation audit; the earlier assessment-code hashes remain checked. The real course was not reset during verification.
+
+## Conjugation keyboard navigation
+
+While browsing a verb in the learning card or notes, `-` selects the previous displayed conjugation row and `=` selects the next, updating its example. Navigation stops at the first/last row and resets any alternative-form selection. `[ / ]` continue to change tenses. These shortcuts ignore text inputs, modified/held keys and inactive dialogs; non-verbs and notice-only tables have no row shortcut. The keyboard-shortcuts panel lists both pairs.

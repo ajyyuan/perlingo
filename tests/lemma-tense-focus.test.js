@@ -20,7 +20,17 @@ test('brackets and clicks preserve focus; only reference picker arrows move it',
  globalThis.document={querySelectorAll:()=>[],addEventListener(type,fn){documentHandlers[type]=fn;}};
  globalThis.ResizeObserver=class{observe(){} disconnect(){}};
  const event=key=>({key,target,preventDefault(){prevented=true;},stopPropagation(){}});
- let cleanup=mountForms(host,note,{cardNavigation:true});
+ let example;
+ let cleanup=mountForms(host,note,{cardNavigation:true,onExample:g=>example=g});
+ documentHandlers.keydown(event('-'));
+ for(let i=0;i<8;i++)documentHandlers.keydown(event('-'));
+ assert.equal(example.selectedSlot,example.rows[0].slot);
+ documentHandlers.keydown(event('='));
+ assert.equal(example.selectedSlot,example.rows[1].slot);
+ for(let i=0;i<8;i++)documentHandlers.keydown(event('='));
+ assert.equal(example.selectedSlot,example.rows.at(-1).slot);
+ assert.equal(focused,0);
+ assert.equal(selected,'present');
  documentHandlers.keydown(event(']'));
  assert.equal(selected,'future');assert.equal(focused,0);
  prevented=false;hostHandlers.keydown(event('ArrowRight'));

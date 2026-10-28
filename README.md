@@ -349,3 +349,7 @@ Completion feedback now adds a restrained checkmark animation and quiet chime af
 Lemmas answer and completion cues are now 20 dB louder than their original levels; pronunciation volume is unchanged.
 
 Publication completed October 28, 2026: Sites version **31**, deployment `appgdep_6ae24c886c5c8191ae94e866d15f252f`, succeeded. Application commit `d3bdc2ff6` maps to Sites source `437d3039ebf984eb9ae642925965978e0c109057`. This release includes the previously committed recall/search refinements and course-stable verb examples, plus completion animation and cues raised by 20 dB from their original levels. No break timer is included. All 370 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained. This supersedes earlier local-only publication statements for these changes.
+
+Verb forms support `- / =` for previous/next conjugation rows and their examples, alongside `[ / ]` for tenses. Both pairs appear in keyboard help and remain inactive while typing.
+
+Search also accepts Cmd/Ctrl+Shift+K as an unlisted alias of Cmd/Ctrl+K, with the same test and dialog restrictions.

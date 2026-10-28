@@ -9,6 +9,8 @@ test('typing, composition, overlays and held keys cannot trigger grading shortcu
 test('platform command shortcuts work in answers without intercepting ordinary browser chords',()=>{
  for(const mac of [true,false]){const primary=mac?{metaKey:true}:{ctrlKey:true};
  assert.equal(keyboardCommand({...primary,code:'KeyK'},{editing:true,mac}),'search');
+ assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyK'},{editing:true,mac}),'search');
+ assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyK'},{overlay:true,mac}),null);
  assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyM'},{editing:true,mac}),'dictate');
  assert.equal(keyboardCommand({...primary,shiftKey:true,code:'KeyH'},{mac}),'home');
  for(const code of ['KeyM','KeyH','KeyS'])assert.equal(keyboardCommand({...primary,code},{mac}),null);
@@ -28,4 +30,15 @@ test('tense bracket keys respect active overlays and text editing',async()=>{
  assert.equal(tenseKeysAllowed({key:']'},{active:true}),true);
  for(const state of [{active:false},{editing:true}])assert.equal(tenseKeysAllowed({key:']'},state),false);
  for(const flag of ['defaultPrevented','isComposing','repeat','altKey','ctrlKey','metaKey','shiftKey'])assert.equal(tenseKeysAllowed({key:'[',[flag]:true}),false);
+});
+
+test('conjugation keys respect native event modifiers, editing and inactive overlays',async()=>{
+ const {rowKeysAllowed}=await import('../lemmas/forms-view.js');
+ for(const key of ['-','='])assert.equal(rowKeysAllowed({key}),true);
+ for(const state of [{active:false},{editing:true}])assert.equal(rowKeysAllowed({key:'='},state),false);
+ for(const flag of ['defaultPrevented','isComposing','repeat','altKey','ctrlKey','metaKey','shiftKey']){
+  const event=Object.create({key:'=',[flag]:true});
+  assert.equal(rowKeysAllowed(event),false);
+ }
+ for(const key of ['1','6','+','_','[',']'])assert.equal(rowKeysAllowed({key}),false);
 });
