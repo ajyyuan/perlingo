@@ -1,0 +1,22 @@
+{
+  "scope": "346 general-purpose verb frames across seven non-command tenses; tener subjunctive aligned with its existing first-person examples. No assessment changes.",
+  "counts": {
+    "I": 70,
+    "you": 69,
+    "heShe": 69,
+    "we": 69,
+    "they": 69
+  },
+  "exceptions": "20 subject-specific constructions retain their subjects; haber stays impersonal; soler stays tú; tener stays yo. Commands retain the reviewed informal singular addressee.",
+  "sources": [
+    "https://www.open.edu/openlearn/languages/intermediate-spanish-a-trip-across-latin-america/content-section-2.2",
+    "https://www.ucm.es/plataformaele/pronombres"
+  ],
+  "review": "Existing frozen Spanish conjugations reused and checked by selected row. All lexical complements screened for subject-dependent adjective and possessive agreement; English inflection and subject-sensitive translations checked. Source checks support grammatical patterns, not independent certification of every generated sentence.",
+  "unchangedHashes": {
+    "lemmas/data/deck.json": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "lemmas/data/context.json": "577ff4b40cd1959ea2827dcf36b0d0c50692ac505d2c407cc5a5c0b89f7423be",
+    "lemmas/verb-forms-data.js": "547f29015b21d1ecd720b8206d487537180c084863b6875ab5ac9fa4a1d23fc3"
+  },
+  "commandTextsAndTranslationsUnchanged": true
+}

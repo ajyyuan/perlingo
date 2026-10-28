@@ -17,7 +17,7 @@ function render(){
  unmount();document.querySelector('#position').textContent=`${index+1} / ${notes.length}`;
  renderNav();unmount=mountNote(host,notes[index],concepts,{voice,heading:true,storageKey:'perlingo-word-notes-v1'});
 }
-function select(i){index=i;set=Math.floor(i/50);setSelect.value=String(set);history.replaceState(null,'',`?set=${set+1}#${encodeURIComponent(notes[index].id||notes[index].word)}`);render();nav.querySelector('[aria-pressed=true]')?.focus();}
+function select(i){index=i;set=Math.floor(i/50);setSelect.value=String(set);const url=new URL(location.href);url.searchParams.set('set',String(set+1));url.hash=encodeURIComponent(notes[index].id||notes[index].word);history.replaceState(null,'',url);render();nav.querySelector('[aria-pressed=true]')?.focus();}
 nav.addEventListener('click',e=>{const b=e.target.closest('[data-word]');if(b)select(Number(b.dataset.word));});
 nav.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.isComposing)return;const buttons=[...nav.querySelectorAll('button')],index=buttons.indexOf(e.target),next=moveIndex(e.key,index,buttons.length);if(index>=0&&next!==null){e.preventDefault();buttons[next].focus();}});
 search.addEventListener('input',renderNav);

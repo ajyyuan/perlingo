@@ -195,24 +195,6 @@
         "solo": "alone",
         "no": "not"
       }
-    },
-    "preterite": {
-      "text": "Ayer supiste la respuesta.",
-      "translation": "Yesterday you found out the answer.",
-      "target": "supiste",
-      "wordMeanings": {
-        "supiste": "you found out"
-      }
-    }
-  },
-  "conocer": {
-    "preterite": {
-      "text": "Ayer conociste la ciudad.",
-      "translation": "Yesterday you got to know the city.",
-      "target": "conociste",
-      "wordMeanings": {
-        "conociste": "you got to know"
-      }
     }
   },
   "ganar": {
@@ -266,6 +248,22 @@
         "no": "do not",
         "ames": "love (negative command)",
         "solo": "only"
+      }
+    }
+  },
+  "tener": {
+    "subjunctive": {
+      "text": "Es posible que yo tenga tiempo.",
+      "translation": "It is possible that I have time.",
+      "target": "tenga",
+      "slot": 0,
+      "wordMeanings": {
+        "es": "it is",
+        "posible": "possible",
+        "que": "that",
+        "yo": "I",
+        "tenga": "have (subjunctive)",
+        "tiempo": "time"
       }
     }
   }

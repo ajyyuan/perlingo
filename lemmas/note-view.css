@@ -64,3 +64,9 @@
 .quick-word>.quick-meaning[popover]:not(:popover-open){display:none}
 
 .supplemental-note .extra-usage p{font-size:16px;line-height:1.65;margin:0 0 16px}.supplemental-note .word-source{display:inline-block;font-size:13px;color:var(--muted);margin:18px 0}.supplemental-note .note-audio:empty{display:none}.supplemental-note .word-heading h1{margin:12px 0 24px}.supplemental-note .word-heading .say{font:inherit;color:inherit;background:none;border:0;border-bottom:1px dotted var(--line);padding:0;cursor:pointer}
+/* Row examples retain separate pronunciation controls. */
+.forms-table .example-row-select{font:inherit;color:inherit;text-align:left;border:0;background:transparent;padding:8px 0;cursor:pointer;width:100%}
+.forms-table tr[data-example-row]{cursor:pointer}
+.forms-table tr.example-selected{background:var(--soft,#e8f0e9)}
+.forms-table .example-row-select:focus-visible,.forms-table .example-alternative:focus-visible{outline:2px solid var(--accent,#34735b);outline-offset:2px}
+.forms-table .example-alternative{font:inherit;font-size:.75rem;color:inherit;border:0;background:transparent;padding:4px;text-decoration:underline;cursor:pointer}

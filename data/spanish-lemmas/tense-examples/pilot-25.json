@@ -1,0 +1,1311 @@
+{
+  "source": {
+    "name": "TUBELEX Spanish default word frequencies",
+    "url": "https://raw.githubusercontent.com/naist-nlp/tubelex/main/frequencies/tubelex-es.tsv.xz",
+    "paper": "https://aclanthology.org/2025.coling-main.641/",
+    "retrieved": "2026-10-27",
+    "sha256": "2dc0505b4a6a3539ae9e06307d29d61ef586b3416fbab50e1678f82df46319b9",
+    "totalTokens": 170983317,
+    "videos": 106625,
+    "channels": 38943,
+    "license": "BSD-3-Clause; see tubelex-LICENSE.txt",
+    "limitations": "YouTube subtitle proxy for spoken exposure, not a representative conversation corpus. Lowercased surface-form counts, not sense/person/tense-disambiguated frequencies. Candidate lists use present forms only; other tenses follow grammatical consistency, not measured rankings. Examples are original authored sentences, not corpus quotations.",
+    "failedSourceAttempts": [
+      "SUBTLEX-ESP authors page and ZIP returned HTTP 404; not used as frequency evidence."
+    ]
+  },
+  "entries": {
+    "ser": {
+      "person": "third",
+      "anchor": "es",
+      "anchorTense": "present",
+      "reason": "Lead with a description of something: the food is good. Es leads the present-form counts; the sentence and sense are editorial choices.",
+      "evidence": {
+        "count": 2473405,
+        "videos": 98079,
+        "channels": 30453
+      },
+      "presentCandidates": [
+        {
+          "form": "soy",
+          "slot": 0,
+          "count": 96886,
+          "channels": 12794
+        },
+        {
+          "form": "eres",
+          "slot": 1,
+          "count": 40840,
+          "channels": 7359
+        },
+        {
+          "form": "es",
+          "slot": 2,
+          "count": 2473405,
+          "channels": 30453
+        },
+        {
+          "form": "somos",
+          "slot": 3,
+          "count": 37333,
+          "channels": 7829
+        },
+        {
+          "form": "sois",
+          "slot": 4,
+          "count": 3369,
+          "channels": 1178
+        },
+        {
+          "form": "son",
+          "slot": 5,
+          "count": 392014,
+          "channels": 22977
+        }
+      ]
+    },
+    "estar": {
+      "person": "third",
+      "anchor": "está",
+      "anchorTense": "present",
+      "reason": "Lead with location of a concrete object. Está leads the present-form counts; do not infer the share of location uses from the spelling count.",
+      "evidence": {
+        "count": 632582,
+        "videos": 72606,
+        "channels": 23644
+      },
+      "presentCandidates": [
+        {
+          "form": "estoy",
+          "slot": 0,
+          "count": 142079,
+          "channels": 14264
+        },
+        {
+          "form": "estás",
+          "slot": 1,
+          "count": 74362,
+          "channels": 10451
+        },
+        {
+          "form": "está",
+          "slot": 2,
+          "count": 632582,
+          "channels": 23644
+        },
+        {
+          "form": "estamos",
+          "slot": 3,
+          "count": 169255,
+          "channels": 15819
+        },
+        {
+          "form": "estáis",
+          "slot": 4,
+          "count": 12719,
+          "channels": 2483
+        },
+        {
+          "form": "están",
+          "slot": 5,
+          "count": 208316,
+          "channels": 18333
+        }
+      ]
+    },
+    "tener": {
+      "person": "yo",
+      "anchor": "tengo",
+      "anchorTense": "present",
+      "reason": "Use a common personal possession/availability frame, I have time. Tengo is third by present token count; deliberately retain a useful first-person example instead of always choosing the maximum.",
+      "evidence": {
+        "count": 191940,
+        "videos": 36052,
+        "channels": 14498
+      },
+      "presentCandidates": [
+        {
+          "form": "tengo",
+          "slot": 0,
+          "count": 191940,
+          "channels": 14498
+        },
+        {
+          "form": "tienes",
+          "slot": 1,
+          "count": 97646,
+          "channels": 11432
+        },
+        {
+          "form": "tiene",
+          "slot": 2,
+          "count": 369127,
+          "channels": 21746
+        },
+        {
+          "form": "tenemos",
+          "slot": 3,
+          "count": 287398,
+          "channels": 17934
+        },
+        {
+          "form": "tenéis",
+          "slot": 4,
+          "count": 21450,
+          "channels": 3290
+        },
+        {
+          "form": "tienen",
+          "slot": 5,
+          "count": 139928,
+          "channels": 16323
+        }
+      ]
+    },
+    "ir": {
+      "person": "nosotros",
+      "anchor": "vamos",
+      "anchorTense": "present",
+      "reason": "Vamos leads the present-form counts and is widespread across channels. Keep a concrete destination; the count also includes ir a + infinitive and exhortative uses.",
+      "evidence": {
+        "count": 610823,
+        "videos": 56349,
+        "channels": 19401
+      },
+      "presentCandidates": [
+        {
+          "form": "voy",
+          "slot": 0,
+          "count": 304502,
+          "channels": 16182
+        },
+        {
+          "form": "vas",
+          "slot": 1,
+          "count": 74053,
+          "channels": 9287
+        },
+        {
+          "form": "va",
+          "slot": 2,
+          "count": 361834,
+          "channels": 18975
+        },
+        {
+          "form": "vamos",
+          "slot": 3,
+          "count": 610823,
+          "channels": 19401
+        },
+        {
+          "form": "vais",
+          "slot": 4,
+          "count": 10624,
+          "channels": 2149
+        },
+        {
+          "form": "van",
+          "slot": 5,
+          "count": 133866,
+          "channels": 14276
+        }
+      ]
+    },
+    "haber": {
+      "person": "impersonal",
+      "anchor": "hay",
+      "anchorTense": "present",
+      "reason": "Retain existential hay, already taught correctly in the balanced version. Hay is counted more than he in this corpus, but existential and auxiliary uses remain distinct.",
+      "evidence": {
+        "count": 452965,
+        "videos": 63480,
+        "channels": 21947
+      },
+      "presentCandidates": [
+        {
+          "form": "he",
+          "slot": 0,
+          "count": 144633,
+          "channels": 13254
+        },
+        {
+          "form": "has",
+          "slot": 1,
+          "count": 39614,
+          "channels": 7411
+        },
+        {
+          "form": "ha",
+          "slot": 2,
+          "count": 345436,
+          "channels": 20125
+        },
+        {
+          "form": "hemos",
+          "slot": 3,
+          "count": 117391,
+          "channels": 12895
+        },
+        {
+          "form": "habéis",
+          "slot": 4,
+          "count": 14091,
+          "channels": 2813
+        },
+        {
+          "form": "han",
+          "slot": 5,
+          "count": 142972,
+          "channels": 15143
+        },
+        {
+          "form": "hay",
+          "use": "existential",
+          "count": 452965,
+          "channels": 21947
+        }
+      ]
+    },
+    "hacer": {
+      "person": "ella",
+      "anchor": "hace",
+      "anchorTense": "present",
+      "reason": "Hace leads the present-form counts. Keep the ordinary action of preparing a meal; the count also includes impersonal weather/time expressions.",
+      "evidence": {
+        "count": 175849,
+        "videos": 51343,
+        "channels": 18593
+      },
+      "presentCandidates": [
+        {
+          "form": "hago",
+          "slot": 0,
+          "count": 38906,
+          "channels": 7342
+        },
+        {
+          "form": "haces",
+          "slot": 1,
+          "count": 15716,
+          "channels": 4803
+        },
+        {
+          "form": "hace",
+          "slot": 2,
+          "count": 175849,
+          "channels": 18593
+        },
+        {
+          "form": "hacemos",
+          "slot": 3,
+          "count": 49051,
+          "channels": 8631
+        },
+        {
+          "form": "hacéis",
+          "slot": 4,
+          "count": 2222,
+          "channels": 943
+        },
+        {
+          "form": "hacen",
+          "slot": 5,
+          "count": 42754,
+          "channels": 10032
+        }
+      ]
+    },
+    "poder": {
+      "person": "tú",
+      "anchor": "puedes",
+      "anchorTense": "present",
+      "reason": "Keep useful informal second-person ability: you can open the door. Puedes is well represented but not the highest form; this is a deliberate learner-usefulness and variety choice.",
+      "evidence": {
+        "count": 97662,
+        "videos": 30022,
+        "channels": 12329
+      },
+      "presentCandidates": [
+        {
+          "form": "puedo",
+          "slot": 0,
+          "count": 73675,
+          "channels": 10546
+        },
+        {
+          "form": "puedes",
+          "slot": 1,
+          "count": 97662,
+          "channels": 12329
+        },
+        {
+          "form": "puede",
+          "slot": 2,
+          "count": 256244,
+          "channels": 20230
+        },
+        {
+          "form": "podemos",
+          "slot": 3,
+          "count": 133341,
+          "channels": 14945
+        },
+        {
+          "form": "podéis",
+          "slot": 4,
+          "count": 24016,
+          "channels": 3529
+        },
+        {
+          "form": "pueden",
+          "slot": 5,
+          "count": 122367,
+          "channels": 15603
+        }
+      ]
+    },
+    "decir": {
+      "person": "ella",
+      "anchor": "dice",
+      "anchorTense": "present",
+      "reason": "Dice leads the present-form counts; retain a simple saying-the-truth example, without claiming the corpus isolates this sense.",
+      "evidence": {
+        "count": 164192,
+        "videos": 32136,
+        "channels": 12791
+      },
+      "presentCandidates": [
+        {
+          "form": "digo",
+          "slot": 0,
+          "count": 81731,
+          "channels": 9627
+        },
+        {
+          "form": "dices",
+          "slot": 1,
+          "count": 14315,
+          "channels": 3440
+        },
+        {
+          "form": "dice",
+          "slot": 2,
+          "count": 164192,
+          "channels": 12791
+        },
+        {
+          "form": "decimos",
+          "slot": 3,
+          "count": 10606,
+          "channels": 3702
+        },
+        {
+          "form": "decís",
+          "slot": 4,
+          "count": 2270,
+          "channels": 902
+        },
+        {
+          "form": "dicen",
+          "slot": 5,
+          "count": 36556,
+          "channels": 7730
+        }
+      ]
+    },
+    "dar": {
+      "person": "él",
+      "anchor": "da",
+      "anchorTense": "present",
+      "reason": "Da leads the present-form counts. Giving an answer is an editorial construction; da also includes commands.",
+      "evidence": {
+        "count": 77126,
+        "videos": 31162,
+        "channels": 12898
+      },
+      "presentCandidates": [
+        {
+          "form": "doy",
+          "slot": 0,
+          "count": 16988,
+          "channels": 4864
+        },
+        {
+          "form": "das",
+          "slot": 1,
+          "count": 9339,
+          "channels": 3465
+        },
+        {
+          "form": "da",
+          "slot": 2,
+          "count": 77126,
+          "channels": 12898
+        },
+        {
+          "form": "damos",
+          "slot": 3,
+          "count": 21410,
+          "channels": 5530
+        },
+        {
+          "form": "dais",
+          "slot": 4,
+          "count": 1611,
+          "channels": 703
+        },
+        {
+          "form": "dan",
+          "slot": 5,
+          "count": 25657,
+          "channels": 7509
+        }
+      ]
+    },
+    "ver": {
+      "person": "nosotros",
+      "anchor": "vemos",
+      "anchorTense": "present",
+      "reason": "Vemos leads the present-form counts. Keep watching a film; the count also contains discourse/illustrative uses. Avoid interpreting ve as exclusively ver: it is also an ir command.",
+      "evidence": {
+        "count": 78824,
+        "videos": 35902,
+        "channels": 13062
+      },
+      "presentCandidates": [
+        {
+          "form": "veo",
+          "slot": 0,
+          "count": 35218,
+          "channels": 6421
+        },
+        {
+          "form": "ves",
+          "slot": 1,
+          "count": 20857,
+          "channels": 5610
+        },
+        {
+          "form": "ve",
+          "slot": 2,
+          "count": 54528,
+          "channels": 10082
+        },
+        {
+          "form": "vemos",
+          "slot": 3,
+          "count": 78824,
+          "channels": 13062
+        },
+        {
+          "form": "veis",
+          "slot": 4,
+          "count": 28708,
+          "channels": 3092
+        },
+        {
+          "form": "ven",
+          "slot": 5,
+          "count": 34416,
+          "channels": 8092
+        }
+      ]
+    },
+    "saber": {
+      "person": "yo",
+      "anchor": "sé",
+      "anchorTense": "present",
+      "reason": "Sé leads the present-form counts. Teach knowing an answer; sé can also be the ser command, so its raw count is not a pure saber count.",
+      "evidence": {
+        "count": 139855,
+        "videos": 30081,
+        "channels": 12280
+      },
+      "presentCandidates": [
+        {
+          "form": "sé",
+          "slot": 0,
+          "count": 139855,
+          "channels": 12280
+        },
+        {
+          "form": "sabes",
+          "slot": 1,
+          "count": 38903,
+          "channels": 7453
+        },
+        {
+          "form": "sabe",
+          "slot": 2,
+          "count": 37485,
+          "channels": 8002
+        },
+        {
+          "form": "sabemos",
+          "slot": 3,
+          "count": 31533,
+          "channels": 7611
+        },
+        {
+          "form": "sabéis",
+          "slot": 4,
+          "count": 16714,
+          "channels": 2752
+        },
+        {
+          "form": "saben",
+          "slot": 5,
+          "count": 29565,
+          "channels": 7015
+        }
+      ]
+    },
+    "querer": {
+      "person": "yo",
+      "anchor": "quiero",
+      "anchorTense": "present",
+      "reason": "Quiero leads the present-form counts and supports a useful first-person desire. Keep wanting to learn Spanish.",
+      "evidence": {
+        "count": 109774,
+        "videos": 31703,
+        "channels": 13298
+      },
+      "presentCandidates": [
+        {
+          "form": "quiero",
+          "slot": 0,
+          "count": 109774,
+          "channels": 13298
+        },
+        {
+          "form": "quieres",
+          "slot": 1,
+          "count": 45629,
+          "channels": 9183
+        },
+        {
+          "form": "quiere",
+          "slot": 2,
+          "count": 65463,
+          "channels": 10760
+        },
+        {
+          "form": "queremos",
+          "slot": 3,
+          "count": 36152,
+          "channels": 8436
+        },
+        {
+          "form": "queréis",
+          "slot": 4,
+          "count": 10802,
+          "channels": 2461
+        },
+        {
+          "form": "quieren",
+          "slot": 5,
+          "count": 32186,
+          "channels": 7542
+        }
+      ]
+    },
+    "pasar": {
+      "person": "third",
+      "anchor": "pasa",
+      "anchorTense": "present",
+      "reason": "Pasa leads the present-form counts. Use the ordinary event sense with esto. Pasa can also be a command; the event-sense choice is editorial, not disambiguated corpus evidence.",
+      "evidence": {
+        "count": 69685,
+        "videos": 25627,
+        "channels": 10955
+      },
+      "presentCandidates": [
+        {
+          "form": "paso",
+          "slot": 0,
+          "count": 45636,
+          "channels": 9708
+        },
+        {
+          "form": "pasas",
+          "slot": 1,
+          "count": 2556,
+          "channels": 1421
+        },
+        {
+          "form": "pasa",
+          "slot": 2,
+          "count": 69685,
+          "channels": 10955
+        },
+        {
+          "form": "pasamos",
+          "slot": 3,
+          "count": 14181,
+          "channels": 4226
+        },
+        {
+          "form": "pasáis",
+          "slot": 4,
+          "count": 209,
+          "channels": 158
+        },
+        {
+          "form": "pasan",
+          "slot": 5,
+          "count": 8572,
+          "channels": 3834
+        }
+      ]
+    },
+    "llegar": {
+      "person": "ella",
+      "anchor": "llega",
+      "anchorTense": "present",
+      "reason": "Llega leads the present-form counts; keep arriving on time. The spelling also includes tú commands.",
+      "evidence": {
+        "count": 31587,
+        "videos": 16638,
+        "channels": 7822
+      },
+      "presentCandidates": [
+        {
+          "form": "llego",
+          "slot": 0,
+          "count": 3289,
+          "channels": 1738
+        },
+        {
+          "form": "llegas",
+          "slot": 1,
+          "count": 3100,
+          "channels": 1698
+        },
+        {
+          "form": "llega",
+          "slot": 2,
+          "count": 31587,
+          "channels": 7822
+        },
+        {
+          "form": "llegamos",
+          "slot": 3,
+          "count": 14707,
+          "channels": 4642
+        },
+        {
+          "form": "llegáis",
+          "slot": 4,
+          "count": 153,
+          "channels": 125
+        },
+        {
+          "form": "llegan",
+          "slot": 5,
+          "count": 10916,
+          "channels": 4144
+        }
+      ]
+    },
+    "dejar": {
+      "person": "ella",
+      "anchor": "deja",
+      "anchorTense": "present",
+      "reason": "Deja leads the present-form counts, with dejo also widespread. Keep leaving a key here; the spelling mixes statement and command uses.",
+      "evidence": {
+        "count": 24004,
+        "videos": 14766,
+        "channels": 7276
+      },
+      "presentCandidates": [
+        {
+          "form": "dejo",
+          "slot": 0,
+          "count": 20259,
+          "channels": 6055
+        },
+        {
+          "form": "dejas",
+          "slot": 1,
+          "count": 3300,
+          "channels": 1720
+        },
+        {
+          "form": "deja",
+          "slot": 2,
+          "count": 24004,
+          "channels": 7276
+        },
+        {
+          "form": "dejamos",
+          "slot": 3,
+          "count": 13608,
+          "channels": 4485
+        },
+        {
+          "form": "dejáis",
+          "slot": 4,
+          "count": 757,
+          "channels": 400
+        },
+        {
+          "form": "dejan",
+          "slot": 5,
+          "count": 7896,
+          "channels": 3544
+        }
+      ]
+    },
+    "llevar": {
+      "person": "él",
+      "anchor": "lleva",
+      "anchorTense": "present",
+      "reason": "Lleva leads the present-form counts. Keep carrying a box; auxiliary-like duration and clothing senses are not separated in the data.",
+      "evidence": {
+        "count": 33524,
+        "videos": 18278,
+        "channels": 8444
+      },
+      "presentCandidates": [
+        {
+          "form": "llevo",
+          "slot": 0,
+          "count": 11319,
+          "channels": 3758
+        },
+        {
+          "form": "llevas",
+          "slot": 1,
+          "count": 3553,
+          "channels": 1749
+        },
+        {
+          "form": "lleva",
+          "slot": 2,
+          "count": 33524,
+          "channels": 8444
+        },
+        {
+          "form": "llevamos",
+          "slot": 3,
+          "count": 9643,
+          "channels": 3620
+        },
+        {
+          "form": "lleváis",
+          "slot": 4,
+          "count": 463,
+          "channels": 289
+        },
+        {
+          "form": "llevan",
+          "slot": 5,
+          "count": 10456,
+          "channels": 4269
+        }
+      ]
+    },
+    "seguir": {
+      "person": "ella",
+      "anchor": "sigue",
+      "anchorTense": "present",
+      "reason": "Sigue leads the present-form counts. Retain following a path; continuing constructions and commands also contribute to the raw count.",
+      "evidence": {
+        "count": 38670,
+        "videos": 20042,
+        "channels": 8747
+      },
+      "presentCandidates": [
+        {
+          "form": "sigo",
+          "slot": 0,
+          "count": 8589,
+          "channels": 3251
+        },
+        {
+          "form": "sigues",
+          "slot": 1,
+          "count": 2285,
+          "channels": 1279
+        },
+        {
+          "form": "sigue",
+          "slot": 2,
+          "count": 38670,
+          "channels": 8747
+        },
+        {
+          "form": "seguimos",
+          "slot": 3,
+          "count": 19317,
+          "channels": 5385
+        },
+        {
+          "form": "seguís",
+          "slot": 4,
+          "count": 742,
+          "channels": 467
+        },
+        {
+          "form": "siguen",
+          "slot": 5,
+          "count": 13006,
+          "channels": 4491
+        }
+      ]
+    },
+    "encontrar": {
+      "person": "nosotros",
+      "anchor": "encontramos",
+      "anchorTense": "present",
+      "reason": "Encontramos is close to encuentra in token count and widely dispersed. Choose we find the key for person variety; encontramos also coincides with the preterite.",
+      "evidence": {
+        "count": 20127,
+        "videos": 10821,
+        "channels": 5644
+      },
+      "presentCandidates": [
+        {
+          "form": "encuentro",
+          "slot": 0,
+          "count": 14938,
+          "channels": 4491
+        },
+        {
+          "form": "encuentras",
+          "slot": 1,
+          "count": 4413,
+          "channels": 2103
+        },
+        {
+          "form": "encuentra",
+          "slot": 2,
+          "count": 24805,
+          "channels": 7141
+        },
+        {
+          "form": "encontramos",
+          "slot": 3,
+          "count": 20127,
+          "channels": 5644
+        },
+        {
+          "form": "encontráis",
+          "slot": 4,
+          "count": 393,
+          "channels": 258
+        },
+        {
+          "form": "encuentran",
+          "slot": 5,
+          "count": 11499,
+          "channels": 4568
+        }
+      ]
+    },
+    "poner": {
+      "person": "nosotros",
+      "anchor": "ponemos",
+      "anchorTense": "present",
+      "reason": "Ponemos is second by present token count and widely dispersed. Choose setting the table for a common shared action, rather than always selecting third person.",
+      "evidence": {
+        "count": 18390,
+        "videos": 9563,
+        "channels": 4875
+      },
+      "presentCandidates": [
+        {
+          "form": "pongo",
+          "slot": 0,
+          "count": 17823,
+          "channels": 4620
+        },
+        {
+          "form": "pones",
+          "slot": 1,
+          "count": 7135,
+          "channels": 2769
+        },
+        {
+          "form": "pone",
+          "slot": 2,
+          "count": 24217,
+          "channels": 6702
+        },
+        {
+          "form": "ponemos",
+          "slot": 3,
+          "count": 18390,
+          "channels": 4875
+        },
+        {
+          "form": "ponéis",
+          "slot": 4,
+          "count": 1072,
+          "channels": 522
+        },
+        {
+          "form": "ponen",
+          "slot": 5,
+          "count": 11333,
+          "channels": 4283
+        }
+      ]
+    },
+    "quedar": {
+      "person": "third",
+      "anchor": "queda",
+      "anchorTense": "present",
+      "reason": "Queda leads the present-form counts. Teach a free chair remaining, an editorial everyday construction; meeting arrangements, remaining and commands are not separated by the count.",
+      "evidence": {
+        "count": 57364,
+        "videos": 24409,
+        "channels": 10367
+      },
+      "presentCandidates": [
+        {
+          "form": "quedo",
+          "slot": 0,
+          "count": 5926,
+          "channels": 2529
+        },
+        {
+          "form": "quedas",
+          "slot": 1,
+          "count": 2204,
+          "channels": 1282
+        },
+        {
+          "form": "queda",
+          "slot": 2,
+          "count": 57364,
+          "channels": 10367
+        },
+        {
+          "form": "quedamos",
+          "slot": 3,
+          "count": 4714,
+          "channels": 2273
+        },
+        {
+          "form": "quedáis",
+          "slot": 4,
+          "count": 219,
+          "channels": 156
+        },
+        {
+          "form": "quedan",
+          "slot": 5,
+          "count": 16350,
+          "channels": 5450
+        }
+      ]
+    },
+    "hablar": {
+      "person": "ella",
+      "anchor": "habla",
+      "anchorTense": "present",
+      "reason": "Habla leads the present-form counts. Retain talking to Ana; habla also names speech as a noun and can be a command.",
+      "evidence": {
+        "count": 25292,
+        "videos": 12070,
+        "channels": 5971
+      },
+      "presentCandidates": [
+        {
+          "form": "hablo",
+          "slot": 0,
+          "count": 7766,
+          "channels": 3012
+        },
+        {
+          "form": "hablas",
+          "slot": 1,
+          "count": 2475,
+          "channels": 1271
+        },
+        {
+          "form": "habla",
+          "slot": 2,
+          "count": 25292,
+          "channels": 5971
+        },
+        {
+          "form": "hablamos",
+          "slot": 3,
+          "count": 16529,
+          "channels": 4654
+        },
+        {
+          "form": "habláis",
+          "slot": 4,
+          "count": 201,
+          "channels": 119
+        },
+        {
+          "form": "hablan",
+          "slot": 5,
+          "count": 7788,
+          "channels": 2953
+        }
+      ]
+    },
+    "parecer": {
+      "person": "third",
+      "anchor": "parece",
+      "anchorTense": "present",
+      "reason": "Parece strongly leads the present-form counts. Use a plan seeming easy, avoiding rare first-person parezco as the default.",
+      "evidence": {
+        "count": 81164,
+        "videos": 28851,
+        "channels": 11186
+      },
+      "presentCandidates": [
+        {
+          "form": "parezco",
+          "slot": 0,
+          "count": 475,
+          "channels": 306
+        },
+        {
+          "form": "pareces",
+          "slot": 1,
+          "count": 436,
+          "channels": 283
+        },
+        {
+          "form": "parece",
+          "slot": 2,
+          "count": 81164,
+          "channels": 11186
+        },
+        {
+          "form": "parecemos",
+          "slot": 3,
+          "count": 229,
+          "channels": 186
+        },
+        {
+          "form": "parecéis",
+          "slot": 4,
+          "count": 37,
+          "channels": 29
+        },
+        {
+          "form": "parecen",
+          "slot": 5,
+          "count": 6371,
+          "channels": 2992
+        }
+      ]
+    },
+    "pensar": {
+      "person": "yo",
+      "anchor": "pienso",
+      "anchorTense": "present",
+      "reason": "Pienso narrowly leads by tokens, while piensa appears in slightly more channels. Keep a useful first-person thought; do not claim an unambiguous winner across frequency measures.",
+      "evidence": {
+        "count": 11403,
+        "videos": 6157,
+        "channels": 3555
+      },
+      "presentCandidates": [
+        {
+          "form": "pienso",
+          "slot": 0,
+          "count": 11403,
+          "channels": 3555
+        },
+        {
+          "form": "piensas",
+          "slot": 1,
+          "count": 4482,
+          "channels": 2042
+        },
+        {
+          "form": "piensa",
+          "slot": 2,
+          "count": 10480,
+          "channels": 3702
+        },
+        {
+          "form": "pensamos",
+          "slot": 3,
+          "count": 5475,
+          "channels": 2494
+        },
+        {
+          "form": "pensáis",
+          "slot": 4,
+          "count": 1002,
+          "channels": 427
+        },
+        {
+          "form": "piensan",
+          "slot": 5,
+          "count": 4943,
+          "channels": 2342
+        }
+      ]
+    },
+    "creer": {
+      "person": "yo",
+      "anchor": "creo",
+      "anchorTense": "present",
+      "reason": "Creo strongly leads by tokens. Keep first-person belief; creo can also be crear present, though that ambiguity is not resolved in these counts.",
+      "evidence": {
+        "count": 169992,
+        "videos": 31327,
+        "channels": 12398
+      },
+      "presentCandidates": [
+        {
+          "form": "creo",
+          "slot": 0,
+          "count": 169992,
+          "channels": 12398
+        },
+        {
+          "form": "crees",
+          "slot": 1,
+          "count": 10555,
+          "channels": 3506
+        },
+        {
+          "form": "cree",
+          "slot": 2,
+          "count": 12458,
+          "channels": 4091
+        },
+        {
+          "form": "creemos",
+          "slot": 3,
+          "count": 5940,
+          "channels": 2343
+        },
+        {
+          "form": "creéis",
+          "slot": 4,
+          "count": 1208,
+          "channels": 521
+        },
+        {
+          "form": "creen",
+          "slot": 5,
+          "count": 8133,
+          "channels": 3011
+        }
+      ]
+    },
+    "mirar": {
+      "person": "él",
+      "anchor": "mira",
+      "anchorTense": "commands",
+      "reason": "Mira strongly leads the present-form spellings. Feature Mira el mapa as the command example by editorial choice; the counts cannot establish how many mira tokens are commands, statements or discourse markers.",
+      "evidence": {
+        "count": 69788,
+        "videos": 19504,
+        "channels": 8301
+      },
+      "presentCandidates": [
+        {
+          "form": "miro",
+          "slot": 0,
+          "count": 2629,
+          "channels": 1277
+        },
+        {
+          "form": "miras",
+          "slot": 1,
+          "count": 2367,
+          "channels": 1252
+        },
+        {
+          "form": "mira",
+          "slot": 2,
+          "count": 69788,
+          "channels": 8301
+        },
+        {
+          "form": "miramos",
+          "slot": 3,
+          "count": 3029,
+          "channels": 1487
+        },
+        {
+          "form": "miráis",
+          "slot": 4,
+          "count": 192,
+          "channels": 137
+        },
+        {
+          "form": "miran",
+          "slot": 5,
+          "count": 2813,
+          "channels": 1328
+        }
+      ]
+    }
+  },
+  "frameOverrides": {
+    "tener": {
+      "es": "tiempo",
+      "en": "have time"
+    },
+    "ser": {
+      "es": "buena",
+      "en": "be good"
+    },
+    "estar": {
+      "es": "aquí",
+      "en": "be here"
+    },
+    "pasar": {
+      "es": "a menudo",
+      "en": "happen often"
+    },
+    "quedar": {
+      "es": "libre",
+      "en": "remain free"
+    },
+    "parecer": {
+      "es": "fácil",
+      "en": "seem easy"
+    }
+  },
+  "subjectOverrides": {
+    "ser": [
+      "La comida",
+      "The food"
+    ],
+    "estar": [
+      "La llave",
+      "The key"
+    ],
+    "pasar": [
+      "Esto",
+      "This"
+    ],
+    "quedar": [
+      "Una silla",
+      "A chair"
+    ],
+    "parecer": [
+      "El plan",
+      "The plan"
+    ]
+  },
+  "glossOverrides": {
+    "ser": {
+      "buena": "good"
+    },
+    "pasar": {
+      "esto": "this",
+      "a": "in a menudo: often",
+      "menudo": "in a menudo: often"
+    },
+    "quedar": {
+      "libre": "free; available"
+    }
+  }
+}

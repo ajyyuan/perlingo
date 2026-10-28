@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-28",
+  "verbs": 369,
+  "displayedRows": 18309,
+  "exampleAlternatives": 17987,
+  "contextualNotices": 328,
+  "scope": "Every displayed row and alternative is checked against frozen conjugations and gloss rendering. Targeted construction review, not independent linguistic certification of every sentence.",
+  "sources": [
+    "https://www.udep.edu.pe/castellanoactual/duda-resuelta-el-verbo-gustar-2/",
+    "https://dem.colmex.mx/ver/antepret%C3%A9rito"
+  ],
+  "hashes": {
+    "scripts/build-lemma-row-examples.mjs": "0db5ef5fd6149991943182a2fe4b94bdbd801fff835797b56d8636e4ade6b888",
+    "scripts/build-lemma-tense-examples.mjs": "efbd2c5d74ec9195cb77c6caf6d77ea9f978d386b051c870aa0a11156b4a9ea6",
+    "lemmas/verb-forms-data.js": "547f29015b21d1ecd720b8206d487537180c084863b6875ab5ac9fa4a1d23fc3",
+    "data/spanish-lemmas/tense-examples/frames.txt": "8de49c420628ad8567adebd510167b42a9d479368221d1882a7721c1e122345c",
+    "data/spanish-lemmas/tense-examples/special.json": "5b15a12b273ea7046e1aa2a9f74ad5bea56238c0bf03d9c639607940dfe94c87",
+    "data/spanish-lemmas/tense-examples/words.txt": "5ddf5787f39df68e26578bd127a9e58fce9b2d54f77628431319c85d1c5f12c6",
+    "lemmas/row-examples-data.js": "72fb4862b084accfc27c2c89ab348407d96c5f709f0aa0747ebe9388a7aaae44"
+  }
+}

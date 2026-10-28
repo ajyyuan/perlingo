@@ -1,0 +1,548 @@
+{
+  "method": "Keep the reviewed 25-verb choices. For additional flexible verbs, rank non-excluded present spellings by token count, then channel count. Retain the balanced slot when its count is at least 65% and its channel coverage at least 55% of the leading eligible form. These are editorial variety thresholds, not a validated learning model. Keep fixed-subject constructions; explicitly author soler. Freeze all decisions in frequency-pilot.json.",
+  "limitations": "All counts remain undisambiguated surface-form evidence. Command/declarative overlap and unflagged homographs remain possible. This screen is conservative, not exhaustive POS tagging.",
+  "excludedFromAutomaticRanking": {
+    "contar": {
+      "forms": [
+        "cuenta",
+        "cuento",
+        "cuentas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "crear": {
+      "forms": [
+        "creo"
+      ],
+      "reason": "Creo also belongs to creer, so its count is not evidence for first-person crear."
+    },
+    "vivir": {
+      "forms": [
+        "vivo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "trabajar": {
+      "forms": [
+        "trabajo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "preguntar": {
+      "forms": [
+        "pregunta",
+        "preguntas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "mostrar": {
+      "forms": [
+        "muestra",
+        "muestras"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "ganar": {
+      "forms": [
+        "ganas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "cambiar": {
+      "forms": [
+        "cambio"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "jugar": {
+      "forms": [
+        "juego"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "sentar": {
+      "forms": [
+        "siento",
+        "sienta",
+        "sientas",
+        "sientan"
+      ],
+      "reason": "Siento and the sienta/sientas/sientan spellings overlap with sentir; prefer an unshared sentar form."
+    },
+    "leer": {
+      "forms": [
+        "leo"
+      ],
+      "reason": "The lowercased leo count includes the name/zodiac Leo."
+    },
+    "ayudar": {
+      "forms": [
+        "ayuda",
+        "ayudas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "desarrollar": {
+      "forms": [
+        "desarrollo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "formar": {
+      "forms": [
+        "forma",
+        "formas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "usar": {
+      "forms": [
+        "uso"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "conseguir": {
+      "forms": [
+        "consigo"
+      ],
+      "reason": "Consigo is also a tonic pronoun."
+    },
+    "pagar": {
+      "forms": [
+        "pago",
+        "pagas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "comer": {
+      "forms": [
+        "como"
+      ],
+      "reason": "Como is also a common conjunction/adverb."
+    },
+    "acercar": {
+      "forms": [
+        "acerca"
+      ],
+      "reason": "Acerca occurs in the fixed expression acerca de."
+    },
+    "bajar": {
+      "forms": [
+        "bajo",
+        "baja",
+        "bajas"
+      ],
+      "reason": "Bajo is also a preposition/adjective; baja and bajas also have nominal/adjectival uses."
+    },
+    "iniciar": {
+      "forms": [
+        "inicio"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "comprar": {
+      "forms": [
+        "compra",
+        "compras"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "estudiar": {
+      "forms": [
+        "estudio"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "aumentar": {
+      "forms": [
+        "aumento"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "anunciar": {
+      "forms": [
+        "anuncio"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "mejorar": {
+      "forms": [
+        "mejora",
+        "mejoras"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "regresar": {
+      "forms": [
+        "regreso"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "soler": {
+      "forms": [
+        "suelo"
+      ],
+      "reason": "Suelo is also the noun for floor/ground; retain the defective paradigm with a reviewed third-person setting."
+    },
+    "entregar": {
+      "forms": [
+        "entrega",
+        "entregas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "apoyar": {
+      "forms": [
+        "apoyo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "marcar": {
+      "forms": [
+        "marco",
+        "marca",
+        "marcas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "sumar": {
+      "forms": [
+        "sumo",
+        "suma",
+        "sumas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "caminar": {
+      "forms": [
+        "camino"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "desear": {
+      "forms": [
+        "deseo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "abandonar": {
+      "forms": [
+        "abandono"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "unir": {
+      "forms": [
+        "uno"
+      ],
+      "reason": "Uno is also a numeral/pronoun."
+    },
+    "visitar": {
+      "forms": [
+        "visita",
+        "visitas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "manifestar": {
+      "forms": [
+        "manifiesto",
+        "manifiesta",
+        "manifiestas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "registrar": {
+      "forms": [
+        "registro"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "reír": {
+      "forms": [
+        "río"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "causar": {
+      "forms": [
+        "causa",
+        "causas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "tirar": {
+      "forms": [
+        "tiro",
+        "tira",
+        "tiras"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "parar": {
+      "forms": [
+        "para",
+        "paro"
+      ],
+      "reason": "Para is also a preposition; paro is also a noun."
+    },
+    "acordar": {
+      "forms": [
+        "acuerdo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "gritar": {
+      "forms": [
+        "grito"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "mandar": {
+      "forms": [
+        "mando"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "notar": {
+      "forms": [
+        "nota",
+        "notas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "vestir": {
+      "forms": [
+        "visto",
+        "viste"
+      ],
+      "reason": "Visto is also the ver participle; viste is also ver preterite."
+    },
+    "cantar": {
+      "forms": [
+        "canto"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "partir": {
+      "forms": [
+        "parto",
+        "parte",
+        "partes"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "cortar": {
+      "forms": [
+        "corto",
+        "corta",
+        "cortas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "firmar": {
+      "forms": [
+        "firma",
+        "firmas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "fijar": {
+      "forms": [
+        "fijo",
+        "fija",
+        "fijas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "impulsar": {
+      "forms": [
+        "impulso"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "retirar": {
+      "forms": [
+        "retiro"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "reflejar": {
+      "forms": [
+        "reflejo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "probar": {
+      "forms": [
+        "prueba",
+        "pruebas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "llenar": {
+      "forms": [
+        "lleno",
+        "llena",
+        "llenas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "manejar": {
+      "forms": [
+        "manejo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "amar": {
+      "forms": [
+        "amo",
+        "ama",
+        "amas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "salvar": {
+      "forms": [
+        "salvo",
+        "salva",
+        "salvas"
+      ],
+      "reason": "Salvo is also except/safe; salva and salvas have nominal/adjectival uses."
+    },
+    "citar": {
+      "forms": [
+        "cita",
+        "citas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "emplear": {
+      "forms": [
+        "empleo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "trasladar": {
+      "forms": [
+        "traslado"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "consumir": {
+      "forms": [
+        "consumo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "casar": {
+      "forms": [
+        "caso",
+        "casa",
+        "casas"
+      ],
+      "reason": "Caso, casa and casas also name case/house/houses."
+    },
+    "respetar": {
+      "forms": [
+        "respeto"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "incrementar": {
+      "forms": [
+        "incremento"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "denunciar": {
+      "forms": [
+        "denuncia",
+        "denuncias"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "despedir": {
+      "forms": [
+        "despido"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "rechazar": {
+      "forms": [
+        "rechazo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "ingresar": {
+      "forms": [
+        "ingreso"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "luchar": {
+      "forms": [
+        "lucha",
+        "luchas"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "encargar": {
+      "forms": [
+        "encargo"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "cobrar": {
+      "forms": [
+        "cobra"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "matar": {
+      "forms": [
+        "mata"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "lanzar": {
+      "forms": [
+        "lanza"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    },
+    "guardar": {
+      "forms": [
+        "guarda"
+      ],
+      "reason": "These spellings also have nominal, adjectival or other non-target uses; do not let those raw counts drive the person choice."
+    }
+  },
+  "senseNotes": {
+    "deber": "Counts do not distinguish obligation from owing money; retain the taught ten-euro debt frame.",
+    "llamar": "Counts include llamarse; retain the transitive calling-Ana frame.",
+    "asegurar": "Counts do not distinguish securing a door from reassuring someone; retain the taught door frame.",
+    "referir": "Counts include referirse; retain the reviewed recounting-facts sense.",
+    "importar": "Counts do not distinguish mattering from importing goods; retain the taught coffee-import sense.",
+    "disponer": "Counts include disponer de; retain the reviewed arranging-chairs sense.",
+    "corresponder": "Counts cover several senses; retain reciprocating kindness, not an inferred dominant construction.",
+    "acordar": "Counts include acordarse; retain agreeing on a date, not remembering.",
+    "interesar": "Retain the transitive audience-interest construction; no shift to interesarse is inferred.",
+    "preocupar": "Retain worrying Ana; the counts also include preocuparse.",
+    "contener": "Retain containing emotion; counts do not isolate this sense.",
+    "basar": "Counts include basarse; retain basing a report on data.",
+    "casar": "Retain the officiant marrying a couple, not reflexive casarse.",
+    "despedir": "Retain dismissing an employee, not despedirse.",
+    "coger": "Retain the Spain-oriented train-taking sense; counts are not a regional usage recommendation.",
+    "tender": "Counts include tender a (tend to); retain the taught hanging-laundry sense."
+  },
+  "nearLeaderCountRatio": 0.65,
+  "nearLeaderChannelRatio": 0.55,
+  "personOverrides": {
+    "leer": {
+      "person": "nosotros",
+      "reason": "Use leemos for a clear shared reading action; leo includes a proper name and lee can include the surname Lee."
+    }
+  },
+  "reviewDate": "2026-10-28"
+}

@@ -1,3 +1,4 @@
+import {exampleNoteHref} from './example-mode.js';
 // Only match course headwords, explicitly listed forms and authored context targets.
 const normal=text=>text.normalize('NFC').toLocaleLowerCase('es');
 const escape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -21,5 +22,5 @@ let lookup=()=>[];
 export function configureCardLinks(notes,contexts){lookup=createCardLookup(notes,contexts);}
 export function cardLinks(text){
  const matches=new Map();for(const word of text.normalize('NFC').match(/[\p{L}]+/gu)||[])for(const n of lookup(word))matches.set(n.id,n);
- return [...matches.values()].map(n=>`<a class="lemma-card-link" href="/lemmas/notes.html#${encodeURIComponent(n.id)}" data-lemma-card="${escape(n.id)}">Open card · ${escape(n.word)} <small>${escape(n.label)}</small> ↗</a>`).join('');
+ return [...matches.values()].map(n=>`<a class="lemma-card-link" href="${escape(exampleNoteHref(n.id))}" data-lemma-card="${escape(n.id)}">Open card · ${escape(n.word)} <small>${escape(n.label)}</small> ↗</a>`).join('');
 }

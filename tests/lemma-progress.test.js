@@ -38,3 +38,11 @@ test('reset persists offline, retains recovery and syncs on reconnect; stale dev
 test('learning before first cloud read does not silently overwrite either copy',async()=>{
  const p=fresh();p.flows[0].index=8;const a=setup({row:{revision:1,payload:p}});const local=fresh();local.flows[0].index=2;a.sync.save(local);await a.sync.sync();assert.equal(a.states.at(-1).state,'choice');assert.equal(a.cloud().payload.flows[0].index,8);a.sync.dispose();
 });
+test('example seed travels with cloud progress and changes with an explicit course reset',async()=>{
+ const p={...fresh(),exampleSeed:1234};const a=setup({row:{revision:1,payload:p}});
+ await a.sync.sync();assert.equal(a.sync.getProgress().exampleSeed,1234);
+ const reset={...fresh(),exampleSeed:5678};await a.sync.reset(reset);
+ assert.equal(a.cloud().payload.exampleSeed,5678);
+ assert.equal(JSON.parse(a.store.getItem('account:recovery')).progress.exampleSeed,1234);
+ a.sync.dispose();
+});

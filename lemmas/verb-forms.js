@@ -1,5 +1,6 @@
 import {verbForms} from './verb-forms-data.js';
 import {tenseExamples} from './tense-examples-data.js';
+import {exampleFor,exampleMode} from './example-variants.js';
 import {tenerGroups} from './tener-prototype.js';
 export const tenseOrder=['imperfect','preterite','present','future','conditional','perfect','subjunctive','commands','negative'];
 export const tenseLabels={present:'Present',preterite:'Past',imperfect:'Past · ongoing',future:'Future',conditional:'Conditional',perfect:'Perfect',subjunctive:'Subjunctive',commands:'Do',negative:'Don’t'};
@@ -10,11 +11,11 @@ const subjects=['yo','tú','él / ella / usted','nosotros / nosotras','vosotros 
 const commandLabels=['you · informal','you · formal','you · plural, Spain','you · plural'];
 const commandSubjects=['tú','usted','vosotros / vosotras','ustedes'];
 const restricted=new Set(['ocurrir','suceder','consistir']);
-export function formGroups(note){
+export function formGroups(note,mode=exampleMode()){
  const data=verbForms[note.id];if(!data)return [];
  return tenseOrder.map(id=>{
   const command=['commands','negative'].includes(id);
-  let rows=data[id].map((alternatives,i)=>({lemma:alternatives[0],alternatives,label:(command?commandLabels:labels)[i],sourceLabel:(command?commandSubjects:subjects)[i]}));
+  let rows=data[id].map((alternatives,i)=>({slot:i,lemma:alternatives[0],alternatives,label:(command?commandLabels:labels)[i],sourceLabel:(command?commandSubjects:subjects)[i]}));
   let cue=cues[id],notice='';
   if(restricted.has(note.word)){
    if(command){rows=[];notice='Not used as a command for the meaning taught on this card.';}
@@ -24,8 +25,9 @@ export function formGroups(note){
    if(command){rows=[];notice='Haber is not used in ordinary modern commands. Use tener for possession.';}
    else if(id==='perfect'){rows=[{...rows[2],label:'there has / have been',sourceLabel:'impersonal'}];cue='Ha habido · “there has/have been,” always singular.';}
    else{
-    if(id==='present'){rows[2]={...rows[2],lemma:'ha',alternatives:['ha']};rows.push({lemma:'hay',alternatives:['hay'],label:'there is / are',sourceLabel:'impersonal'});}
+    if(id==='present'){rows[2]={...rows[2],lemma:'ha',alternatives:['ha']};rows.push({slot:6,lemma:'hay',alternatives:['hay'],label:'there is / are',sourceLabel:'impersonal'});}
     const impersonal={present:'hay',preterite:'hubo',imperfect:'había',future:'habrá',conditional:'habría',subjunctive:'haya'}[id];
+    if(id!=='present')rows.push({slot:6,lemma:impersonal,alternatives:[impersonal],label:({preterite:'there was / were',imperfect:'there was / were',future:'there will be',conditional:'there would be',subjunctive:'there is / are'})[id]+' · impersonal',sourceLabel:'impersonal'});
     cue=`Auxiliary forms. For “there is/are,” use only ${impersonal}, even with plural things.`;
     if(id==='preterite')cue+=' Hube, hubiste, etc. are mainly literary as auxiliaries.';
    }
@@ -35,11 +37,11 @@ export function formGroups(note){
    if(['future','conditional','commands','negative','preterite'].includes(id)){rows=[];notice=tenseExamples[note.id][id].notice;}
    if(id==='perfect')cue+=' This compound form of soler is uncommon.';
   }
-  const example=tenseExamples[note.id]?.[id];
+  const example=exampleFor(note.id,id,mode);
   if(note.word==='tener')cue=tenerGroups.find(g=>g.id===id).cue;
   return {id,title:titles[id],cue,notice,rows,...(example?.text?example:{exampleNotice:example?.notice||''})};
  });
 }
-export function formGroup(note,id='present'){const groups=formGroups(note);return groups.find(g=>g.id===id)||groups.find(g=>g.id==='present')||null;}
+export function formGroup(note,id='present',mode=exampleMode()){const groups=formGroups(note,mode);return groups.find(g=>g.id===id)||groups.find(g=>g.id==='present')||null;}
 
 export function referenceForms(note){return [...formGroups(note).flatMap(g=>g.rows.flatMap(r=>(r.alternatives||[r.lemma]).map(f=>[r.sourceLabel,f]))),...(verbForms[note.id]?.participle||[]).map(f=>["past participle",f])];}

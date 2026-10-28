@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-28",
+  "banks": {
+    "balanced": {
+      "verbs": 369,
+      "examples": 3252,
+      "notices": 69,
+      "presentSlots": {
+        "0": 70,
+        "1": 69,
+        "2": 86,
+        "3": 69,
+        "5": 72,
+        "special": 3
+      }
+    },
+    "frequency": {
+      "verbs": 369,
+      "examples": 3252,
+      "notices": 69,
+      "presentSlots": {
+        "0": 26,
+        "1": 1,
+        "2": 290,
+        "3": 24,
+        "5": 27,
+        "special": 1
+      }
+    }
+  },
+  "commandRecordsComparedWithHead": 1476,
+  "sha256": {
+    "lemmas/tense-examples-data.js": "9c75f2231fbe03be5df6c0bbe413e2ae4f047ab636915aa0131b7e581aa7bc90",
+    "lemmas/frequency-pilot-data.js": "26e32d274ced4f296271b1c3a43a9e804bdb8f775f9091b59d254c171233894d"
+  },
+  "commandComparisonCommit": "a233e125f8ec89740669b76fa7d909a033892533",
+  "scope": "Automated coverage, row agreement, gloss completeness, selected English agreement checks and command comparison; not independent sentence-by-sentence linguistic certification.",
+  "findings": [
+    "Search and word-help fallback links lost the explicit example mode; fixed with a shared URL helper.",
+    "Frequency mode selects 290 third-singular forms and only one second-singular form; retained as an opt-in editorial experiment, not a balanced teaching distribution."
+  ],
+  "browserChecks": [
+    "All 15 pages visited: 369 unique verbs; Next disabled at 351–369.",
+    "Frequency search link retains examples=frequency and set; mirar opens on commands, then switches to completed past with complete six-person table.",
+    "Prior retry: comer excluded-count disclosure and soler present/future notices.",
+    "Standalone notes preserve frequency mode when selecting another word and in the Cards return link."
+  ],
+  "validation": {
+    "tests": 360,
+    "passed": 360,
+    "contentAndSyntaxChecks": "passed",
+    "balancedSnapshot": "byte-identical to pre-expansion snapshot",
+    "frequencyEvidence": "reproduces exactly from SHA-256-verified TUBELEX archive",
+    "staticBuild": "Passed with documented external audio host: 202 files, 30.1 MiB. Default full local audio build exceeds the asset-count limit."
+  }
+}

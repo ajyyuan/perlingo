@@ -69,7 +69,10 @@ test('all simple reference forms match frozen tagged source slots and older snap
  const pronounReview=read('data/spanish-lemmas/pronoun-recall-audit.json');
  assert.equal(pronounReview.beforeSha256,nounReview.afterSha256);
  assert.equal(digest('lemmas/data/context.json'),pronounReview.afterSha256);
- for(const [file,hash]of Object.entries(audit.unchanged.assessment))assert.equal(digest(file),hash);
+ for(const [file,hash]of Object.entries(audit.unchanged.assessment)){
+  if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(digest(file),seedAudit.afterSha256);}
+  else assert.equal(digest(file),hash);
+ }
 });
 test('conjugation compilation is deterministic and offline',()=>{
  const path=new URL('../lemmas/verb-forms-data.js',import.meta.url),before=readFileSync(path,'utf8');

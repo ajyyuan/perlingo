@@ -1,3 +1,5 @@
+import {setCourseExampleSeed} from './row-examples.js';
+import {exampleNoteHref} from './example-mode.js';
 import {recallCue,contextFeedbackAnswer} from './recall-prompt.js';
 import {highlightMatch} from './search-highlight.js';
 import {searchCards,searchAllowed} from './search.js';
@@ -6,7 +8,7 @@ import {bindCardPreview} from './card-preview.js';
 import {createAccount} from '/src/account.js';
 import {accountConfig} from '/src/account-config.js';
 import {lemmaRemote} from './account-store.js';
-import {restoreProgress,validProgress} from './progress.js';
+import {restoreProgress,validProgress,createCourseProgress} from './progress.js';
 import {mountStudyCard} from './study-card.js';
 import {keyboardCommand,moveIndex} from './keyboard.js';
 import {cleanDictation} from './dictation-text.js';
@@ -111,7 +113,7 @@ searchDialog.addEventListener('keydown',e=>{
 });
 function canSearch(){return searchAllowed(view,data.activeExam||['choice','test'].includes(flow().phase)?activeTest():null);}
 function browse(){if(!canSearch())return;searchAnchor=document.activeElement;dictation.cancel();answerAudio.stop();searchDialog.querySelector('#search').value=search;renderList();searchDialog.showModal();searchDialog.querySelector('#search').focus();}
-function renderList(){const q=search.trim().toLocaleLowerCase(),matches=searchCards(deck,q);searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="/lemmas/notes.html?set=${Math.ceil(c.rank/50)}#${encodeURIComponent(c.id)}"><span lang="es">${highlightMatch(c.lemma,q)}<small>${esc(c.partOfSpeech)}</small></span><span>${highlightMatch(c.meaning,q)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
+function renderList(){const q=search.trim().toLocaleLowerCase(),matches=searchCards(deck,q);searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="${esc(exampleNoteHref(c.id,{set:Math.ceil(c.rank/50)}))}"><span lang="es">${highlightMatch(c.lemma,q)}<small>${esc(c.partOfSpeech)}</small></span><span>${highlightMatch(c.meaning,q)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
 function render(focus){
  unmount();unmount=()=>{};answerAudio.stop();dictation.cancel();document.body.dataset.view=view;
  if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
@@ -210,12 +212,12 @@ try{
  const response=await fetch('/lemmas/data/deck.json');if(!response.ok)throw Error('deck');const source=await response.json(),library=await loadNotes();notes=new Map(library.notes.map(n=>[n.id,n]));concepts=library.concepts;bindCardPreview({notes:library.notes,concepts,voice,onOpen:()=>{dictation.cancel();answerAudio.stop();}});
  deck=source.map(c=>({...c,meaning:notes.get(c.id).meaning,context:library.contexts.get(c.id)}));byId=new Map(deck.map(c=>[c.id,c]));let raw;
  try{raw=JSON.parse(localStorage.getItem(KEY));}catch{warning.hidden=false;warning.textContent='Saved progress is unavailable. This session can still be used.';}
- data=restoreProgress(raw,deck);render();
+ data=raw?restoreProgress(raw,deck):createCourseProgress(deck);setCourseExampleSeed(data.exampleSeed);if(!raw)save();render();
  account=createAccount({config:accountConfig,pack:'lemmas',storage:localStorage,
   getGuest:()=>restoreProgress(JSON.parse(localStorage.getItem(KEY)),deck),
-  initialAccount:()=>restoreProgress(null,deck),autoLink:true,remoteFactory:lemmaRemote,
+  initialAccount:()=>createCourseProgress(deck),autoLink:true,remoteFactory:lemmaRemote,
   validate:p=>validProgress(p,deck),describe:p=>`day ${(p?.day||0)+1}`,
-  apply:p=>{dictation.cancel();answerAudio.stop();data=p;view='study';render();},
+  apply:p=>{dictation.cancel();answerAudio.stop();data=restoreProgress(p,deck);setCourseExampleSeed(data.exampleSeed);view='study';render();},
   onStorageError:()=>{warning.hidden=false;warning.textContent='Account progress could not be saved. Open Account for details.';}
  });
  account.mount();account.start();
@@ -229,8 +231,8 @@ accountDialog.addEventListener('close',()=>document.querySelector('#account-open
 accountDialog.querySelector('[data-reset-course]').onclick=async()=>{
  if(!confirm('Reset all Lemmas progress and test results? You will stay signed in. This cannot be undone here.'))return;
  const status=accountDialog.querySelector('[data-reset-status]');
- try{const fresh=restoreProgress(null,deck);
-  if(!await account.reset(fresh)){localStorage.setItem(KEY+':recovery',JSON.stringify(data));localStorage.setItem(KEY,JSON.stringify(fresh));data=fresh;view='study';render();}
+ try{const fresh=createCourseProgress(deck);
+  if(!await account.reset(fresh)){localStorage.setItem(KEY+':recovery',JSON.stringify(data));localStorage.setItem(KEY,JSON.stringify(fresh));data=fresh;setCourseExampleSeed(data.exampleSeed);view='study';render();}
   status.textContent='Course reset. Account sync status is shown above.';
  }catch(error){status.textContent=error.message;}
 };
