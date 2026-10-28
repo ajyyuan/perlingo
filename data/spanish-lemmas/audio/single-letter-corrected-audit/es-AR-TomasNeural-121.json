@@ -1,0 +1,24 @@
+{
+  "text": "y",
+  "locale": "es-AR",
+  "voice": "es-AR-TomasNeural",
+  "gender": "masculine",
+  "file": "72bdabe5c14da69f7b5ef585.mp3",
+  "sha256": "feeed8240c4fe16e5b1ecc872f88a8ed737232189d6046985067566462c8a5a1",
+  "durationSeconds": 1.872,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1900000,
+    "Duration": 1900000,
+    "DisplayText": "Y.",
+    "NBest": [
+      {
+        "Confidence": 0.84246135,
+        "Lexical": "y",
+        "ITN": "y",
+        "MaskedITN": "y",
+        "Display": "Y."
+      }
+    ]
+  }
+}

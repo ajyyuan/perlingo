@@ -1,0 +1,24 @@
+{
+  "text": "y",
+  "locale": "es-MX",
+  "voice": "es-MX-JorgeNeural",
+  "gender": "masculine",
+  "file": "es-MX/0a1abaf20ced2b86866ab0fc.mp3",
+  "sha256": "be407218ac817218a8d38fd6878c1d3ea69016c3ee343b999fdb9c40f77e950e",
+  "durationSeconds": 1.656,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1500000,
+    "Duration": 7200000,
+    "DisplayText": "Y griega.",
+    "NBest": [
+      {
+        "Confidence": 0.88824576,
+        "Lexical": "y griega",
+        "ITN": "y griega",
+        "MaskedITN": "y griega",
+        "Display": "Y griega."
+      }
+    ]
+  }
+}

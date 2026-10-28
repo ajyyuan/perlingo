@@ -8,7 +8,7 @@ Meaning and uses share the left column; forms occupy the right, separated by a s
 
 Next moves through the three reference cards. The final button says Back to course and opens `/lemmas/`; it never launches form recall. Full notes opens a popup containing the existing lexical reference, chunk meanings, grammar help and shared personal notes. Escape dismisses the topmost popup.
 
-Tab/Shift+Tab reach controls. Arrow keys navigate words, while arrows/Home/End inside the tense picker select forms; `[` / `]` select the previous/next tense from elsewhere on the card. Typing, modifiers and open popups are protected. The central scroll region retains native Up/Down/Page/Home/End scrolling. Pronunciation and French Thomas settings are preserved.
+Tab/Shift+Tab reach controls. Arrow keys navigate words, while arrows/Home/End inside the tense picker select forms; `-` / `=` select the previous/next tense from elsewhere on the card. Typing, modifiers and open popups are protected. The central scroll region retains native Up/Down/Page/Home/End scrolling. Pronunciation and French Thomas settings are preserved.
 
 ## Forms reference
 

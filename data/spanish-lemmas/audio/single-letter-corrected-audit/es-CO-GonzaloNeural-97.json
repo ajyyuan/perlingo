@@ -1,0 +1,24 @@
+{
+  "text": "a",
+  "locale": "es-CO",
+  "voice": "es-CO-GonzaloNeural",
+  "gender": "masculine",
+  "file": "b4b24839af7a1ed9eb70656e.mp3",
+  "sha256": "b636d79bf42d157c985e5535634b834be9ac21f0dce225957bb07df672bf554a",
+  "durationSeconds": 1.872,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1500000,
+    "Duration": 2800000,
+    "DisplayText": "A.",
+    "NBest": [
+      {
+        "Confidence": 0.7898781,
+        "Lexical": "a",
+        "ITN": "a",
+        "MaskedITN": "a",
+        "Display": "A."
+      }
+    ]
+  }
+}

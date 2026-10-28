@@ -1,0 +1,24 @@
+{
+  "text": "o",
+  "locale": "es-ES",
+  "voice": "es-ES-AlvaroNeural",
+  "gender": "masculine",
+  "file": "es-ES/0152121210d0208cb67350d4.mp3",
+  "sha256": "be561697f8dbdd97f1ee83a2ed2652a24c3722dd497b4cfc37aed865ba6e5b49",
+  "durationSeconds": 1.08,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 700000,
+    "Duration": 2800000,
+    "DisplayText": "O.",
+    "NBest": [
+      {
+        "Confidence": 0.53580636,
+        "Lexical": "o",
+        "ITN": "o",
+        "MaskedITN": "o",
+        "Display": "O."
+      }
+    ]
+  }
+}

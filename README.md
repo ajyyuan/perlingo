@@ -350,8 +350,12 @@ Lemmas answer and completion cues are now 20 dB louder than their original level
 
 Publication completed October 28, 2026: Sites version **31**, deployment `appgdep_6ae24c886c5c8191ae94e866d15f252f`, succeeded. Application commit `d3bdc2ff6` maps to Sites source `437d3039ebf984eb9ae642925965978e0c109057`. This release includes the previously committed recall/search refinements and course-stable verb examples, plus completion animation and cues raised by 20 dB from their original levels. No break timer is included. All 370 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained. This supersedes earlier local-only publication statements for these changes.
 
-Verb forms support `- / =` for previous/next conjugation rows and their examples, alongside `[ / ]` for tenses. Both pairs appear in keyboard help and remain inactive while typing.
+Verb forms support `[ / ]` for previous/next conjugation rows and their examples, wrapping at either end, alongside `- / =` for tenses. Both pairs appear in keyboard help and remain inactive while typing.
 
 Search also accepts Cmd/Ctrl+Shift+K as an unlisted alias of Cmd/Ctrl+K, with the same test and dialog restrictions.
 
 Publication completed October 28, 2026: Sites version **32**, deployment `appgdep_6ae250aa30d48191a657dc538782ea8b`, succeeded. Application commit `3d678ea9d` maps to Sites source `4a1d2f682bbd5a904585d6554af92fcfeaf397e6`. Conjugation row shortcuts (`- / =`), updated keyboard help and the unlisted Cmd/Ctrl+Shift+K search alias are live. All 371 tests, content checks and the hosted build passed. Existing public access, domain and environment revision 2 are preserved.
+
+Local shortcut update: `[ / ]` now selects conjugation rows with wraparound; `- / =` changes tenses. Keyboard help and tense tooltips reflect this swap. Approved for publication; the version 32 record above describes the earlier bindings.
+
+Local single-letter audio correction: all eight Spanish voices now use explicit /i/ recordings for standalone y, while a/A, e and o retain their original recordings. All 40 original combinations and 32 experimental replacement files were machine-audited; only the eight y replacements are retained, because no defect was established in the other originals; transcription limitations and listening checks are documented in [the audit](docs/lemma-single-letter-audio.md). [Compare original/current audio](http://localhost:5173/lemmas/single-letter-preview.html). Original library files remain intact; these same-origin corrections are not published yet.

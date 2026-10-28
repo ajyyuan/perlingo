@@ -1,0 +1,24 @@
+{
+  "text": "A",
+  "locale": "es-MX",
+  "voice": "es-MX-DaliaNeural",
+  "gender": "feminine",
+  "file": "es-MX/28d27893fcd449ba47623ece.mp3",
+  "sha256": "f08629d7d2a6f113b92e34f43d82a4b7c4358916608e43bd73f704930d372b21",
+  "durationSeconds": 1.272,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1500000,
+    "Duration": 3200000,
+    "DisplayText": "A.",
+    "NBest": [
+      {
+        "Confidence": 0.8814803,
+        "Lexical": "a",
+        "ITN": "a",
+        "MaskedITN": "a",
+        "Display": "A."
+      }
+    ]
+  }
+}

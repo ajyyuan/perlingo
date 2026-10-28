@@ -1,0 +1,24 @@
+{
+  "text": "o",
+  "locale": "es-AR",
+  "voice": "es-AR-ElenaNeural",
+  "gender": "feminine",
+  "file": "4e2df05af8cf5ce7326593aa.mp3",
+  "sha256": "82092294d865ad2ec2579b5b206837781b3f94ebae2bf975a208ef1d60419089",
+  "durationSeconds": 1.872,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1800000,
+    "Duration": 2700000,
+    "DisplayText": "O.",
+    "NBest": [
+      {
+        "Confidence": 0.8387573,
+        "Lexical": "o",
+        "ITN": "o",
+        "MaskedITN": "o",
+        "Display": "O."
+      }
+    ]
+  }
+}

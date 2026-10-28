@@ -29,7 +29,7 @@ Run node scripts/build-lemma-tense-examples.mjs to rebuild. The regression tests
 
 Browser verification used hacer: Present showed “Haces la comida.”, Past showed “Ayer hiciste la comida.”, and Full notes Future showed “Después harás la comida.” with the corresponding English translations. Bracket navigation updated the active overlay. No answers were submitted or course progress advanced during these checks.
 
-Preview at http://127.0.0.1:5173/lemmas/. Press Command/Ctrl+K, search hacer, open the card and use [ / ] to switch tenses. Open Full notes and repeat. Search gustar, haber and soler to inspect the exceptional constructions and usage notices. Approved and committed locally; not published.
+Preview at http://127.0.0.1:5173/lemmas/. Press Command/Ctrl+K, search hacer, open the card and use - / = to switch tenses. Open Full notes and repeat. Search gustar, haber and soler to inspect the exceptional constructions and usage notices. Approved and committed locally; not published.
 
 
 ## Balanced subjects follow-up (local, awaiting review)

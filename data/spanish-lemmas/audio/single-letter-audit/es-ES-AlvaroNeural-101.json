@@ -1,0 +1,24 @@
+{
+  "text": "e",
+  "locale": "es-ES",
+  "voice": "es-ES-AlvaroNeural",
+  "gender": "masculine",
+  "file": "es-ES/417e19ed5b18a34ce881c6fe.mp3",
+  "sha256": "b8a9d412c76667a3aea5431b5f1d1d3a9aef4ea5bc91e20a883dc970c5514779",
+  "durationSeconds": 1.104,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1500000,
+    "Duration": 2800000,
+    "DisplayText": "E.",
+    "NBest": [
+      {
+        "Confidence": 0.6277187,
+        "Lexical": "e",
+        "ITN": "e",
+        "MaskedITN": "e",
+        "Display": "E."
+      }
+    ]
+  }
+}

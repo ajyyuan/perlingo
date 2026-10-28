@@ -26,7 +26,7 @@ function formsContent(lesson,g){
 }
 function formsPanel(lesson){
  const g=formGroup(lesson,tense);
- const selector=g?`<div class="tense-picker"><button class="tense-arrow" data-tense-step="-1" aria-label="Previous tense" aria-keyshortcuts="[" title="Previous tense ([)" ${g.id===pickerGroups[0].id?'disabled':''}>‹</button><div class="tense-rail" role="radiogroup" aria-label="Tense or mood">${pickerGroups.map(t=>`<button role="radio" aria-checked="${t.id===g.id}" tabindex="${t.id===g.id?0:-1}" data-tense="${t.id}" aria-label="${esc(t.title)}" title="${esc(t.title)}">${esc(tenseLabels[t.id])}</button>`).join('')}</div><button class="tense-arrow" data-tense-step="1" aria-label="Next tense" aria-keyshortcuts="]" title="Next tense (])" ${g.id===pickerGroups.at(-1).id?'disabled':''}>›</button></div>`:'';
+ const selector=g?`<div class="tense-picker"><button class="tense-arrow" data-tense-step="-1" aria-label="Previous tense" aria-keyshortcuts="-" title="Previous tense (-)" ${g.id===pickerGroups[0].id?'disabled':''}>‹</button><div class="tense-rail" role="radiogroup" aria-label="Tense or mood">${pickerGroups.map(t=>`<button role="radio" aria-checked="${t.id===g.id}" tabindex="${t.id===g.id?0:-1}" data-tense="${t.id}" aria-label="${esc(t.title)}" title="${esc(t.title)}">${esc(tenseLabels[t.id])}</button>`).join('')}</div><button class="tense-arrow" data-tense-step="1" aria-label="Next tense" aria-keyshortcuts="=" title="Next tense (=)" ${g.id===pickerGroups.at(-1).id?'disabled':''}>›</button></div>`:'';
  return selector+`<div id="tense-content">${formsContent(lesson,g)}</div>`;
 }
 function centerTense(smooth=false){
@@ -72,9 +72,9 @@ document.addEventListener('keydown',e=>{
  if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button,input,summary')){e.preventDefault();return;}
  if(!state||e.isComposing||e.repeat||document.querySelector('dialog[open]'))return;
  // Brackets select a form group without interfering with typing or dialogs.
- if(state.phase==='learn'&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&['[',']'].includes(e.key)&&!e.target.closest('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="textbox"]')&&root.querySelector('.tense-rail')){
+ if(state.phase==='learn'&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&['-','='].includes(e.key)&&!e.target.closest('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="textbox"]')&&root.querySelector('.tense-rail')){
   e.preventDefault();
-  const i=pickerGroups.findIndex(t=>t.id===tense)+(e.key===']'?1:-1);
+  const i=pickerGroups.findIndex(t=>t.id===tense)+(e.key==='='?1:-1);
   if(pickerGroups[i])chooseTense(pickerGroups[i].id);
   return;
  }

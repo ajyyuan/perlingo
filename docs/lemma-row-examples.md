@@ -39,4 +39,4 @@ Course-persistence validation: 370 tests and content/syntax checks pass. A brows
 
 ## Conjugation keyboard navigation
 
-While browsing a verb in the learning card or notes, `-` selects the previous displayed conjugation row and `=` selects the next, updating its example. Navigation stops at the first/last row and resets any alternative-form selection. `[ / ]` continue to change tenses. These shortcuts ignore text inputs, modified/held keys and inactive dialogs; non-verbs and notice-only tables have no row shortcut. The keyboard-shortcuts panel lists both pairs.
+While browsing a verb in the learning card or notes, `[` selects the previous displayed conjugation row and `]` selects the next, updating its example. Navigation wraps from the last row to the first and vice versa and resets any alternative-form selection. `- / =` continue to change tenses. These shortcuts ignore text inputs, modified/held keys and inactive dialogs; non-verbs and notice-only tables have no row shortcut. The keyboard-shortcuts panel lists both pairs.

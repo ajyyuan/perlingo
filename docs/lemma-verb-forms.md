@@ -2,7 +2,7 @@
 
 Published October 27, 2026 as Sites version 26, deployment `appgdep_6ae103c84db4819180cae87f5170e44d` (succeeded). GitHub application commit `8e1ca5a8` maps to Sites source `b2599319e94a7692882f778660d7b68581acd702`. The existing public audience, perlingo.app domain and runtime environment revision 2 are preserved. Every one of the 369 verb cards has the compact nine-group picker previously available for tener: present, preterite, imperfect, future, conditional, present perfect, present subjunctive, affirmative commands and negative commands. The original four assessments, their question banks, scoring and progress are unchanged. These are reference tables, not additional tests.
 
-The picker retains its sliding three-option view, pronunciation, arrow-key navigation and `[` / `]` shortcuts. Version 26 retained only tener’s nine tense examples. The subsequent local expansion adds translated tense examples across all 369 verbs, with explicit exceptions for unsuitable commands and defective forms; see [coverage and evidence](lemma-tense-examples.md). A subsequent local UI update makes Full notes and standalone notes use the shared forms renderer and the same tense data/examples as study cards; it awaits publication. Displayed reference forms and participles now participate in exact course-card lookup from sentence words.
+The picker retains its sliding three-option view, pronunciation, arrow-key navigation and `-` / `=` shortcuts. Version 26 retained only tener’s nine tense examples. The subsequent local expansion adds translated tense examples across all 369 verbs, with explicit exceptions for unsuitable commands and defective forms; see [coverage and evidence](lemma-tense-examples.md). A subsequent local UI update makes Full notes and standalone notes use the shared forms renderer and the same tense data/examples as study cards; it awaits publication. Displayed reference forms and participles now participate in exact course-card lookup from sentence words.
 
 ## Sources and checks
 
@@ -36,4 +36,4 @@ To reproduce older membership evidence, obtain `es_allforms.csv` from doozan/spa
 
 Validation: 317 tests pass; `npm run check` passes. Browser inspection confirmed ser's new picker, its past table and the bracket shortcut in the main course, with the existing divided card layout fitting the viewport. No assessment answers were submitted.
 
-Preview: reload `/lemmas/`, open ser (word #8) or another verb, and select Past/Future or press `[` / `]`. Compare a noun to confirm it retains its simpler forms table. The four test entry points remain unchanged.
+Preview: reload `/lemmas/`, open ser (word #8) or another verb, and select Past/Future or press `-` / `=`. Compare a noun to confirm it retains its simpler forms table. The four test entry points remain unchanged.

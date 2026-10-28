@@ -5,8 +5,8 @@ import {formGroups,formGroup,tenseLabels} from './verb-forms.js';
 function formKeysAllowed(event,{active=true,editing=false}={},keys){
  return active&&!editing&&!event.defaultPrevented&&!event.isComposing&&!event.repeat&&!event.altKey&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&keys.includes(event.key);
 }
-export const tenseKeysAllowed=(event,state)=>formKeysAllowed(event,state,['[',']']);
-export const rowKeysAllowed=(event,state)=>formKeysAllowed(event,state,['-','=']);
+export const tenseKeysAllowed=(event,state)=>formKeysAllowed(event,state,['-','=']);
+export const rowKeysAllowed=(event,state)=>formKeysAllowed(event,state,['[',']']);
 export function mountForms(host,note,{voice,onExample,cardNavigation=false}={}){
  let tense=sessionSelection(note.id).tense,alternative=sessionSelection(note.id).alternative||0;const abort=new AbortController(),signal=abort.signal;
  const say=text=>`<button class="say" data-speak="${esc(text)}" lang="es" aria-label="Listen to ${esc(text)}">${esc(text)}</button>`;
@@ -23,7 +23,7 @@ function formsContent(lesson,g){
 }
 function formsPanel(lesson){
  const g=activeGroup();
- const selector=g?`<div class="tense-picker"><button class="tense-arrow" data-tense-step="-1" aria-label="Previous tense" aria-keyshortcuts="[" title="Previous tense ([)" ${g.id===pickerGroups[0].id?'disabled':''}>‹</button><div class="tense-rail" role="radiogroup" aria-label="Tense or mood">${pickerGroups.map(t=>`<button role="radio" aria-checked="${t.id===g.id}" tabindex="${t.id===g.id?0:-1}" data-tense="${t.id}" aria-label="${esc(t.title)}" title="${esc(t.title)}">${esc(tenseLabels[t.id])}</button>`).join('')}</div><button class="tense-arrow" data-tense-step="1" aria-label="Next tense" aria-keyshortcuts="]" title="Next tense (])" ${g.id===pickerGroups.at(-1).id?'disabled':''}>›</button></div>`:'';
+ const selector=g?`<div class="tense-picker"><button class="tense-arrow" data-tense-step="-1" aria-label="Previous tense" aria-keyshortcuts="-" title="Previous tense (-)" ${g.id===pickerGroups[0].id?'disabled':''}>‹</button><div class="tense-rail" role="radiogroup" aria-label="Tense or mood">${pickerGroups.map(t=>`<button role="radio" aria-checked="${t.id===g.id}" tabindex="${t.id===g.id?0:-1}" data-tense="${t.id}" aria-label="${esc(t.title)}" title="${esc(t.title)}">${esc(tenseLabels[t.id])}</button>`).join('')}</div><button class="tense-arrow" data-tense-step="1" aria-label="Next tense" aria-keyshortcuts="=" title="Next tense (=)" ${g.id===pickerGroups.at(-1).id?'disabled':''}>›</button></div>`:'';
  return selector+`<div data-tense-content>${formsContent(lesson,g)}</div>`;
 }
 function centerTense(smooth=false){
@@ -59,12 +59,12 @@ host.addEventListener('keydown',e=>{
    const g=activeGroup(),rows=g?.notice?[]:g?.rows||[];
    if(!rows.length)return;
    e.preventDefault();e.stopPropagation();
-   const i=rows.findIndex(r=>r.slot===g.selectedSlot)+(e.key==='='?1:-1);
+   const i=(rows.findIndex(r=>r.slot===g.selectedSlot)+(e.key===']'?1:-1)+rows.length)%rows.length;
    if(rows[i])chooseRow(rows[i].slot,0,{focus:Boolean(e.target.closest('[data-example-row]'))});
    return;
   }
   if(!tenseKeysAllowed(e,state)||!pickerGroups.length)return;
-  e.preventDefault();e.stopPropagation();const i=pickerGroups.findIndex(t=>t.id===tense)+(e.key===']'?1:-1);if(pickerGroups[i])chooseTense(pickerGroups[i].id);
+  e.preventDefault();e.stopPropagation();const i=pickerGroups.findIndex(t=>t.id===tense)+(e.key==='='?1:-1);if(pickerGroups[i])chooseTense(pickerGroups[i].id);
  },{signal,capture:true});
  function chooseRow(slot,alt=0,{focus=false}={}){
   voice?.stop();selectExampleRow(note.id,tense,slot);alternative=alt;sessionSelection(note.id).alternative=alt;

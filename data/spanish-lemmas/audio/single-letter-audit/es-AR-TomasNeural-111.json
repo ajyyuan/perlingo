@@ -1,0 +1,24 @@
+{
+  "text": "o",
+  "locale": "es-AR",
+  "voice": "es-AR-TomasNeural",
+  "gender": "masculine",
+  "file": "es-AR/1b7cd8f210f9ff5f92f5a558.mp3",
+  "sha256": "2a02490258394b41e7f0bcd3c9e022041464913ff254494fff0dd0ac006ab858",
+  "durationSeconds": 1.176,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 1000000,
+    "Duration": 2900000,
+    "DisplayText": "Tipo.",
+    "NBest": [
+      {
+        "Confidence": 0.6637897,
+        "Lexical": "tipo",
+        "ITN": "tipo",
+        "MaskedITN": "tipo",
+        "Display": "Tipo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "text": "e",
+  "locale": "es-ES",
+  "voice": "es-ES-ElviraNeural",
+  "gender": "feminine",
+  "file": "es-ES/ff58df1961f9bf8cc94112aa.mp3",
+  "sha256": "88c80a60cc1813bf5498e4991c6ac19af944e167590f14d263f5fd468dd71b0e",
+  "durationSeconds": 1.2,
+  "recognition": {
+    "RecognitionStatus": "Success",
+    "Offset": 700000,
+    "Duration": 3600000,
+    "DisplayText": "E.",
+    "NBest": [
+      {
+        "Confidence": 0.8413225,
+        "Lexical": "e",
+        "ITN": "e",
+        "MaskedITN": "e",
+        "Display": "E."
+      }
+    ]
+  }
+}
