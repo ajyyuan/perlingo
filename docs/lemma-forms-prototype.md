@@ -23,3 +23,5 @@ The existing isolated sessionStorage key `perlingo-forms-prototype-v2` now store
 Tests check exact source-form completeness, reference group rows/examples, study navigation without quiz creation, invalid-state handling and removal of legacy quiz state. Preview: advance through tener, casa and bueno, then use Back to course. Explore tense groups and Full notes as before. The main course now uses this study layout across its learning cards, while preserving its four tests; this page remains a separate three-word reference preview.
 
 Removal verification: all 293 remaining repository tests, `npm run check`, syntax and whitespace checks passed. Browser navigation confirmed the third reference card now offers Back to course and returns to the existing main-course context review without starting a form quiz or changing that review’s progress.
+
+Local noun/adjective follow-up: the shared bueno table now adds buen before a masculine singular noun, so the three reference cards expose thirteen base note-table rows. This is inherited reference content, not a new quiz or progress migration.

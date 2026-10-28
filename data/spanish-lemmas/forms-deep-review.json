@@ -1,0 +1,603 @@
+{
+  "scope": "Deep review of uncommitted forms/card-link changes against git HEAD. Separate source corroboration from software checks; uncertainty is resolved conservatively by retaining or restoring original content. Not a claim of absolute certainty.",
+  "nounSpecialCases": [
+    {
+      "lemma": "presidente",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/presidente",
+      "finding": "Presidenta is the recommended feminine; retain the table."
+    },
+    {
+      "lemma": "actor",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/actor",
+      "finding": "Actriz belongs to the performer sense; actora to other senses. Retain the scoped table."
+    },
+    {
+      "lemma": "jefe",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/jefe",
+      "finding": "Jefa and la jefe are valid; jefa is more frequent."
+    },
+    {
+      "lemma": "líder",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/líder",
+      "finding": "La líder and lideresa are supported; the latter is more common in America."
+    },
+    {
+      "lemma": "cliente",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/cliente",
+      "finding": "La cliente and clienta are both valid."
+    },
+    {
+      "lemma": "juez",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/juez",
+      "finding": "La juez and jueza are both valid."
+    },
+    {
+      "lemma": "poeta",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/poeta",
+      "finding": "La poeta and poetisa are both valid."
+    },
+    {
+      "lemma": "alcalde",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/alcalde",
+      "finding": "Alcaldesa is the feminine for the municipal office."
+    },
+    {
+      "lemma": "miembro",
+      "decision": "retain with wording refinement",
+      "source": "https://www.rae.es/dpd/miembro",
+      "finding": "Masculine miembro may refer to women; common-gender la miembro is also valid. Correct the short tip as well as the extended explanation."
+    },
+    {
+      "lemma": "club",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/club",
+      "finding": "Both clubs and clubes are accepted."
+    },
+    {
+      "lemma": "bueno",
+      "decision": "retain with wording refinement",
+      "source": "https://www.rae.es/dpd/bueno",
+      "finding": "Retain buen. Qualify the rule for de constructions and optional shortening with coordinated adjectives."
+    },
+    {
+      "lemma": "malo",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/malo",
+      "finding": "Retain mal before masculine singular nouns."
+    },
+    {
+      "lemma": "grande",
+      "decision": "retain",
+      "source": "https://www.rae.es/dpd/grande",
+      "finding": "Retain gran; existing coordination/muy exceptions and más/menos restriction agree with DPD."
+    },
+    {
+      "lemma": "rey",
+      "decision": "retain",
+      "source": "https://dle.rae.es/rey",
+      "finding": "The monarch sense explicitly pairs rey with reina. Plurals follow DPD plural rules."
+    },
+    {
+      "lemma": "don",
+      "decision": "retain",
+      "source": "https://dle.rae.es/don",
+      "finding": "Don/doña are paired titles before first names. The gift/talent entry is separate; the table is scoped to the title."
+    },
+    {
+      "lemma": "secretario",
+      "decision": "retain",
+      "source": "https://dem.colmex.mx/ver/secretario",
+      "finding": "The clerical secretary entry explicitly illustrates secretaria. DLE fetch failed; DEM entry text was readable despite an unrelated embedded 429 error."
+    },
+    {
+      "lemma": "dirigente",
+      "decision": "retain original common-gender forms; reject uncorroborated addition",
+      "source": "https://dem.colmex.mx/ver/dirigente",
+      "finding": "The entry marks dirigente as masculine and feminine. Dirigenta/dirigentas remain absent from the teaching table; insufficient corroboration is not a claim that they are incorrect."
+    }
+  ],
+  "pluralRuleSource": "https://www.rae.es/dpd/plural",
+  "pluralRuleScope": "Unstressed vowel plurals add s; consonant and z plurals follow the specified es and spelling rules; rey/reyes is explicit. Rules corroborate derived plurals rather than pretending every plural has a separate dictionary entry.",
+  "implementationReview": [
+    "Reviewed every production-code diff: explicit override tables, shared form parsing, NFC lookup and shared context-builder parser. No broader answer acceptance is introduced.",
+    "Compared all generated contexts to git HEAD: sentence texts, translations, targets and accepted answers unchanged. Only nine word gloss instances changed: científica, ciertas and media in three shared contexts each; grammatical-help changes are reviewed alongside their source notes."
+  ],
+  "failedRequests": [
+    "RAE DPD rey and don are absent entries, not corroboration. DLE rey and don succeeded.",
+    "DLE secretario failed; lower-case DEM /ver/secretario succeeded.",
+    "Research subagent: DLE candidato/candidata failed; candidate evidence comes from DEM plus Parliament of Canarias glossary."
+  ],
+  "functionWordReview": {
+    "reviewer": "Independent research subagent, read-only",
+    "scope": "All 61 audit entries, 30 added tables, eight demonstrative/possessive families, changed usage explanations and first-set overlays. No added form required rollback.",
+    "sources": [
+      {
+        "lemmas": [
+          "este",
+          "ese",
+          "aquel"
+        ],
+        "source": "https://www.ucm.es/plataformaele/determinativos",
+        "finding": "Explicit masculine, feminine, plural and neuter demonstrative paradigms; neuters stand alone."
+      },
+      {
+        "lemmas": [
+          "tal"
+        ],
+        "source": "https://dle.rae.es/tal",
+        "finding": "Both genders and plural tales supported."
+      },
+      {
+        "lemmas": [
+          "mío",
+          "tuyo",
+          "suyo",
+          "nuestro"
+        ],
+        "source": "https://www.ucm.es/plataformaele/determinativos",
+        "finding": "Possessive tables corroborate short and long agreeing forms."
+      },
+      {
+        "lemmas": [
+          "lo",
+          "le"
+        ],
+        "source": "https://www.rae.es/dpd/pronombres personales átonos",
+        "finding": "Object paradigm, neuter lo and le/les replacement by se before another object clitic."
+      },
+      {
+        "lemmas": [
+          "él",
+          "nosotros",
+          "mí",
+          "ti",
+          "sí"
+        ],
+        "source": "https://www.rae.es/dpd/pronombres personales tónicos",
+        "finding": "Explicit stressed pronoun table and con forms; consigo reflexive only."
+      },
+      {
+        "lemmas": [
+          "ello"
+        ],
+        "source": "https://www.rae.es/dpd/ello",
+        "finding": "Restricted neuter, usually after a preposition; subject use uncommon."
+      },
+      {
+        "lemmas": [
+          "usted"
+        ],
+        "source": "https://www.rae.es/dpd/usted",
+        "finding": "Plural ustedes, regional usage and third-person agreement."
+      },
+      {
+        "lemmas": [
+          "alguno"
+        ],
+        "source": "https://www.rae.es/dpd/alguno",
+        "finding": "Agreement and algún, including stressed-a restriction."
+      },
+      {
+        "lemmas": [
+          "ninguno"
+        ],
+        "source": "https://www.rae.es/dpd/ninguno",
+        "finding": "Agreement, ningún and limited plural contexts."
+      },
+      {
+        "lemmas": [
+          "cualquiera"
+        ],
+        "source": "https://www.rae.es/dpd/cualquiera",
+        "finding": "Cualquier, formal cualesquiera and valid infrequent cualesquier."
+      },
+      {
+        "lemmas": [
+          "uno"
+        ],
+        "source": "https://www.rae.es/dpd/uno",
+        "finding": "Generic singular and indefinite plurals distinguished; ordinary partitive restriction."
+      },
+      {
+        "lemmas": [
+          "primero"
+        ],
+        "source": "https://www.rae.es/dpd/primero",
+        "finding": "Agreeing ordinal and primer."
+      },
+      {
+        "lemmas": [
+          "tercero"
+        ],
+        "source": "https://www.rae.es/dpd/tercero",
+        "finding": "Agreeing ordinal and tercer."
+      },
+      {
+        "lemmas": [
+          "segundo",
+          "cuarto"
+        ],
+        "source": "https://www.ucm.es/plataformaele/determinativos",
+        "finding": "Ordinal gender and number agreement."
+      },
+      {
+        "lemmas": [
+          "medio"
+        ],
+        "source": "https://www.rae.es/dpd/medio",
+        "finding": "Agreeing numeral/adjective versus invariant adverb."
+      },
+      {
+        "lemmas": [
+          "mismo"
+        ],
+        "source": "https://www.rae.es/dpd/mismo",
+        "finding": "Explicit four-form paradigm."
+      },
+      {
+        "lemmas": [
+          "tanto"
+        ],
+        "source": "https://www.rae.es/dpd/tanto",
+        "finding": "Determiner/pronoun agreement."
+      },
+      {
+        "lemmas": [
+          "mucho",
+          "poco",
+          "cierto",
+          "varios",
+          "ambos"
+        ],
+        "source": "https://www.ucm.es/plataformaele/determinativos",
+        "finding": "Indefinite and dual gender/number paradigms."
+      },
+      {
+        "lemmas": [
+          "quien"
+        ],
+        "source": "https://www.rae.es/dpd/quien",
+        "finding": "Plural quienes."
+      },
+      {
+        "lemmas": [
+          "quién"
+        ],
+        "source": "https://www.rae.es/dpd/quién",
+        "finding": "Plural quiénes; accent retained."
+      },
+      {
+        "lemmas": [
+          "cuál"
+        ],
+        "source": "https://www.rae.es/dpd/cuál",
+        "finding": "Plural cuáles; accent retained."
+      },
+      {
+        "lemmas": [
+          "cual"
+        ],
+        "source": "https://www.rae.es/dpd/cual",
+        "finding": "Explicit el/la/los/las/lo cual paradigm."
+      },
+      {
+        "lemmas": [
+          "cuyo"
+        ],
+        "source": "https://www.rae.es/dpd/cuyo",
+        "finding": "Agreement with possession, not possessor."
+      },
+      {
+        "lemmas": [
+          "cuánto"
+        ],
+        "source": "https://www.rae.es/dpd/cuánto",
+        "finding": "Agreeing quantity forms versus invariant adverb."
+      }
+    ],
+    "wordingCorrection": {
+      "lemma": "sí",
+      "source": "https://www.rae.es/dpd/sí",
+      "finding": "Pre-existing subject-only tip was too narrow: a local direct object can also be the antecedent. Replaced subject with third-person referent in the same sentence."
+    },
+    "limits": [
+      "Tables are sense-scoped; adverbial cuán and tan are not additions to the quantity-pronoun paradigms.",
+      "Do not infer that demonstratives can never take an accent from older UOC guidance. No such claim was added.",
+      "Ordinal apocopation notes summarize the ordinary rule; certain coordinated/elliptical constructions permit a full form."
+    ]
+  },
+  "contextGlossSources": [
+    {
+      "word": "científica",
+      "source": "https://dle.rae.es/científico",
+      "finding": "In investigación científica the adjective describes research, not a female scientist."
+    },
+    {
+      "word": "ciertas",
+      "source": "https://dle.rae.es/cierto",
+      "finding": "Before familias, the indefinite certain/some sense applies."
+    },
+    {
+      "word": "media",
+      "source": "https://dle.rae.es/clase",
+      "finding": "Clase media is the social middle class, not half a class."
+    }
+  ],
+  "regularNounReview": {
+    "reviewer": "Independent research subagent, read-only",
+    "scope": "All 46 ordinary added noun counterparts checked against actual current gloss and authored sentence; all retained. Feminine plurals derived from RAE plural rules.",
+    "directLexicalChecks": [
+      {
+        "lemma": "niño",
+        "source": "https://dle.rae.es/ni%C3%B1o",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "hijo",
+        "source": "https://dle.rae.es/hijo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "político",
+        "source": "https://dle.rae.es/pol%C3%ADtico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "amigo",
+        "source": "https://dle.rae.es/amigo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "director",
+        "source": "https://dle.rae.es/director",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "hermano",
+        "source": "https://dle.rae.es/hermano",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "señor",
+        "source": "https://dle.rae.es/se%C3%B1or",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "autor",
+        "source": "https://dle.rae.es/autor",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "ministro",
+        "source": "https://dle.rae.es/ministro",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "chico",
+        "source": "https://dle.rae.es/chico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "doctor",
+        "source": "https://dle.rae.es/doctor",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "jugador",
+        "source": "https://dle.rae.es/jugador",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "técnico",
+        "source": "https://dle.rae.es/t%C3%A9cnico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "profesor",
+        "source": "https://dle.rae.es/profesor",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "compañero",
+        "source": "https://dle.rae.es/compa%C3%B1ero",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "médico",
+        "source": "https://dle.rae.es/m%C3%A9dico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "trabajador",
+        "source": "https://dle.rae.es/trabajador",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "escritor",
+        "source": "https://dle.rae.es/escritor",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "ciudadano",
+        "source": "https://dle.rae.es/ciudadano",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "abuelo",
+        "source": "https://dle.rae.es/abuelo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "usuario",
+        "source": "https://dle.rae.es/usuario",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "investigador",
+        "source": "https://dle.rae.es/investigador",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "maestro",
+        "source": "https://dle.rae.es/maestro",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "español",
+        "source": "https://dle.rae.es/espa%C3%B1ol",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "esposo",
+        "source": "https://dle.rae.es/esposo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "tío",
+        "source": "https://dle.rae.es/t%C3%ADo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "crítico",
+        "source": "https://dle.rae.es/cr%C3%ADtico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "vecino",
+        "source": "https://dle.rae.es/vecino",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "funcionario",
+        "source": "https://dle.rae.es/funcionario",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "perro",
+        "source": "https://dle.rae.es/perro",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "experto",
+        "source": "https://dle.rae.es/experto",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "alumno",
+        "source": "https://dle.rae.es/alumno",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "muchacho",
+        "source": "https://dle.rae.es/muchacho",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "diputado",
+        "source": "https://dle.rae.es/diputado",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "productor",
+        "source": "https://dle.rae.es/productor",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "abogado",
+        "source": "https://dle.rae.es/abogado",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "lector",
+        "source": "https://dle.rae.es/lector",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "científico",
+        "source": "https://dle.rae.es/cient%C3%ADfico",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "empresario",
+        "source": "https://dle.rae.es/empresario",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "dueño",
+        "source": "https://dle.rae.es/due%C3%B1o",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "campeón",
+        "source": "https://dle.rae.es/campe%C3%B3n",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "novio",
+        "source": "https://dle.rae.es/novio",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "empleado",
+        "source": "https://dle.rae.es/empleado",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "viejo",
+        "source": "https://dle.rae.es/viejo",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      },
+      {
+        "lemma": "muerto",
+        "source": "https://dle.rae.es/muerto",
+        "finding": "Feminine headword and relevant person/animal noun sense corroborated; some entries mark adjective used as noun."
+      }
+    ],
+    "candidateException": {
+      "lemma": "candidato",
+      "sources": [
+        "https://dem.colmex.mx/ver/candidato",
+        "https://www.parcan.es/glosario/20/"
+      ],
+      "finding": "DEM supplies the office-candidate sense; Parliament glossary explicitly pairs candidato/candidata. DLE requests failed and are not counted as successful checks."
+    },
+    "senseChecks": [
+      "política: woman politician, separately from politics/policy.",
+      "técnica: specialist, separately from technique.",
+      "crítica: critic, separately from criticism.",
+      "científica: scientist noun versus scientific adjective in investigación científica.",
+      "muerta: deceased person noun.",
+      "española: person nationality, not the language; tip now distinguishes the senses.",
+      "perra: female dog; unrelated derogatory uses do not invalidate the animal sense."
+    ]
+  },
+  "singularScopeReview": {
+    "decision": "retain existing runtime scope with more precise explanation",
+    "findings": [
+      "Fútbol, pasado and izquierda tables were already singular-only at HEAD. Added exceptions explain that scope.",
+      "Música generated data previously contained músicas, but the authored runtime overlay already suppressed its table. Current generated data aligns with that overlay.",
+      "These are sense-scoped singular tables, not universal plural bans or claims that every entry is inherently uncountable.",
+      "Izquierdas also occurs in nonpolitical fixed expressions; explanation corrected."
+    ],
+    "sources": [
+      "https://dle.rae.es/fútbol",
+      "https://dle.rae.es/pasado",
+      "https://dle.rae.es/izquierdo",
+      "https://dle.rae.es/música"
+    ]
+  },
+  "validation": {
+    "assessment": "All 1500 full assessment records equal Git HEAD, including sentence chunks.",
+    "tests": "All 344 tests pass; npm run check and git diff --check pass.",
+    "linguisticConfidence": "Retained changes have explicit lexical, paradigm or rule support; this is not proof of absolute correctness in every dialect or sense.",
+    "browser": "Local miembro preview shows corrected short tip and expanded explanation."
+  }
+}

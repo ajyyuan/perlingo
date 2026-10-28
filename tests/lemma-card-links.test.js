@@ -31,3 +31,49 @@ test('unanswered cloze target has no lookup link; visible words do',()=>{
  assert.doesNotMatch(hidden,/data-lemma-card="corpes:el:T"/);assert.match(hidden,/data-lemma-card="corpes:libro:N"/);assert.match(shown,/data-lemma-card="corpes:el:T"/);
  assert.match(hidden,/role="group" aria-label="Quick meaning"/);
 });
+
+test('neuter esto belongs to este and links back from sentence help',()=>{
+ const note=notes.find(n=>n.id==='corpes:este:D');
+ assert.deepEqual(note.forms.find(([,form])=>form==='esto'),['neuter (standalone)','esto']);
+ assert.match(note.more,/does not go before a noun/);
+ assert.deepEqual(lookup('Esto').map(n=>n.id),['corpes:este:D']);
+ configureCardLinks(notes,contexts.values());
+ assert.match(cardLinks('Esto'),/data-lemma-card="corpes:este:D"/);
+ assert.deepEqual(contexts.get('corpes:este:D').answers,['Este']);
+});
+
+test('every demonstrative and possessive family has its source-checked forms and links',()=>{
+ const families={
+  'este:D':['este','esta','estos','estas','esto'],
+  'ese:D':['ese','esa','esos','esas','eso'],
+  'aquel:D':['aquel','aquella','aquellos','aquellas','aquello'],
+  'tal:D':['tal','tales'],
+  'mío:X':['mi','mis','mío','mía','míos','mías'],
+  'suyo:X':['su','sus','suyo','suya','suyos','suyas'],
+  'tuyo:X':['tu','tus','tuyo','tuya','tuyos','tuyas'],
+  'nuestro:X':['nuestro','nuestra','nuestros','nuestras']
+ };
+ const base=read('notes').notes;
+ for(const [key,forms] of Object.entries(families)){
+  const id='corpes:'+key;
+  assert.deepEqual(base.find(n=>n.id===id).forms.map(r=>r[1]),forms);
+  for(const form of forms)assert.ok(lookup(form.toLocaleUpperCase('es')).some(n=>n.id===id),form);
+ }
+ for(const [word,neuter] of [['este','esto'],['ese','eso'],['aquel','aquello']]){
+  const n=notes.find(n=>n.word===word);
+  assert.deepEqual(n.forms.find(r=>r[1]===neuter),['neuter (standalone)',neuter]);
+  assert.deepEqual(n.forms.filter(([label])=>label.includes('neuter')),[['neuter (standalone)',neuter]]);
+  assert.ok(!contexts.get(n.id).answers.includes(neuter));
+ }
+ assert.ok(!lookup('tú').some(n=>n.word==='tuyo'));
+ assert.ok(!lookup('mia').some(n=>n.word==='mío'));
+});
+test('middle-dot groups resolve each form without indexing arbitrary phrase words',()=>{
+ for(const [word,forms] of [['todo',['todo','toda','todos','todas']],['otro',['otro','otra','otros','otras']]]){
+  for(const form of forms)assert.ok(lookup(form).some(n=>n.word===word),form);
+ }
+ const fixture=[{id:'x',word:'test',forms:[['variants','suya · suyas / suyo'],['phrase','de repente']]}];
+ const find=createCardLookup(fixture);
+ for(const form of ['suya','suyas','suyo'])assert.equal(find(form)[0].id,'x');
+ assert.deepEqual(find('de'),[]);assert.deepEqual(find('repente'),[]);
+});

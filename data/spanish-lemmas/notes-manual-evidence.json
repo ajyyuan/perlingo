@@ -1,12 +1,853 @@
 {
   "reviewed": "2026-10-25",
   "forms": [
-    {"lemma":"bueno","pos":"adj","forms":["buena","buenos","buenas"],"source":"https://en.wiktionary.org/w/index.php?title=bueno&oldid=93385478#Spanish","scope":"Spanish adjective headword line explicitly lists feminine and plural forms; the pinned allforms file omitted these mappings."}
+    {
+      "lemma": "bueno",
+      "pos": "adj",
+      "forms": [
+        "buena",
+        "buenos",
+        "buenas"
+      ],
+      "source": "https://en.wiktionary.org/w/index.php?title=bueno&oldid=93385478#Spanish",
+      "scope": "Spanish adjective headword line explicitly lists feminine and plural forms; the pinned allforms file omitted these mappings."
+    },
+    {
+      "lemma": "niño",
+      "pos": "n",
+      "forms": [
+        "niña",
+        "niñas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "hijo",
+      "pos": "n",
+      "forms": [
+        "hija",
+        "hijas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "político",
+      "pos": "n",
+      "forms": [
+        "política",
+        "políticas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "amigo",
+      "pos": "n",
+      "forms": [
+        "amiga",
+        "amigas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "director",
+      "pos": "n",
+      "forms": [
+        "directora",
+        "directoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "hermano",
+      "pos": "n",
+      "forms": [
+        "hermana",
+        "hermanas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "señor",
+      "pos": "n",
+      "forms": [
+        "señora",
+        "señoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "autor",
+      "pos": "n",
+      "forms": [
+        "autora",
+        "autoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "ministro",
+      "pos": "n",
+      "forms": [
+        "ministra",
+        "ministras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "chico",
+      "pos": "n",
+      "forms": [
+        "chica",
+        "chicas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "doctor",
+      "pos": "n",
+      "forms": [
+        "doctora",
+        "doctoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "jugador",
+      "pos": "n",
+      "forms": [
+        "jugadora",
+        "jugadoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "técnico",
+      "pos": "n",
+      "forms": [
+        "técnica",
+        "técnicas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "profesor",
+      "pos": "n",
+      "forms": [
+        "profesora",
+        "profesoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "compañero",
+      "pos": "n",
+      "forms": [
+        "compañera",
+        "compañeras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "médico",
+      "pos": "n",
+      "forms": [
+        "médica",
+        "médicas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "trabajador",
+      "pos": "n",
+      "forms": [
+        "trabajadora",
+        "trabajadoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "escritor",
+      "pos": "n",
+      "forms": [
+        "escritora",
+        "escritoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "ciudadano",
+      "pos": "n",
+      "forms": [
+        "ciudadana",
+        "ciudadanas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "abuelo",
+      "pos": "n",
+      "forms": [
+        "abuela",
+        "abuelas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "usuario",
+      "pos": "n",
+      "forms": [
+        "usuaria",
+        "usuarias"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "investigador",
+      "pos": "n",
+      "forms": [
+        "investigadora",
+        "investigadoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "candidato",
+      "pos": "n",
+      "forms": [
+        "candidata",
+        "candidatas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "maestro",
+      "pos": "n",
+      "forms": [
+        "maestra",
+        "maestras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "español",
+      "pos": "n",
+      "forms": [
+        "española",
+        "españolas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "esposo",
+      "pos": "n",
+      "forms": [
+        "esposa",
+        "esposas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "tío",
+      "pos": "n",
+      "forms": [
+        "tía",
+        "tías"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "crítico",
+      "pos": "n",
+      "forms": [
+        "crítica",
+        "críticas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "vecino",
+      "pos": "n",
+      "forms": [
+        "vecina",
+        "vecinas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "funcionario",
+      "pos": "n",
+      "forms": [
+        "funcionaria",
+        "funcionarias"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "perro",
+      "pos": "n",
+      "forms": [
+        "perra",
+        "perras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "experto",
+      "pos": "n",
+      "forms": [
+        "experta",
+        "expertas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "alumno",
+      "pos": "n",
+      "forms": [
+        "alumna",
+        "alumnas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "muchacho",
+      "pos": "n",
+      "forms": [
+        "muchacha",
+        "muchachas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "diputado",
+      "pos": "n",
+      "forms": [
+        "diputada",
+        "diputadas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "productor",
+      "pos": "n",
+      "forms": [
+        "productora",
+        "productoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "abogado",
+      "pos": "n",
+      "forms": [
+        "abogada",
+        "abogadas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "lector",
+      "pos": "n",
+      "forms": [
+        "lectora",
+        "lectoras"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "científico",
+      "pos": "n",
+      "forms": [
+        "científica",
+        "científicas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "empresario",
+      "pos": "n",
+      "forms": [
+        "empresaria",
+        "empresarias"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "dueño",
+      "pos": "n",
+      "forms": [
+        "dueña",
+        "dueñas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "campeón",
+      "pos": "n",
+      "forms": [
+        "campeona",
+        "campeonas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "novio",
+      "pos": "n",
+      "forms": [
+        "novia",
+        "novias"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "empleado",
+      "pos": "n",
+      "forms": [
+        "empleada",
+        "empleadas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "viejo",
+      "pos": "n",
+      "forms": [
+        "vieja",
+        "viejas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "muerto",
+      "pos": "n",
+      "forms": [
+        "muerta",
+        "muertas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "RAE DLE muerto/muerta marks the deceased-person use as a noun; frozen metadata alone omitted the feminine. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "presidente",
+      "pos": "n",
+      "forms": [
+        "presidenta",
+        "presidentas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "actor",
+      "pos": "n",
+      "forms": [
+        "actriz",
+        "actrices"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "miembro",
+      "pos": "n",
+      "forms": [
+        "miembros"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "jefe",
+      "pos": "n",
+      "forms": [
+        "jefa",
+        "jefas",
+        "jefes"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "líder",
+      "pos": "n",
+      "forms": [
+        "lideresa",
+        "líderes",
+        "lideresas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "secretario",
+      "pos": "n",
+      "forms": [
+        "secretaria",
+        "secretarias"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "rey",
+      "pos": "n",
+      "forms": [
+        "reina",
+        "reinas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "cliente",
+      "pos": "n",
+      "forms": [
+        "clienta",
+        "clientes",
+        "clientas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "juez",
+      "pos": "n",
+      "forms": [
+        "jueza",
+        "jueces",
+        "juezas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "poeta",
+      "pos": "n",
+      "forms": [
+        "poetisa",
+        "poetas",
+        "poetisas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "alcalde",
+      "pos": "n",
+      "forms": [
+        "alcaldesa",
+        "alcaldesas"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "dirigente",
+      "pos": "n",
+      "forms": [
+        "dirigentes"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Common-gender dirigente/dirigentes; see the follow-up source comparison in noun-adjective-audit.json. Dirigenta alternatives deferred pending stronger evidence."
+    },
+    {
+      "lemma": "don",
+      "pos": "n",
+      "forms": [
+        "doña"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen title-sense don/doña metadata; do not import plural dones from gift/talent sense. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "club",
+      "pos": "n",
+      "forms": [
+        "clubes",
+        "clubs"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "RAE DPD club explicitly accepts clubes and clubs. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "bueno",
+      "pos": "adj",
+      "forms": [
+        "buen"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen adjective apocopation metadata and targeted RAE DPD entry. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "malo",
+      "pos": "adj",
+      "forms": [
+        "mal"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen adjective apocopation metadata and targeted RAE DPD entry. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    },
+    {
+      "lemma": "grande",
+      "pos": "adj",
+      "forms": [
+        "gran"
+      ],
+      "source": "noun-adjective-audit.json",
+      "scope": "Frozen adjective apocopation metadata and targeted RAE DPD entry. Gender pairing from the cited headword metadata or RAE entry; regular plural formation from RAE plural rules."
+    }
   ],
   "grammarSources": [
-    {"url":"https://www.rae.es/dpd/plural","scope":"Plural formation rules, invariant -s/-x patterns, accent adjustments."},
-    {"url":"https://www.rae.es/dpd/g%C3%A9nero","scope":"Gender agreement, common-gender nouns and sense distinctions."},
-    {"url":"https://www.rae.es/dpd/el","scope":"Feminine nouns beginning with stressed a take singular el immediately before the noun."}
+    {
+      "url": "https://www.rae.es/dpd/plural",
+      "scope": "Plural formation rules, invariant -s/-x patterns, accent adjustments."
+    },
+    {
+      "url": "https://www.rae.es/dpd/g%C3%A9nero",
+      "scope": "Gender agreement, common-gender nouns and sense distinctions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/el",
+      "scope": "Feminine nouns beginning with stressed a take singular el immediately before the noun."
+    }
   ],
-  "method": "All displayed deck glosses and all generated present paradigms were read during this pass. The same-lemma source mapping gates generated inflections; handwritten exceptions resolve irregular patterns and lexical gender. This is a source-backed editorial audit, not independent certification or a corpus-token review."
+  "method": "All displayed deck glosses and all generated present paradigms were read during this pass. The same-lemma source mapping gates generated inflections; handwritten exceptions resolve irregular patterns and lexical gender. This is a source-backed editorial audit, not independent certification or a corpus-token review.",
+  "functionWordReview": {
+    "reviewed": "2026-10-27",
+    "scope": "All four demonstrative and four possessive cards in the current deck; existing grouped form rows audited for lookup omissions. This is not an exhaustive audit of pronouns, quantifiers or numeral paradigms.",
+    "sources": [
+      {
+        "url": "https://www.ucm.es/plataformaele/determinativos",
+        "scope": "Three demonstrative families including standalone neuters; short and long possessive forms and agreement."
+      },
+      {
+        "url": "https://www.uoc.edu/es/servicios/lengua-estilo/criterios/gramatica/pronombres",
+        "scope": "Explicit este/esto, ese/eso and aquel/aquello paradigms."
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/tal#Spanish",
+        "scope": "Spanish tal is unchanged for gender and has plural tales."
+      }
+    ],
+    "forms": {
+      "nuestro:X": [
+        [
+          "masculine singular",
+          "nuestro"
+        ],
+        [
+          "feminine singular",
+          "nuestra"
+        ],
+        [
+          "masculine plural",
+          "nuestros"
+        ],
+        [
+          "feminine plural",
+          "nuestras"
+        ]
+      ],
+      "tuyo:X": [
+        [
+          "before singular noun",
+          "tu"
+        ],
+        [
+          "before plural noun",
+          "tus"
+        ],
+        [
+          "masculine singular",
+          "tuyo"
+        ],
+        [
+          "feminine singular",
+          "tuya"
+        ],
+        [
+          "masculine plural",
+          "tuyos"
+        ],
+        [
+          "feminine plural",
+          "tuyas"
+        ]
+      ],
+      "aquel:D": [
+        [
+          "masculine singular",
+          "aquel"
+        ],
+        [
+          "feminine singular",
+          "aquella"
+        ],
+        [
+          "masculine plural",
+          "aquellos"
+        ],
+        [
+          "feminine plural",
+          "aquellas"
+        ],
+        [
+          "neuter (standalone)",
+          "aquello"
+        ]
+      ],
+      "este:D": [
+        [
+          "masculine singular",
+          "este"
+        ],
+        [
+          "feminine singular",
+          "esta"
+        ],
+        [
+          "masculine plural",
+          "estos"
+        ],
+        [
+          "feminine plural",
+          "estas"
+        ],
+        [
+          "neuter (standalone)",
+          "esto"
+        ]
+      ],
+      "ese:D": [
+        [
+          "masculine singular",
+          "ese"
+        ],
+        [
+          "feminine singular",
+          "esa"
+        ],
+        [
+          "masculine plural",
+          "esos"
+        ],
+        [
+          "feminine plural",
+          "esas"
+        ],
+        [
+          "neuter (standalone)",
+          "eso"
+        ]
+      ],
+      "tal:D": [
+        [
+          "singular",
+          "tal"
+        ],
+        [
+          "plural",
+          "tales"
+        ]
+      ],
+      "mío:X": [
+        [
+          "before singular noun",
+          "mi"
+        ],
+        [
+          "before plural noun",
+          "mis"
+        ],
+        [
+          "masculine singular",
+          "mío"
+        ],
+        [
+          "feminine singular",
+          "mía"
+        ],
+        [
+          "masculine plural",
+          "míos"
+        ],
+        [
+          "feminine plural",
+          "mías"
+        ]
+      ],
+      "suyo:X": [
+        [
+          "before singular noun",
+          "su"
+        ],
+        [
+          "before plural noun",
+          "sus"
+        ],
+        [
+          "masculine singular",
+          "suyo"
+        ],
+        [
+          "feminine singular",
+          "suya"
+        ],
+        [
+          "masculine plural",
+          "suyos"
+        ],
+        [
+          "feminine plural",
+          "suyas"
+        ]
+      ]
+    },
+    "retained": "Neuter forms do not replace agreeing forms in noun phrases. Existing contextual accepted answers remain unchanged. Other pronoun, quantifier and numeral cards are not asserted to have complete paradigms."
+  }
 }

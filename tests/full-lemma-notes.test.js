@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {combineNotes} from '../lemmas/notes-library.js';
+import {cardFormWords} from '../lemmas/card-links.js';
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url)));
 const base=read('../lemmas/data/notes.json'),deck=read('../lemmas/data/deck.json');
 const library=combineNotes(base,read('../lemmas/data/context.json')),byId=new Map(library.notes.map(n=>[n.id,n]));
@@ -24,7 +25,7 @@ test('noun gender, accent and adjective exceptions survive generation',()=>{
  const get=(w,p='N')=>byId.get(`corpes:${w}:${p}`);
  assert.equal(get('mano').pattern,'la mano');assert.equal(get('problema').pattern,'el problema');
  for(const w of ['agua','área','arma','alma']){assert.equal(get(w).pattern,'el '+w);assert.match(get(w).more,/Feminine/);assert.ok(get(w).forms.some(r=>r[1].startsWith('las ')));}
- assert.deepEqual(get('bueno','A').forms.map(r=>r[1]),['bueno','buena','buenos','buenas']);
+ assert.deepEqual(get('bueno','A').forms.map(r=>r[1]),['bueno','buena','buenos','buenas','buen']);
  assert.ok(get('país').forms.some(r=>r[1]==='los países'));
  assert.ok(get('joven').forms.some(r=>r[1]==='los / las jóvenes'));
  assert.ok(get('orden').forms.some(r=>r[1]==='los / las órdenes'));
@@ -38,8 +39,7 @@ test('displayed generated inflections are backed by exact lemma/POS evidence',()
  const manual=read('../data/spanish-lemmas/notes-manual-evidence.json').forms;
  for(const n of base.notes){
   const pos={noun:'n',adjective:'adj',verb:'v'}[n.label];if(!pos)continue;
-  for(const [,phrase] of n.forms){
-   const form=phrase.replace(/^(?:el|la|los|las)(?: \/ (?:el|la|los|las))? /,'');
+  for(const [,phrase] of n.forms)for(const form of cardFormWords(phrase)){
    if(form===n.word)continue;
    assert.ok(evidence.has([n.word,pos,form].join('|'))||manual.some(e=>e.lemma===n.word&&e.pos===pos&&e.forms.includes(form)),`${n.word}: ${form}`);
   }

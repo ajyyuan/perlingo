@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {contextPilot} from '../lemmas/context-pilot.js';
 import {wordMeanings} from '../lemmas/word-help.js';
+import {cardFormWords} from '../lemmas/card-links.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const exceptions=read('data/spanish-lemmas/context/form-exceptions.json');
 const deck=read('lemmas/data/deck.json'),notes=read('lemmas/data/notes.json').notes;
@@ -17,7 +18,7 @@ const concepts={
 const targetConcepts={};
 const bank=[...contextPilot],errors=[],used=new Set(bank.map(c=>c.id));
 const rows=[];
-const sourceFiles=['scripts/build-lemma-context.mjs','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
+const sourceFiles=['scripts/build-lemma-context.mjs','lemmas/card-links.js','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
 for(let day=1;day<=5;day++)for(const [lineNo,line] of fs.readFileSync(`data/spanish-lemmas/context/day${day}.txt`,'utf8').split('\n').entries()){
  if(!line.trim()||line.startsWith('#'))continue;
  const [targets,translation,span,...extra]=line.split('|');
@@ -29,10 +30,10 @@ for(let day=1;day<=5;day++)for(const [lineNo,line] of fs.readFileSync(`data/span
   if(!note||rank<=50||Math.floor((rank-1)/300)+1!==day)errors.push(`Rank ${rank} in wrong file`);
   const locations=chunks.flatMap((c,index)=>[...c.text.matchAll(/\p{L}+/gu)].filter(m=>m[0].toLocaleLowerCase('es')===target.toLocaleLowerCase('es')).map(m=>({index,offset:m.index,target:m[0]})));
   if(locations.length!==1){errors.push(`${rank} ${note.word}: ${target} occurs ${locations.length} times`);continue;}
-  const forms=[note.word,...note.forms.map(r=>r[1].replace(/^(?:el|la|los|las)(?: \/ (?:el|la|los|las))? /,''))];
+  const forms=[note.word,...note.forms.flatMap(r=>cardFormWords(r[1]))];
   if(!forms.some(f=>f.toLocaleLowerCase('es')===target.toLocaleLowerCase('es'))&&exceptions[rank]?.form!==target)errors.push(`FORM ${rank} ${note.word}: ${target} vs ${forms.join(', ')}`);
   if(used.has(note.id))errors.push(`Duplicate ${note.id}`);used.add(note.id);
-  const formLabels=note.forms.filter(([,f])=>f.replace(/^(?:el|la|los|las)(?: \/ (?:el|la|los|las))? /,'').toLocaleLowerCase('es')===target.toLocaleLowerCase('es')).map(([label])=>label);
+  const formLabels=note.forms.filter(([,f])=>cardFormWords(f).some(word=>word.toLocaleLowerCase('es')===target.toLocaleLowerCase('es'))).map(([label])=>label);
   const explanation=exceptions[rank]?`${locations[0].target}: ${exceptions[rank].reason}. ${note.tip}`:target.toLowerCase()===note.word?`${note.word} is used here as ${/^[aeiou]/i.test(note.label)?'an':'a'} ${note.label}. ${note.tip}`:`${locations[0].target} is a form of ${note.word}${formLabels.length?` (${note.label==='verb'?'present: ':''}${formLabels.join(' / ')})`:''}. ${note.tip}`;
   const authoredExample=structuredClone(example),concept='context:target:'+rank;
   targetConcepts[concept]={title:note.word+' in this sentence',text:explanation+' In this phrase: '+authoredExample.chunks[locations[0].index].meaning+'.'};
@@ -47,7 +48,7 @@ if(errors.length){console.log(errors.join('\n'));process.exitCode=1;}else{
  const additions=fs.existsSync('data/spanish-lemmas/context/word-glosses.json')?read('data/spanish-lemmas/context/word-glosses.json'):{};
  const lexicon={...wordMeanings,...additions};
  const candidates=new Map();
- for(const n of notes){for(const form of [n.word,...n.forms.map(r=>r[1].replace(/^(?:el|la|los|las)(?: \/ (?:el|la|los|las))? /,''))]){
+ for(const n of notes){for(const form of [n.word,...n.forms.flatMap(r=>cardFormWords(r[1]))]){
   if(!/^\p{L}+$/u.test(form))continue;
   const key=form.toLocaleLowerCase('es');if(!candidates.has(key))candidates.set(key,[]);
   if(!candidates.get(key).some(x=>x.id===n.id))candidates.get(key).push(n);

@@ -1,0 +1,7312 @@
+{
+  "reviewed": "2026-10-27",
+  "scope": "Screened all 752 noun and 197 adjective cards for displayed-form coverage, frozen headword metadata, reported omissions and lookup behavior. Targeted source comparison of flagged candidates; not an independent dictionary verification of every sense. Covers ordinary gender/number forms and the three attested adjective apocopations; excludes systematic diminutives, superlatives, regional spelling variants and unrelated lexical counterparts.",
+  "sources": [
+    {
+      "url": "https://www.rae.es/dpd/plural",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/g%C3%A9nero",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/bueno",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/malo",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/grande",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/actor",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/presidente",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/jefe",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/juez",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/cliente",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/l%C3%ADder",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/poeta",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://www.rae.es/dpd/club",
+      "scope": "Gender, plural, or headword-specific form restrictions."
+    },
+    {
+      "url": "https://dle.rae.es/muerto",
+      "scope": "Muerto/muerta used as a noun for a deceased person."
+    },
+    {
+      "path": "dictionary-extract.json",
+      "revision": "b8ed076b4faea26a0985ee46ca736771c2e62dc4",
+      "scope": "Explicit feminine markers and adjective apocopations; sense and countability checks."
+    },
+    {
+      "url": "https://www.rae.es/dpd/miembro",
+      "scope": "Epicene masculine and optional common-gender usage."
+    },
+    {
+      "url": "https://dem.colmex.mx/ver/dirigente",
+      "scope": "Dirigente is masculine and feminine; supports la dirigente."
+    }
+  ],
+  "metadataScreen": [
+    {
+      "id": "corpes:año:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:vez:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:día:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:nuevo:A",
+      "metadata": [
+        "{{es-adj|sup=novísimo,nuevísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:parte:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:país:N",
+      "metadata": [
+        "{{es-noun|m|países}}"
+      ]
+    },
+    {
+      "id": "corpes:grande:A",
+      "metadata": [
+        "{{es-adj|mapoc=gran|sup=grandísimo,mayor}}"
+      ]
+    },
+    {
+      "id": "corpes:tiempo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:vida:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:persona:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:bueno:A",
+      "metadata": [
+        "{{es-adj|mapoc=buen|comp=mejor,[[más]] [[bueno]]|sup=buenísimo,bonísimo<q:dated, formal>}}"
+      ]
+    },
+    {
+      "id": "corpes:mujer:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:último:A",
+      "metadata": [
+        "{{es-adj|sup=ultimísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:mundo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:momento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:forma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:casa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mayor:A",
+      "metadata": [
+        "{{es-adj-comp}}"
+      ]
+    },
+    {
+      "id": "corpes:trabajo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:hombre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cosa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:nacional:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:niño:N",
+      "metadata": [
+        "{{es-noun|m|f=+|dim=niñito}}"
+      ]
+    },
+    {
+      "id": "corpes:lugar:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:gobierno:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:social:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:hora:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:caso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mano:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:estado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:grupo:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:hijo:N",
+      "metadata": [
+        "{{es-noun|m|f=+|dim=hijito}}"
+      ]
+    },
+    {
+      "id": "corpes:propio:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:mejor:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:importante:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:punto:N",
+      "metadata": [
+        "{{es-noun|m|dim=puntillo,puntito}}"
+      ]
+    },
+    {
+      "id": "corpes:historia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:millón:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:manera:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:padre:N",
+      "metadata": [
+        "{{es-noun|m|f=madre}}"
+      ]
+    },
+    {
+      "id": "corpes:público:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:sistema:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:problema:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:presidente:N",
+      "metadata": [
+        "{{es-noun|m,f<l:nonstandard,uncommon>|f=presidenta}}"
+      ]
+    },
+    {
+      "id": "corpes:tipo:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m|f=+}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ciudad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mes:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:político:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:partido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:proceso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cambio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:alto:A",
+      "metadata": [
+        "{{es-adj|sup=altísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:obra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cuenta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:medio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:equipo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:noche:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:estudio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:agua:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:empresa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:gente:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:centro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:nivel:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:lado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pequeño:A",
+      "metadata": [
+        "{{es-adj|sup=pequeñísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:servicio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:proyecto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:general:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ejemplo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:madre:N",
+      "metadata": [
+        "{{es-noun|f|m=padre}}"
+      ]
+    },
+    {
+      "id": "corpes:libro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:único:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:familia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:salud:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:semana:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:largo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:desarrollo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:derecho:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:situación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:humano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:palabra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cuerpo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:información:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:relación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tema:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:económico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ojo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:político:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:posible:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:amigo:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:actividad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:hecho:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:fin:N",
+      "metadata": [
+        "{{es-noun|m,f<l:archaic>}}"
+      ]
+    },
+    {
+      "id": "corpes:resultado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:idea:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:diferente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:programa:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:nombre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ley:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:número:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:internacional:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:final:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:espacio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:zona:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:investigación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sector:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:paso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:solo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:realidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:principal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:sociedad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cabeza:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:calle:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:producto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:sentido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:puerta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:músico:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:director:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:pueblo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:distinto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:voz:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fuerza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:acción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:juego:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:verdad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:español:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:poder:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mercado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:muerte:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:condición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:necesario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:valor:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:minuto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:dato:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:hermano:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:medida:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:claro:A",
+      "metadata": [
+        "{{es-adj|sup=clarísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:tierra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:población:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:imagen:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:efecto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:universidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:seguridad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:luz:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:uso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:próximo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:señor:N",
+      "metadata": [
+        "{{es-noun|m|f=+|dim=señorito}}"
+      ]
+    },
+    {
+      "id": "corpes:recurso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:siglo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:poco:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:principio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:objetivo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:comunidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:razón:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:organización:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:enfermedad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:experiencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:siguiente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:atención:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:educación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:camino:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:decisión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:arte:N",
+      "metadata": [
+        "{{es-noun|mfequiv}}"
+      ]
+    },
+    {
+      "id": "corpes:posibilidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:necesidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fondo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:joven:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:interés:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:riesgo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mayoría:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cultura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:producción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:papel:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:película:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:red:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:plan:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:anterior:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:especie:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:área:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:capacidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:malo:A",
+      "metadata": [
+        "{{es-adj|mapoc=mal|comp=peor,[[más]] [[malo]]|sup=malísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:edad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ciento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:amor:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:modelo:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:autor:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:movimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:policía:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:guerra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:calidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:falta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:campo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:región:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cultural:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:natural:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:dinero:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:línea:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:especial:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:resto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:modo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:tecnología:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ministro:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:control:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:precio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:difícil:A",
+      "metadata": [
+        "{{es-adj|sup=dificilísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:peso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:institución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:respuesta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:actual:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:paciente:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:clase:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:acuerdo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:serie:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:color:N",
+      "metadata": [
+        "{{es-noun|mfequiv}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mundial:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:pie:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mesa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:base:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:bajo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:función:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:dólar:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ciencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fuerte:A",
+      "metadata": [
+        "{{es-adj|sup=fortísimo,fuertísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:actor:N",
+      "metadata": [
+        "{{es-noun|m|f=actriz}}",
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:autoridad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:diferencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cara:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mañana:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:menor:A",
+      "metadata": [
+        "{{es-adj-comp}}"
+      ]
+    },
+    {
+      "id": "corpes:chico:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:carrera:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:real:A",
+      "metadata": [
+        "{{es-adj}}",
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:orden:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:duda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ocasión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:oportunidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pasado:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:presencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:seguro:A",
+      "metadata": [
+        "{{es-adj|sup=segurísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:conocimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:artista:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:local:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:tarde:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:diverso:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:negro:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:compañía:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:aire:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:personaje:N",
+      "metadata": [
+        "{{es-noun|m,f<q:informally when referring to a female>}}"
+      ]
+    },
+    {
+      "id": "corpes:vista:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:aspecto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:escuela:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cantidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:economía:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:libre:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:viaje:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:capital:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:comunicación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:común:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:período:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:doctor:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:pregunta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fuente:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:elemento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:blanco:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:prueba:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:miembro:N",
+      "metadata": [
+        "{{es-noun|m|f=miembro,miembra<l:proscribed>}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:época:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:futuro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:jefe:N",
+      "metadata": [
+        "{{es-noun|m|f=jefa,#}}"
+      ]
+    },
+    {
+      "id": "corpes:jugador:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:cine:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:apoyo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:técnico:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:privado:A",
+      "metadata": [
+        "{{es-adj|sup=privadísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:mirada:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:energía:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:figura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:propuesta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:popular:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:metro:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:euro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:artículo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:silencio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:viejo:A",
+      "metadata": [
+        "{{es-adj|sup=viejísimo|dim=viejito}}"
+      ]
+    },
+    {
+      "id": "corpes:década:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ministerio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:causa:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tratamiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:crisis:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sitio:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:elección:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:dirección:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:profesor:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:sueño:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:europeo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:capaz:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:miedo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:encuentro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:práctica:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cargo:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:acto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:libertad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:físico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:público:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:personal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:teatro:N",
+      "metadata": [
+        "{{es-noun|m|dim=teatrillo,teatrito}}"
+      ]
+    },
+    {
+      "id": "corpes:compañero:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:vuelta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:término:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:dicho:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:joven:A",
+      "metadata": [
+        "{{es-adj|sup=jovencísimo,menor}}"
+      ]
+    },
+    {
+      "id": "corpes:histórico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:objeto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ser:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:consejo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:banco:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:esfuerzo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:participación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:posición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:central:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:análisis:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:origen:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:médico:N",
+      "metadata": [
+        "{{es-noun|mfbysense|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:consecuencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:suelo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:premio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:éxito:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:texto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:asunto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:estudiante:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:antiguo:A",
+      "metadata": [
+        "{{es-adj|sup=antiquísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:formación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:hospital:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:crecimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:unidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:comisión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cámara:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:construcción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:acceso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:título:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:estrategia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:teléfono:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:novela:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:alimento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:planta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:conjunto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:negocio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:científico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:fecha:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:factor:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:brazo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:inversión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:animal:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:importancia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:consumo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:superior:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:memoria:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:entrada:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:dolor:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:presente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:contrario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:violencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sol:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m|-}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:informe:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:materia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:carta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cabo:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:trabajador:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:boca:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fácil:A",
+      "metadata": [
+        "{{es-adj|sup=facilísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:escritor:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:sala:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ingreso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:campaña:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:líder:N",
+      "metadata": [
+        "{{es-noun|m|f=+,lideresa}}"
+      ]
+    },
+    {
+      "id": "corpes:escenario:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:corazón:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:estructura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:material:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:rápido:A",
+      "metadata": [
+        "{{es-adj|sup=rapidísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:justicia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ciudadano:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:reunión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mar:N",
+      "metadata": [
+        "{{es-noun|mfequiv}}",
+        "{{head|es|noun|g=m}}"
+      ]
+    },
+    {
+      "id": "corpes:cama:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:abuelo:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:página:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:defensa:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cierto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:contenido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:administración:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:instituto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:fundamental:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:interior:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:televisión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:lleno:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:fútbol:N",
+      "metadata": [
+        "{{es-noun|m|-}}"
+      ]
+    },
+    {
+      "id": "corpes:nación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:prensa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:generación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:plaza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:operación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:usuario:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:gestión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:club:N",
+      "metadata": [
+        "{{es-noun|m|+,#es}}"
+      ]
+    },
+    {
+      "id": "corpes:naturaleza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:departamento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:foto:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:completo:A",
+      "metadata": [
+        "{{es-adj|sup=completísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:mensaje:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:víctima:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:suficiente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:aplicación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:industria:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:temporada:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:directo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:don:N",
+      "metadata": [
+        "{{es-noun|m|f=doña}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:par:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mexicano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:opción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:escena:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:piel:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sangre:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:género:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:técnico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ayuda:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:concepto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:noticia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:territorio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:motivo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mitad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pareja:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:frente:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:clave:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:congreso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:creación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:reforma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:canción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:asociación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:oficial:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:tarea:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:organismo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:solución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:verdadero:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:mamá:N",
+      "metadata": [
+        "{{es-noun|f|m=papá}}"
+      ]
+    },
+    {
+      "id": "corpes:opinión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:internet:N",
+      "metadata": [
+        "{{es-noun|mfequiv|internets}}"
+      ]
+    },
+    {
+      "id": "corpes:domingo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:amplio:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:investigador:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:etapa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:militar:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:característico:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:similar:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:golpe:N",
+      "metadata": [
+        "{{es-noun|m|dim=golpecito}}"
+      ]
+    },
+    {
+      "id": "corpes:financiero:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:cuadro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:grado:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:edificio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:estilo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:venta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:detalle:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:candidato:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:comida:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:suerte:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:enorme:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:electoral:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:enero:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:carácter:N",
+      "metadata": [
+        "{{es-noun|m|caracteres,+}}"
+      ]
+    },
+    {
+      "id": "corpes:impacto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:educativo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:fiesta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ejercicio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:versión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:responsabilidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:río:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:interno:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:rostro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:diciembre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:familiar:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:secretario:N",
+      "metadata": [
+        "{{es-noun|m|f=+,#}}"
+      ]
+    },
+    {
+      "id": "corpes:documento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:aumento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:hotel:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:comercial:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:evento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:maestro:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:español:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}",
+        "{{es-noun|m|-}}"
+      ]
+    },
+    {
+      "id": "corpes:plazo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:expresión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pieza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:competencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:café:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:esposo:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:vía:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:destino:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:rey:N",
+      "metadata": [
+        "{{es-noun|m|f=reina}}"
+      ]
+    },
+    {
+      "id": "corpes:vivo:A",
+      "metadata": [
+        "{{es-adj|sup=vivísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:entidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:beneficio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:médico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:tradicional:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:tío:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:muestra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:periodista:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:visita:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:igual:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:lucha:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:grave:A",
+      "metadata": [
+        "{{es-adj|sup=gravísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:conflicto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:habitación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:profesional:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:revista:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:barrio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:norte:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:profundo:A",
+      "metadata": [
+        "{{es-adj|sup=profundísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:diario:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:museo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cliente:N",
+      "metadata": [
+        "{{es-noun|m|f=#,clienta}}"
+      ]
+    },
+    {
+      "id": "corpes:sur:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:juez:N",
+      "metadata": [
+        "{{es-noun|mfbysense|f=#,#a}}"
+      ]
+    },
+    {
+      "id": "corpes:mayo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:crítico:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:marca:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:marzo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:salido:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cifra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:iniciativa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:visión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:marco:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:piso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:contacto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:listo:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:abierto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ámbito:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:corte:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:adecuado:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:lengua:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:estadounidense:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:colegio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:laboral:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:empleo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:paz:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:protección:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:selección:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:duro:A",
+      "metadata": [
+        "{{es-adj|sup=durísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:oscuro:A",
+      "metadata": [
+        "{{es-adj|sup=oscurísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:oficina:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:total:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:cocina:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:rojo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:básico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:cuarto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:distancia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sexual:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:estrella:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:peor:A",
+      "metadata": [
+        "{{es-adj-comp}}"
+      ]
+    },
+    {
+      "id": "corpes:inicio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:vecino:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:junto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:funcionario:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:puesto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:civil:A",
+      "metadata": [
+        "{{es-adj|sup=civilísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:perro:N",
+      "metadata": [
+        "{{es-noun|m|f=+|dim=perrillo,perrito}}"
+      ]
+    },
+    {
+      "id": "corpes:experto:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:positivo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:isla:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:conversación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:error:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:contexto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pena:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:bien:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:compromiso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pensamiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cuestión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:marcha:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:final:A",
+      "metadata": [
+        "{{es-adj|sup=finalísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:alumno:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:cercano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:jornada:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:muchacho:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:literatura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:discurso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:demanda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:edición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:imposible:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:carne:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:hogar:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:gasto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:declaración:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:existencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:kilómetro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ambiente:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:corto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:octubre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:propiedad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:arma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:inmediato:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:deseo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:sábado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:altura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pasado:N",
+      "metadata": [
+        "{{es-noun|m|-}}"
+      ]
+    },
+    {
+      "id": "corpes:cuidado:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:diseño:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:representante:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:sensación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:costo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:coche:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:argentino:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:vivienda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:exposición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:rato:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:iglesia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:gol:N",
+      "metadata": [
+        "{{es-noun|m|+}}"
+      ]
+    },
+    {
+      "id": "corpes:total:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:septiembre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:medio:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:agente:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:papá:N",
+      "metadata": [
+        "{{es-noun|m|f=mamá}}"
+      ]
+    },
+    {
+      "id": "corpes:reciente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:categoría:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:digital:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ropa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:provincia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pared:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:municipio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:feliz:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:diputado:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:árbol:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:gesto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:máximo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:método:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:tendencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:favor:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cielo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:entrevista:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ventana:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ataque:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pérdida:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:norma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:herramienta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:curso:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:segundo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:fenómeno:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:comercio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:julio:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:serio:A",
+      "metadata": [
+        "{{es-adj|sup=serísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:viernes:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:normal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:dificultad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tribunal:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pelo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:banda:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:dedo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:noviembre:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:abril:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:referencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:específico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:junio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:intervención:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fuego:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:tasa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:deporte:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:simple:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:francés:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:disco:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:intención:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:recuerdo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:extraño:A",
+      "metadata": [
+        "{{es-adj|sup=extrañísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:piedra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:vehículo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:instrumento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:límite:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:regional:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:febrero:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:presión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:daño:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:identidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:gracia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:contrato:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:parque:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:frase:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:moderno:A",
+      "metadata": [
+        "{{es-adj|sup=modernísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:planeta:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:confianza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:municipal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:mecanismo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:entorno:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:voto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pierna:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cáncer:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:democracia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:nota:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:actitud:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:lunes:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:lectura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:copa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tecnológico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:video:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:productor:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:mínimo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:hoja:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:juicio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:capítulo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pobre:A",
+      "metadata": [
+        "{{es-adj|sup=pobrísimo,paupérrimo<l:high register>}}"
+      ]
+    },
+    {
+      "id": "corpes:gusto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:interesante:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:global:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:victoria:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fotografía:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:mil:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:teoría:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:lenguaje:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:espalda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:profesional:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:debate:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:caja:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:deportivo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:revolución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sonido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:determinado:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:régimen:N",
+      "metadata": [
+        "{{es-noun|m|regímenes}}"
+      ]
+    },
+    {
+      "id": "corpes:pantalla:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tamaño:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:terreno:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:verano:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:individuo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:agencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:previo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:urbano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:constitución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:comportamiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:labor:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:vino:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:presupuesto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:agosto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:fase:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ambiental:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:legal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:judicial:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:musical:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:complejo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:perfecto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:artístico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ritmo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:mente:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:presentación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:cadena:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pleno:A",
+      "metadata": [
+        "{{es-adj|sup=plenísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:oferta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tono:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:restaurante:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:alma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:viento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:delito:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:avance:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:latino:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:velocidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:instante:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pago:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:conciencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:abogado:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:festival:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:búsqueda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:lector:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:marido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:esperanza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:registro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:peligro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:temperatura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:perspectivo:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ejército:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:actuación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:gana:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:propósito:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:misión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:criterio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:izquierda:N",
+      "metadata": [
+        "{{es-noun|f|-}}"
+      ]
+    },
+    {
+      "id": "corpes:poeta:N",
+      "metadata": [
+        "{{es-noun|mfbysense|f=+,poetisa}}"
+      ]
+    },
+    {
+      "id": "corpes:famoso:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:liga:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:científico:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:contra:N",
+      "metadata": [
+        "{{es-noun|m}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:oro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ventaja:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tradición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:diálogo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:sonrisa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:eléctrico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:sencillo:A",
+      "metadata": [
+        "{{es-adj|sup=sencillísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:radio:N",
+      "metadata": [
+        "{{es-noun|mfequiv}}",
+        "{{es-noun|f}}",
+        "{{es-noun|m}}",
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:responsable:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:dispuesto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:verde:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:voluntad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sombra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:torneo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:baño:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:absoluto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:raro:A",
+      "metadata": [
+        "{{es-adj|sup=rarísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:medicina:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sentimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:especialista:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:cuento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:habitante:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:inglés:N",
+      "metadata": [
+        "{{es-noun|m|-}}",
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:procedimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:superficie:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:madera:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:empresario:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:federal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:playa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:dueño:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:protagonista:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:plato:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:democrático:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:transporte:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:concreto:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:señal:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:reconocimiento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:letra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:flor:N",
+      "metadata": [
+        "{{es-noun|f|dim=florecita}}"
+      ]
+    },
+    {
+      "id": "corpes:lluvia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sanitario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:estatal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:república:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sexo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:circunstancia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:personal:N",
+      "metadata": [
+        "{{es-noun|m|-}}",
+        "{{es-noun|m|-}}"
+      ]
+    },
+    {
+      "id": "corpes:deudo:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:jueves:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:frontera:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:activo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:espectáculo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:inteligencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:célula:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:significativo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:particular:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:leche:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:triunfo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:cubano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:promedio:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:masa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:femenino:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:campeón:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:canal:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:respeto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:fundación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:frío:A",
+      "metadata": [
+        "{{es-adj|dim1=friito|dim2=friecito}}"
+      ]
+    },
+    {
+      "id": "corpes:alcalde:N",
+      "metadata": [
+        "{{es-noun|m|f=alcaldesa}}"
+      ]
+    },
+    {
+      "id": "corpes:instalación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:llegada:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:definitivo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:representación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:infantil:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:conocido:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:clásico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:cerebro:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:novio:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:dirigente:N",
+      "metadata": [
+        "{{es-noun|m|f=#,dirigenta}}"
+      ]
+    },
+    {
+      "id": "corpes:colombiano:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:emoción:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:máquina:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:original:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:rico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:relato:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:frecuencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:estación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:costa:N",
+      "metadata": [
+        "{{es-noun|f}}",
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:plataforma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:tranquilo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:adolescente:N",
+      "metadata": [
+        "{{es-noun|mfbysense}}"
+      ]
+    },
+    {
+      "id": "corpes:concierto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:accidente:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:evolución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:bosque:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:disponible:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:amenaza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:jardín:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:conferencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:crédito:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pintura:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:periódico:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:incremento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:dimensión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:pobreza:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:conclusión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:miércoles:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:influencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:impuesto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:habitual:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:compra:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:sorpresa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:bolsa:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:regla:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:calor:N",
+      "metadata": [
+        "{{es-noun|m,f<l:<<colloquial>>>}}"
+      ]
+    },
+    {
+      "id": "corpes:electrónico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:droga:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:literario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:oposición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:efectivo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:negativo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:puro:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:diario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:colectivo:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:distribución:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:fiscal:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:numeroso:A",
+      "metadata": [
+        "{{es-adj|sup=numerosísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:intenso:A",
+      "metadata": [
+        "{{es-adj|sup=intensísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:sede:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:azul:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:medicamento:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:firma:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ausencia:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:muerto:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:ruta:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:web:N",
+      "metadata": [
+        "{{es-noun|f,m<l:uncommon>|~}}"
+      ]
+    },
+    {
+      "id": "corpes:seco:A",
+      "metadata": [
+        "{{es-adj|sup=sequísimo}}"
+      ]
+    },
+    {
+      "id": "corpes:permanente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:aceite:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:derecha:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:evaluación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:espíritu:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:tienda:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:universitario:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:virus:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:martes:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:tabla:N",
+      "metadata": [
+        "{{es-noun|f|dim=tablilla,tablita|aug=tablón}}"
+      ]
+    },
+    {
+      "id": "corpes:preocupación:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:caído:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:doble:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:evidente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:independiente:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:taller:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:turismo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:actualidad:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:rural:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:empleado:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:sesión:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:jurídico:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:viejo:N",
+      "metadata": [
+        "{{es-noun|m|f=+}}"
+      ]
+    },
+    {
+      "id": "corpes:individual:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:disposición:N",
+      "metadata": [
+        "{{es-noun|f}}"
+      ]
+    },
+    {
+      "id": "corpes:ruido:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:pecho:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:futuro:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    },
+    {
+      "id": "corpes:ciclo:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:gas:N",
+      "metadata": [
+        "{{es-noun|m}}"
+      ]
+    },
+    {
+      "id": "corpes:religioso:A",
+      "metadata": [
+        "{{es-adj}}"
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "id": "corpes:niño:N",
+      "word": "niño",
+      "forms": [
+        [
+          "masculine singular",
+          "el niño"
+        ],
+        [
+          "feminine singular",
+          "la niña"
+        ],
+        [
+          "masculine plural",
+          "los niños"
+        ],
+        [
+          "feminine plural",
+          "las niñas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:hijo:N",
+      "word": "hijo",
+      "forms": [
+        [
+          "masculine singular",
+          "el hijo"
+        ],
+        [
+          "feminine singular",
+          "la hija"
+        ],
+        [
+          "masculine plural",
+          "los hijos"
+        ],
+        [
+          "feminine plural",
+          "las hijas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:político:N",
+      "word": "político",
+      "forms": [
+        [
+          "masculine singular",
+          "el político"
+        ],
+        [
+          "feminine singular",
+          "la política"
+        ],
+        [
+          "masculine plural",
+          "los políticos"
+        ],
+        [
+          "feminine plural",
+          "las políticas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:amigo:N",
+      "word": "amigo",
+      "forms": [
+        [
+          "masculine singular",
+          "el amigo"
+        ],
+        [
+          "feminine singular",
+          "la amiga"
+        ],
+        [
+          "masculine plural",
+          "los amigos"
+        ],
+        [
+          "feminine plural",
+          "las amigas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:director:N",
+      "word": "director",
+      "forms": [
+        [
+          "masculine singular",
+          "el director"
+        ],
+        [
+          "feminine singular",
+          "la directora"
+        ],
+        [
+          "masculine plural",
+          "los directores"
+        ],
+        [
+          "feminine plural",
+          "las directoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:hermano:N",
+      "word": "hermano",
+      "forms": [
+        [
+          "masculine singular",
+          "el hermano"
+        ],
+        [
+          "feminine singular",
+          "la hermana"
+        ],
+        [
+          "masculine plural",
+          "los hermanos"
+        ],
+        [
+          "feminine plural",
+          "las hermanas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:señor:N",
+      "word": "señor",
+      "forms": [
+        [
+          "masculine singular",
+          "el señor"
+        ],
+        [
+          "feminine singular",
+          "la señora"
+        ],
+        [
+          "masculine plural",
+          "los señores"
+        ],
+        [
+          "feminine plural",
+          "las señoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:autor:N",
+      "word": "autor",
+      "forms": [
+        [
+          "masculine singular",
+          "el autor"
+        ],
+        [
+          "feminine singular",
+          "la autora"
+        ],
+        [
+          "masculine plural",
+          "los autores"
+        ],
+        [
+          "feminine plural",
+          "las autoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:ministro:N",
+      "word": "ministro",
+      "forms": [
+        [
+          "masculine singular",
+          "el ministro"
+        ],
+        [
+          "feminine singular",
+          "la ministra"
+        ],
+        [
+          "masculine plural",
+          "los ministros"
+        ],
+        [
+          "feminine plural",
+          "las ministras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:chico:N",
+      "word": "chico",
+      "forms": [
+        [
+          "masculine singular",
+          "el chico"
+        ],
+        [
+          "feminine singular",
+          "la chica"
+        ],
+        [
+          "masculine plural",
+          "los chicos"
+        ],
+        [
+          "feminine plural",
+          "las chicas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:doctor:N",
+      "word": "doctor",
+      "forms": [
+        [
+          "masculine singular",
+          "el doctor"
+        ],
+        [
+          "feminine singular",
+          "la doctora"
+        ],
+        [
+          "masculine plural",
+          "los doctores"
+        ],
+        [
+          "feminine plural",
+          "las doctoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:jugador:N",
+      "word": "jugador",
+      "forms": [
+        [
+          "masculine singular",
+          "el jugador"
+        ],
+        [
+          "feminine singular",
+          "la jugadora"
+        ],
+        [
+          "masculine plural",
+          "los jugadores"
+        ],
+        [
+          "feminine plural",
+          "las jugadoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:técnico:N",
+      "word": "técnico",
+      "forms": [
+        [
+          "masculine singular",
+          "el técnico"
+        ],
+        [
+          "feminine singular",
+          "la técnica"
+        ],
+        [
+          "masculine plural",
+          "los técnicos"
+        ],
+        [
+          "feminine plural",
+          "las técnicas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:profesor:N",
+      "word": "profesor",
+      "forms": [
+        [
+          "masculine singular",
+          "el profesor"
+        ],
+        [
+          "feminine singular",
+          "la profesora"
+        ],
+        [
+          "masculine plural",
+          "los profesores"
+        ],
+        [
+          "feminine plural",
+          "las profesoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:compañero:N",
+      "word": "compañero",
+      "forms": [
+        [
+          "masculine singular",
+          "el compañero"
+        ],
+        [
+          "feminine singular",
+          "la compañera"
+        ],
+        [
+          "masculine plural",
+          "los compañeros"
+        ],
+        [
+          "feminine plural",
+          "las compañeras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:médico:N",
+      "word": "médico",
+      "forms": [
+        [
+          "masculine singular",
+          "el médico"
+        ],
+        [
+          "feminine singular",
+          "la médica"
+        ],
+        [
+          "masculine plural",
+          "los médicos"
+        ],
+        [
+          "feminine plural",
+          "las médicas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:trabajador:N",
+      "word": "trabajador",
+      "forms": [
+        [
+          "masculine singular",
+          "el trabajador"
+        ],
+        [
+          "feminine singular",
+          "la trabajadora"
+        ],
+        [
+          "masculine plural",
+          "los trabajadores"
+        ],
+        [
+          "feminine plural",
+          "las trabajadoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:escritor:N",
+      "word": "escritor",
+      "forms": [
+        [
+          "masculine singular",
+          "el escritor"
+        ],
+        [
+          "feminine singular",
+          "la escritora"
+        ],
+        [
+          "masculine plural",
+          "los escritores"
+        ],
+        [
+          "feminine plural",
+          "las escritoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:ciudadano:N",
+      "word": "ciudadano",
+      "forms": [
+        [
+          "masculine singular",
+          "el ciudadano"
+        ],
+        [
+          "feminine singular",
+          "la ciudadana"
+        ],
+        [
+          "masculine plural",
+          "los ciudadanos"
+        ],
+        [
+          "feminine plural",
+          "las ciudadanas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:abuelo:N",
+      "word": "abuelo",
+      "forms": [
+        [
+          "masculine singular",
+          "el abuelo"
+        ],
+        [
+          "feminine singular",
+          "la abuela"
+        ],
+        [
+          "masculine plural",
+          "los abuelos"
+        ],
+        [
+          "feminine plural",
+          "las abuelas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:usuario:N",
+      "word": "usuario",
+      "forms": [
+        [
+          "masculine singular",
+          "el usuario"
+        ],
+        [
+          "feminine singular",
+          "la usuaria"
+        ],
+        [
+          "masculine plural",
+          "los usuarios"
+        ],
+        [
+          "feminine plural",
+          "las usuarias"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:investigador:N",
+      "word": "investigador",
+      "forms": [
+        [
+          "masculine singular",
+          "el investigador"
+        ],
+        [
+          "feminine singular",
+          "la investigadora"
+        ],
+        [
+          "masculine plural",
+          "los investigadores"
+        ],
+        [
+          "feminine plural",
+          "las investigadoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:candidato:N",
+      "word": "candidato",
+      "forms": [
+        [
+          "masculine singular",
+          "el candidato"
+        ],
+        [
+          "feminine singular",
+          "la candidata"
+        ],
+        [
+          "masculine plural",
+          "los candidatos"
+        ],
+        [
+          "feminine plural",
+          "las candidatas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:maestro:N",
+      "word": "maestro",
+      "forms": [
+        [
+          "masculine singular",
+          "el maestro"
+        ],
+        [
+          "feminine singular",
+          "la maestra"
+        ],
+        [
+          "masculine plural",
+          "los maestros"
+        ],
+        [
+          "feminine plural",
+          "las maestras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:español:N",
+      "word": "español",
+      "forms": [
+        [
+          "masculine singular",
+          "el español"
+        ],
+        [
+          "feminine singular",
+          "la española"
+        ],
+        [
+          "masculine plural",
+          "los españoles"
+        ],
+        [
+          "feminine plural",
+          "las españolas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:esposo:N",
+      "word": "esposo",
+      "forms": [
+        [
+          "masculine singular",
+          "el esposo"
+        ],
+        [
+          "feminine singular",
+          "la esposa"
+        ],
+        [
+          "masculine plural",
+          "los esposos"
+        ],
+        [
+          "feminine plural",
+          "las esposas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:tío:N",
+      "word": "tío",
+      "forms": [
+        [
+          "masculine singular",
+          "el tío"
+        ],
+        [
+          "feminine singular",
+          "la tía"
+        ],
+        [
+          "masculine plural",
+          "los tíos"
+        ],
+        [
+          "feminine plural",
+          "las tías"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:crítico:N",
+      "word": "crítico",
+      "forms": [
+        [
+          "masculine singular",
+          "el crítico"
+        ],
+        [
+          "feminine singular",
+          "la crítica"
+        ],
+        [
+          "masculine plural",
+          "los críticos"
+        ],
+        [
+          "feminine plural",
+          "las críticas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:vecino:N",
+      "word": "vecino",
+      "forms": [
+        [
+          "masculine singular",
+          "el vecino"
+        ],
+        [
+          "feminine singular",
+          "la vecina"
+        ],
+        [
+          "masculine plural",
+          "los vecinos"
+        ],
+        [
+          "feminine plural",
+          "las vecinas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:funcionario:N",
+      "word": "funcionario",
+      "forms": [
+        [
+          "masculine singular",
+          "el funcionario"
+        ],
+        [
+          "feminine singular",
+          "la funcionaria"
+        ],
+        [
+          "masculine plural",
+          "los funcionarios"
+        ],
+        [
+          "feminine plural",
+          "las funcionarias"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:perro:N",
+      "word": "perro",
+      "forms": [
+        [
+          "masculine singular",
+          "el perro"
+        ],
+        [
+          "feminine singular",
+          "la perra"
+        ],
+        [
+          "masculine plural",
+          "los perros"
+        ],
+        [
+          "feminine plural",
+          "las perras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:experto:N",
+      "word": "experto",
+      "forms": [
+        [
+          "masculine singular",
+          "el experto"
+        ],
+        [
+          "feminine singular",
+          "la experta"
+        ],
+        [
+          "masculine plural",
+          "los expertos"
+        ],
+        [
+          "feminine plural",
+          "las expertas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:alumno:N",
+      "word": "alumno",
+      "forms": [
+        [
+          "masculine singular",
+          "el alumno"
+        ],
+        [
+          "feminine singular",
+          "la alumna"
+        ],
+        [
+          "masculine plural",
+          "los alumnos"
+        ],
+        [
+          "feminine plural",
+          "las alumnas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:muchacho:N",
+      "word": "muchacho",
+      "forms": [
+        [
+          "masculine singular",
+          "el muchacho"
+        ],
+        [
+          "feminine singular",
+          "la muchacha"
+        ],
+        [
+          "masculine plural",
+          "los muchachos"
+        ],
+        [
+          "feminine plural",
+          "las muchachas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:diputado:N",
+      "word": "diputado",
+      "forms": [
+        [
+          "masculine singular",
+          "el diputado"
+        ],
+        [
+          "feminine singular",
+          "la diputada"
+        ],
+        [
+          "masculine plural",
+          "los diputados"
+        ],
+        [
+          "feminine plural",
+          "las diputadas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:productor:N",
+      "word": "productor",
+      "forms": [
+        [
+          "masculine singular",
+          "el productor"
+        ],
+        [
+          "feminine singular",
+          "la productora"
+        ],
+        [
+          "masculine plural",
+          "los productores"
+        ],
+        [
+          "feminine plural",
+          "las productoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:abogado:N",
+      "word": "abogado",
+      "forms": [
+        [
+          "masculine singular",
+          "el abogado"
+        ],
+        [
+          "feminine singular",
+          "la abogada"
+        ],
+        [
+          "masculine plural",
+          "los abogados"
+        ],
+        [
+          "feminine plural",
+          "las abogadas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:lector:N",
+      "word": "lector",
+      "forms": [
+        [
+          "masculine singular",
+          "el lector"
+        ],
+        [
+          "feminine singular",
+          "la lectora"
+        ],
+        [
+          "masculine plural",
+          "los lectores"
+        ],
+        [
+          "feminine plural",
+          "las lectoras"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:científico:N",
+      "word": "científico",
+      "forms": [
+        [
+          "masculine singular",
+          "el científico"
+        ],
+        [
+          "feminine singular",
+          "la científica"
+        ],
+        [
+          "masculine plural",
+          "los científicos"
+        ],
+        [
+          "feminine plural",
+          "las científicas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:empresario:N",
+      "word": "empresario",
+      "forms": [
+        [
+          "masculine singular",
+          "el empresario"
+        ],
+        [
+          "feminine singular",
+          "la empresaria"
+        ],
+        [
+          "masculine plural",
+          "los empresarios"
+        ],
+        [
+          "feminine plural",
+          "las empresarias"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:dueño:N",
+      "word": "dueño",
+      "forms": [
+        [
+          "masculine singular",
+          "el dueño"
+        ],
+        [
+          "feminine singular",
+          "la dueña"
+        ],
+        [
+          "masculine plural",
+          "los dueños"
+        ],
+        [
+          "feminine plural",
+          "las dueñas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:campeón:N",
+      "word": "campeón",
+      "forms": [
+        [
+          "masculine singular",
+          "el campeón"
+        ],
+        [
+          "feminine singular",
+          "la campeona"
+        ],
+        [
+          "masculine plural",
+          "los campeones"
+        ],
+        [
+          "feminine plural",
+          "las campeonas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:novio:N",
+      "word": "novio",
+      "forms": [
+        [
+          "masculine singular",
+          "el novio"
+        ],
+        [
+          "feminine singular",
+          "la novia"
+        ],
+        [
+          "masculine plural",
+          "los novios"
+        ],
+        [
+          "feminine plural",
+          "las novias"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:empleado:N",
+      "word": "empleado",
+      "forms": [
+        [
+          "masculine singular",
+          "el empleado"
+        ],
+        [
+          "feminine singular",
+          "la empleada"
+        ],
+        [
+          "masculine plural",
+          "los empleados"
+        ],
+        [
+          "feminine plural",
+          "las empleadas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:viejo:N",
+      "word": "viejo",
+      "forms": [
+        [
+          "masculine singular",
+          "el viejo"
+        ],
+        [
+          "feminine singular",
+          "la vieja"
+        ],
+        [
+          "masculine plural",
+          "los viejos"
+        ],
+        [
+          "feminine plural",
+          "las viejas"
+        ]
+      ],
+      "reason": "Frozen noun headword feminine metadata, checked against the taught person/animal sense; RAE gender and plural rules."
+    },
+    {
+      "id": "corpes:muerto:N",
+      "word": "muerto",
+      "forms": [
+        [
+          "masculine singular",
+          "el muerto"
+        ],
+        [
+          "feminine singular",
+          "la muerta"
+        ],
+        [
+          "masculine plural",
+          "los muertos"
+        ],
+        [
+          "feminine plural",
+          "las muertas"
+        ]
+      ],
+      "reason": "RAE DLE muerto/muerta marks the deceased-person use as a noun; frozen metadata alone omitted the feminine."
+    },
+    {
+      "id": "corpes:presidente:N",
+      "word": "presidente",
+      "forms": [
+        [
+          "masculine singular",
+          "el presidente"
+        ],
+        [
+          "feminine singular",
+          "la presidenta"
+        ],
+        [
+          "masculine plural",
+          "los presidentes"
+        ],
+        [
+          "feminine plural",
+          "las presidentas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:actor:N",
+      "word": "actor",
+      "forms": [
+        [
+          "masculine singular",
+          "el actor"
+        ],
+        [
+          "feminine singular",
+          "la actriz"
+        ],
+        [
+          "masculine plural",
+          "los actores"
+        ],
+        [
+          "feminine plural",
+          "las actrices"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:miembro:N",
+      "word": "miembro",
+      "forms": [
+        [
+          "masculine singular",
+          "el miembro"
+        ],
+        [
+          "feminine singular",
+          "la miembro"
+        ],
+        [
+          "masculine plural",
+          "los miembros"
+        ],
+        [
+          "feminine plural",
+          "las miembros"
+        ]
+      ],
+      "reason": "RAE DPD miembro permits both epicene masculine el miembro for any gender and common-gender la miembro for women."
+    },
+    {
+      "id": "corpes:jefe:N",
+      "word": "jefe",
+      "forms": [
+        [
+          "masculine singular",
+          "el jefe"
+        ],
+        [
+          "feminine singular",
+          "la jefa / la jefe"
+        ],
+        [
+          "masculine plural",
+          "los jefes"
+        ],
+        [
+          "feminine plural",
+          "las jefas / las jefes"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:líder:N",
+      "word": "líder",
+      "forms": [
+        [
+          "masculine singular",
+          "el líder"
+        ],
+        [
+          "feminine singular",
+          "la líder / la lideresa"
+        ],
+        [
+          "masculine plural",
+          "los líderes"
+        ],
+        [
+          "feminine plural",
+          "las líderes / las lideresas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:secretario:N",
+      "word": "secretario",
+      "forms": [
+        [
+          "masculine singular",
+          "el secretario"
+        ],
+        [
+          "feminine singular",
+          "la secretaria"
+        ],
+        [
+          "masculine plural",
+          "los secretarios"
+        ],
+        [
+          "feminine plural",
+          "las secretarias"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:rey:N",
+      "word": "rey",
+      "forms": [
+        [
+          "masculine singular",
+          "el rey"
+        ],
+        [
+          "feminine singular",
+          "la reina"
+        ],
+        [
+          "masculine plural",
+          "los reyes"
+        ],
+        [
+          "feminine plural",
+          "las reinas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:cliente:N",
+      "word": "cliente",
+      "forms": [
+        [
+          "masculine singular",
+          "el cliente"
+        ],
+        [
+          "feminine singular",
+          "la cliente / la clienta"
+        ],
+        [
+          "masculine plural",
+          "los clientes"
+        ],
+        [
+          "feminine plural",
+          "las clientes / las clientas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:juez:N",
+      "word": "juez",
+      "forms": [
+        [
+          "masculine singular",
+          "el juez"
+        ],
+        [
+          "feminine singular",
+          "la juez / la jueza"
+        ],
+        [
+          "masculine plural",
+          "los jueces"
+        ],
+        [
+          "feminine plural",
+          "las jueces / las juezas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:poeta:N",
+      "word": "poeta",
+      "forms": [
+        [
+          "masculine singular",
+          "el poeta"
+        ],
+        [
+          "feminine singular",
+          "la poeta / la poetisa"
+        ],
+        [
+          "masculine plural",
+          "los poetas"
+        ],
+        [
+          "feminine plural",
+          "las poetas / las poetisas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:alcalde:N",
+      "word": "alcalde",
+      "forms": [
+        [
+          "masculine singular",
+          "el alcalde"
+        ],
+        [
+          "feminine singular",
+          "la alcaldesa"
+        ],
+        [
+          "masculine plural",
+          "los alcaldes"
+        ],
+        [
+          "feminine plural",
+          "las alcaldesas"
+        ]
+      ],
+      "reason": "Explicit frozen feminine metadata, supplemented by targeted RAE entries where listed in sources."
+    },
+    {
+      "id": "corpes:dirigente:N",
+      "word": "dirigente",
+      "forms": [
+        [
+          "masculine singular",
+          "el dirigente"
+        ],
+        [
+          "feminine singular",
+          "la dirigente"
+        ],
+        [
+          "masculine plural",
+          "los dirigentes"
+        ],
+        [
+          "feminine plural",
+          "las dirigentes"
+        ]
+      ],
+      "reason": "Teach the common-gender dirigente/dirigentes forms confirmed by DLE and Diccionario del español de México. Frozen metadata also lists dirigenta, but general-standard status was not independently corroborated; omit that alternative pending stronger evidence, without claiming it is incorrect."
+    },
+    {
+      "id": "corpes:don:N",
+      "word": "don",
+      "forms": [
+        [
+          "before a male first name",
+          "don"
+        ],
+        [
+          "before a female first name",
+          "doña"
+        ]
+      ],
+      "reason": "Frozen title-sense don/doña metadata; do not import plural dones from gift/talent sense."
+    },
+    {
+      "id": "corpes:club:N",
+      "word": "club",
+      "forms": [
+        [
+          "singular",
+          "el club"
+        ],
+        [
+          "plural",
+          "los clubes / los clubs"
+        ]
+      ],
+      "reason": "RAE DPD club explicitly accepts clubes and clubs."
+    },
+    {
+      "id": "corpes:bueno:A",
+      "word": "bueno",
+      "forms": [
+        [
+          "masculine singular",
+          "bueno"
+        ],
+        [
+          "feminine singular",
+          "buena"
+        ],
+        [
+          "masculine plural",
+          "buenos"
+        ],
+        [
+          "feminine plural",
+          "buenas"
+        ],
+        [
+          "before masculine singular noun",
+          "buen"
+        ]
+      ],
+      "reason": "Frozen adjective apocopation metadata and targeted RAE DPD entry."
+    },
+    {
+      "id": "corpes:malo:A",
+      "word": "malo",
+      "forms": [
+        [
+          "masculine singular",
+          "malo"
+        ],
+        [
+          "feminine singular",
+          "mala"
+        ],
+        [
+          "masculine plural",
+          "malos"
+        ],
+        [
+          "feminine plural",
+          "malas"
+        ],
+        [
+          "before masculine singular noun",
+          "mal"
+        ]
+      ],
+      "reason": "Frozen adjective apocopation metadata and targeted RAE DPD entry."
+    },
+    {
+      "id": "corpes:grande:A",
+      "word": "grande",
+      "forms": [
+        [
+          "masculine singular",
+          "grande"
+        ],
+        [
+          "feminine singular",
+          "grande"
+        ],
+        [
+          "masculine plural",
+          "grandes"
+        ],
+        [
+          "feminine plural",
+          "grandes"
+        ],
+        [
+          "before singular noun (either gender)",
+          "gran"
+        ]
+      ],
+      "reason": "Frozen adjective apocopation metadata and targeted RAE DPD entry."
+    }
+  ],
+  "retained": {
+    "fútbol": "This card teaches the sport, normally used without a plural. Plural uses for varieties of football are outside this sense.",
+    "pasado": "This card teaches the past as a general time or idea, normally singular. Other countable uses are not included here.",
+    "izquierda": "The taught expression a mi izquierda is singular. Plural izquierdas also occurs in politics and fixed directional expressions such as a izquierdas (counterclockwise); it is not categorically invalid.",
+    "música": "This card teaches music as a general idea. Músicas can describe kinds of music or female musicians in other uses."
+  },
+  "excludedPairs": {
+    "padre/madre": "Distinct lexical headwords, already separate cards.",
+    "papá/mamá": "Distinct lexical headwords, already separate cards.",
+    "mano/mana": "Mana belongs to another noun sense, not hand.",
+    "tipo/tipa": "Tipa is a person; this card teaches kind/type.",
+    "cargo/carga": "Carga is not a gender form of the position/post sense.",
+    "rato/rata": "Rata is not a gender form of a while.",
+    "inglés/inglesa": "This noun card teaches the language, not nationality.",
+    "carácter/caracteres": "Keep the accent shift; do not add proscribed carácteres.",
+    "persona/persono": "Fixed feminine noun even for male referents.",
+    "personaje/personaja": "Retain the fixed masculine form in the taught use.",
+    "música/músico": "The edited card teaches music, not a musician."
+  },
+  "contextIntegrity": {
+    "beforeSha256": "30458838ad0ecbb04e7fffa3eb78e118bbe49adde832efdd25a7da7a64986f9e",
+    "afterSha256": "bc741b9ee935033e8662964162cfeae81fb723e5ccd5a1beffdc4a6fad09c900",
+    "assessmentSha256": "dcac1dfe0b99b6af9a67299da0836ce841024355904516b4960a91db4b464890",
+    "scope": "Updated grammatical help and scientific-research hover gloss; all 1,500 identities, targets, answers, sentences and translations match the function-word pass."
+  },
+  "contextGlossReview": {
+    "word": "científica",
+    "sentence": "A usted le gusta la investigación científica.",
+    "meaning": "scientific (describing research)",
+    "scope": "Three shared exercises; adjective modifying investigación, not the newly recognized female-scientist noun."
+  },
+  "notes": [
+    "Club already supplied clubes; the added alternative is clubs.",
+    "All 63 changes are explicit tables, not automatic feminine generation for every noun.",
+    "Fixed-gender nouns and mass-noun exclusions remain distinct from missing evidence.",
+    "The attempted RAE DPD dirigente entry was absent. The later review retains only common-gender dirigente forms, corroborated by DLE and Diccionario del español de México; dirigenta is deferred pending stronger evidence. The DPD secretario request failed, so it is not cited as verification."
+  ],
+  "deepReview": "See forms-deep-review.json for fresh primary-source corroboration and subsequent qualifications."
+}

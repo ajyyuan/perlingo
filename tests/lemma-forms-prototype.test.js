@@ -5,11 +5,12 @@ import {combineNotes} from '../lemmas/notes-library.js';
 import {prototypeLessons,freshPrototype,advanceLesson,restorePrototype} from '../lemmas/forms-prototype-model.js';
 const read=name=>JSON.parse(readFileSync(new URL('../lemmas/data/'+name+'.json',import.meta.url)));
 const library=combineNotes(read('notes'),read('context')),lessons=prototypeLessons(library.notes,library.concepts),cards=new Map(lessons.flatMap(l=>l.rows).map(r=>[r.id,r]));
-test('prototype teaches all twelve existing note forms and reuses existing explanations',()=>{
- assert.equal(lessons.length,3);assert.equal(cards.size,12);
+test('prototype teaches all thirteen existing note forms and reuses existing explanations',()=>{
+ assert.equal(lessons.length,3);assert.equal(cards.size,13);
  for(const lesson of lessons){const source=library.notes.find(n=>n.id===lesson.id);assert.deepEqual(lesson.rows.map(r=>[r.sourceLabel,r.lemma]),source.forms);assert.ok(Object.values(library.concepts).some(c=>c.text===lesson.why));}
  assert.deepEqual(lessons[0].rows.map(r=>r.lemma),['tengo','tienes','tiene','tenemos','tenéis','tienen']);
  assert.deepEqual(lessons[1].rows.map(r=>r.lemma),['la casa','las casas']);
+ assert.deepEqual(lessons[2].rows.map(r=>r.lemma),['bueno','buena','buenos','buenas','buen']);
 });
 test('study navigation never creates a quiz and drops legacy quiz state',()=>{
  let state=freshPrototype();

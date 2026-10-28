@@ -10,7 +10,8 @@ const audit=read('data/spanish-lemmas/course-audit-2026-10-27.json');
 const library=combineNotes(read('lemmas/data/notes.json'),bank);
 test('title don does not teach the gift-sense article or plural',()=>{
  const n=library.notes.find(n=>n.id==='corpes:don:N');
- assert.deepEqual(n.forms,[['before a first name','don']]);
+ assert.deepEqual(n.forms,[['before a male first name','don'],['before a female first name','doña']]);
+ assert.ok(!n.forms.some(([,form])=>form==='dones'||form==='el don'));
  assert.match(n.pattern,/first name/);
  assert.match(n.more,/separate gift or talent/);
  assert.ok(bank.contexts.find(c=>c.id===n.id).answers.includes('Don'));

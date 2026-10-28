@@ -2,17 +2,83 @@
   "bueno:A": {
     "pattern": "bueno · buena · buen + masculine noun",
     "tip": "un buen libro = a good book",
-    "more": "Bueno shortens to buen before a masculine singular noun. Buena does not shorten. Better is mejor; bien is the adverb well."
+    "more": "Bueno usually shortens to buen before a masculine singular noun, even with an intervening adjective. It stays bueno in el bueno de Pedro; shortening is optional when coordinated with another adjective. Buena does not shorten. Mejor is the usual comparative and has a separate card.",
+    "forms": [
+      [
+        "masculine singular",
+        "bueno"
+      ],
+      [
+        "feminine singular",
+        "buena"
+      ],
+      [
+        "masculine plural",
+        "buenos"
+      ],
+      [
+        "feminine plural",
+        "buenas"
+      ],
+      [
+        "before masculine singular noun",
+        "buen"
+      ]
+    ]
   },
   "malo:A": {
     "pattern": "malo · mala · mal + masculine noun",
     "tip": "Mal can also be the adverb badly.",
-    "more": "Malo shortens to mal before a masculine singular noun. Worse is peor."
+    "more": "Malo shortens to mal before a masculine singular noun. Mala does not shorten. Mal the adverb is a separate use.",
+    "forms": [
+      [
+        "masculine singular",
+        "malo"
+      ],
+      [
+        "feminine singular",
+        "mala"
+      ],
+      [
+        "masculine plural",
+        "malos"
+      ],
+      [
+        "feminine plural",
+        "malas"
+      ],
+      [
+        "before masculine singular noun",
+        "mal"
+      ]
+    ]
   },
   "grande:A": {
     "pattern": "grande · gran + singular noun",
     "tip": "Same singular form for both genders.",
-    "more": "Grande commonly shortens to gran before a singular noun: un gran libro, una gran idea. Meaning can shift between size and greatness with position."
+    "more": "Grande usually shortens to gran before a singular noun of either gender. It stays grande after más or menos; some coordinated or muy constructions allow either form.",
+    "forms": [
+      [
+        "masculine singular",
+        "grande"
+      ],
+      [
+        "feminine singular",
+        "grande"
+      ],
+      [
+        "masculine plural",
+        "grandes"
+      ],
+      [
+        "feminine plural",
+        "grandes"
+      ],
+      [
+        "before singular noun (either gender)",
+        "gran"
+      ]
+    ]
   },
   "actual:A": {
     "tip": "Current, not the usual English meaning of actual."
@@ -156,15 +222,80 @@
   },
   "alguno:Q": {
     "pattern": "algún libro · alguna casa",
-    "tip": "Alguno shortens to algún before a masculine singular noun."
+    "tip": "Alguno shortens to algún before a masculine singular noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "alguno"
+      ],
+      [
+        "feminine singular",
+        "alguna"
+      ],
+      [
+        "masculine plural",
+        "algunos"
+      ],
+      [
+        "feminine plural",
+        "algunas"
+      ],
+      [
+        "before masculine singular noun",
+        "algún"
+      ]
+    ],
+    "more": "Algún goes before a masculine singular noun, even with an intervening adjective. It is also usual immediately before a feminine noun beginning with stressed a; that noun remains feminine."
   },
   "ninguno:Q": {
     "pattern": "ningún libro · ninguna casa",
-    "tip": "Ninguno shortens to ningún before a masculine singular noun."
+    "tip": "Ninguno shortens to ningún before a masculine singular noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "ninguno"
+      ],
+      [
+        "feminine singular",
+        "ninguna"
+      ],
+      [
+        "before masculine singular noun",
+        "ningún"
+      ],
+      [
+        "masculine plural (restricted)",
+        "ningunos"
+      ],
+      [
+        "feminine plural (restricted)",
+        "ningunas"
+      ]
+    ],
+    "more": "Usually singular. Plural ningunos/ningunas is restricted to plural-only nouns, emphatic negatives and expressions such as ningunas ganas. Ningún is also usual immediately before a feminine noun beginning with stressed a."
   },
   "cualquiera:Q": {
     "pattern": "cualquier libro · cualquier casa",
-    "tip": "Cualquiera shortens to cualquier before a singular noun of either gender."
+    "tip": "Cualquiera shortens to cualquier before a singular noun of either gender.",
+    "forms": [
+      [
+        "standalone / after a noun",
+        "cualquiera"
+      ],
+      [
+        "before a singular noun",
+        "cualquier"
+      ],
+      [
+        "plural (formal)",
+        "cualesquiera"
+      ],
+      [
+        "before a plural noun (rare)",
+        "cualesquier"
+      ]
+    ],
+    "more": "Cualquier goes before a singular noun of either gender. Cualesquiera is the formal plural; the shortened plural cualesquier is rare. Cualquieras belongs to a different noun use, not this quantifier."
   },
   "cada:Q": {
     "pattern": "cada día",
@@ -172,67 +303,347 @@
   },
   "ambos:Q": {
     "pattern": "ambos · ambas",
-    "tip": "Both; the form agrees with the noun."
+    "tip": "Both; the form agrees with the noun.",
+    "forms": [
+      [
+        "masculine plural",
+        "ambos"
+      ],
+      [
+        "feminine plural",
+        "ambas"
+      ]
+    ],
+    "more": "Plural in the meaning taught here; the ending agrees with the noun."
   },
   "varios:Q": {
     "pattern": "varios · varias",
-    "tip": "Several; the form agrees with the noun."
+    "tip": "Several; the form agrees with the noun.",
+    "forms": [
+      [
+        "masculine plural",
+        "varios"
+      ],
+      [
+        "feminine plural",
+        "varias"
+      ]
+    ],
+    "more": "Plural in the meaning taught here; the ending agrees with the noun."
   },
   "nuestro:X": {
     "pattern": "nuestro · nuestra · nuestros · nuestras",
-    "tip": "Agree with what is owned, not with the owners."
+    "tip": "Agree with what is owned, not with the owners.",
+    "forms": [
+      [
+        "masculine singular",
+        "nuestro"
+      ],
+      [
+        "feminine singular",
+        "nuestra"
+      ],
+      [
+        "masculine plural",
+        "nuestros"
+      ],
+      [
+        "feminine plural",
+        "nuestras"
+      ]
+    ],
+    "more": "Forms agree with the thing owned, not the owner. These same forms can go before or after a noun, or stand on their own."
   },
   "tuyo:X": {
     "pattern": "tu libro · el libro es tuyo",
-    "tip": "Tu has no accent; tú is the subject pronoun."
+    "tip": "Tu has no accent; tú is the subject pronoun.",
+    "forms": [
+      [
+        "before singular noun",
+        "tu"
+      ],
+      [
+        "before plural noun",
+        "tus"
+      ],
+      [
+        "masculine singular",
+        "tuyo"
+      ],
+      [
+        "feminine singular",
+        "tuya"
+      ],
+      [
+        "masculine plural",
+        "tuyos"
+      ],
+      [
+        "feminine plural",
+        "tuyas"
+      ]
+    ],
+    "more": "Forms agree with the thing owned, not the owner. The short forms go before a noun; the long forms follow a noun or stand on their own."
   },
   "primero:M": {
     "pattern": "primero · primera · primer libro",
-    "tip": "Primero shortens to primer before a masculine singular noun."
+    "tip": "Primero shortens to primer before a masculine singular noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "primero"
+      ],
+      [
+        "feminine singular",
+        "primera"
+      ],
+      [
+        "masculine plural",
+        "primeros"
+      ],
+      [
+        "feminine plural",
+        "primeras"
+      ],
+      [
+        "before masculine singular noun",
+        "primer"
+      ]
+    ]
   },
   "tercero:M": {
     "pattern": "tercero · tercera · tercer libro",
-    "tip": "Tercero shortens to tercer before a masculine singular noun."
+    "tip": "Tercero shortens to tercer before a masculine singular noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "tercero"
+      ],
+      [
+        "feminine singular",
+        "tercera"
+      ],
+      [
+        "masculine plural",
+        "terceros"
+      ],
+      [
+        "feminine plural",
+        "terceras"
+      ],
+      [
+        "before masculine singular noun",
+        "tercer"
+      ]
+    ]
   },
   "segundo:M": {
     "pattern": "segundo · segunda",
-    "tip": "Second in order; segundo as a time unit is a separate card."
+    "tip": "Second in order; segundo as a time unit is a separate card.",
+    "forms": [
+      [
+        "masculine singular",
+        "segundo"
+      ],
+      [
+        "feminine singular",
+        "segunda"
+      ],
+      [
+        "masculine plural",
+        "segundos"
+      ],
+      [
+        "feminine plural",
+        "segundas"
+      ]
+    ]
   },
   "cuarto:M": {
     "pattern": "cuarto · cuarta",
-    "tip": "Fourth in order; cuarto meaning room or quarter is a separate card."
+    "tip": "Fourth in order; cuarto meaning room or quarter is a separate card.",
+    "forms": [
+      [
+        "masculine singular",
+        "cuarto"
+      ],
+      [
+        "feminine singular",
+        "cuarta"
+      ],
+      [
+        "masculine plural",
+        "cuartos"
+      ],
+      [
+        "feminine plural",
+        "cuartas"
+      ]
+    ]
   },
   "medio:M": {
     "pattern": "medio litro · media hora",
-    "tip": "Half; medio agrees with the noun."
+    "tip": "Half; medio agrees with the noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "medio"
+      ],
+      [
+        "feminine singular",
+        "media"
+      ],
+      [
+        "masculine plural",
+        "medios"
+      ],
+      [
+        "feminine plural",
+        "medias"
+      ]
+    ],
+    "more": "In this half-quantity use, medio agrees with the noun: media hora, medios litros. Adverbial medio (somewhat) does not agree; medio the noun has a separate card."
   },
   "aquel:D": {
     "pattern": "aquel · aquella · aquellos · aquellas",
-    "tip": "That/those, more distant; neuter aquello stands alone."
+    "tip": "That/those, more distant; neuter aquello stands alone.",
+    "forms": [
+      [
+        "masculine singular",
+        "aquel"
+      ],
+      [
+        "feminine singular",
+        "aquella"
+      ],
+      [
+        "masculine plural",
+        "aquellos"
+      ],
+      [
+        "feminine plural",
+        "aquellas"
+      ],
+      [
+        "neuter (standalone)",
+        "aquello"
+      ]
+    ],
+    "more": "Aquello is the neuter form: it stands alone for an idea or unidentified thing, never before a noun, and has no plural."
   },
   "cuyo:H": {
     "pattern": "cuyo · cuya · cuyos · cuyas",
-    "tip": "Whose: agree with the thing possessed, not its owner."
+    "tip": "Whose: agree with the thing possessed, not its owner.",
+    "forms": [
+      [
+        "masculine singular",
+        "cuyo"
+      ],
+      [
+        "feminine singular",
+        "cuya"
+      ],
+      [
+        "masculine plural",
+        "cuyos"
+      ],
+      [
+        "feminine plural",
+        "cuyas"
+      ]
+    ]
   },
   "cual:H": {
     "pattern": "el cual · la cual · los cuales · las cuales",
-    "tip": "Relative which/who; agree with the antecedent."
+    "tip": "Relative which/who; agree with the antecedent.",
+    "forms": [
+      [
+        "masculine singular",
+        "el cual"
+      ],
+      [
+        "feminine singular",
+        "la cual"
+      ],
+      [
+        "masculine plural",
+        "los cuales"
+      ],
+      [
+        "feminine plural",
+        "las cuales"
+      ],
+      [
+        "neuter reference",
+        "lo cual"
+      ]
+    ],
+    "more": "The article and relative agree with the antecedent. Lo cual refers to a preceding fact or statement. Relative cual/cuales has no accent; question cuál/cuáles has its own card."
   },
   "quien:H": {
     "pattern": "quien · quienes",
-    "tip": "Relative who; no accent in this use."
+    "tip": "Relative who; no accent in this use.",
+    "forms": [
+      [
+        "singular",
+        "quien"
+      ],
+      [
+        "plural",
+        "quienes"
+      ]
+    ]
   },
   "quién:W": {
     "pattern": "quién · quiénes",
-    "tip": "Question/exclamation form: keep the accent."
+    "tip": "Question/exclamation form: keep the accent.",
+    "forms": [
+      [
+        "singular",
+        "quién"
+      ],
+      [
+        "plural",
+        "quiénes"
+      ]
+    ]
   },
   "cuánto:W": {
     "pattern": "cuánto · cuánta · cuántos · cuántas",
-    "tip": "How much/many; agree when accompanying a noun."
+    "tip": "How much/many; agree when accompanying a noun.",
+    "forms": [
+      [
+        "masculine singular",
+        "cuánto"
+      ],
+      [
+        "feminine singular",
+        "cuánta"
+      ],
+      [
+        "masculine plural",
+        "cuántos"
+      ],
+      [
+        "feminine plural",
+        "cuántas"
+      ]
+    ],
+    "more": "With a noun, agree in gender and number; adverbial cuánto does not vary. Keep the accent in questions and exclamations."
   },
   "cuál:W": {
     "pattern": "cuál · cuáles",
-    "tip": "Which/which one; usage before a noun varies by region."
+    "tip": "Which/which one; usage before a noun varies by region.",
+    "forms": [
+      [
+        "singular",
+        "cuál"
+      ],
+      [
+        "plural",
+        "cuáles"
+      ]
+    ]
   },
   "mientras:C": {
     "tip": "While; mientras que can also contrast two statements."
@@ -256,22 +667,76 @@
   },
   "mí:L": {
     "pattern": "para mí · de mí",
-    "tip": "Me after a preposition; mi without an accent means my."
+    "tip": "Me after a preposition; mi without an accent means my.",
+    "forms": [
+      [
+        "after a preposition",
+        "mí"
+      ],
+      [
+        "with con",
+        "conmigo"
+      ]
+    ],
+    "more": "Use conmigo for with me, not con mí. Conmigo also retains its own course card. Subject yo and object me are separate cards."
   },
   "ti:L": {
     "pattern": "para ti · de ti",
-    "tip": "Ti has no accent. With con, use contigo."
+    "tip": "Ti has no accent. With con, use contigo.",
+    "forms": [
+      [
+        "after a preposition",
+        "ti"
+      ],
+      [
+        "with con",
+        "contigo"
+      ]
+    ],
+    "more": "Ti has no accent. Use contigo for with you, not con ti. Subject tú and object te are separate cards."
   },
   "sí:L": {
     "pattern": "para sí · de sí",
-    "tip": "Refers back to the third-person subject; with con, use consigo."
+    "tip": "Refers back to a third-person referent in the same sentence; with con, use consigo.",
+    "forms": [
+      [
+        "reflexive / reciprocal after a preposition",
+        "sí"
+      ],
+      [
+        "with con (reflexive)",
+        "consigo"
+      ]
+    ],
+    "more": "Sí is unchanged for gender and number in this third-person reflexive/reciprocal use. Consigo is reflexive: with himself/herself/themselves. It is not the affirmative sí meaning yes."
   },
   "usted:L": {
-    "tip": "Formal you uses third-person verb forms."
+    "tip": "Formal you uses third-person verb forms.",
+    "forms": [
+      [
+        "singular",
+        "usted"
+      ],
+      [
+        "plural",
+        "ustedes"
+      ]
+    ],
+    "more": "Usted uses third-person singular verbs; ustedes uses third-person plural verbs. Ustedes is the ordinary plural you in most of Latin America, and formal plural you in most of Spain."
   },
   "nosotros:L": {
     "pattern": "nosotros · nosotras",
-    "tip": "Subject we or us after a preposition; compare object nos."
+    "tip": "Subject we or us after a preposition; compare object nos.",
+    "forms": [
+      [
+        "masculine / mixed group",
+        "nosotros"
+      ],
+      [
+        "feminine group",
+        "nosotras"
+      ]
+    ]
   },
   "os:L": {
     "tip": "Object/reflexive form used with vosotros in Spain."
@@ -281,7 +746,18 @@
   },
   "don:N": {
     "pattern": "don + first name",
-    "tip": "Title of respect; no article in this address pattern."
+    "tip": "Title of respect; no article in this address pattern.",
+    "forms": [
+      [
+        "before a male first name",
+        "don"
+      ],
+      [
+        "before a female first name",
+        "doña"
+      ]
+    ],
+    "more": "Don and doña are titles before first names, without an article. Los dones belongs to the separate gift or talent meaning."
   },
   "mil:N": {
     "pattern": "mil · miles",
@@ -299,5 +775,1615 @@
   },
   "víctima:N": {
     "tip": "Feminine, regardless of the person’s gender."
-  }
+  },
+  "este:D": {
+    "forms": [
+      [
+        "masculine singular",
+        "este"
+      ],
+      [
+        "feminine singular",
+        "esta"
+      ],
+      [
+        "masculine plural",
+        "estos"
+      ],
+      [
+        "feminine plural",
+        "estas"
+      ],
+      [
+        "neuter (standalone)",
+        "esto"
+      ]
+    ],
+    "more": "Esto is the neuter form: it stands alone for an idea or unidentified thing, never before a noun, and has no plural."
+  },
+  "ese:D": {
+    "forms": [
+      [
+        "masculine singular",
+        "ese"
+      ],
+      [
+        "feminine singular",
+        "esa"
+      ],
+      [
+        "masculine plural",
+        "esos"
+      ],
+      [
+        "feminine plural",
+        "esas"
+      ],
+      [
+        "neuter (standalone)",
+        "eso"
+      ]
+    ],
+    "more": "Eso is the neuter form: it stands alone for an idea or unidentified thing, never before a noun, and has no plural."
+  },
+  "tal:D": {
+    "pattern": "tal · tales",
+    "tip": "Same form for both genders; tales is plural.",
+    "forms": [
+      [
+        "singular",
+        "tal"
+      ],
+      [
+        "plural",
+        "tales"
+      ]
+    ]
+  },
+  "mío:X": {
+    "forms": [
+      [
+        "before singular noun",
+        "mi"
+      ],
+      [
+        "before plural noun",
+        "mis"
+      ],
+      [
+        "masculine singular",
+        "mío"
+      ],
+      [
+        "feminine singular",
+        "mía"
+      ],
+      [
+        "masculine plural",
+        "míos"
+      ],
+      [
+        "feminine plural",
+        "mías"
+      ]
+    ],
+    "more": "Forms agree with the thing owned, not the owner. The short forms go before a noun; the long forms follow a noun or stand on their own."
+  },
+  "suyo:X": {
+    "forms": [
+      [
+        "before singular noun",
+        "su"
+      ],
+      [
+        "before plural noun",
+        "sus"
+      ],
+      [
+        "masculine singular",
+        "suyo"
+      ],
+      [
+        "feminine singular",
+        "suya"
+      ],
+      [
+        "masculine plural",
+        "suyos"
+      ],
+      [
+        "feminine plural",
+        "suyas"
+      ]
+    ],
+    "more": "Forms agree with the thing owned, not the owner. The short forms go before a noun; the long forms follow a noun or stand on their own."
+  },
+  "mismo:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "mismo"
+      ],
+      [
+        "feminine singular",
+        "misma"
+      ],
+      [
+        "masculine plural",
+        "mismos"
+      ],
+      [
+        "feminine plural",
+        "mismas"
+      ]
+    ],
+    "more": "These forms agree with the noun or referent in this use."
+  },
+  "mucho:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "mucho"
+      ],
+      [
+        "feminine singular",
+        "mucha"
+      ],
+      [
+        "masculine plural",
+        "muchos"
+      ],
+      [
+        "feminine plural",
+        "muchas"
+      ]
+    ],
+    "more": "These forms agree with the noun or referent in this use."
+  },
+  "poco:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "poco"
+      ],
+      [
+        "feminine singular",
+        "poca"
+      ],
+      [
+        "masculine plural",
+        "pocos"
+      ],
+      [
+        "feminine plural",
+        "pocas"
+      ]
+    ],
+    "more": "These forms agree with the noun or referent in this use."
+  },
+  "tanto:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "tanto"
+      ],
+      [
+        "feminine singular",
+        "tanta"
+      ],
+      [
+        "masculine plural",
+        "tantos"
+      ],
+      [
+        "feminine plural",
+        "tantas"
+      ]
+    ],
+    "more": "These forms agree with the noun or referent in this use."
+  },
+  "cierto:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "cierto"
+      ],
+      [
+        "feminine singular",
+        "cierta"
+      ],
+      [
+        "masculine plural",
+        "ciertos"
+      ],
+      [
+        "feminine plural",
+        "ciertas"
+      ]
+    ],
+    "more": "These forms agree with the noun or referent in this use."
+  },
+  "uno:Q": {
+    "forms": [
+      [
+        "masculine singular",
+        "uno"
+      ],
+      [
+        "feminine singular",
+        "una"
+      ],
+      [
+        "masculine plural (some)",
+        "unos"
+      ],
+      [
+        "feminine plural (some)",
+        "unas"
+      ]
+    ],
+    "more": "Uno/una can stand for one person or thing; unos/unas can mean some. Generic-person uno/una stays singular. In ordinary partitives, use uno de ellos but algunos de ellos for the plural. Un before a noun belongs to the article card; numeral one has its own card."
+  },
+  "lo:L": {
+    "forms": [
+      [
+        "masculine singular",
+        "lo"
+      ],
+      [
+        "feminine singular",
+        "la"
+      ],
+      [
+        "masculine plural",
+        "los"
+      ],
+      [
+        "feminine plural",
+        "las"
+      ],
+      [
+        "neuter (idea or statement)",
+        "lo"
+      ]
+    ],
+    "more": "Direct-object forms agree with the referent. Neuter lo can stand for an idea or statement and has no plural. The article in lo importante is a different use."
+  },
+  "le:L": {
+    "forms": [
+      [
+        "singular",
+        "le"
+      ],
+      [
+        "plural",
+        "les"
+      ]
+    ],
+    "more": "Le/les marks the recipient without distinguishing gender. Before lo, la, los or las, either becomes se: se lo doy. Se has its own card."
+  },
+  "él:L": {
+    "forms": [
+      [
+        "masculine singular",
+        "él"
+      ],
+      [
+        "feminine singular",
+        "ella"
+      ],
+      [
+        "masculine plural",
+        "ellos"
+      ],
+      [
+        "feminine plural",
+        "ellas"
+      ],
+      [
+        "neuter (restricted use)",
+        "ello"
+      ]
+    ],
+    "more": "These are stressed third-person pronouns, used as subjects or after prepositions. Ello refers to an idea or fact and has no plural; its use is restricted. Object lo and le have their own cards."
+  },
+  "niño:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el niño"
+      ],
+      [
+        "feminine singular",
+        "la niña"
+      ],
+      [
+        "masculine plural",
+        "los niños"
+      ],
+      [
+        "feminine plural",
+        "las niñas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "hijo:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el hijo"
+      ],
+      [
+        "feminine singular",
+        "la hija"
+      ],
+      [
+        "masculine plural",
+        "los hijos"
+      ],
+      [
+        "feminine plural",
+        "las hijas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "político:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el político"
+      ],
+      [
+        "feminine singular",
+        "la política"
+      ],
+      [
+        "masculine plural",
+        "los políticos"
+      ],
+      [
+        "feminine plural",
+        "las políticas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "amigo:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el amigo"
+      ],
+      [
+        "feminine singular",
+        "la amiga"
+      ],
+      [
+        "masculine plural",
+        "los amigos"
+      ],
+      [
+        "feminine plural",
+        "las amigas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "director:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el director"
+      ],
+      [
+        "feminine singular",
+        "la directora"
+      ],
+      [
+        "masculine plural",
+        "los directores"
+      ],
+      [
+        "feminine plural",
+        "las directoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "hermano:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el hermano"
+      ],
+      [
+        "feminine singular",
+        "la hermana"
+      ],
+      [
+        "masculine plural",
+        "los hermanos"
+      ],
+      [
+        "feminine plural",
+        "las hermanas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "señor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el señor"
+      ],
+      [
+        "feminine singular",
+        "la señora"
+      ],
+      [
+        "masculine plural",
+        "los señores"
+      ],
+      [
+        "feminine plural",
+        "las señoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "autor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el autor"
+      ],
+      [
+        "feminine singular",
+        "la autora"
+      ],
+      [
+        "masculine plural",
+        "los autores"
+      ],
+      [
+        "feminine plural",
+        "las autoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "ministro:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el ministro"
+      ],
+      [
+        "feminine singular",
+        "la ministra"
+      ],
+      [
+        "masculine plural",
+        "los ministros"
+      ],
+      [
+        "feminine plural",
+        "las ministras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "chico:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el chico"
+      ],
+      [
+        "feminine singular",
+        "la chica"
+      ],
+      [
+        "masculine plural",
+        "los chicos"
+      ],
+      [
+        "feminine plural",
+        "las chicas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "doctor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el doctor"
+      ],
+      [
+        "feminine singular",
+        "la doctora"
+      ],
+      [
+        "masculine plural",
+        "los doctores"
+      ],
+      [
+        "feminine plural",
+        "las doctoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "jugador:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el jugador"
+      ],
+      [
+        "feminine singular",
+        "la jugadora"
+      ],
+      [
+        "masculine plural",
+        "los jugadores"
+      ],
+      [
+        "feminine plural",
+        "las jugadoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "técnico:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el técnico"
+      ],
+      [
+        "feminine singular",
+        "la técnica"
+      ],
+      [
+        "masculine plural",
+        "los técnicos"
+      ],
+      [
+        "feminine plural",
+        "las técnicas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "profesor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el profesor"
+      ],
+      [
+        "feminine singular",
+        "la profesora"
+      ],
+      [
+        "masculine plural",
+        "los profesores"
+      ],
+      [
+        "feminine plural",
+        "las profesoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "compañero:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el compañero"
+      ],
+      [
+        "feminine singular",
+        "la compañera"
+      ],
+      [
+        "masculine plural",
+        "los compañeros"
+      ],
+      [
+        "feminine plural",
+        "las compañeras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "médico:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el médico"
+      ],
+      [
+        "feminine singular",
+        "la médica"
+      ],
+      [
+        "masculine plural",
+        "los médicos"
+      ],
+      [
+        "feminine plural",
+        "las médicas"
+      ]
+    ],
+    "more": "El médico; the feminine counterpart is la médica. The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "trabajador:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el trabajador"
+      ],
+      [
+        "feminine singular",
+        "la trabajadora"
+      ],
+      [
+        "masculine plural",
+        "los trabajadores"
+      ],
+      [
+        "feminine plural",
+        "las trabajadoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "escritor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el escritor"
+      ],
+      [
+        "feminine singular",
+        "la escritora"
+      ],
+      [
+        "masculine plural",
+        "los escritores"
+      ],
+      [
+        "feminine plural",
+        "las escritoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "ciudadano:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el ciudadano"
+      ],
+      [
+        "feminine singular",
+        "la ciudadana"
+      ],
+      [
+        "masculine plural",
+        "los ciudadanos"
+      ],
+      [
+        "feminine plural",
+        "las ciudadanas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "abuelo:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el abuelo"
+      ],
+      [
+        "feminine singular",
+        "la abuela"
+      ],
+      [
+        "masculine plural",
+        "los abuelos"
+      ],
+      [
+        "feminine plural",
+        "las abuelas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "usuario:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el usuario"
+      ],
+      [
+        "feminine singular",
+        "la usuaria"
+      ],
+      [
+        "masculine plural",
+        "los usuarios"
+      ],
+      [
+        "feminine plural",
+        "las usuarias"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "investigador:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el investigador"
+      ],
+      [
+        "feminine singular",
+        "la investigadora"
+      ],
+      [
+        "masculine plural",
+        "los investigadores"
+      ],
+      [
+        "feminine plural",
+        "las investigadoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "candidato:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el candidato"
+      ],
+      [
+        "feminine singular",
+        "la candidata"
+      ],
+      [
+        "masculine plural",
+        "los candidatos"
+      ],
+      [
+        "feminine plural",
+        "las candidatas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "maestro:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el maestro"
+      ],
+      [
+        "feminine singular",
+        "la maestra"
+      ],
+      [
+        "masculine plural",
+        "los maestros"
+      ],
+      [
+        "feminine plural",
+        "las maestras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "español:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el español"
+      ],
+      [
+        "feminine singular",
+        "la española"
+      ],
+      [
+        "masculine plural",
+        "los españoles"
+      ],
+      [
+        "feminine plural",
+        "las españolas"
+      ]
+    ],
+    "more": "For a Spanish person, use español/española and españoles/españolas. The language sense el español is normally singular.",
+    "tip": "The language is el español; for a Spanish person, use español or española."
+  },
+  "esposo:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el esposo"
+      ],
+      [
+        "feminine singular",
+        "la esposa"
+      ],
+      [
+        "masculine plural",
+        "los esposos"
+      ],
+      [
+        "feminine plural",
+        "las esposas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "tío:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el tío"
+      ],
+      [
+        "feminine singular",
+        "la tía"
+      ],
+      [
+        "masculine plural",
+        "los tíos"
+      ],
+      [
+        "feminine plural",
+        "las tías"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "crítico:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el crítico"
+      ],
+      [
+        "feminine singular",
+        "la crítica"
+      ],
+      [
+        "masculine plural",
+        "los críticos"
+      ],
+      [
+        "feminine plural",
+        "las críticas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "vecino:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el vecino"
+      ],
+      [
+        "feminine singular",
+        "la vecina"
+      ],
+      [
+        "masculine plural",
+        "los vecinos"
+      ],
+      [
+        "feminine plural",
+        "las vecinas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "funcionario:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el funcionario"
+      ],
+      [
+        "feminine singular",
+        "la funcionaria"
+      ],
+      [
+        "masculine plural",
+        "los funcionarios"
+      ],
+      [
+        "feminine plural",
+        "las funcionarias"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "perro:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el perro"
+      ],
+      [
+        "feminine singular",
+        "la perra"
+      ],
+      [
+        "masculine plural",
+        "los perros"
+      ],
+      [
+        "feminine plural",
+        "las perras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "experto:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el experto"
+      ],
+      [
+        "feminine singular",
+        "la experta"
+      ],
+      [
+        "masculine plural",
+        "los expertos"
+      ],
+      [
+        "feminine plural",
+        "las expertas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "alumno:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el alumno"
+      ],
+      [
+        "feminine singular",
+        "la alumna"
+      ],
+      [
+        "masculine plural",
+        "los alumnos"
+      ],
+      [
+        "feminine plural",
+        "las alumnas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "muchacho:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el muchacho"
+      ],
+      [
+        "feminine singular",
+        "la muchacha"
+      ],
+      [
+        "masculine plural",
+        "los muchachos"
+      ],
+      [
+        "feminine plural",
+        "las muchachas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "diputado:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el diputado"
+      ],
+      [
+        "feminine singular",
+        "la diputada"
+      ],
+      [
+        "masculine plural",
+        "los diputados"
+      ],
+      [
+        "feminine plural",
+        "las diputadas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "productor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el productor"
+      ],
+      [
+        "feminine singular",
+        "la productora"
+      ],
+      [
+        "masculine plural",
+        "los productores"
+      ],
+      [
+        "feminine plural",
+        "las productoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "abogado:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el abogado"
+      ],
+      [
+        "feminine singular",
+        "la abogada"
+      ],
+      [
+        "masculine plural",
+        "los abogados"
+      ],
+      [
+        "feminine plural",
+        "las abogadas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "lector:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el lector"
+      ],
+      [
+        "feminine singular",
+        "la lectora"
+      ],
+      [
+        "masculine plural",
+        "los lectores"
+      ],
+      [
+        "feminine plural",
+        "las lectoras"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "científico:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el científico"
+      ],
+      [
+        "feminine singular",
+        "la científica"
+      ],
+      [
+        "masculine plural",
+        "los científicos"
+      ],
+      [
+        "feminine plural",
+        "las científicas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "empresario:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el empresario"
+      ],
+      [
+        "feminine singular",
+        "la empresaria"
+      ],
+      [
+        "masculine plural",
+        "los empresarios"
+      ],
+      [
+        "feminine plural",
+        "las empresarias"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "dueño:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el dueño"
+      ],
+      [
+        "feminine singular",
+        "la dueña"
+      ],
+      [
+        "masculine plural",
+        "los dueños"
+      ],
+      [
+        "feminine plural",
+        "las dueñas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "campeón:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el campeón"
+      ],
+      [
+        "feminine singular",
+        "la campeona"
+      ],
+      [
+        "masculine plural",
+        "los campeones"
+      ],
+      [
+        "feminine plural",
+        "las campeonas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "novio:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el novio"
+      ],
+      [
+        "feminine singular",
+        "la novia"
+      ],
+      [
+        "masculine plural",
+        "los novios"
+      ],
+      [
+        "feminine plural",
+        "las novias"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "empleado:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el empleado"
+      ],
+      [
+        "feminine singular",
+        "la empleada"
+      ],
+      [
+        "masculine plural",
+        "los empleados"
+      ],
+      [
+        "feminine plural",
+        "las empleadas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "viejo:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el viejo"
+      ],
+      [
+        "feminine singular",
+        "la vieja"
+      ],
+      [
+        "masculine plural",
+        "los viejos"
+      ],
+      [
+        "feminine plural",
+        "las viejas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "muerto:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el muerto"
+      ],
+      [
+        "feminine singular",
+        "la muerta"
+      ],
+      [
+        "masculine plural",
+        "los muertos"
+      ],
+      [
+        "feminine plural",
+        "las muertas"
+      ]
+    ],
+    "more": "The table includes feminine counterparts; the headword gloss describes the masculine form.",
+    "tip": "Masculine headword; feminine counterparts are listed below."
+  },
+  "presidente:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el presidente"
+      ],
+      [
+        "feminine singular",
+        "la presidenta"
+      ],
+      [
+        "masculine plural",
+        "los presidentes"
+      ],
+      [
+        "feminine plural",
+        "las presidentas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Presidenta is the usual recommended feminine.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "actor:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el actor"
+      ],
+      [
+        "feminine singular",
+        "la actriz"
+      ],
+      [
+        "masculine plural",
+        "los actores"
+      ],
+      [
+        "feminine plural",
+        "las actrices"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Actriz is the feminine for a performer. Actora belongs to other uses, including a party in a legal case.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "miembro:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el miembro"
+      ],
+      [
+        "feminine singular",
+        "la miembro"
+      ],
+      [
+        "masculine plural",
+        "los miembros"
+      ],
+      [
+        "feminine plural",
+        "las miembros"
+      ]
+    ],
+    "more": "For a female group member, both el miembro and la miembro are valid. El miembro can refer to a person of any gender; la miembro makes a female referent explicit.",
+    "tip": "El miembro can refer to any gender; la miembro specifies a woman."
+  },
+  "jefe:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el jefe"
+      ],
+      [
+        "feminine singular",
+        "la jefa / la jefe"
+      ],
+      [
+        "masculine plural",
+        "los jefes"
+      ],
+      [
+        "feminine plural",
+        "las jefas / las jefes"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Jefa is more frequent; la jefe is also valid.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "líder:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el líder"
+      ],
+      [
+        "feminine singular",
+        "la líder / la lideresa"
+      ],
+      [
+        "masculine plural",
+        "los líderes"
+      ],
+      [
+        "feminine plural",
+        "las líderes / las lideresas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. La líder is widely used; lideresa is more common in parts of the Americas.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "secretario:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el secretario"
+      ],
+      [
+        "feminine singular",
+        "la secretaria"
+      ],
+      [
+        "masculine plural",
+        "los secretarios"
+      ],
+      [
+        "feminine plural",
+        "las secretarias"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Secretaria names a female secretary; secretaría with an accent is an office or department, a different noun.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "rey:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el rey"
+      ],
+      [
+        "feminine singular",
+        "la reina"
+      ],
+      [
+        "masculine plural",
+        "los reyes"
+      ],
+      [
+        "feminine plural",
+        "las reinas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Reina is the feminine counterpart of rey.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "cliente:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el cliente"
+      ],
+      [
+        "feminine singular",
+        "la cliente / la clienta"
+      ],
+      [
+        "masculine plural",
+        "los clientes"
+      ],
+      [
+        "feminine plural",
+        "las clientes / las clientas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Both la cliente and la clienta are valid.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "juez:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el juez"
+      ],
+      [
+        "feminine singular",
+        "la juez / la jueza"
+      ],
+      [
+        "masculine plural",
+        "los jueces"
+      ],
+      [
+        "feminine plural",
+        "las jueces / las juezas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Both la juez and la jueza are valid.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "poeta:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el poeta"
+      ],
+      [
+        "feminine singular",
+        "la poeta / la poetisa"
+      ],
+      [
+        "masculine plural",
+        "los poetas"
+      ],
+      [
+        "feminine plural",
+        "las poetas / las poetisas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Both la poeta and la poetisa are used.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "alcalde:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el alcalde"
+      ],
+      [
+        "feminine singular",
+        "la alcaldesa"
+      ],
+      [
+        "masculine plural",
+        "los alcaldes"
+      ],
+      [
+        "feminine plural",
+        "las alcaldesas"
+      ]
+    ],
+    "more": "Use the feminine forms for a female referent. Alcaldesa is the feminine counterpart of alcalde.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "dirigente:N": {
+    "forms": [
+      [
+        "masculine singular",
+        "el dirigente"
+      ],
+      [
+        "feminine singular",
+        "la dirigente"
+      ],
+      [
+        "masculine plural",
+        "los dirigentes"
+      ],
+      [
+        "feminine plural",
+        "las dirigentes"
+      ]
+    ],
+    "more": "Use el dirigente for a man and la dirigente for a woman; the noun itself stays the same. The plurals are los dirigentes and las dirigentes.",
+    "tip": "Gender forms depend on the referent."
+  },
+  "club:N": {
+    "forms": [
+      [
+        "singular",
+        "el club"
+      ],
+      [
+        "plural",
+        "los clubes / los clubs"
+      ]
+    ],
+    "more": "Both clubes and clubs are valid plurals."
+  },
+  "fútbol:N": {
+    "more": "This card teaches the sport, normally used without a plural. Plural uses for varieties of football are outside this sense."
+  },
+  "pasado:N": {
+    "more": "This card teaches the past as a general time or idea, normally singular. Other countable uses are not included here."
+  },
+  "izquierda:N": {
+    "more": "This card teaches the left side or direction, normally singular in expressions such as a mi izquierda. The plural appears in other uses and fixed expressions, such as a izquierdas (counterclockwise)."
+  },
+  "músico:N": {}
 }

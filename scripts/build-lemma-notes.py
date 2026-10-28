@@ -133,9 +133,13 @@ SPECIAL={
  'internet':('mf','Internet is used with either gender and often without an article.'),
 }
 STRESSED_A={'agua','área','arma','alma'}
-# These cards teach uncountable noun senses. Same-POS form membership can
-# include other senses, so it cannot establish a useful plural for this card.
+# These cards teach senses selected for singular-only tables. Same-POS form
+# membership can include other senses, so it cannot establish a useful plural here.
 SINGULAR_SENSES={
+ 'fútbol':'This card teaches the sport, normally used without a plural.',
+ 'pasado':'This card teaches the past as a general time or idea, normally singular.',
+ 'izquierda':'This card teaches the left side or direction in a singular expression; plural uses occur elsewhere, including fixed expressions.',
+ 'música':'This card teaches music as a general idea, not kinds of music or female musicians.',
  'inglés':'This card teaches the language. Los ingleses usually refers to English people, a different noun sense.',
  'personal':'In the staff/personnel sense, personal is a collective noun normally used in the singular.'
 }
@@ -194,6 +198,7 @@ for c in cards:
  if w=='gustar' and tag=='V':more='The grammatical subject is the thing or person that pleases, not the person who likes it: me gusta el libro means I like the book. Gusta agrees with one thing; gustan agrees with plural things.'
  override=usage.get(c['sourceLemma']+':'+tag,{})
  pattern=override.get('pattern',pattern);tip=override.get('tip',tip);more=override.get('more',more)
+ forms=override.get('forms',forms) # Explicit source-checked paradigms.
  if w in ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'] and tag=='N':
   pattern='en '+w;tip='Month names are lowercase and normally used without an article.'
  notes.append(dict(id=c['id'],word=w,label=c['partOfSpeech'],meaning='; '.join(c['meanings']),pattern=pattern,tip=tip,tags=[key],examples=[],forms=forms,formsTitle=formsTitle,more=more,source=w,level='lexical'))

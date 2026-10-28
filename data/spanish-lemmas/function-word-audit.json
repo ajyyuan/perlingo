@@ -1,0 +1,944 @@
+{
+  "reviewed": "2026-10-27",
+  "scope": "All current deck entries with source tags L, H, W, Q and M, including the etcétera source-tag exception. Common agreement and short forms for the taught senses; not exhaustive dialectal, archaic, derived or clitic-attached forms. Separate person/case cards are preserved; this does not supply a complete Spanish pronoun reference (e.g. vos/vosotros are not new cards).",
+  "sources": [
+    {
+      "url": "https://www.ucm.es/plataformaele/determinativos",
+      "scope": "Quantifier agreement, ordinal gender/number, invariant indefinites."
+    },
+    {
+      "url": "https://www.uoc.edu/es/servicios/lengua-estilo/criterios/gramatica/pronombres",
+      "scope": "Personal, relative and interrogative paradigms."
+    },
+    {
+      "url": "https://www.rae.es/dpd/pronombres%20personales%20t%C3%B3nicos",
+      "scope": "Stressed forms, ello, con combinations and distinctions between persons/cases."
+    },
+    {
+      "url": "https://www.rae.es/dpd/uno",
+      "scope": "Restrictions and short forms for uno."
+    },
+    {
+      "url": "https://www.rae.es/dpd/alguno",
+      "scope": "Restrictions and short forms for alguno."
+    },
+    {
+      "url": "https://www.rae.es/dpd/ninguno",
+      "scope": "Restrictions and short forms for ninguno."
+    },
+    {
+      "url": "https://www.rae.es/dpd/cualquiera",
+      "scope": "Restrictions and short forms for cualquiera."
+    },
+    {
+      "url": "https://www.rae.es/dpd/primero",
+      "scope": "Restrictions and short forms for primero."
+    },
+    {
+      "url": "https://www.rae.es/dpd/tercero",
+      "scope": "Restrictions and short forms for tercero."
+    },
+    {
+      "url": "https://www.rae.es/dpd/medio",
+      "scope": "Restrictions and short forms for medio."
+    },
+    {
+      "url": "https://www.rae.es/dpd/sí",
+      "scope": "Restrictions and short forms for sí."
+    }
+  ],
+  "frozenEvidence": "dictionary-extract.json: explicit él/ello, usted/ustedes, nosotros/nosotras and tanto agreement metadata; adjective metadata for mismo and medio. No new corpus-token frequency claims.",
+  "entries": [
+    {
+      "id": "corpes:que:H",
+      "status": "retained",
+      "forms": [],
+      "reason": "Relative que is invariant; accented qué is a separate card."
+    },
+    {
+      "id": "corpes:se:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:lo:L",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "lo"
+        ],
+        [
+          "feminine singular",
+          "la"
+        ],
+        [
+          "masculine plural",
+          "los"
+        ],
+        [
+          "feminine plural",
+          "las"
+        ],
+        [
+          "neuter (idea or statement)",
+          "lo"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:le:L",
+      "status": "added",
+      "forms": [
+        [
+          "singular",
+          "le"
+        ],
+        [
+          "plural",
+          "les"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:me:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:todo:Q",
+      "status": "retained",
+      "forms": [
+        [
+          "masculine singular",
+          "todo"
+        ],
+        [
+          "feminine singular",
+          "toda"
+        ],
+        [
+          "masculine plural",
+          "todos"
+        ],
+        [
+          "feminine plural",
+          "todas"
+        ]
+      ],
+      "reason": "Authored table already supplies todo/toda/todos/todas; grouped-form lookup fixed previously."
+    },
+    {
+      "id": "corpes:él:L",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "él"
+        ],
+        [
+          "feminine singular",
+          "ella"
+        ],
+        [
+          "masculine plural",
+          "ellos"
+        ],
+        [
+          "feminine plural",
+          "ellas"
+        ],
+        [
+          "neuter (restricted use)",
+          "ello"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:otro:Q",
+      "status": "retained",
+      "forms": [
+        [
+          "masculine singular",
+          "otro"
+        ],
+        [
+          "feminine singular",
+          "otra"
+        ],
+        [
+          "masculine plural",
+          "otros"
+        ],
+        [
+          "feminine plural",
+          "otras"
+        ]
+      ],
+      "reason": "Authored table already supplies otro/otra/otros/otras; grouped-form lookup fixed previously."
+    },
+    {
+      "id": "corpes:nos:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:uno:M",
+      "status": "retained",
+      "forms": [
+        [
+          "standalone masculine",
+          "uno"
+        ],
+        [
+          "before masculine noun",
+          "un"
+        ],
+        [
+          "feminine",
+          "una"
+        ]
+      ],
+      "reason": "Retain uno/un/una for the number one; number-name unos is a separate sense."
+    },
+    {
+      "id": "corpes:te:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:primero:M",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "primero"
+        ],
+        [
+          "feminine singular",
+          "primera"
+        ],
+        [
+          "masculine plural",
+          "primeros"
+        ],
+        [
+          "feminine plural",
+          "primeras"
+        ],
+        [
+          "before masculine singular noun",
+          "primer"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:dos:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:mismo:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "mismo"
+        ],
+        [
+          "feminine singular",
+          "misma"
+        ],
+        [
+          "masculine plural",
+          "mismos"
+        ],
+        [
+          "feminine plural",
+          "mismas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:qué:W",
+      "status": "retained",
+      "forms": [],
+      "reason": "Qué is invariant in the interrogative meaning."
+    },
+    {
+      "id": "corpes:alguno:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "alguno"
+        ],
+        [
+          "feminine singular",
+          "alguna"
+        ],
+        [
+          "masculine plural",
+          "algunos"
+        ],
+        [
+          "feminine plural",
+          "algunas"
+        ],
+        [
+          "before masculine singular noun",
+          "algún"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:yo:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:mucho:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "mucho"
+        ],
+        [
+          "feminine singular",
+          "mucha"
+        ],
+        [
+          "masculine plural",
+          "muchos"
+        ],
+        [
+          "feminine plural",
+          "muchas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cada:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:quien:H",
+      "status": "added",
+      "forms": [
+        [
+          "singular",
+          "quien"
+        ],
+        [
+          "plural",
+          "quienes"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:tres:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:algo:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:nada:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:cual:H",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "el cual"
+        ],
+        [
+          "feminine singular",
+          "la cual"
+        ],
+        [
+          "masculine plural",
+          "los cuales"
+        ],
+        [
+          "feminine plural",
+          "las cuales"
+        ],
+        [
+          "neuter reference",
+          "lo cual"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:poco:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "poco"
+        ],
+        [
+          "feminine singular",
+          "poca"
+        ],
+        [
+          "masculine plural",
+          "pocos"
+        ],
+        [
+          "feminine plural",
+          "pocas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:más:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:segundo:M",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "segundo"
+        ],
+        [
+          "feminine singular",
+          "segunda"
+        ],
+        [
+          "masculine plural",
+          "segundos"
+        ],
+        [
+          "feminine plural",
+          "segundas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:varios:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine plural",
+          "varios"
+        ],
+        [
+          "feminine plural",
+          "varias"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:mí:L",
+      "status": "added",
+      "forms": [
+        [
+          "after a preposition",
+          "mí"
+        ],
+        [
+          "with con",
+          "conmigo"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:uno:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "uno"
+        ],
+        [
+          "feminine singular",
+          "una"
+        ],
+        [
+          "masculine plural (some)",
+          "unos"
+        ],
+        [
+          "feminine plural (some)",
+          "unas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:ninguno:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "ninguno"
+        ],
+        [
+          "feminine singular",
+          "ninguna"
+        ],
+        [
+          "before masculine singular noun",
+          "ningún"
+        ],
+        [
+          "masculine plural (restricted)",
+          "ningunos"
+        ],
+        [
+          "feminine plural (restricted)",
+          "ningunas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cualquiera:Q",
+      "status": "added",
+      "forms": [
+        [
+          "standalone / after a noun",
+          "cualquiera"
+        ],
+        [
+          "before a singular noun",
+          "cualquier"
+        ],
+        [
+          "plural (formal)",
+          "cualesquiera"
+        ],
+        [
+          "before a plural noun (rare)",
+          "cualesquier"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cuatro:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:nadie:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:usted:L",
+      "status": "added",
+      "forms": [
+        [
+          "singular",
+          "usted"
+        ],
+        [
+          "plural",
+          "ustedes"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:nosotros:L",
+      "status": "added",
+      "forms": [
+        [
+          "masculine / mixed group",
+          "nosotros"
+        ],
+        [
+          "feminine group",
+          "nosotras"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:tanto:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "tanto"
+        ],
+        [
+          "feminine singular",
+          "tanta"
+        ],
+        [
+          "masculine plural",
+          "tantos"
+        ],
+        [
+          "feminine plural",
+          "tantas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cuyo:H",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "cuyo"
+        ],
+        [
+          "feminine singular",
+          "cuya"
+        ],
+        [
+          "masculine plural",
+          "cuyos"
+        ],
+        [
+          "feminine plural",
+          "cuyas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cinco:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:tú:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:ambos:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine plural",
+          "ambos"
+        ],
+        [
+          "feminine plural",
+          "ambas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:quién:W",
+      "status": "added",
+      "forms": [
+        [
+          "singular",
+          "quién"
+        ],
+        [
+          "plural",
+          "quiénes"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cierto:Q",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "cierto"
+        ],
+        [
+          "feminine singular",
+          "cierta"
+        ],
+        [
+          "masculine plural",
+          "ciertos"
+        ],
+        [
+          "feminine plural",
+          "ciertas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:alguien:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:tercero:M",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "tercero"
+        ],
+        [
+          "feminine singular",
+          "tercera"
+        ],
+        [
+          "masculine plural",
+          "terceros"
+        ],
+        [
+          "feminine plural",
+          "terceras"
+        ],
+        [
+          "before masculine singular noun",
+          "tercer"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:sí:L",
+      "status": "added",
+      "forms": [
+        [
+          "reflexive / reciprocal after a preposition",
+          "sí"
+        ],
+        [
+          "with con (reflexive)",
+          "consigo"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:seis:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:medio:M",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "medio"
+        ],
+        [
+          "feminine singular",
+          "media"
+        ],
+        [
+          "masculine plural",
+          "medios"
+        ],
+        [
+          "feminine plural",
+          "medias"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:demás:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:cuál:W",
+      "status": "added",
+      "forms": [
+        [
+          "singular",
+          "cuál"
+        ],
+        [
+          "plural",
+          "cuáles"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:diez:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:ti:L",
+      "status": "added",
+      "forms": [
+        [
+          "after a preposition",
+          "ti"
+        ],
+        [
+          "with con",
+          "contigo"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:siete:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:ocho:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:etcétera:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Expression, not an inflecting quantifier despite the source tag."
+    },
+    {
+      "id": "corpes:menos:Q",
+      "status": "retained",
+      "forms": [],
+      "reason": "Invariant in the taught quantifier use; do not import inflections from other noun or adjective senses."
+    },
+    {
+      "id": "corpes:cuánto:W",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "cuánto"
+        ],
+        [
+          "feminine singular",
+          "cuánta"
+        ],
+        [
+          "masculine plural",
+          "cuántos"
+        ],
+        [
+          "feminine plural",
+          "cuántas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:cuarto:M",
+      "status": "added",
+      "forms": [
+        [
+          "masculine singular",
+          "cuarto"
+        ],
+        [
+          "feminine singular",
+          "cuarta"
+        ],
+        [
+          "masculine plural",
+          "cuartos"
+        ],
+        [
+          "feminine plural",
+          "cuartas"
+        ]
+      ],
+      "reason": "Added explicit forms for the taught grammatical use; see contextual restrictions in the note."
+    },
+    {
+      "id": "corpes:nueve:M",
+      "status": "retained",
+      "forms": [],
+      "reason": "Cardinal counting use is invariant; plural number-name nouns are different senses."
+    },
+    {
+      "id": "corpes:conmigo:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    },
+    {
+      "id": "corpes:os:L",
+      "status": "retained",
+      "forms": [],
+      "reason": "Retain the distinct person/case card; no gender inflection in this taught use. Related subject, object and prepositional forms are not automatically merged."
+    }
+  ],
+  "distinctions": [
+    "Do not merge yo/me/mí, tú/te/ti, or nosotros/nos: existing cards teach different roles.",
+    "Do not infer alguien from alguno, nada from ninguno, or alguno from algo.",
+    "Keep accented question forms separate from unaccented relatives.",
+    "Uno as a cardinal counts one; indefinite unos/unas mean some, with restrictions in partitives.",
+    "Cardinal number-name plurals (doses, treses, etc.), superlatives, archaic forms and attached verb+clitic strings are outside this sense-specific audit.",
+    "Vos and vosotros/vosotras are distinct regional pronouns, not missing gender inflections of tú; no new cards are created."
+  ],
+  "contextGlossReview": [
+    {
+      "word": "ciertas",
+      "sentence": "Ciertas familias ven la educación como un camino hacia la libertad.",
+      "meaning": "certain; some (before a noun)",
+      "scope": "Quantifier before familias, not adjective true. Applies to all three exercises using this sentence."
+    },
+    {
+      "word": "media",
+      "sentence": "En septiembre, las familias de clase media quieren contribuir.",
+      "meaning": "middle (in clase media)",
+      "scope": "Middle-class sense, not the half numeral. Applies to all three exercises using this sentence."
+    }
+  ],
+  "contextIntegrity": {
+    "beforeSha256": "8670310ee8c382d13a1ec13db7051dc398da21a8aee442b399539315666554e2",
+    "afterSha256": "30458838ad0ecbb04e7fffa3eb78e118bbe49adde832efdd25a7da7a64986f9e",
+    "assessmentSha256": "dcac1dfe0b99b6af9a67299da0836ce841024355904516b4960a91db4b464890",
+    "scope": "Only six hover glosses and the tal explanation/concept changed. All 1,500 identities, targets, answer lists, sentence texts and translations equal the previously committed bank."
+  }
+}
