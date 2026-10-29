@@ -23,3 +23,12 @@
 .course-study .course-rank{margin-left:10px;font-size:12px;color:#73776f;font-variant-numeric:tabular-nums;white-space:nowrap}
 
 .note-forms{margin:24px 0;min-width:0}.shared-forms .say{border:0;border-bottom:1px dotted #aab19f;background:none;color:inherit;font:inherit;padding:0;text-align:left;cursor:pointer}
+
+.course-study .translation-row{display:grid;grid-template-columns:minmax(0,1fr) 32px;gap:8px;align-items:start;min-height:32px}
+.course-study .translation-row .sentence-translation{padding-top:4px}
+.course-study .translation-toggle{border:0;background:none;color:var(--muted);font:inherit;display:inline-grid;place-items:center;width:32px;min-height:32px;padding:8px;cursor:pointer}
+.course-study .translation-toggle:hover{color:var(--ink)}
+.course-study .sentence-translation{display:grid;grid-template-rows:1fr;opacity:1;visibility:visible;transition:grid-template-rows 180ms ease,opacity 180ms ease,visibility 180ms}
+.course-study .sentence-translation>.use-translation{min-height:0;overflow:hidden;margin:0;padding:0}
+.course-study .sentence-translation[data-shown=false]{grid-template-rows:0fr;opacity:0;visibility:hidden}
+@media(prefers-reduced-motion:reduce){.course-study .sentence-translation{transition:none}}
