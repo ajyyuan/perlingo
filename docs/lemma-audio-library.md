@@ -80,7 +80,7 @@ Live browser verification on https://perlingo.app/lemmas/ confirmed sentence pla
 
 ### Small volume increase (local preview, October 29)
 
-Pronunciation now targets -16 dBFS active RMS, a 3 dB increase from version 34. The ±12 dB gain cap and peak compressor remain in place, so clips already at the boost cap may not become louder. The shared path applies across all eight recorded voices and sentence/word controls. Device-speech fallback and correct/wrong answer cues are unchanged. Batch/set completion chimes also gain 3 dB. Reload the local app before comparing; this adjustment is approved for commit but not yet published.
+Pronunciation now targets -16 dBFS active RMS, a 3 dB increase from version 34. The ±12 dB gain cap and peak compressor remain in place, so clips already at the boost cap may not become louder. The shared path applies across all eight recorded voices and sentence/word controls. Device-speech fallback and correct/wrong answer cues are unchanged. Batch/set completion chimes also gain 3 dB. Reload the local app before comparing; this adjustment is published in Sites version 35.
 
 ## Precomputed levels and current-card preloading (local, October 29)
 
@@ -104,4 +104,10 @@ npm test
 
 The decoder appends completed measurements to its JSONL output; the builder uses the latest entry for each path and rejects incomplete coverage. Summary and input-manifest hashes are in `data/spanish-lemmas/audio/precomputed-levels.json`. Rebuild measurements when recording contents change and run the coverage tests when adding recordings.
 
-Preview: reload `/lemmas/`, let a card appear, then play its headword and full sentence. Change person/tense and voice, and navigate quickly between cards to check that preloading stays silent and obsolete playback is canceled. Return after switching tabs to check the current card warms again. This optimization is not committed or published; version 34 remains live.
+Preview: reload `/lemmas/`, let a card appear, then play its headword and full sentence. Change person/tense and voice, and navigate quickly between cards to check that preloading stays silent and obsolete playback is canceled. Return after switching tabs to check the current card warms again. This optimization is committed and published in Sites version 35.
+
+## Publication — October 29, 2026
+
+Sites version **35** deployed successfully: deployment `appgdep_6ae3b2f75f1c81918a6f7b5deeb1428d`, saved version `appgprj_6ad42d50df348191922f8c8aa5be12af~appgver_3940c12267148191bbfa63bb15032805`, source `70c6c33a287906819aadd6d9be9a3cbbf944c1a2`, application commit `007a191c1f` (including the earlier +3 dB commit `eff7ca3d1d`). Public access, perlingo.app and runtime environment revision 2 were preserved. No new audio generation or Azure upload was needed.
+
+All 391 tests and the hosted build passed; the packaged build was byte-checked against all 1,025 measurement files and the changed playback modules. The user requested publication for testing the deployed network path; interactive playback comparison remains the user's live check because browser automation was unavailable. Reload https://perlingo.app/lemmas/, let a card appear, then compare first playback, repeat playback and a newly selected voice/tense. This publication supersedes earlier local-only labels for these changes.

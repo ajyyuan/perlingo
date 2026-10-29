@@ -10,4 +10,4 @@ Open `/lemmas/completion-preview.html` for an isolated preview using the product
 
 ## Small volume increase — local preview, October 29
 
-The shared batch/set/test completion chime is 3 dB louder than version 34 (23 dB above its original level). Its attack and decay are scaled together, preserving the sound shape. Sound preference, animation and correct/wrong answer cues are unchanged. Preview at `/lemmas/completion-preview.html` using Replay completion. Approved for commit; not yet published.
+The shared batch/set/test completion chime is 3 dB louder than version 34 (23 dB above its original level). Its attack and decay are scaled together, preserving the sound shape. Sound preference, animation and correct/wrong answer cues are unchanged. Preview at `/lemmas/completion-preview.html` using Replay completion. Published in Sites version 35 on October 29, 2026.
