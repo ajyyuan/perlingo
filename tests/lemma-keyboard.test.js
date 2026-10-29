@@ -42,3 +42,12 @@ test('conjugation keys respect native event modifiers, editing and inactive over
  }
  for(const key of ['1','6','+','_','-','='])assert.equal(rowKeysAllowed({key}),false);
 });
+
+test('S speaks the headword and P plays the example only during learning',()=>{
+ for(const [key,command] of [['s','pronounce'],['S','pronounce'],['p','sentence'],['P','sentence']]){
+  assert.equal(keyboardCommand({key},{learning:true}),command);
+  assert.equal(keyboardCommand({key},{choice:true}),null);
+  for(const state of [{editing:true},{overlay:true},{notes:true}])assert.equal(keyboardCommand({key},{learning:true,...state}),null);
+  for(const flag of ['repeat','isComposing','defaultPrevented','altKey','ctrlKey','metaKey','shiftKey'])assert.equal(keyboardCommand({key,[flag]:true},{learning:true}),null);
+ }
+});

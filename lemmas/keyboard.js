@@ -6,7 +6,7 @@ export function keyboardCommand(e,{editing=false,overlay=false,notes=false,learn
  if(e.altKey||e.ctrlKey||e.metaKey||editing||notes)return null;
  if(e.key==='?')return 'help';
  if(e.shiftKey)return null;
- if(learning)return ({ArrowUp:'previous',ArrowLeft:'previous',ArrowDown:'forward',ArrowRight:'forward',p:'pronounce',P:'pronounce',n:'notes',N:'notes'})[e.key]||null;
+ if(learning)return ({ArrowUp:'previous',ArrowLeft:'previous',ArrowDown:'forward',ArrowRight:'forward',s:'pronounce',S:'pronounce',p:'sentence',P:'sentence',n:'notes',N:'notes'})[e.key]||null;
  if(choice&&/^[1-4]$/.test(e.key))return 'choice-'+(Number(e.key)-1);
  return null;
 }

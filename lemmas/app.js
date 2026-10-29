@@ -204,6 +204,7 @@ document.addEventListener('keydown',e=>{
   else if(command==='search'){e.preventDefault();browse();}
   else if(command==='help'){e.preventDefault();showShortcuts();}
   else if(command==='pronounce'){e.preventDefault();speak(byId.get(batchIds(idsForSet(deck,data.set),flow())[flow().index]).lemma);}
+  else if(command==='sentence'){const sentence=app.querySelector('.course-study .lesson-uses .sentence-audio');if(sentence){e.preventDefault();sentence.click();}}
   else if(command.startsWith('choice-')){const b=app.querySelectorAll('.choice:not(:disabled)')[Number(command.slice(-1))];if(b){e.preventDefault();b.click();}}
   else {e.preventDefault();act(command);}
   return;
