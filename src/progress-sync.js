@@ -6,17 +6,22 @@ export function validProgress(p){
   p.history&&typeof p.history==='object'&&!Array.isArray(p.history)&&Array.isArray(p.sessions));
 }
 // One versioned snapshot per account/pack. Never merge SRS counters by timestamp.
-export function createProgressSync({storage,key,initial,remote,onApply,onStatus,validate=validProgress,autoLink=false}){
+export function createProgressSync({storage,key,initial,remote,onApply,onStatus,validate=validProgress,autoLink=false,guest=null}){
  let raw=storage.getItem(key),envelope=raw?JSON.parse(raw):{progress:clone(initial),revision:0,linked:false,dirty:false};
  if(!validate(envelope.progress)||!Number.isInteger(envelope.revision))throw new Error('Saved account progress is invalid. Export or recover it before continuing.');
  let disposed=false,busy=false,localBlocked=false,timer=null,choice=null,remoteRow=null;
- const status=(state,message)=>{if(!disposed)onStatus({state,message,choice,remote:remoteRow?.payload||null});};
+ const status=(state,message)=>{if(!disposed)onStatus({state,message,choice,remote:remoteRow?.payload||null,guest:envelope.guestCandidate||null,accountDraft:envelope.dirty||(envelope.linked&&!remoteRow)});};
  function persist(){
   // A second tab must not silently erase this tab's unsynced draft.
   if(storage.getItem(key)!==raw){localBlocked=true;throw new Error('Another tab changed this account. Reload to use its saved progress; export this tab first if needed.');}
   const next=JSON.stringify(envelope);try{storage.setItem(key,next);raw=next;}catch(error){localBlocked=true;throw error;}
  }
- function backup(){storage.setItem(`${key}:recovery`,JSON.stringify({savedAt:new Date().toISOString(),progress:envelope.progress,cloud:remoteRow?.payload||null}));}
+ if(guest&&!envelope.guestCandidate){
+  if(!validate(guest))throw new Error('Guest progress has an unsupported format.');
+  envelope.guestCandidate=clone(guest);persist();
+ }
+ if(envelope.guestCandidate&&!validate(envelope.guestCandidate))throw new Error('Saved guest progress has an unsupported format.');
+ function backup(){storage.setItem(`${key}:recovery`,JSON.stringify({savedAt:new Date().toISOString(),progress:envelope.progress,cloud:remoteRow?.payload||null,...(envelope.guestCandidate?{guest:envelope.guestCandidate}:{})}));}
  function save(progress){
   if(disposed)return;
   if(JSON.stringify(progress)===JSON.stringify(envelope.progress))return;
@@ -31,6 +36,7 @@ export function createProgressSync({storage,key,initial,remote,onApply,onStatus,
    const row=await remote.read();if(disposed)return;
    if(row&&(!Number.isInteger(row.revision)||!validate(row.payload)))throw new Error('Cloud progress has an unsupported format. Local progress has been kept.');
    remoteRow=row;
+   if(envelope.guestCandidate){choice='guest';status('choice',row||envelope.linked||envelope.dirty?'Bring your guest progress over, or keep your account progress?':'Bring your guest progress into this account?');return;}
    if(!envelope.linked&&autoLink&&!envelope.dirty){
     envelope={progress:clone(row?.payload||envelope.progress),revision:row?.revision||0,linked:true,dirty:!row};persist();onApply(clone(envelope.progress));
    }
@@ -56,11 +62,14 @@ export function createProgressSync({storage,key,initial,remote,onApply,onStatus,
    if((row?.revision||0)!==(remoteRow?.revision||0)){remoteRow=row;status('choice','Cloud progress changed again. Review your choice.');return;}
    if(row&&!validate(row.payload))throw new Error('Cloud progress has an unsupported format.');
    backup();
-   if(source==='cloud'){
+   if(source==='guest'){
+    if(choice!=='guest'||!envelope.guestCandidate)throw new Error('No guest progress is available.');
+    envelope={progress:clone(envelope.guestCandidate),revision:row?.revision||0,linked:true,dirty:true};persist();choice=null;onApply(clone(envelope.progress));
+   }else if(source==='cloud'){
     if(!row)throw new Error('No cloud progress is available.');
     envelope={progress:clone(row.payload),revision:row.revision,linked:true,dirty:false};persist();choice=null;onApply(clone(envelope.progress));
    }else if(source==='device'){
-    envelope.linked=true;envelope.revision=row?.revision||0;envelope.dirty=true;persist();choice=null;
+    delete envelope.guestCandidate;envelope.linked=true;envelope.revision=row?.revision||0;envelope.dirty=true;persist();choice=null;
    }else throw new Error('Unknown progress choice');
   }catch(error){status('error',error.message);return;}
   finally{busy=false;}

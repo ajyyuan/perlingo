@@ -221,8 +221,9 @@ try{
  data=raw?restoreProgress(raw,deck):createCourseProgress(deck);setCourseExampleSeed(data.exampleSeed);if(!raw)save();render();
  account=createAccount({config:accountConfig,pack:'lemmas',storage:localStorage,
   getGuest:()=>restoreProgress(JSON.parse(localStorage.getItem(KEY)),deck),
-  initialAccount:()=>createCourseProgress(deck),autoLink:true,remoteFactory:lemmaRemote,
-  validate:p=>validProgress(p,deck),describe:p=>`day ${(p?.day||0)+1}`,
+  initialAccount:()=>createCourseProgress(deck),autoLink:true,offerGuestOnSignIn:true,
+  onProgressChoice:()=>{const dialog=document.querySelector('#course-account');if(!dialog.open)dialog.showModal();},remoteFactory:lemmaRemote,
+  validate:p=>validProgress(p,deck),describe:p=>`day ${(p?.day||0)+1}, set ${(p?.set||0)+1}, card ${(p?.flows?.[p?.set]?.batch||0)*10+(p?.flows?.[p?.set]?.index||0)+1} · ${Object.values(p?.practiced||{}).reduce((sum,n)=>sum+n,0)} words practiced`,
   apply:p=>{dictation.cancel();answerAudio.stop();data=restoreProgress(p,deck);setCourseExampleSeed(data.exampleSeed);view='study';render();},
   onStorageError:()=>{warning.hidden=false;warning.textContent='Account progress could not be saved. Open Account for details.';}
  });
