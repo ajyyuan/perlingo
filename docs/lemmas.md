@@ -231,4 +231,6 @@ Sentence translation toggle (published in Sites version 36): study cards and cou
 
 Published October 29, 2026: Sites version **36**, deployment `appgdep_6ae3bb63fbbc8191aaf1320d95e052db`, succeeded. Application commit `8c511b014b` maps to Sites source `336112821b9af676f663a89401819aeef7f2e813`. The approved translation-eye placement, hover label, animation and T shortcut are live. All 392 tests, content checks and the hosted build passed. Public access, perlingo.app and runtime environment revision 2 are preserved.
 
-Local shortcut update: S replaces P for speaking the headword; P now plays the displayed study example through its existing sentence-audio control without moving focus. These shortcuts remain learning-only and inactive while typing or in overlays. Not yet committed or published.
+Shortcut update (published in Sites version 37): S replaces P for speaking the headword; P now plays the displayed study example through its existing sentence-audio control without moving focus. These shortcuts remain learning-only and inactive while typing or in overlays. Published October 29, 2026.
+
+Sites version **37** deployed successfully on October 29, 2026: deployment `appgdep_6ae3bd05bf9c81919a35ed3f3dd266dc`, application commit `17619fa2a9`, Sites source `b574b65624d2fdadb5a18a6f015fb28b1247863b`. S speaks the headword; P plays the currently displayed study example. All 393 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained.

@@ -356,7 +356,7 @@ Search also accepts Cmd/Ctrl+Shift+K as an unlisted alias of Cmd/Ctrl+K, with th
 
 Publication completed October 28, 2026: Sites version **32**, deployment `appgdep_6ae250aa30d48191a657dc538782ea8b`, succeeded. Application commit `3d678ea9d` maps to Sites source `4a1d2f682bbd5a904585d6554af92fcfeaf397e6`. Conjugation row shortcuts (`- / =`), updated keyboard help and the unlisted Cmd/Ctrl+Shift+K search alias are live. All 371 tests, content checks and the hosted build passed. Existing public access, domain and environment revision 2 are preserved.
 
-Local shortcut update: `[ / ]` now selects conjugation rows with wraparound; `- / =` changes tenses. Keyboard help and tense tooltips reflect this swap. Approved for publication; the version 32 record above describes the earlier bindings.
+Shortcut update (published in Sites version 37): `[ / ]` now selects conjugation rows with wraparound; `- / =` changes tenses. Keyboard help and tense tooltips reflect this swap. Approved for publication; the version 32 record above describes the earlier bindings.
 
 Local single-letter audio correction: all eight Spanish voices now use explicit /i/ recordings for standalone y, while a/A, e and o retain their original recordings. All 40 original combinations and 32 experimental replacement files were machine-audited; only the eight y replacements are retained, because no defect was established in the other originals; transcription limitations and listening checks are documented in [the audit](docs/lemma-single-letter-audio.md). [Compare original/current audio](http://localhost:5173/lemmas/single-letter-preview.html). Original library files remain intact; the y-only same-origin corrections are published in version 33.
 
@@ -381,4 +381,6 @@ Sentence translation toggle (published in Sites version 36): study cards and cou
 
 Published October 29, 2026: Sites version **36**, deployment `appgdep_6ae3bb63fbbc8191aaf1320d95e052db`, succeeded. Application commit `8c511b014b` maps to Sites source `336112821b9af676f663a89401819aeef7f2e813`. The approved translation-eye placement, hover label, animation and T shortcut are live. All 392 tests, content checks and the hosted build passed. Public access, perlingo.app and runtime environment revision 2 are preserved.
 
-Local shortcut update: S speaks the headword and P plays the first displayed study example (including the selected tense/person example). Both retain the learning-only shortcut guards and leave typing and overlays alone. Not yet committed or published.
+Shortcut update (published in Sites version 37): S speaks the headword and P plays the first displayed study example (including the selected tense/person example). Both retain the learning-only shortcut guards and leave typing and overlays alone. Published October 29, 2026.
+
+Sites version **37** deployed successfully on October 29, 2026: deployment `appgdep_6ae3bd05bf9c81919a35ed3f3dd266dc`, application commit `17619fa2a9`, Sites source `b574b65624d2fdadb5a18a6f015fb28b1247863b`. S speaks the headword; P plays the currently displayed study example. All 393 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained.
