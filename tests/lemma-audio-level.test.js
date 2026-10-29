@@ -5,7 +5,7 @@ const tone=amplitude=>Float32Array.from({length:24000},(_,i)=>amplitude*Math.sin
 test('quiet and loud versions of the same voice reach the same active level',()=>{
  for(const amplitude of [.06,.12,.4]){
   const level=recordingLevel([tone(amplitude)],24000);
-  assert.ok(Math.abs(level.activeRMSDBFS+level.adjustmentDB+19)<.0001);
+  assert.ok(Math.abs(level.activeRMSDBFS+level.adjustmentDB+16)<.0001);
  }
 });
 test('leading/trailing silence does not drive normalization; silence and near-silence stay unboosted',()=>{

@@ -1,4 +1,5 @@
 export function createCompletionFeedback({enabled,AudioContext=window.AudioContext||window.webkitAudioContext}){
+ const cueGain=10**(23/20); // Original cue level plus 23 dB.
  let context;
  function unlock(){try{context??=AudioContext?new AudioContext():null;return context?.resume();}catch{return null;}}
  function chime(){
@@ -7,7 +8,7 @@ export function createCompletionFeedback({enabled,AudioContext=window.AudioConte
    if(!enabled()||context?.state!=='running')return;
    [523.25,659.25,783.99].forEach((hz,i)=>{
     const osc=context.createOscillator(),gain=context.createGain(),at=context.currentTime+i*.11;
-    osc.type='sine';osc.frequency.value=hz;gain.gain.setValueAtTime(0,at);gain.gain.linearRampToValueAtTime(.035*10,at+.015);gain.gain.exponentialRampToValueAtTime(.001*10,at+.3);
+    osc.type='sine';osc.frequency.value=hz;gain.gain.setValueAtTime(0,at);gain.gain.linearRampToValueAtTime(.035*cueGain,at+.015);gain.gain.exponentialRampToValueAtTime(.001*cueGain,at+.3);
     osc.connect(gain);gain.connect(context.destination);osc.onended=()=>{osc.disconnect();gain.disconnect();};osc.start(at);osc.stop(at+.32);
    });
   }).catch(()=>{});

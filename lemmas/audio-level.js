@@ -9,6 +9,6 @@ export function recordingLevel(channels,sampleRate){
  const maximum=Math.max(0,...windows),active=windows.filter(p=>p>maximum*.0001);
  const rms=active.length?Math.sqrt(active.reduce((a,b)=>a+b,0)/active.length):0;
  const db=20*Math.log10(Math.max(rms,1e-9));
- const adjustment=rms<.001?0:Math.max(-12,Math.min(12,-19-db));
+ const adjustment=rms<.001?0:Math.max(-12,Math.min(12,-16-db));
  return {activeRMSDBFS:db,peak,gain:10**(adjustment/20),adjustmentDB:adjustment};
 }
