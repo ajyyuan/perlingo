@@ -25,6 +25,7 @@ import {KEY,idsForSet} from './session.js';
 import {createLemmaVoice} from './pronunciation.js';
 const app=document.querySelector('#app'),warning=document.querySelector('#storage');
 const voice=createLemmaVoice({onOpen:()=>{dictation.cancel();answerAudio.stop();}});
+voice.watchCard(app);
 const answerAudio=createAnswerFeedback(voice,window.AudioContext||window.webkitAudioContext,{cueGain:.055*10});
 const dictation=createRecordedDictation({
  onText:text=>{const input=app.querySelector('#answer');if(input&&!input.readOnly){const test=activeTest(),card=byId.get(test.queue[test.index]);const cleaned=cleanDictation(text,test.kind==='context'?card.context.answers:[],test.kind==='context'?card.context:null);input.value=cleaned;test.draft=cleaned;save();input.focus();}},

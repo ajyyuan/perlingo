@@ -1,6 +1,7 @@
-import {recordingLevel} from './audio-level.js';
+import {createLevelLookup,playbackUrl as audioUrl} from './recording-levels.js';
+import {recordingLevel,levelAdjustment} from './audio-level.js';
 // Opt-in for Lemmas only. Device speech and feedback cues retain their own levels.
-export function createPronunciationBoost(AudioContext,{fetchAudio=fetch}={}){
+export function createPronunciationBoost(AudioContext,{fetchAudio=fetch,getLevel=createLevelLookup(fetchAudio)}={}){
  let context;const levels=new Map();
  return {
   unlock(){
@@ -13,15 +14,19 @@ export function createPronunciationBoost(AudioContext,{fetchAudio=fetch}={}){
    // Only the fixed public library is proxied; local correction clips stay local.
    const match=url.match(/^https:\/\/perlingoaudio\.blob\.core\.windows\.net\/pronunciation\/(es-(?:ES|MX|AR|CO))\/([a-f0-9]{24}\.mp3)$/);
    if(/^https?:/.test(url)&&!match)return {url,release(){}};
-   const playbackUrl=match?`/api/pronunciation/${match[1]}/${match[2]}`:url;
+   const playbackUrl=audioUrl(url);
    let level=levels.get(playbackUrl);
+   if(!level){
+    const db=await getLevel(playbackUrl);
+    if(Number.isFinite(db))level=levelAdjustment(db);
+   }
    if(!level){
     const response=await fetchAudio(playbackUrl,{signal:signal?AbortSignal.any([signal,AbortSignal.timeout(8000)]):AbortSignal.timeout(8000)});if(!response.ok)throw Error('Recording unavailable');
     const buffer=await context.decodeAudioData(await response.arrayBuffer());
     if(signal?.aborted)throw Error('Playback canceled');
     level=recordingLevel(Array.from({length:buffer.numberOfChannels},(_,i)=>buffer.getChannelData(i)),buffer.sampleRate);
-    levels.set(playbackUrl,level);if(levels.size>128)levels.delete(levels.keys().next().value);
    }
+   levels.set(playbackUrl,level);if(levels.size>128)levels.delete(levels.keys().next().value);
    if(signal?.aborted)throw Error('Playback canceled');
    const source=context.createMediaElementSource(audio),gain=context.createGain(),limiter=context.createDynamicsCompressor();
    gain.gain.value=level.gain;

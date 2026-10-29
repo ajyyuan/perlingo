@@ -1,0 +1,12 @@
+{
+  "recordings": 362336,
+  "shards": 1025,
+  "method": "Native float PCM; 20 ms windows; speech activity gate 40 dB below maximum-window RMS; unweighted active RMS, not LUFS",
+  "precisionDB": 0.0001,
+  "manifestSHA256": {
+    "manifest.json": "222239d0011f65fcd64e601e3282736f4211eed92a19e0043e3056ecb066b92a",
+    "manifest-feminine.json": "72596f547a46bb435be0ac557fdae39c3cdfed839696e0b3b03875a890331374"
+  },
+  "runtimeTargetDBFS": -16,
+  "adjustmentCapDB": 12
+}

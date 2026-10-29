@@ -7,6 +7,7 @@ import {prototypeLessons,freshPrototype,advanceLesson,restorePrototype} from './
 import {createLemmaVoice} from './pronunciation.js';
 const root=document.querySelector('#prototype'),storageKey='perlingo-forms-prototype-v2';
 const voice=createLemmaVoice();
+voice.watchCard(root);
 let lessons,state,concepts,tense='present',unmountNote=()=>{},notesAnchor;
 const notesDialog=document.querySelector('#full-notes');
 function openNotes(){stop();notesAnchor=document.activeElement;unmountNote();unmountNote=mountNote(document.querySelector('#full-note-content'),lessons[state.index],concepts,{voice,heading:true,overlayRoot:notesDialog});notesDialog.showModal();notesDialog.scrollTop=0;}

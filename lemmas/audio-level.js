@@ -1,3 +1,7 @@
+export function levelAdjustment(db){
+ const adjustment=db < -60?0:Math.max(-12,Math.min(12,-16-db));
+ return {gain:10**(adjustment/20),adjustmentDB:adjustment};
+}
 // Speech-active RMS, not LUFS: exclude silence and keep one fixed gain per clip.
 export function recordingLevel(channels,sampleRate){
  const windows=[],width=Math.max(1,Math.round(sampleRate*.02));let peak=0;
@@ -9,6 +13,5 @@ export function recordingLevel(channels,sampleRate){
  const maximum=Math.max(0,...windows),active=windows.filter(p=>p>maximum*.0001);
  const rms=active.length?Math.sqrt(active.reduce((a,b)=>a+b,0)/active.length):0;
  const db=20*Math.log10(Math.max(rms,1e-9));
- const adjustment=rms<.001?0:Math.max(-12,Math.min(12,-16-db));
- return {activeRMSDBFS:db,peak,gain:10**(adjustment/20),adjustmentDB:adjustment};
+ return {activeRMSDBFS:db,peak,...levelAdjustment(db)};
 }

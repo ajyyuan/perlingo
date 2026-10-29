@@ -61,7 +61,8 @@ export function mountNote(host,n,concepts,{voice,storageKey='perlingo-word-notes
 
  },options);
  window.addEventListener('resize',closePopup,options);window.addEventListener('scroll',closePopup,{...options,passive:true});
- return ()=>{voice?.stop();controller.abort();removeForms();if(dialog.open)dialog.close();closePopup();overlays.remove();};
+ const stopPreload=voice?.watchCard?.(host)||(()=>{});
+ return ()=>{stopPreload();voice?.stop();controller.abort();removeForms();if(dialog.open)dialog.close();closePopup();overlays.remove();};
 }
 // Keep grading shortcuts inactive while the user reads, edits, or operates notes.
 export function notesOwnKeyboard(target,overlayOpen){return overlayOpen||Boolean(target.closest('.word-note, #chunk-help, #grammar, input, textarea, select, a, summary'));}

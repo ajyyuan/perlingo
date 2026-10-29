@@ -48,9 +48,9 @@ Original headwords span -24.04 to -17.30 dBFS active RMS, forms -26.11 to -17.83
 
 ### Playback normalization
 
-Each newly encountered recording is fetched and decoded before playback, then measured with the same speech-active 20 ms RMS approach as the sample audit. One constant gain targets -16 dBFS active RMS, capped at ±12 dB. Signals below -60 dBFS are left unboosted. The peak compressor remains downstream. This replaces the fixed boost, rather than stacking on top of it. It approximates consistent speech level, not broadcast LUFS normalization or identical perceived loudness across timbres.
+Version 34 fetched and decoded each newly encountered recording before playback to measure its speech-active RMS. The local optimization below replaces that first-play work with precomputed measurements for every recording. One constant gain targets -16 dBFS active RMS, capped at ±12 dB. Signals below -60 dBFS are left unboosted. The peak compressor remains downstream. This replaces the fixed boost, rather than stacking on top of it. It approximates consistent speech level, not broadcast LUFS normalization or identical perceived loudness across timbres.
 
-The gain for the most recent 128 clip URLs is cached in memory; decoded buffers are not retained. Initial playback requires a full fetch/decode before the media element plays; subsequent playback reuses the measured gain and normal browser HTTP caching. Cancellation aborts analysis fetches and prevents stale playback or leaked graphs. Normalization applies to headwords, forms, sentences, answer pronunciation, notes and both columns of the single-letter comparison. Feedback tones are unchanged; device synthesis fallback cannot be normalized by this path. Unsupported Web Audio retains ordinary recorded playback.
+The gain for the most recent 128 clip URLs is cached in memory; decoded buffers are not retained. In version 34, initial playback required a full fetch/decode before the media element played. The local optimization uses small measurement shards instead, retaining decode-based normalization only when a measurement is unavailable. Cancellation aborts analysis fetches and prevents stale playback or leaked graphs. Normalization applies to headwords, forms, sentences, answer pronunciation, notes and both columns of the single-letter comparison. Feedback tones are unchanged; device synthesis fallback cannot be normalized by this path. Unsupported Web Audio retains ordinary recorded playback.
 
 At the previous -19 dBFS target, applying the 104-clip sample measurements predicted that all 96 original clips would reach the -19 dBFS active-RMS target before peak compression. The eight corrected y clips land between -22.27 and -19 dBFS due to the boost cap (previous spread 13.44 dB). These are predicted gain-adjusted signal levels, not a listening evaluation or measured post-compressor output. No recordings have been regenerated or overwritten.
 
@@ -81,3 +81,27 @@ Live browser verification on https://perlingo.app/lemmas/ confirmed sentence pla
 ### Small volume increase (local preview, October 29)
 
 Pronunciation now targets -16 dBFS active RMS, a 3 dB increase from version 34. The ±12 dB gain cap and peak compressor remain in place, so clips already at the boost cap may not become louder. The shared path applies across all eight recorded voices and sentence/word controls. Device-speech fallback and correct/wrong answer cues are unchanged. Batch/set completion chimes also gain 3 dB. Reload the local app before comparing; this adjustment is approved for commit but not yet published.
+
+## Precomputed levels and current-card preloading (local, October 29)
+
+All 362,336 local Spanish recordings—including retained older examples and the eight standalone-y corrections—have offline active-RMS measurements in `lemmas/audio-levels/`. These are 1,025 small JSON shards, selected by locale and filename prefix, plus corrections. Only needed shards are fetched, with up to 64 cached in memory. The stored value is measured RMS, not a fixed gain: the shared -16 dBFS target, ±12 dB cap, silence exclusion and peak compressor still determine playback gain. No audio was regenerated or modified, and no paid service was used.
+
+Known recordings no longer need an audio download/decode/measurement pass before media playback. If a measurement cannot be loaded, the previous measured-normalization path remains as a fallback. Metadata fetches time out and failed shard requests can retry. The separate single-letter preview uses the same lookup. Web Audio still needs browser activation on a user gesture; network/cache conditions can still affect first playback.
+
+The current course card, reference card, notes or forms prototype preloads up to 24 distinct visible pronunciation controls in the selected voice only. Headword and whole sentences are prioritized, followed by words/forms. At most three clips fetch concurrently, using the same URL as playback and the browser HTTP cache; audio is never played or activated by preloading. Card/tense/row/voice changes update the selection and abort stale clip preloads; hidden pages pause them, and returning to the page refreshes the current selection. Nested note/reference views take precedence over their background card.
+
+Measurements were computed with native float PCM decoding and the existing 20 ms window/activity-gate method. All 104 independently measured audit samples agree within 0.1 dB. Coverage tests require a valid measurement for every Spanish manifest entry and y correction; focused tests also require known-level playback to avoid audio fetch/decode and exercise preload limits, cancellation and stale manifest resolution. All 391 tests pass. The hosted build succeeds and all 1,025 generated shards were byte-checked against the build output. The local metadata endpoint returns HTTP 200. Browser automation was unavailable (`browser.user is unavailable`), so fresh interactive playback/timing verification remains a user-preview check.
+
+Reproduce offline from the repository root on macOS:
+
+```sh
+python3 scripts/build-recording-levels.py --inputs /tmp/perlingo-level-input.json
+swiftc -O scripts/measure-pronunciation-levels.swift -o /tmp/perlingo-measure-levels
+/tmp/perlingo-measure-levels /tmp/perlingo-level-input.json /tmp/perlingo-level-measurements.jsonl
+python3 scripts/build-recording-levels.py /tmp/perlingo-level-measurements.jsonl
+npm test
+```
+
+The decoder appends completed measurements to its JSONL output; the builder uses the latest entry for each path and rejects incomplete coverage. Summary and input-manifest hashes are in `data/spanish-lemmas/audio/precomputed-levels.json`. Rebuild measurements when recording contents change and run the coverage tests when adding recordings.
+
+Preview: reload `/lemmas/`, let a card appear, then play its headword and full sentence. Change person/tense and voice, and navigate quickly between cards to check that preloading stays silent and obsolete playback is canceled. Return after switching tabs to check the current card warms again. This optimization is not committed or published; version 34 remains live.

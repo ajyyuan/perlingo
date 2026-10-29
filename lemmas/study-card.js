@@ -24,5 +24,6 @@ export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,ref
   uses.innerHTML='<h2>Uses</h2>'+(group.text?`<div class="use-example"><p>${exampleMarkup(group)}${sentenceAudio(group.text)}</p><p class="use-translation">${esc(group.translation)}</p></div>`:`<p class="use-tip">${esc(group.notice||group.exampleNotice||'')}</p>`);
  }
  const removeForms=hasForms?mountForms(root.querySelector('.shared-forms'),note,{voice,onExample:showTenseExample,cardNavigation:!reference}):()=>{};
- return {openNotes,destroy(){abort.abort();removeForms();removeNotes();dialog.remove();stop();}};
+ const stopPreload=voice.watchCard?.(root)||(()=>{});
+ return {openNotes,destroy(){stopPreload();abort.abort();removeForms();removeNotes();dialog.remove();stop();}};
 }
