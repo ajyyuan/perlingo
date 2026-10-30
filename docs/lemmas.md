@@ -8,6 +8,8 @@ The page opens on the saved activity. Learning cards now use the integrated two-
 
 ### Learning and tests
 
+Day tests and context reviews have a **Restart test** text control in the test footer and completion screen. It immediately starts a fresh shuffled 250-question attempt, clearing that test’s score, repairs, feedback and draft. Set progress, other tests and word history stay saved. The new attempt saves through the existing local/account progress path and resumes after reload.
+
 - **Batch (10):** read ten English meanings and Spanish headwords, then type the Spanish headwords from English prompts in shuffled order.
 - **Set (50):** after five batch tests, choose English meanings for all fifty Spanish words. Four distinct glosses come from the set, falling back to the deck if needed. Choice order stays stable during feedback and reload.
 - **Day (250):** typed Spanish recall covers every card in the selected day, not a sample. Your days permits starting early; there is no daily lock.
