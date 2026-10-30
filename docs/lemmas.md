@@ -243,7 +243,7 @@ Published October 29 sign-in update: explicit sign-in now opens an account choic
 
 Published October 29, 2026: Sites version **39**, deployment `appgdep_6ae3cb2160648191b32cfed5d814f843`, succeeded. Application commit `94c064509b` maps to Sites source `db55eb018ccef29c63f95734a8e55150c4c2712b`. Guest-progress import on explicit Lemmas sign-in is live, superseding the local-only status above. All 402 tests, syntax/content checks and the hosted build passed; packaged account/sync modules match source. Public access, perlingo.app and environment revision 2 are retained. No real guest/account progress was imported during release verification; live OAuth import remains user acceptance testing.
 
-## Six-day pacing (approved for publication, 2026-10-29)
+## Six-day pacing (published, 2026-10-29)
 
 The unchanged 1,500-card order is divided into six days of five 50-word sets (250 words per day). Day 1 contains sets 1–5, Day 2 sets 6–10, through Day 6 sets 26–30. Typed day tests and contextual reviews each use exactly those 250 cards. Batch and set progress, ratings, preferences and the active set are retained. On migration, the selected day follows the active set. Valid old 300-word day tests and contextual reviews are retained in `previousDayExams`; their scores, drafts and queues do not count toward the regrouped days. Existing pilot archives remain intact. Account snapshots from the previous schedule can still be validated and migrated.
 
@@ -251,4 +251,6 @@ Preview: open `/lemmas/`, choose Your days, and check six day tabs and five sets
 
 Validation: all 404 repository tests and `npm run check` pass; changed-module syntax and `git diff --check` pass. Browser checks confirmed Day 1 and Day 6 each display five sets, and both Day 6 assessments start at 1 / 250. No answers were submitted. Migration and full review completion are covered by automated tests. The frozen assessment evidence chain records the scheduling changes in `data/spanish-lemmas/six-day-schedule-audit.json`; the context bank remains byte-for-byte unchanged. No commit or publication was made.
 
-The user approved the six-day schedule for commit and publication on October 29, 2026. All 404 tests and the hosted Worker build pass; publication outcome will be recorded after deployment.
+The user approved the six-day schedule for commit and publication on October 29, 2026. All 404 tests and the hosted Worker build pass; publication outcome is recorded below.
+
+Published October 29, 2026: Sites version **40**, deployment `appgdep_6ae3ed7bdce48191b8719011c32cd1db`, succeeded. Application commit `c8c006c0e9` maps to Sites source `0899138f20988dd308adec124593ce409ac9fc54`. The six-day, five-set schedule is live: 250 words per day, with 250-word day tests and contextual reviews. Existing set progress is retained; old 300-word day assessments are archived during migration. All 404 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained.
