@@ -112,7 +112,7 @@ searchDialog.addEventListener('keydown',e=>{
  if(!['ArrowDown','ArrowUp'].includes(e.key)||!rows.length)return;
  e.preventDefault();
  const i=rows.indexOf(searchDialog.querySelector('.search-row.is-active'));
- const next=rows[e.key==='ArrowDown'?Math.min(i+1,rows.length-1):Math.max(0,i-1)];
+ const next=rows[e.key==='ArrowDown'?(i+1)%rows.length:(i-1+rows.length)%rows.length];
  selectSearchRow(next);input.focus({preventScroll:true});next?.scrollIntoView({block:'nearest'});
 });
 function canSearch(){return searchAllowed(view,data.activeExam||['choice','test'].includes(flow().phase)?activeTest():null);}

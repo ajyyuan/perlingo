@@ -256,3 +256,5 @@ Validation: all 404 repository tests and `npm run check` pass; changed-module sy
 The user approved the six-day schedule for commit and publication on October 29, 2026. All 404 tests and the hosted Worker build pass; publication outcome is recorded below.
 
 Published October 29, 2026: Sites version **40**, deployment `appgdep_6ae3ed7bdce48191b8719011c32cd1db`, succeeded. Application commit `c8c006c0e9` maps to Sites source `0899138f20988dd308adec124593ce409ac9fc54`. The six-day, five-set schedule is live: 250 words per day, with 250-word day tests and contextual reviews. Existing set progress is retained; old 300-word day assessments are archived during migration. All 404 tests, content checks and the hosted build passed. Public access, perlingo.app and environment revision 2 are retained.
+
+Search keyboard navigation: in Cmd/Ctrl+K results, Arrow Down wraps from the last displayed result to the first, and Arrow Up wraps from the first to the last. Focus stays in the search field, the selected result scrolls into view, and Enter opens it. A single result stays selected; an empty list leaves selection empty.
