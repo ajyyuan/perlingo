@@ -398,3 +398,5 @@ Published October 29, 2026: Sites version **40**, deployment `appgdep_6ae3ed7bdc
 Cmd/Ctrl+K lemma search now wraps its selection with Up/Down arrows at either end of the displayed results, retaining input focus and Enter-to-open.
 
 Published October 29, 2026: Sites version **41**, deployment `appgdep_6ae3f98fc0d88191892a4880ce8c23c7`, succeeded. Application commit `3cde3a85a3` maps to Sites source `8f733ebb9800a7f25bddf8995cf851a93652d31f`. Cmd/Ctrl+K search arrow wraparound and the approved day-test/context-review restart controls are live. All 404 tests, content checks and the Node 24 hosted build passed. Local browser checks covered both wrap directions, retained input focus, single/empty results and Enter-to-open. Public access and environment revision 2 are retained.
+
+Local search-layout revision: the search field and result count stay visible while the result list scrolls, including when arrow navigation wraps. User-approved for commit and publication; deployment pending.
