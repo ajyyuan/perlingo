@@ -33,10 +33,10 @@ test('choice distractors are distinct even when different cards have identical g
  const c={meaning:'the'},group=[c,{meaning:'the'},{meaning:' THE '},{meaning:'of'},{meaning:'and'},{meaning:'in'}];
  const options=optionsFor(c,group,group,()=>0.5);assert.equal(options.length,4);assert.equal(new Set(options.map(normalize)).size,4);assert.equal(options.filter(v=>v==='the').length,1);
 });
-test('day samples have exactly five unique cards from each of the six sets and stay in their day',()=>{
- for(let day=0;day<5;day++){
-  const sample=sampleDay(deck,day);assert.equal(new Set(sample).size,30);
-  for(let set=0;set<6;set++)assert.equal(sample.filter(id=>deck.slice(day*300+set*50,day*300+set*50+50).some(c=>c.id===id)).length,5);
+test('day samples have exactly five unique cards from each of the five sets and stay in their day',()=>{
+ for(let day=0;day<6;day++){
+  const sample=sampleDay(deck,day);assert.equal(new Set(sample).size,25);
+  for(let set=0;set<5;set++)assert.equal(sample.filter(id=>deck.slice(day*250+set*50,day*250+set*50+50).some(c=>c.id===id)).length,5);
  }
 });
 test('restore preserves checked answers and rejects incomplete, wrong-kind, or cross-set tests',()=>{
@@ -49,7 +49,7 @@ test('restore preserves checked answers and rejects incomplete, wrong-kind, or c
  assert.equal(validTest({...f.test,options:'invalid'},ids),false);
  assert.equal(validTest({...f.test,draft:42},ids),false);
  assert.equal(validTest({...f.test,queue:[f.test.queue[0],f.test.queue[0]]},ids),false);
- assert.equal(validTest(createTest('typed',sampleDay(deck,0)),deck.slice(0,300).map(c=>c.id)),true);
+ assert.equal(validTest(createTest('typed',sampleDay(deck,0)),deck.slice(0,250).map(c=>c.id)),true);
 });
 test('old self-rating progress never becomes a passed active test; learning location is retained',()=>{
  const old={phase:'recall',batch:2,index:9,recall:{done:false}};
@@ -69,10 +69,10 @@ test('repair never passes a stage; a new full perfect pass is required and first
  assert.equal(t.index,1);assert.equal(t.mode,'full');
  t=pass(t);assert.equal(t.done,true);assert.equal(t.pass,3);assert.equal(t.firstCorrect,9);
 });
-test('all 300 day words must be answered in the final perfect pass',()=>{
- let t=createTest('typed',deck.slice(0,300).map(c=>c.id));
- for(let i=0;i<299;i++)t=advanceTest(checkAnswer(t,cards.get(t.queue[t.index]).lemma,cards.get(t.queue[t.index])));
- assert.equal(t.done,false);assert.equal(t.queue.length,300);t=pass(t);assert.equal(t.done,true);assert.equal(t.firstCorrect,300);
+test('all 250 day words must be answered in the final perfect pass',()=>{
+ let t=createTest('typed',deck.slice(0,250).map(c=>c.id));
+ for(let i=0;i<249;i++)t=advanceTest(checkAnswer(t,cards.get(t.queue[t.index]).lemma,cards.get(t.queue[t.index])));
+ assert.equal(t.done,false);assert.equal(t.queue.length,250);t=pass(t);assert.equal(t.done,true);assert.equal(t.firstCorrect,250);
 });
 test('old test rules cannot restore as a newly passed stage',()=>{
  const old=pass(createTest('typed',ids.slice(0,10)));delete old.rules;

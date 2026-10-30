@@ -11,11 +11,11 @@ import {examIds,restoreExams} from '../lemmas/exam-state.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const deck=read('lemmas/data/deck.json'),bank=read('lemmas/data/context.json');
 const cards=new Map(deck.map((c,i)=>[c.id,{...c,context:bank.contexts[i]}]));
-test('all five days have precisely 300 contextual cards in unchanged course order',()=>{
+test('all six days have precisely 250 contextual cards in unchanged course order',()=>{
  assert.equal(bank.version,3);assert.equal(bank.contexts.length,1500);
  assert.deepEqual(bank.contexts.map(c=>c.id),deck.map(c=>c.id));
  assert.deepEqual(bank.contexts.slice(0,50).map(({headwordCue,recallCue,answerNote,...original})=>original),contextPilot);
- for(let day=0;day<5;day++)assert.deepEqual(bank.contexts.slice(day*300,day*300+300).map(c=>c.id),examIds(deck,day));
+ for(let day=0;day<6;day++)assert.deepEqual(bank.contexts.slice(day*250,day*250+250).map(c=>c.id),examIds(deck,day));
  for(const c of bank.contexts){
   assert.equal(c.example.chunks.map(ch=>ch.text).join(' ')+'.',c.example.text);
   assert.equal(c.example.chunks[c.index].text.slice(c.offset,c.offset+c.target.length),c.target);
@@ -38,15 +38,15 @@ test('every contextual word, sentence, target-bearing phrase and dictated senten
   assert.ok(!matchesContextAnswer(wrong,c),c.id);
  }
 });
-test('each day requires all 300 contextual answers and retains first-pass scores through repairs',()=>{
- for(let day=0;day<5;day++){
+test('each day requires all 250 contextual answers and retains first-pass scores through repairs',()=>{
+ for(let day=0;day<6;day++){
   const ids=examIds(deck,day);let t=createTest('context',ids,()=>0.5);const missed=t.queue[0];
-  for(let i=0;i<300;i++){const c=cards.get(t.queue[t.index]);t=advanceTest(checkAnswer(t,i===0?'wrong':c.context.target,c));}
-  assert.equal(t.done,false);assert.equal(t.mode,'repair');assert.equal(t.firstCorrect,299);assert.ok(t.queue.includes(missed));
+  for(let i=0;i<250;i++){const c=cards.get(t.queue[t.index]);t=advanceTest(checkAnswer(t,i===0?'wrong':c.context.target,c));}
+  assert.equal(t.done,false);assert.equal(t.mode,'repair');assert.equal(t.firstCorrect,249);assert.ok(t.queue.includes(missed));
   while(t.mode==='repair'){const c=cards.get(t.queue[t.index]);t=advanceTest(checkAnswer(t,c.context.target,c));}
-  assert.equal(t.done,false);assert.equal(t.queue.length,300);assert.equal(t.pass,2);
-  for(let i=0;i<300;i++){const c=cards.get(t.queue[t.index]);t=advanceTest(checkAnswer(t,c.context.target,c));assert.equal(t.done,i===299);}
-  assert.equal(t.firstCorrect,299);
+  assert.equal(t.done,false);assert.equal(t.queue.length,250);assert.equal(t.pass,2);
+  for(let i=0;i<250;i++){const c=cards.get(t.queue[t.index]);t=advanceTest(checkAnswer(t,c.context.target,c));assert.equal(t.done,i===249);}
+  assert.equal(t.firstCorrect,249);
  }
 });
 test('old 50-card pilot is archived without damaging current exams, drafts or prior archives',()=>{

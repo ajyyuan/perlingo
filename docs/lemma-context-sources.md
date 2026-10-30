@@ -4,7 +4,7 @@ Status: local preview, October 26, 2026. No publication or new commit is implied
 
 ## What is covered
 
-The unchanged 1,500-card deck has exactly one contextual exercise per lemma/POS identity, in five groups of 300. There are **537 distinct authored Spanish sentences**, including the retained first-set examples. A sentence can support several cards, with a different single-word blank for each card. The shared sentence is visible in each relevant card’s notes. Original casa/depender/música examples remain available as additional examples.
+The unchanged 1,500-card deck has exactly one contextual exercise per lemma/POS identity, in six groups of 250. There are **537 distinct authored Spanish sentences**, including the retained first-set examples. A sentence can support several cards, with a different single-word blank for each card. The shared sentence is visible in each relevant card’s notes. Original casa/depender/música examples remain available as additional examples.
 
 Each exercise includes an English translation, explicitly segmented Spanish chunks with English glosses, a target word and exact position, word-level hover meanings, and feedback about the target form. The first 50 exercises retain their original source-compared content. New target grammar links explain the actual displayed form; other chunk links explain the general construction. Surrounding hover meanings are dictionary-style word meanings plus an authored phrase gloss, not a claim that every word translates literally in isolation.
 
@@ -50,16 +50,20 @@ npm run check
 
 The builder writes `lemmas/data/context.json` and `data/spanish-lemmas/context/coverage.json`. It does not generate Spanish prose, English translations or chunk boundaries. It compiles authored rows, resolves explicit glosses and existing dictionary entries, and rejects missing targets, wrong-day ranks, duplicate IDs, unsupported forms and missing word meanings.
 
-The course-context tests check exact 5×300 coverage; preservation of the first 50; reconstruction; one non-leaking blank; hover coverage; word, phrase and whole-sentence acceptance; dictated-text normalization; wrong-target rejection; all 300 answers in each perfect pass; repairs and frozen first scores; and restoration/migration. A deterministic rebuild check catches stale generated data. Grammar and punctuation tests preserve modal keyboard behavior and punctuation outside clickable chunks.
+The course-context tests check exact 6×250 coverage; preservation of the first 50; reconstruction; one non-leaking blank; hover coverage; word, phrase and whole-sentence acceptance; dictated-text normalization; wrong-target rejection; all 250 answers in each perfect pass; repairs and frozen first scores; and restoration/migration. A deterministic rebuild check catches stale generated data. Grammar and punctuation tests preserve modal keyboard behavior and punctuation outside clickable chunks.
 
 ## Saved progress and local preview
 
-Context tests now use version 3. Version-2 50-card pilot sessions are archived under `previousContext` with version/count keys; they cannot satisfy a 300-card pass. Existing batch, set and typed day tests are preserved. Every active review validates its exact day membership. Reload resumes its queue, feedback and draft.
+Context tests now use version 3. Version-2 50-card pilot sessions are archived under `previousContext` with version/count keys; they cannot satisfy a 250-card pass. Existing batch and set tests are preserved; old 300-word day tests and reviews are archived separately. Every active review validates its exact day membership. Reload resumes its queue, feedback and draft.
 
-Days 2–5 expose the previous day’s review above the sets. Every day has its own review below its typed day test, including Day 5. The notes route now defaults to all 1,500 words, without requiring `?set=1`. The older five-word prototype remains source material, not the default experience.
+Days 2–6 expose the previous day’s review above the sets. Every day has its own review below its typed day test, including Day 6. The notes route now defaults to all 1,500 words, without requiring `?set=1`. The older five-word prototype remains source material, not the default experience.
 
-Local browser verification covers the Day 5 300-card entry, target-bearing phrase submission, Enter-to-continue focus, reload with draft, and the final word’s example → contextual grammar dialog. Automated completion checks cover every question in all five days; browser checks are not a claim of manually completing 1,500 questions or re-testing live microphone recognition.
+Historical verification (prior schedule): Local browser verification covers the Day 5 300-card entry, target-bearing phrase submission, Enter-to-continue focus, reload with draft, and the final word’s example → contextual grammar dialog. Automated completion checks cover every question in all five days; browser checks are not a claim of manually completing 1,500 questions or re-testing live microphone recognition.
 
 ## Course-wide recheck — 27 October 2026
 
 See [the complete review and its limits](lemma-course-audit-2026-10-27.md). The later pass corrects the don title table, one shared English translation and 41 contextual word-hover hints. The selected deck and all accepted answers remain unchanged. The current generated form evidence has 3,380 matches after removing the gift-sense plural from the don title card.
+
+### Six-day schedule
+
+Runtime review membership and generated `perDay` coverage now use six groups of 250. The five `day1.txt`–`day5.txt` source files intentionally retain the original 300-card authoring groups and line references; their names are historical source partitions, not current study days. No sentences or target answers changed for this pacing update. Historical browser verification above refers to the prior schedule; use the current preview steps in `docs/lemmas.md` for six-day pacing.

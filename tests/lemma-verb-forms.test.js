@@ -69,9 +69,12 @@ test('all simple reference forms match frozen tagged source slots and older snap
  const pronounReview=read('data/spanish-lemmas/pronoun-recall-audit.json');
  assert.equal(pronounReview.beforeSha256,nounReview.afterSha256);
  assert.equal(digest('lemmas/data/context.json'),pronounReview.afterSha256);
+ const schedule=read('data/spanish-lemmas/six-day-schedule-audit.json').files;
  for(const [file,hash]of Object.entries(audit.unchanged.assessment)){
-  if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(digest(file),seedAudit.afterSha256);}
-  else assert.equal(digest(file),hash);
+  const current=schedule[file]?.beforeSha256??digest(file);
+  if(schedule[file])assert.equal(digest(file),schedule[file].afterSha256);
+  if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(current,seedAudit.afterSha256);}
+  else assert.equal(current,hash);
  }
 });
 test('conjugation compilation is deterministic and offline',()=>{

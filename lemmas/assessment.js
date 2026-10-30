@@ -1,3 +1,4 @@
+import {SETS_PER_DAY,WORDS_PER_DAY} from './schedule.js';
 import {matchesContextAnswer} from './context-answer.js';
 // Tests use the reviewed deck; no generated translations or fuzzy semantic grading.
 export const normalize=s=>String(s).normalize('NFC').replace(/[’‘]/gu,"'").toLocaleLowerCase('es').trim().replace(/[.!?¿¡]+$/u,'').trim().replace(/\s+/gu,' ');
@@ -32,7 +33,7 @@ export function optionsFor(card,group,all,random=Math.random){
  return shuffle(options,random);
 }
 export function sampleDay(deck,day,random=Math.random){
- return Array.from({length:6},(_,s)=>shuffle(deck.slice(day*300+s*50,day*300+s*50+50),random).slice(0,5).map(c=>c.id)).flat();
+ return Array.from({length:SETS_PER_DAY},(_,s)=>shuffle(deck.slice(day*WORDS_PER_DAY+s*50,day*WORDS_PER_DAY+s*50+50),random).slice(0,5).map(c=>c.id)).flat();
 }
 export function validTest(t,allowed){
  if(!t||(t.kind==='context'&&t.contextVersion!==3)||t.rules!==2||!['full','repair'].includes(t.mode)||!Number.isInteger(t.pass)||t.pass<1||!t.failures||typeof t.failures!=='object'||!Object.entries(t.failures).every(([id,n])=>allowed.includes(id)&&Number.isInteger(n)&&n>=0)||!['choice','typed','context'].includes(t.kind)||!Array.isArray(t.ids)||!t.ids.length||new Set(t.ids).size!==t.ids.length||!t.ids.every(id=>allowed.includes(id)))return false;

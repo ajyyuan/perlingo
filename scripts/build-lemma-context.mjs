@@ -1,3 +1,4 @@
+import {DAY_COUNT,WORDS_PER_DAY} from '../lemmas/schedule.js';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {contextPilot} from '../lemmas/context-pilot.js';
@@ -19,7 +20,8 @@ const concepts={
 const targetConcepts={};
 const bank=[...contextPilot],errors=[],used=new Set(bank.map(c=>c.id));
 const rows=[];
-const sourceFiles=['data/spanish-lemmas/context/pronoun-recall.json','scripts/build-lemma-context.mjs','lemmas/card-links.js','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
+// The five source files retain their original 300-card authoring groups.
+const sourceFiles=['lemmas/schedule.js','data/spanish-lemmas/context/pronoun-recall.json','scripts/build-lemma-context.mjs','lemmas/card-links.js','lemmas/word-help.js','lemmas/data/notes.json','data/spanish-lemmas/dictionary-extract.json','data/spanish-lemmas/notes-inflection-evidence.json','lemmas/context-pilot.js','lemmas/first-set-notes.js','data/spanish-lemmas/context/form-exceptions.json','data/spanish-lemmas/context/word-glosses.json',...Array.from({length:5},(_,i)=>`data/spanish-lemmas/context/day${i+1}.txt`)];
 for(let day=1;day<=5;day++)for(const [lineNo,line] of fs.readFileSync(`data/spanish-lemmas/context/day${day}.txt`,'utf8').split('\n').entries()){
  if(!line.trim()||line.startsWith('#'))continue;
  const [targets,translation,span,...extra]=line.split('|');
@@ -72,7 +74,7 @@ if(errors.length){console.log(errors.join('\n'));process.exitCode=1;}else{
  if(unknown.size||ambiguous.size){console.log('UNKNOWN:',[...unknown].sort().join(', '));console.log('AMBIGUOUS:',JSON.stringify(Object.fromEntries(ambiguous),null,2));process.exitCode=1;}
  else{
   fs.writeFileSync('lemmas/data/context.json',JSON.stringify({version:3,contexts:bank,concepts:{...Object.fromEntries(Object.entries(concepts).map(([k,v])=>['context:'+k,v])),...targetConcepts}},null,2)+'\n');
-  fs.writeFileSync('data/spanish-lemmas/context/coverage.json',JSON.stringify({version:3,count:bank.length,sourceHashes:Object.fromEntries(sourceFiles.map(p=>[p,createHash('sha256').update(fs.readFileSync(p)).digest('hex')])),perDay:[0,1,2,3,4].map(d=>bank.slice(d*300,d*300+300).length),uniqueSentences:new Set(bank.map(c=>c.example.text)).size,entries:rows},null,2)+'\n');
+  fs.writeFileSync('data/spanish-lemmas/context/coverage.json',JSON.stringify({version:3,count:bank.length,sourceHashes:Object.fromEntries(sourceFiles.map(p=>[p,createHash('sha256').update(fs.readFileSync(p)).digest('hex')])),perDay:Array.from({length:DAY_COUNT},(_,d)=>bank.slice(d*WORDS_PER_DAY,(d+1)*WORDS_PER_DAY).length),uniqueSentences:new Set(bank.map(c=>c.example.text)).size,entries:rows},null,2)+'\n');
   console.log(`Built ${bank.length} contexts, ${new Set(bank.map(c=>c.example.text)).size} distinct sentences.`);
  }
 }

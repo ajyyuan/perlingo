@@ -1,3 +1,4 @@
+import {SETS_PER_DAY,WORDS_PER_DAY,DAY_COUNT} from './schedule.js';
 import {createCompletionFeedback} from './completion-feedback.js';
 import {setCourseExampleSeed} from './row-examples.js';
 import {exampleNoteHref} from './example-mode.js';
@@ -37,9 +38,9 @@ let account=null;
 let deck,byId,notes,concepts,data,view='study',search='',unmount=()=>{},studyCard=null;
 const save=()=>{if(account?.save(data))return;try{localStorage.setItem(KEY,JSON.stringify(data));}catch{warning.hidden=false;warning.textContent='Progress could not be saved. Keep this tab open to continue.';}};
 const flow=()=>data.flows[data.set];
-const dayCards=d=>deck.slice(d*300,(d+1)*300);
-const setCount=d=>Array.from({length:6},(_,i)=>data.flows[d*6+i]?.phase==='done').filter(Boolean).length;
-const practiced=d=>Array.from({length:6},(_,i)=>data.practiced[d*6+i]||0).reduce((a,b)=>a+b,0);
+const dayCards=d=>deck.slice(d*WORDS_PER_DAY,(d+1)*WORDS_PER_DAY);
+const setCount=d=>Array.from({length:SETS_PER_DAY},(_,i)=>data.flows[d*SETS_PER_DAY+i]?.phase==='done').filter(Boolean).length;
+const practiced=d=>Array.from({length:SETS_PER_DAY},(_,i)=>data.practiced[d*SETS_PER_DAY+i]||0).reduce((a,b)=>a+b,0);
 const activeTest=()=>data.activeExam?data.exams[data.activeExam].test:flow().test;
 const button=(action,label,cls='primary')=>`<button class="${cls}" data-action="${action}">${label}</button>`;
 const listen=c=>`<button class="listen" data-speak="${esc(c.lemma)}" aria-label="Listen to ${esc(c.lemma)}">${speaker}</button>`;
@@ -48,13 +49,13 @@ function stage(title,copy,actions,label='Your progress'){
  app.innerHTML=`<section class="concept stage">${head(label,'',title.includes('complete')||title==='Ten checked.'?'Complete':'Next')}<div class="concept-body"><h1>${title}</h1><p class="muted">${copy}</p><div class="stage-actions">${actions}</div></div></section>`;
 }
 function home(){
- const day=data.day,start=day*6,sets=Array.from({length:6},(_,i)=>start+i),next=sets.includes(data.set)&&data.flows[data.set]?.phase!=='done'?data.set:sets.find(s=>data.flows[s]?.phase!=='done')??start;
- const reviewRow=(d,previous=false)=>{const exam=data.exams[`review-${d}`],done=exam?.test.done;return `<div class="review-row"><div><strong>${previous?'Previous day · ':''}Day ${d+1} context review</strong><p>All 300 words · complete the sentence${done?` · ${exam.test.firstCorrect}/300 first try · Passed`:''}</p></div><button class="secondary" data-exam="review-${d}">${done?'Review again':exam?'Resume':'Start'} →</button></div>`;};
- app.innerHTML=`<section class="course-page"><div class="course-title"><p class="eyebrow">Spanish · 1,500 words</p><h1>Your five days.</h1></div><nav class="days" aria-label="Study day">${Array.from({length:5},(_,d)=>`<button data-day="${d}" aria-pressed="${d===day}">Day ${d+1}</button>`).join('')}</nav>${day>0?reviewRow(day-1,true):''}<div class="day-heading"><div><h2>Day ${day+1}</h2><span>${practiced(day)} / 300 learned · ${setCount(day)} / 6 sets tested</span></div><button class="primary" data-set="${next}">${data.flows[next]?'Continue':'Start'} →</button></div><div class="set-list">${sets.map(s=>{const f=data.flows[s],label=!f?'Not started':f.phase==='done'?`Test complete · ${f.test.firstCorrect}/50 first try`:['set-ready','test'].includes(f.phase)?'50 learned · Set test':`Batch ${f.batch+1} / 5 · ${f.phase==='choice'?'Typed recall':f.phase==='complete'?'Checked':'Learning'}`;return `<button data-set="${s}"><span class="set-number">${String(s+1).padStart(2,'0')}</span><span><strong>Words ${s*50+1}–${s*50+50}</strong><small>${label}</small></span><span aria-hidden="true">${f?.phase==='done'?'✓':'→'}</span></button>`;}).join('')}</div><div class="review-row"><div><strong>Day ${day+1} test</strong><p>All 300 words · typed Spanish recall${data.exams[`day-${day}`]?.test.done?` · ${data.exams[`day-${day}`].test.firstCorrect}/300 first try`:''}</p></div><button class="secondary" data-exam="day-${day}">${data.exams[`day-${day}`]&&!data.exams[`day-${day}`].test.done?'Resume':'Start'} →</button></div>${reviewRow(day)}</section>`;
+ const day=data.day,start=day*SETS_PER_DAY,sets=Array.from({length:SETS_PER_DAY},(_,i)=>start+i),next=sets.includes(data.set)&&data.flows[data.set]?.phase!=='done'?data.set:sets.find(s=>data.flows[s]?.phase!=='done')??start;
+ const reviewRow=(d,previous=false)=>{const exam=data.exams[`review-${d}`],done=exam?.test.done;return `<div class="review-row"><div><strong>${previous?'Previous day · ':''}Day ${d+1} context review</strong><p>All ${WORDS_PER_DAY} words · complete the sentence${done?` · ${exam.test.firstCorrect}/${WORDS_PER_DAY} first try · Passed`:''}</p></div><button class="secondary" data-exam="review-${d}">${done?'Review again':exam?'Resume':'Start'} →</button></div>`;};
+ app.innerHTML=`<section class="course-page"><div class="course-title"><p class="eyebrow">Spanish · 1,500 words</p><h1>Your six days.</h1></div><nav class="days" aria-label="Study day">${Array.from({length:DAY_COUNT},(_,d)=>`<button data-day="${d}" aria-pressed="${d===day}">Day ${d+1}</button>`).join('')}</nav>${day>0?reviewRow(day-1,true):''}<div class="day-heading"><div><h2>Day ${day+1}</h2><span>${practiced(day)} / ${WORDS_PER_DAY} learned · ${setCount(day)} / ${SETS_PER_DAY} sets tested</span></div><button class="primary" data-set="${next}">${data.flows[next]?'Continue':'Start'} →</button></div><div class="set-list">${sets.map(s=>{const f=data.flows[s],label=!f?'Not started':f.phase==='done'?`Test complete · ${f.test.firstCorrect}/50 first try`:['set-ready','test'].includes(f.phase)?'50 learned · Set test':`Batch ${f.batch+1} / 5 · ${f.phase==='choice'?'Typed recall':f.phase==='complete'?'Checked':'Learning'}`;return `<button data-set="${s}"><span class="set-number">${String(s+1).padStart(2,'0')}</span><span><strong>Words ${s*50+1}–${s*50+50}</strong><small>${label}</small></span><span aria-hidden="true">${f?.phase==='done'?'✓':'→'}</span></button>`;}).join('')}</div><div class="review-row"><div><strong>Day ${day+1} test</strong><p>All ${WORDS_PER_DAY} words · typed Spanish recall${data.exams[`day-${day}`]?.test.done?` · ${data.exams[`day-${day}`].test.firstCorrect}/${WORDS_PER_DAY} first try`:''}</p></div><button class="secondary" data-exam="day-${day}">${data.exams[`day-${day}`]&&!data.exams[`day-${day}`].test.done?'Resume':'Start'} →</button></div>${reviewRow(day)}</section>`;
 }
 function learning(){
  const f=flow(),c=byId.get(batchIds(idsForSet(deck,data.set),f)[f.index]);
- studyCard=mountStudyCard(app,notes.get(c.id),concepts,{voice,speak,heading:head(`Day ${Math.floor(data.set/6)+1} · Set ${data.set+1} · Batch ${f.batch+1}`,`${String(f.index+1).padStart(2,'0')} / 10`),index:f.index});
+ studyCard=mountStudyCard(app,notes.get(c.id),concepts,{voice,speak,heading:head(`Day ${Math.floor(data.set/SETS_PER_DAY)+1} · Set ${data.set+1} · Batch ${f.batch+1}`,`${String(f.index+1).padStart(2,'0')} / 10`),index:f.index});
  unmount=()=>{studyCard?.destroy();studyCard=null;};
 }
 
@@ -80,8 +81,8 @@ function testDone(){
  if(f.phase==='complete')stage('Ten checked.',score,button('forward','Learn the next 10 →')+button('home','Take a break','plain'),`Set ${data.set+1} · Batch ${f.batch+1} / 5`);
  else if(f.phase==='set-ready')stage('Now, recognize all fifty.',`${score} You’ve checked all five batches. Next: choose the English meaning for each of the 50 Spanish headwords.`,button('start-test','Start set test →')+button('home','Later','plain'),`Set ${data.set+1}`);
  else if(f.phase==='done'){
- const day=Math.floor(data.set/6),last=data.set%6===5;
- stage('Set complete.',score,last?`<button class="primary" data-exam="day-${day}">Day ${day+1} test →</button>`+button('next-day',day<4?'Go to the next day':'Back to your days','plain'):button('next','Next set →')+button('home','Take a break','plain'),`Set ${data.set+1} · 50 words`);
+ const day=Math.floor(data.set/SETS_PER_DAY),last=data.set%SETS_PER_DAY===SETS_PER_DAY-1;
+ stage('Set complete.',score,last?`<button class="primary" data-exam="day-${day}">Day ${day+1} test →</button>`+button('next-day',day<DAY_COUNT-1?'Go to the next day':'Back to your days','plain'):button('next','Next set →')+button('home','Take a break','plain'),`Set ${data.set+1} · 50 words`);
  }
 }
 function study(){
@@ -119,8 +120,8 @@ function browse(){if(!canSearch())return;searchAnchor=document.activeElement;dic
 function renderList(){const q=search.trim().toLocaleLowerCase(),matches=searchCards(deck,q);searchDialog.querySelector('#matches').textContent=`${matches.length} cards${matches.length>100?' · Showing first 100':''}`;searchDialog.querySelector('#list').innerHTML=matches.slice(0,100).map((c,i)=>`<a id="search-result-${i}" role="option" tabindex="-1" class="search-row" data-lemma-card="${esc(c.id)}" href="${esc(exampleNoteHref(c.id,{set:Math.ceil(c.rank/50)}))}"><span lang="es">${highlightMatch(c.lemma,q)}<small>${esc(c.partOfSpeech)}</small></span><span>${highlightMatch(c.meaning,q)}</span></a>`).join('');selectSearchRow(searchDialog.querySelector('.search-row'));}
 function render(focus){
  unmount();unmount=()=>{};answerAudio.stop();dictation.cancel();document.body.dataset.view=view;
- if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/6);
- document.querySelector('#total-progress').textContent=`Day ${data.day+1} · ${practiced(data.day)} / 300 learned`;
+ if(view==='study'&&!data.activeExam)data.day=Math.floor(data.set/SETS_PER_DAY);
+ document.querySelector('#total-progress').textContent=`Day ${data.day+1} · ${practiced(data.day)} / ${WORDS_PER_DAY} learned`;
  if(view==='home')home();else study();
  const searchButton=document.querySelector('#browse');searchButton.disabled=!canSearch();
  searchButton.title=searchButton.disabled?'Search is available after checking or revealing the answer':'';
@@ -128,9 +129,9 @@ function render(focus){
  const fallback=view==='home'?'.day-heading .primary':'#answer, [data-action="continue"], .stage .primary, .choice:not(:disabled)';
  (app.querySelector(focus||fallback)||app.querySelector(fallback))?.focus();
 }
-function openSet(set){data.set=set;data.day=Math.floor(set/6);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
+function openSet(set){data.set=set;data.day=Math.floor(set/SETS_PER_DAY);data.activeExam=null;if(!data.flows[set])data.flows[set]=createFlow();view='study';save();render();}
 function openExam(key){
- const [type,d]=key.split('-'),day=Number(d);if(!['day','review'].includes(type)||!Number.isInteger(day)||day<0||day>4)return;
+ const [type,d]=key.split('-'),day=Number(d);if(!['day','review'].includes(type)||!Number.isInteger(day)||day<0||day>=DAY_COUNT)return;
  if(!data.exams[key]||data.exams[key].test.done)data.exams[key]={type,day,test:createTest(type==='review'?'context':'typed',examIds(deck,day))};
  data.activeExam=key;view='study';save();render('#answer');
 }
@@ -149,7 +150,7 @@ function act(action){
  if(action==='answer-sound'){data.answerSound=data.answerSound===false;save();if(!data.answerSound)answerAudio.stop();const b=app.querySelector('[data-action="answer-sound"]');b.textContent=`Sound ${data.answerSound?'on':'off'}`;b.setAttribute('aria-pressed',String(data.answerSound));return;}
  if(action==='notes'){studyCard?.openNotes();return;}
  if(action==='next'){openSet(Math.min(29,data.set+1));return;}
- if(action==='next-day'){data.day=Math.min(4,Math.floor(data.set/6)+1);view='home';save();render();return;}
+ if(action==='next-day'){data.day=Math.min(DAY_COUNT-1,Math.floor(data.set/SETS_PER_DAY)+1);view='home';save();render();return;}
  if(action==='dictate'){const b=app.querySelector('[data-action="dictate"]');if(b?.dataset.listening==='true')dictation.stop();else{answerAudio.stop();dictation.start();}return;}
  if(action==='skip'){submit('');return;}
  if(action==='continue'){

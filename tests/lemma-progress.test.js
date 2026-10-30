@@ -46,3 +46,33 @@ test('example seed travels with cloud progress and changes with an explicit cour
  assert.equal(JSON.parse(a.store.getItem('account:recovery')).progress.exampleSeed,1234);
  a.sync.dispose();
 });
+
+test('six-day migration keeps set progress and archives old full-day exams without reusing their passes',()=>{
+ const old=fresh();delete old.scheduleVersion;
+ old.set=29;old.day=4;old.flows[29]={...old.flows[0],batch:3,index:7};old.practiced[29]=30;
+ old.previousContext={pilot:{saved:true}};
+ old.exams={};
+ for(let day=0;day<5;day++)for(const type of ['day','review']){
+  const test=createTest(type==='day'?'typed':'context',deck.slice(day*300,(day+1)*300).map(c=>c.id));
+  test.draft='saved answer';old.exams[`${type}-${day}`]={type,day,test};
+ }
+ old.activeExam='review-4';
+ assert.ok(validProgress(old,deck),'old cloud payload is accepted for migration');
+ const next=restoreProgress(old,deck);
+ assert.equal(next.day,5);assert.equal(next.set,29);assert.equal(next.activeExam,null);
+ assert.deepEqual(next.flows,old.flows);assert.deepEqual(next.practiced,old.practiced);
+ assert.deepEqual(next.previousDayExams,old.exams);assert.deepEqual(next.previousContext,old.previousContext);
+ assert.deepEqual(next.exams,{});assert.ok(validProgress(next,deck));
+ assert.deepEqual(restoreProgress(next,deck),next);
+});
+
+test('all six new days restore drafts and reject cross-day membership',()=>{
+ for(let day=0;day<6;day++){
+  const p=fresh();p.day=day;p.set=day*5;
+  const key=`day-${day}`,ids=deck.slice(day*250,(day+1)*250).map(c=>c.id);
+  p.exams[key]={type:'day',day,test:{...createTest('typed',ids),draft:'draft'}};p.activeExam=key;
+  const next=restoreProgress(p,deck);assert.equal(next.day,day);assert.deepEqual(next.exams,p.exams);assert.ok(validProgress(next,deck));
+  p.exams[key].test.ids[0]=deck[(day*250+250)%1500].id;
+  assert.equal(validProgress(p,deck),false);
+ }
+});

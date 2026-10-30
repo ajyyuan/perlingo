@@ -1,3 +1,4 @@
+import {DAY_COUNT} from './schedule.js';
 export const SIZE=50, TOTAL=1500, KEY='perlingo-lemmas-corpes-v2';
 export const idsForSet=(deck,set)=>deck.slice(set*SIZE,(set+1)*SIZE).map(c=>c.id);
 export function createSession(ids){return {queue:[...ids],index:0,misses:[],round:1,revealed:false,done:false};}
@@ -18,7 +19,7 @@ export function restore(raw,deck){
  const ids=new Set(deck.map(c=>c.id));
  for(const [id,v] of Object.entries(raw.known||{}))if(ids.has(id)&&typeof v==='boolean')clean.known[id]=v;
  if(Number.isInteger(raw.set)&&raw.set>=0&&raw.set<30)clean.set=raw.set;
- if(Number.isInteger(raw.day)&&raw.day>=0&&raw.day<5)clean.day=raw.day;
+ if(Number.isInteger(raw.day)&&raw.day>=0&&raw.day<DAY_COUNT)clean.day=raw.day;
  for(const [key,s] of Object.entries(raw.sessions||{})){
   const set=Number(key);if(!Number.isInteger(set)||set<0||set>=30||!s)continue;
   const allowed=new Set(idsForSet(deck,set));
