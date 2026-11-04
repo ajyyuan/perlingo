@@ -1,0 +1,944 @@
+{
+  "status": "Local, not committed or published; teaching-only addition. Accepted answers unchanged.",
+  "groups": [
+    {
+      "id": "sequence",
+      "members": [
+        "corpes:después:R",
+        "corpes:entonces:R",
+        "corpes:luego:R",
+        "corpes:tras:P"
+      ],
+      "text": "Tras takes the event directly: tras la clase. Después can stand alone or take de: después de la clase. Luego also means later/next and can take de; entonces can mean at that time or introduce a conclusion.",
+      "sources": [
+        "https://dle.rae.es/tras",
+        "https://dle.rae.es/despu%C3%A9s",
+        "https://dle.rae.es/luego",
+        "https://dle.rae.es/entonces",
+        "https://www.rae.es/dpd/despu%C3%A9s",
+        "https://www.rae.es/dpd/luego"
+      ]
+    },
+    {
+      "id": "begin",
+      "members": [
+        "corpes:empezar:V",
+        "corpes:comenzar:V"
+      ],
+      "text": "Empezar and comenzar both mean begin and take a + infinitive. Comenzar tends toward formal/written use and empezar toward informal/spoken use, with regional variation—not a strict division.",
+      "sources": [
+        "https://dle.rae.es/empezar",
+        "https://dle.rae.es/comenzar",
+        "https://www.canela.org.es/cuadernos-canela/index.php/cuadernos/article/view/303"
+      ]
+    },
+    {
+      "id": "knowledge",
+      "members": [
+        "corpes:saber:V",
+        "corpes:conocer:V",
+        "corpes:entender:V"
+      ],
+      "text": "Saber is for facts and know-how: saber nadar. Conocer is for acquaintance or familiarity: conocer a Ana. Entender and comprender both express understanding; there is no mandatory shallow/deep split.",
+      "sources": [
+        "https://dle.rae.es/saber",
+        "https://dle.rae.es/conocer",
+        "https://dle.rae.es/entender",
+        "https://dle.rae.es/comprender"
+      ]
+    },
+    {
+      "id": "thought",
+      "members": [
+        "corpes:parecer:V",
+        "corpes:pensar:V",
+        "corpes:creer:V",
+        "corpes:sentir:V",
+        "corpes:considerar:V"
+      ],
+      "text": "Pensar is thinking about something; creer is taking something as true; sentir covers sensations and feelings. They can overlap when expressing opinions. Considerar can mean examining an option or judging something; parecer expresses an impression.",
+      "sources": [
+        "https://dle.rae.es/pensar",
+        "https://dle.rae.es/creer",
+        "https://dle.rae.es/sentir"
+      ]
+    },
+    {
+      "id": "being",
+      "members": [
+        "corpes:ser:V",
+        "corpes:estar:V"
+      ],
+      "text": "Ser identifies or classifies: Ana es médica. Estar presents a state: Ana está cansada. The distinction is not simply permanent versus temporary.",
+      "sources": [
+        "https://www.rae.es/dpd/ser",
+        "https://www.rae.es/dpd/estar"
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "members": [
+        "corpes:este:D",
+        "corpes:ese:D",
+        "corpes:aquel:D"
+      ],
+      "text": "In the basic spatial contrast, este is near the speaker, ese near the listener, and aquel distant from both. Their time and conversational-reference uses extend beyond physical distance.",
+      "sources": [
+        "https://dle.rae.es/este",
+        "https://dle.rae.es/ese",
+        "https://dle.rae.es/aquel"
+      ]
+    },
+    {
+      "id": "for",
+      "members": [
+        "corpes:por:P",
+        "corpes:para:P"
+      ],
+      "text": "Por can give a cause: por la lluvia. Para can identify a recipient: un regalo para Ana, or a purpose: para aprender. Both have other uses, so this is not an exhaustive cause/purpose rule.",
+      "sources": [
+        "https://dle.rae.es/por",
+        "https://dle.rae.es/para"
+      ]
+    },
+    {
+      "id": "leave",
+      "members": [
+        "corpes:ir:V",
+        "corpes:dejar:V",
+        "corpes:salir:V"
+      ],
+      "text": "Dejar las llaves means leave the keys behind; salir de casa means exit the house; irse means depart/go away. Dejar also means let someone do something, and dejar de + infinitive means stop doing it.",
+      "sources": [
+        "https://dle.rae.es/dejar",
+        "https://dle.rae.es/salir",
+        "https://dle.rae.es/ir"
+      ]
+    },
+    {
+      "id": "attainment",
+      "members": [
+        "corpes:tener:V",
+        "corpes:recibir:V",
+        "corpes:lograr:V"
+      ],
+      "text": "Lograr emphasizes achieving a sought result; conseguir also means attain/get. Both take a direct infinitive for succeeding in an action. Obtener means obtain but does not fit that same infinitive construction. Recibir is receiving; tener is having.",
+      "sources": [
+        "https://dle.rae.es/obtener",
+        "https://dle.rae.es/conseguir",
+        "https://www.fundeu.es/recomendacion/lograr-obtener-alcanzar-conseguir-resultado/"
+      ]
+    },
+    {
+      "id": "continuing-time",
+      "members": [
+        "corpes:ya:R",
+        "corpes:ahora:R",
+        "corpes:aún:R"
+      ],
+      "text": "Aún and todavía both mean continuing still. Ya can mean already; ya no means no longer. Ahora means now. Aun without the accent has other uses, including even.",
+      "sources": [
+        "https://www.rae.es/dpd/tilde"
+      ]
+    },
+    {
+      "id": "possession-existence",
+      "members": [
+        "corpes:tener:V",
+        "corpes:haber:V",
+        "corpes:existir:V"
+      ],
+      "text": "Tener expresses having: tener un libro. Haber forms compound tenses (he comido) and existential hay (there is/are). Existir means exist; these are different uses hidden by English have/be.",
+      "sources": [
+        "https://dle.rae.es/haber",
+        "https://dle.rae.es/tener"
+      ]
+    },
+    {
+      "id": "movement",
+      "members": [
+        "corpes:ir:V",
+        "corpes:pasar:V",
+        "corpes:llegar:V",
+        "corpes:volver:V",
+        "corpes:salir:V",
+        "corpes:venir:V",
+        "corpes:entrar:V"
+      ],
+      "text": "Ir means go; venir means come toward the speaker's location. Llegar emphasizes arrival, entrar/salir crossing inside/outside, and volver returning. Volver a + infinitive means do again.",
+      "sources": [
+        "https://dle.rae.es/ir",
+        "https://dle.rae.es/pasar",
+        "https://dle.rae.es/llegar",
+        "https://dle.rae.es/volver",
+        "https://dle.rae.es/salir",
+        "https://dle.rae.es/venir",
+        "https://dle.rae.es/entrar"
+      ]
+    },
+    {
+      "id": "remain-continue",
+      "members": [
+        "corpes:estar:V",
+        "corpes:seguir:V",
+        "corpes:quedar:V",
+        "corpes:mantener:V"
+      ],
+      "text": "Quedar can describe what is left: quedan tres entradas. Seguir can mean follow or continue. Mantener means keep or sustain something in a state; mantenerse can mean remain in that state.",
+      "sources": [
+        "https://dle.rae.es/estar",
+        "https://dle.rae.es/seguir",
+        "https://dle.rae.es/quedar",
+        "https://dle.rae.es/mantener"
+      ]
+    },
+    {
+      "id": "take-place",
+      "members": [
+        "corpes:dar:V",
+        "corpes:dejar:V",
+        "corpes:llevar:V",
+        "corpes:poner:V",
+        "corpes:tomar:V",
+        "corpes:recibir:V"
+      ],
+      "text": "Llevar carries or takes something along; tomar can mean take/grasp or drink. Poner places it; dejar can leave it there. Dar gives something; recibir receives it.",
+      "sources": [
+        "https://dle.rae.es/dejar"
+      ]
+    },
+    {
+      "id": "make",
+      "members": [
+        "corpes:hacer:V",
+        "corpes:crear:V",
+        "corpes:realizar:V",
+        "corpes:convertir:V",
+        "corpes:producir:V"
+      ],
+      "text": "Hacer is broad do/make; realizar carries out an action. Crear emphasizes bringing something into existence; producir an output or result; convertir en changes something into something else. Some uses overlap.",
+      "sources": [
+        "https://dle.rae.es/hacer",
+        "https://dle.rae.es/crear",
+        "https://dle.rae.es/realizar",
+        "https://dle.rae.es/convertir",
+        "https://dle.rae.es/producir"
+      ]
+    },
+    {
+      "id": "perception",
+      "members": [
+        "corpes:ver:V",
+        "corpes:sentir:V",
+        "corpes:mirar:V"
+      ],
+      "text": "Ver is visual perception; mirar directs your gaze or attention. Both can translate watch in suitable contexts. Sentir concerns sensations and feelings rather than specifically directing your eyes.",
+      "sources": [
+        "https://dle.rae.es/sentir",
+        "https://dle.rae.es/ver",
+        "https://dle.rae.es/mirar"
+      ]
+    },
+    {
+      "id": "show",
+      "members": [
+        "corpes:presentar:V",
+        "corpes:mostrar:V"
+      ],
+      "text": "Mostrar and enseñar can mean show something. Presentar also puts something before someone, but presentar a una persona means introduce a person; enseñar also means teach.",
+      "sources": [
+        "https://dle.rae.es/presentar",
+        "https://dle.rae.es/mostrar"
+      ]
+    },
+    {
+      "id": "speech",
+      "members": [
+        "corpes:decir:V",
+        "corpes:hablar:V",
+        "corpes:contar:V",
+        "corpes:llamar:V",
+        "corpes:explicar:V"
+      ],
+      "text": "Decir expresses particular content; hablar is speaking or conversation. Contar can count items or tell a story. Llamar can call by phone, summon or name; explicar makes something understandable.",
+      "sources": [
+        "https://dle.rae.es/decir",
+        "https://dle.rae.es/hablar",
+        "https://dle.rae.es/contar",
+        "https://dle.rae.es/llamar",
+        "https://dle.rae.es/explicar"
+      ]
+    },
+    {
+      "id": "ask",
+      "members": [
+        "corpes:preguntar:V",
+        "corpes:pedir:V"
+      ],
+      "text": "Preguntar asks for information: preguntar la hora. Pedir requests something or an action: pedir agua. Asking what something is and asking to receive it are different.",
+      "sources": [
+        "https://dle.rae.es/preguntar",
+        "https://dle.rae.es/pedir"
+      ]
+    },
+    {
+      "id": "find-meet",
+      "members": [
+        "corpes:encontrar:V",
+        "corpes:conocer:V",
+        "corpes:buscar:V"
+      ],
+      "text": "Buscar is looking for something; encontrar is finding or encountering it. Conocer a alguien is knowing or becoming acquainted with a person.",
+      "sources": [
+        "https://dle.rae.es/conocer"
+      ]
+    },
+    {
+      "id": "want-wait",
+      "members": [
+        "corpes:querer:V",
+        "corpes:esperar:V"
+      ],
+      "text": "Querer expresses wanting or affection. Esperar can mean wait, hope or expect, depending on context; waiting for someone does not simply mean wanting them to arrive.",
+      "sources": [
+        "https://dle.rae.es/querer",
+        "https://dle.rae.es/esperar"
+      ]
+    },
+    {
+      "id": "modal-permission",
+      "members": [
+        "corpes:poder:V",
+        "corpes:deber:V",
+        "corpes:dejar:V",
+        "corpes:permitir:V"
+      ],
+      "text": "Poder expresses ability or possibility; deber obligation or owing. Permitir and dejar overlap when giving permission. These are different meanings even when English uses can, may or must.",
+      "sources": [
+        "https://dle.rae.es/dejar"
+      ]
+    },
+    {
+      "id": "about-treatment",
+      "members": [
+        "corpes:hablar:V",
+        "corpes:tratar:V",
+        "corpes:considerar:V"
+      ],
+      "text": "Tratar de + infinitive means try to do something; tratar de + a topic can mean be about it. Considerar examines or judges something; hablar de means speak about it.",
+      "sources": [
+        "https://dle.rae.es/hablar",
+        "https://dle.rae.es/tratar",
+        "https://dle.rae.es/considerar"
+      ]
+    },
+    {
+      "id": "source",
+      "members": [
+        "corpes:de:P",
+        "corpes:desde:P"
+      ],
+      "text": "De can express possession, origin or material. Desde explicitly marks a starting point. For spans, de…a, desde…a and desde…hasta are all valid; since Monday is desde el lunes.",
+      "sources": [
+        "https://dle.rae.es/de",
+        "https://dle.rae.es/desde"
+      ]
+    },
+    {
+      "id": "direction",
+      "members": [
+        "corpes:a:P",
+        "corpes:para:P",
+        "corpes:hacia:P"
+      ],
+      "text": "A can name a destination; hacia highlights direction toward it. Para can also express destination/direction. A destination does not by itself assert that someone arrived.",
+      "sources": [
+        "https://dle.rae.es/para",
+        "https://dem.colmex.mx/ver/a"
+      ]
+    },
+    {
+      "id": "location-topic",
+      "members": [
+        "corpes:en:P",
+        "corpes:sobre:P",
+        "corpes:entre:P",
+        "corpes:dentro:R"
+      ],
+      "text": "En means in/on/at according to context. Sobre can mean on/above or about a topic. Dentro means inside and uses de before a named place; entre means between/among.",
+      "sources": [
+        "https://www.rae.es/dpd/dentro"
+      ]
+    },
+    {
+      "id": "before",
+      "members": [
+        "corpes:antes:R",
+        "corpes:ante:P"
+      ],
+      "text": "Antes is earlier in time: antes de la clase. Ante directly introduces being before/in the presence of someone or facing something: ante el juez.",
+      "sources": [
+        "https://www.rae.es/dpd/antes"
+      ]
+    },
+    {
+      "id": "duration",
+      "members": [
+        "corpes:cuando:R",
+        "corpes:durante:P",
+        "corpes:mientras:C"
+      ],
+      "text": "Durante takes a period/event noun: durante la clase. Mientras introduces simultaneous activity: mientras leo. Mientras que can be temporal or contrastive; cuando locates an event in time.",
+      "sources": [
+        "https://dle.rae.es/cuando",
+        "https://dle.rae.es/durante",
+        "https://dle.rae.es/mientras",
+        "https://www.rae.es/dpd/mientras"
+      ]
+    },
+    {
+      "id": "addition",
+      "members": [
+        "corpes:y:C",
+        "corpes:también:R",
+        "corpes:además:R"
+      ],
+      "text": "También adds a parallel participant or fact: yo también. Además introduces further information and also appears in además de. They overlap, but sentence placement and emphasis may differ.",
+      "sources": [
+        "https://dle.rae.es/y",
+        "https://dle.rae.es/tambi%C3%A9n",
+        "https://dle.rae.es/adem%C3%A1s"
+      ]
+    },
+    {
+      "id": "cause-consequence",
+      "members": [
+        "corpes:como:C",
+        "corpes:porque:C",
+        "corpes:entonces:R",
+        "corpes:luego:R",
+        "corpes:pues:C"
+      ],
+      "text": "Porque gives a cause. Causal como introduces a background reason first; causal pues follows what it explains. Pues, entonces and luego can also introduce consequences or inferences in other uses.",
+      "sources": [
+        "https://dle.rae.es/entonces",
+        "https://dle.rae.es/luego"
+      ]
+    },
+    {
+      "id": "contrast",
+      "members": [
+        "corpes:pero:C",
+        "corpes:aunque:C",
+        "corpes:sino:C"
+      ],
+      "text": "Pero adds a contrast: pequeño pero cómodo. Sino replaces something denied: no té, sino café. Aunque introduces a concession: aunque llueva (even if it rains).",
+      "sources": [
+        "https://www.rae.es/dpd/sino"
+      ]
+    },
+    {
+      "id": "relative-question",
+      "members": [
+        "corpes:que:H",
+        "corpes:que:C",
+        "corpes:como:C",
+        "corpes:cuando:R",
+        "corpes:qué:W",
+        "corpes:donde:R",
+        "corpes:quien:H",
+        "corpes:cómo:R",
+        "corpes:cual:H"
+      ],
+      "text": "Relative que can refer to people or things; quien refers to people. El cual/la cual form relative expressions. Qué and cómo carry accents in questions and exclamations; que also introduces statements.",
+      "sources": [
+        "https://www.rae.es/dpd/cual"
+      ]
+    },
+    {
+      "id": "personal-pronouns",
+      "members": [
+        "corpes:se:L",
+        "corpes:lo:L",
+        "corpes:le:L",
+        "corpes:me:L",
+        "corpes:él:L",
+        "corpes:nos:L",
+        "corpes:te:L",
+        "corpes:yo:L",
+        "corpes:mí:L"
+      ],
+      "text": "Subject, unstressed object and after-preposition forms differ: yo, me and mí. Lo is a direct-object form; le an indirect-object form, with regional qualifications. Se also has several uses beyond reflexive oneself.",
+      "sources": [
+        "https://www.rae.es/dpd/le%C3%ADsmo"
+      ]
+    },
+    {
+      "id": "possessives",
+      "members": [
+        "corpes:suyo:X",
+        "corpes:mío:X",
+        "corpes:nuestro:X",
+        "corpes:tuyo:X"
+      ],
+      "text": "Mío refers to me, nuestro to us, and tuyo to tú/vos. Suyo can refer to él/ella/ellos/ellas or usted/ustedes; context identifies the owner. These forms agree with what is owned.",
+      "sources": [
+        "https://dle.rae.es/suyo",
+        "https://dle.rae.es/m%C3%ADo",
+        "https://dle.rae.es/nuestro",
+        "https://dle.rae.es/tuyo",
+        "https://www.rae.es/dpd/usted",
+        "https://www.rae.es/dpd/voseo"
+      ]
+    },
+    {
+      "id": "accent-function",
+      "members": [
+        "corpes:el:T",
+        "corpes:que:H",
+        "corpes:que:C",
+        "corpes:como:C",
+        "corpes:él:L",
+        "corpes:si:C",
+        "corpes:qué:W",
+        "corpes:cómo:R",
+        "corpes:sí:R"
+      ],
+      "text": "Accents can distinguish grammatical roles: el (the) / él (he), si (if) / sí (yes), and que (that) / qué (what?). They are not freely interchangeable spellings.",
+      "sources": [
+        "https://www.rae.es/dpd/tilde"
+      ]
+    },
+    {
+      "id": "one",
+      "members": [
+        "corpes:un:T",
+        "corpes:uno:M",
+        "corpes:solo:R",
+        "corpes:uno:Q",
+        "corpes:único:A"
+      ],
+      "text": "Un is the article before a masculine noun; uno can stand alone as the number or an indefinite person. Solo as an adverb means only; único is an adjective meaning sole/unique. Adjectival solo can mean alone.",
+      "sources": [
+        "https://dle.rae.es/uno",
+        "https://dle.rae.es/solo",
+        "https://dle.rae.es/%C3%BAnico",
+        "https://www.rae.es/dpd/uno"
+      ]
+    },
+    {
+      "id": "quantifiers",
+      "members": [
+        "corpes:todo:Q",
+        "corpes:otro:Q",
+        "corpes:alguno:Q",
+        "corpes:mucho:Q",
+        "corpes:cada:Q",
+        "corpes:algo:Q",
+        "corpes:nada:Q",
+        "corpes:poco:Q",
+        "corpes:varios:Q",
+        "corpes:mucho:R",
+        "corpes:ninguno:Q",
+        "corpes:cualquiera:Q"
+      ],
+      "text": "Todo covers the whole; cada distributes over members or intervals (cada tres días). Alguno selects an unspecified member; cualquiera allows free choice; ninguno means none. Varios and algunos overlap without a fixed numerical cutoff.",
+      "sources": [
+        "https://dle.rae.es/todo",
+        "https://dle.rae.es/otro",
+        "https://dle.rae.es/alguno",
+        "https://dle.rae.es/mucho",
+        "https://dle.rae.es/cada",
+        "https://dle.rae.es/algo",
+        "https://dle.rae.es/nada",
+        "https://dle.rae.es/poco",
+        "https://dle.rae.es/varios",
+        "https://dle.rae.es/ninguno",
+        "https://dle.rae.es/cualquiera",
+        "https://www.rae.es/dpd/alguno",
+        "https://www.rae.es/dpd/ninguno",
+        "https://www.rae.es/dpd/cualquiera"
+      ]
+    },
+    {
+      "id": "degree",
+      "members": [
+        "corpes:más:R",
+        "corpes:muy:R",
+        "corpes:mucho:Q",
+        "corpes:tan:R",
+        "corpes:menos:R",
+        "corpes:casi:R",
+        "corpes:más:Q",
+        "corpes:mucho:R",
+        "corpes:tanto:R"
+      ],
+      "text": "Muy modifies noncomparative adjectives/adverbs: muy alto. Mucho modifies actions or comparatives: trabaja mucho, mucho mejor; it also quantifies nouns. Tan goes before adjectives/adverbs; tanto can modify an action.",
+      "sources": [
+        "https://dle.rae.es/m%C3%A1s",
+        "https://dle.rae.es/muy",
+        "https://dle.rae.es/mucho",
+        "https://dle.rae.es/tan",
+        "https://dle.rae.es/menos",
+        "https://dle.rae.es/casi",
+        "https://dle.rae.es/tanto",
+        "https://www.rae.es/dpd/mucho",
+        "https://www.rae.es/dpd/tanto"
+      ]
+    },
+    {
+      "id": "quality",
+      "members": [
+        "corpes:bueno:A",
+        "corpes:bien:R",
+        "corpes:mejor:A"
+      ],
+      "text": "Bueno is adjectival good; bien describes doing something well and can also intensify an adjective. Mejor can compare either good or well. Their grammatical roles matter, not just the English gloss.",
+      "sources": [
+        "https://dle.rae.es/bueno",
+        "https://dle.rae.es/bien",
+        "https://dle.rae.es/mejor",
+        "https://www.rae.es/dpd/bien",
+        "https://www.rae.es/dpd/mejor"
+      ]
+    },
+    {
+      "id": "size",
+      "members": [
+        "corpes:grande:A",
+        "corpes:mayor:A",
+        "corpes:alto:A",
+        "corpes:pequeño:A",
+        "corpes:largo:A"
+      ],
+      "text": "Grande describes size broadly; alto height; largo length or duration. Mayor can mean larger/older, but also grown-up or elderly. Pequeño can mean small or young, depending on context.",
+      "sources": [
+        "https://dle.rae.es/grande",
+        "https://dle.rae.es/mayor",
+        "https://dle.rae.es/alto",
+        "https://dle.rae.es/peque%C3%B1o",
+        "https://dle.rae.es/largo",
+        "https://www.rae.es/dpd/mayor"
+      ]
+    },
+    {
+      "id": "identity",
+      "members": [
+        "corpes:otro:Q",
+        "corpes:mismo:Q",
+        "corpes:propio:A",
+        "corpes:único:A"
+      ],
+      "text": "Mismo identifies the same person or thing; propio emphasizes belonging to someone; otro adds or distinguishes another; único means sole/unique. These are separate senses despite some emphatic overlap.",
+      "sources": [
+        "https://dle.rae.es/otro",
+        "https://dle.rae.es/mismo",
+        "https://dle.rae.es/propio",
+        "https://dle.rae.es/%C3%BAnico"
+      ]
+    },
+    {
+      "id": "time-nouns",
+      "members": [
+        "corpes:vez:N",
+        "corpes:día:N",
+        "corpes:tiempo:N",
+        "corpes:momento:N",
+        "corpes:hora:N"
+      ],
+      "text": "Tiempo measures duration; vez counts occurrences; hora can be a 60-minute unit or a specified time. Momento can be a brief interval or a period characterized by an event. Día names a day.",
+      "sources": [
+        "https://dle.rae.es/vez",
+        "https://dle.rae.es/d%C3%ADa",
+        "https://dle.rae.es/tiempo",
+        "https://dle.rae.es/momento",
+        "https://dle.rae.es/hora"
+      ]
+    },
+    {
+      "id": "work",
+      "members": [
+        "corpes:trabajo:N",
+        "corpes:trabajar:V",
+        "corpes:obra:N",
+        "corpes:estudio:N"
+      ],
+      "text": "Trabajo includes work, employment and a produced result. Obra often names a created work, including art or construction. Estudio can mean studying, an analytical work or a studio; trabajar is the verb.",
+      "sources": [
+        "https://dle.rae.es/trabajo",
+        "https://dle.rae.es/trabajar",
+        "https://dle.rae.es/obra",
+        "https://dle.rae.es/estudio"
+      ]
+    },
+    {
+      "id": "people",
+      "members": [
+        "corpes:persona:N",
+        "corpes:mujer:N",
+        "corpes:hombre:N",
+        "corpes:niño:N",
+        "corpes:hijo:N",
+        "corpes:gente:N",
+        "corpes:humano:A"
+      ],
+      "text": "Persona is an individual; gente is generally collective people. Niño describes age; hijo a relationship to parents, even for an adult. Some American varieties also use gente for individual people.",
+      "sources": [
+        "https://dle.rae.es/persona",
+        "https://dle.rae.es/mujer",
+        "https://dle.rae.es/hombre",
+        "https://dle.rae.es/ni%C3%B1o",
+        "https://dle.rae.es/hijo",
+        "https://dle.rae.es/gente",
+        "https://dle.rae.es/humano",
+        "https://www.rae.es/dpd/gente"
+      ]
+    },
+    {
+      "id": "manner",
+      "members": [
+        "corpes:forma:N",
+        "corpes:manera:N",
+        "corpes:tipo:N"
+      ],
+      "text": "Forma can mean physical shape or a way of doing something. Manera and modo also express a way/manner. Tipo and clase instead classify things into kinds.",
+      "sources": [
+        "https://dle.rae.es/forma",
+        "https://dle.rae.es/manera"
+      ]
+    },
+    {
+      "id": "condition",
+      "members": [
+        "corpes:caso:N",
+        "corpes:estado:N",
+        "corpes:situación:N"
+      ],
+      "text": "Estado and situación overlap for condition/circumstances; there is no strict internal/external split. Estado also names a political state. Caso can name a particular matter, occurrence or investigation.",
+      "sources": [
+        "https://dle.rae.es/caso",
+        "https://dle.rae.es/estado",
+        "https://dle.rae.es/situaci%C3%B3n"
+      ]
+    },
+    {
+      "id": "place-part",
+      "members": [
+        "corpes:parte:N",
+        "corpes:lugar:N",
+        "corpes:punto:N",
+        "corpes:centro:N",
+        "corpes:nivel:N",
+        "corpes:lado:N"
+      ],
+      "text": "Lugar is a location; parte a portion; lado a side; punto can be a dot, point or location. Centro is the middle; nivel a level or degree. Broader place senses overlap, so context matters.",
+      "sources": [
+        "https://dle.rae.es/parte",
+        "https://dle.rae.es/lugar",
+        "https://dle.rae.es/punto",
+        "https://dle.rae.es/centro",
+        "https://dle.rae.es/nivel",
+        "https://dle.rae.es/lado"
+      ]
+    },
+    {
+      "id": "collective",
+      "members": [
+        "corpes:grupo:N",
+        "corpes:equipo:N"
+      ],
+      "text": "Grupo is a collection of people or things. Equipo can be a team organized for an activity or equipment for a purpose. Conjunto can mean a collection and also specifically a sports team.",
+      "sources": [
+        "https://dle.rae.es/grupo",
+        "https://dle.rae.es/equipo"
+      ]
+    },
+    {
+      "id": "political",
+      "members": [
+        "corpes:país:N",
+        "corpes:nacional:A",
+        "corpes:gobierno:N",
+        "corpes:social:A",
+        "corpes:estado:N",
+        "corpes:público:A",
+        "corpes:político:A",
+        "corpes:político:N"
+      ],
+      "text": "País is a country/territory; estado can be a political organization or a federal state; gobierno its governing body. Nacional, público, social and político describe different relationships, not one interchangeable idea.",
+      "sources": [
+        "https://dle.rae.es/pa%C3%ADs",
+        "https://dle.rae.es/nacional",
+        "https://dle.rae.es/gobierno",
+        "https://dle.rae.es/social",
+        "https://dle.rae.es/estado",
+        "https://dle.rae.es/p%C3%BAblico",
+        "https://dle.rae.es/pol%C3%ADtico"
+      ]
+    },
+    {
+      "id": "development",
+      "members": [
+        "corpes:proceso:N",
+        "corpes:cambio:N",
+        "corpes:proyecto:N",
+        "corpes:desarrollo:N"
+      ],
+      "text": "Proceso describes successive stages; desarrollo their development or unfolding; cambio something becoming different; proyecto a planned undertaking. Development does not always mean improvement.",
+      "sources": [
+        "https://dle.rae.es/proceso",
+        "https://dle.rae.es/cambio",
+        "https://dle.rae.es/proyecto",
+        "https://dle.rae.es/desarrollo"
+      ]
+    },
+    {
+      "id": "communication-nouns",
+      "members": [
+        "corpes:historia:N",
+        "corpes:cuenta:N",
+        "corpes:palabra:N",
+        "corpes:información:N",
+        "corpes:relación:N",
+        "corpes:tema:N"
+      ],
+      "text": "Historia can mean history or a story. Relación can mean a connection or an account/list; cuenta can mean an account, bill or calculation. Tema is subject matter; información communicated knowledge; palabra a word.",
+      "sources": [
+        "https://dle.rae.es/historia",
+        "https://dle.rae.es/cuenta",
+        "https://dle.rae.es/palabra",
+        "https://dle.rae.es/informaci%C3%B3n",
+        "https://dle.rae.es/relaci%C3%B3n",
+        "https://dle.rae.es/tema"
+      ]
+    },
+    {
+      "id": "life",
+      "members": [
+        "corpes:vida:N",
+        "corpes:vivir:V",
+        "corpes:existir:V"
+      ],
+      "text": "Vida is the noun life; vivir means be alive or reside; existir means exist and can also refer to being alive. Residence is a particular vivir sense, not the whole meaning of life/existence.",
+      "sources": [
+        "https://dle.rae.es/vida",
+        "https://dle.rae.es/vivir",
+        "https://dle.rae.es/existir"
+      ]
+    },
+    {
+      "id": "frequency",
+      "members": [
+        "corpes:cada:Q",
+        "corpes:siempre:R",
+        "corpes:nunca:R"
+      ],
+      "text": "Siempre means always; nunca means never. Cada distributes over members and marks repeated intervals, as in cada tres días (every three days).",
+      "sources": [
+        "https://dle.rae.es/cada",
+        "https://dle.rae.es/siempre",
+        "https://dle.rae.es/nunca"
+      ]
+    },
+    {
+      "id": "negation-coordination",
+      "members": [
+        "corpes:y:C",
+        "corpes:no:R",
+        "corpes:o:C",
+        "corpes:sin:P",
+        "corpes:ni:C"
+      ],
+      "text": "No negates; ni joins negatives or can mean not even; sin expresses without. Y adds; o offers alternatives and sometimes alternative names for the same thing.",
+      "sources": [
+        "https://dle.rae.es/y",
+        "https://dle.rae.es/no",
+        "https://dle.rae.es/o",
+        "https://dle.rae.es/sin",
+        "https://dle.rae.es/ni"
+      ]
+    },
+    {
+      "id": "boundary",
+      "members": [
+        "corpes:entre:P",
+        "corpes:desde:P",
+        "corpes:hasta:P",
+        "corpes:durante:P"
+      ],
+      "text": "Desde marks a starting point; hasta an endpoint; durante a period; entre between/among. Hasta also has an even sense, and its time use varies regionally in some constructions.",
+      "sources": [
+        "https://dle.rae.es/entre",
+        "https://dle.rae.es/desde",
+        "https://dle.rae.es/hasta",
+        "https://dle.rae.es/durante",
+        "https://www.rae.es/dpd/hasta"
+      ]
+    },
+    {
+      "id": "method",
+      "members": [
+        "corpes:como:C",
+        "corpes:así:R",
+        "corpes:forma:N",
+        "corpes:manera:N",
+        "corpes:sistema:N",
+        "corpes:medio:N"
+      ],
+      "text": "Medio can name a means used to achieve something. Sistema is an organized system or method; manera/forma how something is done. Así means in this way.",
+      "sources": [
+        "https://dle.rae.es/forma",
+        "https://dle.rae.es/manera"
+      ]
+    },
+    {
+      "id": "order",
+      "members": [
+        "corpes:primero:M",
+        "corpes:después:R",
+        "corpes:último:A",
+        "corpes:antes:R",
+        "corpes:segundo:M"
+      ],
+      "text": "Primero and segundo mark positions in a sequence; último its end. Antes and después express relative time/order. Related meanings do not make the different grammatical forms interchangeable.",
+      "sources": [
+        "https://www.rae.es/dpd/antes",
+        "https://www.rae.es/dpd/despu%C3%A9s"
+      ]
+    },
+    {
+      "id": "means",
+      "members": [
+        "corpes:con:P",
+        "corpes:por:P"
+      ],
+      "text": "Con can express accompaniment (con Ana) or an instrument. Por can express a means or channel. English with/by needs a specific relationship to choose between them.",
+      "sources": [
+        "https://dle.rae.es/por"
+      ]
+    },
+    {
+      "id": "present-time",
+      "members": [
+        "corpes:ahora:R",
+        "corpes:hoy:R"
+      ],
+      "text": "Hoy is this calendar day; ahora this moment/current time. Both can also describe a broader present period, so the contrast is not absolute in every sentence.",
+      "sources": [
+        "https://dle.rae.es/ahora",
+        "https://dle.rae.es/hoy"
+      ]
+    },
+    {
+      "id": "memory",
+      "members": [
+        "corpes:saber:V",
+        "corpes:recordar:V"
+      ],
+      "text": "Recordar brings or keeps something in memory and can mean remind someone. Saber means know. Recordar algo takes its object directly; acordarse de algo uses de.",
+      "sources": [
+        "https://dle.rae.es/saber"
+      ]
+    }
+  ]
+}

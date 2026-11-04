@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "scope": "Persist and validate pending no-penalty retries. Exact grading is unchanged. The app submits through answer-attempt.js.",
+  "files": {
+    "lemmas/assessment.js": {
+      "beforeSha256": "4b317bae040a97c7d679593f0d552fee9b0fa4011134a18ef459386221f7e142",
+      "afterSha256": "6bda04485cc08f1bd39c3ff029393b007efa66c347dd6a85d6aff86b057dc84f"
+    }
+  },
+  "followUps": [
+    {
+      "date": "2026-11-01",
+      "change": "Validate and restore formSpelling retries for typos in recorded non-headword forms.",
+      "previousAssessmentSha256": "dcb9b23b12b117871fd4041965dc0f36cb9e202b16adeb37fd92c010c8ad666a"
+    }
+  ]
+}

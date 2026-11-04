@@ -13,7 +13,7 @@ test('all 28 pronoun and possessive prompts have reviewed grammatical cues',()=>
  assert.equal(scoped.length,28);assert.deepEqual(Object.keys(review.entries),scoped.map(c=>c.id));
  for(const c of scoped){assert.ok(recallCue(card(c.id.slice(7)),'typed'));assert.equal(recallCue(card(c.id.slice(7)),'choice'),'pronoun');}
  for(const key of ['te:L','tuyo:X','usted:L','tú:L','ti:L','os:L','lo:L'])assert.ok(recallCue(card(key),'context'));
- assert.match(recallCue(card('mío:X'),'typed'),/long form.*masculine singular/);
+ assert.match(recallCue(card('mío:X'),'typed'),/stressed form.*masculine singular/);
  assert.notEqual(recallCue(card('te:L'),'typed'),recallCue(card('tú:L'),'typed'));
 });
 test('valid alternatives pass only in reviewed sentence blanks, including phrase dictation',()=>{

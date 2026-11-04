@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word usage preview · Perlingo</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/lemmas/pronunciation.css">
+  <link rel="stylesheet" href="/lemmas/usage-preview.css">
+<link rel="stylesheet" href="/lemmas/verb-guide.css"></head>
+<body>
+  <div class="preview-shell">
+    <header class="top">
+      <a class="brand" href="/lemmas/">perlingo<span>.</span></a>
+      <span class="preview-label">Day 1 preview</span>
+      <nav aria-label="Preview mode">
+        <button class="plain" id="study" aria-pressed="true">Study</button>
+        <button class="plain" id="test" aria-pressed="false">Try recall</button>
+      </nav>
+    </header>
+    <main id="preview"></main>
+    <footer class="preview-footer"><a href="/lemmas/">Back to your course</a></footer>
+  </div>
+  <dialog id="similar" aria-labelledby="similar-title">
+    <button class="plain close" aria-label="Close usage details">×</button>
+    <div id="similar-content"></div>
+  </dialog>
+  <script type="module" src="/lemmas/usage-preview.js"></script>
+</body>
+</html>

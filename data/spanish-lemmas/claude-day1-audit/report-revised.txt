@@ -1,0 +1,3924 @@
+Perlingo Day 1 linguistic audit
+
+Oct 31, 2026
+ · 
+@Andrew Yuan
+
+
+
+Summary and scope
+
+The snapshot is accurate in most places. After the review challenges (revision 2, below), 4 demonstrated errors remain. There are also 16 places where a clearer example or explanation would help, 15 optional pedagogy items and 8 unresolved usage questions. Two original error flags are withdrawn. None of the special-focus pairs (saber/conocer/entender/comprender, empezar/comenzar, tras/después/luego/entonces, ser/estar, por/para) teaches anything false. The remaining real problems are a grading rule that rejects a valid form, cards whose meaning or example does not match the sense they test, and under-specified answer forms.
+
+What was audited. I read all 250 cards (meaning, example, prompt, cue, blank, accepted answers) and all 99 topics with their 175 sections (text, paired examples, sources). The snapshot holds exactly 250 cards, 99 topics and 175 sections, as stated. Only card #193 (tras) has a blank.
+
+Grading standard. I judged each card only on its visible prompt, cue, blank and the instruction to give a headword or infinitive. An answer was flagged as unfair to reject only if it fits those visible constraints, and as wrongly accepted only if it does not.
+
+Scope of source verification. Every finding now carries a basis label, and these are not equally strong:
+
+Primary, read directly: I fetched the primary page itself. This applies only to DPD luego and the Krohn 2025 article.
+
+Primary, indexed copy: I read a search engine's stored copy of the primary page. These copies can lag behind the live site. DLE and DPD copies were not stamped with an edition, and the DLE luego copy turned out to match an older edition (see E10).
+
+User-reported primary check: you fetched the live page directly. I could not reproduce these fetches (dle.rae.es refused this workspace), so I record them as reported.
+
+Model judgment: my own judgment of usage, not checked in a source.
+
+A failed fetch or a missing search snippet is not evidence that a source lacks a claim. I did not open most of the roughly 300 DLE links behind simple meanings.
+
+How to use this report. Each finding gives the ID, the exact problem wording, the smallest correction, and evidence. Corrections that need more than a few words are meant for the explanatory overlay, so the card itself stays clean.
+
+Revision 2 change log
+
+The original IDs are kept. Status shows where each original clear-error flag stands now.
+
+ID
+
+	
+
+Original call
+
+	
+
+Now
+
+	
+
+Reason
+
+
+
+
+E1 presidente rejects presidenta
+
+	
+
+Clear error
+
+	
+
+Remains (Tier 1)
+
+	
+
+The visible example uses presidenta, and the DPD (indexed copy) calls it the consolidated form.
+
+
+
+
+E2 negation "commonly"
+
+	
+
+Clear error
+
+	
+
+Downgraded to clearer explanation (Tier 2)
+
+	
+
+"Commonly" is incomplete, not a claim that negation is optional. The replacement rule is now scoped to plain negative statements.
+
+
+
+
+E3 pues meaning vs example
+
+	
+
+Clear error
+
+	
+
+Remains (Tier 1), narrowed
+
+	
+
+The meaning/example mismatch is demonstrated. I removed my judgment that the sentence is odd and the claim that card #172 needs a new example.
+
+
+
+
+E4 mostrar accepts presentar
+
+	
+
+Clear error
+
+	
+
+Withdrawn
+
+	
+
+DLE presentar sense 1 covers making something manifest or putting it before someone, which fits the cue "Let someone see something".
+
+
+
+
+E5 primero rejects primer
+
+	
+
+Clear error
+
+	
+
+Remains (Tier 1)
+
+	
+
+Primer satisfies the visible cue "masculine singular".
+
+
+
+
+E6 lamp "above"
+
+	
+
+Clear error
+
+	
+
+Downgraded to clearer example (Tier 2)
+
+	
+
+The English is a possible reading; the sentence is ambiguous, not mistranslated.
+
+
+
+
+E7 "bien antes"
+
+	
+
+Clear error
+
+	
+
+Downgraded to clearer example (Tier 2)
+
+	
+
+An ambiguity. I removed my unsupported claim about which reading is more frequent.
+
+
+
+
+E8 sobre meaning
+
+	
+
+Clear error
+
+	
+
+Remains (Tier 1)
+
+	
+
+The card's meaning line omits the sense the prompt tests.
+
+
+
+
+E9 hacer collocations
+
+	
+
+Clear error
+
+	
+
+Downgraded to unresolved (Tier 4)
+
+	
+
+No primary evidence makes efectuar or ejecutar invalid. It is a style judgment, below the exclusion threshold.
+
+
+
+
+E10 luego regional senses
+
+	
+
+Clear error
+
+	
+
+Withdrawn
+
+	
+
+My check used an older indexed copy of the DLE. Your direct fetch of the 24th edition supports the snapshot.
+
+Other changes: I10 point 3 (luego que labelled Americas) is withdrawn for the same edition reason. I10 point 2 no longer cites the DLE. O2, O6 and O8 are corrected (see Tier 3). I3, I7, I9 and I11 are reworded to remove frequency claims or to mark them as model judgment. Coverage counts are updated: 58 cards now have findings, down from 60.
+
+Tier 1 — Demonstrated errors
+
+Each of these four is shown by the snapshot itself: a valid answer the visible cue allows is rejected, or a card's own fields contradict each other. None of them depends on a usage judgment. E2, E6, E7 and E9 were moved to lower tiers, and E4 and E10 were withdrawn (see the change log).
+
+E1. Card #165 presidente rejects "presidenta" (grading)
+
+Problem: the prompt is "president" and the only example is "La presidenta dirige la reunión." The accepted list is only presidente. A learner who copies the example's form is marked wrong.
+
+Why: the DPD (2nd ed.) says the majority use has now consolidated the specific feminine presidenta. Topic word-presidente itself teaches presidenta as valid.
+
+Smallest fix: accept presidenta, or change the example to "El presidente dirige la reunión." and keep presidenta in the overlay. Add to topic word-presidente: "presidenta is the usual form for a woman today; la presidente is also correct."
+
+Evidence: DPD, presidente (primary, indexed copy).
+
+E3. Card #171 pues: meaning and example teach opposite senses
+
+Problem: the meaning "so, then; in that case" and the prompt "so; in that case" test the consequence sense. The only example, "Me quedo aquí, pues ha pasado casi un mes. = I stay here, since almost a month has passed", is translated with the causal sense.
+
+Why it is demonstrated: the card's own English gloss of its example ("since") is not among its meanings, and it is the opposite direction of reasoning from the tested sense. Topic cause-consequence separates the two uses correctly.
+
+Smallest fix: use an example of the tested sense: "Todos están de acuerdo; podemos, pues, empezar. = Everyone agrees; we can therefore begin." Alternatively, keep the example and add "since (after the main clause)" to the meaning.
+
+Basis: card fields (demonstrated); Miche 1994 (primary, indexed copy) for the position of causal pues.
+
+E5. Card #53 primero rejects "primer" (grading)
+
+Problem: the example is "El primer tren llega…" and the cue is "Position in a sequence · masculine singular". Primer is also masculine singular. Accepted: primero only.
+
+Smallest fix: change the cue to "… masculine singular · full headword", or accept primer with a note "headword: primero". Topic order already teaches the apocope.
+
+Evidence: DLE, primero (not opened; apocope is standard grammar).
+
+E8. Card #40 sobre: the meaning omits the tested sense
+
+Problem: meaning "over, above, on, upon, atop"; the prompt tests "about; on the subject of" and the example shows "on the table".
+
+Smallest fix: meaning "on; above, over; about (a topic)". Optionally, example "Un libro sobre historia. = A book about history."
+
+Tier 2 — Clearer teaching examples and explanations
+
+Nothing in this tier is shown to be false. Each item is an ambiguous example, an explanation that leaves out a rule the learner will soon need, or an example that shows a different sense from the one tested. The three downgraded flags (E2, E6, E7) come first.
+
+E2. Topics quantifiers and frequency: the negation rule is incomplete (downgraded)
+
+Wording: quantifiers › "Amount and negative expressions": "Negatives after a verb commonly accompany no; before it, they can supply the negation themselves." frequency › "Position of nunca": "After a verb it commonly appears with no."
+
+Issue: "commonly" does not say negation is optional, so this is not a false claim. It leaves the learner without the rule they need to build sentences: in a plain negative statement, a negative word after the verb needs a negative element before the verb. That element is usually no, but the RAE style guide also lists tampoco, nunca, ninguno and sin. Other contexts also allow these words without a preverbal negative, such as some questions and comparisons (NGLE §48.6).
+
+Smallest correction: "In a negative statement, when nada, nadie, ninguno or nunca come after the verb, a negative word must come before it, usually no: No veo nada. Placed before the verb, they make the sentence negative themselves: Nada funciona." The same scope applies to nunca. Fuller licensing contexts can go in the overlay.
+
+Basis: RAE, Libro de estilo: La negación (primary, indexed copy); NGLE §48.6, inductores negativos (primary, indexed copy).
+
+E6. Topic location-topic › "Position in context": ambiguous example (downgraded)
+
+Wording: "La lámpara está sobre la mesa. = The lamp is above the table."
+
+Issue: the translation is a possible reading, since a hanging lamp can be sobre la mesa. A resting table lamp is also a possible reading. The section uses this sentence to show the "above" sense, so the ambiguity weakens the contrast with the "on" example just before it.
+
+Smallest correction: "La lámpara cuelga sobre la mesa. = The lamp hangs above the table."
+
+Basis: model judgment.
+
+E7. Cards #105 bien and #106 antes: ambiguous shared example (downgraded)
+
+Wording: "Como bien antes de las tres. = I eat well before three."
+
+Issue: the Spanish, like the English, has two parses: "I eat well, before three" (manner) and "I eat well before three o'clock" (bien intensifying antes). Card #105 tests the manner sense, and this example cannot isolate it. I make no claim about which reading is more frequent.
+
+Smallest correction: #105 "Ana escribe bien. = Ana writes well." #106 "Llego antes de las tres. = I arrive before three."
+
+Basis: model judgment.
+
+I1. Example sentences that show a different sense from the one tested
+
+Twenty-four cards test one sense while their only example shows another. A learner who cannot read Spanish will take the example as the meaning. The smallest fix is to swap in an example of the tested sense; the current sentence can move to the overlay as a second sense.
+
+Card
+
+	
+
+Tested sense
+
+	
+
+Example now shows
+
+	
+
+Suggested example
+
+
+
+
+#20 tener
+
+	
+
+possess
+
+	
+
+age: Tengo veinte años
+
+	
+
+Tengo una bicicleta.
+
+
+
+
+#21 ir
+
+	
+
+go to a place
+
+	
+
+future: Voy a estudiar
+
+	
+
+Voy al mercado.
+
+
+
+
+#44 ya
+
+	
+
+already
+
+	
+
+no longer: Ya no vivo aquí
+
+	
+
+Ya terminé.
+
+
+
+
+#50 desde
+
+	
+
+since (time)
+
+	
+
+from (place): desde aquí
+
+	
+
+Vivo aquí desde 2020.
+
+
+
+
+#57 alguno
+
+	
+
+pronoun, singular
+
+	
+
+determiner, plural: algunos pasajeros
+
+	
+
+¿Tienes algún libro? Sí, tengo alguno.
+
+
+
+
+#62 deber
+
+	
+
+owe
+
+	
+
+obligation: Solo debo trabajar…
+
+	
+
+Te debo diez euros.
+
+
+
+
+#66 pasar
+
+	
+
+happen
+
+	
+
+pass through
+
+	
+
+¿Qué pasó?
+
+
+
+
+#77 llevar
+
+	
+
+carry
+
+	
+
+lead (a life)
+
+	
+
+Llevo la maleta.
+
+
+
+
+#85 poner
+
+	
+
+put in a position
+
+	
+
+put on (clothes)
+
+	
+
+Pongo el libro en la mesa.
+
+
+
+
+#86 quedar
+
+	
+
+be left, remain
+
+	
+
+quedarse = stay
+
+	
+
+Quedan tres entradas.
+
+
+
+
+#101 forma
+
+	
+
+shape
+
+	
+
+way, manner
+
+	
+
+Tiene forma de círculo.
+
+
+
+
+#114 creer
+
+	
+
+believe in
+
+	
+
+creer que = think that
+
+	
+
+No creo en los fantasmas.
+
+
+
+
+#119 contar
+
+	
+
+count
+
+	
+
+tell (a story)
+
+	
+
+Cuento hasta diez.
+
+
+
+
+#123 tomar
+
+	
+
+drink
+
+	
+
+take (a break)
+
+	
+
+Tomo café.
+
+
+
+
+#126 tratar
+
+	
+
+try to
+
+	
+
+be about
+
+	
+
+Trato de entender.
+
+
+
+
+#131 caso
+
+	
+
+police case
+
+	
+
+medical case
+
+	
+
+La policía investiga el caso.
+
+
+
+
+#135 estado
+
+	
+
+federal state
+
+	
+
+condition (estado del agua)
+
+	
+
+Texas es un estado.
+
+
+
+
+#144 entonces
+
+	
+
+at that time
+
+	
+
+reads as "next / so"
+
+	
+
+En 2020 vivía en Lima; entonces trabajaba allí.
+
+
+
+
+#149 punto
+
+	
+
+dot
+
+	
+
+point of discussion
+
+	
+
+Escribe un punto al final.
+
+
+
+
+#160 presentar
+
+	
+
+introduce a person
+
+	
+
+present a plan
+
+	
+
+Te presento a Ana.
+
+
+
+
+#177 partido
+
+	
+
+match
+
+	
+
+political party
+
+	
+
+Un partido de fútbol.
+
+
+
+
+#184 obra
+
+	
+
+artistic work
+
+	
+
+ambiguous (could be building work)
+
+	
+
+Una obra de arte.
+
+
+
+
+#185 cuenta
+
+	
+
+bank account
+
+	
+
+ambiguous (bill or account)
+
+	
+
+Abro una cuenta en el banco.
+
+
+
+
+#199 uno
+
+	
+
+generic "one"
+
+	
+
+numeral/partitive: Uno de los empleados
+
+	
+
+Uno nunca sabe.
+
+I2. Topic duration: "Te llamo cuando llego" invites the wrong mood
+
+Problem: "Te llamo cuando llego. = I call you when I arrive." This is grammatical only as a habit. Card #41 correctly teaches "Llámame cuando llegues" with the subjunctive for a future arrival.
+
+Smallest fix: "Siempre te llamo cuando llego. = I always call you when I arrive." In the overlay, add one line: "For a future event, cuando takes the subjunctive: Te llamaré cuando llegue."
+
+I3. Topic before › "Earlier in time": antes (de) que needs its mood rule
+
+Problem: "Before a clause, both antes de que and antes que exist." Correct. The section does not say the verb after them is subjunctive.
+
+Smallest fix: add "… followed by the subjunctive: antes de que salgas."
+
+Basis: DPD, antes (primary, indexed copy) for the two forms. The subjunctive rule is model judgment from standard grammar; that DPD copy does not state it.
+
+I4. Masculine nouns ending in -a are not marked (cards #59, #162, #245)
+
+Problem: día, sistema and tema are masculine. Neither the cards nor topics time-nouns, method and communication-nouns say so. Problema and mano are flagged; these three are not.
+
+Smallest fix: one overlay line each: "masculine despite -a: el día / el sistema / el tema."
+
+I5. Topic personal-pronouns: con + mí and other exceptions
+
+Problem: "mí follows many prepositions" is true but hides the commonest learner error, con mí.
+
+Smallest fix: add "With con, use conmigo and contigo. After entre and según, use yo and tú." Card #191 can carry the same line in its overlay.
+
+Evidence: DPD, pronombres personales tónicos (primary, indexed copy: con mí is incorrect).
+
+I6. Card #43 también: the cue lets "además" in
+
+Problem: cue "Ana is coming; Luis is also coming." accepts también, además. Además, viene Luis is possible but means "moreover", not the parallel "too" the card teaches. Topic addition draws exactly this line.
+
+Smallest fix: give the cue a blank only también fits: "Ana viene. Luis ___. (= Luis too.)" Then accept only también.
+
+I7. Card #18 como accepts "porque" in a reason-first slot
+
+Problem: cue "… → ___ llueve, nos quedamos en casa." accepts como, porque. The card and topic cause-consequence teach como for a reason placed first, but the grader gives no signal of that.
+
+Smallest fix: keep accepting porque, and show feedback: "Accepted. Como is the form this lesson teaches when the reason comes first." How natural fronted porque is remains open (U1).
+
+I8. Headword instructions are inconsistent on adjective and determiner cards
+
+Problem: some cards say "masculine singular headword" (#67, #175, #203). Others show a different form in the example without saying which form to type: #87 bueno (example buena), #212 pequeño (pequeña), #223 único, #90 último, #241 cualquiera (learners often type cualquier), #71 grande (gran likely).
+
+Smallest fix: add "· masculine singular headword" to every adjective and determiner cue, or accept the feminine and apocopated forms with a headword note.
+
+I9. Card #195 mientras: unnatural example
+
+Problem: "Mientras trabajo mucho, bebo agua." Mientras can also introduce a contrast, and with mucho the sentence is less clearly about two things at the same time.
+
+Smallest fix: "Mientras trabajo, bebo agua. = While I work, I drink water."
+
+Basis: model judgment.
+
+I10. Topic despues-luego › "Expressions to learn together"
+
+Point 1 (remains): "Después de todo lo que hice, se queja." is listed among expressions with meanings of their own, but it reads literally ("after everything I did"). The idiom después de todo = "after all" is better shown as "Después de todo, tenía razón. = After all, she was right." Basis: model judgment.
+
+Point 2 (revised): luego luego is shown without a region. Larousse's bilingual dictionary (a secondary source) marks it as Mexican and informal. I no longer cite the DLE here. Optional overlay: "(esp. Mexico, informal)" once the current DLE label is confirmed.
+
+Point 3 (withdrawn): I said the DLE labels luego que "Am.". That came from the same older indexed copy as E10. Your direct fetch shows no Americas label. No change needed.
+
+I11. Topic degree: "Casi termino. = I'm almost finished."
+
+Problem: casi + present can also narrate a past near-miss (Casi me caigo = I almost fell), so "I'm almost finished" is one of two readings.
+
+Smallest fix: "Ya casi termino. = I'm almost done." or "Casi he terminado."
+
+Basis: model judgment.
+
+I12. Card #50 desde: the meaning omits "from"
+
+Problem: meaning "since (from a specified time in the past)"; example "desde aquí = from here".
+
+Smallest fix: meaning "since; from (a starting point)". This pairs with the example swap in I1.
+
+I13. Topic attainment › "Construction and point of view": a construction claim lacks support
+
+Problem: "Obtener does not take that same direct-infinitive construction." The only source for this section that discusses obtener is a FundéuRAE recommendation whose title is about resultado. I could not open it.
+
+Smallest fix: keep the claim (it matches standard usage), but cite the DLE entries for lograr and conseguir or the NGLE, or soften to "obtener is normally used with a noun".
+
+Tier 3 — Optional pedagogy
+
+These would make the teaching more useful; none corrects an error. They are held to the same accuracy standard as the app, so tendencies are labelled as tendencies. O2, O6 and O8 were corrected in revision 2.
+
+#
+
+	
+
+Where
+
+	
+
+Suggestion
+
+	
+
+Basis
+
+
+
+
+O1
+
+	
+
+Card #63 solo; topic one
+
+	
+
+Decide how to grade sólo. The RAE writes the adverb without an accent, and allows the accent only where the writer sees a real risk of ambiguity. Suggest: accept sólo, with the note "current RAE spelling: solo".
+
+	
+
+RAE note, March 2023 (primary, indexed copy)
+
+
+
+
+O2 (revised)
+
+	
+
+Card #160 presentar
+
+	
+
+Overlay: "To introduce one person to another, use presentar: Te presento a Ana." Do not claim introducir never applies to people: introducir a alguien can mean bringing someone into a place or a social circle.
+
+	
+
+DLE presentar, sense defining introductions (primary, indexed copy); introducir is model judgment (DLE entry not opened)
+
+
+
+
+O3
+
+	
+
+Card #228 largo; topic size
+
+	
+
+Overlay: "largo = long; large is usually grande."
+
+	
+
+Model judgment
+
+
+
+
+O4
+
+	
+
+Topic sequence › "Behind and in pursuit"
+
+	
+
+Possibly note that detrás de is the everyday way to say "behind" and tras tends to be more formal. Keep it labelled as a tendency.
+
+	
+
+Model judgment; no primary source found
+
+
+
+
+O5
+
+	
+
+Topic relative-question › "Connecting a description"
+
+	
+
+Add: in a restrictive clause without commas, the subject relative is que, not quien (la persona que vino).
+
+	
+
+Model judgment; NGLE not opened
+
+
+
+
+O6 (revised)
+
+	
+
+Card #65 nuevo; topic word-nuevo
+
+	
+
+Position often shifts the reading. Before the noun, nuevo tends toward "another, different" (un nuevo trabajo); after it, toward "newly made, unused". This is a tendency, and context can override it.
+
+	
+
+Model judgment
+
+
+
+
+O7
+
+	
+
+Topic want-wait › "When another person acts"
+
+	
+
+"Te quiero. = I love you." sits under a heading about another person acting. Move it to the first section.
+
+	
+
+Structure of the snapshot
+
+
+
+
+O8 (revised)
+
+	
+
+Topic quantifiers
+
+	
+
+Optional clarification of "before certain nouns": algún and ningún go before a masculine singular noun and, normally, before a feminine singular noun beginning with stressed a (algún águila; alguna águila is not incorrect). Cualquier goes before any singular noun. The snapshot's wording is not wrong.
+
+	
+
+DPD, alguna; DPD, alguno (primary, indexed copies)
+
+
+
+
+O9
+
+	
+
+Topic size
+
+	
+
+"Grande before a singular noun often becomes gran" could read "normally becomes gran".
+
+	
+
+Model judgment; DPD grande not opened
+
+
+
+
+O10
+
+	
+
+Valid answers a learner might give
+
+	
+
+These fit the visible prompt but are not accepted: #204 valorar, sopesar; #187 unos; #77 cargar; #183/#227 ponerse (a); #120 muchacho. Add them if your grader sees them.
+
+	
+
+Model judgment
+
+
+
+
+O11
+
+	
+
+Card #69 parte
+
+	
+
+Overlay: "la parte = part; el parte = report, bulletin."
+
+	
+
+Model judgment; DLE not opened
+
+
+
+
+O12
+
+	
+
+Cards #3 y, #29 o
+
+	
+
+Overlay: y → e before an i- sound (padre e hijo); o → u before an o- sound (siete u ocho).
+
+	
+
+Model judgment (standard orthography)
+
+
+
+
+O13
+
+	
+
+Card #232 entrar
+
+	
+
+Overlay: both entrar en and entrar a are used; entrar a is especially common in the Americas.
+
+	
+
+Model judgment; DPD entrar not opened
+
+
+
+
+O14
+
+	
+
+Grader
+
+	
+
+Never strip ñ when normalizing answers: año and ano are different words. Accent-blind matching would also merge si/sí, el/él, que/qué, which several cards test.
+
+	
+
+Snapshot structure
+
+
+
+
+O15
+
+	
+
+Card #168 nunca example
+
+	
+
+Overlay: conducir is usual in Spain; manejar is common in much of Latin America.
+
+	
+
+Model judgment
+
+Tier 4 — Unresolved usage judgments
+
+Each of these turns on a usage judgment that no primary source I reached settles, or on a product decision. None meets the threshold for rejecting an answer or calling the snapshot wrong.
+
+E9. Card #25 hacer: style of accepted collocations (downgraded)
+
+Wording: cue "to do the homework"; accepted hacer, realizar, efectuar, ejecutar.
+
+Issue: hacer los deberes / la tarea is the everyday phrase. Realizar, efectuar and ejecutar with tarea are more formal or administrative. I have no primary evidence that they are invalid, so excluding them would rest on style alone.
+
+Options: keep all four; or, if the card should teach the everyday verb, constrain the cue ("everyday verb: to do the homework") and then accept hacer. Either is defensible.
+
+Basis: model judgment.
+
+U1. Card #18, fronted porque. How natural is Porque llueve, nos quedamos en casa in neutral speech? The NGLE chapter on causal clauses would settle it; I did not open it. The I7 recommendation (accept, with feedback) holds either way.
+
+U2. Topic source › "Naming both ends". The text approves de…a, desde…hasta and desde…a. NGLE §29.4 (primary, indexed copy) lists those pairs but does not rule on mixed de…hasta. Check the DPD de entry before adding any warning.
+
+U3. Card #49 muy accepts "bien"; topic quality cites the DPD for intensifying bien. Bien difícil is real but colloquial. I did not open the DPD bien entry. Consider feedback such as "muy is the neutral choice".
+
+U4. Topic knowledge › "Where saber and conocer overlap". "Conozco la respuesta" is grammatical. Whether it deserves equal billing with sé la respuesta needs a corpus count; I have none.
+
+U5. Card #177 partido accepts "juego". Juego for a whole match is regional. I did not verify it in a regional dictionary. Acceptance is reasonable.
+
+U6 (revised). Luego de, everywhere or regional? Topic despues-luego says the DLE records luego de in Argentina, Mexico and the Dominican Republic. My confirmation came from the same older indexed DLE copy that misled E10, so I no longer count it as verified against the 24th edition. The DPD treats luego de que as correct with no regional limit (primary, read directly). Re-check the live DLE entry, then decide whether learners should be told it is safe everywhere.
+
+U7. Pages I could not open. All dle.rae.es pages (fetches refused), rae.es/dpd/tilde (topics continuing-time, relative-question, accent-function), the Krohn URL on canela.org.es, the USC page bds.usc.es/manual/perifrasis.html and the FundéuRAE page. Not opening them is not evidence against the claims they support.
+
+Withdrawn flags
+
+E4. Card #239 mostrar accepting presentar — withdrawn. DLE presentar sense 1 covers making something manifest or putting it before someone. My indexed copy and your direct fetch of the 24th edition (sense 1.a, with an example about showing identification) agree. That fits the visible cue "Let someone see something". The show topic does not claim introducing and submitting exhaust presentar. No change is needed.
+
+E10. Topic despues-luego › "Regional meanings" — withdrawn. My check relied on an indexed copy of the DLE that read "desus. Prontamente, sin dilación. U. en Am.", which appears to be an earlier edition. Your direct fetch of the 24th edition reports sense 2.a with Chile, Cuba, El Salvador, the Canary Islands, Guatemala, Honduras, Mexico, Nicaragua and Paraguay. That supports the snapshot's "Mexico, Chile and the Canary Islands" as an incomplete but accurate list. I could not open the live page to reproduce this, so it is recorded as an edition discrepancy settled by your primary check. One residual item: confirm that the El Salvador senses ("early", "quickly") are still in the 24th edition, since my copy of those was also older.
+
+
+
+Source verification log
+
+The Basis column uses the four labels from the summary. "Indexed copy" means a search engine's stored copy of the primary page, which may lag the live edition. Rows marked revised changed in revision 2.
+
+Claim checked (topic, card or finding)
+
+	
+
+Source
+
+	
+
+Basis
+
+	
+
+Result
+
+
+
+
+Luego que / luego de que = "just after" (despues-luego)
+
+	
+
+DPD, luego
+
+	
+
+Primary, read directly
+
+	
+
+Supports the snapshot.
+
+
+
+
+Comenzar formal/written, empezar spoken; country differences (begin)
+
+	
+
+Krohn 2025, Cuadernos CANELA 36: 183–199
+
+	
+
+Primary, read directly
+
+	
+
+Supports the snapshot. The canela.org.es link was not opened.
+
+
+
+
+Luego = promptly in several American countries and the Canary Islands (despues-luego, E10) revised
+
+	
+
+DLE, luego
+
+	
+
+User-reported primary check (24th ed.); my indexed copy was older
+
+	
+
+Supports the snapshot. E10 withdrawn.
+
+
+
+
+Luego que, no Americas label (I10 point 3) revised
+
+	
+
+DLE, luego
+
+	
+
+User-reported primary check
+
+	
+
+My "Am." label came from the older copy. Withdrawn.
+
+
+
+
+Luego de: Argentina, Mexico, Dominican Republic (despues-luego) revised
+
+	
+
+DLE, luego
+
+	
+
+Older indexed copy only
+
+	
+
+Not confirmed for the 24th edition (U6).
+
+
+
+
+Presentar = make manifest, put before someone (E4) revised
+
+	
+
+DLE, presentar
+
+	
+
+Primary, indexed copy + user-reported 24th ed.
+
+	
+
+Supports accepting presentar on card #239. E4 withdrawn.
+
+
+
+
+Deber de can also express obligation (modal-permission)
+
+	
+
+DPD, deber
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Empezar a vs empezar por (begin)
+
+	
+
+DPD, empezar
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Ser/estar listo; nuevo (being)
+
+	
+
+DPD, estar
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Le for a masculine person (personal-pronouns)
+
+	
+
+DPD, leísmo
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Con mí is incorrect (I5)
+
+	
+
+DPD, pronombres personales tónicos
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the added line.
+
+
+
+
+Gente non-count; count use in parts of America (people)
+
+	
+
+DPD, gente
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Recordarse de in Central America (memory)
+
+	
+
+DPD, recordar
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Hasta = "not until" in parts of America (boundary)
+
+	
+
+DPD, hasta
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Mientras que also temporal (duration)
+
+	
+
+DPD, mientras
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Antes de que and antes que both valid (before)
+
+	
+
+DPD, antes
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Ranking sense of después (despues-luego)
+
+	
+
+DPD, después
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Presidenta consolidated (E1)
+
+	
+
+DPD, presidente
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports E1.
+
+
+
+
+Algún/ningún before stressed-a feminine nouns (O8) revised
+
+	
+
+DPD, alguna; DPD, alguno
+
+	
+
+Primary, indexed copies
+
+	
+
+Corrects my original O8.
+
+
+
+
+Conjunto = sports team (collective, #190)
+
+	
+
+RAE student dictionary, conjunto; DPD, team
+
+	
+
+Primary, indexed copies
+
+	
+
+Supports the snapshot.
+
+
+
+
+Causal pues follows what it explains (cause-consequence)
+
+	
+
+Miche 1994
+
+	
+
+Primary, indexed copy
+
+	
+
+Supports the snapshot.
+
+
+
+
+Solo adverb spelling (O1)
+
+	
+
+RAE note, March 2023
+
+	
+
+Primary, indexed copy
+
+	
+
+Accent optional only where the writer sees ambiguity.
+
+
+
+
+Postverbal negatives need a preverbal negative element (E2) revised
+
+	
+
+RAE, Libro de estilo: La negación; NGLE §48.6
+
+	
+
+Primary, indexed copies
+
+	
+
+The style guide lists no, tampoco, nunca, ninguno and sin; the NGLE covers other licensing contexts. Supports a clearer, scoped rule, not an error.
+
+
+
+
+De…a, desde…hasta, desde…a (source)
+
+	
+
+NGLE §29.4
+
+	
+
+Primary, indexed copy
+
+	
+
+Lists the pairs; silent on de…hasta (U2).
+
+
+
+
+Obtener lacks the direct-infinitive construction (attainment)
+
+	
+
+FundéuRAE recommendation
+
+	
+
+Not opened
+
+	
+
+See I13.
+
+
+
+
+Empezar por / comenzar por (begin)
+
+	
+
+USC, bds.usc.es
+
+	
+
+Not opened
+
+	
+
+The claim is supported by the DPD instead.
+
+
+
+
+Accent rules for aun/aún, qué, cómo, el/él (three topics)
+
+	
+
+rae.es/dpd/tilde
+
+	
+
+Not opened
+
+	
+
+Model judgment: consistent with standard orthography.
+
+
+
+
+Agua with el, esta, mucha (word-agua)
+
+	
+
+DPD, agua
+
+	
+
+Not opened
+
+	
+
+Model judgment: consistent; the DPD el entry (indexed copy) agrees on the algún/ningún forms.
+
+Not opened at all: the DLE meaning links on the 38 single-word topics (word-año through word-cuatro) and on most semantic-group sections. I checked their claims against standard usage and found no errors beyond those listed in Tiers 1–3.
+
+Coverage appendix — cards
+
+All 250 ranks were reviewed: 192 with no issue and 58 with a finding. Nothing is left for a later pass. In revision 2, #239 mostrar (E4 withdrawn) and #172 casi (no longer part of E3) moved to "no issue". Finding IDs in brackets point to the tier where each now sits; E-numbers outside Tier 1 are downgraded flags. Cards carry no sources of their own, so "reviewed" means checked against the language and against their topic's sources as logged above.
+
+Ranks
+
+	
+
+Reviewed, no issue
+
+	
+
+Issue found (finding)
+
+
+
+
+1–25
+
+	
+
+#1 el, #2 de, #4 en, #5 a, #6 un, #7 que, #8 ser, #9 se, #10 que, #11 suyo, #12 con, #13 no, #14 por, #15 para, #16 lo, #17 este, #19 estar, #22 le, #23 más, #24 me
+
+	
+
+#3 y (O12); #18 como (I7, U1); #20 tener (I1); #21 ir (I1); #25 hacer (E9, Tier 4)
+
+
+
+
+26–50
+
+	
+
+#26 poder, #27 ese, #28 todo, #30 pero, #31 él, #32 otro, #33 decir, #34 año, #35 haber, #36 si, #37 mío, #38 dar, #39 ver, #41 cuando, #42 entre, #45 nos, #46 uno, #47 sin, #48 te
+
+	
+
+#29 o (O12); #40 sobre (E8); #43 también (I6); #44 ya (I1); #49 muy (U3); #50 desde (I1, I12)
+
+
+
+
+51–75
+
+	
+
+#51 porque, #52 saber, #54 dos, #55 mismo, #56 qué, #58 vez, #60 yo, #61 querer, #64 hasta, #67 mucho, #68 llegar, #70 país, #72 tiempo, #73 donde, #74 nuestro, #75 dejar
+
+	
+
+#53 primero (E5); #57 alguno (I1); #59 día (I4); #62 deber (I1); #63 solo (O1); #65 nuevo (O6); #66 pasar (I1); #69 parte (O11); #71 grande (I8)
+
+
+
+
+76–100
+
+	
+
+#76 vida, #78 persona, #79 seguir, #80 cada, #81 encontrar, #82 quien, #83 ni, #84 después, #88 mujer, #89 ahora, #91 hablar, #92 así, #93 aunque, #94 parecer, #95 durante, #96 aquel, #97 mundo, #98 momento, #99 siempre, #100 pensar
+
+	
+
+#77 llevar (I1, O10); #85 poner (I1); #86 quedar (I1); #87 bueno (I8); #90 último (I8)
+
+
+
+
+101–125
+
+	
+
+#102 casa, #103 mayor, #104 volver, #107 tres, #108 cómo, #109 tan, #110 trabajo, #111 algo, #112 hombre, #113 cosa, #115 salir, #116 nacional, #117 sí, #118 conocer, #121 lugar, #122 gobierno, #124 social, #125 llamar
+
+	
+
+#101 forma (I1); #105 bien (E7); #106 antes (E7); #114 creer (I1); #119 contar (I1); #120 niño (O10); #123 tomar (I1)
+
+
+
+
+126–150
+
+	
+
+#127 tuyo, #128 sentir, #129 hora, #130 venir, #132 mano, #133 sino, #134 crear, #136 grupo, #137 realizar, #138 nada, #139 hijo, #140 mirar, #141 según, #142 propio, #143 vivir, #145 mejor, #146 permitir, #147 importante, #148 cual, #150 hacia
+
+	
+
+#126 tratar (I1); #131 caso (I1); #135 estado (I1); #144 entonces (I1); #149 punto (I1)
+
+
+
+
+151–175
+
+	
+
+#151 historia, #152 millón, #153 hoy, #154 manera, #155 luego, #156 padre, #157 público, #158 ante, #159 menos, #161 buscar, #163 problema, #164 esperar, #166 tipo, #167 contra, #169 ciudad, #170 además, #172 casi, #173 mes, #174 político, #175 poco
+
+	
+
+#160 presentar (I1, O2); #162 sistema (I4); #165 presidente (E1); #168 nunca (O15); #171 pues (E3)
+
+
+
+
+176–200
+
+	
+
+#176 más, #178 proceso, #179 segundo, #180 cambio, #181 trabajar, #182 alto, #186 existir, #188 explicar, #189 medio, #190 equipo, #192 noche, #193 tras, #194 estudio, #196 mucho, #197 agua, #198 aquí, #200 empresa
+
+	
+
+#177 partido (I1, U5); #183 empezar (O10); #184 obra (I1); #185 cuenta (I1); #187 varios (O10); #191 mí (I5); #195 mientras (I9); #199 uno (I1)
+
+
+
+
+201–225
+
+	
+
+#201 gente, #202 recordar, #203 ninguno, #205 mantener, #206 centro, #207 nivel, #208 perder, #209 lado, #210 recibir, #211 abrir, #213 servicio, #214 proyecto, #215 lograr, #216 general, #217 preguntar, #218 tanto, #219 ejemplo, #220 madre, #221 libro, #222 convertir, #224 familia, #225 salud
+
+	
+
+#204 considerar (O10); #212 pequeño (I8); #223 único (I8)
+
+
+
+
+226–250
+
+	
+
+#226 semana, #229 pedir, #230 desarrollo, #231 derecho, #233 escribir, #234 situación, #235 humano, #236 aún, #237 palabra, #238 cuerpo, #239 mostrar, #240 información, #242 dentro, #243 entender, #244 relación, #246 económico, #247 ojo, #248 producir, #249 político, #250 cuatro
+
+	
+
+#227 comenzar (O10); #228 largo (O3); #232 entrar (O13); #241 cualquiera (I8); #245 tema (I4)
+
+The special-focus cards all passed their grading checks: #52 saber, #118 conocer and #243 entender (accepting comprender); #183 empezar and #227 comenzar (each accepting the other); #84 después and #155 luego (each accepting the other); #144 entonces; #193 tras (its blank admits no one-word alternative); #8 ser and #19 estar; #14 por and #15 para.
+
+Coverage appendix — topics
+
+All 99 topic IDs and all 175 sections were reviewed: 73 topics with no issue and 26 with a finding. "Source checked" = Yes means at least one cited claim in the topic was verified in a primary source (see the log); No means its claims were reviewed against the language but its links were not opened.
+
+#
+
+	
+
+Topic ID
+
+	
+
+Status
+
+	
+
+Findings
+
+	
+
+Source checked
+
+
+
+
+1
+
+	
+
+sequence
+
+	
+
+Issue found
+
+	
+
+O4, U6
+
+	
+
+No
+
+
+
+
+2
+
+	
+
+begin
+
+	
+
+Issue found
+
+	
+
+U7 (link)
+
+	
+
+Yes
+
+
+
+
+3
+
+	
+
+knowledge
+
+	
+
+Issue found
+
+	
+
+U4
+
+	
+
+No
+
+
+
+
+4
+
+	
+
+thought
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+5
+
+	
+
+being
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+6
+
+	
+
+demonstratives
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+7
+
+	
+
+for
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+8
+
+	
+
+leave
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+9
+
+	
+
+attainment
+
+	
+
+Issue found
+
+	
+
+I13
+
+	
+
+No
+
+
+
+
+10
+
+	
+
+continuing-time
+
+	
+
+Issue found
+
+	
+
+U7
+
+	
+
+No
+
+
+
+
+11
+
+	
+
+possession-existence
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+12
+
+	
+
+movement
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+13
+
+	
+
+remain-continue
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+14
+
+	
+
+take-place
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+15
+
+	
+
+make
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+16
+
+	
+
+perception
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+17
+
+	
+
+show
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+18
+
+	
+
+speech
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+19
+
+	
+
+ask
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+20
+
+	
+
+find-meet
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+21
+
+	
+
+want-wait
+
+	
+
+Issue found
+
+	
+
+O7
+
+	
+
+No
+
+
+
+
+22
+
+	
+
+modal-permission
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+23
+
+	
+
+about-treatment
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+24
+
+	
+
+source
+
+	
+
+Issue found
+
+	
+
+U2
+
+	
+
+Partly
+
+
+
+
+25
+
+	
+
+direction
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+26
+
+	
+
+location-topic
+
+	
+
+Issue found
+
+	
+
+E6
+
+	
+
+No
+
+
+
+
+27
+
+	
+
+before
+
+	
+
+Issue found
+
+	
+
+I3
+
+	
+
+Yes
+
+
+
+
+28
+
+	
+
+duration
+
+	
+
+Issue found
+
+	
+
+I2
+
+	
+
+Yes
+
+
+
+
+29
+
+	
+
+addition
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+30
+
+	
+
+cause-consequence
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+31
+
+	
+
+contrast
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+32
+
+	
+
+relative-question
+
+	
+
+Issue found
+
+	
+
+O5, U7
+
+	
+
+No
+
+
+
+
+33
+
+	
+
+personal-pronouns
+
+	
+
+Issue found
+
+	
+
+I5
+
+	
+
+Yes
+
+
+
+
+34
+
+	
+
+possessives
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+35
+
+	
+
+accent-function
+
+	
+
+Issue found
+
+	
+
+U7
+
+	
+
+No
+
+
+
+
+36
+
+	
+
+one
+
+	
+
+Issue found
+
+	
+
+O1
+
+	
+
+No
+
+
+
+
+37
+
+	
+
+quantifiers
+
+	
+
+Issue found
+
+	
+
+E2, O8
+
+	
+
+No
+
+
+
+
+38
+
+	
+
+degree
+
+	
+
+Issue found
+
+	
+
+I11
+
+	
+
+No
+
+
+
+
+39
+
+	
+
+quality
+
+	
+
+Issue found
+
+	
+
+U3
+
+	
+
+No
+
+
+
+
+40
+
+	
+
+size
+
+	
+
+Issue found
+
+	
+
+O3, O9
+
+	
+
+No
+
+
+
+
+41
+
+	
+
+identity
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+42
+
+	
+
+time-nouns
+
+	
+
+Issue found
+
+	
+
+I4
+
+	
+
+No
+
+
+
+
+43
+
+	
+
+work
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+44
+
+	
+
+people
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+45
+
+	
+
+manner
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+46
+
+	
+
+condition
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+47
+
+	
+
+place-part
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+48
+
+	
+
+collective
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+49
+
+	
+
+political
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+50
+
+	
+
+development
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+51
+
+	
+
+communication-nouns
+
+	
+
+Issue found
+
+	
+
+I4
+
+	
+
+No
+
+
+
+
+52
+
+	
+
+life
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+53
+
+	
+
+frequency
+
+	
+
+Issue found
+
+	
+
+E2
+
+	
+
+No
+
+
+
+
+54
+
+	
+
+negation-coordination
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+55
+
+	
+
+boundary
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+56
+
+	
+
+method
+
+	
+
+Issue found
+
+	
+
+I4
+
+	
+
+No
+
+
+
+
+57
+
+	
+
+order
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+58
+
+	
+
+means
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+59
+
+	
+
+present-time
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+60
+
+	
+
+memory
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+Yes
+
+
+
+
+61
+
+	
+
+word-año
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+62
+
+	
+
+word-dos
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+63
+
+	
+
+word-nuevo
+
+	
+
+Issue found
+
+	
+
+O6
+
+	
+
+No
+
+
+
+
+64
+
+	
+
+word-mundo
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+65
+
+	
+
+word-casa
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+66
+
+	
+
+word-tres
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+67
+
+	
+
+word-cosa
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+68
+
+	
+
+word-mano
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+69
+
+	
+
+word-según
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+70
+
+	
+
+word-importante
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+71
+
+	
+
+word-millón
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+72
+
+	
+
+word-padre
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+73
+
+	
+
+word-problema
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+74
+
+	
+
+word-presidente
+
+	
+
+Issue found
+
+	
+
+E1
+
+	
+
+Yes
+
+
+
+
+75
+
+	
+
+word-contra
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+76
+
+	
+
+word-ciudad
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+77
+
+	
+
+word-mes
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+78
+
+	
+
+word-partido
+
+	
+
+Issue found
+
+	
+
+U5
+
+	
+
+No
+
+
+
+
+79
+
+	
+
+word-noche
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+80
+
+	
+
+word-agua
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+81
+
+	
+
+word-aquí
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+82
+
+	
+
+word-empresa
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+83
+
+	
+
+word-perder
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+84
+
+	
+
+word-abrir
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+85
+
+	
+
+word-servicio
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+86
+
+	
+
+word-general
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+87
+
+	
+
+word-ejemplo
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+88
+
+	
+
+word-madre
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+89
+
+	
+
+word-libro
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+90
+
+	
+
+word-familia
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+91
+
+	
+
+word-salud
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+92
+
+	
+
+word-semana
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+93
+
+	
+
+word-derecho
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+94
+
+	
+
+word-escribir
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+95
+
+	
+
+word-cuerpo
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+96
+
+	
+
+word-económico
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+97
+
+	
+
+word-ojo
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+98
+
+	
+
+word-cuatro
+
+	
+
+Reviewed, no issue
+
+	
+
+
+
+
+	
+
+No
+
+
+
+
+99
+
+	
+
+despues-luego
+
+	
+
+Issue found
+
+	
+
+I10, U6 (E10 withdrawn)
+
+	
+
+Yes

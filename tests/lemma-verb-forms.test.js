@@ -70,9 +70,11 @@ test('all simple reference forms match frozen tagged source slots and older snap
  assert.equal(pronounReview.beforeSha256,nounReview.afterSha256);
  assert.equal(digest('lemmas/data/context.json'),pronounReview.afterSha256);
  const schedule=read('data/spanish-lemmas/six-day-schedule-audit.json').files;
+ const recall=read('data/spanish-lemmas/day1-recall-audit.json').files;
+ const retries=read('data/spanish-lemmas/retry-assessment-audit.json').files;
  for(const [file,hash]of Object.entries(audit.unchanged.assessment)){
   const current=schedule[file]?.beforeSha256??digest(file);
-  if(schedule[file])assert.equal(digest(file),schedule[file].afterSha256);
+  if(schedule[file]){assert.equal(recall[file]?.beforeSha256??digest(file),schedule[file].afterSha256);if(recall[file])assert.equal(retries[file]?.beforeSha256??digest(file),recall[file].afterSha256);if(retries[file])assert.equal(digest(file),retries[file].afterSha256);}
   if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(current,seedAudit.afterSha256);}
   else assert.equal(current,hash);
  }
@@ -80,4 +82,61 @@ test('all simple reference forms match frozen tagged source slots and older snap
 test('conjugation compilation is deterministic and offline',()=>{
  const path=new URL('../lemmas/verb-forms-data.js',import.meta.url),before=readFileSync(path,'utf8');
  execFileSync('python3',['scripts/build-lemma-conjugations.py'],{cwd:new URL('../',import.meta.url)});assert.equal(readFileSync(path,'utf8'),before);
+});
+
+test('guide forms for every verb match the tagged infinitive paradigm, tense and person', async()=>{
+ const {guideForms}=await import('../lemmas/verb-guide-data.js');
+ const {verbGuide}=await import('../lemmas/verb-guide.js');
+ const evidence=read('data/spanish-lemmas/conjugation-evidence.json').records;
+ assert.deepEqual(Object.keys(guideForms).sort(),Object.keys(verbForms).sort());
+ for(const n of library.notes){
+  const sections=verbGuide(n);
+  if(n.label!=='verb'){assert.deepEqual(sections,[]);continue;}
+  const lessons=sections.flatMap(section=>section.lessons);
+  for(const lesson of lessons) assert.ok(lesson.notice||(lesson.rows.length&&lesson.rows.every(r=>r.sourceLabel&&r.alternatives.length)),n.word+' '+lesson.id);
+  const source=evidence[n.word].entries.flatMap(entry=>{
+   let active=false;
+   return entry.forms.filter(f=>{
+    if(f.tags.includes('inflection-template'))active=false;
+    if(f.tags.includes('infinitive'))active=f.form===n.word;
+    return active&&f.source==='conjugation'&&!f.tags.some(t=>['combined-form','vos-form','archaic','obsolete','dated','rare','nonstandard'].includes(t));
+   });
+  });
+  const matching=tags=>[...new Set(source.filter(f=>tags.every(tag=>f.tags.includes(tag))).map(f=>f.form))];
+  assert.deepEqual(guideForms[n.id].gerund,matching(['gerund']));
+  for(const [key,tense] of [['pastSubjunctive','imperfect'],['futureSubjunctive','future']]){
+   const slots=guideForms[n.id][key];
+   assert.equal(slots.length,6);
+   slots.forEach((row,index)=>assert.deepEqual(row,matching(['subjunctive',tense,['first-person','second-person','third-person'][index%3],index<3?'singular':'plural'])));
+  }
+ }
+ const lesson=(word,id)=>verbGuide(note(word)).flatMap(group=>group.lessons).find(l=>l.id===id);
+ assert.deepEqual(lesson('ir','commands').rows[2].alternatives,['vamos','vayamos']);
+ assert.deepEqual(lesson('ir','negative').rows[2].alternatives,['no vayamos']);
+ assert.deepEqual(lesson('hacer','pastPerfect').rows[0].alternatives,['había hecho']);
+ assert.deepEqual(lesson('venir','pastSubjunctive').rows[3].alternatives,['viniéramos','viniésemos']);
+ assert.deepEqual(lesson('haber','futurePerfect').rows,[{sourceLabel:'impersonal',alternatives:['habrá habido']}]);
+ assert.equal(lesson('ocurrir','pastPerfect').rows.length,2);
+ assert.equal(lesson('soler','futurePerfect'),undefined);
+});
+
+test('reference retains the full tense inventory, commands and nonfinite forms', async()=>{
+ const {verbGuide}=await import('../lemmas/verb-guide.js');
+ const tables=new Map(verbGuide(note('tener')).flatMap(g=>g.lessons.map(l=>[l.id,l])));
+ assert.equal(tables.size,19);
+ assert.deepEqual(tables.get('nonfinite').rows.map(r=>r.alternatives[0]),['tener','teniendo','tenido','haber tenido','habiendo tenido']);
+ for(const [id,form] of [['preterite','tuve'],['future','tendré'],['conditional','tendría'],['pastAnterior','hube tenido'],['futurePerfectSubjunctive','hubiere tenido']]) assert.equal(tables.get(id).rows[0].alternatives[0],form);
+});
+
+test('overview fits 9 plus 8 tables, with all rare tenses recoverable', async()=>{
+ const {guideOverview}=await import('../lemmas/verb-guide-view.js');
+ const note={id:'corpes:tener:V',word:'tener'};
+ const common=guideOverview(note),full=guideOverview(note,{rare:true});
+ assert.equal(common.top.length,9);assert.equal(common.bottom.length,8);
+ assert.equal(full.top.length,10);assert.equal(full.bottom.length,10);
+ const all=[...full.top,...full.bottom];
+ for(const id of ['pastAnterior','futureSubjunctive','futurePerfectSubjunctive'])assert.ok(all.some(l=>l.id===id));
+ assert.deepEqual(common.bottom.find(l=>l.id==='gerund').rows[0].alternatives,['teniendo']);
+ assert.deepEqual(common.bottom.find(l=>l.id==='participle').rows[0].alternatives,['tenido']);
+ assert.ok(full.nonfinite.rows.some(r=>r.alternatives.includes('habiendo tenido')));
 });

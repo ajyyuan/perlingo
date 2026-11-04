@@ -8,7 +8,7 @@ import {formGroups} from '../lemmas/verb-forms.js';
 import {azureVoices,feminineVoices,normalizeAudioText} from '../src/azure-voices.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const base=read('lemmas/data/notes.json'),context=read('lemmas/data/context.json');
-const {notes}=combineNotes(base,context),deck=read('lemmas/data/deck.json');
+const {notes}=combineNotes(base,context,read('lemmas/data/day1-usage.json')),deck=read('lemmas/data/deck.json');
 const targets=new Map();
 function add(text,kind){if(!text)return;text=normalizeAudioText(text);if(!targets.has(text))targets.set(text,new Set());targets.get(text).add(kind);}
 function sentence(text,kind){add(text,kind);for(const word of text.match(/[\p{L}]+/gu)||[])add(word,'sentence words');}
@@ -18,6 +18,7 @@ for(const n of notes){
  if(!formGroups(n).length||['tener','casa','bueno'].includes(n.word))for(const [,form]of n.forms)add(form,'forms');
  for(const g of formGroups(n)){for(const r of g.rows)for(const form of r.alternatives||[r.lemma])add(form,'forms');if(g.text)sentence(g.text,'tense sentences');}
  for(const e of n.examples)sentence(e.text,'usage sentences');
+ for(const g of n.usageGroups)for(const section of g.sections)for(const [text] of section.examples)add(text,'comparison sentences');
 }
 for(const tenses of Object.values(rowExamples))for(const rows of Object.values(tenses))for(const examples of Object.values(rows))for(const example of examples)if(example.text)sentence(example.text,'conjugation-row sentences');
 for(const c of context.contexts){add(c.answers[0],'review answers');sentence(c.example.text,'review sentences');}

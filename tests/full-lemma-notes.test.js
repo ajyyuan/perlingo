@@ -14,7 +14,7 @@ test('every deck identity has a complete lexical entry and an honest example lay
  for(const [i,n] of library.notes.entries()){
   assert.equal(n.word,deck[i].lemma);assert.ok(n.meaning&&n.pattern&&n.tip&&n.source);
   for(const k of n.tags)assert.ok(library.concepts[k]?.text,`${n.id}: ${k}`);
-  for(const ex of n.examples){assert.equal(ex.chunks.map(c=>c.text).join(' ')+'.',ex.text);for(const c of ex.chunks)assert.ok(library.concepts[c.concept]);}
+  for(const ex of n.examples){if(ex.wordMeanings){for(const [word] of ex.text.matchAll(/[\p{L}]+/gu))assert.ok(ex.wordMeanings[word.toLocaleLowerCase('es')],word);continue;}assert.equal(ex.chunks.map(c=>c.text).join(' ')+'.',ex.text);for(const c of ex.chunks)assert.ok(library.concepts[c.concept]);}
   for(const value of [n.meaning,n.pattern,n.tip,n.more])assert.doesNotMatch(value,/\{\{|\[\[/);
  }
  assert.match(library.concepts.infinitive.text,/headword/);

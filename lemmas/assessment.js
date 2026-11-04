@@ -1,3 +1,4 @@
+import {typedAnswers} from './recall-policy.js';
 import {SETS_PER_DAY,WORDS_PER_DAY} from './schedule.js';
 import {matchesContextAnswer} from './context-answer.js';
 // Tests use the reviewed deck; no generated translations or fuzzy semantic grading.
@@ -6,14 +7,14 @@ export const shuffle=(items,random=Math.random)=>{const a=[...items];for(let i=a
 export function createTest(kind,ids,random=Math.random){return {rules:2,contextVersion:kind==='context'?3:null,mode:'full',pass:1,failures:{},kind,ids:[...ids],queue:shuffle(ids,random),index:0,misses:[],round:1,firstCorrect:0,feedback:null,done:false};}
 export function checkAnswer(test,response,card){
  if(test.done||test.feedback)return test;
- const answers=test.kind==='context'?card.context.answers:[test.kind==='choice'?card.meaning:card.lemma];
+ const answers=test.kind==='context'?card.context.answers:test.kind==='choice'?[card.meaning]:typedAnswers(card);
  const correct=test.kind==='context'?matchesContextAnswer(response,card.context):answers.some(a=>normalize(response)===normalize(a));
  return {...test,failures:{...test.failures,...(!correct?{[card.id]:(test.failures[card.id]||0)+1}:{})},feedback:{correct,response:String(response),formError:test.kind==='context'&&!correct&&normalize(response)===normalize(card.lemma)},firstCorrect:test.firstCorrect+(test.round===1&&correct?1:0)};
 }
 export function advanceTest(test){
  if(test.done||!test.feedback)return test;
  const t=structuredClone(test);if(!t.feedback.correct)t.misses.push(t.queue[t.index]);
- t.feedback=null;delete t.options;delete t.draft;t.index++;
+ t.feedback=null;delete t.options;delete t.draft;delete t.retry;t.index++;
  if(t.index===t.queue.length){
   if(t.misses.length){
    const last=t.queue[t.queue.length-1],fillers=shuffle(t.ids.filter(id=>!t.misses.includes(id))).slice(0,Math.max(0,4-t.misses.length));
@@ -44,6 +45,7 @@ export function validTest(t,allowed){
  if(!Array.isArray(t.misses)||new Set(t.misses).size!==t.misses.length||!t.misses.every(id=>t.queue.slice(0,t.index).includes(id)))return false;
  if(t.options!==undefined&&(!Array.isArray(t.options)||t.options.length<2||t.options.length>4||t.options.some(v=>typeof v!=='string')||new Set(t.options.map(normalize)).size!==t.options.length))return false;
  if(t.draft!==undefined&&typeof t.draft!=='string')return false;
+ if(t.retry!==undefined&&(!['spelling','accents','headword','context','formSpelling'].includes(t.retry)||t.done||t.feedback!==null||t.kind==='choice'||typeof t.draft!=='string'))return false;
  if(!Number.isInteger(t.firstCorrect)||t.firstCorrect<0||t.firstCorrect>t.ids.length)return false;
  return t.feedback===null||(!t.done&&typeof t.feedback?.correct==='boolean'&&typeof t.feedback?.response==='string');
 }

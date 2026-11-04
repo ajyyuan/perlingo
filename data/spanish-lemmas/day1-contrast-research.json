@@ -1,0 +1,5590 @@
+{
+  "date": "2026-10-30",
+  "status": "research only; remaining 31 groups checked against primary sources; prompt design and grading changes deferred",
+  "scope": "All first 250 cards screened; candidate inventory, not an exhaustive thesaurus or validated answer whitelist.",
+  "sources": {
+    "deckSha256": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "frozenDictionarySha256": "96ec17a546164829fdf2653b1ec665cbdb80623148e62d4d3203f3940e028613",
+    "frozenDictionary": "data/spanish-lemmas/dictionary-extract.json",
+    "provenance": "docs/lemma-notes-sources.md"
+  },
+  "groups": [
+    {
+      "id": "sequence",
+      "members": [
+        {
+          "rank": 84,
+          "id": "corpes:después:R",
+          "lemma": "después",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 144,
+          "id": "corpes:entonces:R",
+          "lemma": "entonces",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 155,
+          "id": "corpes:luego:R",
+          "lemma": "luego",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 193,
+          "id": "corpes:tras:P",
+          "lemma": "tras",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "Tras is a preposition with a direct complement; después can stand alone or take de + noun/infinitive. Luego overlaps with después as afterward and also has luego de / luego (de) que constructions. Entonces can locate an event at that time or introduce a consequence. These are not four mutually exclusive temporal meanings. DLE does not label the ordinary temporal tras sense formal.",
+      "proposedTestApproach": "Use a short construction or a stated sense. A bare “afterward” still admits después/luego. A direct-complement frame distinguishes tras from bare después/luego, but not from the multiword alternatives después de/luego de. Do not label luego “sequence only”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "después",
+          "entonces",
+          "luego",
+          "tras"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/tras",
+          "https://dle.rae.es/despu%C3%A9s",
+          "https://dle.rae.es/luego",
+          "https://dle.rae.es/entonces",
+          "https://www.rae.es/dpd/despu%C3%A9s",
+          "https://www.rae.es/dpd/luego"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "begin",
+      "members": [
+        {
+          "rank": 183,
+          "id": "corpes:empezar:V",
+          "lemma": "empezar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 227,
+          "id": "corpes:comenzar:V",
+          "lemma": "comenzar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Both mean begin and take a + infinitive. Krohn (2025) reports comenzar associated more with formal/written registers and empezar with informal/spoken registers, with country-level variation. These are useful teaching tendencies, not exclusive register meanings or grounds for rejecting either in an unrestricted beginning prompt.",
+      "proposedTestApproach": "A generic “to begin” or ordinary beginning example cannot fairly force one headword. Teach the pair together and explicitly acknowledge overlap.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "empezar",
+          "comenzar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/empezar",
+          "https://dle.rae.es/comenzar",
+          "https://www.canela.org.es/cuadernos-canela/index.php/cuadernos/article/view/303"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries",
+        "usageFollowup": "2026-10-30: original corpus-study abstract checked for register/regional tendencies; no universal synonymy claim."
+      }
+    },
+    {
+      "id": "knowledge",
+      "members": [
+        {
+          "rank": 52,
+          "id": "corpes:saber:V",
+          "lemma": "saber",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 118,
+          "id": "corpes:conocer:V",
+          "lemma": "conocer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 243,
+          "id": "corpes:entender:V",
+          "lemma": "entender",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [
+        "comprender"
+      ],
+      "distinction": "Saber includes factual knowledge and knowing how; conocer includes acquaintance/familiarity; entender includes comprehension. Their broader senses overlap. Comprender also means understand and can additionally mean include/comprise. A mandatory shallow/deep split between entender and comprender is unsupported.",
+      "proposedTestApproach": "Use know how to swim / be acquainted with a person / understand an explanation as sense illustrations; validate exact sentence answers separately. The last still permits comprender.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "saber",
+          "conocer",
+          "entender"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/saber",
+          "https://dle.rae.es/conocer",
+          "https://dle.rae.es/entender",
+          "https://dle.rae.es/comprender"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "thought",
+      "members": [
+        {
+          "rank": 94,
+          "id": "corpes:parecer:V",
+          "lemma": "parecer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 100,
+          "id": "corpes:pensar:V",
+          "lemma": "pensar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 114,
+          "id": "corpes:creer:V",
+          "lemma": "creer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 128,
+          "id": "corpes:sentir:V",
+          "lemma": "sentir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 204,
+          "id": "corpes:considerar:V",
+          "lemma": "considerar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Pensar includes thinking through ideas; creer includes taking something as true; sentir includes sensations, emotions and regret. Importantly, sentir also has an opinion sense: it is not categorically excluded from “I feel/think that”. Considerar can mean deem/judge; parecer can express an impression.",
+      "proposedTestApproach": "Choose specific senses such as reflect on a problem, believe a claim, feel cold, or seem. Avoid claiming one exclusive translation for “think that”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "parecer",
+          "pensar",
+          "creer",
+          "sentir",
+          "considerar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/pensar",
+          "https://dle.rae.es/creer",
+          "https://dle.rae.es/sentir"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "being",
+      "members": [
+        {
+          "rank": 8,
+          "id": "corpes:ser:V",
+          "lemma": "ser",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 19,
+          "id": "corpes:estar:V",
+          "lemma": "estar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Ser can identify/classify or attribute a property; estar presents a state or situation. Permanent versus temporary is not a reliable general rule.",
+      "proposedTestApproach": "Use an identity/profession context versus a location/state context. Check adjective-dependent meaning changes; do not reduce the entire contrast to duration.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ser",
+          "estar"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/ser",
+          "https://www.rae.es/dpd/estar"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "demonstratives",
+      "members": [
+        {
+          "rank": 17,
+          "id": "corpes:este:D",
+          "lemma": "este",
+          "partOfSpeech": "demonstrative"
+        },
+        {
+          "rank": 27,
+          "id": "corpes:ese:D",
+          "lemma": "ese",
+          "partOfSpeech": "demonstrative"
+        },
+        {
+          "rank": 96,
+          "id": "corpes:aquel:D",
+          "lemma": "aquel",
+          "partOfSpeech": "demonstrative"
+        }
+      ],
+      "outside": [],
+      "distinction": "The basic spatial contrast is near the speaker, near the addressee, and distant from both. Discourse reference and temporal uses extend beyond physical distance.",
+      "proposedTestApproach": "Give a speaker/listener reference, not just “that”. A compact “that, over there—far from both of us” cue can identify aquel.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "este",
+          "ese",
+          "aquel"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/este",
+          "https://dle.rae.es/ese",
+          "https://dle.rae.es/aquel"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "for",
+      "members": [
+        {
+          "rank": 14,
+          "id": "corpes:por:P",
+          "lemma": "por",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 15,
+          "id": "corpes:para:P",
+          "lemma": "para",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "Por includes cause, route, means and exchange. Para includes intended purpose, destination, recipient and deadline. The dictionaries also record overlapping purpose uses; cause/purpose is a teaching entry point, not a complete partition.",
+      "proposedTestApproach": "State the particular relation: in exchange for, because of, intended for, or by a deadline. Check each sentence instead of sharing all answers to “for”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "por",
+          "para"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/por",
+          "https://dle.rae.es/para"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "leave",
+      "members": [
+        {
+          "rank": 21,
+          "id": "corpes:ir:V",
+          "lemma": "ir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 75,
+          "id": "corpes:dejar:V",
+          "lemma": "dejar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 115,
+          "id": "corpes:salir:V",
+          "lemma": "salir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [
+        "irse"
+      ],
+      "distinction": "Dejar can leave something behind, abandon, permit or stop doing something; salir can exit/go out; irse can depart. Some departure senses overlap, but their constructions differ. Irse is a pronominal use of ir, not a separate Day 1 card.",
+      "proposedTestApproach": "Prefer leave an object behind / exit a room / go away, with the necessary object or construction visible. Do not pool all translations of “leave”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ir",
+          "dejar",
+          "salir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/dejar",
+          "https://dle.rae.es/salir",
+          "https://dle.rae.es/ir"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "attainment",
+      "members": [
+        {
+          "rank": 20,
+          "id": "corpes:tener:V",
+          "lemma": "tener",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 210,
+          "id": "corpes:recibir:V",
+          "lemma": "recibir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 215,
+          "id": "corpes:lograr:V",
+          "lemma": "lograr",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [
+        "obtener",
+        "conseguir"
+      ],
+      "distinction": "Lograr concerns achieving what one seeks; recibir concerns receiving; tener concerns possession/state. Conseguir overlaps strongly with lograr and obtaining; obtener also covers obtaining and extraction/production. These are not a clean effort/no-effort scale.",
+      "proposedTestApproach": "Use achieve a desired result versus receive a delivery or possess something. Lograr/conseguir may remain valid together in an exact frame.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "tener",
+          "recibir",
+          "lograr"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/obtener",
+          "https://dle.rae.es/conseguir",
+          "https://www.fundeu.es/recomendacion/lograr-obtener-alcanzar-conseguir-resultado/"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "continuing-time",
+      "members": [
+        {
+          "rank": 44,
+          "id": "corpes:ya:R",
+          "lemma": "ya",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 89,
+          "id": "corpes:ahora:R",
+          "lemma": "ahora",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 236,
+          "id": "corpes:aún:R",
+          "lemma": "aún",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [
+        "todavía"
+      ],
+      "distinction": "Aún in the continuing-time sense corresponds to todavía; ya can mark already/now or, with negation, no longer; ahora anchors the present. Aun without the accent has other uses.",
+      "proposedTestApproach": "Use “still, continuing up to now” rather than “now”; retain the accent. Do not invent a distinction from todavía for that sense.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ya",
+          "ahora",
+          "aún"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/tilde"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "possession-existence",
+      "members": [
+        {
+          "rank": 20,
+          "id": "corpes:tener:V",
+          "lemma": "tener",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 35,
+          "id": "corpes:haber:V",
+          "lemma": "haber",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 186,
+          "id": "corpes:existir:V",
+          "lemma": "existir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Tener expresses possession among other senses; haber forms compound tenses and existential expressions; existir expresses existence. English “have” or “be” alone hides these functions.",
+      "proposedTestApproach": "Separate “have as an auxiliary”, “have/possess”, and “exist”. A generic existential paraphrase may admit more than one construction.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "tener",
+          "haber",
+          "existir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/haber",
+          "https://dle.rae.es/tener"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "movement",
+      "members": [
+        {
+          "rank": 21,
+          "id": "corpes:ir:V",
+          "lemma": "ir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 66,
+          "id": "corpes:pasar:V",
+          "lemma": "pasar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 68,
+          "id": "corpes:llegar:V",
+          "lemma": "llegar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 104,
+          "id": "corpes:volver:V",
+          "lemma": "volver",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 115,
+          "id": "corpes:salir:V",
+          "lemma": "salir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 130,
+          "id": "corpes:venir:V",
+          "lemma": "venir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 232,
+          "id": "corpes:entrar:V",
+          "lemma": "entrar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Basic motion senses confirmed: ir moves toward somewhere away from the speaker; venir toward the speaker’s location; llegar reaches an endpoint; entrar/salir cross inward/outward; volver returns and volver a repeats; pasar can cross, pass or happen. These senses overlap in real situations.",
+      "proposedTestApproach": "Do not equate every English “come” with venir, or assume specifying arrival automatically excludes venir. A frame must establish viewpoint and intended action. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ir",
+          "pasar",
+          "llegar",
+          "volver",
+          "salir",
+          "venir",
+          "entrar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/ir",
+          "https://dle.rae.es/pasar",
+          "https://dle.rae.es/llegar",
+          "https://dle.rae.es/volver",
+          "https://dle.rae.es/salir",
+          "https://dle.rae.es/venir",
+          "https://dle.rae.es/entrar"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Do not equate every English “come” with venir, or assume specifying arrival automatically excludes venir. A frame must establish viewpoint and intended action."
+        }
+      }
+    },
+    {
+      "id": "remain-continue",
+      "members": [
+        {
+          "rank": 19,
+          "id": "corpes:estar:V",
+          "lemma": "estar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 79,
+          "id": "corpes:seguir:V",
+          "lemma": "seguir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 86,
+          "id": "corpes:quedar:V",
+          "lemma": "quedar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 205,
+          "id": "corpes:mantener:V",
+          "lemma": "mantener",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Quedar can remain, be situated, be left over or result in a state; seguir continues or follows; mantener sustains/preserves and can continue an activity; mantenerse can persist in a state; estar can also remain in a location/state.",
+      "proposedTestApproach": "“Stay” does not partition these verbs. Separate transitive mantener from mantenerse; keep remaining quantity, continued action and preservation as different tested senses. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "estar",
+          "seguir",
+          "quedar",
+          "mantener"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/estar",
+          "https://dle.rae.es/seguir",
+          "https://dle.rae.es/quedar",
+          "https://dle.rae.es/mantener"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "“Stay” does not partition these verbs. Separate transitive mantener from mantenerse; keep remaining quantity, continued action and preservation as different tested senses."
+        }
+      }
+    },
+    {
+      "id": "take-place",
+      "members": [
+        {
+          "rank": 38,
+          "id": "corpes:dar:V",
+          "lemma": "dar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 75,
+          "id": "corpes:dejar:V",
+          "lemma": "dejar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 77,
+          "id": "corpes:llevar:V",
+          "lemma": "llevar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 85,
+          "id": "corpes:poner:V",
+          "lemma": "poner",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 123,
+          "id": "corpes:tomar:V",
+          "lemma": "tomar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 210,
+          "id": "corpes:recibir:V",
+          "lemma": "recibir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [
+        "traer"
+      ],
+      "distinction": "Llevar includes carry/take/wear; tomar includes take/grasp/drink; poner places something; dejar can leave it there; dar gives; recibir receives. Shared objects do not make these synonyms.",
+      "proposedTestApproach": "Name the action and object: carry a bag, drink water, put an object somewhere, leave it behind. Verify overlap in the actual frame.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "dar",
+          "dejar",
+          "llevar",
+          "poner",
+          "tomar",
+          "recibir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/dejar"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "make",
+      "members": [
+        {
+          "rank": 25,
+          "id": "corpes:hacer:V",
+          "lemma": "hacer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 134,
+          "id": "corpes:crear:V",
+          "lemma": "crear",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 137,
+          "id": "corpes:realizar:V",
+          "lemma": "realizar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 222,
+          "id": "corpes:convertir:V",
+          "lemma": "convertir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 248,
+          "id": "corpes:producir:V",
+          "lemma": "producir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Hacer includes producing, fabricating and executing an action. Realizar carries an action out; crear produces something new; producir includes manufacture and causing a result; convertir transforms one thing into another.",
+      "proposedTestApproach": "The entries explicitly overlap. “Carry out a task” is not uniquely realizar, nor is making something necessarily distinct from hacer. No exclusive register division established. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "hacer",
+          "crear",
+          "realizar",
+          "convertir",
+          "producir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/hacer",
+          "https://dle.rae.es/crear",
+          "https://dle.rae.es/realizar",
+          "https://dle.rae.es/convertir",
+          "https://dle.rae.es/producir"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "The entries explicitly overlap. “Carry out a task” is not uniquely realizar, nor is making something necessarily distinct from hacer. No exclusive register division established."
+        }
+      }
+    },
+    {
+      "id": "perception",
+      "members": [
+        {
+          "rank": 39,
+          "id": "corpes:ver:V",
+          "lemma": "ver",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 128,
+          "id": "corpes:sentir:V",
+          "lemma": "sentir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 140,
+          "id": "corpes:mirar:V",
+          "lemma": "mirar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Ver covers visual perception and watching; mirar directs attention/eyes and can also watch. Sentir can perceive sensations. The English see/watch division is not absolute.",
+      "proposedTestApproach": "Use a concrete visual frame and recognize remaining ver/mirar overlap. “Watch” alone is insufficient.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ver",
+          "sentir",
+          "mirar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/sentir",
+          "https://dle.rae.es/ver",
+          "https://dle.rae.es/mirar"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "show",
+      "members": [
+        {
+          "rank": 160,
+          "id": "corpes:presentar:V",
+          "lemma": "presentar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 239,
+          "id": "corpes:mostrar:V",
+          "lemma": "mostrar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Mostrar puts something on view or makes it known. Presentar also places something before someone, and includes introducing a person.",
+      "proposedTestApproach": "A generic display/show sense can admit both. Introduction and submission provide useful narrower senses, but exact proposed frames still need validation. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "presentar",
+          "mostrar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/presentar",
+          "https://dle.rae.es/mostrar"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "A generic display/show sense can admit both. Introduction and submission provide useful narrower senses, but exact proposed frames still need validation."
+        }
+      }
+    },
+    {
+      "id": "speech",
+      "members": [
+        {
+          "rank": 33,
+          "id": "corpes:decir:V",
+          "lemma": "decir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 91,
+          "id": "corpes:hablar:V",
+          "lemma": "hablar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 119,
+          "id": "corpes:contar:V",
+          "lemma": "contar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 125,
+          "id": "corpes:llamar:V",
+          "lemma": "llamar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 188,
+          "id": "corpes:explicar:V",
+          "lemma": "explicar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Decir expresses thoughts in words; hablar covers speaking and conversation; contar counts or recounts events; llamar attracts attention, telephones or names; explicar makes content/reasons clear.",
+      "proposedTestApproach": "Narrating, telling and explaining can overlap. Distinguish counting, telephoning and explanation of a cause rather than force exclusive mappings from “tell”. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "decir",
+          "hablar",
+          "contar",
+          "llamar",
+          "explicar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/decir",
+          "https://dle.rae.es/hablar",
+          "https://dle.rae.es/contar",
+          "https://dle.rae.es/llamar",
+          "https://dle.rae.es/explicar"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Narrating, telling and explaining can overlap. Distinguish counting, telephoning and explanation of a cause rather than force exclusive mappings from “tell”."
+        }
+      }
+    },
+    {
+      "id": "ask",
+      "members": [
+        {
+          "rank": 217,
+          "id": "corpes:preguntar:V",
+          "lemma": "preguntar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 229,
+          "id": "corpes:pedir:V",
+          "lemma": "pedir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Preguntar asks a question; pedir requests something or an action.",
+      "proposedTestApproach": "Use ask a question versus request a glass of water, not bare “ask”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "preguntar",
+          "pedir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/preguntar",
+          "https://dle.rae.es/pedir"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "find-meet",
+      "members": [
+        {
+          "rank": 81,
+          "id": "corpes:encontrar:V",
+          "lemma": "encontrar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 118,
+          "id": "corpes:conocer:V",
+          "lemma": "conocer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 161,
+          "id": "corpes:buscar:V",
+          "lemma": "buscar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Buscar searches/seeks; encontrar finds or encounters; conocer can mean become acquainted.",
+      "proposedTestApproach": "Distinguish searching, finding, and first acquaintance. English “meet” needs a scenario.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "encontrar",
+          "conocer",
+          "buscar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/conocer"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "want-wait",
+      "members": [
+        {
+          "rank": 61,
+          "id": "corpes:querer:V",
+          "lemma": "querer",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 164,
+          "id": "corpes:esperar:V",
+          "lemma": "esperar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Querer includes desire, affection and intention. Esperar includes hope, expectation and waiting for a person/event or withholding action until something happens.",
+      "proposedTestApproach": "Expectation is not necessarily desire. “Wait” gives a clearer contrast than “hope/want”; do not impose a universal mood rule from this lexical distinction. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "querer",
+          "esperar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/querer",
+          "https://dle.rae.es/esperar"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Expectation is not necessarily desire. “Wait” gives a clearer contrast than “hope/want”; do not impose a universal mood rule from this lexical distinction."
+        }
+      }
+    },
+    {
+      "id": "modal-permission",
+      "members": [
+        {
+          "rank": 26,
+          "id": "corpes:poder:V",
+          "lemma": "poder",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 62,
+          "id": "corpes:deber:V",
+          "lemma": "deber",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 75,
+          "id": "corpes:dejar:V",
+          "lemma": "dejar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 146,
+          "id": "corpes:permitir:V",
+          "lemma": "permitir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Poder includes ability/possibility; deber obligation/owing; permitir and dejar overlap in allowing.",
+      "proposedTestApproach": "Specify ability, obligation or allowing someone to act. “Allow” remains shared by permitir/dejar.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "poder",
+          "deber",
+          "dejar",
+          "permitir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/dejar"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "about-treatment",
+      "members": [
+        {
+          "rank": 91,
+          "id": "corpes:hablar:V",
+          "lemma": "hablar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 126,
+          "id": "corpes:tratar:V",
+          "lemma": "tratar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 204,
+          "id": "corpes:considerar:V",
+          "lemma": "considerar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Tratar includes handling, managing, dealing with a person, discussing a topic and trying to achieve something. Considerar includes examining thoughtfully, judging and attending to something; hablar includes conversation.",
+      "proposedTestApproach": "Tratar de + infinitive can express trying; tratar de + topic can express subject matter. The preposition alone does not distinguish the senses. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "hablar",
+          "tratar",
+          "considerar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/hablar",
+          "https://dle.rae.es/tratar",
+          "https://dle.rae.es/considerar"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Tratar de + infinitive can express trying; tratar de + topic can express subject matter. The preposition alone does not distinguish the senses."
+        }
+      }
+    },
+    {
+      "id": "source",
+      "members": [
+        {
+          "rank": 2,
+          "id": "corpes:de:P",
+          "lemma": "de",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 50,
+          "id": "corpes:desde:P",
+          "lemma": "desde",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "De marks possession, material and origin; importantly, it also marks a starting point in time or space. Desde marks a starting point and also a perspective.",
+      "proposedTestApproach": "Corrected: “from a starting point” is not exclusive to desde. De X a Y and desde X hasta Y are useful patterns, not proof that other combinations are wrong. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "de",
+          "desde"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/de",
+          "https://dle.rae.es/desde"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: “from a starting point” is not exclusive to desde. De X a Y and desde X hasta Y are useful patterns, not proof that other combinations are wrong."
+        }
+      }
+    },
+    {
+      "id": "direction",
+      "members": [
+        {
+          "rank": 5,
+          "id": "corpes:a:P",
+          "lemma": "a",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 15,
+          "id": "corpes:para:P",
+          "lemma": "para",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 150,
+          "id": "corpes:hacia:P",
+          "lemma": "hacia",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "A can mark a destination; hacia direction toward; para can also indicate direction/destination.",
+      "proposedTestApproach": "Clarify direction versus endpoint without claiming a universal exclusive split. The frozen a entry is empty; the DEM entry supplies destination and arrival-point evidence.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "para",
+          "hacia"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/para",
+          "https://dem.colmex.mx/ver/a"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "location-topic",
+      "members": [
+        {
+          "rank": 4,
+          "id": "corpes:en:P",
+          "lemma": "en",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 40,
+          "id": "corpes:sobre:P",
+          "lemma": "sobre",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 42,
+          "id": "corpes:entre:P",
+          "lemma": "entre",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 242,
+          "id": "corpes:dentro:R",
+          "lemma": "dentro",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "En locates in/on/at; sobre can mean on/above/about; dentro is inside and normally takes de for a complement; entre is between/among.",
+      "proposedTestApproach": "Use a specific spatial relationship or topic sense. English “on” needs a scene.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "en",
+          "sobre",
+          "entre",
+          "dentro"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/dentro"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "before",
+      "members": [
+        {
+          "rank": 106,
+          "id": "corpes:antes:R",
+          "lemma": "antes",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 158,
+          "id": "corpes:ante:P",
+          "lemma": "ante",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "Antes is earlier/before in time and takes de before a nominal complement; ante is a preposition for before/in the presence of/in the face of.",
+      "proposedTestApproach": "Use before a time versus in the presence of a person; avoid bare “before”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "antes",
+          "ante"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/antes"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "duration",
+      "members": [
+        {
+          "rank": 41,
+          "id": "corpes:cuando:R",
+          "lemma": "cuando",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 95,
+          "id": "corpes:durante:P",
+          "lemma": "durante",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 195,
+          "id": "corpes:mientras:C",
+          "lemma": "mientras",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "outside": [],
+      "distinction": "Durante is a preposition marking simultaneity with a period/event. Mientras has temporal adverb and conjunction uses; a subjunctive clause may add a conditional shade. Mientras que can be temporal as well as contrastive. Cuando locates a time and has further connective uses.",
+      "proposedTestApproach": "Corrected: do not teach mientras que as contrast-only. A noun-complement versus clause frame distinguishes selected durante/mientras uses; it is not a universal account of cuando. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "cuando",
+          "durante",
+          "mientras"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/cuando",
+          "https://dle.rae.es/durante",
+          "https://dle.rae.es/mientras",
+          "https://www.rae.es/dpd/mientras"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: do not teach mientras que as contrast-only. A noun-complement versus clause frame distinguishes selected durante/mientras uses; it is not a universal account of cuando."
+        }
+      }
+    },
+    {
+      "id": "addition",
+      "members": [
+        {
+          "rank": 3,
+          "id": "corpes:y:C",
+          "lemma": "y",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 43,
+          "id": "corpes:también:R",
+          "lemma": "también",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 170,
+          "id": "corpes:además:R",
+          "lemma": "además",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "También adds an entity/event alongside one mentioned; además introduces additional information and additionally occurs in además de. Y coordinates affirmatively.",
+      "proposedTestApproach": "Also/in addition overlap. Discourse position or a different English synonym alone does not guarantee a unique answer. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "y",
+          "también",
+          "además"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/y",
+          "https://dle.rae.es/tambi%C3%A9n",
+          "https://dle.rae.es/adem%C3%A1s"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Also/in addition overlap. Discourse position or a different English synonym alone does not guarantee a unique answer."
+        }
+      }
+    },
+    {
+      "id": "cause-consequence",
+      "members": [
+        {
+          "rank": 18,
+          "id": "corpes:como:C",
+          "lemma": "como",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 51,
+          "id": "corpes:porque:C",
+          "lemma": "porque",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 144,
+          "id": "corpes:entonces:R",
+          "lemma": "entonces",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 155,
+          "id": "corpes:luego:R",
+          "lemma": "luego",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 171,
+          "id": "corpes:pues:C",
+          "lemma": "pues",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "outside": [],
+      "distinction": "Porque supplies a reason; causal como/pues can also supply reasons. Pues/entonces/luego can express consequence or inference in appropriate uses.",
+      "proposedTestApproach": "Use the exact connective role and clause frame. Many remain alternatives; do not pool all senses under “so”.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "como",
+          "porque",
+          "entonces",
+          "luego",
+          "pues"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/entonces",
+          "https://dle.rae.es/luego"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "contrast",
+      "members": [
+        {
+          "rank": 30,
+          "id": "corpes:pero:C",
+          "lemma": "pero",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 93,
+          "id": "corpes:aunque:C",
+          "lemma": "aunque",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 133,
+          "id": "corpes:sino:C",
+          "lemma": "sino",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "outside": [],
+      "distinction": "Pero contrasts; sino corrects/replaces following negation; aunque introduces concession (although/even if).",
+      "proposedTestApproach": "Use “not X but rather Y” for sino and an explicit concessive clause for aunque.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "pero",
+          "aunque",
+          "sino"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/sino"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "relative-question",
+      "members": [
+        {
+          "rank": 7,
+          "id": "corpes:que:H",
+          "lemma": "que",
+          "partOfSpeech": "relative"
+        },
+        {
+          "rank": 10,
+          "id": "corpes:que:C",
+          "lemma": "que",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 18,
+          "id": "corpes:como:C",
+          "lemma": "como",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 41,
+          "id": "corpes:cuando:R",
+          "lemma": "cuando",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 56,
+          "id": "corpes:qué:W",
+          "lemma": "qué",
+          "partOfSpeech": "interrogative"
+        },
+        {
+          "rank": 73,
+          "id": "corpes:donde:R",
+          "lemma": "donde",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 82,
+          "id": "corpes:quien:H",
+          "lemma": "quien",
+          "partOfSpeech": "relative"
+        },
+        {
+          "rank": 108,
+          "id": "corpes:cómo:R",
+          "lemma": "cómo",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 148,
+          "id": "corpes:cual:H",
+          "lemma": "cual",
+          "partOfSpeech": "relative"
+        }
+      ],
+      "outside": [],
+      "distinction": "Relative que can refer to people/things; quien to people; el cual and forms are relative constructions. Que also introduces clauses. Qué/cómo mark interrogative or exclamative functions, including indirect questions.",
+      "proposedTestApproach": "Show syntactic role and any required article. Do not equate English who/which/that with a unique form. Frozen cual is incomplete for the target relative sense; DPD supplies the relative constructions.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "que",
+          "como",
+          "cuando",
+          "qué",
+          "donde",
+          "quien",
+          "cómo",
+          "cual"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/cual"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "personal-pronouns",
+      "members": [
+        {
+          "rank": 9,
+          "id": "corpes:se:L",
+          "lemma": "se",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 16,
+          "id": "corpes:lo:L",
+          "lemma": "lo",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 22,
+          "id": "corpes:le:L",
+          "lemma": "le",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 24,
+          "id": "corpes:me:L",
+          "lemma": "me",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 31,
+          "id": "corpes:él:L",
+          "lemma": "él",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 45,
+          "id": "corpes:nos:L",
+          "lemma": "nos",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 48,
+          "id": "corpes:te:L",
+          "lemma": "te",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 60,
+          "id": "corpes:yo:L",
+          "lemma": "yo",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 191,
+          "id": "corpes:mí:L",
+          "lemma": "mí",
+          "partOfSpeech": "personal pronoun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Subject, prepositional and clitic object forms are different grammatical choices despite shared English translations. Se has reflexive, reciprocal, impersonal, passive and le/les replacement uses; lo/le distinctions have regional qualifications.",
+      "proposedTestApproach": "Use explicit grammatical role plus person/number. Do not automatically accept every “him/it” translation; check leísmo against primary grammar before sentence-level exclusions.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "se",
+          "lo",
+          "le",
+          "me",
+          "él",
+          "nos",
+          "te",
+          "yo",
+          "mí"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/le%C3%ADsmo"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "possessives",
+      "members": [
+        {
+          "rank": 11,
+          "id": "corpes:suyo:X",
+          "lemma": "suyo",
+          "partOfSpeech": "possessive"
+        },
+        {
+          "rank": 37,
+          "id": "corpes:mío:X",
+          "lemma": "mío",
+          "partOfSpeech": "possessive"
+        },
+        {
+          "rank": 74,
+          "id": "corpes:nuestro:X",
+          "lemma": "nuestro",
+          "partOfSpeech": "possessive"
+        },
+        {
+          "rank": 127,
+          "id": "corpes:tuyo:X",
+          "lemma": "tuyo",
+          "partOfSpeech": "possessive"
+        }
+      ],
+      "outside": [],
+      "distinction": "Mío refers to the speaker; nuestro to us (also special singular institutional/royal uses). Tuyo corresponds to tú and modern American vos. Suyo corresponds to él/ella/ellos/ellas and usted/ustedes.",
+      "proposedTestApproach": "Corrected: suyo is not “formal yours” only. Ustedes is used for both formal and informal plural address throughout the Americas. Specify the possessor pronoun; agreement reflects the possessed noun. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "suyo",
+          "mío",
+          "nuestro",
+          "tuyo"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/suyo",
+          "https://dle.rae.es/m%C3%ADo",
+          "https://dle.rae.es/nuestro",
+          "https://dle.rae.es/tuyo",
+          "https://www.rae.es/dpd/usted",
+          "https://www.rae.es/dpd/voseo"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: suyo is not “formal yours” only. Ustedes is used for both formal and informal plural address throughout the Americas. Specify the possessor pronoun; agreement reflects the possessed noun."
+        }
+      }
+    },
+    {
+      "id": "accent-function",
+      "members": [
+        {
+          "rank": 1,
+          "id": "corpes:el:T",
+          "lemma": "el",
+          "partOfSpeech": "article"
+        },
+        {
+          "rank": 7,
+          "id": "corpes:que:H",
+          "lemma": "que",
+          "partOfSpeech": "relative"
+        },
+        {
+          "rank": 10,
+          "id": "corpes:que:C",
+          "lemma": "que",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 18,
+          "id": "corpes:como:C",
+          "lemma": "como",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 31,
+          "id": "corpes:él:L",
+          "lemma": "él",
+          "partOfSpeech": "personal pronoun"
+        },
+        {
+          "rank": 36,
+          "id": "corpes:si:C",
+          "lemma": "si",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 56,
+          "id": "corpes:qué:W",
+          "lemma": "qué",
+          "partOfSpeech": "interrogative"
+        },
+        {
+          "rank": 108,
+          "id": "corpes:cómo:R",
+          "lemma": "cómo",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 117,
+          "id": "corpes:sí:R",
+          "lemma": "sí",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Accent/function pairs are not synonyms: article versus pronoun, if versus yes, relative/conjunction versus question/exclamation.",
+      "proposedTestApproach": "Clarify function in the cue and preserve accent-sensitive grading.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "el",
+          "que",
+          "como",
+          "él",
+          "si",
+          "qué",
+          "cómo",
+          "sí"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/tilde"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "one",
+      "members": [
+        {
+          "rank": 6,
+          "id": "corpes:un:T",
+          "lemma": "un",
+          "partOfSpeech": "article"
+        },
+        {
+          "rank": 46,
+          "id": "corpes:uno:M",
+          "lemma": "uno",
+          "partOfSpeech": "numeral"
+        },
+        {
+          "rank": 63,
+          "id": "corpes:solo:R",
+          "lemma": "solo",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 199,
+          "id": "corpes:uno:Q",
+          "lemma": "uno",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 223,
+          "id": "corpes:único:A",
+          "lemma": "único",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "outside": [],
+      "distinction": "Un(o) has article, numeral and indefinite-pronoun uses. Solo is “only” in the target adverb card; adjectival solo can also mean sole or alone. Único is adjectival sole/unique.",
+      "proposedTestApproach": "These are partly form/function contrasts, not separate semantic boxes. Do not accept solo as equivalent to único without matching the adjective/adverb construction. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "un",
+          "uno",
+          "solo",
+          "único"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/uno",
+          "https://dle.rae.es/solo",
+          "https://dle.rae.es/%C3%BAnico",
+          "https://www.rae.es/dpd/uno"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "These are partly form/function contrasts, not separate semantic boxes. Do not accept solo as equivalent to único without matching the adjective/adverb construction."
+        }
+      }
+    },
+    {
+      "id": "quantifiers",
+      "members": [
+        {
+          "rank": 28,
+          "id": "corpes:todo:Q",
+          "lemma": "todo",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 32,
+          "id": "corpes:otro:Q",
+          "lemma": "otro",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 57,
+          "id": "corpes:alguno:Q",
+          "lemma": "alguno",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 67,
+          "id": "corpes:mucho:Q",
+          "lemma": "mucho",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 80,
+          "id": "corpes:cada:Q",
+          "lemma": "cada",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 111,
+          "id": "corpes:algo:Q",
+          "lemma": "algo",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 138,
+          "id": "corpes:nada:Q",
+          "lemma": "nada",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 175,
+          "id": "corpes:poco:Q",
+          "lemma": "poco",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 187,
+          "id": "corpes:varios:Q",
+          "lemma": "varios",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 196,
+          "id": "corpes:mucho:R",
+          "lemma": "mucho",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 203,
+          "id": "corpes:ninguno:Q",
+          "lemma": "ninguno",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 241,
+          "id": "corpes:cualquiera:Q",
+          "lemma": "cualquiera",
+          "partOfSpeech": "quantifier"
+        }
+      ],
+      "outside": [],
+      "distinction": "Todo marks entirety and can also distribute over each member; cada individualizes/distributes. Alguno marks an unspecified entity/quantity; cualquiera can select any member or generalize; ninguno negates existence. Algo/nada and mucho/poco distinguish entity/quantity uses. Varios and algunos overlap as an unspecified small plurality.",
+      "proposedTestApproach": "Corrected: no hard some-versus-several number threshold. Alguno also has a negative use after a noun; negative concord and algún/ningún/cualquier forms depend on construction. Bare “any” is insufficient. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "todo",
+          "otro",
+          "alguno",
+          "mucho",
+          "cada",
+          "algo",
+          "nada",
+          "poco",
+          "varios",
+          "ninguno",
+          "cualquiera"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/todo",
+          "https://dle.rae.es/otro",
+          "https://dle.rae.es/alguno",
+          "https://dle.rae.es/mucho",
+          "https://dle.rae.es/cada",
+          "https://dle.rae.es/algo",
+          "https://dle.rae.es/nada",
+          "https://dle.rae.es/poco",
+          "https://dle.rae.es/varios",
+          "https://dle.rae.es/ninguno",
+          "https://dle.rae.es/cualquiera",
+          "https://www.rae.es/dpd/alguno",
+          "https://www.rae.es/dpd/ninguno",
+          "https://www.rae.es/dpd/cualquiera"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: no hard some-versus-several number threshold. Alguno also has a negative use after a noun; negative concord and algún/ningún/cualquier forms depend on construction. Bare “any” is insufficient."
+        }
+      }
+    },
+    {
+      "id": "degree",
+      "members": [
+        {
+          "rank": 23,
+          "id": "corpes:más:R",
+          "lemma": "más",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 49,
+          "id": "corpes:muy:R",
+          "lemma": "muy",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 67,
+          "id": "corpes:mucho:Q",
+          "lemma": "mucho",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 109,
+          "id": "corpes:tan:R",
+          "lemma": "tan",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 159,
+          "id": "corpes:menos:R",
+          "lemma": "menos",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 172,
+          "id": "corpes:casi:R",
+          "lemma": "casi",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 176,
+          "id": "corpes:más:Q",
+          "lemma": "más",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 196,
+          "id": "corpes:mucho:R",
+          "lemma": "mucho",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 218,
+          "id": "corpes:tanto:R",
+          "lemma": "tanto",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Muy normally precedes noncomparative adjectives/adverbs; mucho modifies verbs and comparatives, and agrees when used as a determiner. Tan is the usual shortened adverbial tanto before adjectives/adverbs; full tanto modifies verbs. Más/menos quantify or compare; casi marks near approximation.",
+      "proposedTestApproach": "Corrected: “before an adjective” alone cannot select muy: comparatives normally take mucho. Tanto remains full before comparatives and in un tanto. Choose a concrete construction, not a universal word-order rule. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "más",
+          "muy",
+          "mucho",
+          "tan",
+          "menos",
+          "casi",
+          "tanto"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/m%C3%A1s",
+          "https://dle.rae.es/muy",
+          "https://dle.rae.es/mucho",
+          "https://dle.rae.es/tan",
+          "https://dle.rae.es/menos",
+          "https://dle.rae.es/casi",
+          "https://dle.rae.es/tanto",
+          "https://www.rae.es/dpd/mucho",
+          "https://www.rae.es/dpd/tanto"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: “before an adjective” alone cannot select muy: comparatives normally take mucho. Tanto remains full before comparatives and in un tanto. Choose a concrete construction, not a universal word-order rule."
+        }
+      }
+    },
+    {
+      "id": "quality",
+      "members": [
+        {
+          "rank": 87,
+          "id": "corpes:bueno:A",
+          "lemma": "bueno",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 105,
+          "id": "corpes:bien:R",
+          "lemma": "bien",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 145,
+          "id": "corpes:mejor:A",
+          "lemma": "mejor",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "outside": [],
+      "distinction": "Bueno is adjectival good, including a healthy sense. Bien can mean correctly, satisfactorily or in good health; mejor compares either bueno or bien. Bien can also intensify an adjective/adverb similarly to muy.",
+      "proposedTestApproach": "Healthy/fine is not an exclusive bueno/bien split. A specific noun-quality versus manner-of-action frame is more useful; relative-superlative context must be explicit for best. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "bueno",
+          "bien",
+          "mejor"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/bueno",
+          "https://dle.rae.es/bien",
+          "https://dle.rae.es/mejor",
+          "https://www.rae.es/dpd/bien",
+          "https://www.rae.es/dpd/mejor"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Healthy/fine is not an exclusive bueno/bien split. A specific noun-quality versus manner-of-action frame is more useful; relative-superlative context must be explicit for best."
+        }
+      }
+    },
+    {
+      "id": "size",
+      "members": [
+        {
+          "rank": 71,
+          "id": "corpes:grande:A",
+          "lemma": "grande",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 103,
+          "id": "corpes:mayor:A",
+          "lemma": "mayor",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 182,
+          "id": "corpes:alto:A",
+          "lemma": "alto",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 212,
+          "id": "corpes:pequeño:A",
+          "lemma": "pequeño",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 228,
+          "id": "corpes:largo:A",
+          "lemma": "largo",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "outside": [],
+      "distinction": "Grande denotes size/importance and can describe a tall or grown person. Mayor can be comparative larger/older, but also noncomparative grown-up or elderly. Alto specifies height among other senses; largo length/duration; pequeño small, short or young.",
+      "proposedTestApproach": "Corrected: do not teach mayor as always comparative, or grande as never tall/old. Dimension and comparison can narrow the intended sense without eliminating all overlap. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "grande",
+          "mayor",
+          "alto",
+          "pequeño",
+          "largo"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/grande",
+          "https://dle.rae.es/mayor",
+          "https://dle.rae.es/alto",
+          "https://dle.rae.es/peque%C3%B1o",
+          "https://dle.rae.es/largo",
+          "https://www.rae.es/dpd/mayor"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: do not teach mayor as always comparative, or grande as never tall/old. Dimension and comparison can narrow the intended sense without eliminating all overlap."
+        }
+      }
+    },
+    {
+      "id": "identity",
+      "members": [
+        {
+          "rank": 32,
+          "id": "corpes:otro:Q",
+          "lemma": "otro",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 55,
+          "id": "corpes:mismo:Q",
+          "lemma": "mismo",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 142,
+          "id": "corpes:propio:A",
+          "lemma": "propio",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 223,
+          "id": "corpes:único:A",
+          "lemma": "único",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "outside": [],
+      "distinction": "Mismo identifies the same entity, equal properties or emphatic self/very; propio marks exclusive belonging, characteristic properties and emphatic reference. Otro adds or distinguishes an entity; único means sole or exceptional.",
+      "proposedTestApproach": "Mismo and propio overlap in emphasis. Belonging versus identity is a useful selected-sense contrast, not a complete exclusive partition. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "otro",
+          "mismo",
+          "propio",
+          "único"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/otro",
+          "https://dle.rae.es/mismo",
+          "https://dle.rae.es/propio",
+          "https://dle.rae.es/%C3%BAnico"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Mismo and propio overlap in emphasis. Belonging versus identity is a useful selected-sense contrast, not a complete exclusive partition."
+        }
+      }
+    },
+    {
+      "id": "time-nouns",
+      "members": [
+        {
+          "rank": 58,
+          "id": "corpes:vez:N",
+          "lemma": "vez",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 59,
+          "id": "corpes:día:N",
+          "lemma": "día",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 72,
+          "id": "corpes:tiempo:N",
+          "lemma": "tiempo",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 98,
+          "id": "corpes:momento:N",
+          "lemma": "momento",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 129,
+          "id": "corpes:hora:N",
+          "lemma": "hora",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Tiempo includes duration, available time, era and weather; vez an occurrence or turn; hora a 60-minute unit, specified time or occasion; momento a brief interval but also a longer period distinguished by circumstances; día a day.",
+      "proposedTestApproach": "Corrected: momento is not always a tiny instant and hora is not only clock time. Use a specific unit/occurrence/duration sense; broad “moment/time” remains overlapping. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "vez",
+          "día",
+          "tiempo",
+          "momento",
+          "hora"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/vez",
+          "https://dle.rae.es/d%C3%ADa",
+          "https://dle.rae.es/tiempo",
+          "https://dle.rae.es/momento",
+          "https://dle.rae.es/hora"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: momento is not always a tiny instant and hora is not only clock time. Use a specific unit/occurrence/duration sense; broad “moment/time” remains overlapping."
+        }
+      }
+    },
+    {
+      "id": "work",
+      "members": [
+        {
+          "rank": 110,
+          "id": "corpes:trabajo:N",
+          "lemma": "trabajo",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 181,
+          "id": "corpes:trabajar:V",
+          "lemma": "trabajar",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 184,
+          "id": "corpes:obra:N",
+          "lemma": "obra",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 194,
+          "id": "corpes:estudio:N",
+          "lemma": "estudio",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Trabajo includes employment, activity and its produced result. Obra includes a produced thing, intellectual/artistic work and construction. Estudio includes learning, an analytical work and a studio; trabajar is the verb.",
+      "proposedTestApproach": "Corrected: “work as a product” is not exclusive to obra. Artistic/construction context is informative but not a guarantee that trabajo is wrong. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "trabajo",
+          "trabajar",
+          "obra",
+          "estudio"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/trabajo",
+          "https://dle.rae.es/trabajar",
+          "https://dle.rae.es/obra",
+          "https://dle.rae.es/estudio"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: “work as a product” is not exclusive to obra. Artistic/construction context is informative but not a guarantee that trabajo is wrong."
+        }
+      }
+    },
+    {
+      "id": "people",
+      "members": [
+        {
+          "rank": 78,
+          "id": "corpes:persona:N",
+          "lemma": "persona",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 88,
+          "id": "corpes:mujer:N",
+          "lemma": "mujer",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 112,
+          "id": "corpes:hombre:N",
+          "lemma": "hombre",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 120,
+          "id": "corpes:niño:N",
+          "lemma": "niño",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 139,
+          "id": "corpes:hijo:N",
+          "lemma": "hijo",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 201,
+          "id": "corpes:gente:N",
+          "lemma": "gente",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 235,
+          "id": "corpes:humano:A",
+          "lemma": "humano",
+          "partOfSpeech": "adjective"
+        }
+      ],
+      "outside": [],
+      "distinction": "Persona identifies an individual; gente is generally a collective noncount noun, but also a countable individual in some American usage. Niño denotes a child by life stage; hijo a relation to parents, including an adult child. Hombre/mujer include adult male/female senses and partner senses; humano is adjectival in this card.",
+      "proposedTestApproach": "Corrected: do not state that gente can never mean one person. The age-versus-parentage distinction is useful; English “child” alone is underdetermined. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "persona",
+          "mujer",
+          "hombre",
+          "niño",
+          "hijo",
+          "gente",
+          "humano"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/persona",
+          "https://dle.rae.es/mujer",
+          "https://dle.rae.es/hombre",
+          "https://dle.rae.es/ni%C3%B1o",
+          "https://dle.rae.es/hijo",
+          "https://dle.rae.es/gente",
+          "https://dle.rae.es/humano",
+          "https://www.rae.es/dpd/gente"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: do not state that gente can never mean one person. The age-versus-parentage distinction is useful; English “child” alone is underdetermined."
+        }
+      }
+    },
+    {
+      "id": "manner",
+      "members": [
+        {
+          "rank": 101,
+          "id": "corpes:forma:N",
+          "lemma": "forma",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 154,
+          "id": "corpes:manera:N",
+          "lemma": "manera",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 166,
+          "id": "corpes:tipo:N",
+          "lemma": "tipo",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Forma can mean shape or manner; manera manner/way; tipo kind/type (and other senses). Forma/manera genuinely overlap as way of doing something.",
+      "proposedTestApproach": "Shape distinguishes a forma sense; a generic “way/manner” does not fairly distinguish forma/manera.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "forma",
+          "manera",
+          "tipo"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/forma",
+          "https://dle.rae.es/manera"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "condition",
+      "members": [
+        {
+          "rank": 131,
+          "id": "corpes:caso:N",
+          "lemma": "caso",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 135,
+          "id": "corpes:estado:N",
+          "lemma": "estado",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 234,
+          "id": "corpes:situación:N",
+          "lemma": "situación",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Estado and situación explicitly overlap as condition/state of affairs. Estado additionally denotes a political state; situación can locate something. Caso can be an occurrence, circumstance, matter under consideration or legal case.",
+      "proposedTestApproach": "No source basis for a rigid internal-state/external-situation split. A legal-case or political-state sense can help; ordinary condition prompts may still admit overlap. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "caso",
+          "estado",
+          "situación"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/caso",
+          "https://dle.rae.es/estado",
+          "https://dle.rae.es/situaci%C3%B3n"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "No source basis for a rigid internal-state/external-situation split. A legal-case or political-state sense can help; ordinary condition prompts may still admit overlap."
+        }
+      }
+    },
+    {
+      "id": "place-part",
+      "members": [
+        {
+          "rank": 69,
+          "id": "corpes:parte:N",
+          "lemma": "parte",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 121,
+          "id": "corpes:lugar:N",
+          "lemma": "lugar",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 149,
+          "id": "corpes:punto:N",
+          "lemma": "punto",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 206,
+          "id": "corpes:centro:N",
+          "lemma": "centro",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 207,
+          "id": "corpes:nivel:N",
+          "lemma": "nivel",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 209,
+          "id": "corpes:lado:N",
+          "lemma": "lado",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Parte is a portion and can also be a place; lado a side/face and also a place; lugar a location; punto can be a location as well as a mark or score; centro a middle/center and institution/hub; nivel a height, degree or rank.",
+      "proposedTestApproach": "Generic place/spot/side prompts still overlap. Select a concrete geometry, portion, score or level sense rather than relying on a supposedly exclusive English noun. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "parte",
+          "lugar",
+          "punto",
+          "centro",
+          "nivel",
+          "lado"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/parte",
+          "https://dle.rae.es/lugar",
+          "https://dle.rae.es/punto",
+          "https://dle.rae.es/centro",
+          "https://dle.rae.es/nivel",
+          "https://dle.rae.es/lado"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Generic place/spot/side prompts still overlap. Select a concrete geometry, portion, score or level sense rather than relying on a supposedly exclusive English noun."
+        }
+      }
+    },
+    {
+      "id": "collective",
+      "members": [
+        {
+          "rank": 136,
+          "id": "corpes:grupo:N",
+          "lemma": "grupo",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 190,
+          "id": "corpes:equipo:N",
+          "lemma": "equipo",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Grupo is a set of beings or things, and can be an organized performing group or set of apparatus. Equipo includes an organized team and equipment for a purpose.",
+      "proposedTestApproach": "Corrected: organized versus unorganized is not a categorical distinction. Team is more specific, but an organized team can also be called a grupo. Equipment is not a universal exclusion either. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "grupo",
+          "equipo"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/grupo",
+          "https://dle.rae.es/equipo"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: organized versus unorganized is not a categorical distinction. Team is more specific, but an organized team can also be called a grupo. Equipment is not a universal exclusion either."
+        }
+      }
+    },
+    {
+      "id": "political",
+      "members": [
+        {
+          "rank": 70,
+          "id": "corpes:país:N",
+          "lemma": "país",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 116,
+          "id": "corpes:nacional:A",
+          "lemma": "nacional",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 122,
+          "id": "corpes:gobierno:N",
+          "lemma": "gobierno",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 124,
+          "id": "corpes:social:A",
+          "lemma": "social",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 135,
+          "id": "corpes:estado:N",
+          "lemma": "estado",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 157,
+          "id": "corpes:público:A",
+          "lemma": "público",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 174,
+          "id": "corpes:político:A",
+          "lemma": "político",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 249,
+          "id": "corpes:político:N",
+          "lemma": "político",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "País can mean a sovereign country or a geographic/cultural territory within a state. Estado includes sovereign political organization, its governing institutions and a federal subdivision. Gobierno includes the executive governing body. Nacional, público, social and político specify different relations; político can also name a person.",
+      "proposedTestApproach": "Corrected: country is not always sovereign; state is not always a subdivision. “Government” and “state” can refer to overlapping institutions. Use a specified sense and preserve adjective/person-noun distinction. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "país",
+          "nacional",
+          "gobierno",
+          "social",
+          "estado",
+          "público",
+          "político"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/pa%C3%ADs",
+          "https://dle.rae.es/nacional",
+          "https://dle.rae.es/gobierno",
+          "https://dle.rae.es/social",
+          "https://dle.rae.es/estado",
+          "https://dle.rae.es/p%C3%BAblico",
+          "https://dle.rae.es/pol%C3%ADtico"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: country is not always sovereign; state is not always a subdivision. “Government” and “state” can refer to overlapping institutions. Use a specified sense and preserve adjective/person-noun distinction."
+        }
+      }
+    },
+    {
+      "id": "development",
+      "members": [
+        {
+          "rank": 178,
+          "id": "corpes:proceso:N",
+          "lemma": "proceso",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 180,
+          "id": "corpes:cambio:N",
+          "lemma": "cambio",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 214,
+          "id": "corpes:proyecto:N",
+          "lemma": "proyecto",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 230,
+          "id": "corpes:desarrollo:N",
+          "lemma": "desarrollo",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Proceso denotes successive phases or a course of events (also judicial proceedings); desarrollo development/unfolding and economic development; cambio change/exchange; proyecto a plan/design for carrying something out.",
+      "proposedTestApproach": "Proceso and desarrollo can describe the same unfolding. Do not invent a required improvement sense for every desarrollo or accept all four merely because they concern change. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "proceso",
+          "cambio",
+          "proyecto",
+          "desarrollo"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/proceso",
+          "https://dle.rae.es/cambio",
+          "https://dle.rae.es/proyecto",
+          "https://dle.rae.es/desarrollo"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Proceso and desarrollo can describe the same unfolding. Do not invent a required improvement sense for every desarrollo or accept all four merely because they concern change."
+        }
+      }
+    },
+    {
+      "id": "communication-nouns",
+      "members": [
+        {
+          "rank": 151,
+          "id": "corpes:historia:N",
+          "lemma": "historia",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 185,
+          "id": "corpes:cuenta:N",
+          "lemma": "cuenta",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 237,
+          "id": "corpes:palabra:N",
+          "lemma": "palabra",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 240,
+          "id": "corpes:información:N",
+          "lemma": "información",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 244,
+          "id": "corpes:relación:N",
+          "lemma": "relación",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 245,
+          "id": "corpes:tema:N",
+          "lemma": "tema",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Historia includes past events, their study and a true or invented narrative; relación includes connection, personal dealings, list or account of events. Cuenta includes calculation, financial account and accounting/explanation for conduct. Tema is subject matter; información communicated knowledge; palabra a linguistic unit.",
+      "proposedTestApproach": "Corrected: English account must be disambiguated. A bank account points to cuenta; a narrative account can be relación/historia. Cuenta is not automatically a standalone synonym of story (cuento). Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "historia",
+          "cuenta",
+          "palabra",
+          "información",
+          "relación",
+          "tema"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/historia",
+          "https://dle.rae.es/cuenta",
+          "https://dle.rae.es/palabra",
+          "https://dle.rae.es/informaci%C3%B3n",
+          "https://dle.rae.es/relaci%C3%B3n",
+          "https://dle.rae.es/tema"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: English account must be disambiguated. A bank account points to cuenta; a narrative account can be relación/historia. Cuenta is not automatically a standalone synonym of story (cuento)."
+        }
+      }
+    },
+    {
+      "id": "life",
+      "members": [
+        {
+          "rank": 76,
+          "id": "corpes:vida:N",
+          "lemma": "vida",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 143,
+          "id": "corpes:vivir:V",
+          "lemma": "vivir",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 186,
+          "id": "corpes:existir:V",
+          "lemma": "existir",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Vida is the noun life; vivir includes being alive and residing somewhere; existir includes reality/existence and also being alive.",
+      "proposedTestApproach": "The being-alive senses genuinely overlap. Residence provides a useful selected vivir sense; noun-versus-verb is a separate cue. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "vida",
+          "vivir",
+          "existir"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/vida",
+          "https://dle.rae.es/vivir",
+          "https://dle.rae.es/existir"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "The being-alive senses genuinely overlap. Residence provides a useful selected vivir sense; noun-versus-verb is a separate cue."
+        }
+      }
+    },
+    {
+      "id": "frequency",
+      "members": [
+        {
+          "rank": 80,
+          "id": "corpes:cada:Q",
+          "lemma": "cada",
+          "partOfSpeech": "quantifier"
+        },
+        {
+          "rank": 99,
+          "id": "corpes:siempre:R",
+          "lemma": "siempre",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 168,
+          "id": "corpes:nunca:R",
+          "lemma": "nunca",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Siempre denotes all times; nunca no time/no occasion; cada distributes over members and can specify recurrence with a number and unit.",
+      "proposedTestApproach": "These are contrast/paraphrase candidates, not interchangeable one-word answers. Always and every time require different constructions; neither licenses changing negation. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "cada",
+          "siempre",
+          "nunca"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/cada",
+          "https://dle.rae.es/siempre",
+          "https://dle.rae.es/nunca"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "These are contrast/paraphrase candidates, not interchangeable one-word answers. Always and every time require different constructions; neither licenses changing negation."
+        }
+      }
+    },
+    {
+      "id": "negation-coordination",
+      "members": [
+        {
+          "rank": 3,
+          "id": "corpes:y:C",
+          "lemma": "y",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 13,
+          "id": "corpes:no:R",
+          "lemma": "no",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 29,
+          "id": "corpes:o:C",
+          "lemma": "o",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 47,
+          "id": "corpes:sin:P",
+          "lemma": "sin",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 83,
+          "id": "corpes:ni:C",
+          "lemma": "ni",
+          "partOfSpeech": "conjunction"
+        }
+      ],
+      "outside": [],
+      "distinction": "No negates; ni joins negative elements and also means not even in selected uses; sin marks absence and introduces negative infinitive expressions. Y adds/co-ordinates; o expresses alternatives or reformulation/equivalence.",
+      "proposedTestApproach": "“And/or” explanations describe selected functions; o need not be an exclusive choice. Negative concord is grammatical: adding no before a later negative item need not reverse meaning. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "y",
+          "no",
+          "o",
+          "sin",
+          "ni"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/y",
+          "https://dle.rae.es/no",
+          "https://dle.rae.es/o",
+          "https://dle.rae.es/sin",
+          "https://dle.rae.es/ni"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "“And/or” explanations describe selected functions; o need not be an exclusive choice. Negative concord is grammatical: adding no before a later negative item need not reverse meaning."
+        }
+      }
+    },
+    {
+      "id": "boundary",
+      "members": [
+        {
+          "rank": 42,
+          "id": "corpes:entre:P",
+          "lemma": "entre",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 50,
+          "id": "corpes:desde:P",
+          "lemma": "desde",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 64,
+          "id": "corpes:hasta:P",
+          "lemma": "hasta",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 95,
+          "id": "corpes:durante:P",
+          "lemma": "durante",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "Hasta marks an endpoint in time/space/quantity; desde a starting point; entre between/among or within; durante simultaneity over a period. Hasta also means even as an adverb.",
+      "proposedTestApproach": "Corrected: temporal hasta can mean not before in parts of the Americas. Do not turn an isolated deadline example into a universal polarity rule. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "entre",
+          "desde",
+          "hasta",
+          "durante"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/entre",
+          "https://dle.rae.es/desde",
+          "https://dle.rae.es/hasta",
+          "https://dle.rae.es/durante",
+          "https://www.rae.es/dpd/hasta"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: temporal hasta can mean not before in parts of the Americas. Do not turn an isolated deadline example into a universal polarity rule."
+        }
+      }
+    },
+    {
+      "id": "method",
+      "members": [
+        {
+          "rank": 18,
+          "id": "corpes:como:C",
+          "lemma": "como",
+          "partOfSpeech": "conjunction"
+        },
+        {
+          "rank": 92,
+          "id": "corpes:así:R",
+          "lemma": "así",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 101,
+          "id": "corpes:forma:N",
+          "lemma": "forma",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 154,
+          "id": "corpes:manera:N",
+          "lemma": "manera",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 162,
+          "id": "corpes:sistema:N",
+          "lemma": "sistema",
+          "partOfSpeech": "noun"
+        },
+        {
+          "rank": 189,
+          "id": "corpes:medio:N",
+          "lemma": "medio",
+          "partOfSpeech": "noun"
+        }
+      ],
+      "outside": [],
+      "distinction": "Medio can be a means; sistema a system/method; manera and forma ways of doing something; así means in this way and como can introduce manner/comparison. These are different grammatical forms with overlapping descriptions.",
+      "proposedTestApproach": "Specify means/tool, organized method, manner noun or manner adverb. Do not use bare “way” for all of them.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "como",
+          "así",
+          "forma",
+          "manera",
+          "sistema",
+          "medio"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/forma",
+          "https://dle.rae.es/manera"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "order",
+      "members": [
+        {
+          "rank": 53,
+          "id": "corpes:primero:M",
+          "lemma": "primero",
+          "partOfSpeech": "numeral"
+        },
+        {
+          "rank": 84,
+          "id": "corpes:después:R",
+          "lemma": "después",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 90,
+          "id": "corpes:último:A",
+          "lemma": "último",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "rank": 106,
+          "id": "corpes:antes:R",
+          "lemma": "antes",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 179,
+          "id": "corpes:segundo:M",
+          "lemma": "segundo",
+          "partOfSpeech": "numeral"
+        }
+      ],
+      "outside": [],
+      "distinction": "Primero/segundo are ordinals in the target cards; último is last; antes/después express relative order or time. Related ordering concepts are not interchangeable parts of speech.",
+      "proposedTestApproach": "State ordinal position versus before/after, and retain the requested headword form.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "primero",
+          "después",
+          "último",
+          "antes",
+          "segundo"
+        ],
+        "primarySources": [
+          "https://www.rae.es/dpd/antes",
+          "https://www.rae.es/dpd/despu%C3%A9s"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "means",
+      "members": [
+        {
+          "rank": 12,
+          "id": "corpes:con:P",
+          "lemma": "con",
+          "partOfSpeech": "preposition"
+        },
+        {
+          "rank": 14,
+          "id": "corpes:por:P",
+          "lemma": "por",
+          "partOfSpeech": "preposition"
+        }
+      ],
+      "outside": [],
+      "distinction": "Con can express accompaniment or an instrument; por can express means/channel. English “with/by” requires a particular relation.",
+      "proposedTestApproach": "Give the instrument or communication channel; do not map every use of “by” to por.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "con",
+          "por"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/por"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    },
+    {
+      "id": "present-time",
+      "members": [
+        {
+          "rank": 89,
+          "id": "corpes:ahora:R",
+          "lemma": "ahora",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "rank": 153,
+          "id": "corpes:hoy:R",
+          "lemma": "hoy",
+          "partOfSpeech": "adverb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Hoy refers to this day and also the present era. Ahora refers to this moment/current time and can extend to the recent past or near future.",
+      "proposedTestApproach": "Corrected: neither word has only its narrow calendar/moment sense. A clearly anchored this-day versus this-moment prompt can select the intended reading. Proposed only; no new prompt or answer-list implementation.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "ahora",
+          "hoy"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/ahora",
+          "https://dle.rae.es/hoy"
+        ],
+        "level": "primary-source sense/construction comparison completed for this group; exact test prompts and answer lists not yet validated",
+        "primaryReview": {
+          "checkedOn": "2026-10-30",
+          "status": "complete for the stated distinctions",
+          "scope": "Relevant senses and construction restrictions, not every rare sense or every regional sentence realization.",
+          "qualification": "Corrected: neither word has only its narrow calendar/moment sense. A clearly anchored this-day versus this-moment prompt can select the intended reading."
+        }
+      }
+    },
+    {
+      "id": "memory",
+      "members": [
+        {
+          "rank": 52,
+          "id": "corpes:saber:V",
+          "lemma": "saber",
+          "partOfSpeech": "verb"
+        },
+        {
+          "rank": 202,
+          "id": "corpes:recordar:V",
+          "lemma": "recordar",
+          "partOfSpeech": "verb"
+        }
+      ],
+      "outside": [],
+      "distinction": "Recordar retrieves or retains something in memory and can remind someone; saber is knowing. A remembered fact is also known, but “remember” and “know” do not test the same action.",
+      "proposedTestApproach": "Use recall a past event rather than know a fact; check the object and whether the intended meaning is remind.",
+      "evidence": {
+        "frozenDictionaryKeys": [
+          "saber",
+          "recordar"
+        ],
+        "primarySources": [
+          "https://dle.rae.es/saber"
+        ],
+        "level": "targeted primary-source comparison plus frozen lexical entries"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "rank": 1,
+      "id": "corpes:el:T",
+      "lemma": "el",
+      "partOfSpeech": "article",
+      "groups": [
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 2,
+      "id": "corpes:de:P",
+      "lemma": "de",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "source"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 3,
+      "id": "corpes:y:C",
+      "lemma": "y",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "addition",
+        "negation-coordination"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 4,
+      "id": "corpes:en:P",
+      "lemma": "en",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "location-topic"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 5,
+      "id": "corpes:a:P",
+      "lemma": "a",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "direction"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 6,
+      "id": "corpes:un:T",
+      "lemma": "un",
+      "partOfSpeech": "article",
+      "groups": [
+        "one"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 7,
+      "id": "corpes:que:H",
+      "lemma": "que",
+      "partOfSpeech": "relative",
+      "groups": [
+        "relative-question",
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 8,
+      "id": "corpes:ser:V",
+      "lemma": "ser",
+      "partOfSpeech": "verb",
+      "groups": [
+        "being"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 9,
+      "id": "corpes:se:L",
+      "lemma": "se",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 10,
+      "id": "corpes:que:C",
+      "lemma": "que",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "relative-question",
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 11,
+      "id": "corpes:suyo:X",
+      "lemma": "suyo",
+      "partOfSpeech": "possessive",
+      "groups": [
+        "possessives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 12,
+      "id": "corpes:con:P",
+      "lemma": "con",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "means"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 13,
+      "id": "corpes:no:R",
+      "lemma": "no",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "negation-coordination"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 14,
+      "id": "corpes:por:P",
+      "lemma": "por",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "for",
+        "means"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 15,
+      "id": "corpes:para:P",
+      "lemma": "para",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "for",
+        "direction"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 16,
+      "id": "corpes:lo:L",
+      "lemma": "lo",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 17,
+      "id": "corpes:este:D",
+      "lemma": "este",
+      "partOfSpeech": "demonstrative",
+      "groups": [
+        "demonstratives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 18,
+      "id": "corpes:como:C",
+      "lemma": "como",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "cause-consequence",
+        "relative-question",
+        "accent-function",
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 19,
+      "id": "corpes:estar:V",
+      "lemma": "estar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "being",
+        "remain-continue"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 20,
+      "id": "corpes:tener:V",
+      "lemma": "tener",
+      "partOfSpeech": "verb",
+      "groups": [
+        "attainment",
+        "possession-existence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 21,
+      "id": "corpes:ir:V",
+      "lemma": "ir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "leave",
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 22,
+      "id": "corpes:le:L",
+      "lemma": "le",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 23,
+      "id": "corpes:más:R",
+      "lemma": "más",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 24,
+      "id": "corpes:me:L",
+      "lemma": "me",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 25,
+      "id": "corpes:hacer:V",
+      "lemma": "hacer",
+      "partOfSpeech": "verb",
+      "groups": [
+        "make"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 26,
+      "id": "corpes:poder:V",
+      "lemma": "poder",
+      "partOfSpeech": "verb",
+      "groups": [
+        "modal-permission"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 27,
+      "id": "corpes:ese:D",
+      "lemma": "ese",
+      "partOfSpeech": "demonstrative",
+      "groups": [
+        "demonstratives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 28,
+      "id": "corpes:todo:Q",
+      "lemma": "todo",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 29,
+      "id": "corpes:o:C",
+      "lemma": "o",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "negation-coordination"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 30,
+      "id": "corpes:pero:C",
+      "lemma": "pero",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "contrast"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 31,
+      "id": "corpes:él:L",
+      "lemma": "él",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns",
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 32,
+      "id": "corpes:otro:Q",
+      "lemma": "otro",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers",
+        "identity"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 33,
+      "id": "corpes:decir:V",
+      "lemma": "decir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "speech"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 34,
+      "id": "corpes:año:N",
+      "lemma": "año",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 35,
+      "id": "corpes:haber:V",
+      "lemma": "haber",
+      "partOfSpeech": "verb",
+      "groups": [
+        "possession-existence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 36,
+      "id": "corpes:si:C",
+      "lemma": "si",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 37,
+      "id": "corpes:mío:X",
+      "lemma": "mío",
+      "partOfSpeech": "possessive",
+      "groups": [
+        "possessives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 38,
+      "id": "corpes:dar:V",
+      "lemma": "dar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "take-place"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 39,
+      "id": "corpes:ver:V",
+      "lemma": "ver",
+      "partOfSpeech": "verb",
+      "groups": [
+        "perception"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 40,
+      "id": "corpes:sobre:P",
+      "lemma": "sobre",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "location-topic"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 41,
+      "id": "corpes:cuando:R",
+      "lemma": "cuando",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "duration",
+        "relative-question"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 42,
+      "id": "corpes:entre:P",
+      "lemma": "entre",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "location-topic",
+        "boundary"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 43,
+      "id": "corpes:también:R",
+      "lemma": "también",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "addition"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 44,
+      "id": "corpes:ya:R",
+      "lemma": "ya",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "continuing-time"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 45,
+      "id": "corpes:nos:L",
+      "lemma": "nos",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 46,
+      "id": "corpes:uno:M",
+      "lemma": "uno",
+      "partOfSpeech": "numeral",
+      "groups": [
+        "one"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 47,
+      "id": "corpes:sin:P",
+      "lemma": "sin",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "negation-coordination"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 48,
+      "id": "corpes:te:L",
+      "lemma": "te",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 49,
+      "id": "corpes:muy:R",
+      "lemma": "muy",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 50,
+      "id": "corpes:desde:P",
+      "lemma": "desde",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "source",
+        "boundary"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 51,
+      "id": "corpes:porque:C",
+      "lemma": "porque",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "cause-consequence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 52,
+      "id": "corpes:saber:V",
+      "lemma": "saber",
+      "partOfSpeech": "verb",
+      "groups": [
+        "knowledge",
+        "memory"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 53,
+      "id": "corpes:primero:M",
+      "lemma": "primero",
+      "partOfSpeech": "numeral",
+      "groups": [
+        "order"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 54,
+      "id": "corpes:dos:M",
+      "lemma": "dos",
+      "partOfSpeech": "numeral",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 55,
+      "id": "corpes:mismo:Q",
+      "lemma": "mismo",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "identity"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 56,
+      "id": "corpes:qué:W",
+      "lemma": "qué",
+      "partOfSpeech": "interrogative",
+      "groups": [
+        "relative-question",
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 57,
+      "id": "corpes:alguno:Q",
+      "lemma": "alguno",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 58,
+      "id": "corpes:vez:N",
+      "lemma": "vez",
+      "partOfSpeech": "noun",
+      "groups": [
+        "time-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 59,
+      "id": "corpes:día:N",
+      "lemma": "día",
+      "partOfSpeech": "noun",
+      "groups": [
+        "time-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 60,
+      "id": "corpes:yo:L",
+      "lemma": "yo",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 61,
+      "id": "corpes:querer:V",
+      "lemma": "querer",
+      "partOfSpeech": "verb",
+      "groups": [
+        "want-wait"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 62,
+      "id": "corpes:deber:V",
+      "lemma": "deber",
+      "partOfSpeech": "verb",
+      "groups": [
+        "modal-permission"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 63,
+      "id": "corpes:solo:R",
+      "lemma": "solo",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "one"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 64,
+      "id": "corpes:hasta:P",
+      "lemma": "hasta",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "boundary"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 65,
+      "id": "corpes:nuevo:A",
+      "lemma": "nuevo",
+      "partOfSpeech": "adjective",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 66,
+      "id": "corpes:pasar:V",
+      "lemma": "pasar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 67,
+      "id": "corpes:mucho:Q",
+      "lemma": "mucho",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers",
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 68,
+      "id": "corpes:llegar:V",
+      "lemma": "llegar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 69,
+      "id": "corpes:parte:N",
+      "lemma": "parte",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 70,
+      "id": "corpes:país:N",
+      "lemma": "país",
+      "partOfSpeech": "noun",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 71,
+      "id": "corpes:grande:A",
+      "lemma": "grande",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "size"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 72,
+      "id": "corpes:tiempo:N",
+      "lemma": "tiempo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "time-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 73,
+      "id": "corpes:donde:R",
+      "lemma": "donde",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "relative-question"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 74,
+      "id": "corpes:nuestro:X",
+      "lemma": "nuestro",
+      "partOfSpeech": "possessive",
+      "groups": [
+        "possessives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 75,
+      "id": "corpes:dejar:V",
+      "lemma": "dejar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "leave",
+        "take-place",
+        "modal-permission"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 76,
+      "id": "corpes:vida:N",
+      "lemma": "vida",
+      "partOfSpeech": "noun",
+      "groups": [
+        "life"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 77,
+      "id": "corpes:llevar:V",
+      "lemma": "llevar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "take-place"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 78,
+      "id": "corpes:persona:N",
+      "lemma": "persona",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 79,
+      "id": "corpes:seguir:V",
+      "lemma": "seguir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "remain-continue"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 80,
+      "id": "corpes:cada:Q",
+      "lemma": "cada",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers",
+        "frequency"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 81,
+      "id": "corpes:encontrar:V",
+      "lemma": "encontrar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "find-meet"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 82,
+      "id": "corpes:quien:H",
+      "lemma": "quien",
+      "partOfSpeech": "relative",
+      "groups": [
+        "relative-question"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 83,
+      "id": "corpes:ni:C",
+      "lemma": "ni",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "negation-coordination"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 84,
+      "id": "corpes:después:R",
+      "lemma": "después",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "sequence",
+        "order"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 85,
+      "id": "corpes:poner:V",
+      "lemma": "poner",
+      "partOfSpeech": "verb",
+      "groups": [
+        "take-place"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 86,
+      "id": "corpes:quedar:V",
+      "lemma": "quedar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "remain-continue"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 87,
+      "id": "corpes:bueno:A",
+      "lemma": "bueno",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "quality"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 88,
+      "id": "corpes:mujer:N",
+      "lemma": "mujer",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 89,
+      "id": "corpes:ahora:R",
+      "lemma": "ahora",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "continuing-time",
+        "present-time"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 90,
+      "id": "corpes:último:A",
+      "lemma": "último",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "order"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 91,
+      "id": "corpes:hablar:V",
+      "lemma": "hablar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "speech",
+        "about-treatment"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 92,
+      "id": "corpes:así:R",
+      "lemma": "así",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 93,
+      "id": "corpes:aunque:C",
+      "lemma": "aunque",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "contrast"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 94,
+      "id": "corpes:parecer:V",
+      "lemma": "parecer",
+      "partOfSpeech": "verb",
+      "groups": [
+        "thought"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 95,
+      "id": "corpes:durante:P",
+      "lemma": "durante",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "duration",
+        "boundary"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 96,
+      "id": "corpes:aquel:D",
+      "lemma": "aquel",
+      "partOfSpeech": "demonstrative",
+      "groups": [
+        "demonstratives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 97,
+      "id": "corpes:mundo:N",
+      "lemma": "mundo",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 98,
+      "id": "corpes:momento:N",
+      "lemma": "momento",
+      "partOfSpeech": "noun",
+      "groups": [
+        "time-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 99,
+      "id": "corpes:siempre:R",
+      "lemma": "siempre",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "frequency"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 100,
+      "id": "corpes:pensar:V",
+      "lemma": "pensar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "thought"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 101,
+      "id": "corpes:forma:N",
+      "lemma": "forma",
+      "partOfSpeech": "noun",
+      "groups": [
+        "manner",
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 102,
+      "id": "corpes:casa:N",
+      "lemma": "casa",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 103,
+      "id": "corpes:mayor:A",
+      "lemma": "mayor",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "size"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 104,
+      "id": "corpes:volver:V",
+      "lemma": "volver",
+      "partOfSpeech": "verb",
+      "groups": [
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 105,
+      "id": "corpes:bien:R",
+      "lemma": "bien",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "quality"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 106,
+      "id": "corpes:antes:R",
+      "lemma": "antes",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "before",
+        "order"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 107,
+      "id": "corpes:tres:M",
+      "lemma": "tres",
+      "partOfSpeech": "numeral",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 108,
+      "id": "corpes:cómo:R",
+      "lemma": "cómo",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "relative-question",
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 109,
+      "id": "corpes:tan:R",
+      "lemma": "tan",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 110,
+      "id": "corpes:trabajo:N",
+      "lemma": "trabajo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "work"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 111,
+      "id": "corpes:algo:Q",
+      "lemma": "algo",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 112,
+      "id": "corpes:hombre:N",
+      "lemma": "hombre",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 113,
+      "id": "corpes:cosa:N",
+      "lemma": "cosa",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 114,
+      "id": "corpes:creer:V",
+      "lemma": "creer",
+      "partOfSpeech": "verb",
+      "groups": [
+        "thought"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 115,
+      "id": "corpes:salir:V",
+      "lemma": "salir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "leave",
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 116,
+      "id": "corpes:nacional:A",
+      "lemma": "nacional",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 117,
+      "id": "corpes:sí:R",
+      "lemma": "sí",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "accent-function"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 118,
+      "id": "corpes:conocer:V",
+      "lemma": "conocer",
+      "partOfSpeech": "verb",
+      "groups": [
+        "knowledge",
+        "find-meet"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 119,
+      "id": "corpes:contar:V",
+      "lemma": "contar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "speech"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 120,
+      "id": "corpes:niño:N",
+      "lemma": "niño",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 121,
+      "id": "corpes:lugar:N",
+      "lemma": "lugar",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 122,
+      "id": "corpes:gobierno:N",
+      "lemma": "gobierno",
+      "partOfSpeech": "noun",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 123,
+      "id": "corpes:tomar:V",
+      "lemma": "tomar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "take-place"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 124,
+      "id": "corpes:social:A",
+      "lemma": "social",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 125,
+      "id": "corpes:llamar:V",
+      "lemma": "llamar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "speech"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 126,
+      "id": "corpes:tratar:V",
+      "lemma": "tratar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "about-treatment"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 127,
+      "id": "corpes:tuyo:X",
+      "lemma": "tuyo",
+      "partOfSpeech": "possessive",
+      "groups": [
+        "possessives"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 128,
+      "id": "corpes:sentir:V",
+      "lemma": "sentir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "thought",
+        "perception"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 129,
+      "id": "corpes:hora:N",
+      "lemma": "hora",
+      "partOfSpeech": "noun",
+      "groups": [
+        "time-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 130,
+      "id": "corpes:venir:V",
+      "lemma": "venir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 131,
+      "id": "corpes:caso:N",
+      "lemma": "caso",
+      "partOfSpeech": "noun",
+      "groups": [
+        "condition"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 132,
+      "id": "corpes:mano:N",
+      "lemma": "mano",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 133,
+      "id": "corpes:sino:C",
+      "lemma": "sino",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "contrast"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 134,
+      "id": "corpes:crear:V",
+      "lemma": "crear",
+      "partOfSpeech": "verb",
+      "groups": [
+        "make"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 135,
+      "id": "corpes:estado:N",
+      "lemma": "estado",
+      "partOfSpeech": "noun",
+      "groups": [
+        "condition",
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 136,
+      "id": "corpes:grupo:N",
+      "lemma": "grupo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "collective"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 137,
+      "id": "corpes:realizar:V",
+      "lemma": "realizar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "make"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 138,
+      "id": "corpes:nada:Q",
+      "lemma": "nada",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 139,
+      "id": "corpes:hijo:N",
+      "lemma": "hijo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 140,
+      "id": "corpes:mirar:V",
+      "lemma": "mirar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "perception"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 141,
+      "id": "corpes:según:P",
+      "lemma": "según",
+      "partOfSpeech": "preposition",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 142,
+      "id": "corpes:propio:A",
+      "lemma": "propio",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "identity"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 143,
+      "id": "corpes:vivir:V",
+      "lemma": "vivir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "life"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 144,
+      "id": "corpes:entonces:R",
+      "lemma": "entonces",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "sequence",
+        "cause-consequence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 145,
+      "id": "corpes:mejor:A",
+      "lemma": "mejor",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "quality"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 146,
+      "id": "corpes:permitir:V",
+      "lemma": "permitir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "modal-permission"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 147,
+      "id": "corpes:importante:A",
+      "lemma": "importante",
+      "partOfSpeech": "adjective",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 148,
+      "id": "corpes:cual:H",
+      "lemma": "cual",
+      "partOfSpeech": "relative",
+      "groups": [
+        "relative-question"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 149,
+      "id": "corpes:punto:N",
+      "lemma": "punto",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 150,
+      "id": "corpes:hacia:P",
+      "lemma": "hacia",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "direction"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 151,
+      "id": "corpes:historia:N",
+      "lemma": "historia",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 152,
+      "id": "corpes:millón:N",
+      "lemma": "millón",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 153,
+      "id": "corpes:hoy:R",
+      "lemma": "hoy",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "present-time"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 154,
+      "id": "corpes:manera:N",
+      "lemma": "manera",
+      "partOfSpeech": "noun",
+      "groups": [
+        "manner",
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 155,
+      "id": "corpes:luego:R",
+      "lemma": "luego",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "sequence",
+        "cause-consequence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 156,
+      "id": "corpes:padre:N",
+      "lemma": "padre",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 157,
+      "id": "corpes:público:A",
+      "lemma": "público",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 158,
+      "id": "corpes:ante:P",
+      "lemma": "ante",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "before"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 159,
+      "id": "corpes:menos:R",
+      "lemma": "menos",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 160,
+      "id": "corpes:presentar:V",
+      "lemma": "presentar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "show"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 161,
+      "id": "corpes:buscar:V",
+      "lemma": "buscar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "find-meet"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 162,
+      "id": "corpes:sistema:N",
+      "lemma": "sistema",
+      "partOfSpeech": "noun",
+      "groups": [
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 163,
+      "id": "corpes:problema:N",
+      "lemma": "problema",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 164,
+      "id": "corpes:esperar:V",
+      "lemma": "esperar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "want-wait"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 165,
+      "id": "corpes:presidente:N",
+      "lemma": "presidente",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 166,
+      "id": "corpes:tipo:N",
+      "lemma": "tipo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "manner"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 167,
+      "id": "corpes:contra:P",
+      "lemma": "contra",
+      "partOfSpeech": "preposition",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 168,
+      "id": "corpes:nunca:R",
+      "lemma": "nunca",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "frequency"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 169,
+      "id": "corpes:ciudad:N",
+      "lemma": "ciudad",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 170,
+      "id": "corpes:además:R",
+      "lemma": "además",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "addition"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 171,
+      "id": "corpes:pues:C",
+      "lemma": "pues",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "cause-consequence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 172,
+      "id": "corpes:casi:R",
+      "lemma": "casi",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 173,
+      "id": "corpes:mes:N",
+      "lemma": "mes",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 174,
+      "id": "corpes:político:A",
+      "lemma": "político",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 175,
+      "id": "corpes:poco:Q",
+      "lemma": "poco",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 176,
+      "id": "corpes:más:Q",
+      "lemma": "más",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 177,
+      "id": "corpes:partido:N",
+      "lemma": "partido",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 178,
+      "id": "corpes:proceso:N",
+      "lemma": "proceso",
+      "partOfSpeech": "noun",
+      "groups": [
+        "development"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 179,
+      "id": "corpes:segundo:M",
+      "lemma": "segundo",
+      "partOfSpeech": "numeral",
+      "groups": [
+        "order"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 180,
+      "id": "corpes:cambio:N",
+      "lemma": "cambio",
+      "partOfSpeech": "noun",
+      "groups": [
+        "development"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 181,
+      "id": "corpes:trabajar:V",
+      "lemma": "trabajar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "work"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 182,
+      "id": "corpes:alto:A",
+      "lemma": "alto",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "size"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 183,
+      "id": "corpes:empezar:V",
+      "lemma": "empezar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "begin"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 184,
+      "id": "corpes:obra:N",
+      "lemma": "obra",
+      "partOfSpeech": "noun",
+      "groups": [
+        "work"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 185,
+      "id": "corpes:cuenta:N",
+      "lemma": "cuenta",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 186,
+      "id": "corpes:existir:V",
+      "lemma": "existir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "possession-existence",
+        "life"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 187,
+      "id": "corpes:varios:Q",
+      "lemma": "varios",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 188,
+      "id": "corpes:explicar:V",
+      "lemma": "explicar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "speech"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 189,
+      "id": "corpes:medio:N",
+      "lemma": "medio",
+      "partOfSpeech": "noun",
+      "groups": [
+        "method"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 190,
+      "id": "corpes:equipo:N",
+      "lemma": "equipo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "collective"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 191,
+      "id": "corpes:mí:L",
+      "lemma": "mí",
+      "partOfSpeech": "personal pronoun",
+      "groups": [
+        "personal-pronouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 192,
+      "id": "corpes:noche:N",
+      "lemma": "noche",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 193,
+      "id": "corpes:tras:P",
+      "lemma": "tras",
+      "partOfSpeech": "preposition",
+      "groups": [
+        "sequence"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 194,
+      "id": "corpes:estudio:N",
+      "lemma": "estudio",
+      "partOfSpeech": "noun",
+      "groups": [
+        "work"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 195,
+      "id": "corpes:mientras:C",
+      "lemma": "mientras",
+      "partOfSpeech": "conjunction",
+      "groups": [
+        "duration"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 196,
+      "id": "corpes:mucho:R",
+      "lemma": "mucho",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "quantifiers",
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 197,
+      "id": "corpes:agua:N",
+      "lemma": "agua",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 198,
+      "id": "corpes:aquí:R",
+      "lemma": "aquí",
+      "partOfSpeech": "adverb",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 199,
+      "id": "corpes:uno:Q",
+      "lemma": "uno",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "one"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 200,
+      "id": "corpes:empresa:N",
+      "lemma": "empresa",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 201,
+      "id": "corpes:gente:N",
+      "lemma": "gente",
+      "partOfSpeech": "noun",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 202,
+      "id": "corpes:recordar:V",
+      "lemma": "recordar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "memory"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 203,
+      "id": "corpes:ninguno:Q",
+      "lemma": "ninguno",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 204,
+      "id": "corpes:considerar:V",
+      "lemma": "considerar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "thought",
+        "about-treatment"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 205,
+      "id": "corpes:mantener:V",
+      "lemma": "mantener",
+      "partOfSpeech": "verb",
+      "groups": [
+        "remain-continue"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 206,
+      "id": "corpes:centro:N",
+      "lemma": "centro",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 207,
+      "id": "corpes:nivel:N",
+      "lemma": "nivel",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 208,
+      "id": "corpes:perder:V",
+      "lemma": "perder",
+      "partOfSpeech": "verb",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 209,
+      "id": "corpes:lado:N",
+      "lemma": "lado",
+      "partOfSpeech": "noun",
+      "groups": [
+        "place-part"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 210,
+      "id": "corpes:recibir:V",
+      "lemma": "recibir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "attainment",
+        "take-place"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 211,
+      "id": "corpes:abrir:V",
+      "lemma": "abrir",
+      "partOfSpeech": "verb",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 212,
+      "id": "corpes:pequeño:A",
+      "lemma": "pequeño",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "size"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 213,
+      "id": "corpes:servicio:N",
+      "lemma": "servicio",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 214,
+      "id": "corpes:proyecto:N",
+      "lemma": "proyecto",
+      "partOfSpeech": "noun",
+      "groups": [
+        "development"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 215,
+      "id": "corpes:lograr:V",
+      "lemma": "lograr",
+      "partOfSpeech": "verb",
+      "groups": [
+        "attainment"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 216,
+      "id": "corpes:general:A",
+      "lemma": "general",
+      "partOfSpeech": "adjective",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 217,
+      "id": "corpes:preguntar:V",
+      "lemma": "preguntar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "ask"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 218,
+      "id": "corpes:tanto:R",
+      "lemma": "tanto",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "degree"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 219,
+      "id": "corpes:ejemplo:N",
+      "lemma": "ejemplo",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 220,
+      "id": "corpes:madre:N",
+      "lemma": "madre",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 221,
+      "id": "corpes:libro:N",
+      "lemma": "libro",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 222,
+      "id": "corpes:convertir:V",
+      "lemma": "convertir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "make"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 223,
+      "id": "corpes:único:A",
+      "lemma": "único",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "one",
+        "identity"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 224,
+      "id": "corpes:familia:N",
+      "lemma": "familia",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 225,
+      "id": "corpes:salud:N",
+      "lemma": "salud",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 226,
+      "id": "corpes:semana:N",
+      "lemma": "semana",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 227,
+      "id": "corpes:comenzar:V",
+      "lemma": "comenzar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "begin"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 228,
+      "id": "corpes:largo:A",
+      "lemma": "largo",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "size"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 229,
+      "id": "corpes:pedir:V",
+      "lemma": "pedir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "ask"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 230,
+      "id": "corpes:desarrollo:N",
+      "lemma": "desarrollo",
+      "partOfSpeech": "noun",
+      "groups": [
+        "development"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 231,
+      "id": "corpes:derecho:N",
+      "lemma": "derecho",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 232,
+      "id": "corpes:entrar:V",
+      "lemma": "entrar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "movement"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 233,
+      "id": "corpes:escribir:V",
+      "lemma": "escribir",
+      "partOfSpeech": "verb",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 234,
+      "id": "corpes:situación:N",
+      "lemma": "situación",
+      "partOfSpeech": "noun",
+      "groups": [
+        "condition"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 235,
+      "id": "corpes:humano:A",
+      "lemma": "humano",
+      "partOfSpeech": "adjective",
+      "groups": [
+        "people"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 236,
+      "id": "corpes:aún:R",
+      "lemma": "aún",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "continuing-time"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 237,
+      "id": "corpes:palabra:N",
+      "lemma": "palabra",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 238,
+      "id": "corpes:cuerpo:N",
+      "lemma": "cuerpo",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 239,
+      "id": "corpes:mostrar:V",
+      "lemma": "mostrar",
+      "partOfSpeech": "verb",
+      "groups": [
+        "show"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 240,
+      "id": "corpes:información:N",
+      "lemma": "información",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 241,
+      "id": "corpes:cualquiera:Q",
+      "lemma": "cualquiera",
+      "partOfSpeech": "quantifier",
+      "groups": [
+        "quantifiers"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 242,
+      "id": "corpes:dentro:R",
+      "lemma": "dentro",
+      "partOfSpeech": "adverb",
+      "groups": [
+        "location-topic"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 243,
+      "id": "corpes:entender:V",
+      "lemma": "entender",
+      "partOfSpeech": "verb",
+      "groups": [
+        "knowledge"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 244,
+      "id": "corpes:relación:N",
+      "lemma": "relación",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 245,
+      "id": "corpes:tema:N",
+      "lemma": "tema",
+      "partOfSpeech": "noun",
+      "groups": [
+        "communication-nouns"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 246,
+      "id": "corpes:económico:A",
+      "lemma": "económico",
+      "partOfSpeech": "adjective",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 247,
+      "id": "corpes:ojo:N",
+      "lemma": "ojo",
+      "partOfSpeech": "noun",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    },
+    {
+      "rank": 248,
+      "id": "corpes:producir:V",
+      "lemma": "producir",
+      "partOfSpeech": "verb",
+      "groups": [
+        "make"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 249,
+      "id": "corpes:político:N",
+      "lemma": "político",
+      "partOfSpeech": "noun",
+      "groups": [
+        "political"
+      ],
+      "screening": "contrast candidate"
+    },
+    {
+      "rank": 250,
+      "id": "corpes:cuatro:M",
+      "lemma": "cuatro",
+      "partOfSpeech": "numeral",
+      "groups": [],
+      "screening": "screened; no priority overlap identified within this Day 1 comparison"
+    }
+  ],
+  "primaryReviewPass": {
+    "date": "2026-10-30",
+    "previouslyTargetedGroups": 29,
+    "completedRemainingGroups": [
+      "movement",
+      "remain-continue",
+      "make",
+      "show",
+      "speech",
+      "want-wait",
+      "about-treatment",
+      "source",
+      "duration",
+      "addition",
+      "possessives",
+      "one",
+      "quantifiers",
+      "degree",
+      "quality",
+      "size",
+      "identity",
+      "time-nouns",
+      "work",
+      "people",
+      "condition",
+      "place-part",
+      "collective",
+      "political",
+      "development",
+      "communication-nouns",
+      "life",
+      "frequency",
+      "negation-coordination",
+      "boundary",
+      "present-time"
+    ],
+    "primarySourceLog": "data/spanish-lemmas/day1-primary-source-checks.json",
+    "scope": "All 60 groups now have targeted primary-source evidence. This pass checked the stated distinctions for the 31 previously frozen-only groups; it does not certify every sense of every member of the 29 earlier groups or any alternative-answer whitelist.",
+    "excludedLookups": [
+      "https://www.rae.es/dpd/suyo",
+      "https://www.rae.es/dpd/tuyo"
+    ]
+  }
+}

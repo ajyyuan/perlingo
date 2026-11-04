@@ -32,3 +32,104 @@
 .course-study .sentence-translation>.use-translation{min-height:0;overflow:hidden;margin:0;padding:0}
 .course-study .sentence-translation[data-shown=false]{grid-template-rows:0fr;opacity:0;visibility:hidden}
 @media(prefers-reduced-motion:reduce){.course-study .sentence-translation{transition:none}}
+
+.course-study .forms-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+.course-study .forms-heading .plain { font-size:12px; }
+/* One continuous field: the selected table grows out of its neighbors. */
+.forms-focus { position:relative; }
+.tense-stage { position:relative; height:440px; overflow:hidden; isolation:isolate; }
+.tense-scene { position:absolute; top:22px; left:10%; width:80%; height:396px; box-sizing:border-box; border:1px solid var(--line); border-radius:8px; background:var(--bg,#faf9f6); box-shadow:0 4px 16px #222b2210; transform:translateX(calc(var(--offset) * 49%)) scale(.26); opacity:.5; transition:transform 420ms cubic-bezier(.22,.8,.25,1),opacity 320ms,box-shadow 320ms; transform-origin:center; }
+.tense-scene[data-active="true"] { transform:translateX(0) scale(1); opacity:1; box-shadow:0 6px 22px #222b2214; }
+.tense-scene-content { padding:17px 15px 10px; height:100%; box-sizing:border-box; overflow:auto; }
+.tense-scene h3 { margin:0 0 9px; font-size:17px; font-weight:500; }
+.forms-focus .tense-cue { font-size:11px; min-height:28px; margin:0 0 10px; }
+.forms-focus .forms-table { margin-top:0; }
+.forms-focus .forms-table th,.forms-focus .forms-table td { padding-top:3px; padding-bottom:3px; }
+.tense-scene-select { position:absolute; inset:0; width:100%; height:100%; cursor:pointer; border:0; background:transparent; border-radius:8px; }
+.tense-scene[data-active="true"] .tense-scene-select { pointer-events:none; }
+.tense-scene:has(.tense-scene-select:focus-visible) { outline:3px solid var(--accent); }
+.forms-navigation { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 7px; font-size:10px; color:var(--muted); }
+.forms-navigation kbd { font:inherit; }
+.forms-navigation .tense-arrow { border:0; background:none; color:var(--muted); font-size:22px; cursor:pointer; padding:0 6px; }
+.forms-navigation .tense-arrow:disabled { opacity:.25; cursor:default; }
+@media(prefers-reduced-motion:reduce) { .tense-scene { transition:none; } }
+
+/* Compact verb reference: one category open, singular/plural columns. */
+.verb-accordion details { border-bottom:1px solid var(--line); }
+.verb-accordion summary { display:flex; align-items:center; justify-content:space-between; cursor:pointer; padding:8px 1px; font-size:12px; color:var(--muted); list-style:none; }
+.verb-accordion summary::-webkit-details-marker { display:none; }
+.verb-accordion summary::after { content:'›'; font-size:16px; line-height:1; transition:transform 160ms; }
+.verb-accordion details[open]>summary { color:var(--ink); }
+.verb-accordion details[open]>summary::after { transform:rotate(90deg); }
+.va-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px 8px; max-height:285px; overflow:auto; padding:4px 0 14px; scrollbar-width:thin; }
+.va-chart { min-width:0; padding:4px 3px; border-radius:5px; outline-offset:1px; transition:background 140ms; }
+.va-chart.va-active { background:#edf2ed; }
+.va-chart h3 { font-size:10px; line-height:1.25; font-weight:500; margin:0 0 7px; }
+.va-rows { display:grid; gap:3px; }
+.va-rows.va-six { grid-template-rows:repeat(3,auto); grid-auto-flow:column; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:7px; }
+.va-row { min-width:0; padding:1px 0; line-height:1.2; border-bottom:1px solid #e8ebe5; font-size:9.5px; }
+.va-row button { border:0; padding:0; background:none; color:var(--accent); font:inherit; cursor:pointer; overflow-wrap:anywhere; text-align:left; }
+.va-row button:hover { text-decoration:underline; text-underline-offset:3px; }
+.va-selected { border-bottom-color:var(--accent); }
+.va-chart p { font-size:10px; line-height:1.45; color:var(--muted); margin:8px 0 0; }
+.va-navigation { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:5px 12px; min-height:28px; padding-top:11px; font-size:10px; color:var(--muted); }
+.va-navigation kbd { font:inherit; color:var(--ink); }
+.va-navigation [data-form-label] { color:var(--accent); }
+@media(max-width:600px) { .va-grid { grid-template-columns:repeat(2,minmax(0,1fr)); max-height:none; } .va-row { font-size:12px; padding:4px 0; } .va-chart h3 { font-size:11px; } }
+@media(prefers-reduced-motion:reduce) { .verb-accordion summary::after,.va-chart { transition:none; } }
+
+/* Magnifier is an overlay: the underlying grid and card never reflow. */
+.va-host { position:relative; }
+.va-zoom-person { display:none; }
+.va-zoom { position:absolute; z-index:20; box-sizing:border-box; padding:18px; background:#fffefa; border:1px solid var(--line); border-radius:10px; box-shadow:0 8px 30px #23312624; max-height:290px; overflow:auto; transform-origin:top left; }
+.va-zoom.va-active { background:#fffefa; }
+.va-zoom h3 { font-size:14px; margin-bottom:12px; }
+.va-zoom .va-rows.va-six { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(3,auto); grid-auto-flow:column; column-gap:20px; }
+.va-zoom .va-row { display:flex; flex-direction:column; gap:5px; padding:7px 0; font-size:17px; }
+.va-zoom .va-zoom-person { display:block; color:var(--muted); font-size:10px; align-self:flex-start; animation:va-label-in 240ms ease-out; }
+.va-zoom p { font-size:12px; }
+@keyframes va-label-in { from { opacity:0; } to { opacity:1; } }
+@media(prefers-reduced-motion:reduce) { .va-zoom,.va-zoom .va-zoom-person { animation:none; } }
+
+/* Growth is bounded by the category grid; headings never scale. */
+.va-zoom { padding:4px 3px; border-radius:5px; box-shadow:0 3px 12px #23312618; overflow:hidden auto; }
+.va-zoom h3 { font-size:10px; line-height:1.25; margin:0 0 7px; }
+.va-zoom .va-rows.va-six { column-gap:12px; }
+.va-zoom .va-row { gap:3px; padding:5px 0; font-size:14px; }
+.va-zoom .va-zoom-person { font-size:9px; }
+
+.va-grid .va-chart:hover:not(.va-active) { background:#f5f6f2; }
+
+/* Clear, consistent disclosure affordances. */
+.va-chart { border:1px solid #dce2d8; box-sizing:border-box; cursor:pointer; }
+.va-grid .va-chart:hover { background:#f1f4ee; border-color:#b9c8b4; }
+.va-grid .va-chart.va-active { background:#edf2e9; border-color:#b5c6ad; }
+.va-zoom,.va-zoom.va-active { background:#edf2e9; border-color:#a6b99d; }
+.va-toggle { display:block; width:100%; padding:0; border:0; background:none; text-align:left; font:inherit; color:inherit; cursor:pointer; }
+.va-toggle::after { content:'+'; float:right; color:var(--muted); font-weight:400; }
+.va-toggle[aria-expanded=true]::after { content:'−'; }
+
+/* Legible cell grid, shared by compact and expanded tables. */
+.va-rows { gap:0; border:1px solid #cdd7c7; border-radius:3px; overflow:hidden; }
+.va-rows.va-six,.va-zoom .va-rows.va-six { column-gap:0; }
+.va-row,.va-zoom .va-row { box-sizing:border-box; padding:4px; border-bottom:1px solid #cdd7c7; }
+.va-six .va-row:nth-child(-n+3) { border-right:1px solid #cdd7c7; }
+.va-six .va-row:nth-child(3),.va-row:last-child { border-bottom:0; }
+.va-row.va-selected { background:#dfe9d9; box-shadow:inset 0 0 0 1px #a9bda0; }
+.va-zoom .va-row { padding:6px; }
+.va-zoom { padding:5px; }
+.va-zoom h3 { margin-bottom:7px; }
+
+.va-grid .va-row { padding:2px 3px; }
+
+.va-row { cursor:pointer; }
+.va-row:hover { background:#e5eddf; }
+
+.va-grid .va-expanded-variant { display:none; }
+
+/* Reserve identical space for each mood; only its contents transition. */
+.verb-accordion { min-height:490px; position:relative; padding-bottom:40px; box-sizing:border-box; }
+.verb-accordion .va-grid { height:285px; max-height:285px; box-sizing:border-box; align-content:start; }
+.verb-accordion .va-navigation { position:absolute; bottom:0; left:0; right:0; }
+/* Keep the rotating disclosure glyph inside its own square footprint. */
+.verb-accordion summary::after { width:16px; height:16px; flex:0 0 16px; display:grid; place-items:center; }
