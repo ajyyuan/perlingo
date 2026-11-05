@@ -88,3 +88,5 @@ The full audio manifests now exceed the host’s 25 MiB asset limit. `build:stat
 Release backup scope: automatic approval review rejected adding the new 11.5 GB of MP3s to GitHub because of repository growth and transfer cost. The safer publication path keeps new recordings in Azure and local storage and commits code, manifests, generation ledgers and upload evidence. `.gitignore` excludes new Azure MP3s; historically tracked recordings remain untouched. A new GitHub binary backup requires explicit approval of that size.
 
 Upload completed November 4: all 182,368 reference clips and 212,304 sentence clips were newly uploaded and checksum-verified, with zero failures. Both batch-specific upload reports are retained. No storage access settings or existing immutable blobs were changed. Production build and 438 tests pass.
+
+The owner subsequently explicitly approved the 11.5 GB / 394,672-clip GitHub backup. It will be added with bounded, explicit path lists and pushed in batches; the MP3 ignore rule remains a guard against accidental future bulk additions. The application release is packaged from the code commit before these binary-only backup commits.
