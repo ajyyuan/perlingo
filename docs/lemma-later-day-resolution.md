@@ -1,6 +1,6 @@
 # Later-day content audit resolution — November 5, 2026
 
-All findings from the Claude + Codex review of the 1,250 later-day cards have an explicit correction or a justified no-change disposition. The content is implemented locally for user review, not committed or published. Audio generation is deferred to the next task.
+All findings from the Claude + Codex review of the 1,250 later-day cards have an explicit correction or a justified no-change disposition. The content is committed as `38f9e7ce6c` after user approval. Audio was subsequently completed locally; see [audio completion](lemma-later-day-audio.md). No push or publication occurred.
 
 ## What changed
 
@@ -19,7 +19,7 @@ The [original audit](lemma-later-day-claude-audit.md), Claude reports, coverage 
 
 The [context correction record](../data/spanish-lemmas/later-context-correction-audit.json) records exact before/after contexts and concepts. Tests reverse only those documented corrections and recover the prior file and assessment fingerprints; older audit records were not rewritten or their guards removed.
 
-## Validation and local review
+## Content-stage validation and local review (before audio completion)
 
 All 43 targeted curriculum/form/integrity tests pass. Full-suite results: 449 tests, 448 passing; the sole failure is the existing strict eight-voice audio-coverage check. `npm run check` and the offline generated-artifact check pass. Runtime regressions verify accepted alternatives, negative sense boundaries, immediate credit for valid variants, retry behavior for actual misspellings, and untouched sentence-cloze answer lists.
 
@@ -27,8 +27,10 @@ In the Codex browser, reloaded the local app and confirmed **miedo · temor** di
 
 Reload [the local preview](http://127.0.0.1:5173/lemmas/), search **miedo**, and open More info → Similar words and Usage notes. Also inspect **fútbol**, **guardar**, **actuación**, and **final**: explanations, selected cues, valid variants and the end/final-match distinction should agree. In a typed test, **futbol** for fútbol receives credit immediately; a genuine misspelling still offers a correction attempt.
 
-## Audio handoff
+## Original audio handoff (now completed locally)
 
 The refreshed offline inventory contains **395 missing texts per Spanish voice**: 177 comparison sentences, one revised context sentence and 217 accepted-answer words. Across eight voices, that is 3,160 clips and 47,464 characters. Existing recordings are reused; the earlier completed audio banks are not being regenerated. See [exact missing texts](../data/spanish-lemmas/later-day-audio-gap.json).
 
 No synthesis, spending, manifest change or upload occurred. The earlier $2 proposal concerned a ceiling for the incremental recording batch, not a charge incurred by the audit. Audio completion, decoding/volume validation and coverage verification remain the next separate task.
+
+The handoff above was fulfilled in the subsequent audio task. Its historical counts and content-stage test result are retained; current audio checks and review steps are in [the audio report](lemma-later-day-audio.md).

@@ -1,5 +1,5 @@
 {
-  "status": "Offline inventory after content corrections. Audio generation is deferred to the next task; no synthesis or spending performed.",
+  "status": "Historical pre-generation gap, fulfilled locally on 2026-11-05. Original target list retained as evidence; see audio/later-expansion.json and current audio/inventory.json.",
   "totalClips": 3160,
   "totalCharacters": 47464,
   "jobs": [
@@ -22203,5 +22203,7 @@
         }
       ]
     }
-  ]
+  ],
+  "remainingClips": 0,
+  "completionEvidence": "audio/later-expansion.json"
 }

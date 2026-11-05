@@ -1,6 +1,6 @@
 # Later-day Claude + Codex cross-check — November 5, 2026
 
-**Current status:** all findings in this audit have a correction or a documented no-change disposition in the [resolution report](lemma-later-day-resolution.md). Content changes remain local and uncommitted; audio is deferred.
+**Current status:** all findings in this audit have a correction or a documented no-change disposition in the [resolution report](lemma-later-day-resolution.md). Content is committed as `38f9e7ce6c`; [audio completion](lemma-later-day-audio.md) is a separate local change. Neither is published.
 
 The following is the historical audit of the pre-correction snapshot at ranks 251–1500. Counts, reproductions and “pending” language below describe that snapshot. No curriculum, runtime, recordings or saved progress were changed during the audit stage itself. The original reports and snapshot have not been rewritten to imply they audited the later corrections.
 

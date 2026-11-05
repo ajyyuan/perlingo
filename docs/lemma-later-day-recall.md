@@ -1,6 +1,6 @@
 # Days 2–6: similar words and typed recall
 
-Status: implemented locally for review on November 5, 2026. Not committed or published. Text and grading are ready to inspect; prerecorded audio completion is pending.
+Status: content committed as `38f9e7ce6c` on November 5, 2026. Prerecorded audio is now complete locally as a separate, uncommitted change; nothing has been pushed or published. See [audio completion](lemma-later-day-audio.md).
 
 The review covers all 1,250 lemma/POS cards at ranks 251–1,500. It adds 547 explicit typed policies, including 457 cards with alternatives (637 answer assignments), and 431 comparison topics displayed across 554 later-day cards. Eight cards receive comparisons without a prompt change; 695 retain their previous prompt and acceptance. Retained does **not** mean that a word has no synonyms. This is a finite review of selected-use overlap and likely learner confusion, not an exhaustive thesaurus or an independent linguistic certification.
 
@@ -25,9 +25,9 @@ For future corrections, update the source review/usage/evidence together, regene
 
 ## Audio boundary
 
-The pronunciation inventory includes exact typed alternatives, which are spoken in correct-answer feedback. After the content corrections, the gap is 395 texts per voice: 177 comparison sentences, one revised context sentence, and 217 answer words. That is 3,160 clips across eight voices (47,464 text characters total). `later-day-audio-gap.json` and `audio/inventory.json` record the current missing-text list. This is an offline inventory, not a generation job or a price quote.
+The exact typed alternatives are included in the pronunciation inventory. The pre-generation gap of 395 texts per voice has been filled: 177 comparison sentences, one revised context sentence, and 217 answer words, totaling 3,160 clips across eight voices. Existing recordings are reused. `later-day-audio-gap.json` preserves the original requested texts; `audio/inventory.json` now records current coverage. See [generation, validation and preview](lemma-later-day-audio.md).
 
-No synthesis, upload, manifest edits or spending were performed. Existing device-voice fallback remains available for missing recordings; this is not counted as prerecorded coverage. The strict eight-voice coverage test intentionally remains red until these clips are generated, validated and indexed. No assertion was weakened or missing recording hidden.
+Device speech remains available for playback/network failures. Local prerecorded coverage no longer depends on that fallback. Audio upload, publication and the audio commit remain separate from the committed curriculum.
 
 ## Local review
 
@@ -39,7 +39,7 @@ Open http://127.0.0.1:5173/lemmas/ and reload.
 4. In a later-day typed test, when the matching cue appears, try **emplear** for utilizar, **contestar** for responder, **mandar** for enviar, or **doctor** for the physician médico card. Expect “Also correct” and the card headword. A similar spelling still gets the existing retry flow. Do not expect the same synonyms to fill an unrelated sentence-cloze blank.
 5. Reload an unfinished test and confirm the queue and existing feedback remain. No saved progress was modified for browser verification.
 
-Validation and the final audit disposition are recorded in [the resolution report](lemma-later-day-resolution.md). Regressions cover all 1,250 dispositions, accepted alternatives, selected-sense rejection cases, valid spelling variants, POS boundaries, non-retroactive feedback, spelling retries, source hashes, teaching/rendered membership, and separation from recognition/cloze grading. Prerecorded completion remains a separate task.
+Validation and the final audit disposition are recorded in [the resolution report](lemma-later-day-resolution.md). Regressions cover all 1,250 dispositions, accepted alternatives, selected-sense rejection cases, valid spelling variants, POS boundaries, non-retroactive feedback, spelling retries, source hashes, teaching/rendered membership, and separation from recognition/cloze grading. Prerecorded completion is recorded in the audio report.
 
 ## Earlier second correctness audit — November 5 (historical)
 

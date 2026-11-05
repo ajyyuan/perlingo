@@ -44,3 +44,5 @@ __pycache__/
 
 # New immutable audio lives in Azure and local storage; existing tracked clips remain.
 /src/audio/azure/**/*.mp3
+
+/audio-generation/lemma-later-library/*.zip
