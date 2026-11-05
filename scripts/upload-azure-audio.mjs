@@ -2,7 +2,7 @@ import {createHmac,createHash} from 'node:crypto';
 import {readFile,readdir,writeFile,unlink} from 'node:fs/promises';
 import {resolve} from 'node:path';
 const account='perlingoaudio',container='pronunciation',root=resolve('src/audio/azure');
-const incremental=process.argv.includes('--lemma-reference')?'lemma-reference-library':process.argv.includes('--lemma-guide-sentences')?'lemma-guide-sentence-library':null;
+const incremental=process.argv.includes('--lemma-later')?'lemma-later-library':process.argv.includes('--lemma-reference')?'lemma-reference-library':process.argv.includes('--lemma-guide-sentences')?'lemma-guide-sentence-library':null;
 const keyFile=process.argv[2],rows=process.argv.includes('--lemma-rows'),lemmas=!!incremental||rows||process.argv.includes('--lemmas');
 if(!keyFile)throw Error('Pass an owner-only temporary key file; it is deleted immediately after reading.');
 const key=(await readFile(keyFile,'utf8')).trim();
