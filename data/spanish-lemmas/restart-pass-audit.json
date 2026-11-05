@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-05",
+  "scope": "Preserve pass history on explicit exam restarts after at least one third of questions, and validate optional firstAttempted metadata for partial first-pass scores. Answer matching and automatic pass transitions are unchanged.",
+  "files": {
+    "lemmas/assessment.js": {
+      "beforeSha256": "6bda04485cc08f1bd39c3ff029393b007efa66c347dd6a85d6aff86b057dc84f",
+      "afterSha256": "0a3cf8dc823b5662bbc83ba2464fe1fc943d0498ff5cd11ef24b29020bc718b7"
+    },
+    "lemmas/exam-state.js": {
+      "beforeSha256": "94a0cfcd44a589f620d781b3095afa0c4f60ec3a1d98ba27d0cdc91e01d59856",
+      "afterSha256": "d88c5ecf1e352c4c86499426a2f0a2fc5def5b28f7a9a38f00e24b7b6d64823b"
+    }
+  }
+}

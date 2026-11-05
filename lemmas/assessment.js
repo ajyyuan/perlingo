@@ -46,6 +46,7 @@ export function validTest(t,allowed){
  if(t.options!==undefined&&(!Array.isArray(t.options)||t.options.length<2||t.options.length>4||t.options.some(v=>typeof v!=='string')||new Set(t.options.map(normalize)).size!==t.options.length))return false;
  if(t.draft!==undefined&&typeof t.draft!=='string')return false;
  if(t.retry!==undefined&&(!['spelling','accents','headword','context','formSpelling'].includes(t.retry)||t.done||t.feedback!==null||t.kind==='choice'||typeof t.draft!=='string'))return false;
+ if(t.firstAttempted!==undefined&&(!Number.isInteger(t.firstAttempted)||t.firstAttempted<t.firstCorrect||t.firstAttempted>t.ids.length||t.round===1))return false;
  if(!Number.isInteger(t.firstCorrect)||t.firstCorrect<0||t.firstCorrect>t.ids.length)return false;
  return t.feedback===null||(!t.done&&typeof t.feedback?.correct==='boolean'&&typeof t.feedback?.response==='string');
 }

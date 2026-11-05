@@ -73,9 +73,11 @@ test('all simple reference forms match frozen tagged source slots and older snap
  const schedule=read('data/spanish-lemmas/six-day-schedule-audit.json').files;
  const recall=read('data/spanish-lemmas/day1-recall-audit.json').files;
  const retries=read('data/spanish-lemmas/retry-assessment-audit.json').files;
+ const restart=read('data/spanish-lemmas/restart-pass-audit.json').files;
  for(const [file,hash]of Object.entries(audit.unchanged.assessment)){
-  const current=schedule[file]?.beforeSha256??digest(file);
-  if(schedule[file]){assert.equal(recall[file]?.beforeSha256??digest(file),schedule[file].afterSha256);if(recall[file])assert.equal(retries[file]?.beforeSha256??digest(file),recall[file].afterSha256);if(retries[file])assert.equal(digest(file),retries[file].afterSha256);}
+  const chain=[schedule,recall,retries,restart].map(a=>a[file]).filter(Boolean);
+  const current=chain[0]?.beforeSha256??digest(file);
+  for(let i=0;i<chain.length;i++)assert.equal(chain[i+1]?.beforeSha256??digest(file),chain[i].afterSha256,file);
   if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(current,seedAudit.afterSha256);}
   else assert.equal(current,hash);
  }

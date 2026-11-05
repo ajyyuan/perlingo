@@ -41,7 +41,7 @@
 
 .lemma-search .search-match{font-weight:650;color:inherit}
 
-.restart-control{display:inline-flex;align-items:center;flex-wrap:wrap;gap:12px}.restart-question{font-size:14px;line-height:1.4}.restart-control [data-action="confirm-restart"]{color:var(--ink)}
+.restart-control{display:inline-flex;align-items:center;flex-wrap:wrap;gap:12px}.restart-question{font-size:14px;line-height:1.4}.restart-control [data-action="confirm-restart"]{color:#ae3427}.restart-control [data-action="cancel-restart"]{color:var(--accent)}
 
 .test-footer:has(.restart-control){display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:start}.test-footer:has(.restart-control) .sound-toggle-label{justify-self:end}.test-footer .restart-control{min-width:0;gap:8px}.test-footer .restart-question{align-self:center}
 @media(max-width:600px){.test-footer:has(.restart-control){grid-template-columns:1fr auto}.test-footer .restart-control{grid-row:2;grid-column:1 / -1}.test-footer:has(.restart-control) .rule-help{grid-row:1;grid-column:1}.test-footer:has(.restart-control) .sound-toggle-label{grid-row:1;grid-column:2}}
