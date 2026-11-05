@@ -1,5 +1,7 @@
 # Perlingo
 
+November 5 local More info update: a stable-height, internally scrolling overlay now has open/close motion and consistent disclosure sections. Reduced-motion preferences are respected. See [behavior and preview checks](docs/lemmas.md#november-5-more-info-overlay). No publication or later-day curriculum expansion is included.
+
 November 5 local typo fix: punctuation/digit typos such as `socia;` now receive the existing unscored spelling retry. See [behavior and preview checks](docs/lemmas.md#november-5-typo-retries). This update does not publish the app or include the later-day curriculum drafts.
 
 Current approved snapshot · November 4, 2026: Day 1 prompt/teaching revisions and sourced comparisons, generous correction retries, and the integrated verb accordion are implemented. The main verb reference includes bounded chart enlargement, audible keyboard navigation, fixed-height mood transitions, and whole-cell selection. Design studies remain local comparison pages. Earlier iteration notes below are historical and may describe superseded UI. The November 4 local audio expansion now covers the full pronunciation inventory; see the completion record below. Device-voice fallback remains available for playback failures. This snapshot is approved for a local commit, not publication.

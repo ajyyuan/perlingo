@@ -133,3 +133,14 @@
 .verb-accordion .va-navigation { position:absolute; bottom:0; left:0; right:0; }
 /* Keep the rotating disclosure glyph inside its own square footprint. */
 .verb-accordion summary::after { width:16px; height:16px; flex:0 0 16px; display:grid; place-items:center; }
+.study-notes-dialog{height:min(760px,85svh);max-height:calc(100dvh - 24px);padding:0;overflow:hidden}
+.study-notes-dialog[open]{display:flex;flex-direction:column;animation:notes-enter 180ms ease-out}
+.study-notes-dialog .notes-close{position:absolute;top:14px;right:16px;float:none;z-index:2;background:#fffefa}
+.study-notes-dialog .study-note-content{overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;flex:1;min-height:0;padding:26px 38px 34px}
+.study-notes-dialog .word-heading{position:sticky;top:-26px;background:#fffefa;z-index:1;padding-top:1px;padding-right:42px}
+.study-notes-dialog::backdrop{animation:notes-backdrop 180ms ease-out;transition:opacity 160ms}
+.study-notes-dialog.closing::backdrop{opacity:0}
+@keyframes notes-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes notes-backdrop{from{opacity:0}to{opacity:1}}
+@media(max-width:680px){.study-notes-dialog{padding:0}.study-notes-dialog .study-note-content{padding:22px}.study-notes-dialog .word-heading{top:-22px}}
+@media(prefers-reduced-motion:reduce){.study-notes-dialog[open],.study-notes-dialog::backdrop{animation:none;transition:none}}

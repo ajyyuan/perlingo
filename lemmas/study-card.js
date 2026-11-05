@@ -7,7 +7,7 @@ export function studyRows(note){return note.forms.map(([label,lemma])=>({label:l
 let nextNoteDialog=0;
 export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,reference=false}){
  note={...note,rows:studyRows(note)};
- let removeNotes=()=>{},anchor;
+ let removeNotes=()=>{},anchor,closing=false;
  const abort=new AbortController(),signal=abort.signal;
  const say=text=>`<button class="say" data-speak="${esc(text)}" lang="es" aria-label="Listen to ${esc(text)}">${esc(text)}</button>`;
  const stop=()=>voice.stop();
@@ -16,10 +16,18 @@ export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,ref
  root.innerHTML=`<section class="course-study ${hasForms?'':'no-form-table'}">${heading}<div class="lesson-columns" tabindex="0" role="group" aria-label="Word details"><div class="lesson-summary"><div class="word-overview"><h1 lang="es">${say(note.word)}</h1><p class="word-type">${esc(note.label)} <span class="course-rank" aria-label="Word ${note.rank} of 1500">#${note.rank}</span></p><p class="meaning-main">${esc(note.meaning)}</p></div><section class="lesson-uses" aria-label="Uses"><h2>Uses</h2>${note.examples.slice(0,1).map(e=>`<div class="use-example"><p>${exampleMarkup(e)}${sentenceAudio(e.text)}</p>${translationMarkup(e.translation)}</div>`).join('')}</section></div>${hasForms?`<section class="lesson-forms" aria-label="Forms"><div class="shared-forms"></div></section>`:''}</div><p id="audio-status" role="status"></p><div class="lesson-footer"><button class="plain" data-action="notes">More info</button>${reference?'':`<div class="lesson-steps"><button class="plain" data-action="previous" aria-label="Previous learning card" ${index===0?'disabled':''}>←</button><button class="primary" data-action="forward">${index===9?'Check these 10':'Next word'} →</button></div>`}</div></section>`;
  const dialog=document.createElement('dialog');dialog.className='study-notes-dialog';dialog.id=`study-notes-${++nextNoteDialog}`;dialog.setAttribute('aria-label','More word information');
  dialog.innerHTML='<button class="plain notes-close" aria-label="Close more info">×</button><div class="study-note-content"></div>';document.body.append(dialog);
- function openNotes(){anchor=document.activeElement;stop();removeNotes();removeNotes=mountNote(dialog.querySelector('.study-note-content'),note,concepts,{voice,heading:true,supplemental:true,overlayRoot:dialog});dialog.showModal();dialog.scrollTop=0;}
- dialog.querySelector('.notes-close').onclick=()=>dialog.close();
- dialog.addEventListener('close',()=>{removeNotes();removeNotes=()=>{};anchor?.isConnected&&anchor.focus();},{signal});
- dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();},{signal});
+ function openNotes(){anchor=document.activeElement;stop();removeNotes();removeNotes=mountNote(dialog.querySelector('.study-note-content'),note,concepts,{voice,heading:true,supplemental:true,overlayRoot:dialog});closing=false;dialog.classList.remove('closing');dialog.showModal();dialog.querySelector('.study-note-content').scrollTop=0;}
+ function closeNotes(){
+  if(closing||!dialog.open)return;closing=true;stop();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){dialog.close();return;}
+  dialog.classList.add('closing');
+  const animation=dialog.animate([{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(8px)'}],{duration:160,easing:'ease-in',fill:'forwards'});
+  animation.finished.then(()=>{if(dialog.isConnected&&dialog.open)dialog.close();animation.cancel();},()=>{});
+ }
+ dialog.querySelector('.notes-close').onclick=closeNotes;
+ dialog.addEventListener('cancel',e=>{e.preventDefault();closeNotes();},{signal});
+ dialog.addEventListener('close',()=>{removeNotes();removeNotes=()=>{};anchor?.isConnected&&anchor.focus({preventScroll:true});},{signal});
+ dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeNotes();},{signal});
  function showTenseExample(group){
   const uses=root.querySelector('.lesson-uses');
   uses.innerHTML='<h2>Uses'+(group.register?' · '+esc(group.register):'')+'</h2>'+  (group.text?`<div class="use-example"><p>${exampleMarkup(group)}${sentenceAudio(group.text)}</p>${translationMarkup(group.translation)}</div>`:`<p class="use-tip">${esc(group.notice||group.exampleNotice||'')}</p>`);

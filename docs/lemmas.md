@@ -370,3 +370,14 @@ A mistyped punctuation mark or digit is now counted by the existing edit-distanc
 Preview: on a typed social prompt at http://127.0.0.1:5173/lemmas/, submit `socia;`, then `social`: the first should offer a retry and the second should earn credit.
 
 Validation: the regression covers punctuation/digit substitutions and insertions, preservation of score/failures during the retry, and credit after correction. All 439 tests and `npm run check` passed with this fix and the separately committed More info update. Exact grading and curriculum acceptance are unchanged. No publication.
+
+## November 5: More info overlay
+
+More info now reserves a viewport-bounded height with an internally scrolling body, stable scrollbar space, a sticky word heading, and a fixed close control. Expanding sections does not resize or recenter the outer dialog. Comparison topics sit under Similar words; construction/tip prose is under Usage notes, alongside the existing grammar links, source link and My note. Opening fades/slides in over 180 ms; close-button, Escape and backdrop dismissal fade/slide out over 160 ms and restore focus without scrolling. Supported browsers animate disclosure height and opacity; other browsers retain native disclosure behavior. Reduced motion removes these animations.
+
+Preview: open http://127.0.0.1:5173/lemmas/, search for **después**, open its card and More info. Expand/collapse the comparison topics and Usage notes: the outer dialog and close button should remain stationary. Scroll the longer comparison; the heading and close control remain reachable. Close with Escape, reopen, and close with × or the backdrop. Focus should return to More info.
+
+Validation: all 439 tests from `npm test` passed, as did `npm run check`, changed-module syntax checks and whitespace checks. Browser checks confirmed identical dialog/close-control geometry before and after expanding a long comparison, and successful Escape, close-button and backdrop dismissal with focus returning to More info. No new assessment answers or account data were submitted during browser verification.
+
+
+This change contains no later-day curriculum acceptance or teaching expansion and is not a publication.

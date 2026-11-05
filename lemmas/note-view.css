@@ -70,3 +70,24 @@
 .forms-table tr.example-selected{background:var(--soft,#e8f0e9)}
 .forms-table .example-row-select:focus-visible,.forms-table .example-alternative:focus-visible{outline:2px solid var(--accent,#34735b);outline-offset:2px}
 .forms-table .example-alternative{font:inherit;font-size:.75rem;color:inherit;border:0;background:transparent;padding:4px;text-decoration:underline;cursor:pointer}
+
+/* Supplemental sections share a quiet, consistent disclosure hierarchy. */
+.supplemental-note .info-label{font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.04em;margin:0 0 8px}
+.supplemental-note .more{margin:0;border-bottom:1px solid var(--line);padding:0}
+.supplemental-note .more summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 0;color:var(--ink);font-size:16px;line-height:1.45}
+.supplemental-note .more summary::-webkit-details-marker{display:none}
+.supplemental-note .more summary::after{content:'+';color:var(--muted);font-size:20px;flex:none}
+.supplemental-note .more[open]>summary::after{content:'−'}
+.supplemental-note .recall-usage section{padding:0 0 12px}
+.supplemental-note .recall-usage section+section{border-top:1px solid var(--line);padding-top:12px}
+.supplemental-note .recall-usage h3{font-size:15px;font-weight:600;margin:10px 0}
+.supplemental-note .recall-usage .example{padding:8px 0}
+.supplemental-note .recall-usage .word-source{margin:6px 0 10px}
+.supplemental-note .concepts{margin-top:22px}
+.supplemental-note .extra-usage{padding:4px 0 8px}
+@supports(interpolate-size:allow-keywords){
+ .supplemental-note .more{interpolate-size:allow-keywords}
+ .supplemental-note .more::details-content{height:0;opacity:0;overflow:clip;transition:height 180ms ease,opacity 180ms ease,content-visibility 180ms allow-discrete}
+ .supplemental-note .more[open]::details-content{height:auto;opacity:1}
+}
+@media(prefers-reduced-motion:reduce){.supplemental-note .more::details-content{transition:none}}
