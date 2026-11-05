@@ -77,3 +77,27 @@ test('middle-dot groups resolve each form without indexing arbitrary phrase word
  for(const form of ['suya','suyas','suyo'])assert.equal(find(form)[0].id,'x');
  assert.deepEqual(find('de'),[]);assert.deepEqual(find('repente'),[]);
 });
+
+test('comparison links use course headwords, exclude the current card and preserve ambiguous choices',async()=>{
+ const {comparisonCardLinks}=await import('../lemmas/card-links.js');
+ configureCardLinks(notes,contexts.values());
+ const html=comparisonCardLinks({title:'utilizar · usar · emplear',members:['corpes:utilizar:V','corpes:emplear:V']},'corpes:utilizar:V');
+ assert.match(html,/data-lemma-card="corpes:usar:V"/);
+ assert.match(html,/data-lemma-card="corpes:emplear:V"/);
+ assert.doesNotMatch(html,/data-lemma-card="corpes:utilizar:V"/);
+ assert.equal((html.match(/data-lemma-card="corpes:emplear:V"/g)||[]).length,1);
+ assert.equal(comparisonCardLinks({title:'fue · zzunknown',members:[]},''),'');
+ const ambiguous=comparisonCardLinks({title:'médico',members:[]},'');
+ assert.match(ambiguous,/corpes:médico:N/);assert.match(ambiguous,/corpes:médico:A/);
+ assert.match(ambiguous,/<small>noun<\/small>/);assert.match(ambiguous,/<small>adjective<\/small>/);
+});
+
+test('related-card links render inside expanded comparison content on both note views',async()=>{
+ const {supplementalMarkup,usageGroupsMarkup}=await import('../lemmas/note-view.js');
+ const library=combineNotes(read('notes'),read('context'));
+ const note=library.notes.find(n=>n.id==='corpes:utilizar:V');
+ const html=supplementalMarkup(note,library.concepts);
+ assert.match(html,/<\/summary><p class="word-source related-cards"/);
+ assert.match(html,/data-lemma-card="corpes:usar:V"/);
+ assert.match(usageGroupsMarkup(note.usageGroups,note.id),/data-lemma-card="corpes:emplear:V"/);
+});
