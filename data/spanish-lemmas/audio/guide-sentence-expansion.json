@@ -1,0 +1,40 @@
+{
+  "approvedUSD": 180,
+  "proposedLimitUSD": 180,
+  "authorizationStatus": "approved",
+  "sampleUSD": 0,
+  "estimatedSynthesisUSD": 162.71832,
+  "uploadReserveUSD": 2,
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "jobCount": 216,
+  "newClips": 212304,
+  "characters": 10847888,
+  "status": "Generated and validated locally; uploaded and checksum-verified on existing Azure host. App publication pending.",
+  "nodeTests": {
+    "passed": 435,
+    "failed": 0
+  },
+  "browserInteractionChecksPassed": 38,
+  "approvalDate": "2026-11-04",
+  "approvalScope": "User approved $180 incremental generation cap for this frozen sentence batch; local generation and validation only.",
+  "browserAudioChecks": {
+    "passed": 24,
+    "failed": 0,
+    "voices": 8,
+    "deviceVoiceFallbacks": 0
+  },
+  "courseTextsPerVoice": 90007,
+  "missingRecordings": 0,
+  "decodedAndMeasuredClips": 212304,
+  "providerReportedBulkCharacters": 10847888,
+  "providerCharacterCostUSD": 162.71832,
+  "costNote": "Calculated from provider-reported characters at $15/M, before tax/credits; not an invoice.",
+  "checks": [
+    "npm test",
+    "npm run check",
+    "npm run check:audio"
+  ],
+  "previousManifestEntriesPreserved": 577144,
+  "publicationAuthorization": "User requested commit, push and publish on November 4, 2026.",
+  "uploadReport": "audio-generation/lemma-guide-sentence-library/upload-validation.json"
+}

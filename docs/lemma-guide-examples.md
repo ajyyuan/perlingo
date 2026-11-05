@@ -1,0 +1,33 @@
+# Full verb-guide examples — local implementation
+
+The normal `/lemmas/` card now keeps its Uses sentence synchronized with the selected chart, person and exact alternative. Mouse selection, `[ / ]`, `- / =`, mood changes and Space replay use the same selection. Replaying an unchanged form does not rebuild the sentence or reset its translation control. Nonverb cards are unchanged. The current accordion starts with its first present row; the earlier frequency-seeded starting-row implementation remains in the legacy forms renderer and is not described here as active.
+
+The expansion covers all 369 verbs in the 1,500-lemma course, not only Day 1. There are 45,069 displayed form/alternative choices: 44,552 sentence mappings and 517 contextual restrictions, plus 13 notice-only charts with no forms. Counts include shared spellings and reused sentences, not 44,552 unique sentences. The generated evidence lists each restriction in `data/spanish-lemmas/tense-examples/guide-example-audit.json`.
+
+`lemmas/guide-examples.js` uses the existing authored lexical row bank and explicit construction templates. It uses frozen conjugations, not guessed Spanish morphology or live AI. Standard rows retain their existing sentences; additional templates cover all compound tenses, both imperfect/pluperfect subjunctive variants, future subjunctives, the preterite anterior, nosotros commands, infinitives, gerunds and participles. Participles are illustrated with haber, avoiding a false assumption that every participle works as an adjective. Literary examples are labeled in Uses. Stative gerunds use concessive contexts instead of indiscriminately forcing estar + gerund. Soliendo retains an explicit rare-form explanation. Existing taught-sense restrictions remain; no forced personal examples are added for thing/event-only frames.
+
+The templates distinguish the Spanish subject from the English experiencer for gustar, auxiliary from existential haber, restricted soler, and the regional participle descripto. Nonfinite clauses use a controlled subject or supply an explicit subject; compound gerunds describe an earlier situation. A past-subjunctive possibility example may use English “would” to make the subsequent-event reading explicit. Third-person examples illustrate one subject, not every possible él/ella/usted interpretation. The rows' person slots are retained through the guide builder so restricted two-row tables do not get mapped as yo/tú.
+
+The shared English builder also now handles have → had. This fixes older tener row translations (including the frequency-pilot output) (“haved”) at their source, rather than patching only the new examples. Spanish texts in the old row bank are unchanged by that correction.
+
+## Source comparison
+
+Checked November 4, 2026. These are authored teaching examples, not quotations or corpus-attested sentences. Sources support the constructions and restrictions; they do not independently certify every lexical/template combination.
+
+- [El Colegio de México: use of verb tenses](https://dem.colmex.mx/Tiempos/Verbales): perfect-tense reference times, relative subjunctive time, and formal/literary use of the preterite anterior and future subjunctives. Examples use an explicit past reference, future deadline, past possibility, or conditional setting as appropriate.
+- [RAE/ASALE: gerundio](https://www.rae.es/dpd/gerundio), especially §§3–7: explicit/implicit subjects, simple versus compound gerunds, anteriority and concessive use. The English translation of an absolute gerund uses a finite clause when necessary to avoid a dangling English modifier.
+- [RAE/ASALE: haber](https://www.rae.es/dpd/haber), §§3–4: auxiliary haber plus an invariant participle, existential singular agreement, and the absence of ordinary modern commands.
+- [FundéuRAE: hubiera / habría](https://www.fundeu.es/consulta/hubiera-por-habria-23847/): conditional-perfect and subjunctive constructions must be chosen according to their syntactic context, not treated as universally interchangeable.
+- Existing lexical frames, exceptional commands and subject mappings retain the source comparison documented in [row examples](lemma-row-examples.md) and [tense examples](lemma-tense-examples.md).
+
+## Validation and local review
+
+`node scripts/audit-lemma-guide-examples.mjs` exhaustively checks the displayed inventory, matching targets, translations and every clickable word gloss, and writes counts, explicit restrictions and source hashes. `tests/lemma-guide-examples.test.js` additionally checks reference-time examples, rare-register labels, nosotros commands, regional alternatives, nonfinite subjects and haber/gustar behavior. Browser interaction tests check sentence synchronization and exact-alternative replay alongside chart stability and navigation.
+
+Open `/lemmas/`, search tener and select different cells. Compare past perfect with future perfect; select tuviera then tuviese; try haber’s auxiliary and impersonal rows, describir’s descripto, and nonfinite forms. Translation and whole-sentence pronunciation stay in the existing Uses area. No grades, answers or account progress are changed by this work.
+
+Audio status: the previous $50-approved batch and the separate $180-approved sentence batch are complete locally. The latter added 212,304 recordings across eight voices. Every new file passed hash/frame validation and full decoding/volume measurement. The inventory includes every guide sentence and clickable word: all 90,007 current texts are covered in all eight voices. Existing manifest entries are preserved. Provider-reported characters imply $162.71832 before tax/credits (not an invoice). No commit, upload or publication.
+
+Validation result: all 435 Node tests, `npm run check`, and `npm run check:audio` pass. The 38 browser interaction checks passed during the sentence implementation; after audio generation, 24 actual recording-playback checks passed across all eight voices with no device-voice fallback. Re-run the playback harness at `/tests/browser/guide-audio.html` and click **Check all eight voices**; it does not change preferences or progress. The frozen batch contains 216 jobs / 212,304 clips / 10,847,888 provider-reported characters. File checks establish coverage and decodability, not an independent phonetic review of every recording.
+
+Release update (November 4): commit, push and publication authorized. Both audio batches are uploaded and checksum-verified; all 438 tests pass after adding hosted-manifest regression coverage. The build now loads region/gender manifest shards; local full manifests remain supported. The earlier local-only status above describes the pre-release checkpoint.

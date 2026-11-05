@@ -22,7 +22,7 @@ export function mountStudyCard(root,note,concepts,{voice,speak,heading,index,ref
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();},{signal});
  function showTenseExample(group){
   const uses=root.querySelector('.lesson-uses');
-  uses.innerHTML='<h2>Uses</h2>'+ (group.text?`<div class="use-example"><p>${exampleMarkup(group)}${sentenceAudio(group.text)}</p>${translationMarkup(group.translation)}</div>`:`<p class="use-tip">${esc(group.notice||group.exampleNotice||'')}</p>`);
+  uses.innerHTML='<h2>Uses'+(group.register?' · '+esc(group.register):'')+'</h2>'+  (group.text?`<div class="use-example"><p>${exampleMarkup(group)}${sentenceAudio(group.text)}</p>${translationMarkup(group.translation)}</div>`:`<p class="use-tip">${esc(group.notice||group.exampleNotice||'')}</p>`);
  }
  const removeForms=hasForms?mountForms(root.querySelector('.shared-forms'),note,{voice,onExample:showTenseExample,cardNavigation:!reference,showHeading:true}):()=>{};
  const removeTranslation=bindTranslationToggle(root);

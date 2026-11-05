@@ -56,12 +56,12 @@ export function verbGuide(note) {
     if (note.word === 'soler') continue;
     const auxiliaries = haber[aux] || haberExtra[aux];
     lessons.set(id,{title,
-      rows:compoundSubjects.map(({slot,sourceLabel})=>({sourceLabel,alternatives:auxiliaries[slot].flatMap(a=>pp.map(p=>a+' '+p))}))
+      rows:compoundSubjects.map(({slot,sourceLabel})=>({slot,sourceLabel,alternatives:auxiliaries[slot].flatMap(a=>pp.map(p=>a+' '+p))}))
     });
   }
   for (const [id,title] of [['pastSubjunctive','Imperfect subjunctive'],['futureSubjunctive','Future subjunctive']]) {
     if (id === 'futureSubjunctive' && note.word === 'soler') continue;
-    const rows = subjects.map(({slot,sourceLabel})=>({sourceLabel,alternatives:extra[id][slot]}));
+    const rows = subjects.map(({slot,sourceLabel})=>({slot,sourceLabel,alternatives:extra[id][slot]}));
     if (note.word === 'haber') rows.push({sourceLabel:'impersonal',alternatives:extra[id][2]});
     lessons.set(id,{title,rows});
   }

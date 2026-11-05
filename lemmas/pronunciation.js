@@ -1,3 +1,4 @@
+import {loadAudioManifest} from '../src/audio-manifest.js';
 import {createCardPreloader,cardAudioTexts} from './audio-preload.js';
 import {createLevelLookup,playbackUrl} from './recording-levels.js';
 import {audioBaseUrl} from '../src/audio-host.js';
@@ -11,7 +12,7 @@ import {voiceSettings,voiceSettingsKey,lemmaPronouncer} from './pronunciation-se
 export function createLemmaVoice({onOpen=()=>{}}={}){
  let settings;try{settings=voiceSettings(JSON.parse(localStorage.getItem(voiceSettingsKey)));}catch{settings=voiceSettings();}
  const manifests=new Map();
- const load=name=>{if(!manifests.has(name))manifests.set(name,fetch('/src/audio/azure/'+name,{signal:AbortSignal.timeout(5000)}).then(r=>{if(!r.ok)throw Error('Audio manifest unavailable');return r.json();}).catch(e=>{manifests.delete(name);throw e;}));return manifests.get(name);};
+ const load=name=>{if(!manifests.has(name))manifests.set(name,loadAudioManifest('/src/audio/azure/'+name).catch(e=>{manifests.delete(name);throw e;}));return manifests.get(name);};
  const getLevel=createLevelLookup();
  const boost=createPronunciationBoost(window.AudioContext||window.webkitAudioContext,{getLevel});
  const preloader=createCardPreloader({

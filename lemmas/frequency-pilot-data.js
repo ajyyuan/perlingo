@@ -249,13 +249,13 @@ export const frequencyPilot = {
     },
     "preterite": {
       "text": "Ayer yo tuve tiempo.",
-      "translation": "Yesterday I haved time.",
+      "translation": "Yesterday I had time.",
       "target": "tuve",
       "slot": 0,
       "wordMeanings": {
         "ayer": "yesterday",
         "yo": "I",
-        "tuve": "haved time (with the following words)",
+        "tuve": "had time (with the following words)",
         "tiempo": "time"
       }
     },
@@ -299,13 +299,13 @@ export const frequencyPilot = {
     },
     "perfect": {
       "text": "Yo he tenido tiempo.",
-      "translation": "I have haved time.",
+      "translation": "I have had time.",
       "target": "he tenido",
       "slot": 0,
       "wordMeanings": {
         "yo": "I",
         "he": "I have (auxiliary)",
-        "tenido": "have haved time (with the following words)",
+        "tenido": "have had time (with the following words)",
         "tiempo": "time"
       }
     },

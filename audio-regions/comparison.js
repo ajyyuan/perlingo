@@ -1,3 +1,4 @@
+import {loadAudioManifest} from '../src/audio-manifest.js';
 import {ipaFor} from '../src/ipa.js';
 import {audioBaseUrl} from '../src/audio-host.js';
 import {pronunciationRegions} from '../src/pronunciation-control.js';
@@ -26,4 +27,4 @@ function render(){
  }
  container.setAttribute('aria-busy','false');status.textContent='';
 }
-try{const files=['manifest.json','manifest-feminine.json'];const results=await Promise.all(files.map(async file=>{const r=await fetch('../src/audio/azure/'+file);if(!r.ok)throw Error('manifest');return r.json();}));manifests={masculine:results[0],feminine:results[1]};render();}catch{container.setAttribute('aria-busy','false');status.textContent='Could not load recordings. Reload to try again.';}
+try{const files=['manifest.json','manifest-feminine.json'];const results=await Promise.all(files.map(file=>loadAudioManifest('/src/audio/azure/'+file)));manifests={masculine:results[0],feminine:results[1]};render();}catch{container.setAttribute('aria-busy','false');status.textContent='Could not load recordings. Reload to try again.';}

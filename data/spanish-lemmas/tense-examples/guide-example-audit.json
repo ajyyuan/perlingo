@@ -1,0 +1,4231 @@
+{
+  "scope": "Every displayed verb-guide row and alternative, across the 369 verbs in the 1500-lemma course",
+  "method": "Reviewed lexical row frames plus explicit source-compared construction templates; not corpus attestations or independent certification of every sentence",
+  "verbs": 369,
+  "sentences": 44552,
+  "notices": 517,
+  "emptyCharts": 13,
+  "byLesson": {
+    "nonfinite": {
+      "sentences": 1845,
+      "notices": 1
+    },
+    "present": {
+      "sentences": 2187,
+      "notices": 16
+    },
+    "preterite": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "imperfect": {
+      "sentences": 2187,
+      "notices": 16
+    },
+    "future": {
+      "sentences": 2181,
+      "notices": 16
+    },
+    "conditional": {
+      "sentences": 2181,
+      "notices": 16
+    },
+    "perfect": {
+      "sentences": 2191,
+      "notices": 12
+    },
+    "pastPerfect": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "futurePerfect": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "conditionalPerfect": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "subjunctive": {
+      "sentences": 2187,
+      "notices": 16
+    },
+    "pastSubjunctive": {
+      "sentences": 4382,
+      "notices": 24
+    },
+    "perfectSubjunctive": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "pluperfectSubjunctive": {
+      "sentences": 4370,
+      "notices": 24
+    },
+    "commands": {
+      "sentences": 1681,
+      "notices": 140
+    },
+    "negative": {
+      "sentences": 1680,
+      "notices": 140
+    },
+    "pastAnterior": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "futureSubjunctive": {
+      "sentences": 2185,
+      "notices": 12
+    },
+    "futurePerfectSubjunctive": {
+      "sentences": 2185,
+      "notices": 12
+    }
+  },
+  "restrictions": [
+    {
+      "id": "corpes:poder:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "puede",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "pueda",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "podamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "poded",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "puedan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no puedas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no pueda",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no podamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no podáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poder:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no puedan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:saber:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no sepas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:saber:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no sepa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:saber:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no sepamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:saber:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no sepáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:saber:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no sepan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "debe",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "deba",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "debamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "debed",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "deban",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no debas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no deba",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no debamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no debáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:deber:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no deban",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "parece",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "parezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "parezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "pareced",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "parezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no parezcas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no parezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no parezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no parezcáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:parecer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no parezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "existe",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "exista",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "existamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "existid",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "existan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no existas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no exista",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no existamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no existáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:existir:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no existan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "gusta",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "guste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "gustemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "gustad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "gusten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no gustes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no guste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no gustemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no gustéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:gustar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no gusten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "necesita",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "necesite",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "necesitemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "necesitad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "necesiten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no necesites",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no necesite",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no necesitemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no necesitéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:necesitar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no necesiten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "muere",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "muera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "muramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "morid",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "mueran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no mueras",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no muera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no muramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no muráis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:morir:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no mueran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "resulta",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "resulte",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "resultemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "resultad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "resulten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no resultes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no resulte",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no resultemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no resultéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:resultar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no resulten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "cae",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "caiga",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "caigamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "caed",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "caigan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no caigas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no caiga",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no caigamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no caigáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no caigan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sufrir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "sufre",
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    },
+    {
+      "id": "corpes:sufrir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "sufra",
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    },
+    {
+      "id": "corpes:sufrir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "suframos",
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    },
+    {
+      "id": "corpes:sufrir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "sufrid",
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    },
+    {
+      "id": "corpes:sufrir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "sufran",
+      "notice": "Suffering is not normally a voluntary action; no everyday affirmative instruction is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "present",
+      "row": 0,
+      "alternative": 0,
+      "target": "nazco",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "present",
+      "row": 1,
+      "alternative": 0,
+      "target": "naces",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "present",
+      "row": 3,
+      "alternative": 0,
+      "target": "nacemos",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "present",
+      "row": 4,
+      "alternative": 0,
+      "target": "nacéis",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "imperfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "nacía",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "imperfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "nacías",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "imperfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "nacíamos",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "imperfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "nacíais",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "future",
+      "row": 0,
+      "alternative": 0,
+      "target": "naceré",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "future",
+      "row": 1,
+      "alternative": 0,
+      "target": "nacerás",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "future",
+      "row": 3,
+      "alternative": 0,
+      "target": "naceremos",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "future",
+      "row": 4,
+      "alternative": 0,
+      "target": "naceréis",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "conditional",
+      "row": 0,
+      "alternative": 0,
+      "target": "nacería",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "conditional",
+      "row": 1,
+      "alternative": 0,
+      "target": "nacerías",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "conditional",
+      "row": 3,
+      "alternative": 0,
+      "target": "naceríamos",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "conditional",
+      "row": 4,
+      "alternative": 0,
+      "target": "naceríais",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "subjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "nazca",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "subjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "nazcas",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "subjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "nazcamos",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "subjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "nazcáis",
+      "notice": "For a living speaker, literal birth is normally described in a past tense. Choose Past for a natural example with this person."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "nace",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "nazca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "nazcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "naced",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "nazcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no nazcas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no nazca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no nazcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no nazcáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:nacer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no nazcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:soler:V",
+      "lesson": "nonfinite",
+      "row": 1,
+      "alternative": 0,
+      "target": "soliendo",
+      "notice": "Soliendo is a rare gerund. For everyday habits, use suelo or solía with an infinitive; it is not a routine progressive form."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "significa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "signifique",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "signifiquemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "significad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "signifiquen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no signifiques",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no signifique",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no signifiquemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no signifiquéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:significar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no signifiquen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "requiere",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "requiera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "requiramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "requerid",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "requieran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no requieras",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no requiera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no requiramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no requiráis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:requerir:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no requieran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "funciona",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "funcione",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "funcionemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "funcionad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "funcionen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no funciones",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no funcione",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no funcionemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no funcionéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:funcionar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no funcionen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "falta",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "falte",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "faltemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "faltad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "falten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no faltes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no falte",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no faltemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no faltéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:faltar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no falten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "desea",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "desee",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "deseemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "desead",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "deseen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no desees",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no desee",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no deseemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no deseéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:desear:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no deseen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "depende",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "dependa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "dependamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "depended",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "dependan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no dependas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no dependa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no dependamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no dependáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:depender:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no dependan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "prefiere",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "prefiera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "prefiramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "preferid",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "prefieran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no prefieras",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no prefiera",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no prefiramos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no prefiráis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:preferir:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no prefieran",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "surge",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "surja",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "surjamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "surgid",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "surjan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no surjas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no surja",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no surjamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no surjáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:surgir:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no surjan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "vale",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "valga",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "valgamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "valed",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "valgan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no valgas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no valga",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no valgamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no valgáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:valer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no valgan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "suena",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "suene",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "sonemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "sonad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "suenen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no suenes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no suene",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no sonemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no sonéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:sonar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no suenen",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "present",
+      "row": 0,
+      "alternative": 0,
+      "target": "cuesto",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "present",
+      "row": 1,
+      "alternative": 0,
+      "target": "cuestas",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "present",
+      "row": 3,
+      "alternative": 0,
+      "target": "costamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "present",
+      "row": 4,
+      "alternative": 0,
+      "target": "costáis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "preterite",
+      "row": 0,
+      "alternative": 0,
+      "target": "costé",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "preterite",
+      "row": 1,
+      "alternative": 0,
+      "target": "costaste",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "preterite",
+      "row": 3,
+      "alternative": 0,
+      "target": "costamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "preterite",
+      "row": 4,
+      "alternative": 0,
+      "target": "costasteis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "imperfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "costaba",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "imperfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "costabas",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "imperfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "costábamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "imperfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "costabais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "future",
+      "row": 0,
+      "alternative": 0,
+      "target": "costaré",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "future",
+      "row": 1,
+      "alternative": 0,
+      "target": "costarás",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "future",
+      "row": 3,
+      "alternative": 0,
+      "target": "costaremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "future",
+      "row": 4,
+      "alternative": 0,
+      "target": "costaréis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditional",
+      "row": 0,
+      "alternative": 0,
+      "target": "costaría",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditional",
+      "row": 1,
+      "alternative": 0,
+      "target": "costarías",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditional",
+      "row": 3,
+      "alternative": 0,
+      "target": "costaríamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditional",
+      "row": 4,
+      "alternative": 0,
+      "target": "costaríais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "he costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "has costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "hemos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habéis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "había costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habías costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habíamos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habíais costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habré costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrás costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habremos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habréis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditionalPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habría costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditionalPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrías costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditionalPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habríamos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "conditionalPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habríais costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "subjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "cueste",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "subjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "cuestes",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "subjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "costemos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "subjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "costéis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "costara",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "costase",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "costaras",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "costases",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "costáramos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "costásemos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "costarais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "costaseis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "haya costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hayas costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hayamos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hayáis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiera costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "hubiese costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieras costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "hubieses costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéramos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "hubiésemos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubierais costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "hubieseis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "cuesta",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "cueste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "costemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "costad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "cuesten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no cuestes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no cueste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no costemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no costéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no cuesten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastAnterior",
+      "row": 0,
+      "alternative": 0,
+      "target": "hube costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastAnterior",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubiste costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastAnterior",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubimos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "pastAnterior",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubisteis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futureSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "costare",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futureSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "costares",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futureSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "costáremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futureSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "costareis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiere costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieres costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéremos costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:costar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubiereis costado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "posee",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "posea",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "poseamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "poseed",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "posean",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no poseas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no posea",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no poseamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no poseáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:poseer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no posean",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "pertenece",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "pertenezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "pertenezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "perteneced",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "pertenezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no pertenezcas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no pertenezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no pertenezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no pertenezcáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:pertenecer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no pertenezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "cabe",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "quepa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "quepamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "cabed",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "quepan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no quepas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no quepa",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no quepamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no quepáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:caber:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no quepan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "present",
+      "row": 0,
+      "alternative": 0,
+      "target": "duro",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "present",
+      "row": 1,
+      "alternative": 0,
+      "target": "duras",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "present",
+      "row": 3,
+      "alternative": 0,
+      "target": "duramos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "present",
+      "row": 4,
+      "alternative": 0,
+      "target": "duráis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "preterite",
+      "row": 0,
+      "alternative": 0,
+      "target": "duré",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "preterite",
+      "row": 1,
+      "alternative": 0,
+      "target": "duraste",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "preterite",
+      "row": 3,
+      "alternative": 0,
+      "target": "duramos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "preterite",
+      "row": 4,
+      "alternative": 0,
+      "target": "durasteis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "imperfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "duraba",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "imperfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "durabas",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "imperfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "durábamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "imperfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "durabais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "future",
+      "row": 0,
+      "alternative": 0,
+      "target": "duraré",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "future",
+      "row": 1,
+      "alternative": 0,
+      "target": "durarás",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "future",
+      "row": 3,
+      "alternative": 0,
+      "target": "duraremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "future",
+      "row": 4,
+      "alternative": 0,
+      "target": "duraréis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditional",
+      "row": 0,
+      "alternative": 0,
+      "target": "duraría",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditional",
+      "row": 1,
+      "alternative": 0,
+      "target": "durarías",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditional",
+      "row": 3,
+      "alternative": 0,
+      "target": "duraríamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditional",
+      "row": 4,
+      "alternative": 0,
+      "target": "duraríais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "he durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "has durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "hemos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habéis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "había durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habías durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habíamos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habíais durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habré durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrás durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habremos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habréis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditionalPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habría durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditionalPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrías durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditionalPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habríamos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "conditionalPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habríais durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "subjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "dure",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "subjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "dures",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "subjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "duremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "subjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "duréis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "durara",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "durase",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "duraras",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "durases",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "duráramos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "durásemos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "durarais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "duraseis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "haya durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hayas durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hayamos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hayáis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiera durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "hubiese durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieras durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "hubieses durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéramos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "hubiésemos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubierais durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "hubieseis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "dura",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "dure",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "duremos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "durad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "duren",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no dures",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no dure",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no duremos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no duréis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no duren",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastAnterior",
+      "row": 0,
+      "alternative": 0,
+      "target": "hube durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastAnterior",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubiste durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastAnterior",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubimos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "pastAnterior",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubisteis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futureSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "durare",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futureSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "durares",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futureSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "duráremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futureSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "durareis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiere durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieres durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéremos durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:durar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubiereis durado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "merece",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "merezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "merezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "mereced",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "merezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no merezcas",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no merezca",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no merezcamos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no merezcáis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:merecer:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no merezcan",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "present",
+      "row": 0,
+      "alternative": 0,
+      "target": "basto",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "present",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastas",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "present",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "present",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastáis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "preterite",
+      "row": 0,
+      "alternative": 0,
+      "target": "basté",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "preterite",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastaste",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "preterite",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "preterite",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastasteis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "imperfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "bastaba",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "imperfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastabas",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "imperfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastábamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "imperfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastabais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "future",
+      "row": 0,
+      "alternative": 0,
+      "target": "bastaré",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "future",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastarás",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "future",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastaremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "future",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastaréis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditional",
+      "row": 0,
+      "alternative": 0,
+      "target": "bastaría",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditional",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastarías",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditional",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastaríamos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditional",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastaríais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "he bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "has bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "hemos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habéis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "había bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habías bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habíamos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habíais bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habré bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrás bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habremos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habréis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditionalPerfect",
+      "row": 0,
+      "alternative": 0,
+      "target": "habría bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditionalPerfect",
+      "row": 1,
+      "alternative": 0,
+      "target": "habrías bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditionalPerfect",
+      "row": 3,
+      "alternative": 0,
+      "target": "habríamos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "conditionalPerfect",
+      "row": 4,
+      "alternative": 0,
+      "target": "habríais bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "subjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "baste",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "subjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastes",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "subjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastemos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "subjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastéis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "bastara",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "bastase",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastaras",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "bastases",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastáramos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "bastásemos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastarais",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "bastaseis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "haya bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hayas bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hayamos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "perfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hayáis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiera bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 0,
+      "alternative": 1,
+      "target": "hubiese bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieras bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 1,
+      "alternative": 1,
+      "target": "hubieses bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéramos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 3,
+      "alternative": 1,
+      "target": "hubiésemos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubierais bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pluperfectSubjunctive",
+      "row": 4,
+      "alternative": 1,
+      "target": "hubieseis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "commands",
+      "row": 0,
+      "alternative": 0,
+      "target": "basta",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "commands",
+      "row": 1,
+      "alternative": 0,
+      "target": "baste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "commands",
+      "row": 2,
+      "alternative": 0,
+      "target": "bastemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "commands",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastad",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "commands",
+      "row": 4,
+      "alternative": 0,
+      "target": "basten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "negative",
+      "row": 0,
+      "alternative": 0,
+      "target": "no bastes",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "negative",
+      "row": 1,
+      "alternative": 0,
+      "target": "no baste",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "negative",
+      "row": 2,
+      "alternative": 0,
+      "target": "no bastemos",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "negative",
+      "row": 3,
+      "alternative": 0,
+      "target": "no bastéis",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "negative",
+      "row": 4,
+      "alternative": 0,
+      "target": "no basten",
+      "notice": "Commands are not usual for this meaning; no everyday example is given."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastAnterior",
+      "row": 0,
+      "alternative": 0,
+      "target": "hube bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastAnterior",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubiste bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastAnterior",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubimos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "pastAnterior",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubisteis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futureSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "bastare",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futureSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "bastares",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futureSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "bastáremos",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futureSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "bastareis",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 0,
+      "alternative": 0,
+      "target": "hubiere bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 1,
+      "alternative": 0,
+      "target": "hubieres bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 3,
+      "alternative": 0,
+      "target": "hubiéremos bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    },
+    {
+      "id": "corpes:bastar:V",
+      "lesson": "futurePerfectSubjunctive",
+      "row": 4,
+      "alternative": 0,
+      "target": "hubiereis bastado",
+      "notice": "This meaning uses a thing or event as its subject. Choose a singular or plural third-person row for an example."
+    }
+  ],
+  "sha256": {
+    "lemmas/guide-examples.js": "71b0917d3564256b57d81484357dbe992f26890d18d244cfe620091db9cb13fc",
+    "lemmas/row-examples-data.js": "f5c4322d4fc0b27dcfe4ce0fb636853e41ccc8173f70aa17ea2fd0945e01f54c",
+    "lemmas/verb-guide.js": "89587ad5ab1c395de5c47111a76b4d6c0a23977b451d70fdc232c9a5741a4db4",
+    "lemmas/verb-guide-data.js": "7a2b1fe25268dab3c6d481642b0040f16e1996cfac68b3c1f6c893efb49b28fd",
+    "lemmas/verb-forms-data.js": "547f29015b21d1ecd720b8206d487537180c084863b6875ab5ac9fa4a1d23fc3"
+  }
+}

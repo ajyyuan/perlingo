@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync, mkdtempSync, mkdirSync, copyFileSync, rmSync} from 'node:fs';
+import {writeFileSync, readFileSync, mkdtempSync, mkdirSync, copyFileSync, rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -35,7 +35,12 @@ test('static build retains Learning canonical and gives home fallback the Lemmas
  try {
   for (const dir of ['src','audio-regions','lemmas']) mkdirSync(join(root, dir));
   for (const file of ['_redirects','index.html','about.html','privacy.html','content-review.html','lemmas/index.html','audio-regions/index.html']) copyFileSync(file, join(root, file));
+  mkdirSync(join(root,'src/audio/azure'),{recursive:true});
+  for(const name of ['manifest.json','manifest-feminine.json'])writeFileSync(join(root,'src/audio/azure',name),JSON.stringify({regions:{'es-ES':'voice'},clips:{'es-ES':{hola:'es-ES/test.mp3'}}}));
   execFileSync(process.execPath, [resolve('scripts/build-static.mjs')], {cwd: root, env: {...process.env, PERLINGO_AUDIO_BASE_URL: ''}});
+  const audioIndex=JSON.parse(readFileSync(join(root,'dist/src/audio/azure/manifest.json'),'utf8'));
+  assert.deepEqual(audioIndex.clips,{});
+  assert.deepEqual(JSON.parse(readFileSync(join(root,'dist/src/audio/azure',audioIndex.clipShards['es-ES']),'utf8')),{hola:'es-ES/test.mp3'});
   canonical(readFileSync(join(root,'dist/learning/index.html'),'utf8'), '/learning/');
   canonical(readFileSync(join(root,'dist/index.html'),'utf8'), '/lemmas/');
   const rules = readFileSync(join(root,'dist/_redirects'),'utf8').split('\n').filter(line => line && !line.startsWith('#'));

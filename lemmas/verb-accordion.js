@@ -1,4 +1,6 @@
 import {verbGuide} from './verb-guide.js';
+import {guideExample} from './guide-examples.js';
+import {exampleMarkup,sentenceAudio} from './sentence-help.js';
 import {esc} from './html.js';
 export function stepReferenceForm(lessons,active,row,direction){
  const forms=lessons.flatMap((lesson,index)=>lesson.rows.map((_,slot)=>({active:index,row:slot})));
@@ -16,11 +18,22 @@ export function stepReferenceChart(lessons,active,row,direction){
  const match=lessons[next].rows.findIndex(r=>r.sourceLabel===label);
  return {active:next,row:match<0?0:match};
 }
-export function mountVerbAccordion(host,note,{voice,showHeading=false}={}){
+export function mountVerbAccordion(host,note,{voice,showHeading=false,onExample}={}){
  const groups=verbGuide(note),order=['Indicative','Subjunctive','Commands','Nonfinite forms','Literary & legal'];
  const sections=order.map(title=>groups.find(g=>g.category===title)).filter(Boolean),lessons=sections.flatMap(g=>g.lessons);
  let active=0,row=0,selectedText='';
  host.innerHTML=`${showHeading?'<h2>Forms</h2>':''}<div class="verb-accordion">${sections.map((g,i)=>`<details ${i===0?'open':''}><summary>${esc(g.category==='Commands'?'Imperative':g.category)}</summary><div class="va-grid">${g.lessons.map(l=>`<section class="va-chart" data-chart="${l.id}" tabindex="0" aria-label="${esc(l.title)}"><h3><button class="va-toggle" data-chart-toggle aria-expanded="false">${esc(l.title)}</button></h3><div class="va-rows ${l.rows.length===6?'va-six':''}">${l.rows.map((r,j)=>`<div class="va-row" data-row="${j}" title="${esc(r.sourceLabel)}"><span class="va-zoom-person">${esc(r.sourceLabel)}</span><span>${r.alternatives.map((f,i)=>`<span class="${['pastSubjunctive','pluperfectSubjunctive'].includes(l.id)&&/se(?:s|mos|is|n)?$/.test(f.split(' ')[0].normalize('NFD').replace(/[\u0300-\u036f]/g,''))?'va-expanded-variant':''}">${i?' / ':''}<button data-speak="${esc(f)}" aria-label="${esc(r.sourceLabel+': '+f)}" lang="es">${esc(f)}</button></span>`).join('')}</span></div>`).join('')}</div>${l.notice?`<p>${esc(l.notice)}</p>`:''}${l.note?`<p>${esc(l.note)}</p>`:''}</section>`).join('')}</div></details>`).join('')}<div class="va-navigation"><span><kbd>−</kbd> <kbd>=</kbd> chart &nbsp; <kbd>[</kbd> <kbd>]</kbd> form &nbsp; <kbd>Space</kbd> replay</span><span data-form-label aria-live="polite"></span></div></div>`;
+ const exampleHost=!onExample?document.createElement('div'):null;
+ if(exampleHost){exampleHost.className='tense-example';host.append(exampleHost);}
+ let exampleSignature='';
+ function updateExample(){
+  const lesson=lessons[active],r=lesson.rows[row],alternative=Math.max(0,r?.alternatives.indexOf(selectedText)??0);
+  const signature=lesson.id+':'+row+':'+alternative;
+  if(signature===exampleSignature)return;exampleSignature=signature;
+  const example=guideExample(note,lesson,row,alternative);
+  if(onExample)onExample(example);
+  else exampleHost.innerHTML=example.text?`<p>${exampleMarkup(example)}${sentenceAudio(example.text)}</p><p class="translation">${esc(example.translation)}</p>`:`<p class="use-tip">${esc(example.notice)}</p>`;
+ }
  const abort=new AbortController(),signal=abort.signal;
  let zoom,zoomOrigin,pendingChart;
  const motion=()=>!matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -62,7 +75,7 @@ export function mountVerbAccordion(host,note,{voice,showHeading=false}={}){
  },{signal});
  host.addEventListener('focusin',e=>{if(!e.target.closest('[data-chart]'))hideZoom();},{signal});
  host.addEventListener('keydown',e=>{if(e.key==='Escape'&&zoom){e.preventDefault();e.stopPropagation();hideZoom();}},{signal});
- function select(index,slot=0,{focus=false}={}){
+ function select(index,slot=0,{focus=false,text}={}){
   const next=(index+lessons.length)%lessons.length;
   const keepZoom=zoom?.dataset.chart===lessons[next].id;
   if(!keepZoom)hideZoom();
@@ -70,8 +83,9 @@ export function mountVerbAccordion(host,note,{voice,showHeading=false}={}){
   const chart=host.querySelector(`.va-grid [data-chart="${lesson.id}"]`);
   transitionCategory(chart.closest('details'),true);
   host.querySelectorAll('[data-chart]').forEach(c=>{c.classList.toggle('va-active',c.dataset.chart===chart.dataset.chart);c.querySelectorAll('[data-row]').forEach(r=>r.classList.toggle('va-selected',c.dataset.chart===chart.dataset.chart&&Number(r.dataset.row)===row));});
-  selectedText=lesson.rows[row]?.alternatives[0]||'';
-  host.querySelector('[data-form-label]').textContent=lesson.rows[row]?lesson.rows[row].sourceLabel+' · '+lesson.rows[row].alternatives[0]:'';
+  selectedText=lesson.rows[row]?.alternatives.includes(text)?text:lesson.rows[row]?.alternatives[0]||'';
+  host.querySelector('[data-form-label]').textContent=lesson.rows[row]?lesson.rows[row].sourceLabel+' · '+selectedText:'';
+  updateExample();
   if(focus){
    chart.focus({preventScroll:true});
    if(categoryAnimations.length)pendingChart=chart;
@@ -117,6 +131,7 @@ export function mountVerbAccordion(host,note,{voice,showHeading=false}={}){
     host.querySelectorAll('.va-grid [data-chart]').forEach(c=>{c.classList.toggle('va-active',c.dataset.chart===lessons[active].id);c.querySelectorAll('[data-row]').forEach(r=>r.classList.toggle('va-selected',c.dataset.chart===lessons[active].id&&Number(r.dataset.row)===0));});
     host.querySelector('[data-form-label]').textContent=lessons[active].rows[0]?lessons[active].rows[0].sourceLabel+' · '+selectedText:'';
    }
+   if(opening)updateExample();
    transitionCategory(detail,opening);
    return;
   }
@@ -129,9 +144,8 @@ export function mountVerbAccordion(host,note,{voice,showHeading=false}={}){
   if(zoom?.dataset.chart===c.dataset.chart&&!e.target.closest('[data-speak]')){
    const origin=zoomOrigin;hideZoom();origin.querySelector('[data-chart-toggle]').focus({preventScroll:true});return;
   }
-  select(lessons.findIndex(l=>l.id===c.dataset.chart),Number(e.target.closest('[data-row]')?.dataset.row||0),{focus:true});
   const spoken=e.target.closest('[data-speak]');
-  if(spoken){selectedText=spoken.dataset.speak;host.querySelector('[data-form-label]').textContent=lessons[active].rows[row].sourceLabel+' · '+selectedText;}
+  select(lessons.findIndex(l=>l.id===c.dataset.chart),Number(e.target.closest('[data-row]')?.dataset.row||0),{focus:true,text:spoken?.dataset.speak});
  },{signal});
  host.addEventListener('keydown',e=>{
   if(e.target.matches('.va-chart')&&e.key==='Enter'){e.preventDefault();e.target.querySelector('[data-chart-toggle]').click();}

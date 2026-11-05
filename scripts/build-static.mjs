@@ -1,4 +1,4 @@
-import {cpSync,mkdirSync,rmSync,readdirSync,statSync,writeFileSync} from 'node:fs';
+import {cpSync,readFileSync,mkdirSync,rmSync,readdirSync,statSync,writeFileSync} from 'node:fs';
 import {join} from 'node:path';
 // Only public application assets belong in the deployment, not generation ledgers or auditions.
 const audioHost=process.env.PERLINGO_AUDIO_BASE_URL;
@@ -9,6 +9,16 @@ if(audioHost){
 rmSync('dist',{recursive:true,force:true});mkdirSync('dist');
 for(const entry of ['_redirects','index.html','about.html','privacy.html','content-review.html','src','audio-regions','lemmas'])cpSync(entry,join('dist',entry),{recursive:true,filter:source=>!audioHost||!(source.startsWith('src/audio/azure/')&&source.endsWith('.mp3'))});
 if(audioHost)writeFileSync('dist/src/audio-host.js',`export const audioBaseUrl = ${JSON.stringify(audioHost)};\n`);
+// Keep every hosted asset below the provider's per-file limit.
+for(const name of ['manifest.json','manifest-feminine.json']){
+ const path=join('dist/src/audio/azure',name),manifest=JSON.parse(readFileSync(path,'utf8'));
+ const clipShards={};
+ for(const [locale,clips] of Object.entries(manifest.clips)){
+  const shard=name.replace('.json','-'+locale+'.json');
+  writeFileSync(join('dist/src/audio/azure',shard),JSON.stringify(clips));clipShards[locale]=shard;
+ }
+ writeFileSync(path,JSON.stringify({...manifest,clips:{},clipShards}));
+}
 mkdirSync('dist/learning',{recursive:true});
 cpSync('index.html','dist/learning/index.html');
 writeFileSync('dist/index.html','<!doctype html><html lang="en"><head><link rel="canonical" href="https://perlingo.app/lemmas/"><meta http-equiv="refresh" content="0;url=/lemmas/"></head><body><a href="/lemmas/">Open Lemmas</a></body></html>');

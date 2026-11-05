@@ -1,6 +1,6 @@
 """Check every generated MP3's frames and hash, decode representative clips locally."""
 import pathlib,json,hashlib,subprocess,argparse,tempfile,wave
-parser=argparse.ArgumentParser();parser.add_argument('--library',choices=['lemmas-library','lemma-row-library'],default='lemmas-library');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--library',choices=['lemmas-library','lemma-row-library','lemma-reference-library','lemma-guide-sentence-library'],default='lemmas-library');args=parser.parse_args()
 R=pathlib.Path(__file__).resolve().parents[1];D=R/'audio-generation'/args.library;p=json.loads((D/'plan.json').read_text());count=0;frames=0;chosen={}
 for j in p['jobs']:
  rec=json.loads((D/(j['id']+'.json')).read_text());assert rec['status']=='downloaded'

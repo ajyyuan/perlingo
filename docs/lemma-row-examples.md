@@ -1,5 +1,7 @@
 # Interactive verb-row examples
 
+Current normal-card behavior is documented in [full verb-guide examples](lemma-guide-examples.md). The older behavior and validation snapshots below describe the superseded nine-chart renderer. The accordion now updates sentences on pronunciation/cell selection and includes the extended guide inventory.
+
 Reviewed and approved for commit; not pushed or published. This supersedes the balanced/frequency URL experiment for the main app. `/lemmas/` and historical `?examples=...` URLs now use the same interactive experience. The earlier comparison page retains frozen authored versions as a development reference; its links open the unified app.
 
 ## Behavior

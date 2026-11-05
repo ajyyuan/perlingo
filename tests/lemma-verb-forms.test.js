@@ -115,7 +115,7 @@ test('guide forms for every verb match the tagged infinitive paradigm, tense and
  assert.deepEqual(lesson('ir','negative').rows[2].alternatives,['no vayamos']);
  assert.deepEqual(lesson('hacer','pastPerfect').rows[0].alternatives,['había hecho']);
  assert.deepEqual(lesson('venir','pastSubjunctive').rows[3].alternatives,['viniéramos','viniésemos']);
- assert.deepEqual(lesson('haber','futurePerfect').rows,[{sourceLabel:'impersonal',alternatives:['habrá habido']}]);
+ assert.deepEqual(lesson('haber','futurePerfect').rows,[{slot:2,sourceLabel:'impersonal',alternatives:['habrá habido']}]);
  assert.equal(lesson('ocurrir','pastPerfect').rows.length,2);
  assert.equal(lesson('soler','futurePerfect'),undefined);
 });

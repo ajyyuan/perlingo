@@ -1,3 +1,4 @@
+import {loadAudioManifest} from './audio-manifest.js';
 import {bindHelp} from './help-overlay.js';
 import {bindArticleTables} from './german-articles.js';
 import {bindGrammar} from './grammar-help.js';
@@ -32,7 +33,7 @@ let account=null;
 bindGrammar(document);bindHelp(document);bindArticleTables(document);
 document.addEventListener('click',e=>{if(e.target.closest('[data-grammar]'))positionExplanation();});
 const devicePronunciation=createPronouncer(window.speechSynthesis,window.SpeechSynthesisUtterance);
-const recordedPronunciation=createRecordedPronouncer({fallback:devicePronunciation,loadFeminineManifest:async()=>{const response=await fetch('/src/audio/azure/manifest-feminine.json',{signal:AbortSignal.timeout(5000)});if(!response.ok)throw Error('Audio manifest unavailable');return response.json();},loadManifest:async()=>{const response=await fetch('/src/audio/azure/manifest.json',{signal:AbortSignal.timeout(5000)});if(!response.ok)throw Error('Audio manifest unavailable');return response.json();},makeAudio:()=>{const audio=new Audio();audio.hidden=true;audio.dataset.pronunciationAudio='';document.body.append(audio);return audio;}});
+const recordedPronunciation=createRecordedPronouncer({fallback:devicePronunciation,loadFeminineManifest:()=>loadAudioManifest('/src/audio/azure/manifest-feminine.json'),loadManifest:()=>loadAudioManifest('/src/audio/azure/manifest.json'),makeAudio:()=>{const audio=new Audio();audio.hidden=true;audio.dataset.pronunciationAudio='';document.body.append(audio);return audio;}});
 const pronunciation={stop:()=>recordedPronunciation.stop(),speak:(text,locale,label,report)=>recordedPronunciation.speak(text,selectedRegion(data.settings,locale.split('-')[0])||locale,label,report,selectedVoice(data.settings,locale.split('-')[0]))};
 const answerAudio=createAnswerFeedback(pronunciation,window.AudioContext||window.webkitAudioContext);
 window.addEventListener('pagehide',()=>answerAudio.stop());

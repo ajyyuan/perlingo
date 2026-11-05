@@ -36,3 +36,11 @@ __pycache__/
 
 # Temporary row-example audio batch downloads
 /audio-generation/lemma-row-library/*.zip
+
+# Temporary full-reference audio batch downloads
+/audio-generation/lemma-reference-library/*.zip
+
+/audio-generation/lemma-guide-sentence-library/*.zip
+
+# New immutable audio lives in Azure and local storage; existing tracked clips remain.
+/src/audio/azure/**/*.mp3

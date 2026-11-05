@@ -4,6 +4,8 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {rowExamples} from '../lemmas/row-examples-data.js';
 import {combineNotes} from '../lemmas/notes-library.js';
+import {guideExample} from '../lemmas/guide-examples.js';
+import {verbGuide} from '../lemmas/verb-guide.js';
 import {formGroups} from '../lemmas/verb-forms.js';
 import {azureVoices,feminineVoices,normalizeAudioText} from '../src/azure-voices.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
@@ -17,6 +19,7 @@ for(const n of notes){
  // Nonverb notes and the three-word prototype expose these original rows.
  if(!formGroups(n).length||['tener','casa','bueno'].includes(n.word))for(const [,form]of n.forms)add(form,'forms');
  for(const g of formGroups(n)){for(const r of g.rows)for(const form of r.alternatives||[r.lemma])add(form,'forms');if(g.text)sentence(g.text,'tense sentences');}
+ for(const category of verbGuide(n))for(const lesson of category.lessons)for(const [i,row] of lesson.rows.entries())for(const [a,form] of row.alternatives.entries()){add(form,'verb guide forms');const example=guideExample(n,lesson,i,a);if(example.text)sentence(example.text,'verb guide sentences');}
  for(const e of n.examples)sentence(e.text,'usage sentences');
  for(const g of n.usageGroups)for(const section of g.sections)for(const [text] of section.examples)add(text,'comparison sentences');
 }

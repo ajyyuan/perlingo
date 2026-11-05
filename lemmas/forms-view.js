@@ -10,7 +10,7 @@ function formKeysAllowed(event,{active=true,editing=false}={},keys){
 export const tenseKeysAllowed=(event,state)=>formKeysAllowed(event,state,['-','=']);
 export const rowKeysAllowed=(event,state)=>formKeysAllowed(event,state,['[',']']);
 export function mountForms(host,note,{voice,onExample,cardNavigation=false,showHeading=false}={}){
- if(formGroups(note).length)return mountVerbAccordion(host,note,{voice,showHeading});
+ if(formGroups(note).length)return mountVerbAccordion(host,note,{voice,showHeading,onExample});
  let tense=sessionSelection(note.id).tense,alternative=sessionSelection(note.id).alternative||0;const abort=new AbortController(),signal=abort.signal;
  const say=text=>`<button class="say" data-speak="${esc(text)}" lang="es" aria-label="Listen to ${esc(text)}">${esc(text)}</button>`;
 const commonTenses=['present','imperfect','preterite','perfect','subjunctive'];
