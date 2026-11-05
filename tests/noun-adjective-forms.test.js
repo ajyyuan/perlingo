@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -66,6 +67,6 @@ test('shared and repeated articles expand without article leakage or arbitrary p
 test('contextual scientific remains an adjective and all assessment content is preserved',()=>{
  const shared=[...contexts.values()].filter(c=>c.example.text==='A usted le gusta la investigación científica.');
  assert.equal(shared.length,3);for(const c of shared)assert.equal(c.wordMeanings['científica'],'scientific (describing research)');
- const assessment=[...contexts.values()].map(c=>[c.id,c.target,read('../data/spanish-lemmas/pronoun-recall-audit.json').originalAnswers[c.id]||c.answers,c.example.text,c.example.translation]);
+ const assessment=beforeLaterContextCorrections().bank.contexts.map(c=>[c.id,c.target,read('../data/spanish-lemmas/pronoun-recall-audit.json').originalAnswers[c.id]||c.answers,c.example.text,c.example.translation]);
  assert.equal(createHash('sha256').update(JSON.stringify(assessment)).digest('hex'),audit.contextIntegrity.assessmentSha256);
 });

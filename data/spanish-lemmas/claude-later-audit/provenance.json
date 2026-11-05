@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-05",
+  "inputSHA256": "3626411f6f705f419c9017be8b60d0083807d69fbc0f4fcf8645293069bf217a",
+  "cards": 1250,
+  "groups": 291,
+  "sections": 319,
+  "status": "Independent full read-throughs and reconciliation complete; corrections pending. No curriculum edits in this cross-check.",
+  "claudeModel": "Opus 5.5 Medium (UI label)",
+  "claudeChat": "https://claude.ai/chat/cb528a83-cc94-45c7-bbe0-b166f519cd69",
+  "coverageValidation": "Exact 1250 card and 291 group ID sets match original Claude ledger; five rank blocks of 250.",
+  "limitations": "Claude source checks were search extracts/model judgment; Codex primary checks were targeted, not exhaustive. See reconciled audit.",
+  "artifacts": {
+    "claude-initial.md": "a0d2e9ea1391985f8d55656959403fa9fb46e773f41b366f951982b1358ca763",
+    "claude-addendum.md": "c39c9ecc5ff61390e72ad37ec09f1b7b09b5d7a2d3149ab9c0e4c925bdd0cd63",
+    "claude-coverage.csv": "35ea1ee3dae57379facf4548fbd273d4e1f76c982939a3d8637f915041cf00cf",
+    "codex-independent.json": "044150d1f9e8e1428f3c654ffb41635a0547f0d0bd8fede8081abc64cb018ac0",
+    "codex-triage.json": "d5c946b50317e7f47abdee1e3d0192955645d8789fcbd6f43a3bf4bbe91d69c3",
+    "grading-reproduction.json": "7a4f7bec73693c0f6a7ed7a94d711cc4789c9a31c51acbd63f0cc495059a1d02",
+    "retry-reproduction.json": "5d9ce41072282781150974cd7791a74fc1576877ee12c7e89cdd86c6aebb0b9c",
+    "request.txt": "d30002cd6a32fa788ad7d58fdb1a55e21e14e5b382049af745637e0a6928b8b7",
+    "challenge.txt": "6bf178dbe267462838b45e325aeacd1a8aa39297d54f90a44ac12bca4d84a693"
+  }
+}

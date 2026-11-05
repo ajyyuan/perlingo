@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -68,7 +69,7 @@ test('all simple reference forms match frozen tagged source slots and older snap
  assert.equal(nounReview.beforeSha256,followUp.afterSha256);
  const pronounReview=read('data/spanish-lemmas/pronoun-recall-audit.json');
  assert.equal(pronounReview.beforeSha256,nounReview.afterSha256);
- assert.equal(digest('lemmas/data/context.json'),pronounReview.afterSha256);
+ assert.equal(beforeLaterContextCorrections().sha256,pronounReview.afterSha256);
  const schedule=read('data/spanish-lemmas/six-day-schedule-audit.json').files;
  const recall=read('data/spanish-lemmas/day1-recall-audit.json').files;
  const retries=read('data/spanish-lemmas/retry-assessment-audit.json').files;

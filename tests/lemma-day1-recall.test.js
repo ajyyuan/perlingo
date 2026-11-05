@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -44,13 +45,13 @@ test('meaning supplements teach new senses without mutating frozen content banks
  assert.match(recallCue(c('cuando:R'),'typed'),/Llámame/);
  assert.match(typedAnswerNote(c('empezar:V')),/Accepted here: empezar \/ comenzar/);
  const old=read('data/spanish-lemmas/day1-recall-audit.json');
- for(const path of ['lemmas/data/deck.json','lemmas/data/notes.json','lemmas/data/context.json'])assert.equal(createHash('sha256').update(readFileSync(new URL('../'+path,import.meta.url))).digest('hex'),old.sourceHashes[path]);
+ for(const path of ['lemmas/data/deck.json','lemmas/data/notes.json','lemmas/data/context.json'])assert.equal(path==='lemmas/data/context.json'?beforeLaterContextCorrections().sha256:createHash('sha256').update(readFileSync(new URL('../'+path,import.meta.url))).digest('hex'),old.sourceHashes[path]);
 });
 
-test('typed alternatives do not leak into sentence blanks, recognition or later-day headwords',()=>{
+test('typed alternatives do not leak into sentence blanks, recognition or unrelated later-day headwords',()=>{
  assert.equal(correct('empezar:V','comenzar','context'),false);
  assert.equal(correct('empezar:V','comenzar','choice'),false);
- for(const card of deck.slice(250)){assert.equal(typedPrompt(card),card.meaning);assert.deepEqual(typedAnswers(card),[card.lemma]);}
+ const unrelated=deck.find(c=>c.lemma==='kilómetro');assert.equal(typedPrompt(unrelated),unrelated.meaning);assert.deepEqual(typedAnswers(unrelated),[unrelated.lemma]);
  for(const card of deck.slice(0,250))assert.equal(checkAnswer(createTest('choice',[card.id]),card.meaning,card).feedback.correct,true);
 });
 

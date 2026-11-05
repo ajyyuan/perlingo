@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
+import {typedAnswers} from '../lemmas/recall-policy.js';
 import {guideExample} from '../lemmas/guide-examples.js';
 import {verbGuide} from '../lemmas/verb-guide.js';
 import {combineNotes} from '../lemmas/notes-library.js';
@@ -41,4 +42,9 @@ test('all eight Spanish voice manifests cover the current pronunciation inventor
    assert.equal(missing.length,0,`${voice}: ${missing.length} missing recordings; first: ${missing[0]?.text}`);
   }
  }
+});
+
+test('pronunciation inventory includes exact accepted headword alternatives used in feedback',()=>{
+ const deck=JSON.parse(readFileSync(new URL('../lemmas/data/deck.json',import.meta.url)));
+ for(const card of deck)for(const answer of typedAnswers(card))assert.ok(indexed.get(normalizeAudioText(answer))?.kinds.includes('typed recall answers'),answer);
 });

@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -50,7 +51,7 @@ test('pilot frequencies match the retained source excerpt without treating ambig
 });
 test('pilot preserves reviewed assessment and source-form snapshots',()=>{
  const audit=JSON.parse(read('data/spanish-lemmas/tense-examples/person-audit.json'));
- for(const [path,hash]of Object.entries(audit.unchangedHashes))assert.equal(createHash('sha256').update(read(path)).digest('hex'),hash,path);
+ for(const [path,hash]of Object.entries(audit.unchangedHashes))assert.equal(path==='lemmas/data/context.json'?beforeLaterContextCorrections().sha256:createHash('sha256').update(read(path)).digest('hex'),hash,path);
  const get=w=>frequencyPilot['corpes:'+w+':V'];
  assert.equal(get('haber').present.text,'Hay una solución.');
  assert.equal(get('saber').preterite.translation,'Yesterday I found out the answer.');

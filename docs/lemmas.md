@@ -381,3 +381,11 @@ Validation: all 439 tests from `npm test` passed, as did `npm run check`, change
 
 
 This change contains no later-day curriculum acceptance or teaching expansion and is not a publication.
+
+## Later-day similar words — local November 5 review
+
+The remaining 1,250 cards now have a recorded review disposition: 547 revised typed policies (457 with alternatives), 431 teaching comparison topics covering 554 cards, and 695 retained baselines. Acceptance is specific to the written cue and separate from teaching-group membership. Twenty-one teaching meanings were supplemented or corrected. The unchanged first 250 policies, existing progress, and sentence-cloze answer lists are retained. See [implementation, source scope, local testing and audio boundary](lemma-later-day-recall.md). Text/grading are local for review; 395 texts per voice still need recordings, so strict audio coverage is not yet complete. No commit or publication.
+
+Second correctness audit, November 5: corrected selected-use false rejections and one example translation; added targeted semantic regressions and primary-source evidence. See the [audit findings](lemma-later-day-recall.md#second-correctness-audit--november-5). Paid recording generation remains paused.
+
+Full Claude + Codex cross-check, November 5: all 1,250 later-day cards and 291 groups accounted for. Remaining answer omissions, valid-spelling retry friction, one confirmed translation distinction and source-link mismatches were identified. [Original reconciled audit and evidence](lemma-later-day-claude-audit.md). The audit snapshot is preserved. All reported findings now have a correction or a justified no-change disposition; see [content resolution and validation](lemma-later-day-resolution.md). Four shared examples were corrected without changing their cloze answers. Recording generation remains deferred.

@@ -7,6 +7,7 @@ import {combineNotes} from '../lemmas/notes-library.js';
 import {guideExample} from '../lemmas/guide-examples.js';
 import {verbGuide} from '../lemmas/verb-guide.js';
 import {formGroups} from '../lemmas/verb-forms.js';
+import {typedAnswers} from '../lemmas/recall-policy.js';
 import {azureVoices,feminineVoices,normalizeAudioText} from '../src/azure-voices.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const base=read('lemmas/data/notes.json'),context=read('lemmas/data/context.json');
@@ -25,7 +26,7 @@ for(const n of notes){
 }
 for(const tenses of Object.values(rowExamples))for(const rows of Object.values(tenses))for(const examples of Object.values(rows))for(const example of examples)if(example.text)sentence(example.text,'conjugation-row sentences');
 for(const c of context.contexts){add(c.answers[0],'review answers');sentence(c.example.text,'review sentences');}
-for(const c of (Array.isArray(deck)?deck:deck.cards))add(c.lemma,'headwords');
+for(const c of (Array.isArray(deck)?deck:deck.cards)){add(c.lemma,'headwords');for(const answer of typedAnswers(c))add(answer,'typed recall answers');}
 const items=[...targets].sort(([a],[b])=>a<b?-1:a>b?1:0).map(([text,kinds])=>({text,kinds:[...kinds].sort(),characters:[...text].length}));
 if(process.argv.includes('--targets-only')){writeFileSync(1,JSON.stringify(items));process.exit(0);}
 const jobs=[];

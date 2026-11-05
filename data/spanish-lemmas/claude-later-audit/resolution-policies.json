@@ -1,0 +1,2980 @@
+{
+  "date": "2026-11-05",
+  "scope": "Explicit local corrections; no automatic synonym graph. Original audit snapshots remain unchanged.",
+  "policies": [
+    {
+      "rank": 256,
+      "id": "corpes:fin:N",
+      "before": {
+        "prompt": "end",
+        "cue": "The ending of a film",
+        "alternatives": [
+          "final"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "end",
+        "cue": "The ending of a film",
+        "alternatives": [
+          "final",
+          "desenlace"
+        ],
+        "note": "Desenlace fits the ending or resolution of a film; fin and final are broader ending words."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 269,
+      "id": "corpes:final:N",
+      "before": {
+        "prompt": "end",
+        "cue": "The ending of a film",
+        "alternatives": [
+          "fin"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "end",
+        "cue": "The ending of a film",
+        "alternatives": [
+          "fin",
+          "desenlace"
+        ],
+        "note": "Desenlace fits a film’s ending or resolution. El final means the end; la final means a decisive competition."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 275,
+      "id": "corpes:investigación:N",
+      "before": {
+        "prompt": "investigation",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "investigation",
+        "cue": "noun",
+        "alternatives": [
+          "indagación",
+          "pesquisa"
+        ],
+        "note": "Indagación and pesquisa also name an investigation; pesquisa is less usual in everyday conversation."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 307,
+      "id": "corpes:fuerza:N",
+      "before": {
+        "prompt": "strength",
+        "cue": "Physical strength",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "strength",
+        "cue": "Physical strength",
+        "alternatives": [
+          "fortaleza"
+        ],
+        "note": "Fortaleza can describe physical strength as well as inner strength; the physical sense fits here."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 313,
+      "id": "corpes:poder:N",
+      "before": {
+        "prompt": "power",
+        "cue": "Authority to act",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "power",
+        "cue": "Authority to act",
+        "alternatives": [
+          "autoridad"
+        ],
+        "note": "Autoridad fits the power or authority to act. Poder also has other senses, such as capability."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 329,
+      "id": "corpes:caer:V",
+      "before": {
+        "prompt": "to fall (to move to a lower position due to gravity) (intransitive, reflexive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to fall (to move to a lower position due to gravity) (intransitive, reflexive)",
+        "cue": "verb",
+        "alternatives": [
+          "caerse"
+        ],
+        "note": "Caer and caerse both describe falling; the pronominal form often presents the fall as an event affecting the subject."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 333,
+      "id": "corpes:tú:L",
+      "before": {
+        "prompt": "you (second-person singular pronoun) (informal)",
+        "cue": "Subject · informal singular",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "you (second-person singular pronoun) (informal)",
+        "cue": "Subject · informal singular",
+        "alternatives": [
+          "vos"
+        ],
+        "note": "Vos is a valid informal singular subject pronoun in voseo varieties; tú is used in tuteo."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 344,
+      "id": "corpes:intentar:V",
+      "before": {
+        "prompt": "to try",
+        "cue": "Make an effort to do something · infinitive follows directly",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to try",
+        "cue": "Make an effort to do something · infinitive follows directly",
+        "alternatives": [
+          "procurar"
+        ],
+        "note": "Procurar and intentar can both take an infinitive for trying to do something."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 376,
+      "id": "corpes:decisión:N",
+      "before": {
+        "prompt": "decision",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "decision",
+        "cue": "noun",
+        "alternatives": [
+          "determinación"
+        ],
+        "note": "Determinación can name a decision, especially in tomar una determinación; it also means resolve."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 405,
+      "id": "corpes:ciento:N",
+      "before": {
+        "prompt": "hundred (100 units of something)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "hundred (100 units of something)",
+        "cue": "noun",
+        "alternatives": [
+          "centenar",
+          "centena"
+        ],
+        "note": "Centenar and centena name a group of one hundred, like the noun ciento. Cien is the numeral form, not this collective-noun target."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 417,
+      "id": "corpes:falta:N",
+      "before": {
+        "prompt": "lack, shortage",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "lack, shortage",
+        "cue": "noun",
+        "alternatives": [
+          "carencia",
+          "escasez"
+        ],
+        "note": "Falta, carencia and escasez overlap for a lack or shortage; escasez emphasizes scarcity."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 421,
+      "id": "corpes:destacar:V",
+      "before": {
+        "prompt": "to highlight; to stand out",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to highlight; to stand out",
+        "cue": "verb",
+        "alternatives": [
+          "resaltar",
+          "sobresalir"
+        ],
+        "note": "Resaltar can mean highlight or stand out; sobresalir fits the stand-out sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 424,
+      "id": "corpes:dinero:N",
+      "before": {
+        "prompt": "money",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "money",
+        "cue": "noun",
+        "alternatives": [
+          "plata"
+        ],
+        "note": "Plata means money in many American varieties; it also means silver."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 446,
+      "id": "corpes:acuerdo:N",
+      "before": {
+        "prompt": "agreement",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "agreement",
+        "cue": "noun",
+        "alternatives": [
+          "convenio",
+          "pacto"
+        ],
+        "note": "Convenio and pacto name agreements, often more specific or formal than acuerdo."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 456,
+      "id": "corpes:bajo:A",
+      "before": {
+        "prompt": "short",
+        "cue": "Of little height, describing a person",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "short",
+        "cue": "Of little height, describing a person",
+        "alternatives": [
+          "chaparro",
+          "petiso"
+        ],
+        "note": "Petiso and chaparro can describe a short person; their frequency and connotations vary by region, and chaparro can suggest a stocky build."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 465,
+      "id": "corpes:afectar:V",
+      "before": {
+        "prompt": "to affect, to have an effect on, to influence",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to affect, to have an effect on, to influence",
+        "cue": "verb",
+        "alternatives": [
+          "influir"
+        ],
+        "note": "Influir fits the influence sense. Afectar is transitive; influir commonly uses en or sobre before what is influenced."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 471,
+      "id": "corpes:chico:N",
+      "before": {
+        "prompt": "boy",
+        "cue": "A male young person",
+        "alternatives": [
+          "muchacho"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "boy",
+        "cue": "A male young person",
+        "alternatives": [
+          "muchacho",
+          "niño"
+        ],
+        "note": "Niño fits boy when the young person is a child. Chico and muchacho can also refer to older boys or young men."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 477,
+      "id": "corpes:sufrir:V",
+      "before": {
+        "prompt": "to suffer (be confronted with something undesired) (transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to suffer (be confronted with something undesired) (transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "padecer"
+        ],
+        "note": "Padecer and sufrir overlap for suffering an illness or another unwanted experience."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 479,
+      "id": "corpes:bajar:V",
+      "before": {
+        "prompt": "to go down, come down",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to go down, come down",
+        "cue": "verb",
+        "alternatives": [
+          "descender"
+        ],
+        "note": "Descender fits going or coming down; bajar has additional transitive uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 484,
+      "id": "corpes:informar:V",
+      "before": {
+        "prompt": "to inform",
+        "cue": "Give someone information",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to inform",
+        "cue": "Give someone information",
+        "alternatives": [
+          "comunicar"
+        ],
+        "note": "Both verbs can convey giving someone information: informar a alguien de algo, comunicar algo a alguien. Their complements differ."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 486,
+      "id": "corpes:subir:V",
+      "before": {
+        "prompt": "to go up or come up",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to go up or come up",
+        "cue": "verb",
+        "alternatives": [
+          "ascender"
+        ],
+        "note": "Ascender fits going or coming up; subir has additional transitive uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 505,
+      "id": "corpes:referir:V",
+      "before": {
+        "prompt": "to report",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to report",
+        "cue": "verb",
+        "alternatives": [
+          "informar",
+          "relatar",
+          "contar",
+          "reportar"
+        ],
+        "note": "Referir can mean report or recount an event. Informar, reportar, contar and relatar fit the broad report cue; referirse a is a separate construction meaning refer to."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 519,
+      "id": "corpes:meter:V",
+      "before": {
+        "prompt": "to put in, insert (transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to put in, insert (transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "introducir",
+          "insertar"
+        ],
+        "note": "Meter, introducir and insertar fit putting something inside something else; insertar often suggests fitting it into a particular place."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 521,
+      "id": "corpes:fuera:R",
+      "before": {
+        "prompt": "outside, out",
+        "cue": "adverb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "outside, out",
+        "cue": "adverb",
+        "alternatives": [
+          "afuera"
+        ],
+        "note": "Fuera and afuera overlap for outside; their use with an explicit de complement varies by region."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 522,
+      "id": "corpes:común:A",
+      "before": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "normal",
+          "habitual"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "normal",
+          "habitual",
+          "usual"
+        ],
+        "note": "Usual, común, normal and habitual overlap for customary rather than exceptional."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 523,
+      "id": "corpes:período:N",
+      "before": {
+        "prompt": "period",
+        "cue": "A bounded interval of time",
+        "alternatives": [
+          "época"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "period",
+        "cue": "A bounded interval of time",
+        "alternatives": [
+          "época",
+          "periodo"
+        ],
+        "note": "Período and periodo are both correct for a period of time; the spelling reflects the chosen stress."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 527,
+      "id": "corpes:demostrar:V",
+      "before": {
+        "prompt": "to show, to demonstrate",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to show, to demonstrate",
+        "cue": "verb",
+        "alternatives": [
+          "mostrar",
+          "probar"
+        ],
+        "note": "Mostrar fits show or demonstrate; probar fits demonstrate in the sense of proving. Their constructions depend on the intended sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 533,
+      "id": "corpes:miembro:N",
+      "before": {
+        "prompt": "member (one who belongs to a group)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "member (one who belongs to a group)",
+        "cue": "noun",
+        "alternatives": [
+          "integrante"
+        ],
+        "note": "Integrante means a member of a group. Miembro also names a body part."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 534,
+      "id": "corpes:época:N",
+      "before": {
+        "prompt": "era; period",
+        "cue": "A period of time",
+        "alternatives": [
+          "período"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "era; period",
+        "cue": "A period of time",
+        "alternatives": [
+          "período",
+          "era",
+          "periodo"
+        ],
+        "note": "Era fits a period characterized by an event or historical conditions. Período and periodo are both correct for a period of time."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 535,
+      "id": "corpes:futuro:N",
+      "before": {
+        "prompt": "future (the time ahead)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "future (the time ahead)",
+        "cue": "noun",
+        "alternatives": [
+          "porvenir"
+        ],
+        "note": "Porvenir names the time ahead, like the noun futuro; it is not the adjective future."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 545,
+      "id": "corpes:apoyo:N",
+      "before": {
+        "prompt": "support",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "support",
+        "cue": "noun",
+        "alternatives": [
+          "respaldo"
+        ],
+        "note": "Respaldo fits support or backing. Apoyo also has physical-support uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 550,
+      "id": "corpes:mirada:N",
+      "before": {
+        "prompt": "look, glance",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "look, glance",
+        "cue": "noun",
+        "alternatives": [
+          "vistazo"
+        ],
+        "note": "Vistazo fits a glance, especially echar un vistazo; mirada is broader and can be sustained."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 561,
+      "id": "corpes:propuesta:N",
+      "before": {
+        "prompt": "proposal",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "proposal",
+        "cue": "noun",
+        "alternatives": [
+          "proposición"
+        ],
+        "note": "Proposición can mean a proposal; propuesta is often more usual in everyday contexts."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 569,
+      "id": "corpes:década:N",
+      "before": {
+        "prompt": "decade",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "decade",
+        "cue": "noun",
+        "alternatives": [
+          "decenio"
+        ],
+        "note": "Década and decenio both cover ten years. Década often labels a named decade."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 589,
+      "id": "corpes:miedo:N",
+      "before": {
+        "prompt": "fear",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "fear",
+        "cue": "noun",
+        "alternatives": [
+          "temor"
+        ],
+        "note": "Temor and miedo both express fear; temor can sound more formal."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 611,
+      "id": "corpes:objeto:N",
+      "before": {
+        "prompt": "object",
+        "cue": "A physical thing",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "object",
+        "cue": "A physical thing",
+        "alternatives": [
+          "cosa"
+        ],
+        "note": "Cosa fits a physical thing; objeto is more specific when naming a discrete object."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 629,
+      "id": "corpes:éxito:N",
+      "before": {
+        "prompt": "success",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "success",
+        "cue": "noun",
+        "alternatives": [
+          "triunfo"
+        ],
+        "note": "Triunfo can express success as well as victory in a contest."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 653,
+      "id": "corpes:conjunto:N",
+      "before": {
+        "prompt": "group; set; ensemble",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "group; set; ensemble",
+        "cue": "noun",
+        "alternatives": [
+          "grupo"
+        ],
+        "note": "Grupo fits a group or an ensemble; conjunto also has the mathematical set sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 656,
+      "id": "corpes:superar:V",
+      "before": {
+        "prompt": "to surpass, exceed",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to surpass, exceed",
+        "cue": "verb",
+        "alternatives": [
+          "exceder",
+          "sobrepasar"
+        ],
+        "note": "Exceder and sobrepasar fit surpassing or exceeding a limit."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 667,
+      "id": "corpes:plantear:V",
+      "before": {
+        "prompt": "to bring up, to pose, to present (e.g., a problem, challenge, threat)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to bring up, to pose, to present (e.g., a problem, challenge, threat)",
+        "cue": "verb",
+        "alternatives": [
+          "presentar"
+        ],
+        "note": "Presentar fits presenting a problem; plantear also means raising or posing it."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 676,
+      "id": "corpes:contrario:A",
+      "before": {
+        "prompt": "contrary, opposite",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "contrary, opposite",
+        "cue": "adjective",
+        "alternatives": [
+          "opuesto"
+        ],
+        "note": "Opuesto fits opposite; contrario also has opposing or adverse uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 682,
+      "id": "corpes:informe:N",
+      "before": {
+        "prompt": "report",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "report",
+        "cue": "noun",
+        "alternatives": [
+          "reporte"
+        ],
+        "note": "Reporte is also used for a report, especially in American Spanish."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 685,
+      "id": "corpes:cabo:N",
+      "before": {
+        "prompt": "end, edge, extremity (furthest or terminal point of something)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "end, edge, extremity (furthest or terminal point of something)",
+        "cue": "noun",
+        "alternatives": [
+          "extremo"
+        ],
+        "note": "Extremo fits the furthest or terminal end; cabo has additional nautical and geographic senses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 692,
+      "id": "corpes:cubrir:V",
+      "before": {
+        "prompt": "to cover (transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to cover (transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "tapar"
+        ],
+        "note": "Tapar fits covering something; cubrir also has broader figurative uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 699,
+      "id": "corpes:ti:L",
+      "before": {
+        "prompt": "you (after a preposition, informal singular)",
+        "cue": "After a preposition · informal singular",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "you (after a preposition, informal singular)",
+        "cue": "After a preposition · informal singular",
+        "alternatives": [
+          "vos"
+        ],
+        "note": "Vos is used after prepositions in voseo varieties: para vos. Ti belongs to tuteo: para ti."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 713,
+      "id": "corpes:cama:N",
+      "before": {
+        "prompt": "bed",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "bed",
+        "cue": "noun",
+        "alternatives": [
+          "lecho"
+        ],
+        "note": "Lecho is a literary word for bed; cama is the ordinary everyday word."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 724,
+      "id": "corpes:actuar:V",
+      "before": {
+        "prompt": "to act, to behave",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to act, to behave",
+        "cue": "verb",
+        "alternatives": [
+          "comportarse",
+          "obrar"
+        ],
+        "note": "Comportarse fits behaving; obrar can mean acting or behaving. Actuar also means performing on stage."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 730,
+      "id": "corpes:fundamental:A",
+      "before": {
+        "prompt": "fundamental",
+        "cue": "Essential to the basis of something",
+        "alternatives": [
+          "básico"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "fundamental",
+        "cue": "Essential to the basis of something",
+        "alternatives": [
+          "básico",
+          "esencial"
+        ],
+        "note": "Esencial and fundamental can both describe something basic or indispensable."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 734,
+      "id": "corpes:fútbol:N",
+      "before": {
+        "prompt": "football (soccer)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "football (soccer)",
+        "cue": "noun",
+        "alternatives": [
+          "balompié",
+          "futbol"
+        ],
+        "note": "Fútbol and futbol are both valid spellings with different stress. Balompié is also valid, though less common."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 740,
+      "id": "corpes:operación:N",
+      "before": {
+        "prompt": "operation (a surgical procedure) (medicine)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "operation (a surgical procedure) (medicine)",
+        "cue": "noun",
+        "alternatives": [
+          "cirugía"
+        ],
+        "note": "Cirugía can refer to a surgical operation as well as the medical specialty."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 750,
+      "id": "corpes:completo:A",
+      "before": {
+        "prompt": "complete",
+        "cue": "With nothing missing",
+        "alternatives": [
+          "íntegro"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "complete",
+        "cue": "With nothing missing",
+        "alternatives": [
+          "íntegro",
+          "entero"
+        ],
+        "note": "Entero and íntegro fit complete with nothing missing; their other senses are not interchangeable."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 753,
+      "id": "corpes:suficiente:A",
+      "before": {
+        "prompt": "sufficient, enough",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "sufficient, enough",
+        "cue": "adjective",
+        "alternatives": [
+          "bastante"
+        ],
+        "note": "Bastante can be an adjective meaning enough, as well as an adverb. The enough sense fits here."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 754,
+      "id": "corpes:aplicación:N",
+      "before": {
+        "prompt": "application, use (the act of applying as a means; the employment of means to accomplish an end; specific use)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "application, use (the act of applying as a means; the employment of means to accomplish an end; specific use)",
+        "cue": "noun",
+        "alternatives": [
+          "uso",
+          "empleo",
+          "utilización"
+        ],
+        "note": "Uso, empleo and utilización fit application in the sense of putting something to use; not every sense of aplicación is interchangeable."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 756,
+      "id": "corpes:temporada:N",
+      "before": {
+        "prompt": "season, period, span of time",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "season, period, span of time",
+        "cue": "noun",
+        "alternatives": [
+          "período",
+          "periodo"
+        ],
+        "note": "Período and periodo fit a span of time; temporada can also mean a season for an activity."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 763,
+      "id": "corpes:opción:N",
+      "before": {
+        "prompt": "option",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "option",
+        "cue": "noun",
+        "alternatives": [
+          "alternativa"
+        ],
+        "note": "Alternativa can name an option; opción is also used for the act or ability of choosing."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 771,
+      "id": "corpes:ayuda:N",
+      "before": {
+        "prompt": "help, aid",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "help, aid",
+        "cue": "noun",
+        "alternatives": [
+          "auxilio",
+          "asistencia"
+        ],
+        "note": "Auxilio and asistencia fit help or aid; asistencia also means attendance in other contexts."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 795,
+      "id": "corpes:unir:V",
+      "before": {
+        "prompt": "to unite, join (transitive or reflexive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to unite, join (transitive or reflexive)",
+        "cue": "verb",
+        "alternatives": [
+          "juntar"
+        ],
+        "note": "Juntar fits bringing things together; unir can also emphasize joining or attachment."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 797,
+      "id": "corpes:obligar:V",
+      "before": {
+        "prompt": "to force, to compel, to make (someone do something)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to force, to compel, to make (someone do something)",
+        "cue": "verb",
+        "alternatives": [
+          "forzar"
+        ],
+        "note": "Forzar and obligar can both express making someone do something: obligar/forzar a alguien a hacer algo."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 802,
+      "id": "corpes:opinión:N",
+      "before": {
+        "prompt": "opinion",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "opinion",
+        "cue": "noun",
+        "alternatives": [
+          "parecer"
+        ],
+        "note": "Parecer as a noun can mean an opinion, especially in a mi parecer. It is also a verb."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 805,
+      "id": "corpes:disfrutar:V",
+      "before": {
+        "prompt": "to enjoy (transitive, intransitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to enjoy (transitive, intransitive)",
+        "cue": "verb",
+        "alternatives": [
+          "gozar"
+        ],
+        "note": "Gozar and disfrutar overlap for enjoyment; their complements may use de: gozar de algo, disfrutar de algo."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 815,
+      "id": "corpes:similar:A",
+      "before": {
+        "prompt": "similar",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "similar",
+        "cue": "adjective",
+        "alternatives": [
+          "semejante",
+          "parecido"
+        ],
+        "note": "Similar, parecido and semejante express similarity. Usual constructions include similar a, parecido a and semejante a."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 828,
+      "id": "corpes:detalle:N",
+      "before": {
+        "prompt": "detail",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "detail",
+        "cue": "noun",
+        "alternatives": [
+          "pormenor"
+        ],
+        "note": "Pormenor is a detail, often in a fuller or more formal account."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 841,
+      "id": "corpes:recoger:V",
+      "before": {
+        "prompt": "to collect, to gather, to pick up, to fetch, to retrieve (something previously left behind)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to collect, to gather, to pick up, to fetch, to retrieve (something previously left behind)",
+        "cue": "verb",
+        "alternatives": [
+          "recolectar",
+          "reunir"
+        ],
+        "note": "Recolectar fits collecting; reunir fits gathering. Recoger also means picking up or retrieving something."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 860,
+      "id": "corpes:aumento:N",
+      "before": {
+        "prompt": "increase",
+        "cue": "A rise in prices",
+        "alternatives": [
+          "incremento"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "increase",
+        "cue": "A rise in prices",
+        "alternatives": [
+          "incremento",
+          "subida",
+          "alza"
+        ],
+        "note": "Subida and alza can name a rise in prices, like aumento and incremento."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 870,
+      "id": "corpes:invitar:V",
+      "before": {
+        "prompt": "to invite",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to invite",
+        "cue": "verb",
+        "alternatives": [
+          "convidar"
+        ],
+        "note": "Convidar can mean invite; its frequency and preferred uses vary by region."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 880,
+      "id": "corpes:igual:R",
+      "before": {
+        "prompt": "equally",
+        "cue": "In the same way",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "equally",
+        "cue": "In the same way",
+        "alternatives": [
+          "igualmente"
+        ],
+        "note": "Igual and igualmente can both mean in the same way. Igual has other adjectival and adverbial senses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 894,
+      "id": "corpes:lucha:N",
+      "before": {
+        "prompt": "fight, fighting, fray",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "fight, fighting, fray",
+        "cue": "noun",
+        "alternatives": [
+          "pelea",
+          "combate"
+        ],
+        "note": "Pelea and combate fit a fight; lucha also covers a sustained struggle."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 897,
+      "id": "corpes:habitación:N",
+      "before": {
+        "prompt": "room",
+        "cue": "A separate room inside a building",
+        "alternatives": [
+          "cuarto"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "room",
+        "cue": "A separate room inside a building",
+        "alternatives": [
+          "cuarto",
+          "pieza"
+        ],
+        "note": "Pieza can name a room in a dwelling; habitación and cuarto also fit that sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 902,
+      "id": "corpes:barrio:N",
+      "before": {
+        "prompt": "neighbourhood",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "neighbourhood",
+        "cue": "noun",
+        "alternatives": [
+          "vecindario"
+        ],
+        "note": "Vecindario can name a neighbourhood or its inhabitants; barrio names the district."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 904,
+      "id": "corpes:profundo:A",
+      "before": {
+        "prompt": "deep (having a bottom far from the surface or mouth)",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "deep (having a bottom far from the surface or mouth)",
+        "cue": "adjective",
+        "alternatives": [
+          "hondo"
+        ],
+        "note": "Hondo and profundo overlap for physical depth. Their figurative uses need their own context."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 905,
+      "id": "corpes:integrar:V",
+      "before": {
+        "prompt": "to integrate",
+        "cue": "Bring parts into a unified whole",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to integrate",
+        "cue": "Bring parts into a unified whole",
+        "alternatives": [
+          "incorporar"
+        ],
+        "note": "Incorporar fits bringing parts into a whole; integrar emphasizes making them part of that whole."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 909,
+      "id": "corpes:reír:V",
+      "before": {
+        "prompt": "to laugh",
+        "cue": "Produce laughter",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to laugh",
+        "cue": "Produce laughter",
+        "alternatives": [
+          "reírse"
+        ],
+        "note": "Reír and reírse both mean laugh. Reírse de can mean laugh at someone or something."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 913,
+      "id": "corpes:guardar:V",
+      "before": {
+        "prompt": "to save",
+        "cue": "Store a file for later use",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "Save as…",
+        "cue": "File menu: ___ como",
+        "alternatives": [],
+        "note": "The conventional Spanish file-menu label is Guardar como. This cue tests that label, not every possible use of save."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 917,
+      "id": "corpes:aprobar:V",
+      "before": {
+        "prompt": "to approve, to condone, to permit",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to approve, to condone, to permit",
+        "cue": "verb",
+        "alternatives": [
+          "permitir"
+        ],
+        "note": "Permitir fits the permit sense; aprobar also means approving something or passing an exam."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 921,
+      "id": "corpes:cifra:N",
+      "before": {
+        "prompt": "figure; number; digit",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "figure; number; digit",
+        "cue": "noun",
+        "alternatives": [
+          "número",
+          "dígito"
+        ],
+        "note": "Número fits number and dígito fits digit; cifra can have either sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 928,
+      "id": "corpes:listo:N",
+      "before": {
+        "prompt": "list",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "list",
+        "cue": "noun",
+        "alternatives": [
+          "listado"
+        ],
+        "note": "Listado and lista both name a list; listado can also be a participle in other contexts."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 930,
+      "id": "corpes:ámbito:N",
+      "before": {
+        "prompt": "scope, field",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "scope, field",
+        "cue": "noun",
+        "alternatives": [
+          "campo",
+          "alcance"
+        ],
+        "note": "Campo fits a field of activity; alcance fits scope or extent. Ámbito can express either in context."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 933,
+      "id": "corpes:adecuado:A",
+      "before": {
+        "prompt": "adequate",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "adequate",
+        "cue": "adjective",
+        "alternatives": [
+          "apropiado"
+        ],
+        "note": "Apropiado fits adequate in the sense of suitable or appropriate; enough in quantity would call for a different cue."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 937,
+      "id": "corpes:estadounidense:A",
+      "before": {
+        "prompt": "American (of, from or relating to the United States)",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "American (of, from or relating to the United States)",
+        "cue": "adjective",
+        "alternatives": [
+          "norteamericano"
+        ],
+        "note": "Norteamericano is also used for someone or something from the United States, although it can refer to North America more broadly. Estadounidense is geographically more precise."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 948,
+      "id": "corpes:oficina:N",
+      "before": {
+        "prompt": "office (a room used for non-manual work)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "office (a room used for non-manual work)",
+        "cue": "noun",
+        "alternatives": [
+          "despacho"
+        ],
+        "note": "Despacho can name an office room; oficina can also mean an administrative workplace."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 968,
+      "id": "corpes:incorporar:V",
+      "before": {
+        "prompt": "to incorporate",
+        "cue": "Add something to an existing whole",
+        "alternatives": [
+          "integrar"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to incorporate",
+        "cue": "Add something to an existing whole",
+        "alternatives": [
+          "integrar",
+          "añadir",
+          "agregar",
+          "incluir"
+        ],
+        "note": "Añadir, agregar and incluir fit adding something to a whole; incorporar and integrar emphasize making it part of that whole."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 971,
+      "id": "corpes:experto:N",
+      "before": {
+        "prompt": "expert",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "expert",
+        "cue": "noun",
+        "alternatives": [
+          "perito"
+        ],
+        "note": "Perito is an expert, often in a technical or legal field. Experto is the broader term."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 990,
+      "id": "corpes:muchacho:N",
+      "before": {
+        "prompt": "boy",
+        "cue": "A male young person",
+        "alternatives": [
+          "chico"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "boy",
+        "cue": "A male young person",
+        "alternatives": [
+          "chico",
+          "niño"
+        ],
+        "note": "Niño fits boy when the young person is a child. Muchacho and chico can also refer to adolescents or young men."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 993,
+      "id": "corpes:claro:R",
+      "before": {
+        "prompt": "certainly, naturally, of course",
+        "cue": "adverb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "certainly, naturally, of course",
+        "cue": "adverb",
+        "alternatives": [
+          "naturalmente",
+          "ciertamente"
+        ],
+        "note": "Naturalmente and ciertamente fit naturally or certainly. Claro also means clearly in habla claro."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1008,
+      "id": "corpes:corto:A",
+      "before": {
+        "prompt": "short",
+        "cue": "Of little length or duration",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "short",
+        "cue": "Of little length or duration",
+        "alternatives": [
+          "breve"
+        ],
+        "note": "Breve fits short duration or a short text; corto also covers physical length."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1021,
+      "id": "corpes:cuidado:N",
+      "before": {
+        "prompt": "care; attention",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "care; attention",
+        "cue": "noun",
+        "alternatives": [
+          "atención"
+        ],
+        "note": "Atención fits attention or care directed to someone or something; cuidado has other uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1036,
+      "id": "corpes:septiembre:N",
+      "before": {
+        "prompt": "September",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "September",
+        "cue": "noun",
+        "alternatives": [
+          "setiembre"
+        ],
+        "note": "Septiembre and setiembre are both valid; regional preferences differ."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1039,
+      "id": "corpes:agente:N",
+      "before": {
+        "prompt": "agent",
+        "cue": "A person acting on behalf of another",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "agent",
+        "cue": "A person acting on behalf of another",
+        "alternatives": [
+          "representante"
+        ],
+        "note": "Representante fits someone acting for another person; agente has additional professional senses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1044,
+      "id": "corpes:ropa:N",
+      "before": {
+        "prompt": "garment, clothing, clothes, robes",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "garment, clothing, clothes, robes",
+        "cue": "noun",
+        "alternatives": [
+          "indumentaria"
+        ],
+        "note": "Indumentaria fits clothing collectively; ropa is the ordinary general term."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1046,
+      "id": "corpes:pared:N",
+      "before": {
+        "prompt": "wall, especially of a house or room",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "wall, especially of a house or room",
+        "cue": "noun",
+        "alternatives": [
+          "muro"
+        ],
+        "note": "Muro and pared overlap for a wall. Muro often suggests substantial construction but is not limited to outdoor walls."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1055,
+      "id": "corpes:impedir:V",
+      "before": {
+        "prompt": "to prevent",
+        "cue": "Stop an event from happening",
+        "alternatives": [
+          "evitar"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to prevent",
+        "cue": "Stop an event from happening",
+        "alternatives": [
+          "evitar",
+          "prevenir"
+        ],
+        "note": "Prevenir fits taking steps to prevent an event; impedir and evitar also fit stopping it from happening."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1065,
+      "id": "corpes:promover:V",
+      "before": {
+        "prompt": "to promote, to pioneer, to advance, to foster, to further",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to promote, to pioneer, to advance, to foster, to further",
+        "cue": "verb",
+        "alternatives": [
+          "fomentar",
+          "impulsar"
+        ],
+        "note": "Fomentar and impulsar fit encouraging or advancing something; promover has other institutional uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1079,
+      "id": "corpes:normal:A",
+      "before": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "habitual",
+          "común"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "habitual",
+          "común",
+          "usual"
+        ],
+        "note": "Usual, común, normal and habitual overlap for customary rather than exceptional."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1084,
+      "id": "corpes:pelo:N",
+      "before": {
+        "prompt": "hair; fur",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "hair; fur",
+        "cue": "noun",
+        "alternatives": [
+          "cabello",
+          "pelaje"
+        ],
+        "note": "Cabello names hair on the human head; pelaje names an animal’s coat of fur. Both fit a sense explicitly shown here."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1095,
+      "id": "corpes:extender:V",
+      "before": {
+        "prompt": "to extend, to expand",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to extend, to expand",
+        "cue": "verb",
+        "alternatives": [
+          "expandir"
+        ],
+        "note": "Expandir fits the expand sense; extender has additional senses and constructions."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1099,
+      "id": "corpes:precisamente:R",
+      "before": {
+        "prompt": "precisely",
+        "cue": "adverb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "precisely",
+        "cue": "adverb",
+        "alternatives": [
+          "exactamente"
+        ],
+        "note": "Exactamente and precisamente overlap for precisely or exactly; precisely can also introduce an emphasis."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1123,
+      "id": "corpes:exponer:V",
+      "before": {
+        "prompt": "to exhibit",
+        "cue": "Display artworks publicly",
+        "alternatives": [
+          "mostrar"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to exhibit",
+        "cue": "Display artworks publicly",
+        "alternatives": [
+          "mostrar",
+          "exhibir"
+        ],
+        "note": "Exhibir, exponer and mostrar fit displaying artworks publicly; exponer also means explaining or exposing something."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1137,
+      "id": "corpes:actitud:N",
+      "before": {
+        "prompt": "attitude; stance",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "attitude; stance",
+        "cue": "noun",
+        "alternatives": [
+          "postura"
+        ],
+        "note": "Postura fits an attitude or stance; it can also describe bodily posture."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1147,
+      "id": "corpes:video:N",
+      "before": {
+        "prompt": "video (countable, uncountable)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "video (countable, uncountable)",
+        "cue": "noun",
+        "alternatives": [
+          "vídeo"
+        ],
+        "note": "Video and vídeo are both correct; vídeo is usual in Spain and video in much of America."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1148,
+      "id": "corpes:transformar:V",
+      "before": {
+        "prompt": "to transform",
+        "cue": "Change something's form or nature",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to transform",
+        "cue": "Change something's form or nature",
+        "alternatives": [
+          "convertir"
+        ],
+        "note": "Convertir fits changing something’s form or nature, commonly convertir algo en otra cosa."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1149,
+      "id": "corpes:fijar:V",
+      "before": {
+        "prompt": "to fix, fasten, set, establish, determine",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to fix, fasten, set, establish, determine",
+        "cue": "verb",
+        "alternatives": [
+          "establecer",
+          "determinar"
+        ],
+        "note": "Establecer and determinar fit setting or establishing something; fijar also means fastening it physically."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1159,
+      "id": "corpes:asimismo:R",
+      "before": {
+        "prompt": "also",
+        "cue": "In addition",
+        "alternatives": [
+          "también"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "also",
+        "cue": "In addition",
+        "alternatives": [
+          "también",
+          "además"
+        ],
+        "note": "Además, también and asimismo can add information. They do not occupy every sentence position interchangeably."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1160,
+      "id": "corpes:recién:R",
+      "before": {
+        "prompt": "recently; new-, newly, freshly",
+        "cue": "adverb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "recently; new-, newly, freshly",
+        "cue": "adverb",
+        "alternatives": [
+          "recientemente"
+        ],
+        "note": "Recientemente fits recently. Recién usually precedes a participle; in much of America it also accompanies finite verbs."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1166,
+      "id": "corpes:mil:N",
+      "before": {
+        "prompt": "a thousand; miles: thousands",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "a thousand; miles: thousands",
+        "cue": "noun",
+        "alternatives": [
+          "millar"
+        ],
+        "note": "Millar is a group of a thousand; mil can also function as a numeral."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1169,
+      "id": "corpes:espalda:N",
+      "before": {
+        "prompt": "back (anatomy)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "back (anatomy)",
+        "cue": "noun",
+        "alternatives": [
+          "dorso"
+        ],
+        "note": "Dorso can refer to the back; espalda is the usual everyday term for a person’s back."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1171,
+      "id": "corpes:debate:N",
+      "before": {
+        "prompt": "debate",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "debate",
+        "cue": "noun",
+        "alternatives": [
+          "discusión"
+        ],
+        "note": "Discusión can mean a debate or discussion, not only an argument."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1181,
+      "id": "corpes:terreno:N",
+      "before": {
+        "prompt": "plot of land",
+        "cue": "A tract of land",
+        "alternatives": [
+          "parcela"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "plot of land",
+        "cue": "A tract of land",
+        "alternatives": [
+          "parcela",
+          "lote"
+        ],
+        "note": "Lote can name a building plot; parcela and terreno also fit a tract of land."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1187,
+      "id": "corpes:impulsar:V",
+      "before": {
+        "prompt": "to impel, to propel",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to impel, to propel",
+        "cue": "verb",
+        "alternatives": [
+          "propulsar"
+        ],
+        "note": "Propulsar fits propelling something; impulsar also has figurative encouragement uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1192,
+      "id": "corpes:comportamiento:N",
+      "before": {
+        "prompt": "behavior",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "behavior",
+        "cue": "noun",
+        "alternatives": [
+          "conducta"
+        ],
+        "note": "Conducta and comportamiento both describe behavior; their specialized uses depend on context."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1204,
+      "id": "corpes:complejo:A",
+      "before": {
+        "prompt": "complex, sophisticated, intricate (made of multiple parts)",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "complex, sophisticated, intricate (made of multiple parts)",
+        "cue": "adjective",
+        "alternatives": [
+          "complicado"
+        ],
+        "note": "Complicado can describe something composed of many pieces as well as something difficult to understand."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1213,
+      "id": "corpes:oferta:N",
+      "before": {
+        "prompt": "offer (a proposal that has been made)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "offer (a proposal that has been made)",
+        "cue": "noun",
+        "alternatives": [
+          "ofrecimiento"
+        ],
+        "note": "Ofrecimiento names an offer; oferta also has commercial senses such as a special offer."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1219,
+      "id": "corpes:delito:N",
+      "before": {
+        "prompt": "crime; offense",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "crime; offense",
+        "cue": "noun",
+        "alternatives": [
+          "crimen"
+        ],
+        "note": "Crimen fits crime; it often suggests a serious offense. Delito covers offenses more broadly."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1220,
+      "id": "corpes:avance:N",
+      "before": {
+        "prompt": "advance",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "advance",
+        "cue": "noun",
+        "alternatives": [
+          "progreso",
+          "adelanto"
+        ],
+        "note": "Progreso and adelanto fit advance in the progress sense; adelanto can also mean an advance payment."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1222,
+      "id": "corpes:velocidad:N",
+      "before": {
+        "prompt": "speed",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "speed",
+        "cue": "noun",
+        "alternatives": [
+          "rapidez"
+        ],
+        "note": "Rapidez fits ordinary speed. In physics and some fixed expressions, velocidad and rapidez have more specific uses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1227,
+      "id": "corpes:conciencia:N",
+      "before": {
+        "prompt": "awareness",
+        "cue": "Being aware of something",
+        "alternatives": [
+          "conocimiento"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "awareness",
+        "cue": "Being aware of something",
+        "alternatives": [
+          "conocimiento",
+          "consciencia"
+        ],
+        "note": "Conciencia and consciencia are both valid for awareness. Moral conscience is normally conciencia."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1244,
+      "id": "corpes:actuación:N",
+      "before": {
+        "prompt": "performance (a live show or concert)",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "performance",
+        "cue": "An actor’s performance of a role",
+        "alternatives": [
+          "interpretación"
+        ],
+        "note": "Actuación and interpretación overlap for an actor’s performance of a role. A whole show can instead be an espectáculo or función."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1255,
+      "id": "corpes:contra:N",
+      "before": {
+        "prompt": "disadvantage; objection",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "disadvantage; objection",
+        "cue": "noun",
+        "alternatives": [
+          "desventaja",
+          "inconveniente",
+          "objeción"
+        ],
+        "note": "Desventaja and inconveniente fit disadvantage; objeción fits objection. In los pros y los contras, contra has a fixed noun use."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1256,
+      "id": "corpes:llenar:V",
+      "before": {
+        "prompt": "to fill something up (transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to fill something up (transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "rellenar"
+        ],
+        "note": "Rellenar can mean fill completely as well as refill or fill in a form."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1275,
+      "id": "corpes:dispuesto:A",
+      "before": {
+        "prompt": "willing, ready, game, down",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "willing, ready, game, down",
+        "cue": "adjective",
+        "alternatives": [
+          "listo",
+          "preparado"
+        ],
+        "note": "Listo and preparado fit ready; dispuesto also expresses willingness."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1278,
+      "id": "corpes:escapar:V",
+      "before": {
+        "prompt": "to escape, get out (intransitive, transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to escape, get out (intransitive, transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "huir",
+          "escaparse"
+        ],
+        "note": "Huir fits fleeing or escaping; escapar and escaparse both fit escape. Their uses are not identical in every sentence."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1285,
+      "id": "corpes:baño:N",
+      "before": {
+        "prompt": "bathroom; bath",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "bathroom; bath",
+        "cue": "noun",
+        "alternatives": [
+          "aseo"
+        ],
+        "note": "Aseo can mean a bathroom, particularly in Spain; baño also means a bath."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1289,
+      "id": "corpes:medicina:N",
+      "before": {
+        "prompt": "medicine",
+        "cue": "A substance used to treat illness",
+        "alternatives": [
+          "medicamento"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "medicine",
+        "cue": "A substance used to treat illness",
+        "alternatives": [
+          "medicamento",
+          "remedio"
+        ],
+        "note": "Remedio can mean a medicine or treatment; medicina also names the field of medicine."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1318,
+      "id": "corpes:señal:N",
+      "before": {
+        "prompt": "sign",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "sign",
+        "cue": "noun",
+        "alternatives": [
+          "signo",
+          "letrero"
+        ],
+        "note": "Signo can mean a sign; letrero fits a written sign. Señal also includes a signal or indication."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1331,
+      "id": "corpes:introducir:V",
+      "before": {
+        "prompt": "to introduce; to insert; to bring in",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to introduce; to insert; to bring in",
+        "cue": "verb",
+        "alternatives": [
+          "meter",
+          "insertar"
+        ],
+        "note": "Meter and insertar fit the insertion sense; introducir also means bringing something in or introducing it."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1342,
+      "id": "corpes:componer:V",
+      "before": {
+        "prompt": "to compose; to make up; to repair",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to compose; to make up; to repair",
+        "cue": "verb",
+        "alternatives": [
+          "arreglar",
+          "reparar"
+        ],
+        "note": "Arreglar and reparar fit the repair sense of componer, not its musical-composition sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1353,
+      "id": "corpes:promedio:N",
+      "before": {
+        "prompt": "average",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "average",
+        "cue": "noun",
+        "alternatives": [
+          "media"
+        ],
+        "note": "Media and promedio overlap for an average, especially an arithmetic mean."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1368,
+      "id": "corpes:llegada:N",
+      "before": {
+        "prompt": "arrival",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "arrival",
+        "cue": "noun",
+        "alternatives": [
+          "arribo"
+        ],
+        "note": "Arribo means arrival and can sound formal; llegada is the usual broad term."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1384,
+      "id": "corpes:rico:A",
+      "before": {
+        "prompt": "rich; tasty",
+        "cue": "adjective",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "rich; tasty",
+        "cue": "adjective",
+        "alternatives": [
+          "adinerado",
+          "sabroso"
+        ],
+        "note": "Adinerado fits rich in money; sabroso fits tasty. These alternatives correspond to different senses of rico."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1385,
+      "id": "corpes:abordar:V",
+      "before": {
+        "prompt": "to address, to broach, to approach, to discuss, to touch on (e.g. a subject, issue, topic, point) (transitive)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to address, to broach, to approach, to discuss, to touch on (e.g. a subject, issue, topic, point) (transitive)",
+        "cue": "verb",
+        "alternatives": [
+          "tratar",
+          "discutir"
+        ],
+        "note": "Tratar and discutir fit addressing or discussing a topic; discutir need not mean quarrelling."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1390,
+      "id": "corpes:conservar:V",
+      "before": {
+        "prompt": "to keep",
+        "cue": "Keep documents in good condition",
+        "alternatives": [
+          "mantener"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to keep",
+        "cue": "Keep documents in good condition",
+        "alternatives": [
+          "mantener",
+          "preservar"
+        ],
+        "note": "Preservar fits keeping documents protected and in good condition."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1401,
+      "id": "corpes:comunicar:V",
+      "before": {
+        "prompt": "to communicate",
+        "cue": "Convey a message",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to communicate",
+        "cue": "Convey a message",
+        "alternatives": [
+          "transmitir"
+        ],
+        "note": "Transmitir fits conveying a message; comunicar also has interpersonal and connecting senses."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1421,
+      "id": "corpes:investigar:V",
+      "before": {
+        "prompt": "to investigate",
+        "cue": "Seek information about the cause of an event",
+        "alternatives": [
+          "indagar"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to investigate",
+        "cue": "Seek information about the cause of an event",
+        "alternatives": [
+          "indagar",
+          "averiguar"
+        ],
+        "note": "Averiguar involves investigating to find something out and often emphasizes the result. Investigar and indagar emphasize the inquiry."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1423,
+      "id": "corpes:habitual:A",
+      "before": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "normal",
+          "común"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "usual",
+        "cue": "Customary rather than exceptional",
+        "alternatives": [
+          "normal",
+          "común",
+          "usual"
+        ],
+        "note": "Usual, común, normal and habitual overlap for customary rather than exceptional."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1449,
+      "id": "corpes:medicamento:N",
+      "before": {
+        "prompt": "medicine",
+        "cue": "A substance used to treat illness",
+        "alternatives": [
+          "medicina"
+        ],
+        "note": ""
+      },
+      "after": {
+        "prompt": "medicine",
+        "cue": "A substance used to treat illness",
+        "alternatives": [
+          "medicina",
+          "remedio"
+        ],
+        "note": "Remedio can mean a medicine or treatment; medicamento specifically names a medicinal substance or preparation."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1451,
+      "id": "corpes:evaluar:V",
+      "before": {
+        "prompt": "to evaluate",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to evaluate",
+        "cue": "verb",
+        "alternatives": [
+          "valorar"
+        ],
+        "note": "Valorar can mean evaluate or assess, as well as value or appreciate."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1467,
+      "id": "corpes:tienda:N",
+      "before": {
+        "prompt": "shop; store; tent",
+        "cue": "noun",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "shop; store; tent",
+        "cue": "noun",
+        "alternatives": [
+          "comercio",
+          "carpa"
+        ],
+        "note": "Comercio can name a shop; carpa is used for a tent in much of America. These fit different senses of tienda."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1470,
+      "id": "corpes:encargar:V",
+      "before": {
+        "prompt": "to entrust; to commission; to order",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to entrust; to commission; to order",
+        "cue": "verb",
+        "alternatives": [
+          "encomendar"
+        ],
+        "note": "Encomendar fits entrusting a task; encargar also means ordering goods or commissioning work."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1478,
+      "id": "corpes:ingresar:V",
+      "before": {
+        "prompt": "to enter; to join; to deposit (money)",
+        "cue": "verb",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "to enter; to join; to deposit (money)",
+        "cue": "verb",
+        "alternatives": [
+          "entrar",
+          "depositar"
+        ],
+        "note": "Entrar fits enter and depositar fits depositing money; ingresar also means joining an institution."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1484,
+      "id": "corpes:actualidad:N",
+      "before": {
+        "prompt": "the present",
+        "cue": "The current time",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "the present",
+        "cue": "The current time",
+        "alternatives": [
+          "presente"
+        ],
+        "note": "Presente as a noun fits the current time. Actualidad can also mean current affairs."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    },
+    {
+      "rank": 1491,
+      "id": "corpes:jurídico:A",
+      "before": {
+        "prompt": "legal",
+        "cue": "Relating to law as a field",
+        "alternatives": [],
+        "note": ""
+      },
+      "after": {
+        "prompt": "legal",
+        "cue": "Relating to law as a field",
+        "alternatives": [
+          "legal"
+        ],
+        "note": "Legal can mean relating to law, as well as lawful. Jurídico usually selects the relating-to-law sense."
+      },
+      "decision": "corrected",
+      "basis": "Exact-sense comparison, independent audit and reconciliation; source access levels retained in audit evidence."
+    }
+  ],
+  "teachingMeaningCorrections": {
+    "509": "to add; to aggregate",
+    "584": "to return, go back, come back",
+    "1194": "to remove; to withdraw",
+    "537": "to increase (transitive or intransitive)",
+    "854": "face (the front of the head)",
+    "1026": "car, automobile"
+  },
+  "numeralCue": 536,
+  "sourceAccess": "Primary sources opened are marked primary-entry in later-day-source-evidence; remaining additions use stored lexical senses plus reviewer comparison, not invented source quotations.",
+  "additionalDecisions": {
+    "D-01": "Accepted report/recount alternatives; retained referir and explained referirse a separately.",
+    "D-02": "Corrected end versus final-match English in all three shared examples and chunks; Spanish and cloze answers preserved.",
+    "D-03": "Translated assertion as assure you; no categorical mood rule introduced.",
+    "D-04": "Accepted vos for subject and prepositional informal-you cues with regional explanation.",
+    "D-05": "Accepted centenar/centena; retained rejection of numeral cien for the noun target.",
+    "D-06": "Accepted legal for jurídico in relating-to-law sense.",
+    "D-07": "Accepted usual on all three matching cards.",
+    "D-08": "Accepted era; did not pretend changing English to epoch would exclude it.",
+    "D-09": "Explicit valid variants receive credit before retry detection.",
+    "D-10": "All 21 reported card omissions corrected with sense-specific alternatives and explanations.",
+    "D-11": "Accepted adding-to-a-whole alternatives on the written cue itself; no graph-based expansion.",
+    "D-12": "Accepted caerse and reírse; escaparse also accepted rather than spelling retry.",
+    "A-01": "No change: valid sibling answers are intentional. Eliciting only the headword is not the assessment goal.",
+    "A-02": "Accepted niño where the boy/young-person cue includes children; clarified broader ages.",
+    "A-03": "Accepted the three standard pronominal infinitives; arbitrary conjugated forms still do not pass.",
+    "A-04": "Removed unsupported colloquial/geographic restrictions from resolved teaching meanings.",
+    "A-05": "Clarified ceremony context with Durante el acto, retaining target acto and authored chunks.",
+    "A-06": "Accepted natural/adverbial alternatives. The separate clearly example remains a valid broader lexical reference.",
+    "A-07": "All 20 broad-gloss candidates addressed; each retained broad prompt gets corresponding explicit alternatives.",
+    "A-08": "Teaching meaning now explicitly allows transitive and intransitive aumentar.",
+    "A-09": "Explicit medio litro construction disambiguates numeral/adjective from noun mitad.",
+    "O-01": "Accepted supported money, room, medicine, short-person and plot alternatives. No multiword atrás de answer: the task explicitly requires one word, and regional variation is already explained.",
+    "O-02": "Accepted desenlace, procurar, esencial, entero, prevenir, millar and preservar on the matching cues.",
+    "O-03": "No change: main examples may intentionally show another legitimate lexical sense. No false translation established for these entries.",
+    "O-04": "Corrected medical student English. Other reported naturalness/redundancy preferences are not demonstrated semantic errors; retained existing authored target-bearing sentences and recordings.",
+    "O-05": "Corrected all three mismatched source links.",
+    "O-06": "Added el final / la final distinction in final’s contextual comparison.",
+    "U-01": "Closed, no change: DPD supports asumir as assuming true.",
+    "U-02": "Closed, no change: stable legacy IDs intentionally preserve progress after headword corrections.",
+    "U-03": "Accepted norteamericano; DLE explicitly includes estadounidense; explanation preserves broader geographic meaning.",
+    "U-04": "Removed overly specific qualifiers from resolved rostro/coche meanings; retained cautious group explanations.",
+    "U-05": "Closed: actual runtime tests documented; valid forms now pass, cien remains excluded for noun cue.",
+    "N-01": "Retained oír/escuchar overlap.",
+    "N-02": "Retained aun/aún sense distinction.",
+    "N-03": "Retained explicit singular gana target.",
+    "N-04": "Retained coger regional register explanation.",
+    "N-05": "Retained defensible principal/primordial overlap.",
+    "N-06": "Retained list-addition alternatives, independently evaluated incorporar cue.",
+    "N-07": "Retained correct example constructions; corrected identified English and ceremony clarity separately.",
+    "N-08": "Removed unsupported obtener absolute; clarified directly preceding el before stressed initial a for alma.",
+    "Codex-salvar": "Resolved by explicit standard file-menu construction Guardar como; makes no claim that every other software term is invalid.",
+    "Codex-interpretación": "Selected actor performance sense and accepted interpretación; broadened teaching meaning to performance/acting.",
+    "Codex-averiguar": "Accepted after DLE defines inquiry through discovery; explained process/result emphasis.",
+    "Codex-complicado": "Accepted after DLE confirms many-pieces sense.",
+    "Codex-less-common": "Accepted reported legitimate less-common alternatives with register/context notes; frequency alone does not make an unrestricted-cue answer false."
+  },
+  "status": "All reported audit findings have an explicit correction or justified no-change disposition. No pending linguistic decision in this finite audit; not exhaustive synonym certification."
+}

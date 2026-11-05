@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -71,7 +72,7 @@ test('new ambiguous forms retain the reviewed meaning in every shared sentence',
 });
 
 test('all assessment content retains the pre-audit fingerprint',()=>{
- const bank=read('../lemmas/data/context.json');
+ const {bank}=beforeLaterContextCorrections();
  const assessment=bank.contexts.map(c=>[c.id,c.target,read('../data/spanish-lemmas/pronoun-recall-audit.json').originalAnswers[c.id]||c.answers,c.example.text,c.example.translation]);
  assert.equal(createHash('sha256').update(JSON.stringify(assessment)).digest('hex'),audit.contextIntegrity.assessmentSha256);
 });

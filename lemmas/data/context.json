@@ -12028,7 +12028,7 @@
       "id": "corpes:internacional:A",
       "example": {
         "text": "Incluso el final del torneo internacional es gratis.",
-        "translation": "Even the final of the international tournament is free.",
+        "translation": "Even the end of the international tournament is free.",
         "chunks": [
           {
             "text": "Incluso",
@@ -12037,7 +12037,7 @@
           },
           {
             "text": "el final del torneo internacional",
-            "meaning": "the final of the international tournament",
+            "meaning": "the end of the international tournament",
             "concept": "context:target:267"
           },
           {
@@ -12075,7 +12075,7 @@
       "id": "corpes:incluso:R",
       "example": {
         "text": "Incluso el final del torneo internacional es gratis.",
-        "translation": "Even the final of the international tournament is free.",
+        "translation": "Even the end of the international tournament is free.",
         "chunks": [
           {
             "text": "Incluso",
@@ -12084,7 +12084,7 @@
           },
           {
             "text": "el final del torneo internacional",
-            "meaning": "the final of the international tournament",
+            "meaning": "the end of the international tournament",
             "concept": "context:n"
           },
           {
@@ -12122,7 +12122,7 @@
       "id": "corpes:final:N",
       "example": {
         "text": "Incluso el final del torneo internacional es gratis.",
-        "translation": "Even the final of the international tournament is free.",
+        "translation": "Even the end of the international tournament is free.",
         "chunks": [
           {
             "text": "Incluso",
@@ -12131,7 +12131,7 @@
           },
           {
             "text": "el final del torneo internacional",
-            "meaning": "the final of the international tournament",
+            "meaning": "the end of the international tournament",
             "concept": "context:target:269"
           },
           {
@@ -12432,7 +12432,7 @@
       "id": "corpes:nosotros:L",
       "example": {
         "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
-        "translation": "We ensure that the sector has enough resources.",
+        "translation": "We assure you that the sector has enough resources.",
         "chunks": [
           {
             "text": "Nosotros",
@@ -12441,7 +12441,7 @@
           },
           {
             "text": "aseguramos",
-            "meaning": "ensure",
+            "meaning": "assure you",
             "concept": "context:v"
           },
           {
@@ -12479,7 +12479,7 @@
       "answerNote": "Nosotros and nosotras both fit; the English sentence does not specify the group’s gender.",
       "wordMeanings": {
         "nosotros": "We",
-        "aseguramos": "ensure",
+        "aseguramos": "assure you",
         "que": "that",
         "el": "the",
         "sector": "sector; area; section",
@@ -12492,7 +12492,7 @@
       "id": "corpes:asegurar:V",
       "example": {
         "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
-        "translation": "We ensure that the sector has enough resources.",
+        "translation": "We assure you that the sector has enough resources.",
         "chunks": [
           {
             "text": "Nosotros",
@@ -12501,7 +12501,7 @@
           },
           {
             "text": "aseguramos",
-            "meaning": "ensure",
+            "meaning": "assure you",
             "concept": "context:target:277"
           },
           {
@@ -12536,7 +12536,7 @@
       "explanation": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive",
       "wordMeanings": {
         "nosotros": "We",
-        "aseguramos": "ensure",
+        "aseguramos": "assure you",
         "que": "that",
         "el": "the",
         "sector": "sector; area; section",
@@ -12549,7 +12549,7 @@
       "id": "corpes:sector:N",
       "example": {
         "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
-        "translation": "We ensure that the sector has enough resources.",
+        "translation": "We assure you that the sector has enough resources.",
         "chunks": [
           {
             "text": "Nosotros",
@@ -12558,7 +12558,7 @@
           },
           {
             "text": "aseguramos",
-            "meaning": "ensure",
+            "meaning": "assure you",
             "concept": "context:v"
           },
           {
@@ -12593,7 +12593,7 @@
       "explanation": "sector is used here as a noun. Masculine in the meaning shown.",
       "wordMeanings": {
         "nosotros": "We",
-        "aseguramos": "ensure",
+        "aseguramos": "assure you",
         "que": "that",
         "el": "the",
         "sector": "sector; area; section",
@@ -28348,12 +28348,12 @@
     {
       "id": "corpes:acto:N",
       "example": {
-        "text": "En el acto entrega un libro sobre la libertad.",
-        "translation": "At the ceremony she presents a book about freedom.",
+        "text": "Durante el acto entrega un libro sobre la libertad.",
+        "translation": "During the ceremony she presents a book about freedom.",
         "chunks": [
           {
-            "text": "En el acto",
-            "meaning": "At the ceremony",
+            "text": "Durante el acto",
+            "meaning": "During the ceremony",
             "concept": "context:target:595"
           },
           {
@@ -28374,7 +28374,7 @@
         ]
       },
       "index": 0,
-      "offset": 6,
+      "offset": 11,
       "target": "acto",
       "answers": [
         "acto"
@@ -28382,7 +28382,7 @@
       "headword": "acto",
       "explanation": "acto is used here as a noun. Masculine in the meaning shown.",
       "wordMeanings": {
-        "en": "in; on; at",
+        "durante": "during, in, over",
         "el": "the",
         "acto": "act (something done)",
         "entrega": "she presents",
@@ -28396,12 +28396,12 @@
     {
       "id": "corpes:entregar:V",
       "example": {
-        "text": "En el acto entrega un libro sobre la libertad.",
-        "translation": "At the ceremony she presents a book about freedom.",
+        "text": "Durante el acto entrega un libro sobre la libertad.",
+        "translation": "During the ceremony she presents a book about freedom.",
         "chunks": [
           {
-            "text": "En el acto",
-            "meaning": "At the ceremony",
+            "text": "Durante el acto",
+            "meaning": "During the ceremony",
             "concept": "context:p"
           },
           {
@@ -28430,7 +28430,7 @@
       "headword": "entregar",
       "explanation": "entrega is a form of entregar (present: él / ella / usted). Dictionary form · infinitive",
       "wordMeanings": {
-        "en": "in; on; at",
+        "durante": "during, in, over",
         "el": "the",
         "acto": "act (something done)",
         "entrega": "she presents",
@@ -28444,12 +28444,12 @@
     {
       "id": "corpes:libertad:N",
       "example": {
-        "text": "En el acto entrega un libro sobre la libertad.",
-        "translation": "At the ceremony she presents a book about freedom.",
+        "text": "Durante el acto entrega un libro sobre la libertad.",
+        "translation": "During the ceremony she presents a book about freedom.",
         "chunks": [
           {
-            "text": "En el acto",
-            "meaning": "At the ceremony",
+            "text": "Durante el acto",
+            "meaning": "During the ceremony",
             "concept": "context:p"
           },
           {
@@ -28478,7 +28478,7 @@
       "headword": "libertad",
       "explanation": "libertad is used here as a noun. Feminine in the meaning shown.",
       "wordMeanings": {
-        "en": "in; on; at",
+        "durante": "during, in, over",
         "el": "the",
         "acto": "act (something done)",
         "entrega": "she presents",
@@ -61998,11 +61998,11 @@
       "id": "corpes:citar:V",
       "example": {
         "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
-        "translation": "The medicine student wants to quote a text about feelings.",
+        "translation": "The medical student wants to quote a text about feelings.",
         "chunks": [
           {
             "text": "El estudiante de medicina",
-            "meaning": "The medicine student",
+            "meaning": "The medical student",
             "concept": "context:n"
           },
           {
@@ -62048,11 +62048,11 @@
       "id": "corpes:medicina:N",
       "example": {
         "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
-        "translation": "The medicine student wants to quote a text about feelings.",
+        "translation": "The medical student wants to quote a text about feelings.",
         "chunks": [
           {
             "text": "El estudiante de medicina",
-            "meaning": "The medicine student",
+            "meaning": "The medical student",
             "concept": "context:target:1289"
           },
           {
@@ -62098,11 +62098,11 @@
       "id": "corpes:sentimiento:N",
       "example": {
         "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
-        "translation": "The medicine student wants to quote a text about feelings.",
+        "translation": "The medical student wants to quote a text about feelings.",
         "chunks": [
           {
             "text": "El estudiante de medicina",
-            "meaning": "The medicine student",
+            "meaning": "The medical student",
             "concept": "context:n"
           },
           {
@@ -73307,7 +73307,7 @@
     },
     "context:target:267": {
       "title": "internacional in this sentence",
-      "text": "internacional is used here as an adjective. Same singular form for both genders. In this phrase: the final of the international tournament."
+      "text": "internacional is used here as an adjective. Same singular form for both genders. In this phrase: the end of the international tournament."
     },
     "context:target:268": {
       "title": "incluso in this sentence",
@@ -73315,7 +73315,7 @@
     },
     "context:target:269": {
       "title": "final in this sentence",
-      "text": "final is used here as a noun. Masculine in the meaning shown. In this phrase: the final of the international tournament."
+      "text": "final is used here as a noun. Masculine in the meaning shown. In this phrase: the end of the international tournament."
     },
     "context:target:270": {
       "title": "ganar in this sentence",
@@ -73347,7 +73347,7 @@
     },
     "context:target:277": {
       "title": "asegurar in this sentence",
-      "text": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive In this phrase: ensure."
+      "text": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive In this phrase: assure you."
     },
     "context:target:278": {
       "title": "sector in this sentence",
@@ -74619,7 +74619,7 @@
     },
     "context:target:595": {
       "title": "acto in this sentence",
-      "text": "acto is used here as a noun. Masculine in the meaning shown. In this phrase: At the ceremony."
+      "text": "acto is used here as a noun. Masculine in the meaning shown. In this phrase: During the ceremony."
     },
     "context:target:596": {
       "title": "entregar in this sentence",
@@ -77395,7 +77395,7 @@
     },
     "context:target:1289": {
       "title": "medicina in this sentence",
-      "text": "medicina is used here as a noun. Feminine in the meaning shown. In this phrase: The medicine student."
+      "text": "medicina is used here as a noun. Feminine in the meaning shown. In this phrase: The medical student."
     },
     "context:target:1290": {
       "title": "sentimiento in this sentence",

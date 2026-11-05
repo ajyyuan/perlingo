@@ -1,3 +1,6 @@
+import {laterMeanings} from './later-teaching-data.js';
+import {laterUsage} from './later-usage-data.js';
+import {laterRecall} from './later-recall-data.js';
 import {usageComparisons} from './usage-comparisons.js';
 import {dayOneExamples} from './day1-examples.js';
 import {referenceForms} from './verb-forms.js';
@@ -14,12 +17,14 @@ export function combineNotes(base,contextBank,usageBank){
  const contexts=new Map(contextBank.contexts.map(c=>[c.id,c]));
  const notes=base.notes.map((n,index)=>{
   const note=authored.has(n.id)?{...n,...authored.get(n.id)}:{...n};
+  if(laterMeanings[n.id])note.meaning=laterMeanings[n.id];
   const teaching=dayOneTeaching[n.id];
   if(teaching){note.recallTeaching=teaching;if(teaching.meaning)note.meaning=teaching.meaning;}
   const context=contexts.get(n.id);if(!context)throw Error('Missing context: '+n.id);
   const aligned=dayOneExamples[n.id];
   if(aligned)note.examples=[aligned,...note.examples.filter(e=>e.text!==aligned.text)];
-  note.usageGroups=usageBank?.groups.filter(g=>g.members.includes(n.id))||[];
+  note.usageGroups=[...(usageBank?.groups||[]),...laterUsage].filter(g=>g.members.includes(n.id));
+  if(laterRecall[n.id])note.selectedRecall={...laterRecall[n.id],answers:[note.word,...laterRecall[n.id].alternatives]};
   if(usageBank&&['corpes:después:R','corpes:luego:R'].includes(n.id))note.usageGroups=[{id:'despues-luego',title:'después · luego',sections:usageComparisons['despues-luego']},...note.usageGroups.filter(g=>g.id!=='despues-luego')];
   return {...note,rank:index+1,level:'sentence',examples:note.examples.some(e=>e.text===context.example.text)?note.examples:[...note.examples,context.example]};
  });

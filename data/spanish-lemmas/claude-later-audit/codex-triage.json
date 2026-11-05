@@ -1,0 +1,1018 @@
+{
+  "date": "2026-11-05",
+  "basis": "Follow-up to immutable independent pass; no Claude findings read before this triage. Primary checks are explicitly marked; remaining cases use stored lexicographic evidence and sense judgment. These are card-specific proposals, not a synonym-equivalence graph.",
+  "candidates": [
+    {
+      "rank": 275,
+      "cardId": "corpes:investigación:N",
+      "prompt": "investigation",
+      "cue": "noun",
+      "accepted": [
+        "investigación"
+      ],
+      "candidateAnswers": [
+        "indagación",
+        "pesquisa"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 307,
+      "cardId": "corpes:fuerza:N",
+      "prompt": "strength",
+      "cue": "Physical strength",
+      "accepted": [
+        "fuerza"
+      ],
+      "candidateAnswers": [
+        "fortaleza"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://dle.rae.es/fortaleza",
+      "reason": "Physical strength is illustrated with a wrestler."
+    },
+    {
+      "rank": 313,
+      "cardId": "corpes:poder:N",
+      "prompt": "power",
+      "cue": "Authority to act",
+      "accepted": [
+        "poder"
+      ],
+      "candidateAnswers": [
+        "autoridad"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 376,
+      "cardId": "corpes:decisión:N",
+      "prompt": "decision",
+      "cue": "noun",
+      "accepted": [
+        "decisión"
+      ],
+      "candidateAnswers": [
+        "determinación"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 417,
+      "cardId": "corpes:falta:N",
+      "prompt": "lack, shortage",
+      "cue": "noun",
+      "accepted": [
+        "falta"
+      ],
+      "candidateAnswers": [
+        "carencia"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 421,
+      "cardId": "corpes:destacar:V",
+      "prompt": "to highlight; to stand out",
+      "cue": "verb",
+      "accepted": [
+        "destacar"
+      ],
+      "candidateAnswers": [
+        "resaltar",
+        "sobresalir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 446,
+      "cardId": "corpes:acuerdo:N",
+      "prompt": "agreement",
+      "cue": "noun",
+      "accepted": [
+        "acuerdo"
+      ],
+      "candidateAnswers": [
+        "convenio",
+        "pacto"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 477,
+      "cardId": "corpes:sufrir:V",
+      "prompt": "to suffer (be confronted with something undesired) (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "sufrir"
+      ],
+      "candidateAnswers": [
+        "padecer"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 479,
+      "cardId": "corpes:bajar:V",
+      "prompt": "to go down, come down",
+      "cue": "verb",
+      "accepted": [
+        "bajar"
+      ],
+      "candidateAnswers": [
+        "descender"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 484,
+      "cardId": "corpes:informar:V",
+      "prompt": "to inform",
+      "cue": "Give someone information",
+      "accepted": [
+        "informar"
+      ],
+      "candidateAnswers": [
+        "comunicar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 486,
+      "cardId": "corpes:subir:V",
+      "prompt": "to go up or come up",
+      "cue": "verb",
+      "accepted": [
+        "subir"
+      ],
+      "candidateAnswers": [
+        "ascender"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 521,
+      "cardId": "corpes:fuera:R",
+      "prompt": "outside, out",
+      "cue": "adverb",
+      "accepted": [
+        "fuera"
+      ],
+      "candidateAnswers": [
+        "afuera"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 533,
+      "cardId": "corpes:miembro:N",
+      "prompt": "member (one who belongs to a group)",
+      "cue": "noun",
+      "accepted": [
+        "miembro"
+      ],
+      "candidateAnswers": [
+        "integrante"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 535,
+      "cardId": "corpes:futuro:N",
+      "prompt": "future (the time ahead)",
+      "cue": "noun",
+      "accepted": [
+        "futuro"
+      ],
+      "candidateAnswers": [
+        "porvenir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 545,
+      "cardId": "corpes:apoyo:N",
+      "prompt": "support",
+      "cue": "noun",
+      "accepted": [
+        "apoyo"
+      ],
+      "candidateAnswers": [
+        "respaldo"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://dle.rae.es/respaldo",
+      "reason": "The support/protection sense fits the unrestricted noun cue."
+    },
+    {
+      "rank": 550,
+      "cardId": "corpes:mirada:N",
+      "prompt": "look, glance",
+      "cue": "noun",
+      "accepted": [
+        "mirada"
+      ],
+      "candidateAnswers": [
+        "vistazo"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 561,
+      "cardId": "corpes:propuesta:N",
+      "prompt": "proposal",
+      "cue": "noun",
+      "accepted": [
+        "propuesta"
+      ],
+      "candidateAnswers": [
+        "proposición"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 569,
+      "cardId": "corpes:década:N",
+      "prompt": "decade",
+      "cue": "noun",
+      "accepted": [
+        "década"
+      ],
+      "candidateAnswers": [
+        "decenio"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 611,
+      "cardId": "corpes:objeto:N",
+      "prompt": "object",
+      "cue": "A physical thing",
+      "accepted": [
+        "objeto"
+      ],
+      "candidateAnswers": [
+        "cosa"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://dle.rae.es/objeto",
+      "reason": "Physical object/thing sense supports cosa."
+    },
+    {
+      "rank": 629,
+      "cardId": "corpes:éxito:N",
+      "prompt": "success",
+      "cue": "noun",
+      "accepted": [
+        "éxito"
+      ],
+      "candidateAnswers": [
+        "triunfo"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 692,
+      "cardId": "corpes:cubrir:V",
+      "prompt": "to cover (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "cubrir"
+      ],
+      "candidateAnswers": [
+        "tapar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 713,
+      "cardId": "corpes:cama:N",
+      "prompt": "bed",
+      "cue": "noun",
+      "accepted": [
+        "cama"
+      ],
+      "candidateAnswers": [
+        "lecho"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 724,
+      "cardId": "corpes:actuar:V",
+      "prompt": "to act, to behave",
+      "cue": "verb",
+      "accepted": [
+        "actuar"
+      ],
+      "candidateAnswers": [
+        "comportarse",
+        "obrar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 734,
+      "cardId": "corpes:fútbol:N",
+      "prompt": "football (soccer)",
+      "cue": "noun",
+      "accepted": [
+        "fútbol"
+      ],
+      "candidateAnswers": [
+        "balompié"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 740,
+      "cardId": "corpes:operación:N",
+      "prompt": "operation (a surgical procedure) (medicine)",
+      "cue": "noun",
+      "accepted": [
+        "operación"
+      ],
+      "candidateAnswers": [
+        "cirugía"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 754,
+      "cardId": "corpes:aplicación:N",
+      "prompt": "application, use (the act of applying as a means; the employment of means to accomplish an end; specific use)",
+      "cue": "noun",
+      "accepted": [
+        "aplicación"
+      ],
+      "candidateAnswers": [
+        "uso",
+        "empleo",
+        "utilización"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 763,
+      "cardId": "corpes:opción:N",
+      "prompt": "option",
+      "cue": "noun",
+      "accepted": [
+        "opción"
+      ],
+      "candidateAnswers": [
+        "alternativa"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 771,
+      "cardId": "corpes:ayuda:N",
+      "prompt": "help, aid",
+      "cue": "noun",
+      "accepted": [
+        "ayuda"
+      ],
+      "candidateAnswers": [
+        "auxilio",
+        "asistencia"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 795,
+      "cardId": "corpes:unir:V",
+      "prompt": "to unite, join (transitive or reflexive)",
+      "cue": "verb",
+      "accepted": [
+        "unir"
+      ],
+      "candidateAnswers": [
+        "juntar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 802,
+      "cardId": "corpes:opinión:N",
+      "prompt": "opinion",
+      "cue": "noun",
+      "accepted": [
+        "opinión"
+      ],
+      "candidateAnswers": [
+        "parecer"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 805,
+      "cardId": "corpes:disfrutar:V",
+      "prompt": "to enjoy (transitive, intransitive)",
+      "cue": "verb",
+      "accepted": [
+        "disfrutar"
+      ],
+      "candidateAnswers": [
+        "gozar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 828,
+      "cardId": "corpes:detalle:N",
+      "prompt": "detail",
+      "cue": "noun",
+      "accepted": [
+        "detalle"
+      ],
+      "candidateAnswers": [
+        "pormenor"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 870,
+      "cardId": "corpes:invitar:V",
+      "prompt": "to invite",
+      "cue": "verb",
+      "accepted": [
+        "invitar"
+      ],
+      "candidateAnswers": [
+        "convidar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 880,
+      "cardId": "corpes:igual:R",
+      "prompt": "equally",
+      "cue": "In the same way",
+      "accepted": [
+        "igual"
+      ],
+      "candidateAnswers": [
+        "igualmente"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://dle.rae.es/igual",
+      "reason": "Adverbial same-manner sense supports igualmente."
+    },
+    {
+      "rank": 894,
+      "cardId": "corpes:lucha:N",
+      "prompt": "fight, fighting, fray",
+      "cue": "noun",
+      "accepted": [
+        "lucha"
+      ],
+      "candidateAnswers": [
+        "pelea",
+        "combate"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 902,
+      "cardId": "corpes:barrio:N",
+      "prompt": "neighbourhood",
+      "cue": "noun",
+      "accepted": [
+        "barrio"
+      ],
+      "candidateAnswers": [
+        "vecindario"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 905,
+      "cardId": "corpes:integrar:V",
+      "prompt": "to integrate",
+      "cue": "Bring parts into a unified whole",
+      "accepted": [
+        "integrar"
+      ],
+      "candidateAnswers": [
+        "incorporar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 913,
+      "cardId": "corpes:guardar:V",
+      "prompt": "to save",
+      "cue": "Store a file for later use",
+      "accepted": [
+        "guardar"
+      ],
+      "candidateAnswers": [
+        "salvar"
+      ],
+      "status": "deferred; no acceptance change recommended yet",
+      "confidence": "unresolved",
+      "reason": "Computing use of salvar needs direct evidence; absence from the opened DLE page does not establish invalidity."
+    },
+    {
+      "rank": 928,
+      "cardId": "corpes:listo:N",
+      "prompt": "list",
+      "cue": "noun",
+      "accepted": [
+        "lista"
+      ],
+      "candidateAnswers": [
+        "listado"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 933,
+      "cardId": "corpes:adecuado:A",
+      "prompt": "adequate",
+      "cue": "adjective",
+      "accepted": [
+        "adecuado"
+      ],
+      "candidateAnswers": [
+        "apropiado"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 948,
+      "cardId": "corpes:oficina:N",
+      "prompt": "office (a room used for non-manual work)",
+      "cue": "noun",
+      "accepted": [
+        "oficina"
+      ],
+      "candidateAnswers": [
+        "despacho"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 971,
+      "cardId": "corpes:experto:N",
+      "prompt": "expert",
+      "cue": "noun",
+      "accepted": [
+        "experto"
+      ],
+      "candidateAnswers": [
+        "perito"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1008,
+      "cardId": "corpes:corto:A",
+      "prompt": "short",
+      "cue": "Of little length or duration",
+      "accepted": [
+        "corto"
+      ],
+      "candidateAnswers": [
+        "breve"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1039,
+      "cardId": "corpes:agente:N",
+      "prompt": "agent",
+      "cue": "A person acting on behalf of another",
+      "accepted": [
+        "agente"
+      ],
+      "candidateAnswers": [
+        "representante"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1044,
+      "cardId": "corpes:ropa:N",
+      "prompt": "garment, clothing, clothes, robes",
+      "cue": "noun",
+      "accepted": [
+        "ropa"
+      ],
+      "candidateAnswers": [
+        "indumentaria"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1046,
+      "cardId": "corpes:pared:N",
+      "prompt": "wall, especially of a house or room",
+      "cue": "noun",
+      "accepted": [
+        "pared"
+      ],
+      "candidateAnswers": [
+        "muro"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1084,
+      "cardId": "corpes:pelo:N",
+      "prompt": "hair; fur",
+      "cue": "noun",
+      "accepted": [
+        "pelo"
+      ],
+      "candidateAnswers": [
+        "cabello",
+        "pelaje"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1095,
+      "cardId": "corpes:extender:V",
+      "prompt": "to extend, to expand",
+      "cue": "verb",
+      "accepted": [
+        "extender"
+      ],
+      "candidateAnswers": [
+        "expandir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1099,
+      "cardId": "corpes:precisamente:R",
+      "prompt": "precisely",
+      "cue": "adverb",
+      "accepted": [
+        "precisamente"
+      ],
+      "candidateAnswers": [
+        "exactamente"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1148,
+      "cardId": "corpes:transformar:V",
+      "prompt": "to transform",
+      "cue": "Change something's form or nature",
+      "accepted": [
+        "transformar"
+      ],
+      "candidateAnswers": [
+        "convertir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1160,
+      "cardId": "corpes:recién:R",
+      "prompt": "recently; new-, newly, freshly",
+      "cue": "adverb",
+      "accepted": [
+        "recién"
+      ],
+      "candidateAnswers": [
+        "recientemente"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://www.rae.es/dpd/recién",
+      "reason": "Recently is a legitimate sense, with regional and construction differences that belong in the comparison."
+    },
+    {
+      "rank": 1169,
+      "cardId": "corpes:espalda:N",
+      "prompt": "back (anatomy)",
+      "cue": "noun",
+      "accepted": [
+        "espalda"
+      ],
+      "candidateAnswers": [
+        "dorso"
+      ],
+      "status": "primary-supported false-rejection candidate; not implemented",
+      "confidence": "high",
+      "source": "https://dle.rae.es/dorso",
+      "reason": "Back/reverse sense supports the anatomical alternative; do not confuse the swimming sense in the stored entry."
+    },
+    {
+      "rank": 1171,
+      "cardId": "corpes:debate:N",
+      "prompt": "debate",
+      "cue": "noun",
+      "accepted": [
+        "debate"
+      ],
+      "candidateAnswers": [
+        "discusión"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1204,
+      "cardId": "corpes:complejo:A",
+      "prompt": "complex, sophisticated, intricate (made of multiple parts)",
+      "cue": "adjective",
+      "accepted": [
+        "complejo"
+      ],
+      "candidateAnswers": [
+        "complicado"
+      ],
+      "status": "deferred; no acceptance change recommended yet",
+      "confidence": "unresolved",
+      "reason": "Complicated and composed of multiple parts are overlapping, not identical; resolve the parenthetical cue before changing acceptance."
+    },
+    {
+      "rank": 1213,
+      "cardId": "corpes:oferta:N",
+      "prompt": "offer (a proposal that has been made)",
+      "cue": "noun",
+      "accepted": [
+        "oferta"
+      ],
+      "candidateAnswers": [
+        "ofrecimiento"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1219,
+      "cardId": "corpes:delito:N",
+      "prompt": "crime; offense",
+      "cue": "noun",
+      "accepted": [
+        "delito"
+      ],
+      "candidateAnswers": [
+        "crimen"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1220,
+      "cardId": "corpes:avance:N",
+      "prompt": "advance",
+      "cue": "noun",
+      "accepted": [
+        "avance"
+      ],
+      "candidateAnswers": [
+        "progreso",
+        "adelanto"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1244,
+      "cardId": "corpes:actuación:N",
+      "prompt": "performance (a live show or concert)",
+      "cue": "noun",
+      "accepted": [
+        "actuación"
+      ],
+      "candidateAnswers": [
+        "interpretación"
+      ],
+      "status": "deferred; no acceptance change recommended yet",
+      "confidence": "unresolved",
+      "reason": "Interpretation/performance of a work is not identical to an entire live show; clarify the selected sense."
+    },
+    {
+      "rank": 1256,
+      "cardId": "corpes:llenar:V",
+      "prompt": "to fill something up (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "llenar"
+      ],
+      "candidateAnswers": [
+        "rellenar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1278,
+      "cardId": "corpes:escapar:V",
+      "prompt": "to escape, get out (intransitive, transitive)",
+      "cue": "verb",
+      "accepted": [
+        "escapar"
+      ],
+      "candidateAnswers": [
+        "huir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1285,
+      "cardId": "corpes:baño:N",
+      "prompt": "bathroom; bath",
+      "cue": "noun",
+      "accepted": [
+        "baño"
+      ],
+      "candidateAnswers": [
+        "aseo"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1331,
+      "cardId": "corpes:introducir:V",
+      "prompt": "to introduce; to insert; to bring in",
+      "cue": "verb",
+      "accepted": [
+        "introducir"
+      ],
+      "candidateAnswers": [
+        "meter",
+        "insertar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1342,
+      "cardId": "corpes:componer:V",
+      "prompt": "to compose; to make up; to repair",
+      "cue": "verb",
+      "accepted": [
+        "componer"
+      ],
+      "candidateAnswers": [
+        "arreglar",
+        "reparar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1368,
+      "cardId": "corpes:llegada:N",
+      "prompt": "arrival",
+      "cue": "noun",
+      "accepted": [
+        "llegada"
+      ],
+      "candidateAnswers": [
+        "arribo"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1384,
+      "cardId": "corpes:rico:A",
+      "prompt": "rich; tasty",
+      "cue": "adjective",
+      "accepted": [
+        "rico"
+      ],
+      "candidateAnswers": [
+        "adinerado",
+        "sabroso"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1401,
+      "cardId": "corpes:comunicar:V",
+      "prompt": "to communicate",
+      "cue": "Convey a message",
+      "accepted": [
+        "comunicar"
+      ],
+      "candidateAnswers": [
+        "transmitir"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1421,
+      "cardId": "corpes:investigar:V",
+      "prompt": "to investigate",
+      "cue": "Seek information about the cause of an event",
+      "accepted": [
+        "investigar",
+        "indagar"
+      ],
+      "candidateAnswers": [
+        "averiguar"
+      ],
+      "status": "deferred; no acceptance change recommended yet",
+      "confidence": "unresolved",
+      "reason": "Investigate/process versus ascertain/result deserves construction-specific review before expanding this already curated cue."
+    },
+    {
+      "rank": 1451,
+      "cardId": "corpes:evaluar:V",
+      "prompt": "to evaluate",
+      "cue": "verb",
+      "accepted": [
+        "evaluar"
+      ],
+      "candidateAnswers": [
+        "valorar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1467,
+      "cardId": "corpes:tienda:N",
+      "prompt": "shop; store; tent",
+      "cue": "noun",
+      "accepted": [
+        "tienda"
+      ],
+      "candidateAnswers": [
+        "comercio",
+        "carpa"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    },
+    {
+      "rank": 1470,
+      "cardId": "corpes:encargar:V",
+      "prompt": "to entrust; to commission; to order",
+      "cue": "verb",
+      "accepted": [
+        "encargar"
+      ],
+      "candidateAnswers": [
+        "encomendar"
+      ],
+      "status": "supported candidate for explicit correction; not implemented",
+      "confidence": "medium-high, lexical judgment plus stored source comparison; not fresh primary verification"
+    }
+  ],
+  "curriculumEdits": false
+}

@@ -1,0 +1,1198 @@
+{
+  "date": "2026-11-05",
+  "reviewer": "Codex author, independent read-through before seeing Claude findings; not an independent human linguist",
+  "scope": {
+    "cardsRead": 1250,
+    "rankBlocks": [
+      [
+        251,
+        500
+      ],
+      [
+        501,
+        750
+      ],
+      [
+        751,
+        1000
+      ],
+      [
+        1001,
+        1250
+      ],
+      [
+        1251,
+        1500
+      ]
+    ],
+    "groupsRead": 291,
+    "comparisonSectionsRead": 319,
+    "uniqueBaseExamplePairsRead": 424,
+    "notCovered": "All conjugation-row/verb-guide examples and all sources behind the whole course were not re-audited. Current scope is similar-word content and the resolved snapshot."
+  },
+  "findings": [
+    {
+      "id": "C01",
+      "rank": 519,
+      "cardId": "corpes:meter:V",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "to put in, insert (transitive)",
+      "currentCue": "verb",
+      "currentAccepted": [
+        "meter"
+      ],
+      "rejectedAnswers": [
+        "introducir",
+        "insertar"
+      ],
+      "reason": "The physical insertion sense fits the unrestricted transitive prompt.",
+      "source": "https://dle.rae.es/meter",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C02",
+      "rank": 589,
+      "cardId": "corpes:miedo:N",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "fear",
+      "currentCue": "noun",
+      "currentAccepted": [
+        "miedo"
+      ],
+      "rejectedAnswers": [
+        "temor"
+      ],
+      "reason": "The ordinary fear sense fits; no register restriction is given.",
+      "source": "https://dle.rae.es/temor",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C03",
+      "rank": 682,
+      "cardId": "corpes:informe:N",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "report",
+      "currentCue": "noun",
+      "currentAccepted": [
+        "informe"
+      ],
+      "rejectedAnswers": [
+        "reporte"
+      ],
+      "reason": "The dictionary explicitly includes the report sense.",
+      "source": "https://dle.rae.es/reporte",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C04",
+      "rank": 750,
+      "cardId": "corpes:completo:A",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "complete",
+      "currentCue": "With nothing missing",
+      "currentAccepted": [
+        "completo",
+        "íntegro"
+      ],
+      "rejectedAnswers": [
+        "entero"
+      ],
+      "reason": "Whole/complete fits with nothing missing, just as accepted íntegro does.",
+      "source": "https://dle.rae.es/completo",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C05",
+      "rank": 753,
+      "cardId": "corpes:suficiente:A",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "sufficient, enough",
+      "currentCue": "adjective",
+      "currentAccepted": [
+        "suficiente"
+      ],
+      "rejectedAnswers": [
+        "bastante"
+      ],
+      "reason": "The enough sense is explicit; the separate adverb card does not erase adjectival use.",
+      "source": "https://dle.rae.es/suficiente",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C06",
+      "rank": 815,
+      "cardId": "corpes:similar:A",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "similar",
+      "currentCue": "adjective",
+      "currentAccepted": [
+        "similar"
+      ],
+      "rejectedAnswers": [
+        "semejante",
+        "parecido"
+      ],
+      "reason": "Both express similarity under the unrestricted adjective cue.",
+      "source": "https://dle.rae.es/similar",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C07",
+      "rank": 904,
+      "cardId": "corpes:profundo:A",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "deep (having a bottom far from the surface or mouth)",
+      "currentCue": "adjective",
+      "currentAccepted": [
+        "profundo"
+      ],
+      "rejectedAnswers": [
+        "hondo"
+      ],
+      "reason": "Physical depth matches the exact parenthetical cue.",
+      "source": "https://dle.rae.es/profundo",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C08",
+      "rank": 1123,
+      "cardId": "corpes:exponer:V",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "to exhibit",
+      "currentCue": "Display artworks publicly",
+      "currentAccepted": [
+        "exponer",
+        "mostrar"
+      ],
+      "rejectedAnswers": [
+        "exhibir"
+      ],
+      "reason": "Public display of artworks is directly illustrated by the entry.",
+      "source": "https://dle.rae.es/exhibir",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C09",
+      "rank": 1192,
+      "cardId": "corpes:comportamiento:N",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "behavior",
+      "currentCue": "noun",
+      "currentAccepted": [
+        "comportamiento"
+      ],
+      "rejectedAnswers": [
+        "conducta"
+      ],
+      "reason": "Ordinary behavior is the cue; no technical nonhuman sense restriction.",
+      "source": "https://dle.rae.es/comportamiento",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C10",
+      "rank": 1222,
+      "cardId": "corpes:velocidad:N",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "speed",
+      "currentCue": "noun",
+      "currentAccepted": [
+        "velocidad"
+      ],
+      "rejectedAnswers": [
+        "rapidez"
+      ],
+      "reason": "Ordinary speed; no physical vector/scalar contrast is specified.",
+      "source": "https://dle.rae.es/velocidad",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    },
+    {
+      "id": "C11",
+      "rank": 1491,
+      "cardId": "corpes:jurídico:A",
+      "classification": "demonstrated false rejection",
+      "confidence": "high",
+      "currentPrompt": "legal",
+      "currentCue": "Relating to law as a field",
+      "currentAccepted": [
+        "jurídico"
+      ],
+      "rejectedAnswers": [
+        "legal"
+      ],
+      "reason": "Relating to law/right/justice is explicitly attested, not just lawful.",
+      "source": "https://dem.colmex.mx/ver/legal",
+      "sourceAccess": "Primary entry opened and relevant definition read during this audit",
+      "recommendation": "Add these explicit alternatives with cue-specific explanation and regressions; do not infer further synonym expansion."
+    }
+  ],
+  "additionalCandidates": [
+    {
+      "rank": 275,
+      "cardId": "corpes:investigación:N",
+      "prompt": "investigation",
+      "cue": "noun",
+      "accepted": [
+        "investigación"
+      ],
+      "candidateAnswers": [
+        "indagación",
+        "pesquisa"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 307,
+      "cardId": "corpes:fuerza:N",
+      "prompt": "strength",
+      "cue": "Physical strength",
+      "accepted": [
+        "fuerza"
+      ],
+      "candidateAnswers": [
+        "fortaleza"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 313,
+      "cardId": "corpes:poder:N",
+      "prompt": "power",
+      "cue": "Authority to act",
+      "accepted": [
+        "poder"
+      ],
+      "candidateAnswers": [
+        "autoridad"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 376,
+      "cardId": "corpes:decisión:N",
+      "prompt": "decision",
+      "cue": "noun",
+      "accepted": [
+        "decisión"
+      ],
+      "candidateAnswers": [
+        "determinación"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 417,
+      "cardId": "corpes:falta:N",
+      "prompt": "lack, shortage",
+      "cue": "noun",
+      "accepted": [
+        "falta"
+      ],
+      "candidateAnswers": [
+        "carencia"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 421,
+      "cardId": "corpes:destacar:V",
+      "prompt": "to highlight; to stand out",
+      "cue": "verb",
+      "accepted": [
+        "destacar"
+      ],
+      "candidateAnswers": [
+        "resaltar",
+        "sobresalir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 446,
+      "cardId": "corpes:acuerdo:N",
+      "prompt": "agreement",
+      "cue": "noun",
+      "accepted": [
+        "acuerdo"
+      ],
+      "candidateAnswers": [
+        "convenio",
+        "pacto"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 477,
+      "cardId": "corpes:sufrir:V",
+      "prompt": "to suffer (be confronted with something undesired) (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "sufrir"
+      ],
+      "candidateAnswers": [
+        "padecer"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 479,
+      "cardId": "corpes:bajar:V",
+      "prompt": "to go down, come down",
+      "cue": "verb",
+      "accepted": [
+        "bajar"
+      ],
+      "candidateAnswers": [
+        "descender"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 484,
+      "cardId": "corpes:informar:V",
+      "prompt": "to inform",
+      "cue": "Give someone information",
+      "accepted": [
+        "informar"
+      ],
+      "candidateAnswers": [
+        "comunicar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 486,
+      "cardId": "corpes:subir:V",
+      "prompt": "to go up or come up",
+      "cue": "verb",
+      "accepted": [
+        "subir"
+      ],
+      "candidateAnswers": [
+        "ascender"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 521,
+      "cardId": "corpes:fuera:R",
+      "prompt": "outside, out",
+      "cue": "adverb",
+      "accepted": [
+        "fuera"
+      ],
+      "candidateAnswers": [
+        "afuera"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 533,
+      "cardId": "corpes:miembro:N",
+      "prompt": "member (one who belongs to a group)",
+      "cue": "noun",
+      "accepted": [
+        "miembro"
+      ],
+      "candidateAnswers": [
+        "integrante"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 535,
+      "cardId": "corpes:futuro:N",
+      "prompt": "future (the time ahead)",
+      "cue": "noun",
+      "accepted": [
+        "futuro"
+      ],
+      "candidateAnswers": [
+        "porvenir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 545,
+      "cardId": "corpes:apoyo:N",
+      "prompt": "support",
+      "cue": "noun",
+      "accepted": [
+        "apoyo"
+      ],
+      "candidateAnswers": [
+        "respaldo"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 550,
+      "cardId": "corpes:mirada:N",
+      "prompt": "look, glance",
+      "cue": "noun",
+      "accepted": [
+        "mirada"
+      ],
+      "candidateAnswers": [
+        "vistazo"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 561,
+      "cardId": "corpes:propuesta:N",
+      "prompt": "proposal",
+      "cue": "noun",
+      "accepted": [
+        "propuesta"
+      ],
+      "candidateAnswers": [
+        "proposición"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 569,
+      "cardId": "corpes:década:N",
+      "prompt": "decade",
+      "cue": "noun",
+      "accepted": [
+        "década"
+      ],
+      "candidateAnswers": [
+        "decenio"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 611,
+      "cardId": "corpes:objeto:N",
+      "prompt": "object",
+      "cue": "A physical thing",
+      "accepted": [
+        "objeto"
+      ],
+      "candidateAnswers": [
+        "cosa"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 629,
+      "cardId": "corpes:éxito:N",
+      "prompt": "success",
+      "cue": "noun",
+      "accepted": [
+        "éxito"
+      ],
+      "candidateAnswers": [
+        "triunfo"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 692,
+      "cardId": "corpes:cubrir:V",
+      "prompt": "to cover (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "cubrir"
+      ],
+      "candidateAnswers": [
+        "tapar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 713,
+      "cardId": "corpes:cama:N",
+      "prompt": "bed",
+      "cue": "noun",
+      "accepted": [
+        "cama"
+      ],
+      "candidateAnswers": [
+        "lecho"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 724,
+      "cardId": "corpes:actuar:V",
+      "prompt": "to act, to behave",
+      "cue": "verb",
+      "accepted": [
+        "actuar"
+      ],
+      "candidateAnswers": [
+        "comportarse",
+        "obrar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 734,
+      "cardId": "corpes:fútbol:N",
+      "prompt": "football (soccer)",
+      "cue": "noun",
+      "accepted": [
+        "fútbol"
+      ],
+      "candidateAnswers": [
+        "balompié"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 740,
+      "cardId": "corpes:operación:N",
+      "prompt": "operation (a surgical procedure) (medicine)",
+      "cue": "noun",
+      "accepted": [
+        "operación"
+      ],
+      "candidateAnswers": [
+        "cirugía"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 754,
+      "cardId": "corpes:aplicación:N",
+      "prompt": "application, use (the act of applying as a means; the employment of means to accomplish an end; specific use)",
+      "cue": "noun",
+      "accepted": [
+        "aplicación"
+      ],
+      "candidateAnswers": [
+        "uso",
+        "empleo",
+        "utilización"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 763,
+      "cardId": "corpes:opción:N",
+      "prompt": "option",
+      "cue": "noun",
+      "accepted": [
+        "opción"
+      ],
+      "candidateAnswers": [
+        "alternativa"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 771,
+      "cardId": "corpes:ayuda:N",
+      "prompt": "help, aid",
+      "cue": "noun",
+      "accepted": [
+        "ayuda"
+      ],
+      "candidateAnswers": [
+        "auxilio",
+        "asistencia"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 795,
+      "cardId": "corpes:unir:V",
+      "prompt": "to unite, join (transitive or reflexive)",
+      "cue": "verb",
+      "accepted": [
+        "unir"
+      ],
+      "candidateAnswers": [
+        "juntar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 802,
+      "cardId": "corpes:opinión:N",
+      "prompt": "opinion",
+      "cue": "noun",
+      "accepted": [
+        "opinión"
+      ],
+      "candidateAnswers": [
+        "parecer"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 805,
+      "cardId": "corpes:disfrutar:V",
+      "prompt": "to enjoy (transitive, intransitive)",
+      "cue": "verb",
+      "accepted": [
+        "disfrutar"
+      ],
+      "candidateAnswers": [
+        "gozar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 828,
+      "cardId": "corpes:detalle:N",
+      "prompt": "detail",
+      "cue": "noun",
+      "accepted": [
+        "detalle"
+      ],
+      "candidateAnswers": [
+        "pormenor"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 870,
+      "cardId": "corpes:invitar:V",
+      "prompt": "to invite",
+      "cue": "verb",
+      "accepted": [
+        "invitar"
+      ],
+      "candidateAnswers": [
+        "convidar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 880,
+      "cardId": "corpes:igual:R",
+      "prompt": "equally",
+      "cue": "In the same way",
+      "accepted": [
+        "igual"
+      ],
+      "candidateAnswers": [
+        "igualmente"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 894,
+      "cardId": "corpes:lucha:N",
+      "prompt": "fight, fighting, fray",
+      "cue": "noun",
+      "accepted": [
+        "lucha"
+      ],
+      "candidateAnswers": [
+        "pelea",
+        "combate"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 902,
+      "cardId": "corpes:barrio:N",
+      "prompt": "neighbourhood",
+      "cue": "noun",
+      "accepted": [
+        "barrio"
+      ],
+      "candidateAnswers": [
+        "vecindario"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 905,
+      "cardId": "corpes:integrar:V",
+      "prompt": "to integrate",
+      "cue": "Bring parts into a unified whole",
+      "accepted": [
+        "integrar"
+      ],
+      "candidateAnswers": [
+        "incorporar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 913,
+      "cardId": "corpes:guardar:V",
+      "prompt": "to save",
+      "cue": "Store a file for later use",
+      "accepted": [
+        "guardar"
+      ],
+      "candidateAnswers": [
+        "salvar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 928,
+      "cardId": "corpes:listo:N",
+      "prompt": "list",
+      "cue": "noun",
+      "accepted": [
+        "lista"
+      ],
+      "candidateAnswers": [
+        "listado"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 933,
+      "cardId": "corpes:adecuado:A",
+      "prompt": "adequate",
+      "cue": "adjective",
+      "accepted": [
+        "adecuado"
+      ],
+      "candidateAnswers": [
+        "apropiado"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 948,
+      "cardId": "corpes:oficina:N",
+      "prompt": "office (a room used for non-manual work)",
+      "cue": "noun",
+      "accepted": [
+        "oficina"
+      ],
+      "candidateAnswers": [
+        "despacho"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 971,
+      "cardId": "corpes:experto:N",
+      "prompt": "expert",
+      "cue": "noun",
+      "accepted": [
+        "experto"
+      ],
+      "candidateAnswers": [
+        "perito"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1008,
+      "cardId": "corpes:corto:A",
+      "prompt": "short",
+      "cue": "Of little length or duration",
+      "accepted": [
+        "corto"
+      ],
+      "candidateAnswers": [
+        "breve"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1039,
+      "cardId": "corpes:agente:N",
+      "prompt": "agent",
+      "cue": "A person acting on behalf of another",
+      "accepted": [
+        "agente"
+      ],
+      "candidateAnswers": [
+        "representante"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1044,
+      "cardId": "corpes:ropa:N",
+      "prompt": "garment, clothing, clothes, robes",
+      "cue": "noun",
+      "accepted": [
+        "ropa"
+      ],
+      "candidateAnswers": [
+        "indumentaria"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1046,
+      "cardId": "corpes:pared:N",
+      "prompt": "wall, especially of a house or room",
+      "cue": "noun",
+      "accepted": [
+        "pared"
+      ],
+      "candidateAnswers": [
+        "muro"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1084,
+      "cardId": "corpes:pelo:N",
+      "prompt": "hair; fur",
+      "cue": "noun",
+      "accepted": [
+        "pelo"
+      ],
+      "candidateAnswers": [
+        "cabello",
+        "pelaje"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1095,
+      "cardId": "corpes:extender:V",
+      "prompt": "to extend, to expand",
+      "cue": "verb",
+      "accepted": [
+        "extender"
+      ],
+      "candidateAnswers": [
+        "expandir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1099,
+      "cardId": "corpes:precisamente:R",
+      "prompt": "precisely",
+      "cue": "adverb",
+      "accepted": [
+        "precisamente"
+      ],
+      "candidateAnswers": [
+        "exactamente"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1148,
+      "cardId": "corpes:transformar:V",
+      "prompt": "to transform",
+      "cue": "Change something's form or nature",
+      "accepted": [
+        "transformar"
+      ],
+      "candidateAnswers": [
+        "convertir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1160,
+      "cardId": "corpes:recién:R",
+      "prompt": "recently; new-, newly, freshly",
+      "cue": "adverb",
+      "accepted": [
+        "recién"
+      ],
+      "candidateAnswers": [
+        "recientemente"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1169,
+      "cardId": "corpes:espalda:N",
+      "prompt": "back (anatomy)",
+      "cue": "noun",
+      "accepted": [
+        "espalda"
+      ],
+      "candidateAnswers": [
+        "dorso"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1171,
+      "cardId": "corpes:debate:N",
+      "prompt": "debate",
+      "cue": "noun",
+      "accepted": [
+        "debate"
+      ],
+      "candidateAnswers": [
+        "discusión"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1204,
+      "cardId": "corpes:complejo:A",
+      "prompt": "complex, sophisticated, intricate (made of multiple parts)",
+      "cue": "adjective",
+      "accepted": [
+        "complejo"
+      ],
+      "candidateAnswers": [
+        "complicado"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1213,
+      "cardId": "corpes:oferta:N",
+      "prompt": "offer (a proposal that has been made)",
+      "cue": "noun",
+      "accepted": [
+        "oferta"
+      ],
+      "candidateAnswers": [
+        "ofrecimiento"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1219,
+      "cardId": "corpes:delito:N",
+      "prompt": "crime; offense",
+      "cue": "noun",
+      "accepted": [
+        "delito"
+      ],
+      "candidateAnswers": [
+        "crimen"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1220,
+      "cardId": "corpes:avance:N",
+      "prompt": "advance",
+      "cue": "noun",
+      "accepted": [
+        "avance"
+      ],
+      "candidateAnswers": [
+        "progreso",
+        "adelanto"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1244,
+      "cardId": "corpes:actuación:N",
+      "prompt": "performance (a live show or concert)",
+      "cue": "noun",
+      "accepted": [
+        "actuación"
+      ],
+      "candidateAnswers": [
+        "interpretación"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1256,
+      "cardId": "corpes:llenar:V",
+      "prompt": "to fill something up (transitive)",
+      "cue": "verb",
+      "accepted": [
+        "llenar"
+      ],
+      "candidateAnswers": [
+        "rellenar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1278,
+      "cardId": "corpes:escapar:V",
+      "prompt": "to escape, get out (intransitive, transitive)",
+      "cue": "verb",
+      "accepted": [
+        "escapar"
+      ],
+      "candidateAnswers": [
+        "huir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1285,
+      "cardId": "corpes:baño:N",
+      "prompt": "bathroom; bath",
+      "cue": "noun",
+      "accepted": [
+        "baño"
+      ],
+      "candidateAnswers": [
+        "aseo"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1331,
+      "cardId": "corpes:introducir:V",
+      "prompt": "to introduce; to insert; to bring in",
+      "cue": "verb",
+      "accepted": [
+        "introducir"
+      ],
+      "candidateAnswers": [
+        "meter",
+        "insertar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1342,
+      "cardId": "corpes:componer:V",
+      "prompt": "to compose; to make up; to repair",
+      "cue": "verb",
+      "accepted": [
+        "componer"
+      ],
+      "candidateAnswers": [
+        "arreglar",
+        "reparar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1368,
+      "cardId": "corpes:llegada:N",
+      "prompt": "arrival",
+      "cue": "noun",
+      "accepted": [
+        "llegada"
+      ],
+      "candidateAnswers": [
+        "arribo"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1384,
+      "cardId": "corpes:rico:A",
+      "prompt": "rich; tasty",
+      "cue": "adjective",
+      "accepted": [
+        "rico"
+      ],
+      "candidateAnswers": [
+        "adinerado",
+        "sabroso"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1401,
+      "cardId": "corpes:comunicar:V",
+      "prompt": "to communicate",
+      "cue": "Convey a message",
+      "accepted": [
+        "comunicar"
+      ],
+      "candidateAnswers": [
+        "transmitir"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1421,
+      "cardId": "corpes:investigar:V",
+      "prompt": "to investigate",
+      "cue": "Seek information about the cause of an event",
+      "accepted": [
+        "investigar",
+        "indagar"
+      ],
+      "candidateAnswers": [
+        "averiguar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1451,
+      "cardId": "corpes:evaluar:V",
+      "prompt": "to evaluate",
+      "cue": "verb",
+      "accepted": [
+        "evaluar"
+      ],
+      "candidateAnswers": [
+        "valorar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1467,
+      "cardId": "corpes:tienda:N",
+      "prompt": "shop; store; tent",
+      "cue": "noun",
+      "accepted": [
+        "tienda"
+      ],
+      "candidateAnswers": [
+        "comercio",
+        "carpa"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    },
+    {
+      "rank": 1470,
+      "cardId": "corpes:encargar:V",
+      "prompt": "to entrust; to commission; to order",
+      "cue": "verb",
+      "accepted": [
+        "encargar"
+      ],
+      "candidateAnswers": [
+        "encomendar"
+      ],
+      "status": "candidate only; requires exact-sense and construction triage before any curriculum change"
+    }
+  ],
+  "clarityConcerns": [
+    {
+      "group": "later-22",
+      "text": "obtener does not [take an infinitive directly]",
+      "status": "Unsupported absolute and inconsistent with prior Day 1 decision to remove that absolute. Prefer positive construction guidance; not proof every obtener + infinitive is standard."
+    },
+    {
+      "group": "later-125",
+      "text": "alma takes el in the singular",
+      "status": "Useful shorthand but could specify directly preceding stressed a; not a demonstrated wrong example."
+    }
+  ],
+  "noChangeDecisions": [
+    "Do not replace oír/escuchar overlap with an absolute hearing-versus-listening ban.",
+    "Keep dictionary-form and score-free inflection retries; a valid feminine or inflected example is not itself a scoring defect.",
+    "Do not infer reciprocity: suelo floor excludes tierra soil; asumir responsibility excludes suponer assumption.",
+    "Broader teaching examples can show a different legitimate sense. Many are contrived, but that alone does not make their Spanish false.",
+    "Keep noun/adjective médico separate; doctor as noun does not fit adjective medical.",
+    "Keep libre/gratis and jugar/tocar selected-sense distinctions.",
+    "Do not remove extra accepted senses solely because a narrower usage is more common."
+  ],
+  "curriculumEditsInThisAudit": false,
+  "limitations": "Full read-through is not exhaustive synonym certification. Primary checking is targeted. Candidate lists are evidence to investigate, not proposed automatic edits."
+}

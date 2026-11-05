@@ -1,5 +1,6 @@
 import {dayOneRecall} from './recall-policy-data.js';
-export const recallPolicy=card=>dayOneRecall[card.id];
+import {laterRecall} from './later-recall-data.js';
+export const recallPolicy=card=>dayOneRecall[card.id]??laterRecall[card.id];
 export const typedPrompt=card=>recallPolicy(card)?.prompt??card.meaning;
 export const typedAnswers=card=>[card.lemma,...(recallPolicy(card)?.alternatives||[])];
 export function typedInstruction(card){

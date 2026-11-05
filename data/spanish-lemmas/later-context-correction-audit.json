@@ -1,0 +1,1319 @@
+{
+  "date": "2026-11-05",
+  "reason": "Correct four shared example translations/constructions after the later-day content audit. Targets and cloze answers are unchanged.",
+  "beforeSha256": "577ff4b40cd1959ea2827dcf36b0d0c50692ac505d2c407cc5a5c0b89f7423be",
+  "afterSha256": "4ae3071266f0405487552ef6ac818871b6d1701f1a8ed0667efdb620769136e4",
+  "changes": [
+    {
+      "id": "corpes:internacional:A",
+      "before": {
+        "id": "corpes:internacional:A",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the final of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:r"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the final of the international tournament",
+              "concept": "context:target:267"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 20,
+        "target": "internacional",
+        "answers": [
+          "internacional"
+        ],
+        "headword": "internacional",
+        "explanation": "internacional is used here as an adjective. Same singular form for both genders.",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      },
+      "after": {
+        "id": "corpes:internacional:A",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the end of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:r"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the end of the international tournament",
+              "concept": "context:target:267"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 20,
+        "target": "internacional",
+        "answers": [
+          "internacional"
+        ],
+        "headword": "internacional",
+        "explanation": "internacional is used here as an adjective. Same singular form for both genders.",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      }
+    },
+    {
+      "id": "corpes:incluso:R",
+      "before": {
+        "id": "corpes:incluso:R",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the final of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:target:268"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the final of the international tournament",
+              "concept": "context:n"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 0,
+        "target": "Incluso",
+        "answers": [
+          "Incluso"
+        ],
+        "headword": "incluso",
+        "explanation": "incluso is used here as an adverb. Adverb",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      },
+      "after": {
+        "id": "corpes:incluso:R",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the end of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:target:268"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the end of the international tournament",
+              "concept": "context:n"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 0,
+        "target": "Incluso",
+        "answers": [
+          "Incluso"
+        ],
+        "headword": "incluso",
+        "explanation": "incluso is used here as an adverb. Adverb",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      }
+    },
+    {
+      "id": "corpes:final:N",
+      "before": {
+        "id": "corpes:final:N",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the final of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:r"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the final of the international tournament",
+              "concept": "context:target:269"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 3,
+        "target": "final",
+        "answers": [
+          "final"
+        ],
+        "headword": "final",
+        "explanation": "final is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      },
+      "after": {
+        "id": "corpes:final:N",
+        "example": {
+          "text": "Incluso el final del torneo internacional es gratis.",
+          "translation": "Even the end of the international tournament is free.",
+          "chunks": [
+            {
+              "text": "Incluso",
+              "meaning": "Even",
+              "concept": "context:r"
+            },
+            {
+              "text": "el final del torneo internacional",
+              "meaning": "the end of the international tournament",
+              "concept": "context:target:269"
+            },
+            {
+              "text": "es",
+              "meaning": "is",
+              "concept": "context:v"
+            },
+            {
+              "text": "gratis",
+              "meaning": "free",
+              "concept": "context:a"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 3,
+        "target": "final",
+        "answers": [
+          "final"
+        ],
+        "headword": "final",
+        "explanation": "final is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "incluso": "Even",
+          "el": "the",
+          "final": "end; final",
+          "del": "of/from the (de + el)",
+          "torneo": "tournament; tourney",
+          "internacional": "international",
+          "es": "is",
+          "gratis": "free"
+        }
+      }
+    },
+    {
+      "id": "corpes:nosotros:L",
+      "before": {
+        "id": "corpes:nosotros:L",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We ensure that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:target:276"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "ensure",
+              "concept": "context:v"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:n"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 0,
+        "target": "Nosotros",
+        "answers": [
+          "Nosotros",
+          "Nosotras"
+        ],
+        "headword": "nosotros",
+        "explanation": "nosotros is used here as a personal pronoun. Subject we or us after a preposition; compare object nos.",
+        "headwordCue": "Subject / after a preposition · masculine plural headword",
+        "answerNote": "Nosotros and nosotras both fit; the English sentence does not specify the group’s gender.",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "ensure",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      },
+      "after": {
+        "id": "corpes:nosotros:L",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We assure you that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:target:276"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "assure you",
+              "concept": "context:v"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:n"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 0,
+        "target": "Nosotros",
+        "answers": [
+          "Nosotros",
+          "Nosotras"
+        ],
+        "headword": "nosotros",
+        "explanation": "nosotros is used here as a personal pronoun. Subject we or us after a preposition; compare object nos.",
+        "headwordCue": "Subject / after a preposition · masculine plural headword",
+        "answerNote": "Nosotros and nosotras both fit; the English sentence does not specify the group’s gender.",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "assure you",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      }
+    },
+    {
+      "id": "corpes:asegurar:V",
+      "before": {
+        "id": "corpes:asegurar:V",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We ensure that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:s"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "ensure",
+              "concept": "context:target:277"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:n"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 0,
+        "target": "aseguramos",
+        "answers": [
+          "aseguramos"
+        ],
+        "headword": "asegurar",
+        "explanation": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "ensure",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      },
+      "after": {
+        "id": "corpes:asegurar:V",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We assure you that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:s"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "assure you",
+              "concept": "context:target:277"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:n"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 0,
+        "target": "aseguramos",
+        "answers": [
+          "aseguramos"
+        ],
+        "headword": "asegurar",
+        "explanation": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "assure you",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      }
+    },
+    {
+      "id": "corpes:sector:N",
+      "before": {
+        "id": "corpes:sector:N",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We ensure that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:s"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "ensure",
+              "concept": "context:v"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:target:278"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 3,
+        "target": "sector",
+        "answers": [
+          "sector"
+        ],
+        "headword": "sector",
+        "explanation": "sector is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "ensure",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      },
+      "after": {
+        "id": "corpes:sector:N",
+        "example": {
+          "text": "Nosotros aseguramos que el sector tiene recursos suficientes.",
+          "translation": "We assure you that the sector has enough resources.",
+          "chunks": [
+            {
+              "text": "Nosotros",
+              "meaning": "We",
+              "concept": "context:s"
+            },
+            {
+              "text": "aseguramos",
+              "meaning": "assure you",
+              "concept": "context:v"
+            },
+            {
+              "text": "que",
+              "meaning": "that",
+              "concept": "context:c"
+            },
+            {
+              "text": "el sector",
+              "meaning": "the sector",
+              "concept": "context:target:278"
+            },
+            {
+              "text": "tiene",
+              "meaning": "has",
+              "concept": "context:v"
+            },
+            {
+              "text": "recursos suficientes",
+              "meaning": "enough resources",
+              "concept": "context:n"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 3,
+        "target": "sector",
+        "answers": [
+          "sector"
+        ],
+        "headword": "sector",
+        "explanation": "sector is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "nosotros": "We",
+          "aseguramos": "assure you",
+          "que": "that",
+          "el": "the",
+          "sector": "sector; area; section",
+          "tiene": "has",
+          "recursos": "resource; means; appeal (law)",
+          "suficientes": "sufficient, enough"
+        }
+      }
+    },
+    {
+      "id": "corpes:acto:N",
+      "before": {
+        "id": "corpes:acto:N",
+        "example": {
+          "text": "En el acto entrega un libro sobre la libertad.",
+          "translation": "At the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "En el acto",
+              "meaning": "At the ceremony",
+              "concept": "context:target:595"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:v"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 6,
+        "target": "acto",
+        "answers": [
+          "acto"
+        ],
+        "headword": "acto",
+        "explanation": "acto is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "en": "in; on; at",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      },
+      "after": {
+        "id": "corpes:acto:N",
+        "example": {
+          "text": "Durante el acto entrega un libro sobre la libertad.",
+          "translation": "During the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "Durante el acto",
+              "meaning": "During the ceremony",
+              "concept": "context:target:595"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:v"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 11,
+        "target": "acto",
+        "answers": [
+          "acto"
+        ],
+        "headword": "acto",
+        "explanation": "acto is used here as a noun. Masculine in the meaning shown.",
+        "wordMeanings": {
+          "durante": "during, in, over",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      }
+    },
+    {
+      "id": "corpes:entregar:V",
+      "before": {
+        "id": "corpes:entregar:V",
+        "example": {
+          "text": "En el acto entrega un libro sobre la libertad.",
+          "translation": "At the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "En el acto",
+              "meaning": "At the ceremony",
+              "concept": "context:p"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:target:596"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 0,
+        "target": "entrega",
+        "answers": [
+          "entrega"
+        ],
+        "headword": "entregar",
+        "explanation": "entrega is a form of entregar (present: él / ella / usted). Dictionary form · infinitive",
+        "wordMeanings": {
+          "en": "in; on; at",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      },
+      "after": {
+        "id": "corpes:entregar:V",
+        "example": {
+          "text": "Durante el acto entrega un libro sobre la libertad.",
+          "translation": "During the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "Durante el acto",
+              "meaning": "During the ceremony",
+              "concept": "context:p"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:target:596"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 0,
+        "target": "entrega",
+        "answers": [
+          "entrega"
+        ],
+        "headword": "entregar",
+        "explanation": "entrega is a form of entregar (present: él / ella / usted). Dictionary form · infinitive",
+        "wordMeanings": {
+          "durante": "during, in, over",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      }
+    },
+    {
+      "id": "corpes:libertad:N",
+      "before": {
+        "id": "corpes:libertad:N",
+        "example": {
+          "text": "En el acto entrega un libro sobre la libertad.",
+          "translation": "At the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "En el acto",
+              "meaning": "At the ceremony",
+              "concept": "context:p"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:v"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:target:597"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 9,
+        "target": "libertad",
+        "answers": [
+          "libertad"
+        ],
+        "headword": "libertad",
+        "explanation": "libertad is used here as a noun. Feminine in the meaning shown.",
+        "wordMeanings": {
+          "en": "in; on; at",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      },
+      "after": {
+        "id": "corpes:libertad:N",
+        "example": {
+          "text": "Durante el acto entrega un libro sobre la libertad.",
+          "translation": "During the ceremony she presents a book about freedom.",
+          "chunks": [
+            {
+              "text": "Durante el acto",
+              "meaning": "During the ceremony",
+              "concept": "context:p"
+            },
+            {
+              "text": "entrega",
+              "meaning": "she presents",
+              "concept": "context:v"
+            },
+            {
+              "text": "un libro",
+              "meaning": "a book",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre la libertad",
+              "meaning": "about freedom",
+              "concept": "context:target:597"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 9,
+        "target": "libertad",
+        "answers": [
+          "libertad"
+        ],
+        "headword": "libertad",
+        "explanation": "libertad is used here as a noun. Feminine in the meaning shown.",
+        "wordMeanings": {
+          "durante": "during, in, over",
+          "el": "the",
+          "acto": "act (something done)",
+          "entrega": "she presents",
+          "un": "a; one",
+          "libro": "book",
+          "sobre": "on; above; about",
+          "la": "the",
+          "libertad": "liberty, freedom"
+        }
+      }
+    },
+    {
+      "id": "corpes:citar:V",
+      "before": {
+        "id": "corpes:citar:V",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medicine student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medicine student",
+              "concept": "context:n"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:target:1288"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 7,
+        "target": "citar",
+        "answers": [
+          "citar"
+        ],
+        "headword": "citar",
+        "explanation": "citar is used here as a verb. Dictionary form · infinitive",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      },
+      "after": {
+        "id": "corpes:citar:V",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medical student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medical student",
+              "concept": "context:n"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:target:1288"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 1,
+        "offset": 7,
+        "target": "citar",
+        "answers": [
+          "citar"
+        ],
+        "headword": "citar",
+        "explanation": "citar is used here as a verb. Dictionary form · infinitive",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      }
+    },
+    {
+      "id": "corpes:medicina:N",
+      "before": {
+        "id": "corpes:medicina:N",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medicine student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medicine student",
+              "concept": "context:target:1289"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:v"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 17,
+        "target": "medicina",
+        "answers": [
+          "medicina"
+        ],
+        "headword": "medicina",
+        "explanation": "medicina is used here as a noun. Feminine in the meaning shown.",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      },
+      "after": {
+        "id": "corpes:medicina:N",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medical student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medical student",
+              "concept": "context:target:1289"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:v"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:p"
+            }
+          ]
+        },
+        "index": 0,
+        "offset": 17,
+        "target": "medicina",
+        "answers": [
+          "medicina"
+        ],
+        "headword": "medicina",
+        "explanation": "medicina is used here as a noun. Feminine in the meaning shown.",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      }
+    },
+    {
+      "id": "corpes:sentimiento:N",
+      "before": {
+        "id": "corpes:sentimiento:N",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medicine student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medicine student",
+              "concept": "context:n"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:v"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:target:1290"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 10,
+        "target": "sentimientos",
+        "answers": [
+          "sentimientos"
+        ],
+        "headword": "sentimiento",
+        "explanation": "sentimientos is a form of sentimiento (plural). Masculine in the meaning shown.",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      },
+      "after": {
+        "id": "corpes:sentimiento:N",
+        "example": {
+          "text": "El estudiante de medicina quiere citar un texto sobre los sentimientos.",
+          "translation": "The medical student wants to quote a text about feelings.",
+          "chunks": [
+            {
+              "text": "El estudiante de medicina",
+              "meaning": "The medical student",
+              "concept": "context:n"
+            },
+            {
+              "text": "quiere citar",
+              "meaning": "wants to quote",
+              "concept": "context:v"
+            },
+            {
+              "text": "un texto",
+              "meaning": "a text",
+              "concept": "context:n"
+            },
+            {
+              "text": "sobre los sentimientos",
+              "meaning": "about feelings",
+              "concept": "context:target:1290"
+            }
+          ]
+        },
+        "index": 3,
+        "offset": 10,
+        "target": "sentimientos",
+        "answers": [
+          "sentimientos"
+        ],
+        "headword": "sentimiento",
+        "explanation": "sentimientos is a form of sentimiento (plural). Masculine in the meaning shown.",
+        "wordMeanings": {
+          "el": "the",
+          "estudiante": "student (a person who studies or learns about a particular subject)",
+          "de": "of; from",
+          "medicina": "medicine",
+          "quiere": "to desire, to want, to want to",
+          "citar": "to cite (transitive)",
+          "un": "a; one",
+          "texto": "text",
+          "sobre": "on; above; about",
+          "los": "the (plural)",
+          "sentimientos": "feeling"
+        }
+      }
+    }
+  ],
+  "conceptChanges": [
+    {
+      "id": "context:target:267",
+      "before": {
+        "title": "internacional in this sentence",
+        "text": "internacional is used here as an adjective. Same singular form for both genders. In this phrase: the final of the international tournament."
+      },
+      "after": {
+        "title": "internacional in this sentence",
+        "text": "internacional is used here as an adjective. Same singular form for both genders. In this phrase: the end of the international tournament."
+      }
+    },
+    {
+      "id": "context:target:269",
+      "before": {
+        "title": "final in this sentence",
+        "text": "final is used here as a noun. Masculine in the meaning shown. In this phrase: the final of the international tournament."
+      },
+      "after": {
+        "title": "final in this sentence",
+        "text": "final is used here as a noun. Masculine in the meaning shown. In this phrase: the end of the international tournament."
+      }
+    },
+    {
+      "id": "context:target:277",
+      "before": {
+        "title": "asegurar in this sentence",
+        "text": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive In this phrase: ensure."
+      },
+      "after": {
+        "title": "asegurar in this sentence",
+        "text": "aseguramos is a form of asegurar (present: nosotros / nosotras). Dictionary form · infinitive In this phrase: assure you."
+      }
+    },
+    {
+      "id": "context:target:595",
+      "before": {
+        "title": "acto in this sentence",
+        "text": "acto is used here as a noun. Masculine in the meaning shown. In this phrase: At the ceremony."
+      },
+      "after": {
+        "title": "acto in this sentence",
+        "text": "acto is used here as a noun. Masculine in the meaning shown. In this phrase: During the ceremony."
+      }
+    },
+    {
+      "id": "context:target:1289",
+      "before": {
+        "title": "medicina in this sentence",
+        "text": "medicina is used here as a noun. Feminine in the meaning shown. In this phrase: The medicine student."
+      },
+      "after": {
+        "title": "medicina in this sentence",
+        "text": "medicina is used here as a noun. Feminine in the meaning shown. In this phrase: The medical student."
+      }
+    }
+  ]
+}
