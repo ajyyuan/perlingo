@@ -104,14 +104,15 @@ export function retryReason(response, answers, inventory = {}, context = false) 
   if (input.includes(' ')) {
     // Keep the auxiliary intact and apply the single-word typo allowance to the participle.
     const [auxiliary, participle, extra] = input.split(' ');
-    if (extra || !/^\p{L}+$/u.test(participle)) return null;
+    if (extra || !/[\p{L}]/u.test(participle)) return null;
     const close = forms.some(form => {
       const [aux, part] = form.split(' ');
       return part && aux === auxiliary && (withoutAccents(participle) === withoutAccents(part) || spellingIsClose(participle, part));
     });
     return close ? spellingHint : null;
   }
-  if (!/^\p{L}+$/u.test(input)) return null;
+  // Mistyped punctuation/digits still count as edits; never normalize them into credit.
+  if (!/\p{L}/u.test(input)) return null;
   if (expected.some(answer => spellingIsClose(input, answer))) return known ? formHint : 'spelling';
   const closeForm = forms.some(form => withoutAccents(form) === withoutAccents(input) || spellingIsClose(input, form));
   return closeForm ? spellingHint : null;

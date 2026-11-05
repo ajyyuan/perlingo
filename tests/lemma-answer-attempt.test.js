@@ -195,3 +195,17 @@ test('five singular tense paradigms and nearby known conjugations allow an unsco
   assert.equal(attempt(context,'Ellos tenían tiempo',blank).retry,'context');
   assert.equal(attempt(context,'Ellos tienen tiempo',blank).firstCorrect,1);
 });
+
+test('a punctuation or digit typo offers a retry without granting credit or revealing the headword', () => {
+ const target=card('social');
+ for(const response of ['socia;', 'soci1l', 'social;', 'soc;al']) {
+  const state=attempt(createTest('typed',[target.id]),response,target);
+  assert.equal(state.retry,'spelling',response);
+  assert.equal(state.feedback,null);
+  assert.deepEqual(state.failures,{});
+  assert.equal(state.firstCorrect,0);
+  assert.equal(attempt(state,'social',target).firstCorrect,1);
+ }
+ assert.equal(retryReason(';;;;;;',['social']),null);
+ assert.equal(retryReason('soc;;;',['social']),null);
+});

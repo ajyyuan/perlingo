@@ -361,3 +361,12 @@ Mood disclosure motion (local, November 4): summary clicks animate opening/closi
 Stable keyboard mood transitions (local, November 4): all moods reserve the same 285px content area within a minimum 490px reference panel, including collapsed states, so the card does not resize with mood content. Keyboard crossings now use the same height transition as summary clicks. Selection and pronunciation dispatch update immediately; magnification waits until the new category position settles, using the latest selected chart if more keys arrive meanwhile. The 35 browser regression checks pass, including panel-height stability, rapid crossings, and one correct audio dispatch per navigation action. This supersedes immediate keyboard category switching above.
 
 Horizontal overflow fix (local, November 4): the mood disclosure chevron now has a fixed 16px square footprint. Its rotated open state previously protruded beyond the summary, introducing several pixels of horizontal overflow into the study card.
+
+
+## November 5: typo retries
+
+A mistyped punctuation mark or digit is now counted by the existing edit-distance retry rules, including in a recorded participle with its correct auxiliary. For example, `socia;` versus `social` offers a spelling retry without revealing the answer, recording a miss, or granting credit. Exact answer normalization and the existing distance thresholds are unchanged. An already submitted miss is not retroactively rescored.
+
+Preview: on a typed social prompt at http://127.0.0.1:5173/lemmas/, submit `socia;`, then `social`: the first should offer a retry and the second should earn credit.
+
+Validation: the regression covers punctuation/digit substitutions and insertions, preservation of score/failures during the retry, and credit after correction. All 439 tests and `npm run check` passed with this fix and the separately committed More info update. Exact grading and curriculum acceptance are unchanged. No publication.
