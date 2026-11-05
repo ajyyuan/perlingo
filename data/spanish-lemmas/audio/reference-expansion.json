@@ -11,7 +11,7 @@
   "jobCount": 184,
   "newClips": 182368,
   "characters": 2659880,
-  "status": "Generated and validated locally; uploaded and checksum-verified on existing Azure host. App publication pending.",
+  "status": "Uploaded, checksum-verified and published in Sites version 43.",
   "rateSource": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits",
   "generatedClips": 182368,
   "reusedSampleClips": 0,
@@ -38,5 +38,14 @@
   ],
   "preservedExistingManifestEntries": 394776,
   "publicationAuthorization": "User requested commit, push and publish on November 4, 2026.",
-  "uploadReport": "audio-generation/lemma-reference-library/upload-validation.json"
+  "uploadReport": "audio-generation/lemma-reference-library/upload-validation.json",
+  "publication": {
+    "version": 43,
+    "deploymentId": "appgdep_6aebd88fe2b88191a976fe4642530942",
+    "appCommit": "91562d2875",
+    "sitesCommit": "dc3522e199208d6fb510a8bc9c25d31311bce3ac",
+    "url": "https://perlingo.app/lemmas/"
+  },
+  "releaseNodeTestsPassed": 438,
+  "hostedBrowserAudioChecksPassed": 24
 }
