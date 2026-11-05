@@ -1,6 +1,6 @@
 # Later-day audio completion — November 5, 2026
 
-The reviewed curriculum was committed as `38f9e7ce6c`, as requested. The subsequent audio change is complete locally for review and remains uncommitted. Nothing was pushed, uploaded to the production audio host, or published.
+The reviewed curriculum was committed as `38f9e7ce6c`, as requested. The subsequent audio change was approved and committed as `32b920b21d`, including all 3,160 MP3 files. Nothing was pushed, uploaded to the production audio host, or published.
 
 ## Scope and cost
 
@@ -21,10 +21,10 @@ Azure reported 47,464 billed neural characters. At the previously documented $15
 
 This establishes mapping, file integrity, decode/measurement and representative browser playback; it is not an independent phonetic listening review of every clip.
 
-Evidence: [expansion summary](../data/spanish-lemmas/audio/later-expansion.json), [plan and batch ledgers](../audio-generation/lemma-later-library/), [current inventory](../data/spanish-lemmas/audio/inventory.json). The earlier `later-day-audio-gap.json` preserves the fulfilled target list for traceability. New MP3s are stored locally under `src/audio/azure/` and remain excluded by the existing Git ignore rule; upload/backup is a separate release step.
+Evidence: [expansion summary](../data/spanish-lemmas/audio/later-expansion.json), [plan and batch ledgers](../audio-generation/lemma-later-library/), [current inventory](../data/spanish-lemmas/audio/inventory.json). The earlier `later-day-audio-gap.json` preserves the fulfilled target list for traceability. New MP3s are stored under `src/audio/azure/` and explicitly tracked in the approved audio commit despite the general ignore rule; production upload remains a separate release step.
 
 ## Local preview
 
 Reload [Perlingo](http://127.0.0.1:5173/lemmas/) to discard cached manifests. Search **utilizar**, open More info, expand **utilizar · usar · emplear**, then play **Utiliza esta herramienta.** Compare with an existing headword recording. Use pronunciation preferences to try another region or the feminine voice, then restore your preference. In typed practice, newly accepted answers use their recordings for spoken feedback.
 
-The audio changes are ready for user review before a separate commit. Production still serves the previously published version.
+The audio changes are committed locally. Production still serves the previously published version.

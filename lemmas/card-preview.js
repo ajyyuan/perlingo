@@ -6,7 +6,7 @@ export function bindLookupAudioShortcuts(dialog){
   if(e.target.closest('dialog')!==dialog||dialog.ownerDocument.querySelector('#chunk-help:popover-open'))return;
   const editing=Boolean(e.target.closest('input,textarea,select,[contenteditable]:not([contenteditable="false"])'));
   const command=keyboardCommand(e,{learning:true,editing});
-  const selector=command==='pronounce'?'.word-overview h1 [data-speak]':command==='sentence'?'.lesson-uses .sentence-audio':null;
+  const selector=command==='pronounce'?'.word-overview h1 [data-speak]':command==='sentence'?'.lesson-uses .sentence-audio':command==='notes'?'[data-action="notes"]':null;
   const button=selector&&dialog.querySelector(selector);
   if(button){e.preventDefault();e.stopPropagation();button.click();}
  });
