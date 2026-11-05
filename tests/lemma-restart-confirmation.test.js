@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {runInNewContext} from 'node:vm';
+const source=readFileSync(new URL('../lemmas/app.js',import.meta.url),'utf8');
+const handler=source.slice(source.indexOf('function act(action){'),source.indexOf('\nfunction speak(text)'));
+for(const key of ['day-0','review-1'])test(`inline restart protects the ${key} attempt until confirmed`,()=>{
+ const data={activeExam:key,exams:{[key]:{test:{index:5,firstCorrect:3,draft:'saved answer'}}}};
+ const before=structuredClone(data),restarts=[];let focused;
+ const control={dataset:{},innerHTML:'',querySelector(selector){return {focus(){focused=selector;}};}};
+ const context={view:'study',data,app:{querySelector:()=>control},button:(action,label)=>`<button data-action="${action}">${label}</button>`,openExam(id,restart){restarts.push([id,restart]);data.exams[id]={test:{index:0}};}};
+ runInNewContext(handler,context);
+ const act=action=>runInNewContext(`act(${JSON.stringify(action)});`,context);
+ act('confirm-restart');assert.deepEqual(restarts,[]);
+ act('restart-exam');assert.deepEqual(data,before);assert.match(control.innerHTML,/Are you sure\?/);assert.equal(focused,'[data-action="cancel-restart"]');
+ act('cancel-restart');assert.deepEqual(data,before);assert.equal(control.dataset.confirmExam,undefined);assert.equal(focused,'button');
+ act('confirm-restart');assert.deepEqual(restarts,[]);
+ act('restart-exam');data.activeExam='another-test';act('confirm-restart');assert.deepEqual(restarts,[]);
+ data.activeExam=key;act('confirm-restart');assert.deepEqual(restarts,[[key,true]]);assert.equal(data.exams[key].test.index,0);
+});
