@@ -1,0 +1,1426 @@
+{
+  "date": "2026-11-06",
+  "status": "resolved locally; not committed or published",
+  "scope": {
+    "contextCards": 1500,
+    "uniqueSentences": 537,
+    "claudeOriginalSnapshotRows": 344,
+    "claudeOriginalNewAlternatives": 431,
+    "originalFlaggedAlternatives": 40,
+    "omissionCandidates": 60,
+    "relatedCandidates": 12,
+    "finalAlternativeCards": 349,
+    "finalAlternativeAssignments": 501
+  },
+  "method": "Codex reread all 537 unique base sentences and their 1500 blanks, reconciled the prior 40 flags, checked each of 60 omission candidates and 12 related alternatives in its unchanged full sentence, and checked all exact duplicate typed prompts/cues for answer-list consistency. Claude independently adjudicated the original 344-row patch, all 60 candidates and the 12 related alternatives (in nine groups). Definitions are evidence for senses, not proof of sentence equivalence. No exhaustive synonym or native-speaker certification is claimed.",
+  "claudeConversation": "https://claude.ai/chat/48fcb02c-8f55-434e-a287-42efeb1e083e",
+  "priorSnapshot": {
+    "path": "/tmp/perlingo-claude-changed.jsonl",
+    "sha256": "153e41f6ca77f66cecb311fae2c745a7d35bbbd82503f4948eadac7684e9e10c"
+  },
+  "priorReport": "cross-audit-2026-11-06.txt",
+  "originalFlags": [
+    {
+      "rank": 1278,
+      "answer": "escaparse",
+      "decision": "replace",
+      "reason": "Replaced escaparse with escaparte; the command ve addresses tú. The original nonpronominal escapar and huir remain valid."
+    },
+    {
+      "rank": 719,
+      "answer": "verdadero",
+      "decision": "retain",
+      "reason": "keep; es verdadero que is a valid, more marked construction. Add missing verdad separately."
+    },
+    {
+      "rank": 986,
+      "answer": "última",
+      "decision": "retain",
+      "reason": "keep; postposed wording is marked, not categorically ungrammatical."
+    },
+    {
+      "rank": 340,
+      "answer": "resultado",
+      "decision": "retain",
+      "reason": "keep; less idiomatic here than efecto, but an outcome/effect reading exists. Impacto remains an omission."
+    },
+    {
+      "rank": 863,
+      "answer": "suceso",
+      "decision": "retain",
+      "reason": "keep with collocation caveat; not limited to crimes or accidents. DLE general sense and Fundéu's description of an organized evento as a programmed suceso refute the categorical rejection."
+    },
+    {
+      "rank": 1055,
+      "answer": "evitar",
+      "decision": "retain",
+      "reason": "keep with construction caveat; an inanimate subject can prevent an implicitly human action. The familiar can't-help reading is not the only grammatical reading. Ministry of Health primary usage of an electronic prescription preventing visits supplies a counterexample to the asserted subject-control restriction."
+    },
+    {
+      "rank": 1269,
+      "answer": "simple",
+      "decision": "retain",
+      "reason": "keep; mere and uncomplicated readings are possible. Do not reject solely because one reading differs."
+    },
+    {
+      "rank": 1268,
+      "answer": "querer",
+      "decision": "retain",
+      "reason": "keep; wanting and affection readings coexist. DLE explicitly permits affection toward things."
+    },
+    {
+      "rank": 449,
+      "answer": "global",
+      "decision": "retain",
+      "reason": "keep; less usual than mundial for a championship, but worldwide is a valid sense."
+    },
+    {
+      "rank": 535,
+      "answer": "porvenir",
+      "decision": "retain",
+      "reason": "keep; DLE explicitly includes future time and an en el porvenir example."
+    },
+    {
+      "rank": 332,
+      "answer": "auxiliar",
+      "decision": "retain",
+      "reason": "keep; marked construction, not established as a grammatical prohibition; the initial emergency-only definition was too narrow."
+    },
+    {
+      "rank": 904,
+      "answer": "hondo",
+      "decision": "retain",
+      "reason": "keep; intellectual depth is a documented sense, not only physical depth."
+    },
+    {
+      "rank": 136,
+      "answer": "conjunto",
+      "decision": "retain",
+      "reason": "keep; DLE explicitly includes groups of people, not only bands or mathematical sets."
+    },
+    {
+      "rank": 69,
+      "answer": "porción",
+      "decision": "retain",
+      "reason": "keep; geographical portions are valid, not only food servings."
+    },
+    {
+      "rank": 212,
+      "answer": "chica",
+      "decision": "retain",
+      "reason": "keep; caja chica also has the literal small-box reading in this receiving/opening context."
+    },
+    {
+      "rank": 730,
+      "answer": "básico",
+      "decision": "retain",
+      "reason": "keep; fundamental/basis reading fits, although basic can also mean elementary."
+    },
+    {
+      "rank": 1423,
+      "answer": "común",
+      "decision": "retain",
+      "reason": "keep; usual and shared readings coexist."
+    },
+    {
+      "rank": 1006,
+      "answer": "entorno",
+      "decision": "retain",
+      "reason": "keep; surroundings/atmosphere overlap is possible, though ambiente is the clearest taught target."
+    },
+    {
+      "rank": 187,
+      "answer": "algunos",
+      "decision": "retain",
+      "reason": "keep; context permits several/some overlap."
+    },
+    {
+      "rank": 376,
+      "answer": "determinación",
+      "decision": "retain",
+      "reason": "keep; DLE explicitly includes decision, not only resolve."
+    },
+    {
+      "rank": 1137,
+      "answer": "postura",
+      "decision": "retain",
+      "reason": "keep; attitude/stance reading is valid despite the physical-posture sense."
+    },
+    {
+      "rank": 1150,
+      "answer": "apartar",
+      "decision": "retain",
+      "reason": "keep; separating/setting apart the materials fits."
+    },
+    {
+      "rank": 307,
+      "answer": "fortaleza",
+      "decision": "retain",
+      "reason": "keep; strength reading is available; not restricted to emotional fortitude."
+    },
+    {
+      "rank": 1228,
+      "answer": "atender",
+      "decision": "retain",
+      "reason": "keep; DLE explicitly gives childcare as an example."
+    },
+    {
+      "rank": 321,
+      "answer": "lograr",
+      "decision": "retain",
+      "reason": "keep; obtaining a job is a valid attainment use."
+    },
+    {
+      "rank": 205,
+      "answer": "conservar",
+      "decision": "retain",
+      "reason": "keep; keeping the center open is a valid use."
+    },
+    {
+      "rank": 753,
+      "answer": "bastante",
+      "decision": "retain",
+      "reason": "keep; postnominal sufficient is valid, though marked."
+    },
+    {
+      "rank": 1350,
+      "answer": "esclarecer",
+      "decision": "retain",
+      "reason": "keep; clarifying the price is possible, although aclarar is more usual."
+    },
+    {
+      "rank": 863,
+      "answer": "acontecimiento",
+      "decision": "retain",
+      "reason": "keep; event reading is possible."
+    },
+    {
+      "rank": 834,
+      "answer": "gigantesca",
+      "decision": "retain",
+      "reason": "keep; figurative magnitude is possible, though enorme is more usual with suerte."
+    },
+    {
+      "rank": 692,
+      "answer": "tapar",
+      "decision": "retain",
+      "reason": "keep; covering the table is a valid reading."
+    },
+    {
+      "rank": 202,
+      "answer": "rememoro",
+      "decision": "retain",
+      "reason": "keep; formal recollection of people is possible."
+    },
+    {
+      "rank": 653,
+      "answer": "grupo",
+      "decision": "retain",
+      "reason": "keep; grouping plants is valid."
+    },
+    {
+      "rank": 1453,
+      "answer": "difuntos",
+      "decision": "retain",
+      "reason": "keep; deceased people fits, though fallecidos/muertos is more usual in a toll."
+    },
+    {
+      "rank": 446,
+      "answer": "convenio",
+      "decision": "retain",
+      "reason": "keep; an agreement can be formal without becoming wrong."
+    },
+    {
+      "rank": 757,
+      "answer": "quebrar",
+      "decision": "retain",
+      "reason": "keep; figurative breach of agreement is possible."
+    },
+    {
+      "rank": 1472,
+      "answer": "brindar",
+      "decision": "retain",
+      "reason": "keep; providing the table is a valid use."
+    },
+    {
+      "rank": 674,
+      "answer": "situar",
+      "decision": "retain",
+      "reason": "keep; placing the insect is possible."
+    },
+    {
+      "rank": 1317,
+      "answer": "particular",
+      "decision": "retain",
+      "reason": "keep; specific reading fits; private is not compulsory."
+    },
+    {
+      "rank": 18,
+      "answer": "porque",
+      "decision": "retain",
+      "reason": "keep; fronted causal porque is grammatical. Do not reject valid grammar solely to force the hidden target como."
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 120,
+      "id": "corpes:niño:N",
+      "answer": "menor",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El gobierno ofrece un lugar seguro para cada niño.",
+      "target": "niño",
+      "translation": "The government offers a safe place for each child.",
+      "substitutedSentence": "El gobierno ofrece un lugar seguro para cada menor.",
+      "reason": "The child/minor reading fits the government child-protection context; it is not the comparative adjective here.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 121,
+      "id": "corpes:lugar:N",
+      "answer": "espacio",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El gobierno ofrece un lugar seguro para cada niño.",
+      "target": "lugar",
+      "translation": "The government offers a safe place for each child.",
+      "substitutedSentence": "El gobierno ofrece un espacio seguro para cada niño.",
+      "reason": "A safe physical space is a safe place in this sentence; masculine singular fits un seguro.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 183,
+      "id": "corpes:empezar:V",
+      "answer": "iniciar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Antes de empezar la obra reviso la cuenta.",
+      "target": "empezar",
+      "translation": "Before starting the work, I check the account.",
+      "substitutedSentence": "Antes de iniciar la obra reviso la cuenta.",
+      "reason": "A transitive infinitive meaning start the work fits antes de and the same object.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 256,
+      "id": "corpes:fin:N",
+      "answer": "término",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Este hecho explica el resultado al fin del proceso.",
+      "target": "fin",
+      "translation": "This fact explains the result at the end of the process.",
+      "substitutedSentence": "Este hecho explica el resultado al término del proceso.",
+      "reason": "Al término del proceso is the end-of-process reading, not a lexical term.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 283,
+      "id": "corpes:ofrecer:V",
+      "answer": "presta",
+      "decision": "exclude",
+      "origin": "omission audit",
+      "sentence": "El hombre que está solo allí ofrece su ayuda.",
+      "target": "ofrece",
+      "translation": "The man who is alone over there offers his help.",
+      "substitutedSentence": "El hombre que está solo allí presta su ayuda.",
+      "reason": "Not added. Prestar ayuda states that help is given; the prompt asks for offering help, which need not be taken up. Brinda remains accepted in its offer sense. This is a prompt-specific exclusion, not a ban on prestar ayuda.",
+      "evidence": [
+        "https://dle.rae.es/prestar",
+        "Full-sentence editorial distinction between offering and delivering help; both reviewers agree on exclusion here."
+      ]
+    },
+    {
+      "rank": 286,
+      "id": "corpes:principal:A",
+      "answer": "fundamental",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "En realidad, el objetivo principal es acabar a tiempo.",
+      "target": "principal",
+      "translation": "In reality, the main goal is to finish on time.",
+      "substitutedSentence": "En realidad, el objetivo fundamental es acabar a tiempo.",
+      "reason": "The fundamental/primary goal reading fits main goal; it does not assert that other goals are impossible.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 294,
+      "id": "corpes:incluir:V",
+      "answer": "recoge",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El libro incluye la historia de un hombre que teme morir en la calle.",
+      "target": "incluye",
+      "translation": "The book includes the story of a man who fears dying in the street.",
+      "substitutedSentence": "El libro recoge la historia de un hombre que teme morir en la calle.",
+      "reason": "A book can contain/include a story using recoger in its compile/record sense; singular third-person agrees with libro.",
+      "evidence": [
+        "https://www.clacso.org/libro-recoge-historias-de-35-anos-de-labor-de-forenses-argentinos/",
+        "Publisher usage of a book containing stories; full-sentence fit remains editorial judgment."
+      ]
+    },
+    {
+      "rank": 340,
+      "id": "corpes:efecto:N",
+      "answer": "impacto",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La universidad estudia el efecto de la luz en la seguridad.",
+      "target": "efecto",
+      "translation": "The university studies the effect of light on safety.",
+      "substitutedSentence": "La universidad estudia el impacto de la luz en la seguridad.",
+      "reason": "The effect of light on safety is its impact; masculine singular preserves el.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 347,
+      "id": "corpes:formar:V",
+      "answer": "crear",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El próximo mes vamos a formar un equipo para reconocer estos sonidos.",
+      "target": "formar",
+      "translation": "Next month we will form a team to recognize these sounds.",
+      "substitutedSentence": "El próximo mes vamos a crear un equipo para reconocer estos sonidos.",
+      "reason": "Creating a team is forming it here; infinitive fits vamos a.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 354,
+      "id": "corpes:generar:V",
+      "answer": "despierta",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Ese siglo todavía genera interés.",
+      "target": "genera",
+      "translation": "That century still generates interest.",
+      "substitutedSentence": "Ese siglo todavía despierta interés.",
+      "reason": "Despertar interés is arousing/generating interest; third-person singular agrees with siglo.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 395,
+      "id": "corpes:afirmar:V",
+      "answer": "Asegura",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Afirma que tal especie no existe.",
+      "target": "Afirma",
+      "translation": "She asserts that such a species does not exist.",
+      "substitutedSentence": "Asegura que tal especie no existe.",
+      "reason": "The assertion sense of asegurar takes que and matches asserts; it does not mean insurance here.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 395,
+      "id": "corpes:afirmar:V",
+      "answer": "Sostiene",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Afirma que tal especie no existe.",
+      "target": "Afirma",
+      "translation": "She asserts that such a species does not exist.",
+      "substitutedSentence": "Sostiene que tal especie no existe.",
+      "reason": "Sostener que expresses an assertion/maintained claim; singular present fits implicit she.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 399,
+      "id": "corpes:obtener:V",
+      "answer": "recabar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Observa el área para obtener información.",
+      "target": "obtener",
+      "translation": "She observes the area to obtain information.",
+      "substitutedSentence": "Observa el área para recabar información.",
+      "reason": "Gathering information is a valid obtaining-information reading, including observational information in Mexican usage.",
+      "evidence": [
+        "https://dem.colmex.mx/ver/recabar",
+        "https://dle.rae.es/recabar"
+      ]
+    },
+    {
+      "rank": 421,
+      "id": "corpes:destacar:V",
+      "answer": "subraya",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La guía destaca el valor cultural y natural del parque.",
+      "target": "destaca",
+      "translation": "The guide highlights the cultural and natural value of the park.",
+      "substitutedSentence": "La guía subraya el valor cultural y natural del parque.",
+      "reason": "The figurative highlight/emphasize sense fits the guide and the cultural/natural value.",
+      "evidence": [
+        "https://dem.colmex.mx/ver/subrayar"
+      ]
+    },
+    {
+      "rank": 522,
+      "id": "corpes:común:A",
+      "answer": "frecuente",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Es común estudiar fuera de casa.",
+      "target": "común",
+      "translation": "It is common to study outside the home.",
+      "substitutedSentence": "Es frecuente estudiar fuera de casa.",
+      "reason": "The frequency/commonness reading fits studying away from home.",
+      "evidence": [
+        "https://dle.rae.es/normal"
+      ]
+    },
+    {
+      "rank": 554,
+      "id": "corpes:mover:V",
+      "answer": "desplazar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Necesito energía para preparar la sala y mover los muebles.",
+      "target": "mover",
+      "translation": "I need energy to prepare the room and move the furniture.",
+      "substitutedSentence": "Necesito energía para preparar la sala y desplazar los muebles.",
+      "reason": "Physically moving the furniture matches move; infinitive and direct object are preserved.",
+      "evidence": [
+        "https://dle.rae.es/desplazar"
+      ]
+    },
+    {
+      "rank": 558,
+      "id": "corpes:expresar:V",
+      "answer": "reflejan",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Las demás figuras expresan alegría.",
+      "target": "expresan",
+      "translation": "The other figures express happiness.",
+      "substitutedSentence": "Las demás figuras reflejan alegría.",
+      "reason": "Figures reflecting happiness express it; plural present agrees with figuras.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 574,
+      "id": "corpes:detener:V",
+      "answer": "frenar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Queremos detener la expansión de la crisis en este sitio.",
+      "target": "detener",
+      "translation": "We want to stop the crisis from spreading in this place.",
+      "substitutedSentence": "Queremos frenar la expansión de la crisis en este sitio.",
+      "reason": "The figurative halt-development sense is documented, not solely reducing speed. It fits stopping the expansion of a crisis.",
+      "evidence": [
+        "https://dem.colmex.mx/ver/frenar"
+      ]
+    },
+    {
+      "rank": 574,
+      "id": "corpes:detener:V",
+      "answer": "contener",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Queremos detener la expansión de la crisis en este sitio.",
+      "target": "detener",
+      "translation": "We want to stop the crisis from spreading in this place.",
+      "substitutedSentence": "Queremos contener la expansión de la crisis en este sitio.",
+      "reason": "Containing the expansion means preventing further spread here, not containing something inside a vessel.",
+      "evidence": [
+        "https://dle.rae.es/contener"
+      ]
+    },
+    {
+      "rank": 578,
+      "id": "corpes:provocar:V",
+      "answer": "suscita",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Tener que elegir provoca un debate sobre la elección.",
+      "target": "provoca",
+      "translation": "Having to choose provokes a debate about the election.",
+      "substitutedSentence": "Tener que elegir suscita un debate sobre la elección.",
+      "reason": "Suscitar un debate means provoke/raise a debate; singular present agrees with the infinitival subject.",
+      "evidence": [
+        "https://dle.rae.es/suscitar"
+      ]
+    },
+    {
+      "rank": 582,
+      "id": "corpes:profesor:N",
+      "answer": "docente",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El profesor nos pide imaginar una dirección diferente.",
+      "target": "profesor",
+      "translation": "The teacher asks us to imagine a different direction.",
+      "substitutedSentence": "El docente nos pide imaginar una dirección diferente.",
+      "reason": "Docente used as a noun denotes a teacher; el and singular pide fit.",
+      "evidence": [
+        "https://dle.rae.es/docente"
+      ]
+    },
+    {
+      "rank": 719,
+      "id": "corpes:cierto:A",
+      "answer": "verdad",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Es cierto que tenemos que enviar siete cartas.",
+      "target": "cierto",
+      "translation": "It is true that we have to send seven letters.",
+      "substitutedSentence": "Es verdad que tenemos que enviar siete cartas.",
+      "reason": "Es verdad que is a valid true-that construction. The blank need not keep the original adjective part of speech.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 763,
+      "id": "corpes:opción:N",
+      "answer": "posibilidad",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El actor declara que cambiar la escena es una opción.",
+      "target": "opción",
+      "translation": "The actor declares that changing the scene is an option.",
+      "substitutedSentence": "El actor declara que cambiar la escena es una posibilidad.",
+      "reason": "Changing the scene as a possibility is an available option; feminine una fits.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 804,
+      "id": "corpes:advertir:V",
+      "answer": "alerta",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Nos advierte sobre expresar nuestra opinión en internet.",
+      "target": "advierte",
+      "translation": "She warns us about expressing our opinion on the internet.",
+      "substitutedSentence": "Nos alerta sobre expresar nuestra opinión en internet.",
+      "reason": "Alertar a alguien sobre algo permits nos and the warning subject; present singular fits she.",
+      "evidence": [
+        "https://dle.rae.es/alertar"
+      ]
+    },
+    {
+      "rank": 841,
+      "id": "corpes:recoger:V",
+      "answer": "recopilar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "recoger",
+      "translation": "We need to collect data to resolve the problem and measure its impact.",
+      "substitutedSentence": "Necesitamos recopilar datos para resolver el problema y medir su impacto.",
+      "reason": "Collecting/gathering data fits the information-collection sense and infinitive requirement.",
+      "evidence": [
+        "https://dle.rae.es/recopilar"
+      ]
+    },
+    {
+      "rank": 841,
+      "id": "corpes:recoger:V",
+      "answer": "recabar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "recoger",
+      "translation": "We need to collect data to resolve the problem and measure its impact.",
+      "substitutedSentence": "Necesitamos recabar datos para resolver el problema y medir su impacto.",
+      "reason": "Gathering data fits collect; no extra clitic or preposition is needed.",
+      "evidence": [
+        "https://dem.colmex.mx/ver/recabar",
+        "https://dle.rae.es/recabar"
+      ]
+    },
+    {
+      "rank": 912,
+      "id": "corpes:ubicar:V",
+      "answer": "localizar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El juez quiere ubicar la casa en el sur del país.",
+      "target": "ubicar",
+      "translation": "The judge wants to locate the house in the south of the country.",
+      "substitutedSentence": "El juez quiere localizar la casa en el sur del país.",
+      "reason": "Localizar covers finding a location and determining a site, both compatible with locate the house here.",
+      "evidence": [
+        "https://dle.rae.es/localizar"
+      ]
+    },
+    {
+      "rank": 933,
+      "id": "corpes:adecuado:A",
+      "answer": "idónea",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Con menos cortes, la tela es adecuada para este uso.",
+      "target": "adecuada",
+      "translation": "With fewer cuts, the fabric is suitable for this use.",
+      "substitutedSentence": "Con menos cortes, la tela es idónea para este uso.",
+      "reason": "Suitable/appropriate for this use, with feminine singular agreement with tela.",
+      "evidence": [
+        "https://dle.rae.es/idóneo"
+      ]
+    },
+    {
+      "rank": 971,
+      "id": "corpes:experto:N",
+      "answer": "especialista",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El experto quiere acordar una respuesta positiva.",
+      "target": "experto",
+      "translation": "The expert wants to agree on a positive response.",
+      "substitutedSentence": "El especialista quiere acordar una respuesta positiva.",
+      "reason": "A specialist is an expert in a field; no contrary type of expertise is specified. El and singular quiere fit.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1006,
+      "id": "corpes:ambiente:N",
+      "answer": "clima",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El corto filme nos sorprende con su ambiente tranquilo.",
+      "target": "ambiente",
+      "translation": "The short film surprises us with its calm atmosphere.",
+      "substitutedSentence": "El corto filme nos sorprende con su clima tranquilo.",
+      "reason": "The figurative atmosphere reading fits the film. Masculine clima agrees with tranquilo; atmósfera does not.",
+      "evidence": [
+        "https://dle.rae.es/clima"
+      ]
+    },
+    {
+      "rank": 1025,
+      "id": "corpes:costo:N",
+      "answer": "precio",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Tengo la sensación de que el costo del coche es demasiado alto.",
+      "target": "costo",
+      "translation": "I have the feeling that the cost of the car is too high.",
+      "substitutedSentence": "Tengo la sensación de que el precio del coche es demasiado alto.",
+      "reason": "The car's acquisition cost can be its price; masculine singular fits el and alto.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1044,
+      "id": "corpes:ropa:N",
+      "answer": "vestimenta",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El catálogo digital tiene una categoría para ropa.",
+      "target": "ropa",
+      "translation": "The digital catalog has a category for clothes.",
+      "substitutedSentence": "El catálogo digital tiene una categoría para vestimenta.",
+      "reason": "The clothing sense fits a catalog category; no fixed determiner causes disagreement.",
+      "evidence": [
+        "https://dle.rae.es/vestimenta"
+      ]
+    },
+    {
+      "rank": 1048,
+      "id": "corpes:feliz:A",
+      "answer": "encantado",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El diputado está feliz de plantar un árbol.",
+      "target": "feliz",
+      "translation": "The deputy is happy to plant a tree.",
+      "substitutedSentence": "El diputado está encantado de plantar un árbol.",
+      "reason": "Being happy/pleased to do something fits encantado de plus infinitive; masculine agrees with diputado.",
+      "evidence": [
+        "https://dle.rae.es/encantado"
+      ]
+    },
+    {
+      "rank": 1079,
+      "id": "corpes:normal:A",
+      "answer": "frecuente",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Es normal tener dificultad para revelar un secreto.",
+      "target": "normal",
+      "translation": "It is normal to have difficulty revealing a secret.",
+      "substitutedSentence": "Es frecuente tener dificultad para revelar un secreto.",
+      "reason": "Normal can mean usual/common, not only norm-conforming. Difficulty telling a secret admits that reading.",
+      "evidence": [
+        "https://dle.rae.es/normal"
+      ]
+    },
+    {
+      "rank": 1095,
+      "id": "corpes:extender:V",
+      "answer": "propagar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Estudiamos la tasa a la que el fuego se puede extender.",
+      "target": "extender",
+      "translation": "We study the rate at which fire can spread.",
+      "substitutedSentence": "Estudiamos la tasa a la que el fuego se puede propagar.",
+      "reason": "The existing se supplies the pronominal construction for fire spreading. Do not add propagarse after se puede.",
+      "evidence": [
+        "https://dle.rae.es/propagar"
+      ]
+    },
+    {
+      "rank": 1098,
+      "id": "corpes:simple:A",
+      "answer": "básico",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El equipo simple para hacer deporte está arriba.",
+      "target": "simple",
+      "translation": "The simple sports equipment is upstairs.",
+      "substitutedSentence": "El equipo básico para hacer deporte está arriba.",
+      "reason": "The uncomplicated/simple sense is documented independently of the fundamental/essential sense. Equipment admits that reading.",
+      "evidence": [
+        "https://dle.rae.es/básico"
+      ]
+    },
+    {
+      "rank": 1099,
+      "id": "corpes:precisamente:R",
+      "answer": "justamente",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Quizás sea precisamente el pan francés lo que me gusta.",
+      "target": "precisamente",
+      "translation": "Perhaps it is precisely the French bread that I like.",
+      "substitutedSentence": "Quizás sea justamente el pan francés lo que me gusta.",
+      "reason": "The exactly/precisely sense fits focus on French bread; not the justice sense.",
+      "evidence": [
+        "https://dle.rae.es/justamente"
+      ]
+    },
+    {
+      "rank": 1134,
+      "id": "corpes:partir:V",
+      "answer": "cortar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Quiero partir el pan en dos partes.",
+      "target": "partir",
+      "translation": "I want to divide the bread into two parts.",
+      "substitutedSentence": "Quiero cortar el pan en dos partes.",
+      "reason": "Cutting bread into two parts is a normal realization of dividing it; the English does not require breaking by hand.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1246,
+      "id": "corpes:propósito:N",
+      "answer": "fin",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El propósito de la misión es establecer un criterio común.",
+      "target": "propósito",
+      "translation": "The purpose of the mission is to establish a common criterion.",
+      "substitutedSentence": "El fin de la misión es establecer un criterio común.",
+      "reason": "The purpose/aim sense fits de la misión and masculine el.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1246,
+      "id": "corpes:propósito:N",
+      "answer": "objeto",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El propósito de la misión es establecer un criterio común.",
+      "target": "propósito",
+      "translation": "The purpose of the mission is to establish a common criterion.",
+      "substitutedSentence": "El objeto de la misión es establecer un criterio común.",
+      "reason": "The purpose/objective sense fits de la misión and masculine el.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1271,
+      "id": "corpes:beber:V",
+      "answer": "consumir",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La radio explica que los médicos no deben beber alcohol al ejercer su profesión.",
+      "target": "beber",
+      "translation": "The radio explains that doctors must not drink alcohol while practicing their profession.",
+      "substitutedSentence": "La radio explica que los médicos no deben consumir alcohol al ejercer su profesión.",
+      "reason": "Consuming alcohol in this professional-conduct statement means drinking it; infinitive fits deben.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1278,
+      "id": "corpes:escapar:V",
+      "answer": "escaparte",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Para escapar, ve directamente hacia la puerta verde.",
+      "target": "escapar",
+      "translation": "To escape, go directly toward the green door.",
+      "substitutedSentence": "Para escaparte, ve directamente hacia la puerta verde.",
+      "reason": "The understood escaping subject is tú, addressed by ve. Te matches; se does not.",
+      "evidence": [
+        "https://www.rae.es/gtg/verbo-pronominal"
+      ]
+    },
+    {
+      "rank": 1278,
+      "id": "corpes:escapar:V",
+      "answer": "fugarte",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Para escapar, ve directamente hacia la puerta verde.",
+      "target": "escapar",
+      "translation": "To escape, go directly toward the green door.",
+      "substitutedSentence": "Para fugarte, ve directamente hacia la puerta verde.",
+      "reason": "Fugarse means escape/run away; use te for the tú command, not dictionary se.",
+      "evidence": [
+        "https://dle.rae.es/fugar"
+      ]
+    },
+    {
+      "rank": 1283,
+      "id": "corpes:comprobar:V",
+      "answer": "averiguar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Antes del torneo, quiero comprobar si hay sombra.",
+      "target": "comprobar",
+      "translation": "Before the tournament, I want to check whether there is shade.",
+      "substitutedSentence": "Antes del torneo, quiero averiguar si hay sombra.",
+      "reason": "Finding out whether shade exists fits checking whether it exists, not checking an already-stated claim.",
+      "evidence": [
+        "https://dle.rae.es/averiguar"
+      ]
+    },
+    {
+      "rank": 1293,
+      "id": "corpes:elaborar:V",
+      "answer": "redactar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El especialista empieza a elaborar un plan para el área que rodea el hospital.",
+      "target": "elaborar",
+      "translation": "The specialist begins to draw up a plan for the area surrounding the hospital.",
+      "substitutedSentence": "El especialista empieza a redactar un plan para el área que rodea el hospital.",
+      "reason": "Drawing up a plan permits drafting it in writing; the English does not restrict the action to mental devising.",
+      "evidence": [
+        "https://dle.rae.es/redactar"
+      ]
+    },
+    {
+      "rank": 1328,
+      "id": "corpes:brindar:V",
+      "answer": "ofrece",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La república brinda la oportunidad de acceder a la educación.",
+      "target": "brinda",
+      "translation": "The republic offers the opportunity to access education.",
+      "substitutedSentence": "La república ofrece la oportunidad de acceder a la educación.",
+      "reason": "The opportunity-offering sense matches the English directly; third-person singular agrees with república.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1328,
+      "id": "corpes:brindar:V",
+      "answer": "da",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La república brinda la oportunidad de acceder a la educación.",
+      "target": "brinda",
+      "translation": "The republic offers the opportunity to access education.",
+      "substitutedSentence": "La república da la oportunidad de acceder a la educación.",
+      "reason": "Giving an opportunity is providing/offering access in this institutional context, not merely proposing an action.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1331,
+      "id": "corpes:introducir:V",
+      "answer": "ingresar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "En esta circunstancia, no es necesario introducir el sexo de la persona.",
+      "target": "introducir",
+      "translation": "In this circumstance, it is not necessary to enter the person's sex.",
+      "substitutedSentence": "En esta circunstancia, no es necesario ingresar el sexo de la persona.",
+      "reason": "Entering a data value is a standard American computing use; infinitive fits necesario.",
+      "evidence": [
+        "https://www.argentina.gob.ar/sites/default/files/anexo_res_sma_42_2019.pdf"
+      ]
+    },
+    {
+      "rank": 1331,
+      "id": "corpes:introducir:V",
+      "answer": "indicar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "En esta circunstancia, no es necesario introducir el sexo de la persona.",
+      "target": "introducir",
+      "translation": "In this circumstance, it is not necessary to enter the person's sex.",
+      "substitutedSentence": "En esta circunstancia, no es necesario indicar el sexo de la persona.",
+      "reason": "Accepted for specifying the sex value on a form: the English data-entry context selects the written specification reading. This is not automatic acceptance of indicar wherever introducir occurs.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1373,
+      "id": "corpes:conformar:V",
+      "answer": "integran",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Estos textos conocidos conforman una colección de literatura clásica.",
+      "target": "conforman",
+      "translation": "These well-known texts make up a collection of classical literature.",
+      "substitutedSentence": "Estos textos conocidos integran una colección de literatura clásica.",
+      "reason": "The component/make-up sense permits texts as subject and collection as object; plural present fits.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1373,
+      "id": "corpes:conformar:V",
+      "answer": "componen",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Estos textos conocidos conforman una colección de literatura clásica.",
+      "target": "conforman",
+      "translation": "These well-known texts make up a collection of classical literature.",
+      "substitutedSentence": "Estos textos conocidos componen una colección de literatura clásica.",
+      "reason": "The constitute/make-up sense fits the collection and plural subject; not musical composition.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1384,
+      "id": "corpes:rico:A",
+      "answer": "acaudalado",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El hombre rico quiere abordar la cuestión de cómo consumir menos.",
+      "target": "rico",
+      "translation": "The rich man wants to discuss how to consume less.",
+      "substitutedSentence": "El hombre acaudalado quiere abordar la cuestión de cómo consumir menos.",
+      "reason": "Wealthy/rich financially fits the man and masculine singular.",
+      "evidence": [
+        "https://dle.rae.es/acaudalado"
+      ]
+    },
+    {
+      "rank": 1395,
+      "id": "corpes:tranquilo:A",
+      "answer": "serena",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "La plataforma da a una parte tranquila de la costa.",
+      "target": "tranquila",
+      "translation": "The platform overlooks a quiet part of the coast.",
+      "substitutedSentence": "La plataforma da a una parte serena de la costa.",
+      "reason": "A peaceful/calm portion of the coast matches quiet; feminine singular agrees with parte.",
+      "evidence": [
+        "https://dle.rae.es/sereno"
+      ]
+    },
+    {
+      "rank": 1403,
+      "id": "corpes:principalmente:R",
+      "answer": "mayoritariamente",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El terreno disponible está formado principalmente por bosque.",
+      "target": "principalmente",
+      "translation": "The available land consists mainly of forest.",
+      "substitutedSentence": "El terreno disponible está formado mayoritariamente por bosque.",
+      "reason": "The land being mostly forest expresses composition mainly by forest, not principal importance alone.",
+      "evidence": [
+        "https://dle.rae.es/mayoritario"
+      ]
+    },
+    {
+      "rank": 1412,
+      "id": "corpes:incremento:N",
+      "answer": "alza",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El periódico analiza la dimensión social del incremento.",
+      "target": "incremento",
+      "translation": "The newspaper analyzes the social dimension of the increase.",
+      "substitutedSentence": "El periódico analiza la dimensión social del alza.",
+      "reason": "An increase in value admits a social dimension. Del alza is grammatical despite feminine gender because alza starts with stressed a.",
+      "evidence": [
+        "https://www.rae.es/dpd/alza"
+      ]
+    },
+    {
+      "rank": 1421,
+      "id": "corpes:investigar:V",
+      "answer": "analizar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Queremos investigar la influencia del impuesto en los precios.",
+      "target": "investigar",
+      "translation": "We want to investigate the influence of the tax on prices.",
+      "substitutedSentence": "Queremos analizar la influencia del impuesto en los precios.",
+      "reason": "Analyzing an influence is investigating it in this research context; the English does not demand a criminal investigation.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1421,
+      "id": "corpes:investigar:V",
+      "answer": "estudiar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Queremos investigar la influencia del impuesto en los precios.",
+      "target": "investigar",
+      "translation": "We want to investigate the influence of the tax on prices.",
+      "substitutedSentence": "Queremos estudiar la influencia del impuesto en los precios.",
+      "reason": "Studying an influence is investigating it here; infinitive fits queremos.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1446,
+      "id": "corpes:rechazar:V",
+      "answer": "desestimar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Tras un debate intenso, el grupo numeroso decide rechazar la propuesta.",
+      "target": "rechazar",
+      "translation": "After an intense debate, the large group decides to reject the proposal.",
+      "substitutedSentence": "Tras un debate intenso, el grupo numeroso decide desestimar la propuesta.",
+      "reason": "Dismissing/rejecting a proposal after debate fits the rejection sense, not underestimating its value.",
+      "evidence": [
+        "https://dle.rae.es/desestimar"
+      ]
+    },
+    {
+      "rank": 1460,
+      "id": "corpes:revisar:V",
+      "answer": "comprobar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "Existe una necesidad permanente de revisar el aceite.",
+      "target": "revisar",
+      "translation": "There is a permanent need to check the oil.",
+      "substitutedSentence": "Existe una necesidad permanente de comprobar el aceite.",
+      "reason": "Checking the oil matches examining it; the sentence does not specify a mechanical repair.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1472,
+      "id": "corpes:proporcionar:V",
+      "answer": "entregar",
+      "decision": "accept",
+      "origin": "omission audit",
+      "sentence": "El martes podemos proporcionar una tabla con los resultados.",
+      "target": "proporcionar",
+      "translation": "On Tuesday we can provide a table with the results.",
+      "substitutedSentence": "El martes podemos entregar una tabla con los resultados.",
+      "reason": "Providing a results table can be handing/delivering it; infinitive fits podemos and does not change the object.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    }
+  ],
+  "related": [
+    {
+      "rank": 269,
+      "id": "corpes:final:N",
+      "answer": "término",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "Incluso el final del torneo internacional es gratis.",
+      "target": "final",
+      "translation": "Even the end of the international tournament is free.",
+      "substitutedSentence": "Incluso el término del torneo internacional es gratis.",
+      "reason": "Al final/al término identify the end of the tournament; masculine el fits the unchanged sentence.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 864,
+      "id": "corpes:maestro:N",
+      "answer": "docente",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El maestro asiste a un evento comercial.",
+      "target": "maestro",
+      "translation": "The teacher attends a commercial event.",
+      "substitutedSentence": "El docente asiste a un evento comercial.",
+      "reason": "The teacher attending the event can be a docente, as on the profesor card; el and singular asiste agree.",
+      "evidence": [
+        "https://dle.rae.es/docente"
+      ]
+    },
+    {
+      "rank": 1312,
+      "id": "corpes:trasladar:V",
+      "answer": "desplazar",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El protagonista debe trasladar los platos a otra mesa.",
+      "target": "trasladar",
+      "translation": "The protagonist must move the plates to another table.",
+      "substitutedSentence": "El protagonista debe desplazar los platos a otra mesa.",
+      "reason": "Moving plates to another table is physical displacement; the destination and infinitive remain intact.",
+      "evidence": [
+        "https://dle.rae.es/desplazar"
+      ]
+    },
+    {
+      "rank": 842,
+      "id": "corpes:impacto:N",
+      "answer": "efecto",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "impacto",
+      "translation": "We need to collect data to resolve the problem and measure its impact.",
+      "substitutedSentence": "Necesitamos recoger datos para resolver el problema y medir su efecto.",
+      "reason": "The problem's impact can be its effect; su permits the masculine singular noun.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 769,
+      "id": "corpes:técnico:A",
+      "answer": "recabar",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El equipo técnico quiere reunir ayuda.",
+      "target": "técnico",
+      "translation": "The technical team wants to gather help.",
+      "substitutedSentence": "El equipo recabar quiere reunir ayuda.",
+      "reason": "Gathering help fits recabar in the seek/obtain assistance sense; no incompatible source of help is specified.",
+      "evidence": [
+        "https://dem.colmex.mx/ver/recabar",
+        "https://dle.rae.es/recabar"
+      ]
+    },
+    {
+      "rank": 1292,
+      "id": "corpes:especialista:N",
+      "answer": "experto",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El especialista empieza a elaborar un plan para el área que rodea el hospital.",
+      "target": "especialista",
+      "translation": "The specialist begins to draw up a plan for the area surrounding the hospital.",
+      "substitutedSentence": "El experto empieza a elaborar un plan para el área que rodea el hospital.",
+      "reason": "An expert working on this plan fits specialist in this professional context; singular masculine agrees.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 436,
+      "id": "corpes:precio:N",
+      "answer": "costo",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "Es difícil calcular el precio del tercer libro.",
+      "target": "precio",
+      "translation": "It is difficult to calculate the price of the third book.",
+      "substitutedSentence": "Es difícil calcular el costo del tercer libro.",
+      "reason": "The acquisition cost of the third book is its price in this reading; no manufacturing-cost cue narrows it.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 436,
+      "id": "corpes:precio:N",
+      "answer": "coste",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "Es difícil calcular el precio del tercer libro.",
+      "target": "precio",
+      "translation": "It is difficult to calculate the price of the third book.",
+      "substitutedSentence": "Es difícil calcular el coste del tercer libro.",
+      "reason": "Regional cost variant with the same acquisition-price reading and masculine agreement.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 954,
+      "id": "corpes:básico:A",
+      "answer": "simple",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "La cocina tiene una pared roja y un equipo básico.",
+      "target": "básico",
+      "translation": "The kitchen has a red wall and basic equipment.",
+      "substitutedSentence": "La cocina tiene una pared roja y un equipo simple.",
+      "reason": "Basic equipment permits an uncomplicated/no-frills reading; this does not license essential equipment as a contextual substitute.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 954,
+      "id": "corpes:básico:A",
+      "answer": "sencillo",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "La cocina tiene una pared roja y un equipo básico.",
+      "target": "básico",
+      "translation": "The kitchen has a red wall and basic equipment.",
+      "substitutedSentence": "La cocina tiene una pared roja y un equipo sencillo.",
+      "reason": "The uncomplicated/no-frills sense fits basic equipment and masculine singular equipo.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1326,
+      "id": "corpes:prestar:V",
+      "answer": "brindar",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El servicio sanitario estatal puede prestar ayuda.",
+      "target": "prestar",
+      "translation": "The state health service can provide help.",
+      "substitutedSentence": "El servicio sanitario estatal puede brindar ayuda.",
+      "reason": "Providing help by the health service fits brindar ayuda; this is the provide prompt, distinct from offering unaccepted help.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    },
+    {
+      "rank": 1326,
+      "id": "corpes:prestar:V",
+      "answer": "proporcionar",
+      "decision": "accept",
+      "origin": "related-card check",
+      "sentence": "El servicio sanitario estatal puede prestar ayuda.",
+      "target": "prestar",
+      "translation": "The state health service can provide help.",
+      "substitutedSentence": "El servicio sanitario estatal puede proporcionar ayuda.",
+      "reason": "The health service providing help directly matches proporcionar ayuda.",
+      "evidence": [
+        "data/spanish-lemmas/dictionary-extract.json",
+        "Full-sentence editorial judgment by Codex, independently adjudicated by Claude; no separate corpus-frequency claim."
+      ]
+    }
+  ],
+  "baseSentenceFlags": [
+    {
+      "rank": 535,
+      "decision": "retain",
+      "reason": "Aumentar permits a nonprepositional measure complement. The claim that en is obligatory was unsupported.",
+      "sources": [
+        "https://dialnet.unirioja.es/descarga/articulo/3115656.pdf"
+      ]
+    },
+    {
+      "rank": 1055,
+      "decision": "retain",
+      "reason": "Impedir/evitar can take an infinitive with an implicit human subject. English us makes that understood participant explicit. This is marked wording, not an established error. The Ministry example supports the construction, not every possible collocation.",
+      "sources": [
+        "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/tablasEstadisticas/Inf_Anual_SNS_2015.1.pdf"
+      ]
+    },
+    {
+      "rank": 256,
+      "decision": "retain",
+      "reason": "Fin can denote the endpoint of a process; al fin del proceso is not automatically the idiom al fin meaning finally. Final and término are also accepted."
+    }
+  ],
+  "limits": [
+    "Fresh Claude coverage is the patch and the listed candidates, not an independent new review of every typed policy or every usage overlay. Earlier whole-bank audits remain separate historical evidence.",
+    "No assertion that every possible valid synonym is enumerated; unrelated meanings and agreement violations remain excluded.",
+    "Multiple-choice ambiguity remains deferred by user request.",
+    "Original sentences, translations, chunk glosses, headword teaching, audio and saved scores are unchanged in this resolution.",
+    "An unaccepted near spelling can still receive a retry; it earns no credit until a valid answer is entered."
+  ],
+  "finalHashes": {
+    "data/spanish-lemmas/context/answer-alternatives.json": "329e83ff200c916cf19720e1bd6ee2d1471c478cd56419254116bee3970537bc",
+    "lemmas/data/context.json": "450f28ae96876edc43097c774f930c12a88d03935de88c0964ee0cb586d47a6c",
+    "data/spanish-lemmas/later-day-recall-review.json": "b937dc2c9fb875fcddd0087ff567a507abf80ecb0141dcc4fff12ba5c6f026fa",
+    "lemmas/later-recall-data.js": "021e051be9fac802127407082556c9d39ffefe2b71f4bee91bf931fa65ab929f"
+  }
+}

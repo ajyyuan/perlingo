@@ -2645,17 +2645,19 @@ export const laterRecall={
     "prompt": "fundamental",
     "cue": "Essential to the basis of something",
     "alternatives": [
-      "fundamental"
+      "fundamental",
+      "esencial"
     ],
-    "note": ""
+    "note": " Also accepted: esencial, in this same cued sense."
   },
   "corpes:cuarto:N": {
     "prompt": "room",
     "cue": "A separate room inside a building",
     "alternatives": [
-      "habitación"
+      "habitación",
+      "pieza"
     ],
-    "note": ""
+    "note": " Also accepted: pieza, in this same cued sense."
   },
   "corpes:inicio:N": {
     "prompt": "beginning",
@@ -4103,9 +4105,11 @@ export const laterRecall={
     "prompt": "increase",
     "cue": "A rise in prices",
     "alternatives": [
-      "aumento"
+      "aumento",
+      "subida",
+      "alza"
     ],
-    "note": ""
+    "note": " Also accepted: subida, alza, in this same cued sense."
   },
   "corpes:conclusión:N": {
     "prompt": "conclusion",

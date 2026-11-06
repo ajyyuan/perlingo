@@ -1,3 +1,4 @@
+import {beforeLaterContextCorrections} from './helpers/context-integrity.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -41,6 +42,6 @@ test('accuracy pass preserves the deck and every target and accepted-answer list
  const bytes=readFileSync(new URL('../lemmas/data/deck.json',import.meta.url));
  assert.equal(createHash('sha256').update(bytes).digest('hex'),audit.beforeHashes['lemmas/data/deck.json']);
  const originalAnswers=read('data/spanish-lemmas/pronoun-recall-audit.json').originalAnswers;
- const answers=bank.contexts.map(c=>({id:c.id,target:c.target,answers:originalAnswers[c.id]||c.answers}));
+ const answers=beforeLaterContextCorrections().bank.contexts.map(c=>({id:c.id,target:c.target,answers:originalAnswers[c.id]||c.answers}));
  assert.equal(createHash('sha256').update(JSON.stringify(answers)).digest('hex'),audit.answerIdentitySha256);
 });

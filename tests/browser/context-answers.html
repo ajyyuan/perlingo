@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Sentence answer audit · Perlingo</title>
+<style>
+ body{font:16px system-ui;max-width:900px;margin:40px auto;padding:0 20px;color:#26372d;background:#fafaf7}
+ button,input,select{font:inherit;padding:8px}label{display:block;margin:16px 0 6px}
+ #status{font-weight:600}li{margin:8px 0}small{color:#657066}
+</style>
+<h1>Sentence answer audit</h1>
+<p>This isolated check uses the app’s grading code. It does not read or write saved progress.</p>
+<p id="status" role="status">Loading…</p>
+<label for="card">Try an audited card</label><select id="card"></select>
+<p id="sentence"></p><p id="translation"></p>
+<form id="try"><label for="answer">Answer</label><input id="answer" autocomplete="off" required> <button>Check</button></form>
+<p id="feedback" role="status"></p>
+<details><summary>Audit checks</summary><ol id="checks"></ol></details>
+<script type="module" src="./context-answers.js"></script>

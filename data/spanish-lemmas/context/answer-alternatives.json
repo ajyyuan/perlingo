@@ -1,0 +1,2960 @@
+{
+  "date": "2026-11-06",
+  "scope": "Explicit sentence-specific alternatives reviewed against the complete sentence and English translation. Not an exhaustive synonym list; no automatic inheritance from typed recall. Original targets and surrounding words remain unchanged.",
+  "evidence": [
+    "Existing dictionary-extract.json and typed comparison source evidence support lexical meanings; contextual fit and surface forms are editorial checks, not an independent native-speaker review.",
+    "https://www.rae.es/dpd/período",
+    "https://www.rae.es/dpd/quizá",
+    "https://www.rae.es/dpd/fútbol",
+    "https://www.rae.es/dpd/septiembre",
+    "https://www.rae.es/dpd/vídeo",
+    "https://www.rae.es/dpd/conciencia",
+    "Resolution of the Claude cross-audit and sentence-specific decisions: data/spanish-lemmas/context/answer-review-2026-11-06.json. Dictionary definitions support senses; full-sentence equivalence and agreement are editorial judgments."
+  ],
+  "entries": {
+    "corpes:como:C": {
+      "sentence": "Como llueve, me quedo en casa.",
+      "target": "Como",
+      "alternatives": [
+        "porque"
+      ],
+      "translation": "Since it is raining, I am staying at home."
+    },
+    "corpes:querer:V": {
+      "sentence": "Yo ya sé qué quiero.",
+      "target": "quiero",
+      "alternatives": [
+        "deseo"
+      ],
+      "translation": "I already know what I want."
+    },
+    "corpes:solo:R": {
+      "sentence": "Solo debo trabajar hasta las tres.",
+      "target": "Solo",
+      "alternatives": [
+        "solamente",
+        "únicamente"
+      ],
+      "translation": "I only have to work until three."
+    },
+    "corpes:parte:N": {
+      "sentence": "Mucha gente pasa por esta parte de la ciudad.",
+      "target": "parte",
+      "alternatives": [
+        "porción"
+      ],
+      "translation": "A lot of people pass through this part of town."
+    },
+    "corpes:encontrar:V": {
+      "sentence": "No encuentro a nadie con quien hablar español ni francés.",
+      "target": "encuentro",
+      "alternatives": [
+        "hallo"
+      ],
+      "translation": "I cannot find anyone with whom to speak Spanish or French."
+    },
+    "corpes:después:R": {
+      "sentence": "Después de comer me pongo el abrigo y me quedo aquí.",
+      "target": "Después",
+      "alternatives": [
+        "luego"
+      ],
+      "translation": "After eating I put on my coat and stay here."
+    },
+    "corpes:momento:N": {
+      "sentence": "Aquel momento cambia su mundo.",
+      "target": "momento",
+      "alternatives": [
+        "instante"
+      ],
+      "translation": "That moment changes his world."
+    },
+    "corpes:volver:V": {
+      "sentence": "Mi hermana mayor vuelve a casa.",
+      "target": "vuelve",
+      "alternatives": [
+        "regresa",
+        "retorna"
+      ],
+      "translation": "My older sister comes home."
+    },
+    "corpes:niño:N": {
+      "sentence": "El gobierno ofrece un lugar seguro para cada niño.",
+      "target": "niño",
+      "alternatives": [
+        "chico",
+        "menor"
+      ],
+      "translation": "The government offers a safe place for each child."
+    },
+    "corpes:lugar:N": {
+      "sentence": "El gobierno ofrece un lugar seguro para cada niño.",
+      "target": "lugar",
+      "alternatives": [
+        "sitio",
+        "espacio"
+      ],
+      "translation": "The government offers a safe place for each child."
+    },
+    "corpes:llamar:V": {
+      "sentence": "Tomo un descanso mientras el trabajador social llama.",
+      "target": "llama",
+      "alternatives": [
+        "telefonea"
+      ],
+      "translation": "I take a break while the social worker calls."
+    },
+    "corpes:grupo:N": {
+      "sentence": "El grupo realiza un estudio sobre el estado del agua.",
+      "target": "grupo",
+      "alternatives": [
+        "conjunto"
+      ],
+      "translation": "The group carries out a study on the state of the water."
+    },
+    "corpes:realizar:V": {
+      "sentence": "El grupo realiza un estudio sobre el estado del agua.",
+      "target": "realiza",
+      "alternatives": [
+        "hace",
+        "efectúa"
+      ],
+      "translation": "The group carries out a study on the state of the water."
+    },
+    "corpes:vivir:V": {
+      "sentence": "Según Ana, vive en su propio hogar.",
+      "target": "vive",
+      "alternatives": [
+        "reside",
+        "habita"
+      ],
+      "translation": "According to Ana, he lives in his own home."
+    },
+    "corpes:manera:N": {
+      "sentence": "Hoy estudio de esta manera y luego descanso.",
+      "target": "manera",
+      "alternatives": [
+        "forma"
+      ],
+      "translation": "Today I study this way and then rest."
+    },
+    "corpes:luego:R": {
+      "sentence": "Hoy estudio de esta manera y luego descanso.",
+      "target": "luego",
+      "alternatives": [
+        "después"
+      ],
+      "translation": "Today I study this way and then rest."
+    },
+    "corpes:padre:N": {
+      "sentence": "Mi padre habla ante un comité en un edificio público.",
+      "target": "padre",
+      "alternatives": [
+        "papá"
+      ],
+      "translation": "My father speaks before a committee in a public building."
+    },
+    "corpes:esperar:V": {
+      "sentence": "Tenemos que esperar porque el sistema tiene un problema.",
+      "target": "esperar",
+      "alternatives": [
+        "aguardar"
+      ],
+      "translation": "We have to wait because the system has a problem."
+    },
+    "corpes:nunca:R": {
+      "sentence": "Nunca conduzco en la ciudad; además, me gusta caminar.",
+      "target": "Nunca",
+      "alternatives": [
+        "jamás"
+      ],
+      "translation": "I never drive in the city; besides, I like walking."
+    },
+    "corpes:empezar:V": {
+      "sentence": "Antes de empezar la obra reviso la cuenta.",
+      "target": "empezar",
+      "alternatives": [
+        "comenzar",
+        "iniciar"
+      ],
+      "translation": "Before starting the work, I check the account."
+    },
+    "corpes:varios:Q": {
+      "sentence": "Existen varios modos de explicar esto.",
+      "target": "varios",
+      "alternatives": [
+        "algunos",
+        "diversos"
+      ],
+      "translation": "There are several ways to explain this."
+    },
+    "corpes:explicar:V": {
+      "sentence": "Existen varios modos de explicar esto.",
+      "target": "explicar",
+      "alternatives": [
+        "aclarar"
+      ],
+      "translation": "There are several ways to explain this."
+    },
+    "corpes:aquí:R": {
+      "sentence": "Uno de los empleados de la empresa vive aquí.",
+      "target": "aquí",
+      "alternatives": [
+        "acá"
+      ],
+      "translation": "One of the employees of the company lives here."
+    },
+    "corpes:empresa:N": {
+      "sentence": "Uno de los empleados de la empresa vive aquí.",
+      "target": "empresa",
+      "alternatives": [
+        "compañía"
+      ],
+      "translation": "One of the employees of the company lives here."
+    },
+    "corpes:recordar:V": {
+      "sentence": "Recuerdo a esa gente pero no puedo decir ningún nombre.",
+      "target": "Recuerdo",
+      "alternatives": [
+        "rememoro"
+      ],
+      "translation": "I remember those people, but I cannot say any names."
+    },
+    "corpes:mantener:V": {
+      "sentence": "El consejo considera necesario mantener el centro abierto.",
+      "target": "mantener",
+      "alternatives": [
+        "conservar"
+      ],
+      "translation": "The council considers it necessary to keep the center open."
+    },
+    "corpes:pequeño:A": {
+      "sentence": "Recibe una caja pequeña y quiere abrir la caja.",
+      "target": "pequeña",
+      "alternatives": [
+        "chica"
+      ],
+      "translation": "She receives a small box and wants to open the box."
+    },
+    "corpes:lograr:V": {
+      "sentence": "El proyecto logra mejorar el servicio.",
+      "target": "logra",
+      "alternatives": [
+        "consigue"
+      ],
+      "translation": "The project manages to improve the service."
+    },
+    "corpes:madre:N": {
+      "sentence": "Mi madre encuentra un ejemplo en el libro.",
+      "target": "madre",
+      "alternatives": [
+        "mamá"
+      ],
+      "translation": "My mother finds an example in the book."
+    },
+    "corpes:convertir:V": {
+      "sentence": "La familia quiere convertir su único cuarto en una cocina.",
+      "target": "convertir",
+      "alternatives": [
+        "transformar"
+      ],
+      "translation": "The family wants to turn its only room into a kitchen."
+    },
+    "corpes:comenzar:V": {
+      "sentence": "La semana de la salud comienza hoy.",
+      "target": "comienza",
+      "alternatives": [
+        "empieza"
+      ],
+      "translation": "Health week begins today."
+    },
+    "corpes:pedir:V": {
+      "sentence": "Pido un informe largo sobre el desarrollo de la ciudad.",
+      "target": "Pido",
+      "alternatives": [
+        "solicito"
+      ],
+      "translation": "I ask for a long report on the development of the city."
+    },
+    "corpes:situación:N": {
+      "sentence": "El cuerpo humano aún puede adaptarse a esta situación.",
+      "target": "situación",
+      "alternatives": [
+        "circunstancia"
+      ],
+      "translation": "The human body can still adapt to this situation."
+    },
+    "corpes:aún:R": {
+      "sentence": "El cuerpo humano aún puede adaptarse a esta situación.",
+      "target": "aún",
+      "alternatives": [
+        "todavía"
+      ],
+      "translation": "The human body can still adapt to this situation."
+    },
+    "corpes:mostrar:V": {
+      "sentence": "Muestra la palabra que nombra esta parte del cuerpo.",
+      "target": "Muestra",
+      "alternatives": [
+        "Enseña"
+      ],
+      "translation": "She shows the word that names this part of the body."
+    },
+    "corpes:entender:V": {
+      "sentence": "Quiero entender la relación entre este tema y el anterior.",
+      "target": "entender",
+      "alternatives": [
+        "comprender"
+      ],
+      "translation": "I want to understand the relationship between this topic and the previous one."
+    },
+    "corpes:tema:N": {
+      "sentence": "Quiero entender la relación entre este tema y el anterior.",
+      "target": "tema",
+      "alternatives": [
+        "asunto"
+      ],
+      "translation": "I want to understand the relationship between this topic and the previous one."
+    },
+    "corpes:señalar:V": {
+      "sentence": "Mi amigo señala una actividad para mañana.",
+      "target": "señala",
+      "alternatives": [
+        "indica"
+      ],
+      "translation": "My friend points out an activity for tomorrow."
+    },
+    "corpes:fin:N": {
+      "sentence": "Este hecho explica el resultado al fin del proceso.",
+      "target": "fin",
+      "alternatives": [
+        "final",
+        "término"
+      ],
+      "translation": "This fact explains the result at the end of the process."
+    },
+    "corpes:diferente:A": {
+      "sentence": "Nadie tiene una idea diferente.",
+      "target": "diferente",
+      "alternatives": [
+        "distinta"
+      ],
+      "translation": "Nobody has a different idea."
+    },
+    "corpes:terminar:V": {
+      "sentence": "Para terminar, tienes que utilizar este número.",
+      "target": "terminar",
+      "alternatives": [
+        "acabar",
+        "concluir",
+        "finalizar"
+      ],
+      "translation": "To finish, you have to use this number."
+    },
+    "corpes:utilizar:V": {
+      "sentence": "Para terminar, tienes que utilizar este número.",
+      "target": "utilizar",
+      "alternatives": [
+        "usar",
+        "emplear"
+      ],
+      "translation": "To finish, you have to use this number."
+    },
+    "corpes:incluso:R": {
+      "sentence": "Incluso el final del torneo internacional es gratis.",
+      "target": "Incluso",
+      "alternatives": [
+        "Hasta",
+        "Aun"
+      ],
+      "translation": "Even the end of the international tournament is free."
+    },
+    "corpes:final:N": {
+      "sentence": "Incluso el final del torneo internacional es gratis.",
+      "target": "final",
+      "alternatives": [
+        "fin",
+        "término"
+      ],
+      "translation": "Even the end of the international tournament is free."
+    },
+    "corpes:zona:N": {
+      "sentence": "La escuela gana espacio en esta zona.",
+      "target": "zona",
+      "alternatives": [
+        "área",
+        "región"
+      ],
+      "translation": "The school gains space in this area."
+    },
+    "corpes:investigación:N": {
+      "sentence": "A usted le gusta la investigación científica.",
+      "target": "investigación",
+      "alternatives": [
+        "indagación"
+      ],
+      "translation": "You like scientific research."
+    },
+    "corpes:allí:R": {
+      "sentence": "El hombre que está solo allí ofrece su ayuda.",
+      "target": "allí",
+      "alternatives": [
+        "allá"
+      ],
+      "translation": "The man who is alone over there offers his help."
+    },
+    "corpes:ofrecer:V": {
+      "sentence": "El hombre que está solo allí ofrece su ayuda.",
+      "target": "ofrece",
+      "alternatives": [
+        "brinda"
+      ],
+      "translation": "The man who is alone over there offers his help."
+    },
+    "corpes:principal:A": {
+      "sentence": "En realidad, el objetivo principal es acabar a tiempo.",
+      "target": "principal",
+      "alternatives": [
+        "primordial",
+        "fundamental"
+      ],
+      "translation": "In reality, the main goal is to finish on time."
+    },
+    "corpes:acabar:V": {
+      "sentence": "En realidad, el objetivo principal es acabar a tiempo.",
+      "target": "acabar",
+      "alternatives": [
+        "terminar",
+        "concluir",
+        "finalizar"
+      ],
+      "translation": "In reality, the main goal is to finish on time."
+    },
+    "corpes:necesitar:V": {
+      "sentence": "La sociedad necesita saber lo que ocurre.",
+      "target": "necesita",
+      "alternatives": [
+        "requiere"
+      ],
+      "translation": "Society needs to know what is happening."
+    },
+    "corpes:ocurrir:V": {
+      "sentence": "La sociedad necesita saber lo que ocurre.",
+      "target": "ocurre",
+      "alternatives": [
+        "sucede",
+        "pasa",
+        "acontece"
+      ],
+      "translation": "Society needs to know what is happening."
+    },
+    "corpes:incluir:V": {
+      "sentence": "El libro incluye la historia de un hombre que teme morir en la calle.",
+      "target": "incluye",
+      "alternatives": [
+        "incorpora",
+        "recoge"
+      ],
+      "translation": "The book includes the story of a man who fears dying in the street."
+    },
+    "corpes:morir:V": {
+      "sentence": "El libro incluye la historia de un hombre que teme morir en la calle.",
+      "target": "morir",
+      "alternatives": [
+        "fallecer",
+        "morirse"
+      ],
+      "translation": "The book includes the story of a man who fears dying in the street."
+    },
+    "corpes:distinto:A": {
+      "sentence": "En cada pueblo oigo un tono de voz distinto.",
+      "target": "distinto",
+      "alternatives": [
+        "diferente"
+      ],
+      "translation": "In each town I hear a different tone of voice."
+    },
+    "corpes:fuerza:N": {
+      "sentence": "En este juego, cada acción requiere fuerza.",
+      "target": "fuerza",
+      "alternatives": [
+        "fortaleza"
+      ],
+      "translation": "In this game, every action requires strength."
+    },
+    "corpes:acción:N": {
+      "sentence": "En este juego, cada acción requiere fuerza.",
+      "target": "acción",
+      "alternatives": [
+        "acto"
+      ],
+      "translation": "In this game, every action requires strength."
+    },
+    "corpes:conseguir:V": {
+      "sentence": "Es necesario cumplir una condición para conseguir el trabajo.",
+      "target": "conseguir",
+      "alternatives": [
+        "obtener",
+        "lograr"
+      ],
+      "translation": "It is necessary to fulfill one condition to get the job."
+    },
+    "corpes:sacar:V": {
+      "sentence": "Antes de sacar el documento quiero leer sobre su valor.",
+      "target": "sacar",
+      "alternatives": [
+        "extraer"
+      ],
+      "translation": "Before taking out the document, I want to read about its value."
+    },
+    "corpes:ayudar:V": {
+      "sentence": "Tú nos puedes ayudar a elegir una medida adecuada.",
+      "target": "ayudar",
+      "alternatives": [
+        "auxiliar"
+      ],
+      "translation": "You can help us choose a suitable measure."
+    },
+    "corpes:efecto:N": {
+      "sentence": "La universidad estudia el efecto de la luz en la seguridad.",
+      "target": "efecto",
+      "alternatives": [
+        "resultado",
+        "impacto"
+      ],
+      "translation": "The university studies the effect of light on safety."
+    },
+    "corpes:intentar:V": {
+      "sentence": "Intento reducir el uso de luz artificial.",
+      "target": "Intento",
+      "alternatives": [
+        "Procuro"
+      ],
+      "translation": "I try to reduce the use of artificial light."
+    },
+    "corpes:uso:N": {
+      "sentence": "Intento reducir el uso de luz artificial.",
+      "target": "uso",
+      "alternatives": [
+        "empleo"
+      ],
+      "translation": "I try to reduce the use of artificial light."
+    },
+    "corpes:formar:V": {
+      "sentence": "El próximo mes vamos a formar un equipo para reconocer estos sonidos.",
+      "target": "formar",
+      "alternatives": [
+        "constituir",
+        "conformar",
+        "crear"
+      ],
+      "translation": "Next month we will form a team to recognize these sounds."
+    },
+    "corpes:usar:V": {
+      "sentence": "Ese señor sabe usar los recursos bien.",
+      "target": "usar",
+      "alternatives": [
+        "utilizar",
+        "emplear"
+      ],
+      "translation": "That gentleman knows how to use the resources well."
+    },
+    "corpes:recurso:N": {
+      "sentence": "Ese señor sabe usar los recursos bien.",
+      "target": "recursos",
+      "alternatives": [
+        "medios"
+      ],
+      "translation": "That gentleman knows how to use the resources well."
+    },
+    "corpes:todavía:R": {
+      "sentence": "Ese siglo todavía genera interés.",
+      "target": "todavía",
+      "alternatives": [
+        "aún"
+      ],
+      "translation": "That century still generates interest."
+    },
+    "corpes:generar:V": {
+      "sentence": "Ese siglo todavía genera interés.",
+      "target": "genera",
+      "alternatives": [
+        "produce",
+        "despierta"
+      ],
+      "translation": "That century still generates interest."
+    },
+    "corpes:principio:N": {
+      "sentence": "Un poco de paciencia basta para alcanzar la meta al principio.",
+      "target": "principio",
+      "alternatives": [
+        "inicio",
+        "comienzo"
+      ],
+      "translation": "A little patience is enough to reach the goal at the beginning."
+    },
+    "corpes:indicar:V": {
+      "sentence": "La carta indica la razón para cumplir el acuerdo.",
+      "target": "indica",
+      "alternatives": [
+        "señala"
+      ],
+      "translation": "The letter indicates the reason for fulfilling the agreement."
+    },
+    "corpes:enfermedad:N": {
+      "sentence": "La organización quiere establecer un centro para estudiar la enfermedad.",
+      "target": "enfermedad",
+      "alternatives": [
+        "dolencia"
+      ],
+      "translation": "The organization wants to establish a center to study the disease."
+    },
+    "corpes:siguiente:A": {
+      "sentence": "Presta atención antes de responder la siguiente pregunta.",
+      "target": "siguiente",
+      "alternatives": [
+        "próxima"
+      ],
+      "translation": "Pay attention before answering the next question."
+    },
+    "corpes:responder:V": {
+      "sentence": "Presta atención antes de responder la siguiente pregunta.",
+      "target": "responder",
+      "alternatives": [
+        "contestar"
+      ],
+      "translation": "Pay attention before answering the next question."
+    },
+    "corpes:decisión:N": {
+      "sentence": "La decisión abre la posibilidad de estudiar arte.",
+      "target": "decisión",
+      "alternatives": [
+        "determinación"
+      ],
+      "translation": "The decision opens up the possibility of studying art."
+    },
+    "corpes:riesgo:N": {
+      "sentence": "El joven muestra interés por comprender el riesgo.",
+      "target": "riesgo",
+      "alternatives": [
+        "peligro"
+      ],
+      "translation": "The young person shows an interest in understanding the risk."
+    },
+    "corpes:anterior:A": {
+      "sentence": "El plan anterior incluye una red de escuelas.",
+      "target": "anterior",
+      "alternatives": [
+        "previo"
+      ],
+      "translation": "The previous plan includes a network of schools."
+    },
+    "corpes:afirmar:V": {
+      "sentence": "Afirma que tal especie no existe.",
+      "target": "Afirma",
+      "alternatives": [
+        "Declara",
+        "Asegura",
+        "Sostiene"
+      ],
+      "translation": "She asserts that such a species does not exist."
+    },
+    "corpes:obtener:V": {
+      "sentence": "Observa el área para obtener información.",
+      "target": "obtener",
+      "alternatives": [
+        "conseguir",
+        "recabar"
+      ],
+      "translation": "She observes the area to obtain information."
+    },
+    "corpes:capacidad:N": {
+      "sentence": "Alguien puede suponer que tengo la capacidad de hacerlo.",
+      "target": "capacidad",
+      "alternatives": [
+        "habilidad"
+      ],
+      "translation": "Someone might assume that I have the ability to do it."
+    },
+    "corpes:suponer:V": {
+      "sentence": "Alguien puede suponer que tengo la capacidad de hacerlo.",
+      "target": "suponer",
+      "alternatives": [
+        "imaginar",
+        "asumir"
+      ],
+      "translation": "Someone might assume that I have the ability to do it."
+    },
+    "corpes:autor:N": {
+      "sentence": "El autor presenta un modelo de amor familiar.",
+      "target": "autor",
+      "alternatives": [
+        "escritor"
+      ],
+      "translation": "The author presents a model of family love."
+    },
+    "corpes:continuar:V": {
+      "sentence": "El policía continúa trabajando después de cerrar la puerta.",
+      "target": "continúa",
+      "alternatives": [
+        "sigue"
+      ],
+      "translation": "The police officer continues working after closing the door."
+    },
+    "corpes:policía:N": {
+      "sentence": "El policía continúa trabajando después de cerrar la puerta.",
+      "target": "policía",
+      "alternatives": [
+        "agente"
+      ],
+      "translation": "The police officer continues working after closing the door."
+    },
+    "corpes:falta:N": {
+      "sentence": "Durante la guerra hay falta de alimentos de calidad.",
+      "target": "falta",
+      "alternatives": [
+        "escasez",
+        "carencia"
+      ],
+      "translation": "During the war there is a lack of quality food."
+    },
+    "corpes:región:N": {
+      "sentence": "En esta región tengo que pagar para entrar en el campo.",
+      "target": "región",
+      "alternatives": [
+        "zona",
+        "área"
+      ],
+      "translation": "In this region I have to pay to enter the field."
+    },
+    "corpes:destacar:V": {
+      "sentence": "La guía destaca el valor cultural y natural del parque.",
+      "target": "destaca",
+      "alternatives": [
+        "resalta",
+        "subraya"
+      ],
+      "translation": "The guide highlights the cultural and natural value of the park."
+    },
+    "corpes:dinero:N": {
+      "sentence": "Necesito dinero para un viaje especial.",
+      "target": "dinero",
+      "alternatives": [
+        "plata"
+      ],
+      "translation": "I need money for a special trip."
+    },
+    "corpes:levantar:V": {
+      "sentence": "Quiero levantar el resto de las cajas que están cerca.",
+      "target": "levantar",
+      "alternatives": [
+        "alzar"
+      ],
+      "translation": "I want to lift the rest of the boxes that are nearby."
+    },
+    "corpes:precio:N": {
+      "sentence": "Es difícil calcular el precio del tercer libro.",
+      "target": "precio",
+      "alternatives": [
+        "costo",
+        "coste"
+      ],
+      "translation": "It is difficult to calculate the price of the third book."
+    },
+    "corpes:difícil:A": {
+      "sentence": "Es difícil calcular el precio del tercer libro.",
+      "target": "difícil",
+      "alternatives": [
+        "complicado"
+      ],
+      "translation": "It is difficult to calculate the price of the third book."
+    },
+    "corpes:respuesta:N": {
+      "sentence": "El paciente quiere una respuesta sobre su tratamiento actual.",
+      "target": "respuesta",
+      "alternatives": [
+        "contestación"
+      ],
+      "translation": "The patient wants an answer about his current treatment."
+    },
+    "corpes:acuerdo:N": {
+      "sentence": "La clase llega a un acuerdo sobre una serie de actividades.",
+      "target": "acuerdo",
+      "alternatives": [
+        "convenio",
+        "pacto"
+      ],
+      "translation": "The class reaches an agreement on a series of activities."
+    },
+    "corpes:mundial:A": {
+      "sentence": "En el campeonato mundial, lleva un color diferente en cada pie.",
+      "target": "mundial",
+      "alternatives": [
+        "global"
+      ],
+      "translation": "At the world championship, he wears a different color on each foot."
+    },
+    "corpes:allá:R": {
+      "sentence": "Lleva la mesa allá por sí misma.",
+      "target": "allá",
+      "alternatives": [
+        "allí"
+      ],
+      "translation": "She takes the table over there by herself."
+    },
+    "corpes:chico:N": {
+      "sentence": "El chico menor apenas sabe leer.",
+      "target": "chico",
+      "alternatives": [
+        "muchacho",
+        "niño"
+      ],
+      "translation": "The younger boy can barely read."
+    },
+    "corpes:real:A": {
+      "sentence": "Seis corredores tienen una posibilidad real de ganar la carrera.",
+      "target": "real",
+      "alternatives": [
+        "verdadera"
+      ],
+      "translation": "Six runners have a real chance of winning the race."
+    },
+    "corpes:suceder:V": {
+      "sentence": "En esta ocasión, sucede algo antes de bajar.",
+      "target": "sucede",
+      "alternatives": [
+        "ocurre",
+        "pasa",
+        "acontece"
+      ],
+      "translation": "On this occasion, something happens before going downstairs."
+    },
+    "corpes:bajar:V": {
+      "sentence": "En esta ocasión, sucede algo antes de bajar.",
+      "target": "bajar",
+      "alternatives": [
+        "descender"
+      ],
+      "translation": "On this occasion, something happens before going downstairs."
+    },
+    "corpes:oportunidad:N": {
+      "sentence": "La semana pasada tuvimos la oportunidad de disfrutar de tu presencia.",
+      "target": "oportunidad",
+      "alternatives": [
+        "ocasión"
+      ],
+      "translation": "Last week we had the opportunity to enjoy your presence."
+    },
+    "corpes:subir:V": {
+      "sentence": "La guía nos informa de que podemos subir para descubrir la ciudad.",
+      "target": "subir",
+      "alternatives": [
+        "ascender"
+      ],
+      "translation": "The guide informs us that we can go up to discover the city."
+    },
+    "corpes:iniciar:V": {
+      "sentence": "Esta tarde quiero acompañar a mi hermana para iniciar el curso.",
+      "target": "iniciar",
+      "alternatives": [
+        "empezar",
+        "comenzar"
+      ],
+      "translation": "This afternoon I want to accompany my sister to start the course."
+    },
+    "corpes:compañía:N": {
+      "sentence": "La compañía vende ropa negra en diversas tallas.",
+      "target": "compañía",
+      "alternatives": [
+        "empresa"
+      ],
+      "translation": "The company sells black clothes in various sizes."
+    },
+    "corpes:oír:V": {
+      "sentence": "Antes de dormir, quiero oír las noticias que vas a traer.",
+      "target": "oír",
+      "alternatives": [
+        "escuchar"
+      ],
+      "translation": "Before sleeping, I want to hear the news you are bringing."
+    },
+    "corpes:comprar:V": {
+      "sentence": "El personaje sale a tomar el aire antes de comprar comida.",
+      "target": "comprar",
+      "alternatives": [
+        "adquirir"
+      ],
+      "translation": "The character goes out for some air before buying food."
+    },
+    "corpes:agregar:V": {
+      "sentence": "La escuela agrega una pequeña cantidad de agua.",
+      "target": "agrega",
+      "alternatives": [
+        "añade",
+        "incorpora"
+      ],
+      "translation": "The school adds a small amount of water."
+    },
+    "corpes:añadir:V": {
+      "sentence": "Quiero añadir una visita a la capital al viaje.",
+      "target": "añadir",
+      "alternatives": [
+        "agregar",
+        "incorporar"
+      ],
+      "translation": "I want to add a visit to the capital to the trip."
+    },
+    "corpes:fuera:R": {
+      "sentence": "Es común estudiar fuera de casa.",
+      "target": "fuera",
+      "alternatives": [
+        "afuera"
+      ],
+      "translation": "It is common to study outside the home."
+    },
+    "corpes:común:A": {
+      "sentence": "Es común estudiar fuera de casa.",
+      "target": "común",
+      "alternatives": [
+        "normal",
+        "habitual",
+        "usual",
+        "frecuente"
+      ],
+      "translation": "It is common to study outside the home."
+    },
+    "corpes:período:N": {
+      "sentence": "El doctor responde una pregunta sobre el período de recuperación.",
+      "target": "período",
+      "alternatives": [
+        "periodo"
+      ],
+      "translation": "The doctor answers a question about the recovery period."
+    },
+    "corpes:doctor:N": {
+      "sentence": "El doctor responde una pregunta sobre el período de recuperación.",
+      "target": "doctor",
+      "alternatives": [
+        "médico"
+      ],
+      "translation": "The doctor answers a question about the recovery period."
+    },
+    "corpes:demostrar:V": {
+      "sentence": "Esta fuente demuestra que el agua es un elemento esencial.",
+      "target": "demuestra",
+      "alternatives": [
+        "muestra",
+        "prueba"
+      ],
+      "translation": "This source shows that water is an essential element."
+    },
+    "corpes:proponer:V": {
+      "sentence": "Propone una prueba con papel blanco.",
+      "target": "Propone",
+      "alternatives": [
+        "Sugiere"
+      ],
+      "translation": "She proposes a test with white paper."
+    },
+    "corpes:miembro:N": {
+      "sentence": "Cada miembro quiere aprender sobre aquella época.",
+      "target": "miembro",
+      "alternatives": [
+        "integrante"
+      ],
+      "translation": "Each member wants to learn about that era."
+    },
+    "corpes:época:N": {
+      "sentence": "Cada miembro quiere aprender sobre aquella época.",
+      "target": "época",
+      "alternatives": [
+        "era"
+      ],
+      "translation": "Each member wants to learn about that era."
+    },
+    "corpes:futuro:N": {
+      "sentence": "En el futuro queremos aumentar la longitud medio metro.",
+      "target": "futuro",
+      "alternatives": [
+        "porvenir"
+      ],
+      "translation": "In the future we want to increase the length by half a meter."
+    },
+    "corpes:aumentar:V": {
+      "sentence": "En el futuro queremos aumentar la longitud medio metro.",
+      "target": "aumentar",
+      "alternatives": [
+        "incrementar"
+      ],
+      "translation": "In the future we want to increase the length by half a meter."
+    },
+    "corpes:jefe:N": {
+      "sentence": "El jefe anuncia la llegada de un nuevo jugador.",
+      "target": "jefe",
+      "alternatives": [
+        "líder",
+        "dirigente"
+      ],
+      "translation": "The boss announces the arrival of a new player."
+    },
+    "corpes:apoyo:N": {
+      "sentence": "El cine necesita el apoyo de un técnico.",
+      "target": "apoyo",
+      "alternatives": [
+        "respaldo"
+      ],
+      "translation": "The cinema needs the support of a technician."
+    },
+    "corpes:mover:V": {
+      "sentence": "Necesito energía para preparar la sala y mover los muebles.",
+      "target": "mover",
+      "alternatives": [
+        "trasladar",
+        "desplazar"
+      ],
+      "translation": "I need energy to prepare the room and move the furniture."
+    },
+    "corpes:expresar:V": {
+      "sentence": "Las demás figuras expresan alegría.",
+      "target": "expresan",
+      "alternatives": [
+        "manifiestan",
+        "reflejan"
+      ],
+      "translation": "The other figures express happiness."
+    },
+    "corpes:propuesta:N": {
+      "sentence": "Pronto crece el apoyo a la propuesta.",
+      "target": "propuesta",
+      "alternatives": [
+        "proposición"
+      ],
+      "translation": "Support for the proposal soon grows."
+    },
+    "corpes:reducir:V": {
+      "sentence": "El artículo explica cómo reducir el ruido y disfrutar del silencio.",
+      "target": "reducir",
+      "alternatives": [
+        "disminuir"
+      ],
+      "translation": "The article explains how to reduce noise and enjoy silence."
+    },
+    "corpes:viejo:A": {
+      "sentence": "El viejo edificio alberga al ministerio desde hace una década.",
+      "target": "viejo",
+      "alternatives": [
+        "antiguo"
+      ],
+      "translation": "The old building has housed the ministry for a decade."
+    },
+    "corpes:detener:V": {
+      "sentence": "Queremos detener la expansión de la crisis en este sitio.",
+      "target": "detener",
+      "alternatives": [
+        "parar",
+        "frenar",
+        "contener"
+      ],
+      "translation": "We want to stop the crisis from spreading in this place."
+    },
+    "corpes:sitio:N": {
+      "sentence": "Queremos detener la expansión de la crisis en este sitio.",
+      "target": "sitio",
+      "alternatives": [
+        "lugar"
+      ],
+      "translation": "We want to stop the crisis from spreading in this place."
+    },
+    "corpes:elegir:V": {
+      "sentence": "Tener que elegir provoca un debate sobre la elección.",
+      "target": "elegir",
+      "alternatives": [
+        "escoger",
+        "seleccionar"
+      ],
+      "translation": "Having to choose provokes a debate about the election."
+    },
+    "corpes:provocar:V": {
+      "sentence": "Tener que elegir provoca un debate sobre la elección.",
+      "target": "provoca",
+      "alternatives": [
+        "causa",
+        "ocasiona",
+        "suscita"
+      ],
+      "translation": "Having to choose provokes a debate about the election."
+    },
+    "corpes:profesor:N": {
+      "sentence": "El profesor nos pide imaginar una dirección diferente.",
+      "target": "profesor",
+      "alternatives": [
+        "maestro",
+        "docente"
+      ],
+      "translation": "The teacher asks us to imagine a different direction."
+    },
+    "corpes:regresar:V": {
+      "sentence": "En mi sueño logro regresar mediante un paso secreto.",
+      "target": "regresar",
+      "alternatives": [
+        "volver",
+        "retornar"
+      ],
+      "translation": "In my dream I manage to return by means of a secret passage."
+    },
+    "corpes:miedo:N": {
+      "sentence": "Hasta mi hermano tiene miedo de ese encuentro.",
+      "target": "miedo",
+      "alternatives": [
+        "temor"
+      ],
+      "translation": "Even my brother is afraid of that meeting."
+    },
+    "corpes:hasta:R": {
+      "sentence": "Hasta mi hermano tiene miedo de ese encuentro.",
+      "target": "Hasta",
+      "alternatives": [
+        "Incluso",
+        "Aun"
+      ],
+      "translation": "Even my brother is afraid of that meeting."
+    },
+    "corpes:cargo:N": {
+      "sentence": "En la práctica, necesitamos definir las funciones del cargo.",
+      "target": "cargo",
+      "alternatives": [
+        "puesto"
+      ],
+      "translation": "In practice, we need to define the duties of the position."
+    },
+    "corpes:entregar:V": {
+      "sentence": "Durante el acto entrega un libro sobre la libertad.",
+      "target": "entrega",
+      "alternatives": [
+        "da"
+      ],
+      "translation": "During the ceremony she presents a book about freedom."
+    },
+    "corpes:término:N": {
+      "sentence": "A la vuelta, comenta el significado del término.",
+      "target": "término",
+      "alternatives": [
+        "vocablo"
+      ],
+      "translation": "On the way back, she comments on the meaning of the term."
+    },
+    "corpes:consejo:N": {
+      "sentence": "Mi consejo es apoyar al banco local.",
+      "target": "consejo",
+      "alternatives": [
+        "recomendación"
+      ],
+      "translation": "My advice is to support the local bank."
+    },
+    "corpes:apoyar:V": {
+      "sentence": "Mi consejo es apoyar al banco local.",
+      "target": "apoyar",
+      "alternatives": [
+        "respaldar"
+      ],
+      "translation": "My advice is to support the local bank."
+    },
+    "corpes:médico:N": {
+      "sentence": "El médico explica las consecuencias de caer al suelo.",
+      "target": "médico",
+      "alternatives": [
+        "doctor"
+      ],
+      "translation": "The doctor explains the consequences of falling onto the floor."
+    },
+    "corpes:suelo:N": {
+      "sentence": "El médico explica las consecuencias de caer al suelo.",
+      "target": "suelo",
+      "alternatives": [
+        "piso"
+      ],
+      "translation": "The doctor explains the consequences of falling onto the floor."
+    },
+    "corpes:éxito:N": {
+      "sentence": "El éxito del texto le da un premio a su autor.",
+      "target": "éxito",
+      "alternatives": [
+        "triunfo"
+      ],
+      "translation": "The success of the text earns its author a prize."
+    },
+    "corpes:asunto:N": {
+      "sentence": "El estudiante investiga un asunto antiguo.",
+      "target": "asunto",
+      "alternatives": [
+        "tema"
+      ],
+      "translation": "The student investigates an old matter."
+    },
+    "corpes:estudiante:N": {
+      "sentence": "El estudiante investiga un asunto antiguo.",
+      "target": "estudiante",
+      "alternatives": [
+        "alumno"
+      ],
+      "translation": "The student investigates an old matter."
+    },
+    "corpes:antiguo:A": {
+      "sentence": "El estudiante investiga un asunto antiguo.",
+      "target": "antiguo",
+      "alternatives": [
+        "viejo"
+      ],
+      "translation": "The student investigates an old matter."
+    },
+    "corpes:requerir:V": {
+      "sentence": "Cada unidad requiere un número para marcar su posición.",
+      "target": "requiere",
+      "alternatives": [
+        "necesita"
+      ],
+      "translation": "Each unit requires a number to mark its position."
+    },
+    "corpes:comprender:V": {
+      "sentence": "Uso mi teléfono para comprender la novela.",
+      "target": "comprender",
+      "alternatives": [
+        "entender"
+      ],
+      "translation": "I use my phone to understand the novel."
+    },
+    "corpes:alimento:N": {
+      "sentence": "Tenemos que aplicar la regla a diez tipos de alimento.",
+      "target": "alimento",
+      "alternatives": [
+        "comida"
+      ],
+      "translation": "We have to apply the rule to ten types of food."
+    },
+    "corpes:conjunto:N": {
+      "sentence": "El negocio vende un conjunto de plantas.",
+      "target": "conjunto",
+      "alternatives": [
+        "grupo"
+      ],
+      "translation": "The business sells a set of plants."
+    },
+    "corpes:sumar:V": {
+      "sentence": "La fuerza de cada brazo es un factor que debemos sumar.",
+      "target": "sumar",
+      "alternatives": [
+        "adicionar"
+      ],
+      "translation": "The strength of each arm is a factor that we must add."
+    },
+    "corpes:plantear:V": {
+      "sentence": "En la entrada, tengo que repetir la pregunta para plantear el problema.",
+      "target": "plantear",
+      "alternatives": [
+        "presentar"
+      ],
+      "translation": "At the entrance, I have to repeat the question to raise the problem."
+    },
+    "corpes:caminar:V": {
+      "sentence": "Llego tarde porque el dolor dificulta caminar.",
+      "target": "caminar",
+      "alternatives": [
+        "andar"
+      ],
+      "translation": "I arrive late because the pain makes walking difficult."
+    },
+    "corpes:colocar:V": {
+      "sentence": "Las personas presentes quieren colocar el insecto fuera sin matar al animal.",
+      "target": "colocar",
+      "alternatives": [
+        "poner",
+        "situar",
+        "ubicar"
+      ],
+      "translation": "The people present want to place the insect outside without killing the animal."
+    },
+    "corpes:contrario:A": {
+      "sentence": "El método contrario funciona sin violencia.",
+      "target": "contrario",
+      "alternatives": [
+        "opuesto"
+      ],
+      "translation": "The opposite method works without violence."
+    },
+    "corpes:informe:N": {
+      "sentence": "La carta contiene un informe sobre la materia.",
+      "target": "informe",
+      "alternatives": [
+        "reporte"
+      ],
+      "translation": "The letter contains a report on the subject."
+    },
+    "corpes:cubrir:V": {
+      "sentence": "Es fácil cubrir la mesa antes de celebrar el cumpleaños.",
+      "target": "cubrir",
+      "alternatives": [
+        "tapar"
+      ],
+      "translation": "It is easy to cover the table before celebrating the birthday."
+    },
+    "corpes:fácil:A": {
+      "sentence": "Es fácil cubrir la mesa antes de celebrar el cumpleaños.",
+      "target": "fácil",
+      "alternatives": [
+        "sencillo"
+      ],
+      "translation": "It is easy to cover the table before celebrating the birthday."
+    },
+    "corpes:escritor:N": {
+      "sentence": "El escritor espera en la sala para su ingreso en el hospital.",
+      "target": "escritor",
+      "alternatives": [
+        "autor"
+      ],
+      "translation": "The writer waits in the room for his admission to the hospital."
+    },
+    "corpes:especialmente:R": {
+      "sentence": "Esta campaña es especialmente importante para ti.",
+      "target": "especialmente",
+      "alternatives": [
+        "particularmente"
+      ],
+      "translation": "This campaign is especially important for you."
+    },
+    "corpes:líder:N": {
+      "sentence": "En el escenario, el líder habla desde el corazón.",
+      "target": "líder",
+      "alternatives": [
+        "dirigente",
+        "jefe"
+      ],
+      "translation": "On stage, the leader speaks from the heart."
+    },
+    "corpes:analizar:V": {
+      "sentence": "Analiza la página que explica la defensa de la ciudad.",
+      "target": "Analiza",
+      "alternatives": [
+        "Examina",
+        "Estudia"
+      ],
+      "translation": "She analyzes the page that explains the defense of the city."
+    },
+    "corpes:cierto:A": {
+      "sentence": "Es cierto que tenemos que enviar siete cartas.",
+      "target": "cierto",
+      "alternatives": [
+        "verdadero",
+        "verdad"
+      ],
+      "translation": "It is true that we have to send seven letters."
+    },
+    "corpes:enviar:V": {
+      "sentence": "Es cierto que tenemos que enviar siete cartas.",
+      "target": "enviar",
+      "alternatives": [
+        "mandar"
+      ],
+      "translation": "It is true that we have to send seven letters."
+    },
+    "corpes:quizá:R": {
+      "sentence": "Quizá finalmente podamos comprender el contenido.",
+      "target": "Quizá",
+      "alternatives": [
+        "Quizás",
+        "Acaso"
+      ],
+      "translation": "Perhaps we will finally understand the content."
+    },
+    "corpes:actuar:V": {
+      "sentence": "La administración tarda demasiado en actuar.",
+      "target": "actuar",
+      "alternatives": [
+        "obrar"
+      ],
+      "translation": "The administration takes too long to act."
+    },
+    "corpes:desear:V": {
+      "sentence": "Desea abandonar el instituto.",
+      "target": "Desea",
+      "alternatives": [
+        "Quiere"
+      ],
+      "translation": "She wishes to leave the institute."
+    },
+    "corpes:abandonar:V": {
+      "sentence": "Desea abandonar el instituto.",
+      "target": "abandonar",
+      "alternatives": [
+        "dejar"
+      ],
+      "translation": "She wishes to leave the institute."
+    },
+    "corpes:fundamental:A": {
+      "sentence": "La televisión muestra un detalle fundamental del interior.",
+      "target": "fundamental",
+      "alternatives": [
+        "básico",
+        "esencial"
+      ],
+      "translation": "The television shows a fundamental detail of the interior."
+    },
+    "corpes:fútbol:N": {
+      "sentence": "La nación tiene un estadio lleno de aficionados al fútbol.",
+      "target": "fútbol",
+      "alternatives": [
+        "balompié",
+        "futbol"
+      ],
+      "translation": "The nation has a stadium full of football fans."
+    },
+    "corpes:proteger:V": {
+      "sentence": "La gestión del club busca proteger a sus miembros.",
+      "target": "proteger",
+      "alternatives": [
+        "defender"
+      ],
+      "translation": "The management of the club aims to protect its members."
+    },
+    "corpes:foto:N": {
+      "sentence": "El departamento muestra una foto de la naturaleza.",
+      "target": "foto",
+      "alternatives": [
+        "fotografía"
+      ],
+      "translation": "The department displays a photo of nature."
+    },
+    "corpes:andar:V": {
+      "sentence": "Menciona que andar es un ejercicio completo.",
+      "target": "andar",
+      "alternatives": [
+        "caminar"
+      ],
+      "translation": "She mentions that walking is a complete exercise."
+    },
+    "corpes:suficiente:A": {
+      "sentence": "El mensaje contiene información suficiente para ayudar a la víctima.",
+      "target": "suficiente",
+      "alternatives": [
+        "bastante"
+      ],
+      "translation": "The message contains enough information to help the victim."
+    },
+    "corpes:romper:V": {
+      "sentence": "Don Luis prefiere el contacto directo sin romper el acuerdo.",
+      "target": "romper",
+      "alternatives": [
+        "quebrar"
+      ],
+      "translation": "Don Luis prefers direct contact without breaking the agreement."
+    },
+    "corpes:opción:N": {
+      "sentence": "El actor declara que cambiar la escena es una opción.",
+      "target": "opción",
+      "alternatives": [
+        "alternativa",
+        "posibilidad"
+      ],
+      "translation": "The actor declares that changing the scene is an option."
+    },
+    "corpes:declarar:V": {
+      "sentence": "El actor declara que cambiar la escena es una opción.",
+      "target": "declara",
+      "alternatives": [
+        "afirma"
+      ],
+      "translation": "The actor declares that changing the scene is an option."
+    },
+    "corpes:técnico:A": {
+      "sentence": "El equipo técnico quiere reunir ayuda.",
+      "target": "técnico",
+      "alternatives": [
+        "recabar"
+      ],
+      "translation": "The technical team wants to gather help."
+    },
+    "corpes:reunir:V": {
+      "sentence": "El equipo técnico quiere reunir ayuda.",
+      "target": "reunir",
+      "alternatives": [
+        "juntar"
+      ],
+      "translation": "The technical team wants to gather help."
+    },
+    "corpes:tarea:N": {
+      "sentence": "La asociación tiene una tarea oficial.",
+      "target": "tarea",
+      "alternatives": [
+        "labor"
+      ],
+      "translation": "The association has an official task."
+    },
+    "corpes:unir:V": {
+      "sentence": "Prefiero viajar para unir los dos equipos.",
+      "target": "unir",
+      "alternatives": [
+        "juntar"
+      ],
+      "translation": "I prefer to travel to unite the two teams."
+    },
+    "corpes:obligar:V": {
+      "sentence": "El organismo nos obliga a buscar una solución.",
+      "target": "obliga",
+      "alternatives": [
+        "fuerza"
+      ],
+      "translation": "The agency forces us to look for a solution."
+    },
+    "corpes:verdadero:A": {
+      "sentence": "Mamá pretende contar la historia verdadera.",
+      "target": "verdadera",
+      "alternatives": [
+        "cierta"
+      ],
+      "translation": "Mom intends to tell the true story."
+    },
+    "corpes:mamá:N": {
+      "sentence": "Mamá pretende contar la historia verdadera.",
+      "target": "Mamá",
+      "alternatives": [
+        "Mami"
+      ],
+      "translation": "Mom intends to tell the true story."
+    },
+    "corpes:advertir:V": {
+      "sentence": "Nos advierte sobre expresar nuestra opinión en internet.",
+      "target": "advierte",
+      "alternatives": [
+        "avisa",
+        "alerta"
+      ],
+      "translation": "She warns us about expressing our opinion on the internet."
+    },
+    "corpes:disfrutar:V": {
+      "sentence": "El domingo queremos disfrutar del amplio jardín.",
+      "target": "disfrutar",
+      "alternatives": [
+        "gozar"
+      ],
+      "translation": "On Sunday we want to enjoy the spacious garden."
+    },
+    "corpes:amplio:A": {
+      "sentence": "El domingo queremos disfrutar del amplio jardín.",
+      "target": "amplio",
+      "alternatives": [
+        "espacioso"
+      ],
+      "translation": "On Sunday we want to enjoy the spacious garden."
+    },
+    "corpes:etapa:N": {
+      "sentence": "En esta etapa vamos a visitar un hospital militar.",
+      "target": "etapa",
+      "alternatives": [
+        "fase"
+      ],
+      "translation": "At this stage we are going to visit a military hospital."
+    },
+    "corpes:similar:A": {
+      "sentence": "La prueba confirma que comparten una característica similar.",
+      "target": "similar",
+      "alternatives": [
+        "semejante",
+        "parecida"
+      ],
+      "translation": "The test confirms that they share a similar characteristic."
+    },
+    "corpes:surgir:V": {
+      "sentence": "Surge cierto grado de preocupación por el edificio.",
+      "target": "Surge",
+      "alternatives": [
+        "Aparece"
+      ],
+      "translation": "A certain degree of concern arises about the building."
+    },
+    "corpes:detalle:N": {
+      "sentence": "La venta depende de cada detalle del estilo de diseño.",
+      "target": "detalle",
+      "alternatives": [
+        "pormenor"
+      ],
+      "translation": "The sale depends on every detail of the design style."
+    },
+    "corpes:manifestar:V": {
+      "sentence": "El candidato parece bastante dispuesto a manifestar su opinión.",
+      "target": "manifestar",
+      "alternatives": [
+        "expresar"
+      ],
+      "translation": "The candidate seems quite ready to express his opinion."
+    },
+    "corpes:comida:N": {
+      "sentence": "Tenemos una suerte enorme de tener comida.",
+      "target": "comida",
+      "alternatives": [
+        "alimento"
+      ],
+      "translation": "We are extremely lucky to have food."
+    },
+    "corpes:enorme:A": {
+      "sentence": "Tenemos una suerte enorme de tener comida.",
+      "target": "enorme",
+      "alternatives": [
+        "inmensa",
+        "gigantesca"
+      ],
+      "translation": "We are extremely lucky to have food."
+    },
+    "corpes:recoger:V": {
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "recoger",
+      "alternatives": [
+        "recolectar",
+        "reunir",
+        "recopilar",
+        "recabar"
+      ],
+      "translation": "We need to collect data to resolve the problem and measure its impact."
+    },
+    "corpes:impacto:N": {
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "impacto",
+      "alternatives": [
+        "efecto"
+      ],
+      "translation": "We need to collect data to resolve the problem and measure its impact."
+    },
+    "corpes:resolver:V": {
+      "sentence": "Necesitamos recoger datos para resolver el problema y medir su impacto.",
+      "target": "resolver",
+      "alternatives": [
+        "solucionar"
+      ],
+      "translation": "We need to collect data to resolve the problem and measure its impact."
+    },
+    "corpes:aumento:N": {
+      "sentence": "El documento anuncia un aumento del precio del hotel.",
+      "target": "aumento",
+      "alternatives": [
+        "incremento",
+        "alza"
+      ],
+      "translation": "The document announces an increase in the price of the hotel."
+    },
+    "corpes:evento:N": {
+      "sentence": "El maestro asiste a un evento comercial.",
+      "target": "evento",
+      "alternatives": [
+        "acontecimiento",
+        "suceso"
+      ],
+      "translation": "The teacher attends a commercial event."
+    },
+    "corpes:maestro:N": {
+      "sentence": "El maestro asiste a un evento comercial.",
+      "target": "maestro",
+      "alternatives": [
+        "profesor",
+        "docente"
+      ],
+      "translation": "The teacher attends a commercial event."
+    },
+    "corpes:español:N": {
+      "sentence": "Tenemos un plazo para registrar la información en español.",
+      "target": "español",
+      "alternatives": [
+        "castellano"
+      ],
+      "translation": "We have a deadline to register the information in Spanish."
+    },
+    "corpes:invitar:V": {
+      "sentence": "Esta expresión sirve para invitar al público a escuchar una pieza musical.",
+      "target": "invitar",
+      "alternatives": [
+        "convidar"
+      ],
+      "translation": "This expression serves to invite the audience to listen to a piece of music."
+    },
+    "corpes:concluir:V": {
+      "sentence": "Vale la pena esperar hasta concluir la competencia.",
+      "target": "concluir",
+      "alternatives": [
+        "terminar",
+        "acabar",
+        "finalizar"
+      ],
+      "translation": "It is worth waiting until the competition ends."
+    },
+    "corpes:esposo:N": {
+      "sentence": "Mi esposo quiere determinar la calidad del café.",
+      "target": "esposo",
+      "alternatives": [
+        "marido"
+      ],
+      "translation": "My husband wants to determine the quality of the coffee."
+    },
+    "corpes:permanecer:V": {
+      "sentence": "Prefiero permanecer en esta vía hasta llegar a mi destino.",
+      "target": "permanecer",
+      "alternatives": [
+        "quedarme"
+      ],
+      "translation": "I prefer to stay on this route until I reach my destination."
+    },
+    "corpes:vía:N": {
+      "sentence": "Prefiero permanecer en esta vía hasta llegar a mi destino.",
+      "target": "vía",
+      "alternatives": [
+        "ruta"
+      ],
+      "translation": "I prefer to stay on this route until I reach my destination."
+    },
+    "corpes:grave:A": {
+      "sentence": "Surge un conflicto grave en la habitación.",
+      "target": "grave",
+      "alternatives": [
+        "serio"
+      ],
+      "translation": "A serious conflict breaks out in the room."
+    },
+    "corpes:habitación:N": {
+      "sentence": "Surge un conflicto grave en la habitación.",
+      "target": "habitación",
+      "alternatives": [
+        "pieza"
+      ],
+      "translation": "A serious conflict breaks out in the room."
+    },
+    "corpes:barrio:N": {
+      "sentence": "El barrio del norte dispone de un hospital.",
+      "target": "barrio",
+      "alternatives": [
+        "vecindario"
+      ],
+      "translation": "The neighborhood in the north has a hospital."
+    },
+    "corpes:profundo:A": {
+      "sentence": "El diario quiere integrar un análisis profundo en su informe.",
+      "target": "profundo",
+      "alternatives": [
+        "hondo"
+      ],
+      "translation": "The newspaper wants to integrate a thorough analysis into its report."
+    },
+    "corpes:diario:N": {
+      "sentence": "El diario quiere integrar un análisis profundo en su informe.",
+      "target": "diario",
+      "alternatives": [
+        "periódico"
+      ],
+      "translation": "The newspaper wants to integrate a thorough analysis into its report."
+    },
+    "corpes:reír:V": {
+      "sentence": "El cliente empieza a reír en la tienda del museo.",
+      "target": "reír",
+      "alternatives": [
+        "reírse"
+      ],
+      "translation": "The customer begins to laugh in the museum shop."
+    },
+    "corpes:ubicar:V": {
+      "sentence": "El juez quiere ubicar la casa en el sur del país.",
+      "target": "ubicar",
+      "alternatives": [
+        "situar",
+        "localizar"
+      ],
+      "translation": "The judge wants to locate the house in the south of the country."
+    },
+    "corpes:piso:N": {
+      "sentence": "El contacto con el piso mojado puede causar un accidente.",
+      "target": "piso",
+      "alternatives": [
+        "suelo"
+      ],
+      "translation": "Contact with the wet floor can cause an accident."
+    },
+    "corpes:causar:V": {
+      "sentence": "El contacto con el piso mojado puede causar un accidente.",
+      "target": "causar",
+      "alternatives": [
+        "provocar",
+        "ocasionar"
+      ],
+      "translation": "Contact with the wet floor can cause an accident."
+    },
+    "corpes:adecuado:A": {
+      "sentence": "Con menos cortes, la tela es adecuada para este uso.",
+      "target": "adecuada",
+      "alternatives": [
+        "apropiada",
+        "idónea"
+      ],
+      "translation": "With fewer cuts, the fabric is suitable for this use."
+    },
+    "corpes:contestar:V": {
+      "sentence": "Insiste en contestar en su propia lengua.",
+      "target": "contestar",
+      "alternatives": [
+        "responder"
+      ],
+      "translation": "She insists on answering in her own language."
+    },
+    "corpes:empleo:N": {
+      "sentence": "Me interesa el empleo y el derecho laboral.",
+      "target": "empleo",
+      "alternatives": [
+        "trabajo"
+      ],
+      "translation": "I am interested in employment and labor law."
+    },
+    "corpes:básico:A": {
+      "sentence": "La cocina tiene una pared roja y un equipo básico.",
+      "target": "básico",
+      "alternatives": [
+        "simple",
+        "sencillo"
+      ],
+      "translation": "The kitchen has a red wall and basic equipment."
+    },
+    "corpes:cuarto:N": {
+      "sentence": "Puedo controlar la luz de mi cuarto a distancia.",
+      "target": "cuarto",
+      "alternatives": [
+        "habitación",
+        "pieza"
+      ],
+      "translation": "I can control the light in my room from a distance."
+    },
+    "corpes:inicio:N": {
+      "sentence": "Al inicio, el vecino intenta relacionar los dos hechos.",
+      "target": "inicio",
+      "alternatives": [
+        "comienzo",
+        "principio"
+      ],
+      "translation": "At the beginning, the neighbor tries to relate the two events."
+    },
+    "corpes:incorporar:V": {
+      "sentence": "El equipo de protección civil quiere incorporar un perro.",
+      "target": "incorporar",
+      "alternatives": [
+        "integrar",
+        "incluir"
+      ],
+      "translation": "The civil protection team wants to incorporate a dog."
+    },
+    "corpes:acordar:V": {
+      "sentence": "El experto quiere acordar una respuesta positiva.",
+      "target": "acordar",
+      "alternatives": [
+        "convenir"
+      ],
+      "translation": "The expert wants to agree on a positive response."
+    },
+    "corpes:experto:N": {
+      "sentence": "El experto quiere acordar una respuesta positiva.",
+      "target": "experto",
+      "alternatives": [
+        "perito",
+        "especialista"
+      ],
+      "translation": "The expert wants to agree on a positive response."
+    },
+    "corpes:cruzar:V": {
+      "sentence": "La conversación continúa al cruzar la isla.",
+      "target": "cruzar",
+      "alternatives": [
+        "atravesar"
+      ],
+      "translation": "The conversation continues as we cross the island."
+    },
+    "corpes:error:N": {
+      "sentence": "En este contexto, cometer un error nos ayuda a adquirir conocimiento.",
+      "target": "error",
+      "alternatives": [
+        "desacierto"
+      ],
+      "translation": "In this context, making a mistake helps us acquire knowledge."
+    },
+    "corpes:garantizar:V": {
+      "sentence": "Vale la pena garantizar el bien común.",
+      "target": "garantizar",
+      "alternatives": [
+        "asegurar"
+      ],
+      "translation": "It is worth guaranteeing the common good."
+    },
+    "corpes:final:A": {
+      "sentence": "El alumno participa en la marcha final.",
+      "target": "final",
+      "alternatives": [
+        "última"
+      ],
+      "translation": "The student joins the final march."
+    },
+    "corpes:alumno:N": {
+      "sentence": "El alumno participa en la marcha final.",
+      "target": "alumno",
+      "alternatives": [
+        "estudiante"
+      ],
+      "translation": "The student joins the final march."
+    },
+    "corpes:cercano:A": {
+      "sentence": "El muchacho pasa la jornada en un campo cercano.",
+      "target": "cercano",
+      "alternatives": [
+        "próximo"
+      ],
+      "translation": "The boy spends the working day in a nearby field."
+    },
+    "corpes:muchacho:N": {
+      "sentence": "El muchacho pasa la jornada en un campo cercano.",
+      "target": "muchacho",
+      "alternatives": [
+        "chico",
+        "niño"
+      ],
+      "translation": "The boy spends the working day in a nearby field."
+    },
+    "corpes:gasto:N": {
+      "sentence": "Puede sonar extraño, pero reducir el gasto puede costar dinero.",
+      "target": "gasto",
+      "alternatives": [
+        "desembolso"
+      ],
+      "translation": "It may sound strange, but reducing spending can cost money."
+    },
+    "corpes:ambiente:N": {
+      "sentence": "El corto filme nos sorprende con su ambiente tranquilo.",
+      "target": "ambiente",
+      "alternatives": [
+        "entorno",
+        "clima"
+      ],
+      "translation": "The short film surprises us with its calm atmosphere."
+    },
+    "corpes:corto:A": {
+      "sentence": "El corto filme nos sorprende con su ambiente tranquilo.",
+      "target": "corto",
+      "alternatives": [
+        "breve"
+      ],
+      "translation": "The short film surprises us with its calm atmosphere."
+    },
+    "corpes:realmente:R": {
+      "sentence": "En octubre, realmente tengo ganas de llorar.",
+      "target": "realmente",
+      "alternatives": [
+        "verdaderamente"
+      ],
+      "translation": "In October, I really feel like crying."
+    },
+    "corpes:conducir:V": {
+      "sentence": "Aprender a conducir en su propiedad le hace sonreír.",
+      "target": "conducir",
+      "alternatives": [
+        "manejar"
+      ],
+      "translation": "Learning to drive on his property makes him smile."
+    },
+    "corpes:costo:N": {
+      "sentence": "Tengo la sensación de que el costo del coche es demasiado alto.",
+      "target": "costo",
+      "alternatives": [
+        "coste",
+        "precio"
+      ],
+      "translation": "I have the feeling that the cost of the car is too high."
+    },
+    "corpes:coche:N": {
+      "sentence": "Tengo la sensación de que el costo del coche es demasiado alto.",
+      "target": "coche",
+      "alternatives": [
+        "automóvil",
+        "carro",
+        "auto"
+      ],
+      "translation": "I have the feeling that the cost of the car is too high."
+    },
+    "corpes:exposición:N": {
+      "sentence": "El arquitecto argentino prepara una exposición sobre la vivienda.",
+      "target": "exposición",
+      "alternatives": [
+        "muestra"
+      ],
+      "translation": "The Argentine architect prepares an exhibition about housing."
+    },
+    "corpes:septiembre:N": {
+      "sentence": "En septiembre, las familias de clase media quieren contribuir.",
+      "target": "septiembre",
+      "alternatives": [
+        "setiembre"
+      ],
+      "translation": "In September, middle-class families want to contribute."
+    },
+    "corpes:papá:N": {
+      "sentence": "Papá habla con el agente sobre un hecho reciente.",
+      "target": "Papá",
+      "alternatives": [
+        "Papi"
+      ],
+      "translation": "Dad talks to the agent about a recent event."
+    },
+    "corpes:ropa:N": {
+      "sentence": "El catálogo digital tiene una categoría para ropa.",
+      "target": "ropa",
+      "alternatives": [
+        "indumentaria",
+        "vestimenta"
+      ],
+      "translation": "The digital catalog has a category for clothes."
+    },
+    "corpes:feliz:A": {
+      "sentence": "El diputado está feliz de plantar un árbol.",
+      "target": "feliz",
+      "alternatives": [
+        "contento",
+        "encantado"
+      ],
+      "translation": "The deputy is happy to plant a tree."
+    },
+    "corpes:mandar:V": {
+      "sentence": "Con un gesto, indica el número máximo de cartas que podemos mandar.",
+      "target": "mandar",
+      "alternatives": [
+        "enviar"
+      ],
+      "translation": "With a gesture, she indicates the maximum number of letters we can send."
+    },
+    "corpes:método:N": {
+      "sentence": "Este método no puede impedir notar la diferencia.",
+      "target": "método",
+      "alternatives": [
+        "procedimiento"
+      ],
+      "translation": "This method cannot prevent us from noticing the difference."
+    },
+    "corpes:impedir:V": {
+      "sentence": "Este método no puede impedir notar la diferencia.",
+      "target": "impedir",
+      "alternatives": [
+        "evitar"
+      ],
+      "translation": "This method cannot prevent us from noticing the difference."
+    },
+    "corpes:notar:V": {
+      "sentence": "Este método no puede impedir notar la diferencia.",
+      "target": "notar",
+      "alternatives": [
+        "advertir",
+        "percibir"
+      ],
+      "translation": "This method cannot prevent us from noticing the difference."
+    },
+    "corpes:actualmente:R": {
+      "sentence": "Actualmente queremos promover la paz tras el ataque.",
+      "target": "Actualmente",
+      "alternatives": [
+        "Ahora"
+      ],
+      "translation": "Currently we want to promote peace after the attack."
+    },
+    "corpes:promover:V": {
+      "sentence": "Actualmente queremos promover la paz tras el ataque.",
+      "target": "promover",
+      "alternatives": [
+        "fomentar",
+        "impulsar"
+      ],
+      "translation": "Currently we want to promote peace after the attack."
+    },
+    "corpes:norma:N": {
+      "sentence": "La norma busca evitar la pérdida de herramientas.",
+      "target": "norma",
+      "alternatives": [
+        "regla"
+      ],
+      "translation": "The rule aims to prevent the loss of tools."
+    },
+    "corpes:herramienta:N": {
+      "sentence": "La norma busca evitar la pérdida de herramientas.",
+      "target": "herramientas",
+      "alternatives": [
+        "instrumentos"
+      ],
+      "translation": "The rule aims to prevent the loss of tools."
+    },
+    "corpes:serio:A": {
+      "sentence": "Un viernes de julio hablamos de un problema serio.",
+      "target": "serio",
+      "alternatives": [
+        "grave"
+      ],
+      "translation": "On a Friday in July we discuss a serious problem."
+    },
+    "corpes:normal:A": {
+      "sentence": "Es normal tener dificultad para revelar un secreto.",
+      "target": "normal",
+      "alternatives": [
+        "habitual",
+        "común",
+        "usual",
+        "frecuente"
+      ],
+      "translation": "It is normal to have difficulty revealing a secret."
+    },
+    "corpes:pelo:N": {
+      "sentence": "Se coloca una banda en el pelo con un dedo.",
+      "target": "pelo",
+      "alternatives": [
+        "cabello"
+      ],
+      "translation": "She puts a band in her hair with one finger."
+    },
+    "corpes:específico:A": {
+      "sentence": "La intervención de junio tiene un objetivo específico.",
+      "target": "específico",
+      "alternatives": [
+        "concreto",
+        "particular",
+        "determinado"
+      ],
+      "translation": "The June intervention has a specific goal."
+    },
+    "corpes:extender:V": {
+      "sentence": "Estudiamos la tasa a la que el fuego se puede extender.",
+      "target": "extender",
+      "alternatives": [
+        "expandir",
+        "propagar"
+      ],
+      "translation": "We study the rate at which fire can spread."
+    },
+    "corpes:simple:A": {
+      "sentence": "El equipo simple para hacer deporte está arriba.",
+      "target": "simple",
+      "alternatives": [
+        "sencillo",
+        "básico"
+      ],
+      "translation": "The simple sports equipment is upstairs."
+    },
+    "corpes:precisamente:R": {
+      "sentence": "Quizás sea precisamente el pan francés lo que me gusta.",
+      "target": "precisamente",
+      "alternatives": [
+        "exactamente",
+        "justamente"
+      ],
+      "translation": "Perhaps it is precisely the French bread that I like."
+    },
+    "corpes:quizás:R": {
+      "sentence": "Quizás sea precisamente el pan francés lo que me gusta.",
+      "target": "Quizás",
+      "alternatives": [
+        "Quizá",
+        "Acaso"
+      ],
+      "translation": "Perhaps it is precisely the French bread that I like."
+    },
+    "corpes:extraño:A": {
+      "sentence": "Mañana vamos a examinar la piedra extraña.",
+      "target": "extraña",
+      "alternatives": [
+        "rara"
+      ],
+      "translation": "Tomorrow we will examine the strange stone."
+    },
+    "corpes:poseer:V": {
+      "sentence": "El contrato le permite poseer una casa llena de gracia.",
+      "target": "poseer",
+      "alternatives": [
+        "tener"
+      ],
+      "translation": "The contract allows her to own a house full of charm."
+    },
+    "corpes:exponer:V": {
+      "sentence": "Tengo confianza en tu capacidad para exponer ideas sobre el planeta.",
+      "target": "exponer",
+      "alternatives": [
+        "presentar"
+      ],
+      "translation": "I have confidence in your ability to present ideas about the planet."
+    },
+    "corpes:entorno:N": {
+      "sentence": "A pesar de su pierna herida, va a dar su voto a la protección del entorno.",
+      "target": "entorno",
+      "alternatives": [
+        "ambiente"
+      ],
+      "translation": "Despite his injured leg, he goes to vote for the protection of the environment."
+    },
+    "corpes:partir:V": {
+      "sentence": "Quiero partir el pan en dos partes.",
+      "target": "partir",
+      "alternatives": [
+        "dividir",
+        "cortar"
+      ],
+      "translation": "I want to divide the bread into two parts."
+    },
+    "corpes:actitud:N": {
+      "sentence": "Su actitud cambia cuando lee la nota antes de cortar el papel.",
+      "target": "actitud",
+      "alternatives": [
+        "postura"
+      ],
+      "translation": "Her attitude changes when she reads the note before cutting the paper."
+    },
+    "corpes:coger:V": {
+      "sentence": "En España, recomienda coger el tren que pertenece a esta empresa.",
+      "target": "coger",
+      "alternatives": [
+        "tomar"
+      ],
+      "translation": "In Spain, she recommends taking the train that belongs to this company."
+    },
+    "corpes:recomendar:V": {
+      "sentence": "En España, recomienda coger el tren que pertenece a esta empresa.",
+      "target": "recomienda",
+      "alternatives": [
+        "aconseja"
+      ],
+      "translation": "In Spain, she recommends taking the train that belongs to this company."
+    },
+    "corpes:video:N": {
+      "sentence": "El video muestra cómo fijar una estantería para transformar la habitación.",
+      "target": "video",
+      "alternatives": [
+        "vídeo"
+      ],
+      "translation": "The video shows how to fix a shelf to transform the room."
+    },
+    "corpes:separar:V": {
+      "sentence": "El productor quiere separar los materiales con un esfuerzo mínimo.",
+      "target": "separar",
+      "alternatives": [
+        "apartar"
+      ],
+      "translation": "The producer wants to separate the materials with minimal effort."
+    },
+    "corpes:jamás:R": {
+      "sentence": "Jamás olvido la hoja de papel que leí en el juicio.",
+      "target": "Jamás",
+      "alternatives": [
+        "Nunca"
+      ],
+      "translation": "I never forget the sheet of paper that I read at the trial."
+    },
+    "corpes:asimismo:R": {
+      "sentence": "Asimismo, me gusta el gusto del pan recién hecho.",
+      "target": "Asimismo",
+      "alternatives": [
+        "Además"
+      ],
+      "translation": "Likewise, I like the taste of freshly made bread."
+    },
+    "corpes:global:A": {
+      "sentence": "El artículo interesante analiza el impacto global de la victoria.",
+      "target": "global",
+      "alternatives": [
+        "mundial"
+      ],
+      "translation": "The interesting article analyzes the global impact of the victory."
+    },
+    "corpes:fotografía:N": {
+      "sentence": "Miles de personas estudian una fotografía para comprobar la teoría.",
+      "target": "fotografía",
+      "alternatives": [
+        "foto"
+      ],
+      "translation": "Thousands of people study a photograph to test the theory."
+    },
+    "corpes:asistir:V": {
+      "sentence": "Quiero asistir a una conferencia sobre el sonido de la revolución.",
+      "target": "asistir",
+      "alternatives": [
+        "acudir"
+      ],
+      "translation": "I want to attend a lecture on the sound of the revolution."
+    },
+    "corpes:determinado:A": {
+      "sentence": "La pantalla muestra un período determinado del régimen.",
+      "target": "determinado",
+      "alternatives": [
+        "específico",
+        "concreto",
+        "particular"
+      ],
+      "translation": "The screen shows a specific period of the regime."
+    },
+    "corpes:terreno:N": {
+      "sentence": "En verano medimos el tamaño del terreno.",
+      "target": "terreno",
+      "alternatives": [
+        "lote"
+      ],
+      "translation": "In summer we measure the size of the plot of land."
+    },
+    "corpes:solicitar:V": {
+      "sentence": "Cada individuo puede solicitar ayuda a la agencia.",
+      "target": "solicitar",
+      "alternatives": [
+        "pedir"
+      ],
+      "translation": "Each individual can request help from the agency."
+    },
+    "corpes:previo:A": {
+      "sentence": "Necesitamos interpretar el informe previo para impulsar el proyecto.",
+      "target": "previo",
+      "alternatives": [
+        "anterior"
+      ],
+      "translation": "We need to interpret the previous report to drive the project forward."
+    },
+    "corpes:retirar:V": {
+      "sentence": "Su comportamiento nos obliga a retirar nuestro apoyo a su labor.",
+      "target": "retirar",
+      "alternatives": [
+        "quitar"
+      ],
+      "translation": "His behavior forces us to withdraw our support for his work."
+    },
+    "corpes:fase:N": {
+      "sentence": "El proyecto ambiental entra en una nueva fase en agosto.",
+      "target": "fase",
+      "alternatives": [
+        "etapa"
+      ],
+      "translation": "The environmental project enters a new phase in August."
+    },
+    "corpes:legal:A": {
+      "sentence": "La decisión judicial confirma que el evento musical es legal.",
+      "target": "legal",
+      "alternatives": [
+        "lícito"
+      ],
+      "translation": "The judicial decision confirms that the musical event is legal."
+    },
+    "corpes:complejo:A": {
+      "sentence": "¡Qué bien funciona este mecanismo complejo! Parece perfecto.",
+      "target": "complejo",
+      "alternatives": [
+        "complicado"
+      ],
+      "translation": "How well this complex mechanism works; it seems perfect."
+    },
+    "corpes:delito:N": {
+      "sentence": "El informe describe un avance en la prevención del delito en la comunidad latina.",
+      "target": "delito",
+      "alternatives": [
+        "crimen"
+      ],
+      "translation": "The report describes progress in preventing crime in the Latino community."
+    },
+    "corpes:avance:N": {
+      "sentence": "El informe describe un avance en la prevención del delito en la comunidad latina.",
+      "target": "avance",
+      "alternatives": [
+        "progreso",
+        "adelanto"
+      ],
+      "translation": "The report describes progress in preventing crime in the Latino community."
+    },
+    "corpes:instante:N": {
+      "sentence": "En el instante del pago, tomo conciencia del costo.",
+      "target": "instante",
+      "alternatives": [
+        "momento"
+      ],
+      "translation": "At the moment of payment, I become aware of the cost."
+    },
+    "corpes:conciencia:N": {
+      "sentence": "En el instante del pago, tomo conciencia del costo.",
+      "target": "conciencia",
+      "alternatives": [
+        "consciencia"
+      ],
+      "translation": "At the moment of payment, I become aware of the cost."
+    },
+    "corpes:cuidar:V": {
+      "sentence": "El abogado quiere cuidar a su hija durante el festival.",
+      "target": "cuidar",
+      "alternatives": [
+        "atender"
+      ],
+      "translation": "The lawyer wants to take care of his daughter during the festival."
+    },
+    "corpes:aun:R": {
+      "sentence": "Aun sin dinero, mi marido tiene esperanza.",
+      "target": "Aun",
+      "alternatives": [
+        "Incluso",
+        "Hasta"
+      ],
+      "translation": "Even without money, my husband has hope."
+    },
+    "corpes:marido:N": {
+      "sentence": "Aun sin dinero, mi marido tiene esperanza.",
+      "target": "marido",
+      "alternatives": [
+        "esposo"
+      ],
+      "translation": "Even without money, my husband has hope."
+    },
+    "corpes:peligro:N": {
+      "sentence": "El registro de todos los peligros cabe en esta página.",
+      "target": "peligros",
+      "alternatives": [
+        "riesgos"
+      ],
+      "translation": "The record of all the dangers fits on this page."
+    },
+    "corpes:situar:V": {
+      "sentence": "Tengo ganas de situar la actuación al final del programa.",
+      "target": "situar",
+      "alternatives": [
+        "colocar",
+        "poner",
+        "ubicar"
+      ],
+      "translation": "I feel like placing the performance at the end of the program."
+    },
+    "corpes:propósito:N": {
+      "sentence": "El propósito de la misión es establecer un criterio común.",
+      "target": "propósito",
+      "alternatives": [
+        "objetivo",
+        "fin",
+        "objeto"
+      ],
+      "translation": "The purpose of the mission is to establish a common criterion."
+    },
+    "corpes:famoso:A": {
+      "sentence": "El poeta famoso se sienta a mi izquierda.",
+      "target": "famoso",
+      "alternatives": [
+        "célebre"
+      ],
+      "translation": "The famous poet sits to my left."
+    },
+    "corpes:contra:N": {
+      "sentence": "Hablamos de los contras de llenar la caja de oro.",
+      "target": "contras",
+      "alternatives": [
+        "inconvenientes"
+      ],
+      "translation": "We discuss the disadvantages of filling the box with gold."
+    },
+    "corpes:llenar:V": {
+      "sentence": "Hablamos de los contras de llenar la caja de oro.",
+      "target": "llenar",
+      "alternatives": [
+        "rellenar"
+      ],
+      "translation": "We discuss the disadvantages of filling the box with gold."
+    },
+    "corpes:esconder:V": {
+      "sentence": "Su decisión de esconder la llave coincide con un cambio que nos da una ventaja.",
+      "target": "esconder",
+      "alternatives": [
+        "ocultar"
+      ],
+      "translation": "His decision to hide the key coincides with a change that gives us an advantage."
+    },
+    "corpes:amar:V": {
+      "sentence": "Es fácil amar este sencillo coche eléctrico.",
+      "target": "amar",
+      "alternatives": [
+        "querer"
+      ],
+      "translation": "It is easy to love this simple electric car."
+    },
+    "corpes:sencillo:A": {
+      "sentence": "Es fácil amar este sencillo coche eléctrico.",
+      "target": "sencillo",
+      "alternatives": [
+        "simple"
+      ],
+      "translation": "It is easy to love this simple electric car."
+    },
+    "corpes:beber:V": {
+      "sentence": "La radio explica que los médicos no deben beber alcohol al ejercer su profesión.",
+      "target": "beber",
+      "alternatives": [
+        "tomar",
+        "consumir"
+      ],
+      "translation": "The radio explains that doctors must not drink alcohol while practicing their profession."
+    },
+    "corpes:salvar:V": {
+      "sentence": "El responsable está dispuesto a salvar al animal.",
+      "target": "salvar",
+      "alternatives": [
+        "rescatar"
+      ],
+      "translation": "The person responsible is willing to save the animal."
+    },
+    "corpes:escapar:V": {
+      "sentence": "Para escapar, ve directamente hacia la puerta verde.",
+      "target": "escapar",
+      "alternatives": [
+        "huir",
+        "escaparte",
+        "fugarte"
+      ],
+      "translation": "To escape, go directly toward the green door."
+    },
+    "corpes:solamente:R": {
+      "sentence": "Simplemente necesito solamente un poco de voluntad.",
+      "target": "solamente",
+      "alternatives": [
+        "únicamente",
+        "solo"
+      ],
+      "translation": "I simply need only a little willpower."
+    },
+    "corpes:comprobar:V": {
+      "sentence": "Antes del torneo, quiero comprobar si hay sombra.",
+      "target": "comprobar",
+      "alternatives": [
+        "verificar",
+        "averiguar"
+      ],
+      "translation": "Before the tournament, I want to check whether there is shade."
+    },
+    "corpes:baño:N": {
+      "sentence": "El silencio absoluto del baño es raro.",
+      "target": "baño",
+      "alternatives": [
+        "aseo"
+      ],
+      "translation": "The absolute silence in the bathroom is strange."
+    },
+    "corpes:raro:A": {
+      "sentence": "El silencio absoluto del baño es raro.",
+      "target": "raro",
+      "alternatives": [
+        "extraño"
+      ],
+      "translation": "The absolute silence in the bathroom is strange."
+    },
+    "corpes:especialista:N": {
+      "sentence": "El especialista empieza a elaborar un plan para el área que rodea el hospital.",
+      "target": "especialista",
+      "alternatives": [
+        "experto"
+      ],
+      "translation": "The specialist begins to draw up a plan for the area surrounding the hospital."
+    },
+    "corpes:elaborar:V": {
+      "sentence": "El especialista empieza a elaborar un plan para el área que rodea el hospital.",
+      "target": "elaborar",
+      "alternatives": [
+        "preparar",
+        "redactar"
+      ],
+      "translation": "The specialist begins to draw up a plan for the area surrounding the hospital."
+    },
+    "corpes:cuento:N": {
+      "sentence": "Cada habitante quiere transmitir el cuento a los niños.",
+      "target": "cuento",
+      "alternatives": [
+        "relato"
+      ],
+      "translation": "Each inhabitant wants to pass the story on to the children."
+    },
+    "corpes:procedimiento:N": {
+      "sentence": "El procedimiento busca limitar el uso del inglés.",
+      "target": "procedimiento",
+      "alternatives": [
+        "método"
+      ],
+      "translation": "The procedure aims to limit the use of English."
+    },
+    "corpes:emplear:V": {
+      "sentence": "Tenemos que emplear un instrumento para medir el ruido antes de eliminar su causa.",
+      "target": "emplear",
+      "alternatives": [
+        "utilizar",
+        "usar"
+      ],
+      "translation": "We have to use an instrument to measure the noise before eliminating its cause."
+    },
+    "corpes:dueño:N": {
+      "sentence": "El dueño quiere hallar a su perro en la playa.",
+      "target": "dueño",
+      "alternatives": [
+        "propietario"
+      ],
+      "translation": "The owner wants to find his dog on the beach."
+    },
+    "corpes:hallar:V": {
+      "sentence": "El dueño quiere hallar a su perro en la playa.",
+      "target": "hallar",
+      "alternatives": [
+        "encontrar"
+      ],
+      "translation": "The owner wants to find his dog on the beach."
+    },
+    "corpes:trasladar:V": {
+      "sentence": "El protagonista debe trasladar los platos a otra mesa.",
+      "target": "trasladar",
+      "alternatives": [
+        "mover",
+        "desplazar"
+      ],
+      "translation": "The protagonist must move the plates to another table."
+    },
+    "corpes:concreto:A": {
+      "sentence": "El gobierno democrático presenta un plan concreto de transporte.",
+      "target": "concreto",
+      "alternatives": [
+        "específico",
+        "particular",
+        "determinado"
+      ],
+      "translation": "The democratic government presents a specific transport plan."
+    },
+    "corpes:prestar:V": {
+      "sentence": "El servicio sanitario estatal puede prestar ayuda.",
+      "target": "prestar",
+      "alternatives": [
+        "brindar",
+        "proporcionar"
+      ],
+      "translation": "The state health service can provide help."
+    },
+    "corpes:brindar:V": {
+      "sentence": "La república brinda la oportunidad de acceder a la educación.",
+      "target": "brinda",
+      "alternatives": [
+        "proporciona",
+        "ofrece",
+        "da"
+      ],
+      "translation": "The republic offers the opportunity to access education."
+    },
+    "corpes:introducir:V": {
+      "sentence": "En esta circunstancia, no es necesario introducir el sexo de la persona.",
+      "target": "introducir",
+      "alternatives": [
+        "insertar",
+        "ingresar",
+        "indicar"
+      ],
+      "translation": "In this circumstance, it is not necessary to enter the person's sex."
+    },
+    "corpes:percibir:V": {
+      "sentence": "El observador activo puede percibir cuánto tiempo dura el silencio.",
+      "target": "percibir",
+      "alternatives": [
+        "notar",
+        "advertir"
+      ],
+      "translation": "The active observer can perceive how long the silence lasts."
+    },
+    "corpes:particular:A": {
+      "sentence": "Esta célula particular muestra un cambio significativo.",
+      "target": "particular",
+      "alternatives": [
+        "específica",
+        "concreta",
+        "determinada"
+      ],
+      "translation": "This particular cell shows a significant change."
+    },
+    "corpes:aclarar:V": {
+      "sentence": "Antes de cobrar por la leche quiero aclarar el precio.",
+      "target": "aclarar",
+      "alternatives": [
+        "esclarecer"
+      ],
+      "translation": "Before charging for the milk, I want to clarify the price."
+    },
+    "corpes:sugerir:V": {
+      "sentence": "El panadero sugiere adoptar un método nuevo para preparar la masa.",
+      "target": "sugiere",
+      "alternatives": [
+        "propone"
+      ],
+      "translation": "The baker suggests adopting a new method for preparing the dough."
+    },
+    "corpes:conformar:V": {
+      "sentence": "Estos textos conocidos conforman una colección de literatura clásica.",
+      "target": "conforman",
+      "alternatives": [
+        "forman",
+        "constituyen",
+        "integran",
+        "componen"
+      ],
+      "translation": "These well-known texts make up a collection of classical literature."
+    },
+    "corpes:dirigente:N": {
+      "sentence": "Mi novio entrevista al dirigente sobre la investigación del cerebro.",
+      "target": "dirigente",
+      "alternatives": [
+        "líder",
+        "jefe"
+      ],
+      "translation": "My boyfriend interviews the leader about brain research."
+    },
+    "corpes:otorgar:V": {
+      "sentence": "Con emoción, el presidente colombiano decide otorgar el premio.",
+      "target": "otorgar",
+      "alternatives": [
+        "conceder"
+      ],
+      "translation": "With emotion, the Colombian president decides to grant the prize."
+    },
+    "corpes:disminuir:V": {
+      "sentence": "La máquina original puede disminuir el consumo de energía.",
+      "target": "disminuir",
+      "alternatives": [
+        "reducir"
+      ],
+      "translation": "The original machine can reduce energy consumption."
+    },
+    "corpes:rico:A": {
+      "sentence": "El hombre rico quiere abordar la cuestión de cómo consumir menos.",
+      "target": "rico",
+      "alternatives": [
+        "adinerado",
+        "acaudalado"
+      ],
+      "translation": "The rich man wants to discuss how to consume less."
+    },
+    "corpes:abordar:V": {
+      "sentence": "El hombre rico quiere abordar la cuestión de cómo consumir menos.",
+      "target": "abordar",
+      "alternatives": [
+        "tratar",
+        "discutir"
+      ],
+      "translation": "The rich man wants to discuss how to consume less."
+    },
+    "corpes:relato:N": {
+      "sentence": "El relato menciona la frecuencia con la que el sacerdote suele casar a las parejas.",
+      "target": "relato",
+      "alternatives": [
+        "cuento"
+      ],
+      "translation": "The story mentions how often the priest usually marries couples."
+    },
+    "corpes:conservar:V": {
+      "sentence": "Tenemos que conservar la estación sin cometer errores.",
+      "target": "conservar",
+      "alternatives": [
+        "mantener",
+        "preservar"
+      ],
+      "translation": "We have to preserve the station without making mistakes."
+    },
+    "corpes:tranquilo:A": {
+      "sentence": "La plataforma da a una parte tranquila de la costa.",
+      "target": "tranquila",
+      "alternatives": [
+        "apacible",
+        "serena"
+      ],
+      "translation": "The platform overlooks a quiet part of the coast."
+    },
+    "corpes:comunicar:V": {
+      "sentence": "Queremos comunicar la evolución del equipo para vencer el miedo.",
+      "target": "comunicar",
+      "alternatives": [
+        "transmitir"
+      ],
+      "translation": "We want to communicate how the team is developing to overcome fear."
+    },
+    "corpes:principalmente:R": {
+      "sentence": "El terreno disponible está formado principalmente por bosque.",
+      "target": "principalmente",
+      "alternatives": [
+        "fundamentalmente",
+        "mayoritariamente"
+      ],
+      "translation": "The available land consists mainly of forest."
+    },
+    "corpes:periódico:N": {
+      "sentence": "El periódico analiza la dimensión social del incremento.",
+      "target": "periódico",
+      "alternatives": [
+        "diario"
+      ],
+      "translation": "The newspaper analyzes the social dimension of the increase."
+    },
+    "corpes:incremento:N": {
+      "sentence": "El periódico analiza la dimensión social del incremento.",
+      "target": "incremento",
+      "alternatives": [
+        "aumento",
+        "alza"
+      ],
+      "translation": "The newspaper analyzes the social dimension of the increase."
+    },
+    "corpes:incrementar:V": {
+      "sentence": "El miércoles hablamos de cómo incrementar la producción y respetar la naturaleza.",
+      "target": "incrementar",
+      "alternatives": [
+        "aumentar"
+      ],
+      "translation": "On Wednesday we discuss how to increase production while respecting nature."
+    },
+    "corpes:investigar:V": {
+      "sentence": "Queremos investigar la influencia del impuesto en los precios.",
+      "target": "investigar",
+      "alternatives": [
+        "indagar",
+        "analizar",
+        "estudiar"
+      ],
+      "translation": "We want to investigate the influence of the tax on prices."
+    },
+    "corpes:habitual:A": {
+      "sentence": "La compra habitual incluye una sorpresa.",
+      "target": "habitual",
+      "alternatives": [
+        "normal",
+        "común",
+        "usual"
+      ],
+      "translation": "The usual purchase includes a surprise."
+    },
+    "corpes:compra:N": {
+      "sentence": "La compra habitual incluye una sorpresa.",
+      "target": "compra",
+      "alternatives": [
+        "adquisición"
+      ],
+      "translation": "The usual purchase includes a surprise."
+    },
+    "corpes:regla:N": {
+      "sentence": "La regla es mantener la bolsa lejos del calor.",
+      "target": "regla",
+      "alternatives": [
+        "norma"
+      ],
+      "translation": "The rule is to keep the bag away from heat."
+    },
+    "corpes:efectivo:A": {
+      "sentence": "Despedir al trabajador no es una respuesta efectiva a un resultado negativo.",
+      "target": "efectiva",
+      "alternatives": [
+        "eficaz"
+      ],
+      "translation": "Firing the worker is not an effective response to a negative result."
+    },
+    "corpes:diario:A": {
+      "sentence": "El esfuerzo colectivo diario mantiene el aire puro.",
+      "target": "diario",
+      "alternatives": [
+        "cotidiano"
+      ],
+      "translation": "The daily collective effort keeps the air pure."
+    },
+    "corpes:atravesar:V": {
+      "sentence": "La regla fiscal afecta la distribución de bienes que deben atravesar la frontera.",
+      "target": "atravesar",
+      "alternatives": [
+        "cruzar"
+      ],
+      "translation": "The fiscal rule affects the distribution of goods that must cross the border."
+    },
+    "corpes:rechazar:V": {
+      "sentence": "Tras un debate intenso, el grupo numeroso decide rechazar la propuesta.",
+      "target": "rechazar",
+      "alternatives": [
+        "rehusar",
+        "desestimar"
+      ],
+      "translation": "After an intense debate, the large group decides to reject the proposal."
+    },
+    "corpes:medicamento:N": {
+      "sentence": "La sede tiene una caja azul para cada medicamento.",
+      "target": "medicamento",
+      "alternatives": [
+        "remedio"
+      ],
+      "translation": "The headquarters has a blue box for each medicine."
+    },
+    "corpes:evaluar:V": {
+      "sentence": "Necesitamos evaluar las consecuencias de la ausencia de la firma.",
+      "target": "evaluar",
+      "alternatives": [
+        "valorar"
+      ],
+      "translation": "We need to evaluate the consequences of the missing signature."
+    },
+    "corpes:muerto:N": {
+      "sentence": "El informe intenta estimar el número de muertos en la ruta.",
+      "target": "muertos",
+      "alternatives": [
+        "fallecidos",
+        "difuntos"
+      ],
+      "translation": "The report attempts to estimate the number of dead people along the route."
+    },
+    "corpes:revisar:V": {
+      "sentence": "Existe una necesidad permanente de revisar el aceite.",
+      "target": "revisar",
+      "alternatives": [
+        "examinar",
+        "comprobar"
+      ],
+      "translation": "There is a permanent need to check the oil."
+    },
+    "corpes:encargar:V": {
+      "sentence": "El equipo universitario quiere encargar un estudio del virus.",
+      "target": "encargar",
+      "alternatives": [
+        "encomendar"
+      ],
+      "translation": "The university team wants to commission a study of the virus."
+    },
+    "corpes:proporcionar:V": {
+      "sentence": "El martes podemos proporcionar una tabla con los resultados.",
+      "target": "proporcionar",
+      "alternatives": [
+        "brindar",
+        "facilitar",
+        "entregar"
+      ],
+      "translation": "On Tuesday we can provide a table with the results."
+    },
+    "corpes:evidente:A": {
+      "sentence": "Es evidente que ingresar dinero no basta.",
+      "target": "evidente",
+      "alternatives": [
+        "claro",
+        "obvio"
+      ],
+      "translation": "It is obvious that depositing money is not enough."
+    },
+    "corpes:ingresar:V": {
+      "sentence": "Es evidente que ingresar dinero no basta.",
+      "target": "ingresar",
+      "alternatives": [
+        "depositar"
+      ],
+      "translation": "It is obvious that depositing money is not enough."
+    },
+    "corpes:viejo:N": {
+      "sentence": "El viejo lee la disposición sobre el derecho individual a la educación.",
+      "target": "viejo",
+      "alternatives": [
+        "anciano"
+      ],
+      "translation": "The old man reads the provision on the individual right to education."
+    },
+    "corpes:pecho:N": {
+      "sentence": "El futuro médico oye un ruido en el pecho del paciente.",
+      "target": "pecho",
+      "alternatives": [
+        "tórax"
+      ],
+      "translation": "The future doctor hears a noise in the patient's chest."
+    }
+  }
+}

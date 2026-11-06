@@ -10,16 +10,19 @@ import {createTest,checkAnswer,advanceTest} from '../lemmas/assessment.js';
 import {examIds,restoreExams} from '../lemmas/exam-state.js';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url)));
 const deck=read('lemmas/data/deck.json'),bank=read('lemmas/data/context.json');
+const reviewedAlternatives=read('data/spanish-lemmas/context/answer-alternatives.json').entries;
 const cards=new Map(deck.map((c,i)=>[c.id,{...c,context:bank.contexts[i]}]));
 test('all six days have precisely 250 contextual cards in unchanged course order',()=>{
  assert.equal(bank.version,3);assert.equal(bank.contexts.length,1500);
  assert.deepEqual(bank.contexts.map(c=>c.id),deck.map(c=>c.id));
- assert.deepEqual(bank.contexts.slice(0,50).map(({headwordCue,recallCue,answerNote,...original})=>original),contextPilot);
+ assert.deepEqual(bank.contexts.slice(0,50).map(({headwordCue,recallCue,answerNote,...original})=>({...original,answers:contextPilot.find(c=>c.id===original.id).answers})),contextPilot);
  for(let day=0;day<6;day++)assert.deepEqual(bank.contexts.slice(day*250,day*250+250).map(c=>c.id),examIds(deck,day));
  for(const c of bank.contexts){
   assert.equal(c.example.chunks.map(ch=>ch.text).join(' ')+'.',c.example.text);
   assert.equal(c.example.chunks[c.index].text.slice(c.offset,c.offset+c.target.length),c.target);
   assert.match(c.target,/^\p{L}+$/u);assert.ok(c.example.translation);assert.ok(c.explanation);
+  const reviewed=reviewedAlternatives[c.id];
+  if(contextPilot.some(p=>p.id===c.id))assert.deepEqual(c.answers,[...contextPilot.find(p=>p.id===c.id).answers,...(reviewed?.alternatives||[])]);
   const hidden=sentenceMarkup(c),shown=sentenceMarkup(c,true);
   assert.equal((hidden.match(/class="cloze-blank"/g)||[]).length,1);
   assert.ok(!hidden.includes(`data-speak="${c.target}"`),c.id);

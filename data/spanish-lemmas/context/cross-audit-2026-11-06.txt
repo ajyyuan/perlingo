@@ -1,0 +1,105 @@
+Perlingo / Claude cross-audit — 6 November 2026
+
+Verdict
+The uncommitted patch is not ready to call linguistically complete. One newly accepted answer is demonstrably wrong for its sentence: escaparse at rank 1278. Several ordinary valid answers remain absent. The earlier passing tests establish grading mechanics, not linguistic correctness; my earlier readiness wording overstated that evidence.
+
+Scope
+Claude reviewed a frozen 344-row snapshot: all 343 changed sentence cards, all 431 newly accepted alternatives, and the additional básico typed-policy card. Both existing accepted answers and typed prompt/cue information were included. I independently reread all 343 substituted sentences, checked the three paired typed policies, all seven variant cases, the negative regression cases, and actual grading results. This was a patch cross-audit, not a fresh Claude certification of all 1,500 cards. A full-bank snapshot was prepared but not uploaded. User explicitly approved sending the curriculum snapshots to Claude; no secrets/account data were included.
+Claude conversation: https://claude.ai/chat/48fcb02c-8f55-434e-a287-42efeb1e083e
+Uploaded snapshot: /tmp/perlingo-claude-changed.jsonl
+SHA256: 153e41f6ca77f66cecb311fae2c745a7d35bbbd82503f4948eadac7684e9e10c
+
+Confirmed correction needed
+1278 escapar: “Para escapar, ve directamente hacia la puerta verde.”
+- escaparse currently earns credit.
+- escaparte currently gives a spelling retry.
+- huir correctly earns credit.
+The person addressed by ve is tú. The pronominal alternative must therefore be escaparte. Both reviewers independently found this before discussing findings. RAE's grammar glossary requires pronominal agreement in person/number: https://www.rae.es/gtg/verbo-pronominal . For the subject of purpose infinitives, see https://www.fundeu.es/consulta/sujetos-en-oraciones-finales-de-infinitivo-289/ . This is a sentence-form correction, not grounds to remove dictionary-form escaparse from typed recall.
+The other pronominal additions morirse, reírse and quedarme fit their respective subjects.
+
+Confirmed missing-answer examples
+719: “Es ___ que tenemos que enviar siete cartas.” → verdad is valid but marked incorrect. A context blank need not preserve the target's dictionary part of speech when the resulting construction is correct.
+340: “La universidad estudia el ___ de la luz en la seguridad.” → impacto is valid but marked incorrect.
+841: “Necesitamos ___ datos para resolver el problema y medir su impacto.” → recopilar is valid but marked incorrect. https://dle.rae.es/recopilar supports gathering information.
+1278: escaparte as above.
+These examples establish that the sentence-acceptance work remains incomplete. Sixty omission candidates were runtime checked: 59 were marked incorrect and escaparte received a retry. /tmp/perlingo-claude-omission-candidates.json records every full substituted sentence. This count is not a claim that all 60 have equal semantic precision or fresh source verification; narrower/broader senses and register still need individual dispositions before implementation.
+
+Important rejected proposal
+At rank 1006, atmósfera is NOT a valid one-word substitution: the fixed following adjective is tranquilo. It would produce “su atmósfera tranquilo.” Clima is a plausible masculine alternative to investigate. This shows why neither a thesaurus lookup nor another AI's suggestions should be bulk-applied.
+
+What held up
+All three identical-cue typed fixes remain supported: esencial for básico, pieza for cuarto, subida/alza for incremento. The corresponding paired cards now accept the same reported answers.
+All seven variant fixes remain supported in their actual contexts: periodo, quizá/quizás (two cards), futbol, setiembre, vídeo and consciencia (awareness, not moral conscience).
+Gender exclusions remain valid, including un subida, la cuarto, ese centuria, la motivo, un ruta, el forma, una decenio, del noción and la acceso. Un alza and esta área are valid; stressed-a nouns must not be rejected by a simplistic gender heuristic.
+
+Reconciliation of Claude's initial 40 flags
+Claude initially recommended rejecting 15 and debated 25. Primary-source checks and two follow-ups overturned the categorical claims for 39 of those 40. This is why the original response is preserved but not treated as an authoritative correction list. Final dispositions below distinguish less-common wording from invalid answers. They do not certify the curriculum error-free.
+
+Rank / alternative / disposition
+1278 escaparse — confirmed wrong person; recommend escaparte instead.
+719 verdadero — keep; es verdadero que is a valid, more marked construction. Add missing verdad separately.
+986 última — keep; postposed wording is marked, not categorically ungrammatical.
+340 resultado — keep; less idiomatic here than efecto, but an outcome/effect reading exists. Impacto remains an omission.
+863 suceso — keep with collocation caveat; not limited to crimes or accidents. DLE general sense and Fundéu's description of an organized evento as a programmed suceso refute the categorical rejection.
+1055 evitar — keep with construction caveat; an inanimate subject can prevent an implicitly human action. The familiar can't-help reading is not the only grammatical reading. Ministry of Health primary usage of an electronic prescription preventing visits supplies a counterexample to the asserted subject-control restriction.
+1269 simple — keep; mere and uncomplicated readings are possible. Do not reject solely because one reading differs.
+1268 querer — keep; wanting and affection readings coexist. DLE explicitly permits affection toward things.
+449 global — keep; less usual than mundial for a championship, but worldwide is a valid sense.
+535 porvenir — keep; DLE explicitly includes future time and an en el porvenir example.
+332 auxiliar — keep; marked construction, not established as a grammatical prohibition; the initial emergency-only definition was too narrow.
+904 hondo — keep; intellectual depth is a documented sense, not only physical depth.
+136 conjunto — keep; DLE explicitly includes groups of people, not only bands or mathematical sets.
+69 porción — keep; geographical portions are valid, not only food servings.
+212 chica — keep; caja chica also has the literal small-box reading in this receiving/opening context.
+730 básico — keep; fundamental/basis reading fits, although basic can also mean elementary.
+1423 común — keep; usual and shared readings coexist.
+1006 entorno — keep; surroundings/atmosphere overlap is possible, though ambiente is the clearest taught target.
+187 algunos — keep; context permits several/some overlap.
+376 determinación — keep; DLE explicitly includes decision, not only resolve.
+1137 postura — keep; attitude/stance reading is valid despite the physical-posture sense.
+1150 apartar — keep; separating/setting apart the materials fits.
+307 fortaleza — keep; strength reading is available; not restricted to emotional fortitude.
+1228 atender — keep; DLE explicitly gives childcare as an example.
+321 lograr — keep; obtaining a job is a valid attainment use.
+205 conservar — keep; keeping the center open is a valid use.
+753 bastante — keep; postnominal sufficient is valid, though marked.
+1350 esclarecer — keep; clarifying the price is possible, although aclarar is more usual.
+863 acontecimiento — keep; event reading is possible.
+834 gigantesca — keep; figurative magnitude is possible, though enorme is more usual with suerte.
+692 tapar — keep; covering the table is a valid reading.
+202 rememoro — keep; formal recollection of people is possible.
+653 grupo — keep; grouping plants is valid.
+1453 difuntos — keep; deceased people fits, though fallecidos/muertos is more usual in a toll.
+446 convenio — keep; an agreement can be formal without becoming wrong.
+757 quebrar — keep; figurative breach of agreement is possible.
+1472 brindar — keep; providing the table is a valid use.
+674 situar — keep; placing the insect is possible.
+1317 particular — keep; specific reading fits; private is not compulsory.
+18 porque — keep; fronted causal porque is grammatical. Do not reject valid grammar solely to force the hidden target como.
+
+Selected primary references used in reconciliation
+https://dle.rae.es/porvenir
+https://dle.rae.es/porción
+https://dle.rae.es/conjunto
+https://dle.rae.es/hondo
+https://dle.rae.es/atender
+https://dle.rae.es/determinación
+https://dle.rae.es/chico
+https://dle.rae.es/querer
+https://dle.rae.es/resultado
+https://dle.rae.es/suceso
+https://www.fundeu.es/dudas/palabra-clave/evento/
+https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/tablasEstadisticas/Inf_Anual_SNS_2015.1.pdf
+https://www.rae.es/dpd/alza
+The ministry passage is usage evidence for the construction, not a blanket endorsement of every evitar sentence. Dictionary synonymy likewise does not automatically establish fit in every sentence.
+
+No changes made during this audit
+No curriculum/code/docs were edited, no commit, no push or publication. The existing uncommitted changes remain exactly as audited, including the confirmed defect. MCQ work remains deferred. Do not treat this report as a claim that the defect has already been fixed.
+
+Audited file fingerprints:
+{
+  "data/spanish-lemmas/context/answer-alternatives.json": "36b8d6d7e555410a36bdf77855dcc03bc30ea3b4985d2d1e37557afc478ad4c5",
+  "data/spanish-lemmas/later-day-recall-review.json": "b937dc2c9fb875fcddd0087ff567a507abf80ecb0141dcc4fff12ba5c6f026fa",
+  "lemmas/data/context.json": "ea6b47c310f95842717b46389bbd32f5b9ba482df66e672166df2a8f553dab39",
+  "lemmas/later-recall-data.js": "021e051be9fac802127407082556c9d39ffefe2b71f4bee91bf931fa65ab929f"
+}

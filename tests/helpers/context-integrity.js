@@ -8,7 +8,14 @@ const sha=s=>createHash('sha256').update(s).digest('hex');
 export function beforeLaterContextCorrections(){
  const text=read('lemmas/data/context.json'),bank=JSON.parse(text);
  const audit=JSON.parse(read('data/spanish-lemmas/later-context-correction-audit.json'));
- assert.equal(sha(text),audit.afterSha256);
+ const alternatives=JSON.parse(read('data/spanish-lemmas/context/answer-alternatives.json')).entries;
+ for(const c of bank.contexts){
+  const entry=alternatives[c.id];if(!entry)continue;
+  assert.equal(c.example.text,entry.sentence);assert.equal(c.target,entry.target);
+  for(const answer of entry.alternatives)assert.ok(c.answers.includes(answer));
+  c.answers=c.answers.filter(a=>!entry.alternatives.includes(a));
+ }
+ assert.equal(sha(JSON.stringify(bank,null,2)+'\n'),audit.afterSha256);
  assert.equal(audit.changes.length,12);
  const changes=new Map(audit.changes.map(c=>[c.id,c]));
  assert.equal(changes.size,12);

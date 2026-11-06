@@ -48,8 +48,9 @@ test('meaning supplements teach new senses without mutating frozen content banks
  for(const path of ['lemmas/data/deck.json','lemmas/data/notes.json','lemmas/data/context.json'])assert.equal(path==='lemmas/data/context.json'?beforeLaterContextCorrections().sha256:createHash('sha256').update(readFileSync(new URL('../'+path,import.meta.url))).digest('hex'),old.sourceHashes[path]);
 });
 
-test('typed alternatives do not leak into sentence blanks, recognition or unrelated later-day headwords',()=>{
- assert.equal(correct('empezar:V','comenzar','context'),false);
+test('sentence alternatives are authored separately; recognition and unrelated headwords stay unchanged',()=>{
+ assert.equal(correct('empezar:V','comenzar','context'),true);
+ assert.equal(correct('tener:V','poseo','context'),false);
  assert.equal(correct('empezar:V','comenzar','choice'),false);
  const unrelated=deck.find(c=>c.lemma==='kilómetro');assert.equal(typedPrompt(unrelated),unrelated.meaning);assert.deepEqual(typedAnswers(unrelated),[unrelated.lemma]);
  for(const card of deck.slice(0,250))assert.equal(checkAnswer(createTest('choice',[card.id]),card.meaning,card).feedback.correct,true);
