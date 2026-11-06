@@ -5,7 +5,7 @@
     "questions": 1500,
     "distractors": 4500
   },
-  "status": "independent reconciliation complete; user approved commit, push and publication; deployment pending",
+  "status": "published in Sites version 45; independent reconciliation complete",
   "proposalSha256": "3a374bb00b1ab552af82271ff2e92f4e57c9ff26049cf28bee7e127209dc62e8",
   "files": {
     "lemmas/assessment.js": {
@@ -520,5 +520,14 @@
       "savedProgress": "not read or written"
     },
     "limits": "No complete 50-question set was manually completed; tests check implementation of reviewed semantics, not independent linguistic proof."
+  },
+  "publication": {
+    "applicationCommit": "f197a017ae36a1427a537b0defe92f388dc6cd5f",
+    "siteSourceCommit": "ca89443eae07044240726194e0e0015972924cfb",
+    "version": 45,
+    "deployment": "appgdep_6aee646c6c288191a9b7d7fcef2fc503",
+    "status": "succeeded",
+    "environmentRevision": 2,
+    "url": "https://perlingo.app/lemmas/"
   }
 }

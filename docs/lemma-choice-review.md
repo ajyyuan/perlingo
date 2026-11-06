@@ -1,6 +1,6 @@
 # Multiple-choice answer review — 6 November 2026
 
-Approved for commit and publication on 6 November 2026; deployment pending. The preceding typed/context acceptance patch was approved and committed as `27c492567d`. This change is separate and is not published.
+Published in Sites version 45 on 6 November 2026. The preceding typed/context acceptance patch was committed as `27c492567d`; the separate MCQ change is committed as `f197a017ae`. Both are included in this release.
 
 ## Problem and behavior
 
@@ -39,4 +39,6 @@ Open [MCQ review](http://127.0.0.1:5173/tests/browser/choice-answers.html). The 
 
 The preview checks all 1,500 questions and all 6,000 option scores. Automated tests additionally cover all 24 orderings for every question, invalid/legacy option refresh, historical feedback preservation, deterministic generation, and regression exclusions. Mechanical checks establish implementation consistency; they do not independently prove Spanish semantics.
 
-Final validation: **470/470 tests passed**, as did `npm run check`, both generated-data checks and the changed runtime/preview syntax checks. The Codex browser confirmed all 1,500 question sets and 6,000 answer scores; manual interactions verified terminar/agregar credit, alimento correction and wrong-answer feedback, and the fin legacy refresh preserving Pass 3 and the recorded first score. No complete set test was manually finished. The user approved commit, push and publication after these checks. Deployment is pending; no new audio generation is needed.
+Final validation: **470/470 tests passed**, as did `npm run check`, both generated-data checks and the changed runtime/preview syntax checks. The Codex browser confirmed all 1,500 question sets and 6,000 answer scores; manual interactions verified terminar/agregar credit, alimento correction and wrong-answer feedback, and the fin legacy refresh preserving Pass 3 and the recorded first score. No complete set test was manually finished. The user approved commit, push and publication after these checks. Publication succeeded as recorded below; no new audio generation was needed.
+
+Publication completed November 6, 2026: Sites version **45**, deployment `appgdep_6aee646c6c288191a9b7d7fcef2fc503`, succeeded. GitHub application source `f197a017ae36a1427a537b0defe92f388dc6cd5f` maps to Sites source `ca89443eae07044240726194e0e0015972924cfb`. This publishes the approved recall/context corrections (`27c492567d`) and the reviewed 1,500-question MCQ bank, including the alimento definition correction and safe refresh of unanswered saved choices. All 470 tests, content checks, deterministic generation checks and the hosted production build passed; packaged curriculum/runtime assets match source. Public access, perlingo.app, existing audio hosting and runtime environment revision 2 were retained. No new audio was generated. This supersedes the pending/local-only publication status of these November 6 changes.
