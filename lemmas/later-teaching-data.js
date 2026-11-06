@@ -10,6 +10,7 @@ export const laterMeanings={
   "corpes:detener:V": "to stop; to detain",
   "corpes:regresar:V": "to return, go back, come back",
   "corpes:suelo:N": "ground; soil; floor",
+  "corpes:alimento:N": "food; nourishment",
   "corpes:atender:V": "to attend to; to care for; to pay attention to",
   "corpes:manifestar:V": "to express; to show; to reveal",
   "corpes:rostro:N": "face (the front of the head)",

@@ -29,9 +29,9 @@ test('answer checking requires the target headword, preserves ñ and accents, an
  assert.deepEqual(checkAnswer(checked,'sí',c),checked);assert.deepEqual(advanceTest(t),t);
  assert.notEqual(normalize('ano'),normalize('año'));assert.equal(normalize('si\u0301'),'sí');
 });
-test('choice distractors are distinct even when different cards have identical glosses',()=>{
- const c={meaning:'the'},group=[c,{meaning:'the'},{meaning:' THE '},{meaning:'of'},{meaning:'and'},{meaning:'in'}];
- const options=optionsFor(c,group,group,()=>0.5);assert.equal(options.length,4);assert.equal(new Set(options.map(normalize)).size,4);assert.equal(options.filter(v=>v==='the').length,1);
+test('choice options use the reviewed card and keep four distinct meanings',()=>{
+ const c={id:'corpes:el:T',meaning:'the'};
+ const options=optionsFor(c,()=>0.5);assert.equal(options.length,4);assert.equal(new Set(options.map(normalize)).size,4);assert.equal(options.filter(v=>v==='the').length,1);
 });
 test('day samples have exactly five unique cards from each of the five sets and stay in their day',()=>{
  for(let day=0;day<6;day++){

@@ -21,7 +21,7 @@ import {createRecordedDictation} from './recorded-dictation.js';
 import {sentenceMarkup,wordButton} from './word-help.js';
 import {examIds,restartExamTest,firstPassScore} from './exam-state.js';
 import {createFlow,batchIds,completedCount,transition,finishTest} from './workflow.js';
-import {createTest,advanceTest,optionsFor,normalize} from './assessment.js';
+import {createTest,advanceTest,currentChoiceOptions,normalize} from './assessment.js';
 import {loadNotes} from './notes-library.js';
 import {mountNote,notesOwnKeyboard,esc} from './note-view.js';
 import {KEY,idsForSet} from './session.js';
@@ -68,7 +68,7 @@ function testView(){
  const exam=data.activeExam?data.exams[data.activeExam]:null;
  const label=exam?`${context?'Context review · Day '+(exam.day+1):'Day test · Day '+(exam.day+1)}`:choice?`Set ${data.set+1} · 50 words`:`Set ${data.set+1} · Batch ${flow().batch+1}`;
  const prompt=choice?c.lemma:typedPrompt(c);
- if(choice&&(!Array.isArray(t.options)||!t.options.includes(c.meaning))){t.options=optionsFor(c,t.ids.map(id=>byId.get(id)),deck);save();}
+ if(choice){const options=currentChoiceOptions(t,c);if(options!==t.options){t.options=options;save();}}
  const sentence=context?sentenceMarkup(c.context,Boolean(feedback)):'';
  const expected=context?(feedback?.correct?contextFeedbackAnswer(c.context,feedback.response):c.context.answers[0]):choice?c.meaning:feedback?.correct?typedFeedbackAnswer(c,feedback.response,normalize):c.lemma;
  const cue=recallCue(c,t.kind);

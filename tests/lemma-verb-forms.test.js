@@ -74,8 +74,9 @@ test('all simple reference forms match frozen tagged source slots and older snap
  const recall=read('data/spanish-lemmas/day1-recall-audit.json').files;
  const retries=read('data/spanish-lemmas/retry-assessment-audit.json').files;
  const restart=read('data/spanish-lemmas/restart-pass-audit.json').files;
+ const choices=read('data/spanish-lemmas/choice-audit-2026-11-06.json').files;
  for(const [file,hash]of Object.entries(audit.unchanged.assessment)){
-  const chain=[schedule,recall,retries,restart].map(a=>a[file]).filter(Boolean);
+  const chain=[schedule,recall,retries,restart,choices].map(a=>a[file]).filter(Boolean);
   const current=chain[0]?.beforeSha256??digest(file);
   for(let i=0;i<chain.length;i++)assert.equal(chain[i+1]?.beforeSha256??digest(file),chain[i].afterSha256,file);
   if(file==='lemmas/progress.js'){const seedAudit=read('data/spanish-lemmas/tense-examples/course-seed-audit.json');assert.equal(seedAudit.beforeSha256,hash);assert.equal(current,seedAudit.afterSha256);}

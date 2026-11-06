@@ -1,0 +1,524 @@
+{
+  "date": "2026-11-06",
+  "baseCommit": "27c492567d",
+  "scope": {
+    "questions": 1500,
+    "distractors": 4500
+  },
+  "status": "independent reconciliation complete; user approved commit, push and publication; deployment pending",
+  "proposalSha256": "3a374bb00b1ab552af82271ff2e92f4e57c9ff26049cf28bee7e127209dc62e8",
+  "files": {
+    "lemmas/assessment.js": {
+      "beforeSha256": "0a3cf8dc823b5662bbc83ba2464fe1fc943d0498ff5cd11ef24b29020bc718b7",
+      "afterSha256": "ab9722fbc29be86391cf7b6d895bfad218ef977258f51ee0d73747e006fe4130"
+    },
+    "lemmas/app.js": {
+      "beforeSha256": "4c58fcc0ce658aaa13a66bd1045105210d8d7fbac4ff0929b7a344ed697c3916",
+      "afterSha256": "a0180fade65591b57be7f3cc28c9a942d7514c9a324c6c5c12bee40b25274415"
+    },
+    "lemmas/later-teaching-data.js": {
+      "beforeSha256": "679335c19f4bb7397b54eec05bf63856d13a0cef100127bc117468cec34e985a",
+      "afterSha256": "21cfc85a4e228ba998abe8847fd6708d86c132f688f99bb8951114ccfadb2de7"
+    },
+    "data/spanish-lemmas/later-day-recall-review.json": {
+      "beforeSha256": "b937dc2c9fb875fcddd0087ff567a507abf80ecb0141dcc4fff12ba5c6f026fa",
+      "afterSha256": "b74635868441af985789b9d98a2368f5a70289c7feef0949607b5348069eceee"
+    }
+  },
+  "unchanged": {
+    "lemmas/data/deck.json": "6e839ce2d54207541aa63ecd93b1719ed7eac2875f68165f4c3bc5524bb5ee79",
+    "lemmas/data/notes.json": "81dd0f3ab05be85ccc1d427c619c2ef2bdba71f31485b13aa203d1a6d9ef45c9",
+    "lemmas/data/context.json": "450f28ae96876edc43097c774f930c12a88d03935de88c0964ee0cb586d47a6c",
+    "lemmas/later-recall-data.js": "021e051be9fac802127407082556c9d39ffefe2b71f4bee91bf931fa65ab929f",
+    "lemmas/recall-policy-data.js": "e2b60aecb007a4cf2c27f99863ce73eef8c60107ae6bf0496b62877de7e43ea7"
+  },
+  "reviewSha256": "c12ddd70d7a4f6781d7954b161147480a5a55228d7db51fa367042308c84df1b",
+  "runtimeSha256": "7959f00fa57ee084b384ff49575fea06703516b4c823316437eeb858a238a96a",
+  "proposalReplacements": [
+    [
+      103,
+      "importante",
+      116,
+      "Avoid importance/major overlap"
+    ],
+    [
+      147,
+      "mayor",
+      116,
+      "Avoid major/important overlap"
+    ],
+    [
+      145,
+      "mayor",
+      142,
+      "Avoid greater/better comparison overlap"
+    ],
+    [
+      204,
+      "entender",
+      217,
+      "Avoid opinion/understanding overlap"
+    ],
+    [
+      248,
+      "lograr",
+      217,
+      "Avoid achieve/produce-result overlap"
+    ],
+    [
+      347,
+      "desarrollar",
+      322,
+      "Formar can train/develop people"
+    ],
+    [
+      357,
+      "obtener",
+      354,
+      "Alcanzar can obtain/achieve"
+    ],
+    [
+      361,
+      "afirmar",
+      380,
+      "Indicar can state information"
+    ],
+    [
+      395,
+      "responder",
+      380,
+      "Avoid assert/answer overlap"
+    ],
+    [
+      397,
+      "cumplir",
+      380,
+      "Observar can comply with rules"
+    ],
+    [
+      466,
+      "apenas",
+      452,
+      "Little/barely overlap"
+    ],
+    [
+      505,
+      "anunciar",
+      501,
+      "Reporting/announcing overlap"
+    ],
+    [
+      542,
+      "referir",
+      501,
+      "Announcing/reporting overlap"
+    ],
+    [
+      511,
+      "compartir",
+      532,
+      "Publishing/sharing overlap"
+    ],
+    [
+      539,
+      "publicar",
+      503,
+      "Sharing/publishing overlap"
+    ],
+    [
+      566,
+      "detener",
+      584,
+      "Reducir can subdue/detain"
+    ],
+    [
+      584,
+      "entregar",
+      586,
+      "Avoid returning/delivering something overlap"
+    ],
+    [
+      634,
+      "construcción",
+      646,
+      "Formation/construction overlap"
+    ],
+    [
+      633,
+      "histórico",
+      609,
+      "Avoid historic/old overlap"
+    ],
+    [
+      502,
+      "aspecto",
+      544,
+      "Aire can mean appearance/aspect"
+    ],
+    [
+      670,
+      "funcionar",
+      691,
+      "Avoid mechanical running/walking overlap"
+    ],
+    [
+      677,
+      "caminar",
+      659,
+      "Avoid running/functioning overlap"
+    ],
+    [
+      672,
+      "atrás",
+      679,
+      "Avoid behind/late ambiguity"
+    ],
+    [
+      687,
+      "tarde",
+      679,
+      "Avoid behind/late ambiguity"
+    ],
+    [
+      796,
+      "asociación",
+      767,
+      "Organismo can be an association/body"
+    ],
+    [
+      838,
+      "estilo",
+      836,
+      "Avoid character/style overlap"
+    ],
+    [
+      888,
+      "expresión",
+      852,
+      "Muestra can be an expression/display"
+    ],
+    [
+      864,
+      "rey",
+      874,
+      "Avoid figurative master/king overlap"
+    ],
+    [
+      881,
+      "maestro",
+      874,
+      "Avoid figurative king/master overlap"
+    ],
+    [
+      901,
+      "ubicar",
+      909,
+      "Arranging/placing overlap"
+    ],
+    [
+      911,
+      "crítico",
+      914,
+      "Avoid judge/critic overlap"
+    ],
+    [
+      984,
+      "demanda",
+      974,
+      "Avoid question/request overlap"
+    ],
+    [
+      1016,
+      "reciente",
+      1043,
+      "Avoid immediate/recent past overlap"
+    ],
+    [
+      1059,
+      "enseñar",
+      1081,
+      "Avoid describe/show overlap"
+    ],
+    [
+      1078,
+      "enseñar",
+      1072,
+      "Revealing/showing overlap"
+    ],
+    [
+      1082,
+      "revelar",
+      1072,
+      "Showing/revealing overlap"
+    ],
+    [
+      1127,
+      "instrumento",
+      1138,
+      "Mechanism/tool overlap"
+    ],
+    [
+      1191,
+      "régimen",
+      1182,
+      "Constitution/form of government overlap"
+    ],
+    [
+      1216,
+      "propósito",
+      1215,
+      "Avoid spirit/purpose overlap"
+    ],
+    [
+      1245,
+      "propósito",
+      1240,
+      "Avoid desire/intention overlap"
+    ],
+    [
+      1247,
+      "propósito",
+      1215,
+      "Mission/purpose overlap"
+    ],
+    [
+      1266,
+      "ejercer",
+      1268,
+      "Handling/wielding/exercising overlap"
+    ],
+    [
+      1276,
+      "simplemente",
+      1099,
+      "Avoid directly/simply overlap"
+    ],
+    [
+      1280,
+      "simplemente",
+      1099,
+      "Simply can mean only"
+    ],
+    [
+      1281,
+      "solamente",
+      1099,
+      "Simplemente can mean merely"
+    ],
+    [
+      1281,
+      "directamente",
+      1096,
+      "Avoid simply/directly overlap"
+    ],
+    [
+      1284,
+      "liga",
+      1257,
+      "Avoid competing competition labels"
+    ],
+    [
+      1294,
+      "tradición",
+      1257,
+      "Avoid folk-story/tradition overlap"
+    ],
+    [
+      1311,
+      "percibir",
+      1326,
+      "Avoid finding/perceiving overlap"
+    ],
+    [
+      1335,
+      "percibir",
+      1326,
+      "Avoid foresight/perception overlap"
+    ],
+    [
+      1340,
+      "prever",
+      1301,
+      "Avoid perception/foresight overlap"
+    ],
+    [
+      1401,
+      "emitir",
+      1421,
+      "Communicating/broadcasting overlap"
+    ],
+    [
+      1431,
+      "comunicar",
+      1417,
+      "Broadcasting/communicating overlap"
+    ],
+    [
+      1430,
+      "medicamento",
+      1419,
+      "Droga includes medicinal drugs"
+    ],
+    [
+      1451,
+      "revisar",
+      1478,
+      "Evaluating/reviewing overlap"
+    ],
+    [
+      1460,
+      "evaluar",
+      1485,
+      "Reviewing/evaluating overlap"
+    ],
+    [
+      1455,
+      "evaluar",
+      1488,
+      "Estimar can evaluate"
+    ],
+    [
+      1480,
+      "individual",
+      1486,
+      "Avoid independent/individual overlap"
+    ],
+    [
+      1493,
+      "independiente",
+      1486,
+      "Avoid individual/independent overlap"
+    ],
+    [
+      305,
+      "claro",
+      312,
+      "DLE distinto includes intelligible/clear; Claude flag independently verified"
+    ],
+    [
+      366,
+      "afirmar",
+      380,
+      "Conservatively avoid establish/state overlap in legal statements"
+    ]
+  ],
+  "replacementNote": "Conservative exclusions in unpublished proposals; these are not all claims of proven errors in the previous release.",
+  "sources": [
+    "https://dle.rae.es/alimento",
+    "https://dle.rae.es/observar",
+    "https://dle.rae.es/droga",
+    "https://dle.rae.es/estimar",
+    "https://dle.rae.es/distinto",
+    "https://dle.rae.es/sanitario"
+  ],
+  "claudeConversation": "https://claude.ai/chat/48fcb02c-8f55-434e-a287-42efeb1e083e",
+  "reviewCoverage": {
+    "codex": "Read all 1500 complete question rows and all 4500 distractors; 59 conservative proposal replacements before Claude response, then 2 during reconciliation.",
+    "claude": "Reported reading all 1500 initial question rows, then all 64 revised rows. The uploaded snapshot omitted POS; reviewer was told the app displays POS.",
+    "finalRevisedRows": 64,
+    "distractorRows": 60,
+    "distractorReplacements": 61,
+    "meaningOnlyRows": [
+      628,
+      637,
+      640,
+      650
+    ],
+    "sameSetDistractors": 4496,
+    "crossSetDistractors": 4,
+    "scopeLimit": "Finite reviewed options; no claim to enumerate all Spanish senses or every conceivable figurative translation."
+  },
+  "claudeFindings": {
+    "confirmedCollisionRanks": [
+      305,
+      357,
+      397,
+      901,
+      1280,
+      1281,
+      1430,
+      1455
+    ],
+    "confirmedDisposition": "All conflicting options replaced. Seven were already excluded independently; distinto/claro was source-verified after the report.",
+    "weakerOverlapRanks": [
+      466,
+      1078,
+      1082,
+      1247,
+      361,
+      366,
+      1451,
+      1460
+    ],
+    "weakerDisposition": "All replaced conservatively. Replacing an option does not establish that the previous pairing was always invalid.",
+    "remoteReplacedRanks": [
+      584,
+      505,
+      542,
+      796
+    ],
+    "remoteRetained": [
+      {
+        "rank": 190,
+        "pair": "equipo / system",
+        "reason": "The compound equipo de sonido can translate as sound system; that does not make the standalone noun equipo mean system."
+      },
+      {
+        "rank": 1098,
+        "pair": "simple / normal",
+        "reason": "Ordinary in un simple ciudadano does not make normal a standalone translation of simple."
+      },
+      {
+        "rank": 799,
+        "pair": "pretender / to state",
+        "reason": "To claim in a qualified assertion does not make neutral to state an equivalent standalone meaning."
+      }
+    ],
+    "glosses": [
+      {
+        "rank": 650,
+        "disposition": "Corrected food/nourishment definition at teaching source and all option uses; solid-only restriction was false."
+      },
+      {
+        "rank": 1324,
+        "disposition": "Retained sanitary: a valid narrower hygiene-related adjective sense supported by DLE; broadening the inventory is not required to remove a false MCQ answer."
+      },
+      {
+        "rank": 1144,
+        "disposition": "Retained coger usage warning, including distractor uses at 1143/1150; display style is not an answer collision."
+      }
+    ]
+  },
+  "claudeFinalResponse": "Claude responded: Every changed row checks out.\nDiff revised rows against the original MCQ file\n\nDiff revised rows against the original MCQ file\n\nEvery changed row checks out. Last check: that no “solid substance” alimento gloss is left anywhere in the original file outside these rows:\n\nList every alimento occurrence in the original file\n\nList every alimento occurrence in the original file\n\nNone of the 64 revised rows adds a new valid wrong answer, and every issue I reported is fixed. I have no remaining MCQ ambiguity to report.\n\nCounts: 64 rows changed. 60 have new distractors (#1281 has two, so 61 swaps in total), and 4 only have the new alimento wording (#628, #637, #640, #650). The original file used the old “solid substance” wording in exactly those 4 places, so it’s gone everywhere. Nothing else changed: no other glosses were edited, no distractor repeats its target or appears twice in a row, and each row still has three distractors.\n\nNew distractors: I read all 61 swaps against their targets, and none could reasonably be a meaning of the target. Two pairs looked worth a closer look, and both are fine:\n\n#1276, #1280, #1281: precisamente (“precisely”) now appears as a distractor for directamente, solamente and simplemente. It means “exactly”, not “only”, “simply” or “directly”.\n#901 disponer: the remaining aprobar (“to approve”) doesn’t match disponer’s “decree/order” sense.\n\nIssues I reported earlier:\n\nThe 8 confirmed collisions are fixed: #305, #357, #397, #901, #1280, #1281, #1430 and #1455.\nThe weaker overlaps are fixed: #466, #1078/#1082, #1247, #361/#366, #1451/#1460 and #505/#542.\nPairs you replaced as a precaution are also fine: #584, #796, #633, #1127, #1191 and the others.\n#650 alimento: “food; nourishment” agrees with the DLE.\n\nLeft as they are: I agree with keeping these:\n\nsanitario = sanitary: a narrow but valid gloss, not a false answer.\nThe coger warning: a display choice, with no answer collision.\nThe three remote pairs (equipo/system, simple/normal, pretender/state): none needs a change.\n\n\n\n\n\njust now",
+  "initialResponseSha256": "4f3467955f412cf0aa5185588f877657b0ebce64db392a96caf35cc915873a96",
+  "reconciliationSnapshotSha256": "4b23412998d4a07930d805e31f1d1b21776a4e8dabe55028f5423eeb99533244",
+  "validation": {
+    "npm test": {
+      "passed": 470,
+      "failed": 0
+    },
+    "npm run check": "passed",
+    "generatedChecks": [
+      "build-lemma-choices.mjs --check",
+      "build-later-recall.mjs --check"
+    ],
+    "syntaxChecks": [
+      "lemmas/app.js",
+      "tests/browser/choice-answers.js"
+    ],
+    "browser": {
+      "engine": "Codex in-app browser",
+      "questionSetsChecked": 1500,
+      "answerScoresChecked": 6000,
+      "manualChecks": [
+        "terminar correct answer",
+        "agregar correct answer",
+        "alimento corrected definition and wrong-answer feedback",
+        "fin legacy-option refresh preserving pass 3 and recorded first score"
+      ],
+      "url": "http://127.0.0.1:5173/tests/browser/choice-answers.html",
+      "savedProgress": "not read or written"
+    },
+    "limits": "No complete 50-question set was manually completed; tests check implementation of reviewed semantics, not independent linguistic proof."
+  }
+}

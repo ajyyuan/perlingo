@@ -92,7 +92,7 @@ Earlier ratings, legacy session records and completed-batch counts are preserved
 
 1. Open `/lemmas/`, learn ten cards, then Start batch recall. Use Show answer once and answer the other nine correctly. It must finish the pass, enter Repair, then require a full Pass 2. A perfect second pass should clear the batch while retaining 9/10 as the first result.
 2. Reload during repair, a full pass, feedback or an unfinished typed answer. The exact position and saved draft should resume. Repeated submission must not double-count a result.
-3. Finish five batches to reach the 50-word multiple-choice set test. It uses the same perfect-pass requirement.
+3. Finish five batches to reach the 50-word multiple-choice set test. It uses the same perfect-pass requirement. Each card has three reviewed distractors with shuffled option positions; [MCQ authoring, validation and review](lemma-choice-review.md) describe the finite question bank and how unanswered legacy questions refresh.
 4. In Your days, start Day 1 test: its counter must be 1 / 250. Day 1 context review → Start opens 1 / 250 with the English translation and a one-word Spanish blank. Hover/focus a surrounding word for meaning and click it to pronounce. The blank must offer neither its answer nor audio before submission.
 5. Fill the Spanish blank and Check, then inspect the restored word and explanation. In a verb question, enter its infinitive instead of the required inflection to check form-error feedback. Speak answer should fill a transcript without grading; verify microphone permission, recognition quality and audible playback on the actual device. Typing must remain usable if speech fails.
 

@@ -1,6 +1,7 @@
 import {typedAnswers} from './recall-policy.js';
 import {SETS_PER_DAY,WORDS_PER_DAY} from './schedule.js';
 import {matchesContextAnswer} from './context-answer.js';
+import {choiceOptions} from './choice-data.js';
 // Tests use the reviewed deck; no generated translations or fuzzy semantic grading.
 export const normalize=s=>String(s).normalize('NFC').replace(/[’‘]/gu,"'").toLocaleLowerCase('es').trim().replace(/[.!?¿¡]+$/u,'').trim().replace(/\s+/gu,' ');
 export const shuffle=(items,random=Math.random)=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -28,10 +29,17 @@ export function advanceTest(test){
  }
  return t;
 }
-export function optionsFor(card,group,all,random=Math.random){
- const correct=card.meaning,options=[correct],seen=new Set([normalize(correct)]);
- for(const c of [...shuffle(group,random),...shuffle(all,random)]){if(!seen.has(normalize(c.meaning))){seen.add(normalize(c.meaning));options.push(c.meaning);}if(options.length===4)break;}
+export function optionsFor(card,random=Math.random){
+ const options=choiceOptions[card.id];
+ if(!options||options[0]!==card.meaning)throw Error('Missing or stale reviewed choices: '+card.id);
  return shuffle(options,random);
+}
+// Refresh only an unanswered question. Recorded feedback and scores stay historical.
+export function currentChoiceOptions(test,card,random=Math.random){
+ if(test.feedback&&Array.isArray(test.options))return test.options;
+ const reviewed=choiceOptions[card.id];
+ if(reviewed?.[0]===card.meaning&&Array.isArray(test.options)&&test.options.length===4&&new Set(test.options).size===4&&test.options.every(value=>reviewed.includes(value)))return test.options;
+ return optionsFor(card,random);
 }
 export function sampleDay(deck,day,random=Math.random){
  return Array.from({length:SETS_PER_DAY},(_,s)=>shuffle(deck.slice(day*WORDS_PER_DAY+s*50,day*WORDS_PER_DAY+s*50+50),random).slice(0,5).map(c=>c.id)).flat();
