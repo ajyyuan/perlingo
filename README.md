@@ -1,4 +1,4 @@
-Keyboard fix (November 7; approved for publication): learning-card arrows continue navigating after selecting a verb form, chart, or forms category. Text editing and open dialogs retain their keyboard protections. [Preview checks](docs/lemmas.md#november-7-forms-card-navigation).
+Published keyboard fix (November 7, Sites version 46): learning-card arrows continue navigating after selecting a verb form, chart, or forms category. Text editing and open dialogs retain their keyboard protections. [Preview checks](docs/lemmas.md#november-7-forms-card-navigation).
 
 # Perlingo
 
