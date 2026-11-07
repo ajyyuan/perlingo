@@ -1,3 +1,5 @@
+Keyboard fix (November 7; approved for publication): learning-card arrows continue navigating after selecting a verb form, chart, or forms category. Text editing and open dialogs retain their keyboard protections. [Preview checks](docs/lemmas.md#november-7-forms-card-navigation).
+
 # Perlingo
 
 November 5 local More info update: a stable-height, internally scrolling overlay now has open/close motion and consistent disclosure sections. Reduced-motion preferences are respected. See [behavior and preview checks](docs/lemmas.md#november-5-more-info-overlay). No publication or later-day curriculum expansion is included.

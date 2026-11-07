@@ -51,3 +51,14 @@ test('S speaks the headword and P plays the example only during learning',()=>{
   for(const flag of ['repeat','isComposing','defaultPrevented','altKey','ctrlKey','metaKey','shiftKey'])assert.equal(keyboardCommand({key,[flag]:true},{learning:true}),null);
  }
 });
+
+
+test('learning-card arrows work from forms disclosures while other note protections remain',()=>{
+ const forms={learning:true,notes:true,cardForms:true};
+ for(const [key,command] of [['ArrowRight','forward'],['ArrowDown','forward'],['ArrowLeft','previous'],['ArrowUp','previous']]){
+  assert.equal(keyboardCommand({key},forms),command);
+  for(const state of [{learning:false},{cardForms:false},{editing:true},{overlay:true}])assert.equal(keyboardCommand({key},{...forms,...state}),null);
+  for(const flag of ['defaultPrevented','isComposing','repeat','altKey','ctrlKey','metaKey','shiftKey'])assert.equal(keyboardCommand({key,[flag]:true},forms),null);
+ }
+ for(const key of ['s','p','n','?',' '])assert.equal(keyboardCommand({key},forms),null);
+});

@@ -212,7 +212,8 @@ document.addEventListener('keydown',e=>{
  const notes=notesOwnKeyboard(e.target,false)||Boolean(e.target.closest('header,footer,details'));
  const learning=view==='study'&&!data.activeExam&&flow().phase==='learn';
  const choice=Boolean(app.querySelector('.choice:not(:disabled)'));
- const command=keyboardCommand(e,{editing,overlay,notes,learning,choice,mac});
+ const cardForms=Boolean(e.target.closest('.course-study .va-host'));
+ const command=keyboardCommand(e,{editing,overlay,notes,learning,choice,cardForms,mac});
  if(command){
   if(command==='dictate'){const mic=app.querySelector('[data-action="dictate"]');if(!mic)return;e.preventDefault();act('dictate');}
   else if(command==='home'){e.preventDefault();act('home');}
